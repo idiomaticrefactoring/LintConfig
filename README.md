@@ -15,12 +15,12 @@ An AI skill that automatically interprets coding standards, configures static an
 
 AI-assisted configuration tools, while powerful, can sometimes misinterpret coding standards and generate **incorrect** or **incomplete** configurations.  
 
-**LintConfig** addresses this by:
+**LintConfig** mitigates this by:
 
 1. **Compiling coding standards into structured, standardized coding rules**.  
 2. **Checking linter documentation to ensure valid configurations**.
 
-For example, consider a simple Java coding standard:
+For example, consider a Java coding standard:
 
 > **Coding Standard**:  
 > "Package declaration: The package declaration is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package declarations."
