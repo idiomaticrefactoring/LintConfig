@@ -20,37 +20,8 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 1. **Compiling coding standards into structured, standardized coding rules**.  
 2. **Checking linter documentation to ensure valid configurations**.
 
-For example, consider a Java coding standard:
+![Wrong vs Correct Checkstyle Configuration (Package Declaration)](data/example.png)
 
-> **Coding Standard**:  
-> "Package declaration: The package declaration is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package declarations."
-
-AI may generate an invalid configuration like this:
-
-
-
-```xml
-<!-- Wrong Configuration -->
-<module name="PackageDeclaration">
-  <property name="value" value="NotLineWrapped"/>
-</module>
-```
-
-
-Using LintConfig, the correct configuration is produced: 
-```xml
-<!-- Correct Configuration -->
-<!-- Coding Rule 1: Must / [PackageDeclaration] / Not LineWrapped -->
-<module name="NoLineWrap">
-  <property name="tokens" value="PACKAGE_DEF"/>
-</module>
-
-<!-- Coding Rule 2:  Optional / [PackageDeclaration] / Not ConstrainedBy / [ColumnLimit: 100] -->
-<module name="LineLength">
-  <property name="max" value="100"/>
-  <property name="ignorePattern" value="^(package|import) .*"/>
-</module>
-```
 
 ## Installation
 
