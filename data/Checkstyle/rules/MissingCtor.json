@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks that classes (except abstract ones) define a constructor and don't\nrely on the default one.", "option": ""}}

@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks that an overriding clone() method invokes\nsuper.clone(). Does not check native methods, as\nthey have no possible java defined implementation.\n\n\nReference:\nObject.clone().", "option": ""}}

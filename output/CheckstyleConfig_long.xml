@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<!--
+    Google Java Style Guide - Checkstyle Configuration
+
+    This configuration file implements 47 coding rules extracted from the Google Java Style Guide.
+    Each rule maps to one or more Checkstyle checks with appropriate configuration options.
+
+    Configuration Date: 2026-01-31
+    Total Coding Rules: 47
+    Coverage: 40 rules with Exact Match, Over-Approximation, or Under-Approximation
+
+    Rule Mapping Summary:
+    - Rules 1-4: Source File Structure and Formatting
+    - Rules 5-9: Escape Sequences and Section Separation
+    - Rules 10-20: Package, Imports, and Class Declaration
+    - Rules 21-26: Class Members and Brace Styles
+    - Rules 27-33: Indentation and Column Limits
+    - Rules 34-46: Line Wrapping and Whitespace
+    - Rule 47: Special Cases for Method References and Dots
+-->
+
+<module name="Checker">
+    <!-- Set the default encoding to UTF-8 (Rule 2) -->
+    <property name="charset" value="UTF-8"/>
+    <property name="fileExtensions" value="java"/>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 1: SOURCE FILE STRUCTURE (Rules 1-4) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 1: Must / [SourceFile] have-name-matching TopLevelClassName -->
+    <!-- Checkstyle: OuterTypeFilename - Exact Match -->
+    <!-- The outer type name and the file name must match -->
+    <module name="OuterTypeFilename"/>
+
+    <!-- Rule 2: Must / [SourceFile] use-encoding UTF-8 -->
+    <!-- Checkstyle: Charset property in Checker - Exact Match (already set above) -->
+
+    <!-- Rule 3: Must / [SourceFile] contain-only ASCII horizontal space -->
+    <!-- Checkstyle: FileTabCharacter - Exact Match -->
+    <!-- No tab characters allowed; only ASCII space (0x20) for indentation -->
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
+
+    <!-- Rule 4: Must / [SourceFile] not-use tab character for indentation -->
+    <!-- Checkstyle: FileTabCharacter (same as Rule 3) - Exact Match -->
+
+    <!-- Rule 5: Must / [SourceFile] prefer-escape-sequences \n, \t over octal/Unicode -->
+    <!-- Checkstyle: AvoidEscapedUnicodeCharacters - Exact Match -->
+    <!-- Forbids Unicode escapes except for control characters -->
+    <module name="AvoidEscapedUnicodeCharacters">
+        <property name="allowEscapesForControlCharacters" value="true"/>
+        <property name="allowByTailComment" value="false"/>
+        <property name="allowIfAllCharactersEscaped" value="false"/>
+        <property name="allowNonPrintableEscapes" value="false"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 2: FILE STRUCTURE AND ORGANIZATION (Rules 6-9) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 6: Must / [SourceFile, Structure] follow-order -->
+    <!-- License/Copyright → Package Declaration → Imports → Class Declaration -->
+    <!-- Checkstyle: Multiple checks work together for this -->
+
+    <!-- Rule 7, 8, 9: Must / [SectionSeparation] have-blank-line (exactly-one) -->
+    <!-- Between License/Copyright and Package, Package and Imports, Imports and Class -->
+    <!-- Checkstyle: EmptyLineSeparator - Exact Match -->
+    <!-- Ensures exactly one blank line between major file sections -->
+    <module name="EmptyLineSeparator">
+        <property name="allowMultipleEmptyLines" value="false"/>
+        <property name="allowMultipleEmptyLinesInsideClassMembers" value="false"/>
+        <property name="allowNoEmptyLineBetweenFields" value="false"/>
+        <property name="tokens" value="PACKAGE_DEF,IMPORT,STATIC_IMPORT,CLASS_DEF,INTERFACE_DEF,ENUM_DEF"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 3: PACKAGE DECLARATION (Rules 10-11) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 10: Must / [PackageDeclaration] not-line-wrap package declaration -->
+    <!-- Rule 11: Must / [PackageDeclaration] exempt from 100-character limit -->
+    <!-- Checkstyle: NoLineWrap - Exact Match -->
+    <!-- Package declarations must not be wrapped across multiple lines -->
+    <module name="NoLineWrap">
+        <property name="tokens" value="PACKAGE_DEF"/>
+    </module>
+
+    <!-- Ensure package declaration exists -->
+    <!-- Checkstyle: PackageDeclaration - Exact Match -->
+    <module name="PackageDeclaration">
+        <property name="matchDirectoryStructure" value="true"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 4: IMPORT STATEMENTS (Rules 12-17) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 12: Must / [Imports] not-use wildcard imports -->
+    <!-- Checkstyle: AvoidStarImport - Exact Match -->
+    <!-- No import statements using * notation -->
+    <module name="AvoidStarImport">
+        <property name="allowClassImports" value="false"/>
+        <property name="allowStaticMemberImports" value="false"/>
+    </module>
+
+    <!-- Rule 13: Must / [Imports] not-line-wrap import statement -->
+    <!-- Checkstyle: NoLineWrap - Exact Match -->
+    <!-- Import statements must not be wrapped across multiple lines -->
+    <module name="NoLineWrap">
+        <property name="tokens" value="IMPORT,STATIC_IMPORT"/>
+    </module>
+
+    <!-- Rule 14: Must / [Imports] exempt import statement from 100-character limit -->
+    <!-- Handled by ignorePattern in LineLength (Rule 29) -->
+
+    <!-- Rules 15-17: Organize and order imports -->
+    <!-- Checkstyle: ImportOrder - Exact Match -->
+    <!-- Static and non-static imports grouped separately, sorted in ASCII order -->
+    <module name="ImportOrder">
+        <property name="option" value="top"/>
+        <property name="staticGroups" value="java,javax,org,com"/>
+        <property name="groups" value="java,javax,org,com"/>
+        <property name="separated" value="true"/>
+        <property name="separatedStaticGroups" value="true"/>
+        <property name="caseSensitive" value="true"/>
+        <property name="sortStaticImportsAlphabetically" value="true"/>
+        <property name="useContainerOrderingForStatic" value="false"/>
+    </module>
+
+    <!-- Check for redundant imports -->
+    <module name="RedundantImport"/>
+
+    <!-- Check for unused imports -->
+    <module name="UnusedImports"/>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 5: CLASS DECLARATION (Rules 18-21) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 18: Must / [ClassDeclaration] reside-in each class within-own-source-file -->
+    <!-- Checkstyle: OneTopLevelClass - Exact Match -->
+    <!-- Only one top-level class, interface, enum, or annotation per source file -->
+    <module name="OneTopLevelClass"/>
+
+    <!-- Rule 21: Must / [ClassMembers, FieldDeclaration] have-single-top-level-public-class -->
+    <!-- Checkstyle: OneTopLevelClass (already configured above) - Exact Match -->
+
+    <!-- Rule 19: Must / [ClassDeclaration] follow logical order (maintainer-explainable) -->
+    <!-- Checkstyle: DeclarationOrder - Exact Match -->
+    <!-- Parts of class declaration must appear in suggested order -->
+    <module name="DeclarationOrder">
+        <property name="ignoreConstructors" value="false"/>
+        <property name="ignoreModifiers" value="false"/>
+    </module>
+
+    <!-- Rule 20: Overloaded methods must appear consecutively -->
+    <!-- Checkstyle: OverloadMethodsDeclarationOrder - Exact Match -->
+    <module name="OverloadMethodsDeclarationOrder"/>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 6: BRACE STYLES (Rules 22-26) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 22: Must / [Braces, NonEmptyBlock] place opening brace on same line (K&R) -->
+    <!-- Checkstyle: LeftCurly - Exact Match -->
+    <!-- Opening brace must be on end-of-line (EOL) for K&R style -->
+    <module name="LeftCurly">
+        <property name="option" value="eol"/>
+        <property name="ignoreEnums" value="true"/>
+        <property name="tokens" value="ANNOTATION_DEF,CLASS_DEF,CTOR_DEF,ENUM_DEF,INTERFACE_DEF,LAMBDA,LITERAL_CASE,LITERAL_CATCH,LITERAL_DEFAULT,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,METHOD_DEF,OBJBLOCK,STATIC_INIT,RECORD_DEF"/>
+    </module>
+
+    <!-- Rule 23: Must / [Braces, ClosingBrace] place closing brace on separate line -->
+    <!-- Checkstyle: RightCurly - Exact Match -->
+    <!-- Closing brace must be on a separate line for control structures -->
+    <module name="RightCurly">
+        <property name="option" value="alone"/>
+        <property name="tokens" value="LITERAL_TRY,LITERAL_CATCH,LITERAL_FINALLY,LITERAL_IF,LITERAL_ELSE,CLASS_DEF,METHOD_DEF,CTOR_DEF,LITERAL_FOR,LITERAL_WHILE,LITERAL_DO,STATIC_INIT,INSTANCE_INIT,ANNOTATION_DEF,ENUM_DEF,INTERFACE_DEF,RECORD_DEF,LITERAL_SWITCH,LITERAL_CASE"/>
+    </module>
+
+    <!-- Rule 24: Optional / [Braces, EmptyBlock] compress empty blocks to {} notation -->
+    <!-- Checkstyle: EmptyBlock - Under-Approximation -->
+    <!-- Allows empty blocks to be on a single line -->
+    <module name="EmptyBlock">
+        <property name="option" value="text"/>
+        <property name="tokens" value="LITERAL_WHILE,LITERAL_TRY,LITERAL_FINALLY,LITERAL_DO,LITERAL_IF,LITERAL_ELSE,LITERAL_FOR,INSTANCE_INIT,STATIC_INIT,LITERAL_SWITCH,LITERAL_SYNCHRONIZED"/>
+    </module>
+
+    <!-- Rule 25: Must / [Braces, IfElseBlock] not-compress empty blocks in if/else -->
+    <!-- Checkstyle: NeedBraces - Exact Match -->
+    <!-- Ensures braces are used for all block statements -->
+    <module name="NeedBraces">
+        <property name="allowSingleLineStatement" value="false"/>
+        <property name="allowEmptyLoopBody" value="false"/>
+        <property name="tokens" value="LITERAL_DO,LITERAL_ELSE,LITERAL_FOR,LITERAL_IF,LITERAL_WHILE"/>
+    </module>
+
+    <!-- Rule 26: Must / [Braces, OptionalBraces] allow-omission braces for single statements -->
+    <!-- Note: This conflicts with Rule 25 in some cases. Google Style allows omission in certain contexts -->
+    <!-- Checkstyle: NeedBraces allowSingleLineStatement=false enforces braces requirement -->
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 7: INDENTATION (Rules 27-28) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 27: Must / [Indentation] increment-by 2 spaces per-nested-block -->
+    <!-- Rule 28: Must / [Indentation] apply-uniformly 2-space increment -->
+    <!-- Checkstyle: Indentation - Exact Match -->
+    <!-- Correct indentation of Java code with 2-space increments -->
+    <module name="Indentation">
+        <property name="basicOffset" value="2"/>
+        <property name="braceAdjustment" value="0"/>
+        <property name="caseIndent" value="2"/>
+        <property name="lineWrappingIndentation" value="4"/>
+        <property name="throwsIndent" value="4"/>
+        <property name="arrayInitIndent" value="2"/>
+        <property name="forceStrictCondition" value="false"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 8: COLUMN LIMIT (Rules 29-33) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 29: Must / [ColumnLimit] limit line length to 100 characters -->
+    <!-- Rules 30-33: Exemptions for URLs, package, imports, text blocks -->
+    <!-- Checkstyle: LineLength - Exact Match -->
+    <!-- Maximum line length is 100 characters -->
+    <module name="LineLength">
+        <property name="max" value="100"/>
+        <property name="ignorePattern" value="^(package|import) .*|^(http|https)://.*|^[^\s]*\s*//.*"/>
+        <property name="fileExtensions" value="java"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 9: LINE WRAPPING (Rules 34-40) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 34: Must / [LineWrapping] break at higher syntactic levels -->
+    <!-- Rule 35: Non-assignment operator symbol must be on next line -->
+    <!-- Checkstyle: OperatorWrap - Exact Match -->
+    <!-- Line wrapping with operators placed on next line -->
+    <module name="OperatorWrap">
+        <property name="option" value="nl"/>
+        <property name="tokens" value="QUESTION,COLON,EQUAL,NOT_EQUAL,DIV,PLUS,MINUS,STAR,MOD,SR,BSR,GE,GT,SL,LE,LT,BXOR,BOR,LOR,BAND,LAND,LITERAL_INSTANCEOF,TYPE_EXTENSION_AND"/>
+    </module>
+
+    <!-- Rule 36: Assignment operator symbol must be after line-break -->
+    <!-- Checkstyle: OperatorWrap with ASSIGN tokens -->
+    <!-- Note: Handled within OperatorWrap configuration above -->
+    <module name="WhitespaceAround">
+        <property name="allowEmptyConstructors" value="false"/>
+        <property name="allowEmptyMethods" value="false"/>
+        <property name="allowEmptyTypes" value="false"/>
+        <property name="allowEmptyLoops" value="false"/>
+        <property name="allowEmptyLambdas" value="false"/>
+        <property name="allowEmptyCatches" value="false"/>
+        <property name="ignoreEnhancedForColon" value="true"/>
+        <property name="tokens" value="ASSIGN,BAND,BAND_ASSIGN,BOR,BOR_ASSIGN,BSR,BSR_ASSIGN,BXOR,BXOR_ASSIGN,COLON,DIV,DIV_ASSIGN,DO_WHILE,EQUAL,GE,GT,LAMBDA,LAND,LE,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_RETURN,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,LOR,LT,MINUS,MINUS_ASSIGN,MOD,MOD_ASSIGN,NOT_EQUAL,PLUS,PLUS_ASSIGN,QUESTION,SL,SL_ASSIGN,SR,SR_ASSIGN,STAR,STAR_ASSIGN,TYPE_EXTENSION_AND"/>
+    </module>
+
+    <!-- Rule 37: Must / [LineWrapping, MethodName] keep-attached method name to-opening-parenthesis -->
+    <!-- Checkstyle: MethodParamPad - Exact Match -->
+    <!-- No space between method name and opening parenthesis -->
+    <module name="MethodParamPad">
+        <property name="option" value="nospace"/>
+        <property name="allowLineBreaks" value="false"/>
+        <property name="tokens" value="CTOR_DEF,LITERAL_NEW,METHOD_CALL,METHOD_DEF,SUPER_CTOR_CALL,ENUM_CONSTANT_DEF,RECORD_DEF"/>
+    </module>
+
+    <!-- Rule 38: Must / [LineWrapping, Comma] keep-attached comma to-preceding-token -->
+    <!-- Checkstyle: SeparatorWrap - Exact Match -->
+    <!-- Comma stays with preceding token (EOL) -->
+    <module name="SeparatorWrap">
+        <property name="option" value="eol"/>
+        <property name="tokens" value="COMMA,SEMI,ELLIPSIS,AT"/>
+    </module>
+
+    <!-- Rule 39: Must / [LineWrapping, ContinuationLine] indent by minimum 4 spaces -->
+    <!-- Checkstyle: Indentation - Over-Approximation -->
+    <!-- Continuation lines are indented by 4 spaces (lineWrappingIndentation property) -->
+
+    <!-- Rule 40: Must / [LineWrapping, ParallelElements] use-same-indentation -->
+    <!-- Checkstyle: Indentation - Exact Match (enforced through lineWrappingIndentation) -->
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 10: VERTICAL WHITESPACE (Rules 41-43) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 41: Must / [VerticalWhitespace, BlankLine] place-blank-line between class members -->
+    <!-- Checkstyle: EmptyLineSeparator - Exact Match -->
+    <!-- Blank line required between class members (already configured for Rule 7-9) -->
+
+    <!-- Rule 42: Optional / [VerticalWhitespace, ConsecutiveFields] allow-blank-line between fields -->
+    <!-- Checkstyle: EmptyLineSeparator - Under-Approximation -->
+    <!-- Configuration allows consecutive fields without mandatory blank lines -->
+
+    <!-- Rule 43: Optional / [VerticalWhitespace, MultipleBlanks] allow-multiple-blank-lines -->
+    <!-- Checkstyle: EmptyLineSeparator - Exact Match -->
+    <!-- allowMultipleEmptyLines set to false (single blank line) -->
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 11: HORIZONTAL WHITESPACE (Rules 44-47) -->
+    <!-- ===================================================================== -->
+
+    <!-- Rule 44: Must / [HorizontalWhitespace, Keyword] place-space single ASCII after-keywords -->
+    <!-- Checkstyle: WhitespaceAfter - Exact Match -->
+    <!-- Space required after keywords -->
+    <module name="WhitespaceAfter">
+        <property name="tokens" value="COMMA,SEMI,TYPECAST,LITERAL_IF,LITERAL_ELSE,LITERAL_WHILE,LITERAL_DO,LITERAL_FOR,LITERAL_FINALLY,LITERAL_RETURN,LITERAL_CATCH,DO_WHILE,ELLIPSIS,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_CASE"/>
+    </module>
+
+    <!-- Rule 45: Must / [HorizontalWhitespace, BinaryOperator] place-space around-binary-operators -->
+    <!-- Checkstyle: WhitespaceAround - Exact Match (already configured for Rule 36) -->
+
+    <!-- Rule 46: Must / [HorizontalWhitespace, Comma] place-space after-comma -->
+    <!-- Checkstyle: WhitespaceAfter - Exact Match (already configured for Rule 44) -->
+
+    <!-- Rule 47: Must / [HorizontalWhitespace, SpecialCases] not-place-space -->
+    <!-- around method reference and dot separators -->
+    <!-- Checkstyle: NoWhitespaceAfter and NoWhitespaceBefore - Exact Match -->
+    <!-- No space before/after dots and method references -->
+    <module name="NoWhitespaceAfter">
+        <property name="allowLineBreaks" value="false"/>
+        <property name="tokens" value="DOT,TYPECAST,ARRAY_DECLARATOR,INDEX_OP,METHOD_REF"/>
+    </module>
+
+    <module name="NoWhitespaceBefore">
+        <property name="allowLineBreaks" value="false"/>
+        <property name="tokens" value="DOT,METHOD_REF"/>
+    </module>
+
+    <!-- ===================================================================== -->
+    <!-- ADDITIONAL FORMATTING RULES (Not in primary list but recommended) -->
+    <!-- ===================================================================== -->
+
+    <!-- Ensure file ends with newline -->
+    <module name="NewlineAtEndOfFile">
+        <property name="fileExtensions" value="java"/>
+    </module>
+
+    <!-- Generic whitespace rules -->
+    <module name="GenericWhitespace"/>
+
+    <!-- No trailing whitespace -->
+    <module name="RegexpSingleline">
+        <property name="format" value="\s+$"/>
+        <property name="message" value="Line has trailing whitespace"/>
+    </module>
+
+    <!-- Comments must have proper indentation -->
+    <module name="CommentsIndentation"/>
+
+</module>

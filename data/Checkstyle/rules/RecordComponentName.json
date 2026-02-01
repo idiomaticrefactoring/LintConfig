@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\nChecks that record component names conform to a specified pattern.", "option": "\nformat, Sets the pattern to match valid identifiers., Pattern, \"^[a-z][a-zA-Z0-9]*$\""}}

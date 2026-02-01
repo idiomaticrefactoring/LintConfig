@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks nested (internal) classes/interfaces are declared at the bottom of the\nprimary (top-level) class after all init and static init blocks,\nmethod, constructor and field declarations.", "option": ""}}

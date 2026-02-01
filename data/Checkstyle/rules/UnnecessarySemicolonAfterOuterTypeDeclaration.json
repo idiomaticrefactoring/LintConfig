@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks if unnecessary semicolon is used after type declaration.", "option": "\ntokens, tokens to check, subset of tokens\n\nCLASS_DEF\n,\nINTERFACE_DEF\n,\nENUM_DEF\n,\nANNOTATION_DEF\n,\nRECORD_DEF\n.\n,\n\nCLASS_DEF\n,\nINTERFACE_DEF\n,\nENUM_DEF\n,\nANNOTATION_DEF\n,\nRECORD_DEF\n.\n"}}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<config>
+  <!-- Root Checker module for Checkstyle configuration -->
+
+  <!-- ===================================================================== -->
+  <!-- CODING RULE 1: Package declarations must not be line-wrapped -->
+  <!-- ===================================================================== -->
+  <!-- Coding Rule: Must / [PackageDeclaration] Not LineWrapped / PackageDeclaration -->
+  <!--
+    This rule ensures that package declarations are written on a single line
+    without line wrapping. Package declarations should be concise and kept on
+    one line for readability and convention compliance.
+  -->
+  <module name="NoLineWrap">
+    <!--
+      Checkstyle Rule: NoLineWrap
+      Description: Checks that chosen statements are not line-wrapped.
+
+      Coverage Classification: EXACT MATCH
+      - Checks exactly the same violations as the coding rule
+      - Restricts wrapping of PACKAGE_DEF tokens by default
+      - Ensures package declarations are kept on a single line
+    -->
+    <property name="tokens" value="PACKAGE_DEF"/>
+  </module>
+
+  <!-- ===================================================================== -->
+  <!-- CODING RULE 2: Package declarations are not subject to 100-column limit -->
+  <!-- ===================================================================== -->
+  <!-- Coding Rule: Optional / [PackageDeclaration] Not ConstrainedBy (ColumnLimit: 100) / PackageDeclaration -->
+  <!--
+    This rule explicitly excludes package declarations from the 100-column
+    line length limit. Package declarations may exceed 100 columns without
+    violating this constraint. The LineLength rule's ignorePattern is
+    configured to skip package declarations.
+  -->
+  <module name="LineLength">
+    <!--
+      Checkstyle Rule: LineLength
+      Description: Checks for long lines.
+
+      Coverage Classification: OVER-APPROXIMATION
+      - Checks for line length violations with a configurable maximum
+      - The ignorePattern property explicitly excludes package declarations
+      - By default, the ignorePattern already includes "^package .*" pattern
+      - This means package declarations are exempt from the line length check
+
+      Configuration Details:
+      - max: 100 (enforces 100-column limit for non-package lines)
+      - ignorePattern: "^(package|import) .*" (excludes package and import statements)
+      - This configuration ensures package declarations are not constrained
+        by the 100-column limit while other code adheres to it
+    -->
+    <property name="max" value="100"/>
+    <property name="ignorePattern" value="^(package|import) .*"/>
+  </module>
+
+</config>

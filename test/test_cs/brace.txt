@@ -1,0 +1,5 @@
+"4.1.1 Use of optional braces            
+                                                                                                                                                                       
+    Braces are used with if, else, for, do and while statements, even when the body is empty or contains only a single statement.                                      
+                                                                                                                                                                       
+    Other optional braces, such as those in a lambda expression, remain optional."

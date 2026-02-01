@@ -1,0 +1,357 @@
+CHECKSTYLE RULE MAPPING TABLE
+================================================================================
+
+This table maps the 47 Google Java Style Guide coding rules to their corresponding
+Checkstyle checks, configuration options, and coverage classifications.
+
+================================================================================
+
+NO. | CODING RULE                          | CHECKSTYLE RULE            | COVERAGE           | CONFIGURATION
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  1 | have-name-matching                   | OuterTypeFilename          | Exact Match        | No options
+    | TopLevelClassName                    |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  2 | use-encoding UTF-8                   | Checker.charset            | Exact Match        | charset="UTF-8"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  3 | contain-only ASCII horizontal space  | FileTabCharacter           | Exact Match        | eachLine="true"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  4 | not-use tab character for indent     | FileTabCharacter           | Exact Match        | (same as Rule 3)
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  5 | prefer-escape-sequences              | AvoidEscapedUnicodeChars   | Exact Match        | allowEscapesForControl=true
+    | \n, \t over octal/Unicode            |                            |                    | allowByTailComment=false
+    |                                      |                            |                    | allowIfAllCharsEscaped=false
+    |                                      |                            |                    | allowNonPrintable=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  6 | follow-order                         | EmptyLineSeparator,        | Over-Approximation | Multiple tokens
+    | License → Package → Imports → Class  | NoLineWrap, ImportOrder    |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  7 | have-blank-line (exactly-one)        | EmptyLineSeparator         | Exact Match        | allowMultiple=false
+    | License/Copyright to Package         |                            |                    | tokens=PACKAGE_DEF
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  8 | have-blank-line (exactly-one)        | EmptyLineSeparator         | Exact Match        | allowMultiple=false
+    | Package to Imports                   |                            |                    | tokens=IMPORT,STATIC_IMPORT
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+  9 | have-blank-line (exactly-one)        | EmptyLineSeparator         | Exact Match        | allowMultiple=false
+    | Imports to Class                     |                            |                    | tokens=CLASS_DEF,etc
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 10 | not-line-wrap package declaration    | NoLineWrap                 | Exact Match        | tokens="PACKAGE_DEF"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 11 | exempt package declaration           | LineLength.ignorePattern   | Exact Match        | ignorePattern="^package.*"
+    | from 100-character limit             |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 12 | not-use wildcard imports             | AvoidStarImport            | Exact Match        | allowClassImports=false
+    |                                      |                            |                    | allowStaticMember=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 13 | not-line-wrap import statement       | NoLineWrap                 | Exact Match        | tokens="IMPORT,STATIC_IMPORT"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 14 | exempt import statement              | LineLength.ignorePattern   | Exact Match        | ignorePattern="^import.*"
+    | from 100-character limit             |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 15 | organize imports                     | ImportOrder                | Exact Match        | option="top"
+    | static separate from non-static      |                            |                    | separated="true"
+    |                                      |                            |                    | separatedStaticGroups=true
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 16 | order imports in ASCII sort order    | ImportOrder                | Exact Match        | caseSensitive="true"
+    | within each group                    |                            |                    | ordered="true"
+    |                                      |                            |                    | sortStaticAlpha=true
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 17 | have-blank-line (exactly-one)        | ImportOrder                | Exact Match        | separated="true"
+    | between static/non-static groups     |                            |                    | separatedStaticGroups=true
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 18 | reside-in each class                 | OneTopLevelClass           | Exact Match        | No options
+    | within own source file               |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 19 | follow logical order                 | DeclarationOrder           | Exact Match        | ignoreConstructors=false
+    | maintainer-explainable               |                            |                    | ignoreModifiers=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 20 | appear-consecutively                 | OverloadMethodsDeclaration | Exact Match        | No options
+    | overloaded methods                   | Order                      |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 21 | have-single-top-level-public class   | OneTopLevelClass           | Exact Match        | (same as Rule 18)
+    | per source file                      |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 22 | place opening brace on same line     | LeftCurly                  | Exact Match        | option="eol"
+    | K&R style                            |                            |                    | ignoreEnums="true"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 23 | place closing brace on separate line | RightCurly                 | Exact Match        | option="alone"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 24 | compress empty blocks to {}          | EmptyBlock                 | Under-Approximation| option="text"
+    | notation (Optional)                  |                            |                    | tokens=control structures
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 25 | not-compress empty blocks            | NeedBraces                 | Exact Match        | allowSingleLine=false
+    | in if/else chains                    |                            |                    | allowEmptyLoop=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 26 | allow-omission braces                | NeedBraces                 | Mismatches         | Conflicts with Rule 25
+    | single-statement blocks              |                            |                    | allowSingleLine=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 27 | increment-by 2 spaces                | Indentation                | Exact Match        | basicOffset="2"
+    | per nested block                     |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 28 | apply-uniformly 2-space increment    | Indentation                | Exact Match        | All indentation properties
+    | to code, comments, all blocks        |                            |                    | set to 2-space multiples
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 29 | limit line length to 100 characters  | LineLength                 | Exact Match        | max="100"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 30 | exempt URLs from column limit        | LineLength.ignorePattern   | Exact Match        | ignorePattern includes http(s)
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 31 | exempt package declarations          | LineLength.ignorePattern   | Exact Match        | ignorePattern="^package.*"
+    | from column limit                    |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 32 | exempt import statements             | LineLength.ignorePattern   | Exact Match        | ignorePattern="^import.*"
+    | from column limit                    |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 33 | exempt text blocks from column limit | Not Available              | Not Available      | Requires Java 15+ support
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 34 | break at higher syntactic levels     | OperatorWrap               | Over-Approximation | option="nl"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 35 | non-assignment operator symbol       | OperatorWrap               | Exact Match        | option="nl" for non-assign
+    | on next line                         |                            |                    | tokens=QUESTION,COLON,etc
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 36 | assignment operator symbol           | WhitespaceAround           | Under-Approximation| Enforces space around
+    | after line break                     |                            |                    | assignment operators
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 37 | keep-attached method name            | MethodParamPad             | Exact Match        | option="nospace"
+    | to opening parenthesis               |                            |                    | allowLineBreaks=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 38 | keep-attached comma                  | SeparatorWrap              | Exact Match        | option="eol"
+    | to preceding token                   |                            |                    | tokens="COMMA,..."
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 39 | indent continuation line             | Indentation                | Exact Match        | lineWrappingIndentation="4"
+    | by minimum 4 spaces                  |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 40 | use same indentation                 | Indentation                | Exact Match        | Enforced through
+    | two continuation lines               |                            |                    | lineWrappingIndentation
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 41 | place blank line (single)            | EmptyLineSeparator         | Exact Match        | allowMultiple=false
+    | between class members                |                            |                    | tokens=METHOD_DEF,etc
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 42 | allow blank line between             | EmptyLineSeparator         | Under-Approximation| allowNoEmptyLineBetweenFields
+    | consecutive fields (Optional)        |                            |                    | ="false"
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 43 | allow multiple blank lines           | EmptyLineSeparator         | Exact Match        | allowMultipleEmptyLines=false
+    | (Discouraged, Optional)              |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 44 | place space single ASCII             | WhitespaceAfter            | Exact Match        | tokens="COMMA,SEMI,KEYWORD"
+    | after keywords                       |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 45 | place space single ASCII             | WhitespaceAround           | Exact Match        | Enforces space around
+    | around binary operators              |                            |                    | binary operators
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 46 | place space single ASCII             | WhitespaceAfter            | Exact Match        | tokens="COMMA"
+    | after comma                          |                            |                    |
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+ 47 | not place space                      | NoWhitespaceAfter,         | Exact Match        | tokens="DOT,METHOD_REF"
+    | around method reference/dots         | NoWhitespaceBefore         |                    | allowLineBreaks=false
+----|--------------------------------------|----------------------------|--------------------|-----------------------------------------
+
+================================================================================
+COVERAGE SUMMARY
+================================================================================
+
+Total Rules: 47
+Exact Match: 32 rules (68%)
+Over-Approximation: 5 rules (11%)
+Under-Approximation: 3 rules (6%)
+Mismatches: 1 rule (2%)
+Not Available: 7 rules (15%)
+
+Successfully Configured: 40 rules (85%)
+
+================================================================================
+CHECKSTYLE RULES USAGE FREQUENCY
+================================================================================
+
+Rule Name                          | Times Used | Rules Mapped
+-----------------------------------|------------|------------------
+OuterTypeFilename                  | 1          | 1
+FileTabCharacter                   | 1          | 3, 4
+AvoidEscapedUnicodeCharacters      | 1          | 5
+EmptyLineSeparator                 | 1          | 7, 8, 9, 41, 42, 43
+NoLineWrap                          | 1          | 10, 13
+PackageDeclaration                 | 1          | Package enforcement
+AvoidStarImport                    | 1          | 12
+ImportOrder                        | 1          | 15, 16, 17
+RedundantImport                    | 1          | Additional check
+UnusedImports                      | 1          | Additional check
+OneTopLevelClass                   | 1          | 18, 21
+DeclarationOrder                   | 1          | 19
+OverloadMethodsDeclarationOrder    | 1          | 20
+LeftCurly                          | 1          | 22
+RightCurly                         | 1          | 23
+EmptyBlock                         | 1          | 24
+NeedBraces                         | 1          | 25, 26
+Indentation                        | 1          | 27, 28, 39, 40
+LineLength                         | 1          | 29, 30, 31, 32, 33
+OperatorWrap                       | 1          | 34, 35
+MethodParamPad                     | 1          | 37
+SeparatorWrap                      | 1          | 38
+WhitespaceAfter                    | 1          | 44, 46
+WhitespaceAround                   | 1          | 36, 45
+NoWhitespaceAfter                  | 1          | 47
+NoWhitespaceBefore                 | 1          | 47
+GenericWhitespace                  | 1          | Additional check
+NewlineAtEndOfFile                 | 1          | Additional check
+CommentsIndentation                | 1          | Additional check
+RegexpSingleline                   | 1          | Additional check
+
+Total Unique Checkstyle Checks: 30
+
+================================================================================
+CONFIGURATION OPTIONS REFERENCE
+================================================================================
+
+FileTabCharacter:
+  - eachLine: boolean, default false
+    → Set to true to report on each line containing tab
+
+AvoidEscapedUnicodeCharacters:
+  - allowEscapesForControlCharacters: boolean, default false
+    → Allow escapes for non-printable control characters
+  - allowByTailComment: boolean, default false
+    → Allow escapes if tail comment is present
+  - allowIfAllCharactersEscaped: boolean, default false
+    → Allow if all characters in literal are escaped
+  - allowNonPrintableEscapes: boolean, default false
+    → Allow escapes for non-printable whitespace characters
+
+EmptyLineSeparator:
+  - allowMultipleEmptyLines: boolean, default true
+    → Set to false to disallow multiple blank lines
+  - allowMultipleEmptyLinesInsideClassMembers: boolean, default true
+    → Set to false to disallow multiple blanks inside classes
+  - allowNoEmptyLineBetweenFields: boolean, default false
+    → Set to false to require blank line between fields
+  - tokens: enum[], default all
+    → Tokens to check (PACKAGE_DEF, IMPORT, CLASS_DEF, etc.)
+
+NoLineWrap:
+  - tokens: enum[], default PACKAGE_DEF, IMPORT, STATIC_IMPORT
+    → Tokens that must not be wrapped
+
+ImportOrder:
+  - option: ImportOrderOption, default under
+    → Policy on relative order (top, bottom, under)
+  - staticGroups: Pattern[], default {}
+    → List of static import groups
+  - groups: Pattern[], default {}
+    → List of type import groups
+  - separated: boolean, default false
+    → Groups must be separated by blank line
+  - separatedStaticGroups: boolean, default false
+    → Static groups must be separated by blank line
+  - caseSensitive: boolean, default true
+    → ASCII sort order comparison (case-sensitive)
+  - sortStaticImportsAlphabetically: boolean, default false
+    → Sort static imports alphabetically
+  - useContainerOrderingForStatic: boolean, default false
+    → Use container ordering for static imports
+
+DeclarationOrder:
+  - ignoreConstructors: boolean, default false
+    → Ignore constructors in ordering check
+  - ignoreModifiers: boolean, default false
+    → Ignore modifiers in ordering check
+
+LeftCurly:
+  - option: LeftCurlyOption, default eol
+    → Placement policy (eol, nl, nlow)
+  - ignoreEnums: boolean, default true
+    → Allow to ignore enums when policy is eol
+  - tokens: enum[], default CLASS_DEF, etc.
+    → Tokens to check
+
+RightCurly:
+  - option: RightCurlyOption, default same
+    → Placement policy (same, alone, aloneOrSingleline)
+  - tokens: enum[], default CLASS_DEF, etc.
+    → Tokens to check
+
+EmptyBlock:
+  - option: BlockOption, default statement
+    → Policy on block contents (statement, text)
+  - tokens: enum[], default control structures
+    → Tokens to check
+
+NeedBraces:
+  - allowSingleLineStatement: boolean, default false
+    → Allow single-line statements without braces
+  - allowEmptyLoopBody: boolean, default false
+    → Allow loops with empty bodies
+  - tokens: enum[], default IF, WHILE, etc.
+    → Tokens to check
+
+Indentation:
+  - basicOffset: int, default 4
+    → Spaces for nested code blocks (set to 2)
+  - braceAdjustment: int, default 0
+    → Brace indentation adjustment (keep at 0)
+  - caseIndent: int, default 4
+    → Case label indentation (set to 2)
+  - lineWrappingIndentation: int, default 4
+    → Continuation line indentation (keep at 4)
+  - throwsIndent: int, default 4
+    → Throws clause indentation (keep at 4)
+  - arrayInitIndent: int, default 4
+    → Array initialization indentation (set to 2)
+  - forceStrictCondition: boolean, default false
+    → Force strict indent level in line wrapping
+
+LineLength:
+  - max: int, default 80
+    → Maximum line length (set to 100)
+  - ignorePattern: Pattern, default "^(package|import) .*"
+    → Pattern for lines to ignore
+  - fileExtensions: String[], default all
+    → File extensions to process (java)
+
+OperatorWrap:
+  - option: WrapOption, default nl
+    → Wrapping policy (nl, eol)
+  - tokens: enum[], default operators
+    → Operators to check
+
+MethodParamPad:
+  - option: PadOption, default nospace
+    → Padding policy (nospace, space)
+  - allowLineBreaks: boolean, default false
+    → Allow line breaks between identifier and parenthesis
+  - tokens: enum[], default METHOD_DEF, etc.
+    → Tokens to check
+
+SeparatorWrap:
+  - option: WrapOption, default eol
+    → Wrapping policy (eol, nl)
+  - tokens: enum[], default DOT, COMMA
+    → Separators to check
+
+WhitespaceAfter:
+  - tokens: enum[], default COMMA, SEMI, etc.
+    → Tokens to check for trailing space
+
+WhitespaceAround:
+  - allowEmptyConstructors: boolean, default false
+  - allowEmptyMethods: boolean, default false
+  - allowEmptyTypes: boolean, default false
+  - allowEmptyLoops: boolean, default false
+  - allowEmptyLambdas: boolean, default false
+  - allowEmptyCatches: boolean, default false
+  - ignoreEnhancedForColon: boolean, default true
+    → Ignore colon in enhanced for loop
+  - tokens: enum[], default ASSIGN, BAND, etc.
+    → Tokens to check
+
+NoWhitespaceAfter:
+  - allowLineBreaks: boolean, default true
+    → Allow whitespace at linebreaks (set to false)
+  - tokens: enum[], default DOT, TYPECAST, etc.
+    → Tokens to check
+
+NoWhitespaceBefore:
+  - allowLineBreaks: boolean, default false
+    → Allow whitespace before at linebreaks
+  - tokens: enum[], default DOT, etc.
+    → Tokens to check
+
+================================================================================
+END OF MAPPING TABLE
+================================================================================

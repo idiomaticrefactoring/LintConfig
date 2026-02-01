@@ -1,0 +1,1 @@
+﻿Package declarationThe package declaration is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package declarations.

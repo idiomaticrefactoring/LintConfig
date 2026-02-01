@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<!--
+  Checkstyle Configuration for Coding Standard 4.1.1: Use of Optional Braces
+
+  Coding Standard:
+  Braces are used with if, else, for, do and while statements, even when the body
+  is empty or contains only a single statement. Other optional braces, such as those
+  in a lambda expression, remain optional.
+-->
+
+<module name="Checker">
+  <module name="TreeWalker">
+
+    <!--
+      Checkstyle Rule: NeedBraces
+
+      Atomic Rules Covered:
+      1. Must / [Braces] / Surround / [if, else, for, do, while statements]
+      2. Must / [Braces] / Surround / [if, else, for, do, while statements with empty body]
+      3. Must / [Braces] / Surround / [if, else, for, do, while statements with single statement body]
+
+      Configuration Coverage: EXACT MATCH
+
+      This module enforces that all if, else, for, do, and while statements must
+      have braces, even when:
+      - The body is empty
+      - The body contains only a single statement
+
+      Lambda expressions are naturally excluded and remain optional,
+      as per the coding standard.
+    -->
+    <module name="NeedBraces">
+      <property name="tokens" value="LITERAL_IF,LITERAL_ELSE,LITERAL_FOR,LITERAL_WHILE,LITERAL_DO"/>
+      <property name="allowEmptyLoopBody" value="false"/>
+      <property name="allowSingleLineStatement" value="false"/>
+    </module>
+
+  </module>
+</module>

@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks for the number of types declared at the outer\n(or root) level in a file.\n\n\nRationale: It is considered good practice to only define one outer\ntype per file.", "option": "\nmax, Specify the maximum number of outer types allowed., int, 1"}}

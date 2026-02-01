@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks that a local variable is declared and/or assigned, but not used.\nDoesn't support pattern variables yet.\nDoesn't check array components as array\ncomponents are classified as different kind of variables by JLS.", "option": ""}}

@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\nDisallows assignment of parameters.\n\nRationale: Parameter assignment is often considered poor programming\npractice. Forcing developers to declare parameters as final is often\nonerous. Having a check ensure that parameters are never assigned\nwould give the best of both worlds.", "option": ""}}

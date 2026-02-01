@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks line wrapping with separators.", "option": "\noption, Specify policy on how to wrap lines., WrapOption, eol\ntokens, tokens to check, subset of tokens\n\nDOT\n,\nCOMMA\n,\nSEMI\n,\nELLIPSIS\n,\nAT\n,\nLPAREN\n,\nRPAREN\n,\nARRAY_DECLARATOR\n,\nRBRACK\n,\nMETHOD_REF\n.\n,\n\nDOT\n,\nCOMMA\n.\n"}}

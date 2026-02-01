@@ -1,0 +1,26 @@
+
+
+1. coding standard is a raw string
+
+Use LintConfig skill  in /Users/zhangzejunzhangzejun/.claude/skills to generate    
+  Checkstyle configuration for "4.1.1 Use of optional braces                                                                                                           
+    Braces are used with if, else, for, do and while statements, even when the body is empty or contains only a single statement.                                      
+                                                                                                                                                                       
+    Other optional braces, such as those in a lambda expression, remain optional."
+
+
+
+
+2. coding standard is in txt file
+
+Use LintConfig skill  in /Users/zhangzejunzhangzejun/.claude/skills to                                                                                               
+    generate Checkstyle configuration for /Users/zhangzejunzhangzejun/.claude/sk                                                                                       
+    ills/LintConfig/test_cs/linebreak.txt
+
+
+
+3. lint code using the configuration
+/Users/zhangzejunzhangzejun/Downloads/ArrayCombination.java use the configuration to check it
+
+
+4. you can invoke checkstyle command /Users/zhangzejunzhangzejun/Downloads/ArrayCombination.java use the configuration to check it

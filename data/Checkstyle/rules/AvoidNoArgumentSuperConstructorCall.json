@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks if call to superclass constructor without arguments is present.\nSuch invocation is redundant because constructor body implicitly\nbegins with a superclass constructor invocation super();\nSee\nspecification for detailed information.", "option": ""}}

@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nChecks if unnecessary semicolon is used in last resource declaration.", "option": "\nallowWhenNoBraceAfterSemicolon, Allow unnecessary semicolon if closing paren is not on the same line., boolean, true"}}

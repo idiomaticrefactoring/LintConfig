@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] /Users/zhangzejunzhangzejun/Downloads/ArrayCombination.java:24: Line is longer than 100 characters (found 141). [LineLength]
+[ERROR] /Users/zhangzejunzhangzejun/Downloads/ArrayCombination.java:41: Line is longer than 100 characters (found 115). [LineLength]
+Audit done.
+Checkstyle ends with 2 errors.

@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\n\nDetects empty statements (standalone \";\" semicolon).\nEmpty statements often introduce bugs that are hard to spot", "option": ""}}

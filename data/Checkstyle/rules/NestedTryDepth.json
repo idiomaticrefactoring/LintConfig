@@ -1,0 +1,1 @@
+{"rule_name": {"description": "Description\nRestricts nested try-catch-finally blocks to a specified depth.", "option": "\nmax, Specify maximum allowed nesting depth., int, 1"}}
