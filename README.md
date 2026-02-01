@@ -11,7 +11,7 @@ An AI skill that automatically interprets coding standards, configures static an
 - **End-to-End Workflow**: From coding standard → rules → configuration → linting → violation repair suggestions.
 - **Rule Knowledge Base**: Pre-built index and complete information for Linter Rules.
 
-#### Why develop the tool: Reducing AI "Hallucinations" in Configuration
+## Why develop the tool: Reducing AI "Hallucinations" in Configuration
 
 AI-assisted configuration tools, while powerful, can sometimes misinterpret coding standards and generate **incorrect** or **incomplete** configurations.  
 
