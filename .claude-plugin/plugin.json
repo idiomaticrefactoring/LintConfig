@@ -6,5 +6,5 @@
 "name": "idiomaticrefactoring"
 },
   "keywords": ["lint", "configure", "configuration", "linter", "coding standard", "rule", "style guide", "generate"],
-  "skills": ["./.claude/skills/ui-ux-pro-max"]
+  "skills": ["./.claude/skills/LintConfig"]
 }
