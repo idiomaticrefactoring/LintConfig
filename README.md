@@ -18,8 +18,8 @@ An AI skill that automatically interprets coding standards, configures static an
 Install directly in Claude Code with two commands:
 
 ```
-/plugin marketplace add <your-username>/LintConfig
-/plugin install LintConfig@<your-username>/LintConfig
+/plugin marketplace add LintConfig/LintConfig
+/plugin install LintConfig@LintConfig
 ```
 
 ### Manual Installation
