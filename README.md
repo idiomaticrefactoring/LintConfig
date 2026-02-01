@@ -40,13 +40,12 @@ AI may generate an invalid configuration like this:
 Using LintConfig, the correct configuration is produced: 
 ```xml
 <!-- Correct Configuration -->
-
-<!-- CODING RULE 1: Package declarations must not be line-wrapped -->
+<!-- Coding Rule 1: Must / [PackageDeclaration] / Not LineWrapped -->
 <module name="NoLineWrap">
   <property name="tokens" value="PACKAGE_DEF"/>
 </module>
 
-<!-- CODING RULE 2: Package declarations are not subject to the 100-column limit -->
+<!-- Coding Rule 2:  Optional / [PackageDeclaration] / Not ConstrainedBy / [ColumnLimit: 100] -->
 <module name="LineLength">
   <property name="max" value="100"/>
   <property name="ignorePattern" value="^(package|import) .*"/>
