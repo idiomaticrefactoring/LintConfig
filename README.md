@@ -24,7 +24,6 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 
 
 ## Installation
-
 ### Recommended: forced-eval hook
 Add hooks for claude code. ( Although Skills are designed to auto-activate in Claude Code, but in practice, activation is unreliable without explicit hooks. )
 ```
@@ -36,14 +35,23 @@ pnpx claude-skills-cli add-hook
 Install directly in Claude Code with two commands:
 
 ```
-/plugin marketplace add LintConfig/LintConfig
+/plugin marketplace add idiomaticrefactoring/LintConfig
 /plugin install LintConfig@LintConfig
 ```
 
-### Manual Installation
+### Manual Installation (Recommended Installation Way!)
 
 1. Clone or download this repository
 2. Copy the skill to the appropriate skills directory for your platform:
+
+**Example:**
+```bash
+# For Claude Code
+cp -r LintConfig/skills/LintConfig ~/.claude/skills/
+
+# For Cursor
+cp -r LintConfig/skills/LintConfig ~/.cursor/skills/
+```
 
 | Platform | Skills Directory | Activation |
 |----------|-----------------|------------|
@@ -55,14 +63,7 @@ Install directly in Claude Code with two commands:
 | Codex | `~/.codex/skills/` | Use `/lintconfig` command |
 | Gemini | `~/.gemini/skills/` | Auto-activate |
 
-**Example:**
-```bash
-# For Claude Code
-cp -r LintConfig/skills/LintConfig ~/.claude/skills/
 
-# For Cursor
-cp -r LintConfig/skills/LintConfig ~/.cursor/skills/
-```
 
 ### Prerequisites
 
