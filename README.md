@@ -11,6 +11,48 @@ An AI skill that automatically interprets coding standards, configures static an
 - **End-to-End Workflow**: From coding standard → rules → configuration → linting → violation repair suggestions.
 - **Rule Knowledge Base**: Pre-built index and complete information for Linter Rules.
 
+#### Why develop the tool: Reducing AI "Hallucinations" in Configuration
+
+AI-assisted configuration tools, while powerful, can sometimes misinterpret coding standards and generate **incorrect** or **incomplete** configurations.  
+
+**LintConfig** addresses this by:
+
+1. **Compiling coding standards into structured, standardized coding rules**.  
+2. **Checking linter documentation to ensure valid configurations**.
+
+For example, consider a simple Java coding standard:
+
+> **Coding Standard**:  
+> "Package declaration: The package declaration is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package declarations."
+
+AI may generate an invalid configuration like this:
+
+
+
+```xml
+<!-- Wrong Configuration -->
+<module name="PackageDeclaration">
+  <property name="value" value="NotLineWrapped"/>
+</module>
+```
+
+
+Using LintConfig, the correct configuration is produced: 
+```xml
+<!-- Correct Configuration -->
+
+<!-- CODING RULE 1: Package declarations must not be line-wrapped -->
+<module name="NoLineWrap">
+  <property name="tokens" value="PACKAGE_DEF"/>
+</module>
+
+<!-- CODING RULE 2: Package declarations are not subject to the 100-column limit -->
+<module name="LineLength">
+  <property name="max" value="100"/>
+  <property name="ignorePattern" value="^(package|import) .*"/>
+</module>
+```
+
 ## Installation
 
 ### Using Claude Marketplace (Claude Code)
