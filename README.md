@@ -52,10 +52,10 @@ Install directly in Claude Code with two commands:
 **Example:**
 ```bash
 # For Claude Code
-cp -r LintConfig ~/.claude/skills/
+cp -r LintConfig/skills/LintConfig ~/.claude/skills/
 
 # For Cursor
-cp -r LintConfig ~/.cursor/skills/
+cp -r LintConfig/skills/LintConfig ~/.cursor/skills/
 ```
 
 ### Prerequisites
