@@ -69,7 +69,7 @@ Configure Checkstyle for Google Java Style Guide
 ```
 
 ```
-Check this code against our coding standard and suggest fixes
+Check this code at LintConfig/code/ArrayCombination.java against our coding standard at LintConfig/test/test_cs/package_declaration.txt and suggest fixes
 ```
 
 ### Workflow Mode (Slash Command)
@@ -79,14 +79,13 @@ Check this code against our coding standard and suggest fixes
 Use the slash command to invoke the skill:
 
 ```
-/lintconfig Configure Checkstyle for Google Java Style Guide
+/lintconfig Generate a linter configuration that enforces:
+Package declaration
+The package declaration is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package declarations.
 ```
 
 ```
-/lintconfig Generate a linter configuration that enforces:
-- Line length must not exceed 100 characters
-- Package declarations must not be line-wrapped
-- Use 4 spaces for indentation
+/lintconfig Configure Checkstyle for Google Java Style Guide
 ```
 
 ### Workflow Modes
@@ -107,6 +106,7 @@ Full workflow from standard → configuration → linting → repair:
 ```
 Parse this coding standard, configure Checkstyle, lint my code, and suggest fixes:
 [Your coding standard or file path or url]
+[Your lintername]
 [Your code or file path]
 ```
 
