@@ -25,6 +25,12 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 
 ## Installation
 
+### Recommended: forced-eval hook
+Add hooks for claude code. ( Although Skills are designed to auto-activate in Claude Code, but in practice, activation is unreliable without explicit hooks. )
+```
+pnpx claude-skills-cli add-hook
+```
+
 ### Using Claude Marketplace (Claude Code)
 
 Install directly in Claude Code with two commands:
