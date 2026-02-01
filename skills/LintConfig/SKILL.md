@@ -23,10 +23,9 @@ description: A comprehensive skill for interpreting coding standards, configurin
 - **Code** (if possible): "XXX".
 - **CodeFilePath** (if possible): "XXX". 
 
+if `<LinterName>Index.json` does not exist, Invoke prompt at `skills/LintConfig/prompt/Prompt_Prepare_LinterRuleIndex.md` to generate `<LinterName>Index.json` at `skills/LintConfig/data/<LinterName>/`
 
-Invoke prompt at `skills/LintConfig/prompt/Prompt_Prepare_LinterRuleIndex.md` to generate `<LinterName>Index.json` at `skills/LintConfig/data/<LinterName>/`
-
-Invoke prompt at `skills/LintConfig/prompt/Prompt_Prepare_LinterRuleCompleteInformation.md` to generate `<LinterRuleNameCompleteInformation>.json` at `skills/LintConfig/data/<LinterName>/rules/`
+if `<LinterRuleNameCompleteInformation>.json` does not exist, Invoke prompt at `skills/LintConfig/prompt/Prompt_Prepare_LinterRuleCompleteInformation.md` to generate `<LinterRuleNameCompleteInformation>.json` at `skills/LintConfig/data/<LinterName>/rules/`
 
 
 ### Step 2: Formalize Coding Standards into Coding Rules: 
