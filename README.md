@@ -24,75 +24,27 @@ Install directly in Claude Code with two commands:
 
 ### Manual Installation
 
-#### For Claude Code
-
 1. Clone or download this repository
-2. Copy the skill to your Claude skills directory:
-   ```bash
-   cp -r LintConfig ~/.claude/skills/
-   ```
+2. Copy the skill to the appropriate skills directory for your platform:
 
-3. The skill will auto-activate when you request linter configuration or code quality tasks
+| Platform | Skills Directory | Activation |
+|----------|-----------------|------------|
+| Claude Code | `~/.claude/skills/` | Auto-activate |
+| Cursor | `~/.cursor/skills/` | Auto-activate |
+| Windsurf | `~/.windsurf/skills/` | Auto-activate |
+| GitHub Copilot | `~/.copilot/skills/` | Use `/lintconfig` command |
+| OpenCode | `~/.opencode/skills/` | Auto-activate |
+| Codex | `~/.codex/skills/` | Use `/lintconfig` command |
+| Gemini | `~/.gemini/skills/` | Auto-activate |
 
-#### For Cursor
+**Example:**
+```bash
+# For Claude Code
+cp -r LintConfig ~/.claude/skills/
 
-1. Clone or download this repository
-2. Copy the skill to your Cursor skills directory:
-   ```bash
-   cp -r LintConfig ~/.cursor/skills/
-   ```
-
-3. The skill will auto-activate when you request linter configuration or code quality tasks
-
-#### For Windsurf
-
-1. Clone or download this repository
-2. Copy the skill to your Windsurf skills directory:
-   ```bash
-   cp -r LintConfig ~/.windsurf/skills/
-   ```
-
-3. The skill will auto-activate when you request linter configuration or code quality tasks
-
-#### For GitHub Copilot
-
-1. Clone or download this repository
-2. Copy the skill to your Copilot skills directory:
-   ```bash
-   cp -r LintConfig ~/.copilot/skills/
-   ```
-
-3. Use the slash command `/lintconfig` to invoke the skill
-
-#### For OpenCode
-
-1. Clone or download this repository
-2. Copy the skill to your OpenCode skills directory:
-   ```bash
-   cp -r LintConfig ~/.opencode/skills/
-   ```
-
-3. The skill will auto-activate when you request linter configuration or code quality tasks
-
-#### For Codex
-
-1. Clone or download this repository
-2. Copy the skill to your Codex skills directory:
-   ```bash
-   cp -r LintConfig ~/.codex/skills/
-   ```
-
-3. Use the slash command `/lintconfig` to invoke the skill
-
-#### For Gemini
-
-1. Clone or download this repository
-2. Copy the skill to your Gemini skills directory:
-   ```bash
-   cp -r LintConfig ~/.gemini/skills/
-   ```
-
-3. The skill will auto-activate when you request linter configuration or code quality tasks
+# For Cursor
+cp -r LintConfig ~/.cursor/skills/
+```
 
 ### Prerequisites
 
