@@ -20,7 +20,7 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 1. **Compiling coding standards into structured, standardized coding rules**.  
 2. **Checking linter documentation to ensure valid configurations**.
 
-![Wrong vs Correct Checkstyle Configuration (Package Declaration)](data/example.png)
+![Wrong vs Correct Checkstyle Configuration (Package Declaration)](data/example2.png)
 
 
 ## Installation
