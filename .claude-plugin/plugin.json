@@ -1,6 +1,6 @@
 {
 "name": "LintConfig",
-"description": "An AI skill that automatically configures linters from coding standards and enforces code quality across multiple platforms",
+"description": "A comprehensive skill for interpreting coding standards, configuring static analysis and linting tools, executing lint checks, and assisting with code quality improvement. The skill is designed to support both configuration-only workflows (e.g., generate a linter config) and end-to-end quality enforcement workflows (e.g., check this code against our coding standard and suggest fixes).",
 "version": "1.0.0",
 "author": {
 "name": "idiomaticrefactoring"
