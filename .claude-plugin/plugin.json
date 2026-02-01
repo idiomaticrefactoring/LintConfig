@@ -1,0 +1,8 @@
+{
+"name": "LintConfig",
+"description": "An AI skill that automatically configures linters from coding standards and enforces code quality across multiple platforms",
+"version": "1.0.0",
+"author": {
+"name": "idiomaticrefactoring"
+}
+}
