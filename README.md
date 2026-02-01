@@ -7,7 +7,7 @@ An AI skill that automatically interprets coding standards, configures static an
 - **Automatic Coding Standard Parsing**: Converts natural language coding standards into formalized coding rules using a structured grammar. 
 - **Intelligent Linter Configuration**: Automatically maps coding rules to appropriate linter rules and generates validated configuration files.
 - **Multi-Linter Support**: Currently supports Checkstyle (Java) with extensible architecture for additional linters.
-- **Coverage Analysis**: Classifies configuration coverage (Exact Match, Over-Approximation, Under-Approximation) to help you understand how well the linter configuration aligns with your coding standards
+- **Coverage Analysis**: Classifies configuration coverage (Exact Match, Over-Approximation, Under-Approximation) to help you understand how well the linter configuration aligns with your coding standards.
 - **End-to-End Workflow**: From coding standard → rules → configuration → linting → violation repair suggestions.
 - **Rule Knowledge Base**: Pre-built index and complete information for Linter Rules.
 

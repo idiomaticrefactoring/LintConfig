@@ -37,9 +37,9 @@ Show coding rules to users.
 
 
 ### Step 3: Configure Linter Configuration for All Coding Rules in Linter Format; 
-After completing Step 2, then you must **Must initiate a separate LLM call**, **strictly follows the dedicated prompt** at `skills/LintConfig/prompt/Prompt_Configure_Linter.md`.  This isolated step has the single purpose of configure linter for the given coding rules. After finish it, tell the user of the exact file path where the configuration has been saved.
+After completing Step 2, then you must **Must initiate a separate LLM call**, **strictly follows the dedicated prompt** at `skills/LintConfig/prompt/Prompt_Configure_Linter.md`. This isolated step has the single purpose of configure linter for the given coding rules. You must not combine it with any configuration generation or other tasks from the broader process. 
 
-Show configuration to users. 
+Show configuration to users and exact file path where the configuration has been saved. 
 
 
 ### Step 4: Invoke the Generated Linter Configuration to Lint the Code
