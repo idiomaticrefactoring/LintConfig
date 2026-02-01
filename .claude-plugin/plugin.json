@@ -4,5 +4,7 @@
 "version": "1.0.0",
 "author": {
 "name": "idiomaticrefactoring"
-}
+},
+  "keywords": ["lint", "configure", "configuration", "linter", "coding standard", "rule", "style guide", "generate"],
+  "skills": ["./.claude/skills/ui-ux-pro-max"]
 }
