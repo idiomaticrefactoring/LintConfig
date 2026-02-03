@@ -1,1 +1,1 @@
-{"rule_name": {"description": "Description\n\nChecks that long constants are defined with an upper ell. That\nis 'L' and not 'l'. This is in accordance with the Java\nLanguage Specification,\n\nSection 3.10.1.\n\n\nRationale: The lower-case ell 'l' looks a lot like 1.", "option": ""}}
+{"UpperEll": {"description": "Description\n\nChecks that long constants are defined with an upper ell. That\nis 'L' and not 'l'. This is in accordance with the Java\nLanguage Specification,\n\nSection 3.10.1.\n\n\nRationale: The lower-case ell 'l' looks a lot like 1.", "option": ""}}

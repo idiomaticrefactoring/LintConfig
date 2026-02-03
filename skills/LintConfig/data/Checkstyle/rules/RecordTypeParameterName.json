@@ -1,1 +1,1 @@
-{"rule_name": {"description": "Description\nChecks that record type parameter names conform to a specified pattern.", "option": "\nformat, Sets the pattern to match valid identifiers., Pattern, \"^[A-Z]$\""}}
+{"RecordTypeParameterName": {"description": "Description\nChecks that record type parameter names conform to a specified pattern.", "option": "\nformat, Sets the pattern to match valid identifiers., Pattern, \"^[A-Z]$\""}}

@@ -1,1 +1,1 @@
-{"rule_name": {"description": "Description\n\nChecks if unnecessary semicolon is in enum definitions.\nSemicolon is not needed if enum body contains only enum constants.", "option": ""}}
+{"UnnecessarySemicolonInEnumeration": {"description": "Description\n\nChecks if unnecessary semicolon is in enum definitions.\nSemicolon is not needed if enum body contains only enum constants.", "option": ""}}

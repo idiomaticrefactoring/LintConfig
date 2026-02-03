@@ -1,1 +1,1 @@
-{"rule_name": {"description": "Description\n\nChecks that the outer type name and the file name match. For example,\nthe class Foo must be in a file named\nFoo.java.", "option": ""}}
+{"OuterTypeFilename": {"description": "Description\n\nChecks that the outer type name and the file name match. For example,\nthe class Foo must be in a file named\nFoo.java.", "option": ""}}

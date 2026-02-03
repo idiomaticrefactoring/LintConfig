@@ -1,1 +1,1 @@
-{"rule_name": {"description": "Description\n\nChecks that each variable declaration is in its own statement and on\nits own line.\n\n\nRationale:\n\nthe Java code conventions chapter 6.1 recommends that\ndeclarations should be one per line/statement.", "option": ""}}
+{"MultipleVariableDeclarations": {"description": "Description\n\nChecks that each variable declaration is in its own statement and on\nits own line.\n\n\nRationale:\n\nthe Java code conventions chapter 6.1 recommends that\ndeclarations should be one per line/statement.", "option": ""}}
