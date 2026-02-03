@@ -54,7 +54,7 @@ Generate and Run command to lint code, and save the linting results "<LinterName
 
 ### Step 5: Repair Coding Violations Based on Coding Rules
 
-After completing Step 5 that obtains the linting results, provide suggestions for fixing any coding violations. 
+After completing Step 4 and obtaining the linting results, provide suggestions for fixing any coding violations. 
 
 
 
