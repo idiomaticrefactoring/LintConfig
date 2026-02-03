@@ -36,7 +36,7 @@ The generated JSON file must follow this structure:
 {
   "linter_rule_name": {
     "description": "Brief explanation of the rule",
-    "ruleurl": "URL to the official rule documentation"
+    "url": "URL to the official rule documentation"
   },
   ...
 }
