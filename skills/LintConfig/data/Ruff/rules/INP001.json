@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: implicit-namespace-package] [Message: File <code>{filename}</code> is part of an implicit namespace package. Add an <code>__init__.py</code>.] What it does Checks for packages that are missing an __init__.py file. Why is this bad? Python packages are directories that contain a file named __init__.py. The existence of this file indicates that the directory is a Python package, and so it can be imported the same way a module can be imported. Directories that lack an __init__.py file can still be imported, but they're indicative of a special kind of package, known as a \"namespace package\" (see: PEP 420). Namespace packages are less widely used, so a package that lacks an __init__.py file is typically meant to be a regular package, and the absence of the __init__.py file is probably an oversight.",
+  "option": {
+    "namespace-packages": {
+      "option_description": "Mark the specified directories as namespace packages. For the purpose of\nmodule resolution, Ruff will treat those directories and all their subdirectories\nas if they contained an __init__.py file.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\nnamespace-packages = [\"airflow/providers\"]\n\n\n\nnamespace-packages = [\"airflow/providers\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

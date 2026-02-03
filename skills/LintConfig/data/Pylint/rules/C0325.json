@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: superfluous-parens] [Message: Unnecessary parens after %r keyword] Description: Used when a single item in parentheses follows an if, for, or other keyword. Problematic code: example_1.py: x = input() y = input() if (x == y): # [superfluous-parens] pass example_2.py: i = 0 exclude = [] if (i - 0) in exclude: # [superfluous-parens] pass Correct code: example_1.py: x = input() y = input() if x == y: pass example_2.py: i = 0 exclude = [] if i - 0 in exclude: pass Created by the format checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: missing-required-import] [Message: Missing required import: <code>{name}</code>] What it does Adds any required imports, as specified by the user, to the top of the file. Why is this bad? In some projects, certain imports are required to be present in all files. For example, some projects assume that from __future__ import annotations is enabled, and thus require that import to be present in all files. Omitting a \"required\" import (as specified by the user) can cause errors or unexpected behavior. Example import typing Use instead: from __future__ import annotations import typing",
+  "option": {
+    "lint.isort.required-imports": {
+      "option_description": "Add the specified import line to all files.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]\n\n\n\n[lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

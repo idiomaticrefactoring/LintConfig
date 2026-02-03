@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-value-for-parameter] [Message: No value for argument %s in %s call] Description: Used when a function call passes too few arguments. Problematic code: def add(x, y): return x + y add(1) # [no-value-for-parameter] Correct code: def add(x, y): return x + y add(1, 2) Created by the typecheck checker.",
+  "option": {}
+}

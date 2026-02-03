@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: catching-non-exception] [Message: Catching an exception which doesn't inherit from Exception: %s] Description: Used when a class which doesn't inherit from Exception is used as an exception in an except clause. Problematic code: class FooError: pass try: 1 / 0 except FooError: # [catching-non-exception] pass Correct code: class FooError(Exception): pass try: 1 / 0 except FooError: pass Created by the exceptions checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: print-empty-string] [Message: Unnecessary empty string passed to <code>print</code>] What it does Checks for print calls with unnecessary empty strings as positional arguments and unnecessary sep keyword arguments. Why is this bad? Prefer calling print without any positional arguments, which is equivalent and more concise. Similarly, when printing one or fewer items, the sep keyword argument, (used to define the string that separates the print arguments) can be omitted, as it's redundant when there are no items to separate. Example print(\"\") Use instead: print() Fix safety This fix is marked as unsafe if it removes comments or an unused sep keyword argument that may have side effects. Removing such arguments may change the program's behavior by skipping the execution of those side effects.",
+  "option": {}
+}

@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: mixed-case-variable-in-global-scope] [Message: Variable <code>{name}</code> in global scope should not be mixedCase] What it does Checks for global variable names that follow the mixedCase convention. Why is this bad? PEP 8 recommends that global variable names should be lower case and separated by underscores (also known as snake_case). Global Variable Names (Let’s hope that these variables are meant for use inside one module only.) The conventions are about the same as those for functions. Modules that are designed for use via from M import * should use the __all__ mechanism to prevent exporting globals, or use the older convention of prefixing such globals with an underscore (which you might want to do to indicate these globals are “module non-public”). Function and Variable Names Function names should be lowercase, with words separated by underscores as necessary to improve readability. Variable names follow the same convention as function names. mixedCase is allowed only in contexts where that’s already the prevailing style (e.g. threading.py), to retain backwards compatibility. Example myVariable = \"hello\" another_variable = \"world\" yet_anotherVariable = \"foo\" Use instead: my_variable = \"hello\" another_variable = \"world\" yet_another_variable = \"foo\"",
+  "option": {
+    "lint.pep8-naming.ignore-names": {
+      "option_description": "A list of names (or patterns) to ignore when considering pep8-naming violations.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"setUp\", \"tearDown\", \"setUpClass\", \"tearDownClass\", \"setUpModule\", \"tearDownModule\", \"asyncSetUp\", \"asyncTearDown\", \"setUpTestData\", \"failureException\", \"longMessage\", \"maxDiff\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.extend-ignore-names": {
+      "option_description": "Additional names (or patterns) to ignore when considering pep8-naming violations,\nin addition to those included in ignore-names.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

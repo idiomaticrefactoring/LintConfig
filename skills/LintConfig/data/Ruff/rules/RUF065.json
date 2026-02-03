@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: logging-eager-conversion] [Message: Unnecessary <code>oct()</code> conversion when formatting with <code>%s</code>. Use <code>%#o</code> instead of <code>%s</code>] What it does Checks for eager string conversion of arguments to logging calls. Why is this bad? Arguments to logging calls will be formatted as strings automatically, so it is unnecessary and less efficient to eagerly format the arguments before passing them in. Known problems This rule detects uses of the logging module via a heuristic. Specifically, it matches against: Uses of the logging module itself (e.g., import logging; logging.info(...)). Uses of flask.current_app.logger (e.g., from flask import current_app; current_app.logger.info(...)). Objects whose name starts with log or ends with logger or logging, when used in the same file in which they are defined (e.g., logger = logging.getLogger(); logger.info(...)). Imported objects marked as loggers via the lint.logger-objects setting, which can be used to enforce these rules against shared logger objects (e.g., from module import logger; logger.info(...), when lint.logger-objects is set to [\"module.logger\"]). Example import logging logging.basicConfig(format=\"%(message)s\", level=logging.INFO) user = \"Maria\" logging.info(\"%s - Something happened\", str(user)) Use instead: import logging logging.basicConfig(format=\"%(message)s\", level=logging.INFO) user = \"Maria\" logging.info(\"%s - Something happened\", user)",
+  "option": {
+    "lint.logger-objects": {
+      "option_description": "A list of objects that should be treated equivalently to a\nlogging.Logger object.\n\nThis is useful for ensuring proper diagnostics (e.g., to identify\nlogging deprecations and other best-practices) for projects that\nre-export a logging.Logger object from a common module.\n\nFor example, if you have a module logging_setup.py with the following\ncontents:\nimport logging\n\nlogger = logging.getLogger(__name__)\n\nAdding \"logging_setup.logger\" to logger-objects will ensure that\nlogging_setup.logger is treated as a logging.Logger object when\nimported from other modules (e.g., from logging_setup import logger).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\nlogger-objects = [\"logging_setup.logger\"]\n\n\n\n[lint]\nlogger-objects = [\"logging_setup.logger\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

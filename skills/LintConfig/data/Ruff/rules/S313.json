@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: suspicious-xmlc-element-tree-usage] [Message: Using <code>xml</code> to parse untrusted data is known to be vulnerable to XML attacks; use <code>defusedxml</code> equivalents] What it does Checks for uses of insecure XML parsers. Why is this bad? Many XML parsers are vulnerable to XML attacks (such as entity expansion), which cause excessive memory and CPU usage by exploiting recursion. An attacker could use such methods to access unauthorized resources. Consider using the defusedxml package when parsing untrusted XML data, to protect against XML attacks. In preview, this rule will also flag references to insecure XML parsers. Example from xml.etree.cElementTree import parse tree = parse(\"untrusted.xml\") # Vulnerable to XML attacks. Use instead: from defusedxml.cElementTree import parse tree = parse(\"untrusted.xml\")",
+  "option": {}
+}

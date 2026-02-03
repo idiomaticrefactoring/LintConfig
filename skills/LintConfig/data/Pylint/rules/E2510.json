@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-character-backspace] [Message: Invalid unescaped character backspace, use \"\\b\" instead.] Description: Moves the cursor back, so the character after it will overwrite the character before. Problematic code: STRING = \"Invalid character backspace \b\" # [invalid-character-backspace] Correct code: STRING = \"Valid character backspace \\b\" Created by the unicode_checker checker.",
+  "option": {}
+}

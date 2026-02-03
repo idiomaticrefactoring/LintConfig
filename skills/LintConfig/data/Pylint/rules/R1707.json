@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: trailing-comma-tuple] [Message: Disallow trailing comma tuple] Description: In Python, a tuple is actually created by the comma symbol, not by the parentheses. Unfortunately, one can actually create a tuple by misplacing a trailing comma, which can lead to potential weird bugs in your code. You should always use parentheses explicitly for creating a tuple. Problematic code: COMPASS = \"north\", \"south\", \"east\", \"west\", # [trailing-comma-tuple] Correct code: COMPASS = (\"north\", \"south\", \"east\", \"west\") Created by the refactoring checker.",
+  "option": {}
+}

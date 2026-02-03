@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pytest-incorrect-pytest-import] [Message: Incorrect import of <code>pytest</code>; use <code>import pytest</code> instead] What it does Checks for incorrect import of pytest. Why is this bad? For consistency, pytest should be imported as import pytest and its members should be accessed in the form of pytest.xxx.yyy for consistency Example import pytest as pt from pytest import fixture Use instead: import pytest",
+  "option": {}
+}

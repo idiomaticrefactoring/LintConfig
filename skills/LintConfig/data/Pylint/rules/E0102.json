@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: function-redefined] [Message: %s already defined line %s] Description: Used when a function / class / method is redefined. Problematic code: def get_email(): pass def get_email(): # [function-redefined] pass Correct code: def get_email(): pass Created by the basic checker.",
+  "option": {}
+}

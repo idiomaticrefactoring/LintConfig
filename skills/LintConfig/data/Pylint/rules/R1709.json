@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: simplify-boolean-expression] [Message: Boolean expression may be simplified to %s] Description: Emitted when redundant pre-python 2.5 ternary syntax is used. Problematic code: def has_oranges(oranges, apples=None) -> bool: return apples and False or oranges # [simplify-boolean-expression] Correct code: def has_oranges(oranges, apples=None) -> bool: return oranges Created by the refactoring checker.",
+  "option": {}
+}

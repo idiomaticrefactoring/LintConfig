@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-param-doc] [Message: \"%s\" useless ignored parameter documentation] Description: Please remove the ignored parameter documentation. Problematic code: def say_hello(_new: str) -> str: # [useless-param-doc] \"\"\"say hello! :param _new: :return: comment \"\"\" return \"hello\" Correct code: def say_hello(_new: str) -> str: \"\"\"say hello! :return: comment \"\"\" return \"hello\" Configuration file: [MAIN] load-plugins=pylint.extensions.docparams, Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

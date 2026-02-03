@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: multiple-statements] [Message: More than one statement on a single line] Description: Used when more than on statement are found on the same line. Problematic code: fruits = [\"apple\", \"orange\", \"mango\"] if \"apple\" in fruits: pass # [multiple-statements] else: print(\"no apples!\") Correct code: fruits = [\"apple\", \"orange\", \"mango\"] if \"apple\" in fruits: pass else: print(\"no apples!\") Created by the format checker.",
+  "option": {}
+}

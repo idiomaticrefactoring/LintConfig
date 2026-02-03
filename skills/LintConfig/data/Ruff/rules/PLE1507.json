@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-envvar-value] [Message: Invalid type for initial <code>os.getenv</code> argument; expected <code>str</code>] What it does Checks for os.getenv calls with an invalid key argument. Why is this bad? os.getenv only supports strings as the first argument (key). If the provided argument is not a string, os.getenv will throw a TypeError at runtime. Example import os os.getenv(1) Use instead: import os os.getenv(\"1\")",
+  "option": {}
+}

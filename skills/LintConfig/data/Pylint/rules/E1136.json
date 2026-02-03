@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unsubscriptable-object] [Message: Value '%s' is unsubscriptable] Description: Emitted when a subscripted value doesn't support subscription (i.e. doesn't define __getitem__ method or __class_getitem__ for a class). Problematic code: class Fruit: pass Fruit()[1] # [unsubscriptable-object] Correct code: class Fruit: def __init__(self): self.colors = [\"red\", \"orange\", \"yellow\"] def __getitem__(self, idx): return self.colors[idx] Fruit()[1] Created by the typecheck checker.",
+  "option": {}
+}

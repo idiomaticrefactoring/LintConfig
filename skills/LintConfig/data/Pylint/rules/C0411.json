@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: wrong-import-order] [Message: %s should be placed before %s] Description: Used when PEP8 import order is not respected (standard imports first, then third-party libraries, then local imports). Problematic code: import os from . import utils import pylint # [wrong-import-order] import sys # [wrong-import-order] Correct code: import os import sys import pylint from . import utils Created by the imports checker.",
+  "option": {}
+}

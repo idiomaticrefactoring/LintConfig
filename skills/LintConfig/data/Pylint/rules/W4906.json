@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-attribute] [Message: Using deprecated attribute %r] Description: The attribute is marked as deprecated and will be removed in the future. Problematic code: from configparser import ParsingError err = ParsingError(\"filename\") source = err.filename # [deprecated-attribute] Correct code: from configparser import ParsingError err = ParsingError(\"filename\") source = err.source Additional details: The actual replacement needs to be studied on a case by case basis by reading the deprecation warning or the release notes. Created by the stdlib checker.",
+  "option": {}
+}

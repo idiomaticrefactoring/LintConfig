@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: magic-value-comparison] [Message: Magic value used in comparison, consider replacing <code>{value}</code> with a constant variable] What it does Checks for the use of unnamed numerical constants (\"magic\") values in comparisons. Why is this bad? The use of \"magic\" values can make code harder to read and maintain, as readers will have to infer the meaning of the value from the context. Such values are discouraged by PEP 8. For convenience, this rule excludes a variety of common values from the \"magic\" value definition, such as 0, 1, \"\", and \"__main__\". Example def apply_discount(price: float) -> float: if price <= 100: return price / 2 else: return price Use instead: MAX_DISCOUNT = 100 def apply_discount(price: float) -> float: if price <= MAX_DISCOUNT: return price / 2 else: return price",
+  "option": {
+    "lint.pylint.allow-magic-value-types": {
+      "option_description": "Constant types to ignore when used as \"magic values\" (see PLR2004).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pylint]\nallow-magic-value-types = [\"int\"]\n\n\n\n[lint.pylint]\nallow-magic-value-types = [\"int\"]",
+      "option_data_type": "list[\"str\" | \"bytes\" | \"complex\" | \"float\" | \"int\"]",
+      "default_value": "[\"str\", \"bytes\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

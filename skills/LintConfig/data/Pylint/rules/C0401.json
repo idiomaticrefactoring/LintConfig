@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: wrong-spelling-in-comment] [Message: Wrong spelling of a word '%s' in a comment: %s %s Did you mean: '%s'?] Description: Used when a word in comment is not spelled correctly. Problematic code: # There's a mistkae in this string # [wrong-spelling-in-comment] Correct code: # There's no mistake in this string Configuration file: [main] # This might not run in your env if you don't have the en_US dict installed. spelling-dict=en_US Created by the spelling checker.",
+  "option": {}
+}

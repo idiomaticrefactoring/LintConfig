@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pointless-exception-statement] [Message: Exception statement has no effect] Description: Used when an exception is created without being assigned, raised or returned for subsequent use elsewhere. Problematic code: Exception(\"This exception is a statement.\") # [pointless-exception-statement] Correct code: raise Exception(\"This will raise.\") Created by the basic checker.",
+  "option": {}
+}

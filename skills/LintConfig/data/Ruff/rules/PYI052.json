@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unannotated-assignment-in-stub] [Message: Need type annotation for <code>{name}</code>] What it does Checks for unannotated assignments in stub (.pyi) files. Why is this bad? Stub files exist to provide type hints, and are never executed. As such, all assignments in stub files should be annotated with a type.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: too-many-function-args] [Message: Too many positional arguments for %s call] Description: Used when a function call passes too many positional arguments. Problematic code: class Fruit: def __init__(self, color): self.color = color apple = Fruit(\"red\", \"apple\", [1, 2, 3]) # [too-many-function-args] Correct code: class Fruit: def __init__(self, color, name): self.color = color self.name = name apple = Fruit(\"red\", \"apple\") Created by the typecheck checker.",
+  "option": {}
+}

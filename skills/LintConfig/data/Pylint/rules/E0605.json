@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-all-format] [Message: Invalid format for __all__, must be tuple or list] Description: Used when __all__ has an invalid format. Problematic code: __all__ = \"CONST\" # [invalid-all-format] CONST = 42 Correct code: __all__ = (\"CONST\",) CONST = 42 Created by the variables checker.",
+  "option": {}
+}

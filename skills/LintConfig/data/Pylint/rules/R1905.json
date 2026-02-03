@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: match-class-bind-self] [Message: Use '%s() as %s' instead] Description: Match class patterns are faster if the name binding happens for the whole pattern and any lookup for `__match_args__` can be avoided. Problematic code: class Book: __match_args__ = (\"title\", \"year\") def __init__(self, title, year): self.title = title self.year = year def func(item: Book): match item: case Book(title=str(title)): # [match-class-bind-self] ... case Book(year=int(year)): # [match-class-bind-self] ... Correct code: class Book: __match_args__ = (\"title\", \"year\") def __init__(self, title, year): self.title = title self.year = year def func(item: Book): match item: case Book(title=str() as title): ... case Book(year=int() as year): ... Related links: Python documentation Created by the match_statements checker.",
+  "option": {}
+}

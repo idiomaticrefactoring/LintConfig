@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: dict-init-mutate] [Message: Declare all known key/values when initializing the dictionary.] Description: Dictionaries can be initialized with a single statement using dictionary literal syntax. Problematic code: fruit_prices = {} # [dict-init-mutate] fruit_prices[\"apple\"] = 1 fruit_prices[\"banana\"] = 10 Correct code: fruit_prices = {\"apple\": 1, \"banana\": 10} Configuration file: [MAIN] load-plugins=pylint.extensions.dict_init_mutate, Note This message is emitted by the optional 'dict-init-mutate' checker, which requires the pylint.extensions.dict_init_mutate plugin to be loaded. Created by the dict-init-mutate checker.",
+  "option": {}
+}

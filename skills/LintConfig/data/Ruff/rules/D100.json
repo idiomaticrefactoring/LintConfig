@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: undocumented-public-module] [Message: Missing docstring in public module] What it does Checks for undocumented public module definitions. Why is this bad? Public modules should be documented via docstrings to outline their purpose and contents. Generally, module docstrings should describe the purpose of the module and list the classes, exceptions, functions, and other objects that are exported by the module, alongside a one-line summary of each. If the module is a script, the docstring should be usable as its \"usage\" message. If the codebase adheres to a standard format for module docstrings, follow that format for consistency. Example class FasterThanLightError(ZeroDivisionError): ... def calculate_speed(distance: float, time: float) -> float: ... Use instead: \"\"\"Utility functions and classes for calculating speed. This module provides: - FasterThanLightError: exception when FTL speed is calculated; - calculate_speed: calculate speed given distance and time. \"\"\" class FasterThanLightError(ZeroDivisionError): ... def calculate_speed(distance: float, time: float) -> float: ... Notebook behavior This rule is ignored for Jupyter Notebooks.",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: multiple-spaces-after-comma] [Message: Multiple spaces after comma] What it does Checks for extraneous whitespace after a comma. Why is this bad? Consistency is good. This rule helps ensure you have a consistent formatting style across your project. Example a = 4, 5 Use instead: a = 4, 5",
+  "option": {}
+}

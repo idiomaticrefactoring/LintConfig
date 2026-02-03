@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-yields-doc] [Message: Redundant yields documentation] Description: Please remove the yields documentation from this method. Problematic code: def give_fruits(fruits): # [redundant-yields-doc] \"\"\"Something about fruits Yields ------- list fruits \"\"\" return fruits Correct code: def give_fruits(fruits): \"\"\"Something about fruits Yields ------- str fruit \"\"\" for fruit in fruits: yield fruit Configuration file: [MAIN] load-plugins = pylint.extensions.docparams Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

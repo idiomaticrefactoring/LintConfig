@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: manual-from-import] [Message: Use <code>from {module} import {name}</code> in lieu of alias] What it does Checks for submodule imports that are aliased to the submodule name. Why is this bad? Using the from keyword to import the submodule is more concise and readable. Example import concurrent.futures as futures Use instead: from concurrent import futures",
+  "option": {
+    "lint.isort.required-imports": {
+      "option_description": "Add the specified import line to all files.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]\n\n\n\n[lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

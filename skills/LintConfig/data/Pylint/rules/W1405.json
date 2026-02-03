@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: inconsistent-quotes] [Message: Quote delimiter %s is inconsistent with the rest of the file] Description: Quote delimiters are not used consistently throughout a module (with allowances made for avoiding unnecessary escaping). Problematic code: import datetime print('Current year: ', datetime.date.today().strftime(\"%Y\")) # [inconsistent-quotes] Correct code: import datetime print(\"Current year: \", datetime.date.today().strftime(\"%Y\")) Configuration file: [main] check-quote-consistency=yes Created by the string checker.",
+  "option": {}
+}

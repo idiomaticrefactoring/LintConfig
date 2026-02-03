@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: dict-get-with-none-default] [Message: Use <code>{expected}</code> instead of <code>{actual}</code>] What it does Checks for dict.get() calls that pass None as the default value. Why is this bad? None is the default value for dict.get(), so it is redundant to pass it explicitly. Example ages = {\"Tom\": 23, \"Maria\": 23, \"Dog\": 11} age = ages.get(\"Cat\", None) Use instead: ages = {\"Tom\": 23, \"Maria\": 23, \"Dog\": 11} age = ages.get(\"Cat\") Fix safety This rule's fix is marked as safe, unless the expression contains comments.",
+  "option": {}
+}

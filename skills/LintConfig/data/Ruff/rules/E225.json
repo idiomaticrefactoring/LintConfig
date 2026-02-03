@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: missing-whitespace-around-operator] [Message: Missing whitespace around operator] What it does Checks for missing whitespace around all operators. Why is this bad? According to PEP 8, there should be one space before and after all assignment (=), augmented assignment (+=, -=, etc.), comparison, and Booleans operators. Example if number==42: print('you have found the meaning of life') Use instead: if number == 42: print('you have found the meaning of life')",
+  "option": {}
+}

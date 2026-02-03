@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-else-break] [Message: Unnecessary \"%s\" after \"break\", %s] Description: Used in order to highlight an unnecessary block of code following an if containing a break statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a break statement. Problematic code: def next_seven_elements(iterator): for i, item in enumerate(iterator): if i == 7: # [no-else-break] break else: yield item Correct code: def next_seven_elements(iterator): for i, item in enumerate(iterator): if i == 7: break yield item Created by the refactoring checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: indentation-with-invalid-multiple] [Message: Indentation is not a multiple of {indent_width}] What it does Checks for indentation with a non-multiple of 4 spaces. Why is this bad? According to PEP 8, 4 spaces per indentation level should be preferred. Example if True: a = 1 Use instead: if True: a = 1 Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces consistent indentation, making the rule redundant. The rule is also incompatible with the formatter when using indent-width with a value other than 4.",
+  "option": {
+    "indent-width": {
+      "option_description": "The number of spaces per indentation level (tab).\n\nUsed by the formatter and when enforcing long-line violations (like E501) to determine the visual\nwidth of a tab.\n\nThis option changes the number of spaces the formatter inserts when\nusing soft-tabs (indent-style = space).\n\nPEP 8 recommends using 4 spaces per indentation level.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\nindent-width = 2\n\n\n\nindent-width = 2",
+      "option_data_type": "int",
+      "default_value": "4",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

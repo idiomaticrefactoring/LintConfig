@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: possibly-unused-variable] [Message: Possibly unused variable %r] Description: Used when a variable is defined but might not be used. The possibility comes from the fact that locals() might be used, which could consume or not the said variable Problematic code: def choose_fruits(fruits): print(fruits) color = \"red\" # [possibly-unused-variable] return locals() Correct code: def choose_fruits(fruits): current_locals = locals() print(fruits) color = \"red\" print(color) return current_locals Created by the variables checker.",
+  "option": {}
+}

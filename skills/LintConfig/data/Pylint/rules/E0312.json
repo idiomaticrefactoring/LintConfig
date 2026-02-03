@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-getnewargs-returned] [Message: __getnewargs__ does not return a tuple] Description: Used when a __getnewargs__ method returns something which is not a tuple Problematic code: class CustomGetNewArgs: \"\"\"__getnewargs__ returns an integer\"\"\" def __getnewargs__(self): # [invalid-getnewargs-returned] return 1 Correct code: class CustomGetNewArgs: \"\"\"__getnewargs__ returns <type 'tuple'>\"\"\" def __getnewargs__(self): return (1, 2) Created by the classes checker.",
+  "option": {}
+}

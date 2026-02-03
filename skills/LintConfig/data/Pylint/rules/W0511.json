@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: fixme] [Message: %s] Description: Used when a warning note as FIXME or XXX is detected. Problematic code: # TODO: We should fix this at some point # [fixme] Correct code: bug_tracker.py: # The issue was added to the bug tracker: no longer need the comment fixed.py: # The issue was fixed: no longer need the comment no_fix.py: # We no longer want to fix this: no longer need the comment Additional details: You can use regular expressions and the notes-rgx option to create some constraints for this message. See the following issue for some examples. Created by the miscellaneous checker.",
+  "option": {}
+}

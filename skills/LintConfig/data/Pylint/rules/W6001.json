@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-typing-alias] [Message: '%s' is deprecated, use '%s' instead] Description: Emitted when a deprecated typing alias is used. Problematic code: import typing item_to_number_of_item: typing.Dict[str, int] # [deprecated-typing-alias] Correct code: item_to_number_of_item: dict[str, int] Configuration file: [main] load-plugins = pylint.extensions.typing Note This message is emitted by the optional 'typing' checker, which requires the pylint.extensions.typing plugin to be loaded. Created by the typing checker.",
+  "option": {}
+}

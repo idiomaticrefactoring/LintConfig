@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: over-indented] [Message: Over-indented (comment)] What it does Checks for over-indented code. Why is this bad? According to PEP 8, 4 spaces per indentation level should be preferred. Increased indentation can lead to inconsistent formatting, which can hurt readability. Example for item in items: pass Use instead: for item in items: pass Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces consistent indentation, making the rule redundant.",
+  "option": {}
+}

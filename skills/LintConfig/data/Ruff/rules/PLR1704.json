@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: redefined-argument-from-local] [Message: Redefining argument with the local name <code>{name}</code>] What it does Checks for variables defined in for, try, with statements that redefine function parameters. Why is this bad? Redefined variables can cause unexpected behavior because of overridden function parameters. If nested functions are declared, an inner function's body can override an outer function's parameters. Example def show(host_id=10.11): for host_id, host in [[12.13, \"Venus\"], [14.15, \"Mars\"]]: print(host_id, host) Use instead: def show(host_id=10.11): for inner_host_id, host in [[12.13, \"Venus\"], [14.15, \"Mars\"]]: print(host_id, inner_host_id, host)",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

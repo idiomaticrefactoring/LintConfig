@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-object-inheritance] [Message: Class %r inherits from object, can be safely removed from bases in python3] Description: Used when a class inherit from object, which under python3 is implicit, hence can be safely removed from bases. Problematic code: class Banana(object): # [useless-object-inheritance] ... Correct code: class Banana: ... Created by the classes checker.",
+  "option": {}
+}

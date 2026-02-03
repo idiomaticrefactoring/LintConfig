@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: not-context-manager] [Message: Context manager '%s' doesn't implement __enter__ and __exit__.] Description: Used when an instance in a with statement doesn't implement the context manager protocol(__enter__/__exit__). Problematic code: class MyContextManager: def __enter__(self): pass with MyContextManager() as c: # [not-context-manager] pass Correct code: class MyContextManager: def __enter__(self): pass def __exit__(self, *exc): pass with MyContextManager() as c: pass Created by the typecheck checker.",
+  "option": {}
+}

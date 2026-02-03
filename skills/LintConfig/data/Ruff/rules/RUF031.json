@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: incorrectly-parenthesized-tuple-in-subscript] [Message: Use parentheses for tuples in subscripts] What it does Checks for consistent style regarding whether nonempty tuples in subscripts are parenthesized. The exact nature of this violation depends on the setting lint.ruff.parenthesize-tuple-in-subscript. By default, the use of parentheses is considered a violation. This rule is not applied inside \"typing contexts\" (type annotations, type aliases and subscripted class bases), as these have their own specific conventions around them. Why is this bad? It is good to be consistent and, depending on the codebase, one or the other convention may be preferred. Example directions = {(0, 1): \"North\", (1, 0): \"East\", (0, -1): \"South\", (-1, 0): \"West\"} directions[(0, 1)] Use instead (with default setting): directions = {(0, 1): \"North\", (1, 0): \"East\", (0, -1): \"South\", (-1, 0): \"West\"} directions[0, 1]",
+  "option": {
+    "lint.ruff.parenthesize-tuple-in-subscript": {
+      "option_description": "Whether to prefer accessing items keyed by tuples with\nparentheses around the tuple (see RUF031).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.ruff]\n# Make it a violation to use a tuple in a subscript without parentheses.\nparenthesize-tuple-in-subscript = true\n\n\n\n[lint.ruff]\n# Make it a violation to use a tuple in a subscript without parentheses.\nparenthesize-tuple-in-subscript = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

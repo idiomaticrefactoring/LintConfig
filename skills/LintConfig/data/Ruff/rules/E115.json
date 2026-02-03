@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: no-indented-block-comment] [Message: Expected an indented block (comment)] What it does Checks for comments in a code blocks that are lacking indentation. Why is this bad? Comments within an indented block should themselves be indented, to indicate that they are part of the block. Example for item in items: # Hi pass Use instead: for item in items: # Hi pass",
+  "option": {}
+}

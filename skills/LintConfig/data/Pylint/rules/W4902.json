@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-method] [Message: Using deprecated method %s()] Description: The method is marked as deprecated and will be removed in the future. Problematic code: import logging logging.warn(\"I'm coming, world !\") # [deprecated-method] Correct code: import logging logging.warning(\"I'm coming, world !\") Additional details: The actual replacement needs to be studied on a case by case basis by reading the deprecation warning or the release notes. Created by the stdlib checker.",
+  "option": {}
+}

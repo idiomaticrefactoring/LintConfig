@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: dangerous-default-value] [Message: Dangerous default value %s as argument] Description: Used when a mutable value as list or dictionary is detected in a default value for an argument. Problematic code: def whats_on_the_telly(penguin=[]): # [dangerous-default-value] penguin.append(\"property of the zoo\") return penguin Correct code: def whats_on_the_telly(penguin=None): if penguin is None: penguin = [] penguin.append(\"property of the zoo\") return penguin Additional details: With a mutable default value, with each call the default value is modified, i.e.: whats_on_the_telly() # [\"property of the zoo\"] whats_on_the_telly() # [\"property of the zoo\", \"property of the zoo\"] whats_on_the_telly() # [\"property of the zoo\", \"property of the zoo\", \"property of the zoo\"] Created by the basic checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: stub-body-multiple-statements] [Message: Function body must contain exactly one statement] What it does Checks for functions in stub (.pyi) files that contain multiple statements. Why is this bad? Stub files are never executed, and are only intended to define type hints. As such, functions in stub files should not contain functional code, and should instead contain only a single statement (e.g., ...). Example def function(): x = 1 y = 2 return x + y Use instead: def function(): ...",
+  "option": {}
+}

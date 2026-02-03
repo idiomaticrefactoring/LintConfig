@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: expr-and-not-expr] [Message: Use <code>False</code> instead of <code>{name} and not {name}</code>] What it does Checks for and expressions that include both an expression and its negation. Why is this bad? An and expression that includes both an expression and its negation will always evaluate to False. Example x and not x",
+  "option": {}
+}

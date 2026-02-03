@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nonlocal-and-global] [Message: Name <code>{name}</code> is both <code>nonlocal</code> and <code>global</code>] What it does Checks for variables which are both declared as both nonlocal and global. Why is this bad? A nonlocal variable is a variable that is defined in the nearest enclosing scope, but not in the global scope, while a global variable is a variable that is defined in the global scope. Declaring a variable as both nonlocal and global is contradictory and will raise a SyntaxError. Example counter = 0 def increment(): global counter nonlocal counter counter += 1 Use instead: counter = 0 def increment(): global counter counter += 1",
+  "option": {}
+}

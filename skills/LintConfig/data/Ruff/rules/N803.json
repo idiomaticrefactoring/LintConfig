@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: invalid-argument-name] [Message: Argument name <code>{name}</code> should be lowercase] What it does Checks for argument names that do not follow the snake_case convention. Why is this bad? PEP 8 recommends that function names should be lower case and separated by underscores (also known as snake_case). Function names should be lowercase, with words separated by underscores as necessary to improve readability. Variable names follow the same convention as function names. mixedCase is allowed only in contexts where that’s already the prevailing style (e.g. threading.py), to retain backwards compatibility. Methods decorated with @typing.override are ignored. Example def my_function(A, myArg): pass Use instead: def my_function(a, my_arg): pass",
+  "option": {
+    "lint.pep8-naming.ignore-names": {
+      "option_description": "A list of names (or patterns) to ignore when considering pep8-naming violations.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"setUp\", \"tearDown\", \"setUpClass\", \"tearDownClass\", \"setUpModule\", \"tearDownModule\", \"asyncSetUp\", \"asyncTearDown\", \"setUpTestData\", \"failureException\", \"longMessage\", \"maxDiff\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.extend-ignore-names": {
+      "option_description": "Additional names (or patterns) to ignore when considering pep8-naming violations,\nin addition to those included in ignore-names.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

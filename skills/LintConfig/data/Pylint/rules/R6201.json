@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: use-set-for-membership] [Message: Consider using set for membership test] Description: Membership tests are more efficient when performed on a lookup optimized datatype like ``sets``. Problematic code: def fruit_is_dangerous_for_cat(fruit: str) -> bool: \"\"\"This list is only a silly example, don't make decision regarding your cat diet based on it.\"\"\" return fruit in [\"cherry\", \"grapes\"] # [use-set-for-membership] Correct code: def fruit_is_dangerous_for_cat(fruit: str) -> bool: \"\"\"This list is only a silly example, don't make decision regarding your cat diet based on it.\"\"\" return fruit in {\"cherry\", \"grapes\"} Configuration file: [MAIN] load-plugins=pylint.extensions.set_membership Note This message is emitted by the optional 'set_membership' checker, which requires the pylint.extensions.set_membership plugin to be loaded. Created by the set_membership checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-return-none] [Message: Do not explicitly <code>return None</code> in function if it is the only possible return value] What it does Checks for the presence of a return None statement when None is the only possible return value. Why is this bad? Python implicitly assumes return None if an explicit return value is omitted. Therefore, explicitly returning None is redundant and should be avoided when it is the only possible return value across all code paths in a given function. Example def foo(bar): if not bar: return return None Use instead: def foo(bar): if not bar: return return Fix safety This rule's fix is marked as unsafe for cases in which comments would be dropped from the return statement.",
+  "option": {
+    "lint.pydocstyle.property-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a property (in addition to the builtin\n@property and standard-library @functools.cached_property).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list can use a non-imperative summary line.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]\n\n\n\n[lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

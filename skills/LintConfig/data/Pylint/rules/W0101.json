@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unreachable] [Message: Unreachable code] Description: Used when there is some code behind a \"return\" or \"raise\" statement, which will never be accessed. Problematic code: def say_hello(): return True print(\"Hello World!, Outside function.\") # [unreachable] Correct code: def say_hello(): print(\"Hello World!, Inside function.\") return True Created by the basic checker.",
+  "option": {}
+}

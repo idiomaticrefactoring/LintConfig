@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-iterating-dictionary] [Message: Consider iterating the dictionary directly instead of calling .keys()] Description: Emitted when the keys of a dictionary are iterated through the ``.keys()`` method or when ``.keys()`` is used for a membership check. It is enough to iterate through the dictionary itself, ``for key in dictionary``. For membership checks, ``if key in dictionary`` is faster. Problematic code: FRUITS = {\"apple\": 1, \"pear\": 5, \"peach\": 10} for fruit in FRUITS.keys(): # [consider-iterating-dictionary] print(fruit) Correct code: FRUITS = {\"apple\": 1, \"pear\": 5, \"peach\": 10} for fruit in FRUITS: print(fruit) Created by the refactoring checker.",
+  "option": {}
+}

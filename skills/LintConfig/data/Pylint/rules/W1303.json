@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-format-argument-key] [Message: Missing keyword argument %r for format string] Description: Used when a PEP 3101 format string that uses named fields doesn't receive one or more required keywords. Problematic code: print(\"My name is {first} {last}\".format(first=\"John\")) # [missing-format-argument-key] Correct code: print(\"My name is {first} {last}\".format(first=\"John\", last=\"Wick\")) Related links: PEP 3101 Custom String Formatting Created by the string checker.",
+  "option": {}
+}

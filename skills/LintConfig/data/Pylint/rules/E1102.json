@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: not-callable] [Message: %s is not callable] Description: Used when an object being called has been inferred to a non callable object. Problematic code: NUMBER = 42 print(NUMBER()) # [not-callable] Correct code: NUMBER = 42 print(NUMBER) Created by the typecheck checker.",
+  "option": {}
+}

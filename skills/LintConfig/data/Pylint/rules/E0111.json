@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-reversed-sequence] [Message: The first reversed() argument is not a sequence] Description: Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__ Problematic code: reversed({1, 2, 3, 4}) # [bad-reversed-sequence] Correct code: reversed([1, 2, 3, 4]) Created by the basic checker.",
+  "option": {}
+}

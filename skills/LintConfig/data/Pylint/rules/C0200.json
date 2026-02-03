@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-enumerate] [Message: Consider using enumerate instead of iterating with range and len] Description: Emitted when code that iterates with range and len is encountered. Such code can be simplified by using the enumerate builtin. Problematic code: seasons = [\"Spring\", \"Summer\", \"Fall\", \"Winter\"] for i in range(len(seasons)): # [consider-using-enumerate] print(i, seasons[i]) Correct code: seasons = [\"Spring\", \"Summer\", \"Fall\", \"Winter\"] for i, season in enumerate(seasons): print(i, season) Created by the refactoring checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-str-return-type] [Message: <code>__str__</code> does not return <code>str</code>] What it does Checks for __str__ implementations that return a type other than str. Why is this bad? The __str__ method should return a str object. Returning a different type may cause unexpected behavior. Example class Foo: def __str__(self): return True Use instead: class Foo: def __str__(self): return \"Foo\"",
+  "option": {}
+}

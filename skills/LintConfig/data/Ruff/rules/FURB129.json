@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: readlines-in-for] [Message: Instead of calling <code>readlines()</code>, iterate over file object directly] What it does Checks for uses of readlines() when iterating over a file line-by-line. Why is this bad? Rather than iterating over all lines in a file by calling readlines(), it's more convenient and performant to iterate over the file object directly. Example with open(\"file.txt\") as fp: for line in fp.readlines(): ... Use instead: with open(\"file.txt\") as fp: for line in fp: ... Fix safety This rule's fix is marked as unsafe if there's comments in the readlines() call, as comments may be removed. For example, the fix would be marked as unsafe in the following case: with open(\"file.txt\") as fp: for line in ( # comment fp.readlines() # comment ): ...",
+  "option": {}
+}

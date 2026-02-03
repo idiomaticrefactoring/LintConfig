@@ -1,0 +1,37 @@
+{
+  "description": "[Status: stable] [Name: invalid-first-argument-name-for-method] [Message: First argument of a method should be named <code>self</code>] What it does Checks for instance methods that use a name other than self for their first argument. Why is this bad? PEP 8 recommends the use of self as first argument for all instance methods: Always use self for the first argument to instance methods. If a function argument’s name clashes with a reserved keyword, it is generally better to append a single trailing underscore rather than use an abbreviation or spelling corruption. Thus class_ is better than clss. (Perhaps better is to avoid such clashes by using a synonym.) Names can be excluded from this rule using the lint.pep8-naming.ignore-names or lint.pep8-naming.extend-ignore-names configuration options. For example, to allow the use of this as the first argument to instance methods, set the lint.pep8-naming.extend-ignore-names option to [\"this\"]. Example class Example: def function(cls, data): ... Use instead: class Example: def function(self, data): ... Fix safety This rule's fix is marked as unsafe, as renaming a method parameter can change the behavior of the program.",
+  "option": {
+    "lint.pep8-naming.classmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a class method (in addition to the builtin\n@classmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list takes a cls argument as its first argument.\n\nExpects to receive a list of fully-qualified names (e.g., pydantic.validator,\nrather than validator) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]\n\n\n\n[lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.staticmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a static method (in addition to the builtin\n@staticmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list has no self or cls argument.\n\nExpects to receive a list of fully-qualified names (e.g., belay.Device.teardown,\nrather than teardown) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]\n\n\n\n[lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.ignore-names": {
+      "option_description": "A list of names (or patterns) to ignore when considering pep8-naming violations.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"setUp\", \"tearDown\", \"setUpClass\", \"tearDownClass\", \"setUpModule\", \"tearDownModule\", \"asyncSetUp\", \"asyncTearDown\", \"setUpTestData\", \"failureException\", \"longMessage\", \"maxDiff\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.extend-ignore-names": {
+      "option_description": "Additional names (or patterns) to ignore when considering pep8-naming violations,\nin addition to those included in ignore-names.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

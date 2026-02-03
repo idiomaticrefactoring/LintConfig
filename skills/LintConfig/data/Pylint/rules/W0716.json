@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: wrong-exception-operation] [Message: Invalid exception operation. %s] Description: Used when an operation is done against an exception, but the operation is not valid for the exception in question. Usually emitted when having binary operations between exceptions in except handlers. Problematic code: try: 1 / 0 except ValueError + TypeError: # [wrong-exception-operation] pass Correct code: try: 1 / 0 except (ValueError, TypeError): pass Created by the exceptions checker.",
+  "option": {}
+}

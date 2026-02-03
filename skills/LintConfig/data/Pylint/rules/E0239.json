@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: inherit-non-class] [Message: Inheriting %r, which is not a class.] Description: Used when a class inherits from something which is not a class. Problematic code: class Fruit(bool): # [inherit-non-class] pass Correct code: class Fruit: def __bool__(self): pass Created by the classes checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: use-sequence-for-iteration] [Message: Use a sequence type when iterating over values] Description: When iterating over values, sequence types (e.g., ``lists``, ``tuples``, ``ranges``) are more efficient than ``sets``. Problematic code: for food in {\"apples\", \"lemons\", \"water\"}: # [use-sequence-for-iteration] print(f\"I like {food}.\") Correct code: list.py: for food in [\"apples\", \"lemons\", \"water\"]: print(f\"I like {food}.\") tuple.py: for food in (\"apples\", \"lemons\", \"water\"): print(f\"I like {food}.\") Additional details: https://gist.github.com/hofrob/8b1c1e205a0d4c66a680b1fe4bfeba11 This example script shows a significant increase in performance when using a list, tuple or range over a set in python version 3.11.1. Created by the refactoring checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: missing-return-type-special-method] [Message: Missing return type annotation for special method <code>{name}</code>] What it does Checks that \"special\" methods, like __init__, __new__, and __call__, have return type annotations. Why is this bad? Type annotations are a good way to document the return types of functions. They also help catch bugs, when used alongside a type checker, by ensuring that the types of any returned values, and the types expected by callers, match expectation. Note that type checkers often allow you to omit the return type annotation for __init__ methods, as long as at least one argument has a type annotation. To opt in to this behavior, use the mypy-init-return setting in your pyproject.toml or ruff.toml file: [tool.ruff.lint.flake8-annotations] mypy-init-return = true Example class Foo: def __init__(self, x: int): self.x = x Use instead: class Foo: def __init__(self, x: int) -> None: self.x = x",
+  "option": {
+    "lint.flake8-annotations.mypy-init-return": {
+      "option_description": "Whether to allow the omission of a return type hint for __init__ if at\nleast one argument is annotated.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-annotations]\nmypy-init-return = true\n\n\n\n[lint.flake8-annotations]\nmypy-init-return = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

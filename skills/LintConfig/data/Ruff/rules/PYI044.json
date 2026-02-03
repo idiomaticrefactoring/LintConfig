@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: future-annotations-in-stub] [Message: <code>from __future__ import annotations</code> has no effect in stub files, since type checkers automatically treat stubs as having those semantics] What it does Checks for the presence of the from __future__ import annotations import statement in stub files. Why is this bad? Stub files natively support forward references in all contexts, as stubs are never executed at runtime. (They should be thought of as \"data files\" for type checkers.) As such, the from __future__ import annotations import statement has no effect and should be omitted.",
+  "option": {}
+}

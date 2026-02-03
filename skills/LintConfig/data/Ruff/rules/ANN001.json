@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: missing-type-function-argument] [Message: Missing type annotation for function argument <code>{name}</code>] What it does Checks that function arguments have type annotations. Why is this bad? Type annotations are a good way to document the types of function arguments. They also help catch bugs, when used alongside a type checker, by ensuring that the types of any provided arguments match expectation. Example def foo(x): ... Use instead: def foo(x: int): ...",
+  "option": {
+    "lint.flake8-annotations.suppress-dummy-args": {
+      "option_description": "Whether to suppress ANN000-level violations for arguments matching the\n\"dummy\" variable regex (like _).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-annotations]\nsuppress-dummy-args = true\n\n\n\n[lint.flake8-annotations]\nsuppress-dummy-args = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

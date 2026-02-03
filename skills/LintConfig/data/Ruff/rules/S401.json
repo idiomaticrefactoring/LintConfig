@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: suspicious-telnetlib-import] [Message: <code>telnetlib</code> and related modules are considered insecure. Use SSH or another encrypted protocol.] What it does Checks for imports of the telnetlib module. Why is this bad? Telnet is considered insecure. It is deprecated since version 3.11, and was removed in version 3.13. Instead, use SSH or another encrypted protocol. Example import telnetlib",
+  "option": {}
+}

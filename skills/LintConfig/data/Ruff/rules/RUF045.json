@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: implicit-class-var-in-dataclass] [Message: Assignment without annotation found in dataclass body] What it does Checks for implicit class variables in dataclasses. Variables matching the lint.dummy-variable-rgx are excluded from this rule. Why is this bad? Class variables are shared between all instances of that class. In dataclasses, fields with no annotations at all are implicitly considered class variables, and a TypeError is raised if a user attempts to initialize an instance of the class with this field. @dataclass class C: a = 1 b: str = \"\" C(a = 42) # TypeError: C.__init__() got an unexpected keyword argument 'a' Example @dataclass class C: a = 1 Use instead: from typing import ClassVar @dataclass class C: a: ClassVar[int] = 1",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

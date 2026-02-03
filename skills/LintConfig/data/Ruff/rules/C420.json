@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-dict-comprehension-for-iterable] [Message: Unnecessary dict comprehension for iterable; use <code>dict.fromkeys</code> instead] What it does Checks for unnecessary dict comprehension when creating a dictionary from an iterable. Why is this bad? It's unnecessary to use a dict comprehension to build a dictionary from an iterable when the value is static. Prefer dict.fromkeys(iterable) over {value: None for value in iterable}, as dict.fromkeys is more readable and efficient. Example {a: None for a in iterable} {a: 1 for a in iterable} Use instead: dict.fromkeys(iterable) dict.fromkeys(iterable, 1) Fix safety This rule's fix is marked as unsafe if there's comments inside the dict comprehension, as comments may be removed. For example, the fix would be marked as unsafe in the following case: { # comment 1 a: # comment 2 None # comment 3 for a in iterable # comment 4 }",
+  "option": {}
+}

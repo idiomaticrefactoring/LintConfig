@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: abstract-class-instantiated] [Message: Abstract class %r with abstract methods instantiated] Description: Used when an abstract class with `abc.ABCMeta` as metaclass has abstract methods and is instantiated. Problematic code: import abc class Animal(abc.ABC): @abc.abstractmethod def make_sound(self): pass sheep = Animal() # [abstract-class-instantiated] Correct code: import abc class Animal(abc.ABC): @abc.abstractmethod def make_sound(self): pass class Sheep(Animal): def make_sound(self): print(\"bhaaaaa\") sheep = Sheep() Created by the basic checker.",
+  "option": {}
+}

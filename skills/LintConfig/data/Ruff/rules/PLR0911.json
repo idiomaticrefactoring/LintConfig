@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: too-many-return-statements] [Message: Too many return statements ({returns} > {max_returns})] What it does Checks for functions or methods with too many return statements. By default, this rule allows up to six return statements, as configured by the lint.pylint.max-returns option. Why is this bad? Functions or methods with many return statements are harder to understand and maintain, and often indicative of complex logic. Example def capital(country: str) -> str | None: if country == \"England\": return \"London\" elif country == \"France\": return \"Paris\" elif country == \"Poland\": return \"Warsaw\" elif country == \"Romania\": return \"Bucharest\" elif country == \"Spain\": return \"Madrid\" elif country == \"Thailand\": return \"Bangkok\" else: return None Use instead: def capital(country: str) -> str | None: capitals = { \"England\": \"London\", \"France\": \"Paris\", \"Poland\": \"Warsaw\", \"Romania\": \"Bucharest\", \"Spain\": \"Madrid\", \"Thailand\": \"Bangkok\", } return capitals.get(country)",
+  "option": {
+    "lint.pylint.max-returns": {
+      "option_description": "Maximum number of return statements allowed for a function or method\nbody (see PLR0911)\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pylint]\nmax-returns = 10\n\n\n\n[lint.pylint]\nmax-returns = 10",
+      "option_data_type": "int",
+      "default_value": "6",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

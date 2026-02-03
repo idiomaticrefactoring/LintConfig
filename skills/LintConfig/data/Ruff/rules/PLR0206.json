@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: property-with-parameters] [Message: Cannot have defined parameters for properties] What it does Checks for property definitions that accept function parameters. Why is this bad? Properties cannot be called with parameters. If you need to pass parameters to a property, create a method with the desired parameters and call that method instead. Example class Cat: @property def purr(self, volume): ... Use instead: class Cat: @property def purr(self): ... def purr_volume(self, volume): ...",
+  "option": {
+    "lint.pydocstyle.property-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a property (in addition to the builtin\n@property and standard-library @functools.cached_property).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list can use a non-imperative summary line.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]\n\n\n\n[lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

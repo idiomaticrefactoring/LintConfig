@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: too-many-public-methods] [Message: Too many public methods ({methods} > {max_methods})] What it does Checks for classes with too many public methods By default, this rule allows up to 20 public methods, as configured by the lint.pylint.max-public-methods option. Why is this bad? Classes with many public methods are harder to understand and maintain. Instead, consider refactoring the class into separate classes. Example Assuming that lint.pylint.max-public-methods is set to 5: class Linter: def __init__(self): pass def pylint(self): pass def pylint_settings(self): pass def flake8(self): pass def flake8_settings(self): pass def pydocstyle(self): pass def pydocstyle_settings(self): pass Use instead: class Linter: def __init__(self): self.pylint = Pylint() self.flake8 = Flake8() self.pydocstyle = Pydocstyle() def lint(self): pass class Pylint: def lint(self): pass def settings(self): pass class Flake8: def lint(self): pass def settings(self): pass class Pydocstyle: def lint(self): pass def settings(self): pass",
+  "option": {
+    "lint.pylint.max-public-methods": {
+      "option_description": "Maximum number of public methods allowed for a class (see PLR0904).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pylint]\nmax-public-methods = 30\n\n\n\n[lint.pylint]\nmax-public-methods = 30",
+      "option_data_type": "int",
+      "default_value": "20",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

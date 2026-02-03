@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-dunder-call] [Message: Unnecessarily calls dunder method %s. %s.] Description: Used when a dunder method is manually called instead of using the corresponding function/method/operator. Problematic code: three = (3.0).__str__() # [unnecessary-dunder-call] twelve = \"1\".__add__(\"2\") # [unnecessary-dunder-call] def is_bigger_than_two(x): return x.__gt__(2) # [unnecessary-dunder-call] Correct code: three = str(3.0) twelve = \"1\" + \"2\" def is_bigger_than_two(x): return x > 2 Related links: Define dunder methods but don't call them directly Created by the unnecessary-dunder-call checker.",
+  "option": {}
+}

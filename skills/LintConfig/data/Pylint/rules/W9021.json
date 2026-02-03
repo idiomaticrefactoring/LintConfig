@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-any-param-doc] [Message: Missing any documentation in \"%s\"] Description: Please add parameter and/or type documentation. Problematic code: def puppies(head, tail): # [missing-any-param-doc] \"\"\"Print puppy's details.\"\"\" print(head, tail) Correct code: def puppies(head: str, tail: str): \"\"\"Print puppy's details. :param head: description of the head of the dog :param tail: description of the tail of the dog \"\"\" print(head, tail) Configuration file: [main] load-plugins = pylint.extensions.docparams accept-no-param-doc = false Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

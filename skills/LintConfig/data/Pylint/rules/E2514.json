@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-character-nul] [Message: Invalid unescaped character nul, use \"\\0\" instead.] Description: Mostly end of input for python. Additional details: There's no need to use end-of-string characters. String objects maintain their own length. Related links: Null terminator in python Created by the unicode_checker checker.",
+  "option": {}
+}

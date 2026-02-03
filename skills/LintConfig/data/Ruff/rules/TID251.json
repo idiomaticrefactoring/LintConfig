@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: banned-api] [Message: <code>{name}</code> is banned: {message}] What it does Checks for banned imports. Why is this bad? Projects may want to ensure that specific modules or module members are not imported or accessed. Security or other company policies may be a reason to impose restrictions on importing external Python libraries. In some cases, projects may adopt conventions around the use of certain modules or module members that are not enforceable by the language itself. This rule enforces certain import conventions project-wide automatically.",
+  "option": {
+    "lint.flake8-tidy-imports.banned-api": {
+      "option_description": "Specific modules or module members that may not be imported or accessed.\nNote that this rule is only meant to flag accidental uses,\nand can be circumvented via eval or importlib.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-tidy-imports.banned-api]\n\"cgi\".msg = \"The cgi module is deprecated, see https://peps.python.org/pep-0594/#cgi.\"\n\"typing.TypedDict\".msg = \"Use typing_extensions.TypedDict instead.\"\n\n\n\n[lint.flake8-tidy-imports.banned-api]\n\"cgi\".msg = \"The cgi module is deprecated, see https://peps.python.org/pep-0594/#cgi.\"\n\"typing.TypedDict\".msg = \"Use typing_extensions.TypedDict instead.\"",
+      "option_data_type": "dict[str, { \"msg\": str }]",
+      "default_value": "{}",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

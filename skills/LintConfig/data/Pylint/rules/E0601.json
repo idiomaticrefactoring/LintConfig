@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: used-before-assignment] [Message: Using variable %r before assignment] Description: Emitted when a local variable is accessed before its assignment took place. Assignments in try blocks are assumed not to have occurred when evaluating associated except/finally blocks. Assignments in except blocks are assumed not to have occurred when evaluating statements outside the block, except when the associated try block contains a return statement. Problematic code: print(hello) # [used-before-assignment] hello = \"Hello World !\" Correct code: hello = \"Hello World !\" print(hello) Created by the variables checker.",
+  "option": {}
+}

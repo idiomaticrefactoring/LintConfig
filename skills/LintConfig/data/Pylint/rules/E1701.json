@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: not-async-context-manager] [Message: Async context manager '%s' doesn't implement __aenter__ and __aexit__.] Description: Used when an async context manager is used with an object that does not implement the async context management protocol. Problematic code: class ContextManager: def __enter__(self): pass def __exit__(self, *exc): pass async def foo(): async with ContextManager(): # [not-async-context-manager] pass Correct code: class AsyncContextManager: def __aenter__(self): pass def __aexit__(self, *exc): pass async def foo(): async with AsyncContextManager(): pass Additional details: Async context manager doesn't implement __aenter__ and __aexit__. It can't be emitted when using Python < 3.5. Created by the async checker.",
+  "option": {}
+}

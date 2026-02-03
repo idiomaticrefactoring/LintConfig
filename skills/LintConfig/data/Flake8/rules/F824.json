@@ -1,0 +1,4 @@
+{
+  "description": "global name / nonlocal name is unused: name is never assigned in scope",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-join] [Message: Consider using str.join(sequence) for concatenating strings from an iterable] Description: Using str.join(sequence) is faster, uses less memory and increases readability compared to for-loop iteration. Problematic code: def fruits_to_string(fruits): formatted_fruit = \"\" for fruit in fruits: formatted_fruit += fruit # [consider-using-join] return formatted_fruit print(fruits_to_string([\"apple\", \"pear\", \"peach\"])) Correct code: print(\"\".join([\"apple\", \"pear\", \"peach\"])) Created by the refactoring checker.",
+  "option": {}
+}

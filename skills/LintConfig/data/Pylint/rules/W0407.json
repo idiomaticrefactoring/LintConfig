@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: preferred-module] [Message: Prefer importing %r instead of %r] Description: Used when a module imported has a preferred replacement module. Problematic code: import urllib # [preferred-module] Correct code: import requests Configuration file: [IMPORTS] preferred-modules=urllib:requests, Created by the imports checker.",
+  "option": {}
+}

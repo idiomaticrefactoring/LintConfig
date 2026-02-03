@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: broken-collections-callable] [Message: 'collections.abc.Callable' inside Optional and Union is broken in 3.9.0 / 3.9.1 (use 'typing.Callable' instead)] Description: ``collections.abc.Callable`` inside Optional and Union is broken in Python 3.9.0 and 3.9.1. Use ``typing.Callable`` for these cases instead. https://bugs.python.org/issue42965 Problematic code: from collections.abc import Callable from typing import Optional def func() -> Optional[Callable[[int], None]]: # [broken-collections-callable] ... Correct code: from typing import Callable, Optional def func() -> Optional[Callable[[int], None]]: ... Configuration file: [main] py-version=3.9 load-plugins=pylint.extensions.typing Related links: bpo-42965 Note This message is emitted by the optional 'typing' checker, which requires the pylint.extensions.typing plugin to be loaded. Created by the typing checker.",
+  "option": {}
+}

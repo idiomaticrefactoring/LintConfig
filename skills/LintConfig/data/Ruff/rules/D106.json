@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: undocumented-public-nested-class] [Message: Missing docstring in public nested class] What it does Checks for undocumented public class definitions, for nested classes. Why is this bad? Public classes should be documented via docstrings to outline their purpose and behavior. Nested classes do not inherit the docstring of their enclosing class, so they should have their own docstrings. If the codebase adheres to a standard format for class docstrings, follow that format for consistency. Example class Foo: \"\"\"Class Foo.\"\"\" class Bar: ... bar = Foo.Bar() bar.__doc__ # None Use instead: class Foo: \"\"\"Class Foo.\"\"\" class Bar: \"\"\"Class Bar.\"\"\" bar = Foo.Bar() bar.__doc__ # \"Class Bar.\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

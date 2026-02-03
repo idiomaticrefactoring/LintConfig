@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: missing-whitespace-after-keyword] [Message: Missing whitespace after keyword] What it does Checks for missing whitespace after keywords. Why is this bad? Missing whitespace after keywords makes the code harder to read. Example if(True): pass Use instead: if (True): pass",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-timeout] [Message: Missing timeout argument for method '%s' can cause your program to hang indefinitely] Description: Used when a method needs a 'timeout' parameter in order to avoid waiting for a long time. If no timeout is specified explicitly the default value is used. For example for 'requests' the program will never time out (i.e. hang indefinitely). Problematic code: import requests requests.post(\"http://localhost\") # [missing-timeout] Correct code: import requests requests.post(\"http://localhost\", timeout=10) Additional details: You can add new methods that should have a defined `timeout argument as qualified names in the timeout-methods option, for example: requests.api.get requests.api.head requests.api.options requests.api.patch requests.api.post requests.api.put requests.api.request Created by the method_args checker.",
+  "option": {}
+}

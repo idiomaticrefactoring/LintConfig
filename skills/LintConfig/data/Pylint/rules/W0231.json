@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: super-init-not-called] [Message: __init__ method from base class %r is not called] Description: Used when an ancestor class method has an __init__ method which is not called by a derived class. Problematic code: class Fruit: def __init__(self, name=\"fruit\"): self.name = name print(\"Creating a {self.name}\") class Apple(Fruit): def __init__(self): # [super-init-not-called] print(\"Creating an apple\") Correct code: class Fruit: def __init__(self, name=\"fruit\"): self.name = name print(\"Creating a {self.name}\") class Apple(Fruit): def __init__(self): super().__init__(\"apple\") Created by the classes checker.",
+  "option": {}
+}

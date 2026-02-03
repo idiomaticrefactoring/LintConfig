@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: condition-evals-to-constant] [Message: Boolean condition '%s' will always evaluate to '%s'] Description: Emitted when a boolean condition can be simplified to a constant value. Problematic code: def is_a_fruit(fruit): return bool(fruit in {\"apple\", \"orange\"} or True) # [condition-evals-to-constant] Correct code: def is_a_fruit(fruit): return fruit in {\"apple\", \"orange\"} Created by the refactoring checker.",
+  "option": {}
+}

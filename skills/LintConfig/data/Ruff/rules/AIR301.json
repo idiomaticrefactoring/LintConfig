@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: airflow3-removal] [Message: <code>{deprecated}</code> is removed in Airflow 3.0] What it does Checks for uses of deprecated Airflow functions and values. Why is this bad? Airflow 3.0 removed various deprecated functions, members, and other values. Some have more modern replacements. Others are considered too niche and not worth continued maintenance in Airflow. Example from airflow.utils.dates import days_ago yesterday = days_ago(today, 1) Use instead: from datetime import timedelta yesterday = today - timedelta(days=1)",
+  "option": {}
+}

@@ -1,0 +1,518 @@
+{
+  "F401": {
+    "description": "module imported but unused",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F402": {
+    "description": "import module from line N shadowed by loop variable",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F403": {
+    "description": "‘from module import *’ used; unable to detect undefined names",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F404": {
+    "description": "future import(s) name after other statements",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F405": {
+    "description": "name may be undefined, or defined from star imports: module",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F406": {
+    "description": "‘from module import *’ only allowed at module level",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F407": {
+    "description": "an undefined __future__ feature name was imported",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F501": {
+    "description": "invalid % format literal",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F502": {
+    "description": "% format expected mapping but got sequence",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F503": {
+    "description": "% format expected sequence but got mapping",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F504": {
+    "description": "% format unused named arguments",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F505": {
+    "description": "% format missing named arguments",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F506": {
+    "description": "% format mixed positional and named arguments",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F507": {
+    "description": "% format mismatch of placeholder and argument count",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F508": {
+    "description": "% format with * specifier requires a sequence",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F509": {
+    "description": "% format with unsupported format character",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F521": {
+    "description": ".format(...) invalid format string",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F522": {
+    "description": ".format(...) unused named arguments",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F523": {
+    "description": ".format(...) unused positional arguments",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F524": {
+    "description": ".format(...) missing argument",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F525": {
+    "description": ".format(...) mixing automatic and manual numbering",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F541": {
+    "description": "f-string without any placeholders",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F542": {
+    "description": "t-string without any placeholders",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F601": {
+    "description": "dictionary key name repeated with different values",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F602": {
+    "description": "dictionary key variable name repeated with different values",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F621": {
+    "description": "too many expressions in an assignment with star-unpacking",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F622": {
+    "description": "two or more starred expressions in an assignment (a, *b, *c = d)",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F631": {
+    "description": "assertion test is a tuple, which is always True",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F632": {
+    "description": "use ==/!= to compare str, bytes, and int literals",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F633": {
+    "description": "use of >> is invalid with print function",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F634": {
+    "description": "if test is a tuple, which is always True",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F701": {
+    "description": "a break statement outside of a while or for loop",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F702": {
+    "description": "a continue statement outside of a while or for loop",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F704": {
+    "description": "a yield or yield from statement outside of a function",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F706": {
+    "description": "a return statement outside of a function/method",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F707": {
+    "description": "an except: block as not the last exception handler",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F721": {
+    "description": "syntax error in doctest",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F722": {
+    "description": "syntax error in forward annotation",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F723": {
+    "description": "syntax error in type comment",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F811": {
+    "description": "redefinition of unused name from line N",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F821": {
+    "description": "undefined name name",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F822": {
+    "description": "undefined name name in __all__",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F823": {
+    "description": "local variable name … referenced before assignment",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F824": {
+    "description": "global name / nonlocal name is unused: name is never assigned in scope",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F831": {
+    "description": "duplicate argument name in function definition",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F841": {
+    "description": "local variable name is assigned to but never used",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "F901": {
+    "description": "raise NotImplemented should be raise NotImplementedError",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "E101": {
+    "description": "indentation contains mixed spaces and tabs",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E111": {
+    "description": "indentation is not a multiple of four",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E112": {
+    "description": "expected an indented block",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E113": {
+    "description": "unexpected indentation",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E114": {
+    "description": "indentation is not a multiple of four (comment)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E115": {
+    "description": "expected an indented block (comment)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E116": {
+    "description": "unexpected indentation (comment)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E117": {
+    "description": "over-indented",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E121": {
+    "description": "continuation line under-indented for hanging indent",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E122": {
+    "description": "continuation line missing indentation or outdented",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E123": {
+    "description": "closing bracket does not match indentation of opening bracket’s line",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E124": {
+    "description": "closing bracket does not match visual indentation",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E125": {
+    "description": "continuation line with same indent as next logical line",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E126": {
+    "description": "continuation line over-indented for hanging indent",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E127": {
+    "description": "continuation line over-indented for visual indent",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E128": {
+    "description": "continuation line under-indented for visual indent",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E129": {
+    "description": "visually indented line with same indent as next logical line",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E131": {
+    "description": "continuation line unaligned for hanging indent",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E133": {
+    "description": "closing bracket is missing indentation",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E201": {
+    "description": "whitespace after ‘(’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E202": {
+    "description": "whitespace before ‘)’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E203": {
+    "description": "whitespace before ‘,’, ‘;’, or ‘:’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E204": {
+    "description": "whitespace after decorator ‘@’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E211": {
+    "description": "whitespace before ‘(’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E221": {
+    "description": "multiple spaces before operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E222": {
+    "description": "multiple spaces after operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E223": {
+    "description": "tab before operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E224": {
+    "description": "tab after operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E225": {
+    "description": "missing whitespace around operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E226": {
+    "description": "missing whitespace around arithmetic operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E227": {
+    "description": "missing whitespace around bitwise or shift operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E228": {
+    "description": "missing whitespace around modulo operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E231": {
+    "description": "missing whitespace after ‘,’, ‘;’, or ‘:’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E241": {
+    "description": "multiple spaces after ‘,’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E242": {
+    "description": "tab after ‘,’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E251": {
+    "description": "unexpected spaces around keyword / parameter equals",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E261": {
+    "description": "at least two spaces before inline comment",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E262": {
+    "description": "inline comment should start with ‘# ‘",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E265": {
+    "description": "block comment should start with ‘# ‘",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E266": {
+    "description": "too many leading ‘#’ for block comment",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E271": {
+    "description": "multiple spaces after keyword",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E272": {
+    "description": "multiple spaces before keyword",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E273": {
+    "description": "tab after keyword",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E274": {
+    "description": "tab before keyword",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E275": {
+    "description": "missing whitespace after keyword",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E301": {
+    "description": "expected 1 blank line, found 0",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E302": {
+    "description": "expected 2 blank lines, found 0",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E303": {
+    "description": "too many blank lines (3)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E304": {
+    "description": "blank lines found after function decorator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E305": {
+    "description": "expected 2 blank lines after end of function or class",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E306": {
+    "description": "expected 1 blank line before a nested definition",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E401": {
+    "description": "multiple imports on one line",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E402": {
+    "description": "module level import not at top of file",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E501": {
+    "description": "line too long (82 > 79 characters)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E502": {
+    "description": "the backslash is redundant between brackets",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E701": {
+    "description": "multiple statements on one line (colon)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E702": {
+    "description": "multiple statements on one line (semicolon)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E703": {
+    "description": "statement ends with a semicolon",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E704": {
+    "description": "multiple statements on one line (def)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E711": {
+    "description": "comparison to None should be ‘if cond is None:’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E712": {
+    "description": "comparison to True should be ‘if cond is True:’ or ‘if cond:’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E713": {
+    "description": "test for membership should be ‘not in’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E714": {
+    "description": "test for object identity should be ‘is not’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E721": {
+    "description": "do not compare types, use ‘isinstance()’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E722": {
+    "description": "do not use bare except, specify exception instead",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E731": {
+    "description": "do not assign a lambda expression, use a def",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E741": {
+    "description": "do not use variables named ‘l’, ‘O’, or ‘I’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E742": {
+    "description": "do not define classes named ‘l’, ‘O’, or ‘I’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E743": {
+    "description": "do not define functions named ‘l’, ‘O’, or ‘I’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E901": {
+    "description": "SyntaxError or IndentationError",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E902": {
+    "description": "IOError",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W191": {
+    "description": "indentation contains tabs",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W291": {
+    "description": "trailing whitespace",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W292": {
+    "description": "no newline at end of file",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W293": {
+    "description": "blank line contains whitespace",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W391": {
+    "description": "blank line at end of file",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W503": {
+    "description": "line break before binary operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W504": {
+    "description": "line break after binary operator",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W505": {
+    "description": "doc line too long (82 > 79 characters)",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "W605": {
+    "description": "invalid escape sequence ‘x’",
+    "ruleurl": "https://pycodestyle.pycqa.org/en/latest/intro.html"
+  },
+  "E999": {
+    "description": "",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  },
+  "C901": {
+    "description": "{func} is too complex ({complexity})",
+    "ruleurl": "https://flake8.pycqa.org/en/latest/user/error-codes.html"
+  }
+}

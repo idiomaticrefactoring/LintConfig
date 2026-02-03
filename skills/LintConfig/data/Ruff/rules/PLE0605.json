@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-all-format] [Message: Invalid format for <code>__all__</code>, must be <code>tuple</code> or <code>list</code>] What it does Checks for invalid assignments to __all__. Why is this bad? In Python, __all__ should contain a sequence of strings that represent the names of all \"public\" symbols exported by a module. Assigning anything other than a tuple or list of strings to __all__ is invalid. Example __all__ = \"Foo\" Use instead: __all__ = (\"Foo\",)",
+  "option": {}
+}

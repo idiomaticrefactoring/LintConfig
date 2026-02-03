@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-length-returned] [Message: __len__ does not return non-negative integer] Description: Used when a __len__ method returns something which is not a non-negative integer Problematic code: class FruitBasket: def __init__(self, fruits): self.fruits = [\"Apple\", \"Banana\", \"Orange\"] def __len__(self): # [invalid-length-returned] return -len(self.fruits) Correct code: class FruitBasket: def __init__(self, fruits): self.fruits = [\"Apple\", \"Banana\", \"Orange\"] def __len__(self): return len(self.fruits) Created by the classes checker.",
+  "option": {}
+}

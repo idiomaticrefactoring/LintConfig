@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: docstring-starts-with-this] [Message: First word of the docstring should not be \"This\"] What it does Checks for docstrings that start with This. Why is this bad? PEP 257 recommends that the first line of a docstring be written in the imperative mood, for consistency. Hint: to rewrite the docstring in the imperative, phrase the first line as if it were a command. This rule may not apply to all projects; its applicability is a matter of convention. By default, this rule is enabled when using the numpy convention,, and disabled when using the google and pep257 conventions. Example def average(values: list[float]) -> float: \"\"\"This function returns the mean of the given values.\"\"\" Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\"",
+  "option": {
+    "lint.pydocstyle.convention": {
+      "option_description": "Whether to use Google-style, NumPy-style conventions, or the PEP 257\ndefaults when analyzing docstring sections.\n\nEnabling a convention will disable all rules that are not included in\nthe specified convention. As such, the intended workflow is to enable a\nconvention and then selectively enable or disable any additional rules\non top of it.\n\nFor example, to use Google-style conventions but avoid requiring\ndocumentation for every function parameter:\n\n[tool.ruff.lint]\n# Enable all `pydocstyle` rules, limiting to those that adhere to the\n# Google convention via `convention = \"google\"`, below.\nselect = [\"D\"]\n\n# On top of the Google convention, disable `D417`, which requires\n# documentation for every function parameter.\nignore = [\"D417\"]\n\n[tool.ruff.lint.pydocstyle]\nconvention = \"google\"\n\nTo enable an additional rule that's excluded from the convention,\nselect the desired rule via its fully qualified rule code (e.g.,\nD400 instead of D4 or D40):\n\n[tool.ruff.lint]\n# Enable D400 on top of the Google convention.\nextend-select = [\"D400\"]\n\n[tool.ruff.lint.pydocstyle]\nconvention = \"google\"\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\n# Use Google-style docstrings.\nconvention = \"google\"\n\n\n\n[lint.pydocstyle]\n# Use Google-style docstrings.\nconvention = \"google\"",
+      "option_data_type": "\"google\" | \"numpy\" | \"pep257\"",
+      "default_value": "null",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

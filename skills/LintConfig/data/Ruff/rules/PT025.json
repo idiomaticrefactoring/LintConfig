@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pytest-erroneous-use-fixtures-on-fixture] [Message: <code>pytest.mark.usefixtures</code> has no effect on fixtures] What it does Checks for pytest.mark.usefixtures decorators applied to pytest fixtures. Why is this bad? The pytest.mark.usefixtures decorator has no effect on pytest fixtures. Example import pytest @pytest.fixture() def a(): pass @pytest.mark.usefixtures(\"a\") @pytest.fixture() def b(a): pass Use instead: import pytest @pytest.fixture() def a(): pass @pytest.fixture() def b(a): pass",
+  "option": {}
+}

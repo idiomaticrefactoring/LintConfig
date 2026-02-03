@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-docstring-quotes] [Message: Bad docstring quotes in %s, expected \"\"\", given %s] Description: Used when a docstring does not have triple double quotes. Problematic code: def foo(): # [bad-docstring-quotes] \"Docstring.\" return Correct code: def foo(): \"\"\"Docstring.\"\"\" return Configuration file: [main] load-plugins=pylint.extensions.docstyle Additional details: From PEP 257:\"For consistency, always use \"\"\"triple double quotes\"\"\" around docstrings.\" Related links: PEP 257 – Docstring Conventions Note This message is emitted by the optional 'docstyle' checker, which requires the pylint.extensions.docstyle plugin to be loaded. Created by the docstyle checker.",
+  "option": {}
+}

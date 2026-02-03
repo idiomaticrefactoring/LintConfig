@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-envvar-default] [Message: %s default type is %s. Expected str or None.] Description: Env manipulation functions return None or str values. Supplying anything different as a default may cause bugs. See https://docs.python.org/3/library/os.html#os.getenv. Problematic code: import os env = os.getenv(\"SECRET_KEY\", 1) # [invalid-envvar-default] Correct code: import os env = os.getenv(\"SECRET_KEY\", \"1\") Created by the stdlib checker.",
+  "option": {}
+}

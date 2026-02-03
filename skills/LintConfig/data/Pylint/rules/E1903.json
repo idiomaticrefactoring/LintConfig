@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: too-many-positional-sub-patterns] [Message: %s expects %d positional sub-patterns (given %d)] Description: Emitted when the number of allowed positional sub-patterns exceeds the number of allowed sub-patterns specified in `__match_args__`. Problematic code: class Book: __match_args__ = (\"title\", \"year\") def __init__(self, title, year, author): self.title = title self.year = year self.author = author def func(item: Book): match item: case Book(\"title\", 2000, \"author\"): # [too-many-positional-sub-patterns] ... Correct code: class Book: __match_args__ = (\"title\", \"year\") def __init__(self, title, year, author): self.title = title self.year = year self.author = author def func(item: Book): match item: case Book(\"title\", 2000, author=\"author\"): ... Related links: Python documentation Created by the match_statements checker.",
+  "option": {}
+}

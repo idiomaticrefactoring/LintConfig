@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-type-doc] [Message: \"%s\" missing in parameter type documentation] Description: Please add parameter type declarations for all parameters. Problematic code: def integer_sum(a: int, b): # [missing-type-doc] \"\"\"Returns sum of two integers :param a: first integer :param b: second integer \"\"\" return a + b Correct code: def integer_sum(a: int, b: int): \"\"\"Returns sum of two integers :param a: first integer :param b: second integer \"\"\" return a + b Configuration file: [MAIN] load-plugins = pylint.extensions.docparams Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

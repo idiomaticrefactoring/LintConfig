@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: assert-on-string-literal] [Message: Assert statement has a string literal as its first argument. The assert will %s fail.] Description: Used when an assert statement has a string literal as its first argument, which will cause the assert to always pass. Problematic code: def test_division(): a = 9 / 3 assert \"No ZeroDivisionError were raised\" # [assert-on-string-literal] Correct code: def test_division(): a = 9 / 3 assert a == 3 Additional details: Directly asserting a string literal will always pass. The solution is to test something that could fail, or not assert at all. For unittest assertions there is the similar redundant-unittest-assert / W1503 message. Related links: Tests without assertion Testing that there is no error raised Parametrizing conditional raising Created by the basic checker.",
+  "option": {}
+}

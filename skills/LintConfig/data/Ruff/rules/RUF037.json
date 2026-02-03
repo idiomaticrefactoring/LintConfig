@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: unnecessary-empty-iterable-within-deque-call] [Message: Unnecessary empty iterable within a deque call] What it does Checks for usages of collections.deque that have an empty iterable as the first argument. Why is this bad? It's unnecessary to use an empty literal as a deque's iterable, since this is already the default behavior. Example from collections import deque queue = deque(set()) queue = deque([], 10) Use instead: from collections import deque queue = deque() queue = deque(maxlen=10) Fix safety The fix is marked as unsafe whenever it would delete comments present in the deque call or if there are unrecognized arguments other than iterable and maxlen. Fix availability This rule's fix is unavailable if any starred arguments are present after the initial iterable.",
+  "option": {}
+}

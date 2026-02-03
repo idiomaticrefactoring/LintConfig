@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: try-except-continue] [Message: <code>try</code>-<code>except</code>-<code>continue</code> detected, consider logging the exception] What it does Checks for uses of the try-except-continue pattern. Why is this bad? The try-except-continue pattern suppresses all exceptions. Suppressing exceptions may hide errors that could otherwise reveal unexpected behavior, security vulnerabilities, or malicious activity. Instead, consider logging the exception. Example import logging while predicate: try: ... except Exception: continue Use instead: import logging while predicate: try: ... except Exception as exc: logging.exception(\"Error occurred\")",
+  "option": {
+    "lint.flake8-bandit.check-typed-exception": {
+      "option_description": "Whether to disallow try-except-pass (S110) for specific\nexception types. By default, try-except-pass is only\ndisallowed for Exception and BaseException.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-bandit]\ncheck-typed-exception = true\n\n\n\n[lint.flake8-bandit]\ncheck-typed-exception = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

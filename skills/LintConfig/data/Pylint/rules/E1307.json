@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-string-format-type] [Message: Argument %r does not match format type %r] Description: Used when a type required by format string is not suitable for actual argument type Problematic code: print(\"%d\" % \"1\") # [bad-string-format-type] Correct code: print(\"%d\" % 1) Additional details: This check is currently only active for \"old-style\" string formatting as seen in the examples. See Issue #6085 for more information. Related links: Format String Syntax PyFormat Created by the string checker.",
+  "option": {}
+}

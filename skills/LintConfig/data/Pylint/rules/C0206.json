@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-dict-items] [Message: Consider iterating with .items()] Description: Emitted when iterating over the keys of a dictionary and accessing the value by index lookup. Both the key and value can be accessed by iterating using the .items() method of the dictionary instead. Problematic code: ORCHESTRA = { \"violin\": \"strings\", \"oboe\": \"woodwind\", \"tuba\": \"brass\", \"gong\": \"percussion\", } for instrument in ORCHESTRA: # [consider-using-dict-items] print(f\"{instrument}: {ORCHESTRA[instrument]}\") Correct code: ORCHESTRA = { \"violin\": \"strings\", \"oboe\": \"woodwind\", \"tuba\": \"brass\", \"gong\": \"percussion\", } for instrument, section in ORCHESTRA.items(): print(f\"{instrument}: {section}\") Created by the refactoring checker.",
+  "option": {}
+}

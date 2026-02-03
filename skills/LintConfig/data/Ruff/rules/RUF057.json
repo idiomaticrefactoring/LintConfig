@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-round] [Message: Value being rounded is already an integer] What it does Checks for round() calls that have no effect on the input. Why is this bad? Rounding a value that's already an integer is unnecessary. It's clearer to use the value directly. Example a = round(1, 0) Use instead: a = 1 Fix safety The fix is marked unsafe if it is not possible to guarantee that the first argument of round() is of type int, or if the fix deletes comments.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: whitespace-before-parameters] [Message: Whitespace before '{bracket}'] What it does Checks for extraneous whitespace immediately preceding an open parenthesis or bracket. Why is this bad? According to PEP 8, open parentheses and brackets should not be preceded by any trailing whitespace. Example spam (1) Use instead: spam(1)",
+  "option": {}
+}

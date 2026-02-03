@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: commented-out-code] [Message: Found commented-out code] What it does Checks for commented-out Python code. Why is this bad? Commented-out code is dead code, and is often included inadvertently. It should be removed. Known problems Prone to false positives when checking comments that resemble Python code, but are not actually Python code (#4845). Example # print(\"Hello, world!\")",
+  "option": {
+    "lint.task-tags": {
+      "option_description": "A list of task tags to recognize (e.g., \"TODO\", \"FIXME\", \"XXX\").\n\nComments starting with these tags will be ignored by commented-out code\ndetection (ERA), and skipped by line-length rules (E501) if\nignore-overlong-task-comments is set to true.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\ntask-tags = [\"HACK\"]\n\n\n\n[lint]\ntask-tags = [\"HACK\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"TODO\", \"FIXME\", \"XXX\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

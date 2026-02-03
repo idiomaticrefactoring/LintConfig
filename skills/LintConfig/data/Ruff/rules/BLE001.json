@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: blind-except] [Message: Do not catch blind exception: <code>{name}</code>] What it does Checks for except clauses that catch all exceptions. This includes except BaseException and except Exception. Why is this bad? Overly broad except clauses can lead to unexpected behavior, such as catching KeyboardInterrupt or SystemExit exceptions that prevent the user from exiting the program. Instead of catching all exceptions, catch only those that are expected to be raised in the try block. Example try: foo() except BaseException: ... Use instead: try: foo() except FileNotFoundError: ... Exceptions that are re-raised will not be flagged, as they're expected to be caught elsewhere: try: foo() except BaseException: raise Exceptions that are logged with exc_info enabled will not be flagged, as this is a common pattern for propagating exception traces: try: foo() except BaseException: logging.exception(\"Something went wrong\")",
+  "option": {
+    "lint.logger-objects": {
+      "option_description": "A list of objects that should be treated equivalently to a\nlogging.Logger object.\n\nThis is useful for ensuring proper diagnostics (e.g., to identify\nlogging deprecations and other best-practices) for projects that\nre-export a logging.Logger object from a common module.\n\nFor example, if you have a module logging_setup.py with the following\ncontents:\nimport logging\n\nlogger = logging.getLogger(__name__)\n\nAdding \"logging_setup.logger\" to logger-objects will ensure that\nlogging_setup.logger is treated as a logging.Logger object when\nimported from other modules (e.g., from logging_setup import logger).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\nlogger-objects = [\"logging_setup.logger\"]\n\n\n\n[lint]\nlogger-objects = [\"logging_setup.logger\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

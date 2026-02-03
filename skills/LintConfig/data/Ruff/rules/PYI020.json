@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: quoted-annotation-in-stub] [Message: Quoted annotations should not be included in stubs] What it does Checks for quoted type annotations in stub (.pyi) files, which should be avoided. Why is this bad? Stub files natively support forward references in all contexts, as stubs are never executed at runtime. (They should be thought of as \"data files\" for type checkers and IDEs.) As such, quotes are never required for type annotations in stub files, and should be omitted. Example def function() -> \"int\": ... Use instead: def function() -> int: ...",
+  "option": {}
+}

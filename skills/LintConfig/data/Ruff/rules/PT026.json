@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pytest-use-fixtures-without-parameters] [Message: Useless <code>pytest.mark.usefixtures</code> without parameters] What it does Checks for @pytest.mark.usefixtures() decorators that aren't passed any arguments. Why is this bad? A @pytest.mark.usefixtures() decorator that isn't passed any arguments is useless and should be removed. Example import pytest @pytest.mark.usefixtures() def test_something(): ... Use instead: def test_something(): ...",
+  "option": {}
+}

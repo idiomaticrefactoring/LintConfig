@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unsupported-binary-operation] [Message: %s] Description: Emitted when a binary arithmetic operation between two operands is not supported. Problematic code: drink = \"water\" | None # [unsupported-binary-operation] result = [] | None # [unsupported-binary-operation] Correct code: masked = 0b111111 & 0b001100 result = 0xAEFF | 0x0B99 Configuration file: [main] py-version=3.9 Created by the typecheck checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-suppression] [Message: Useless suppression of %s] Description: Reported when a message is explicitly disabled for a line or a block of code, but never triggered. Caution This message is disabled by default. To enable it, add useless-suppression to the enable option. Caution By default, this message will not fail the execution (pylint will return 0). To make pylint fail for this message use the --fail-on=I0021 option or --fail-on=I to fail on all enabled informational messages. Problematic code: fruit_counter = 0 # pylint: disable-next=redefined-outer-name def eat(fruit_name: str): # [useless-suppression] ... Correct code: fruit_counter = 0 def eat(fruit_name: str): ... Created by the main checker.",
+  "option": {}
+}

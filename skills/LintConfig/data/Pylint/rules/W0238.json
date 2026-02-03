@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-private-member] [Message: Unused private member `%s.%s`] Description: Emitted when a private member of a class is defined but not used. Problematic code: class Fruit: FRUITS = {\"apple\": \"red\", \"orange\": \"orange\"} def __print_color(self): # [unused-private-member] pass Correct code: class Fruit: FRUITS = {\"apple\": \"red\", \"orange\": \"orange\"} def __print_color(self, name, color): print(f\"{name}: {color}\") def print(self): for fruit, color in self.FRUITS.items(): self.__print_color(fruit, color) Created by the classes checker.",
+  "option": {}
+}

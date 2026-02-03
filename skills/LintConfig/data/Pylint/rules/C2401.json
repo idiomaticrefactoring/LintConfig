@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: non-ascii-name] [Message: %s name \"%s\" contains a non-ASCII character, consider renaming it.] Description: Used when the name contains at least one non-ASCII unicode character. See https://peps.python.org/pep-0672/#confusing-features for a background why this could be bad. If your programming guideline defines that you are programming in English, then there should be no need for non ASCII characters in Python Names. If not you can simply disable this check. Problematic code: ápple_count = 4444 # [non-ascii-name] Correct code: apple_count = 4444 Created by the nonascii-checker checker.",
+  "option": {}
+}

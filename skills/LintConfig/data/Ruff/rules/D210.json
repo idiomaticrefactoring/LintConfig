@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: surrounding-whitespace] [Message: No whitespaces allowed surrounding docstring text] What it does Checks for surrounding whitespace in docstrings. Why is this bad? Remove surrounding whitespace from the docstring, for consistency. Example def factorial(n: int) -> int: \"\"\" Return the factorial of n. \"\"\" Use instead: def factorial(n: int) -> int: \"\"\"Return the factorial of n.\"\"\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

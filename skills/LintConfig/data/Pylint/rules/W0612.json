@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-variable] [Message: Unused variable %r] Description: Used when a variable is defined but not used. Problematic code: def print_fruits(): fruit1 = \"orange\" fruit2 = \"apple\" # [unused-variable] print(fruit1) Correct code: def print_fruits(): fruit1 = \"orange\" fruit2 = \"apple\" print(fruit1, fruit2) Created by the variables checker.",
+  "option": {}
+}

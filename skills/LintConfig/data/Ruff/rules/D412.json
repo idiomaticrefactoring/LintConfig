@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: blank-lines-between-header-and-content] [Message: No blank lines allowed between a section header and its content (\"{name}\")] What it does Checks for docstring sections that contain blank lines between a section header and a section body. Why is this bad? This rule enforces a consistent style for multiline docstrings. Multiline docstrings are typically composed of a summary line, followed by a blank line, followed by a series of sections, each with a section header and a section body. There should be no blank lines between a section header and a section body. Example def calculate_speed(distance: float, time: float) -> float: \"\"\"Calculate speed as distance divided by time. Args: distance: Distance traveled. time: Time spent traveling. Returns: Speed as distance divided by time. Raises: FasterThanLightError: If speed is greater than the speed of light. \"\"\" try: return distance / time except ZeroDivisionError as exc: raise FasterThanLightError from exc Use instead: def calculate_speed(distance: float, time: float) -> float: \"\"\"Calculate speed as distance divided by time. Args: distance: Distance traveled. time: Time spent traveling. Returns: Speed as distance divided by time. Raises: FasterThanLightError: If speed is greater than the speed of light. \"\"\" try: return distance / time except ZeroDivisionError as exc: raise FasterThanLightError from exc",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

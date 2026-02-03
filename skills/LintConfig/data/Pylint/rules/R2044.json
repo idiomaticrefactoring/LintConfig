@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: empty-comment] [Message: Line with empty comment] Description: Used when a # symbol appears on a line not followed by an actual comment Problematic code: # +1:[empty-comment] # # +1:[empty-comment] x = 0 # Correct code: # comment x = 0 # comment Configuration file: [main] load-plugins=pylint.extensions.empty_comment Note This message is emitted by the optional 'empty-comment' checker, which requires the pylint.extensions.empty_comment plugin to be loaded. Created by the empty-comment checker.",
+  "option": {}
+}

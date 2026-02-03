@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: declare-non-slot] [Message: No such name %r in __slots__] Description: Raised when a type annotation on a class is absent from the list of names in __slots__, and __slots__ does not contain a __dict__ entry. Problematic code: class Student: __slots__ = (\"name\",) name: str surname: str # [declare-non-slot] Correct code: class Student: __slots__ = (\"name\", \"surname\") name: str surname: str Created by the classes checker.",
+  "option": {}
+}

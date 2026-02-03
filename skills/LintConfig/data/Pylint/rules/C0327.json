@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: mixed-line-endings] [Message: Mixed line endings LF and CRLF] Description: Used when there are mixed (LF and CRLF) newline signs in a file. Problematic code: print(\"Hello\") # CRLF (\\r\\n) print(\"World\") # LF (\\n) # [mixed-line-endings] Correct code: full_crlf.py: print(\"Hello\") # CRLF (\\r\\n) print(\"World\") # CRLF (\\r\\n) full_lf.py: print(\"Hello\") # LF (\\n) print(\"World\") # LF (\\n) Related links: History of CRLF and LF Dealing with line endings in Git A Collection of Useful .gitattributes Templates Created by the format checker.",
+  "option": {}
+}

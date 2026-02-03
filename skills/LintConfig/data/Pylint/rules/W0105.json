@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pointless-string-statement] [Message: String statement has no effect] Description: Used when a string is used as a statement (which of course has no effect). This is a particular case of W0104 with its own message so you can easily disable it if you're using those strings as documentation, instead of comments. Problematic code: \"\"\"This is a docstring which describes the module\"\"\" \"\"\"This is not a docstring\"\"\" # [pointless-string-statement] Correct code: \"\"\"This is a docstring which describes the module\"\"\" # This is comment which describes a particular part of the module. Related links: Discussion thread re: docstrings on assignments Created by the basic checker.",
+  "option": {}
+}

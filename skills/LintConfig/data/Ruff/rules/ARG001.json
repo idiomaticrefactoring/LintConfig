@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-function-argument] [Message: Unused function argument: <code>{name}</code>] What it does Checks for the presence of unused arguments in function definitions. Why is this bad? An argument that is defined but not used is likely a mistake, and should be removed to avoid confusion. If a variable is intentionally defined-but-not-used, it should be prefixed with an underscore, or some other value that adheres to the lint.dummy-variable-rgx pattern. Example def foo(bar, baz): return bar * 2 Use instead: def foo(bar): return bar * 2",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

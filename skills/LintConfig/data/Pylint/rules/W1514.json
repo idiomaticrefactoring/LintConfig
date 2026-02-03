@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unspecified-encoding] [Message: Using open without explicitly specifying an encoding] Description: It is better to specify an encoding when opening documents. Using the system default implicitly can create problems on other operating systems. See https://peps.python.org/pep-0597/ Problematic code: def foo(file_path): with open(file_path) as file: # [unspecified-encoding] contents = file.read() Correct code: def foo(file_path): with open(file_path, encoding=\"utf-8\") as file: contents = file.read() Created by the stdlib checker.",
+  "option": {}
+}

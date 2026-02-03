@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: avoidable-escaped-quote] [Message: Change outer quotes to avoid escaping inner quotes] What it does Checks for strings that include escaped quotes, and suggests changing the quote style to avoid the need to escape them. Why is this bad? It's preferable to avoid escaped quotes in strings. By changing the outer quote style, you can avoid escaping inner quotes. Example foo = \"bar\\\"s\" Use instead: foo = 'bar\"s' Formatter compatibility We recommend against using this rule alongside the formatter. The formatter automatically removes unnecessary escapes, making the rule redundant.",
+  "option": {
+    "lint.flake8-quotes.inline-quotes": {
+      "option_description": "Quote style to prefer for inline strings (either \"single\" or\n\"double\").\n\nWhen using the formatter, ensure that format.quote-style is set to\nthe same preferred quote style.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-quotes]\ninline-quotes = \"single\"\n\n\n\n[lint.flake8-quotes]\ninline-quotes = \"single\"",
+      "option_data_type": "\"single\" | \"double\"",
+      "default_value": "\"double\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

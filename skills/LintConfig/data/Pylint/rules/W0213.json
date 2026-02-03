@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: implicit-flag-alias] [Message: Flag member %(overlap)s shares bit positions with %(sources)s] Description: Used when multiple integer values declared within an enum.IntFlag class share a common bit position. Problematic code: from enum import IntFlag class FilePermissions(IntFlag): READ = 1 WRITE = 2 EXECUTE = 3 # [implicit-flag-alias] Correct code: from enum import IntFlag class FilePermissions(IntFlag): READ = 1 WRITE = 2 EXECUTE = 4 Created by the classes checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: misplaced-comparison-constant] [Message: Comparison should be %s] Description: Used when the constant is placed on the left side of a comparison. It is usually clearer in intent to place it in the right hand side of the comparison. Problematic code: def compare_apples(apples=20): for i in range(10): if 5 <= i: # [misplaced-comparison-constant] pass if 1 == i: # [misplaced-comparison-constant] pass if 20 < len(apples): # [misplaced-comparison-constant] pass Correct code: def compare_apples(apples=20): for i in range(10): if i >= 5: pass if i == 1: pass if len(apples) > 20: pass Configuration file: [MAIN] load-plugins=pylint.extensions.comparison_placement Note This message is emitted by the optional 'comparison-placement' checker, which requires the pylint.extensions.comparison_placement plugin to be loaded. Created by the comparison-placement checker.",
+  "option": {}
+}

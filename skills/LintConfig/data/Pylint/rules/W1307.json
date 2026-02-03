@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-format-index] [Message: Using invalid lookup key %r in format specifier %r] Description: Used when a PEP 3101 format string uses a lookup specifier ({a[1]}), but the argument passed for formatting doesn't contain or doesn't have that key as an attribute. Problematic code: not_enough_fruits = [\"apple\"] print('The second fruit is a {fruits[1]}'.format(fruits=not_enough_fruits)) # [invalid-format-index] Correct code: enough_fruits = [\"apple\", \"banana\"] print(\"The second fruit is a {fruits[1]}\".format(fruits=enough_fruits)) Created by the string checker.",
+  "option": {}
+}

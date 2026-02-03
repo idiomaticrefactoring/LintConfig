@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: path-constructor-current-directory] [Message: Do not pass the current directory explicitly to <code>Path</code>] What it does Checks for pathlib.Path objects that are initialized with the current directory. Why is this bad? The Path() constructor defaults to the current directory, so passing it in explicitly (as \".\") is unnecessary. Example from pathlib import Path _ = Path(\".\") Use instead: from pathlib import Path _ = Path() Fix safety This fix is marked unsafe if there are comments inside the parentheses, as applying the fix will delete them.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "‘from module import *’ used; unable to detect undefined names",
+  "option": {}
+}

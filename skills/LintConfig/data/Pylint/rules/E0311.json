@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-format-returned] [Message: __format__ does not return str] Description: Used when a __format__ method returns something which is not a string Problematic code: class CustomFormat: \"\"\"__format__ returns <type 'int'>\"\"\" def __format__(self, format_spec): # [invalid-format-returned] return 1 Correct code: class CustomFormat: \"\"\"__format__ returns <type 'str'>\"\"\" def __format__(self, format_spec): return \"hello!\" Created by the classes checker.",
+  "option": {}
+}

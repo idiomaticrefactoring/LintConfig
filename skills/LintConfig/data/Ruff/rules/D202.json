@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: blank-line-after-function] [Message: No blank lines allowed after function docstring (found {num_lines})] What it does Checks for docstrings on functions that are separated by one or more blank lines from the function body. Why is this bad? Remove any blank lines between the function body and the function docstring, for consistency. Example def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\" return sum(values) / len(values) Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\" return sum(values) / len(values)",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

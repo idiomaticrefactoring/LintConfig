@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: too-many-nested-blocks] [Message: Too many nested blocks ({nested_blocks} > {max_nested_blocks})] What it does Checks for functions or methods with too many nested blocks. By default, this rule allows up to five nested blocks. This can be configured using the lint.pylint.max-nested-blocks option. Why is this bad? Functions or methods with too many nested blocks are harder to understand and maintain.",
+  "option": {
+    "lint.pylint.max-nested-blocks": {
+      "option_description": "Maximum number of nested blocks allowed within a function or method body\n(see PLR1702).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pylint]\nmax-nested-blocks = 10\n\n\n\n[lint.pylint]\nmax-nested-blocks = 10",
+      "option_data_type": "int",
+      "default_value": "5",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

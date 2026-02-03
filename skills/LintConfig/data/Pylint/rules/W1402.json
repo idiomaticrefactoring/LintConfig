@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: anomalous-unicode-escape-in-string] [Message: Anomalous Unicode escape in byte string: '%s'. String constant might be missing an r or u prefix.] Description: Used when an escape like u is encountered in a byte string where it has no effect. Problematic code: print(b\"\\u%b\" % b\"0394\") # [syntax-error] Correct code: print(b\"\\\\u%b\" % b\"0394\") Created by the string checker.",
+  "option": {}
+}

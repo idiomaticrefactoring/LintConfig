@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: no-classmethod-decorator] [Message: Class method defined without decorator] What it does Checks for the use of a classmethod being made without the decorator. Why is this bad? When it comes to consistency and readability, it's preferred to use the decorator. Example class Foo: def bar(cls): ... bar = classmethod(bar) Use instead: class Foo: @classmethod def bar(cls): ...",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: duplicate-union-member] [Message: Duplicate union member <code>{}</code>] What it does Checks for duplicate union members. Why is this bad? Duplicate union members are redundant and should be removed. Example foo: str | str Use instead: foo: str Fix safety This rule's fix is marked as safe unless the union contains comments. For nested union, the fix will flatten type expressions into a single top-level union.",
+  "option": {}
+}

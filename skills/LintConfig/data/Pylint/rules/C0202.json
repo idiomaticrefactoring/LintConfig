@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-classmethod-argument] [Message: Class method %s should have %s as first argument] Description: Used when a class method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to \"cls\"), recommended to easily differentiate them from regular instance methods. Problematic code: class Klass: @classmethod def get_instance(self): # [bad-classmethod-argument] return self() Correct code: class Klass: @classmethod def get_instance(cls): return cls() Created by the classes checker.",
+  "option": {}
+}

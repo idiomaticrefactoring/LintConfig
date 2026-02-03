@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: if-exp-instead-of-or-operator] [Message: Replace ternary <code>if</code> expression with <code>or</code> operator] What it does Checks for ternary if expressions that can be replaced with the or operator. Why is this bad? Ternary if expressions are more verbose than or expressions while providing the same functionality. Example z = x if x else y Use instead: z = x or y Fix safety This rule's fix is marked as unsafe in the event that the body of the if expression contains side effects. For example, foo will be called twice in foo() if foo() else bar() (assuming foo() returns a truthy value), but only once in foo() or bar().",
+  "option": {}
+}

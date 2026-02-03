@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nan-comparison] [Message: Comparison %s should be %s] Description: Used when an expression is compared to NaN values like numpy.NaN and float('nan'). Problematic code: import numpy as np def both_nan(x, y) -> bool: return x == np.NaN and y == float(\"nan\") # [nan-comparison, nan-comparison] Correct code: import numpy as np def both_nan(x, y) -> bool: return np.isnan(x) and np.isnan(y) Created by the basic checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-augmented-assign] [Message: Use '%s' to do an augmented assign directly] Description: Emitted when an assignment is referring to the object that it is assigning to. This can be changed to be an augmented assign. Disabled by default! Caution This message is disabled by default. To enable it, add consider-using-augmented-assign to the enable option. Problematic code: x = 1 x = x + 1 # [consider-using-augmented-assign] Correct code: x = 1 x += 1 Configuration file: [MAIN] load-plugins=pylint.extensions.code_style enable=consider-using-augmented-assign Note This message is emitted by the optional 'code_style' checker, which requires the pylint.extensions.code_style plugin to be loaded. Created by the code_style checker.",
+  "option": {}
+}

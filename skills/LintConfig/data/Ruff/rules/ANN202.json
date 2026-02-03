@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: missing-return-type-private-function] [Message: Missing return type annotation for private function <code>{name}</code>] What it does Checks that private functions and methods have return type annotations. Why is this bad? Type annotations are a good way to document the return types of functions. They also help catch bugs, when used alongside a type checker, by ensuring that the types of any returned values, and the types expected by callers, match expectation. Example def _add(a, b): return a + b Use instead: def _add(a: int, b: int) -> int: return a + b Availability Because this rule relies on the third-party typing_extensions module for some Python versions, its diagnostic will not be emitted, and no fix will be offered, if typing_extensions imports have been disabled by the lint.typing-extensions linter option.",
+  "option": {
+    "lint.typing-extensions": {
+      "option_description": "Whether to allow imports from the third-party typing_extensions module for Python versions\nbefore a symbol was added to the first-party typing module.\n\nMany rules try to import symbols from the typing module but fall back to\ntyping_extensions for earlier versions of Python. This option can be used to disable this\nfallback behavior in cases where typing_extensions is not installed.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Disable `typing_extensions` imports\ntyping-extensions = false\n\n\n\n[lint]\n# Disable `typing_extensions` imports\ntyping-extensions = false",
+      "option_data_type": "bool",
+      "default_value": "true",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: dict-iter-missing-items] [Message: Unpacking a dictionary in iteration without calling .items()] Description: Emitted when trying to iterate through a dict without calling .items() Problematic code: data = {\"Paris\": 2_165_423, \"New York City\": 8_804_190, \"Tokyo\": 13_988_129} for city, population in data: # [dict-iter-missing-items] print(f\"{city} has population {population}.\") Correct code: data = {\"Paris\": 2_165_423, \"New York City\": 8_804_190, \"Tokyo\": 13_988_129} for city, population in data.items(): print(f\"{city} has population {population}.\") Created by the typecheck checker.",
+  "option": {}
+}

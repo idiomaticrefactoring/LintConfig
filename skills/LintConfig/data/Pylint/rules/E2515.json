@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-character-zero-width-space] [Message: Invalid unescaped character zero-width-space, use \"\\u200B\" instead.] Description: Invisible space character could hide real code execution. Problematic code: STRING = \"Invalid character zero-width-space ​\" # [invalid-character-zero-width-space] Correct code: STRING = \"Valid character zero-width-space u200B\" Created by the unicode_checker checker.",
+  "option": {}
+}

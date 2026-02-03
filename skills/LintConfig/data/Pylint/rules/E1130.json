@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-unary-operand-type] [Message: %s] Description: Emitted when a unary operand is used on an object which does not support this type of operation. Problematic code: cherries = 10 eaten_cherries = int cherries = -eaten_cherries # [invalid-unary-operand-type] Correct code: cherries = 10 eaten_cherries = 2 cherries -= eaten_cherries Created by the typecheck checker.",
+  "option": {}
+}

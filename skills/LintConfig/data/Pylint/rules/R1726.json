@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: simplifiable-condition] [Message: Boolean condition \"%s\" may be simplified to \"%s\"] Description: Emitted when a boolean condition is able to be simplified. Problematic code: def has_apples(apples) -> bool: return bool(apples or False) # [simplifiable-condition] Correct code: def has_apples(apples) -> bool: return bool(apples) Created by the refactoring checker.",
+  "option": {}
+}

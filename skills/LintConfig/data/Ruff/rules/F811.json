@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: redefined-while-unused] [Message: Redefinition of unused <code>{name}</code> from {row}] What it does Checks for variable definitions that redefine (or \"shadow\") unused variables. Why is this bad? Redefinitions of unused names are unnecessary and often indicative of a mistake. Example import foo import bar import foo # Redefinition of unused `foo` from line 1 Use instead: import foo import bar",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

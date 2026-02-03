@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: invalid-rule-code] [Message: Invalid rule code in {}: {}] What it does Checks for noqa codes that are invalid. Why is this bad? Invalid rule codes serve no purpose and may indicate outdated code suppressions. Example import os # noqa: XYZ999 Use instead: import os Or if there are still valid codes needed: import os # noqa: E402",
+  "option": {
+    "lint.external": {
+      "option_description": "A list of rule codes or prefixes that are unsupported by Ruff, but should be\npreserved when (e.g.) validating # noqa directives. Useful for\nretaining # noqa directives that cover plugins not yet implemented\nby Ruff.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Avoiding flagging (and removing) any codes starting with `V` from any\n# `# noqa` directives, despite Ruff's lack of support for `vulture`.\nexternal = [\"V\"]\n\n\n\n[lint]\n# Avoiding flagging (and removing) any codes starting with `V` from any\n# `# noqa` directives, despite Ruff's lack of support for `vulture`.\nexternal = [\"V\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

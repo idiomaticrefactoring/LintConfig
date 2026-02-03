@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: singledispatch-method] [Message: <code>@singledispatch</code> decorator should not be used on methods] What it does Checks for methods decorated with @singledispatch. Why is this bad? The @singledispatch decorator is intended for use with functions, not methods. Instead, use the @singledispatchmethod decorator, or migrate the method to a standalone function. Example from functools import singledispatch class Class: @singledispatch def method(self, arg): ... Use instead: from functools import singledispatchmethod class Class: @singledispatchmethod def method(self, arg): ... Fix safety This rule's fix is marked as unsafe, as migrating from @singledispatch to @singledispatchmethod may change the behavior of the code.",
+  "option": {
+    "lint.pep8-naming.classmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a class method (in addition to the builtin\n@classmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list takes a cls argument as its first argument.\n\nExpects to receive a list of fully-qualified names (e.g., pydantic.validator,\nrather than validator) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]\n\n\n\n[lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.staticmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a static method (in addition to the builtin\n@staticmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list has no self or cls argument.\n\nExpects to receive a list of fully-qualified names (e.g., belay.Device.teardown,\nrather than teardown) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]\n\n\n\n[lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-from-import] [Message: Use 'from %s import %s' instead] Description: Emitted when a submodule of a package is imported and aliased with the same name, e.g., instead of ``import concurrent.futures as futures`` use ``from concurrent import futures``. Problematic code: import os.path as path # [consider-using-from-import] Correct code: from os import path Created by the imports checker.",
+  "option": {}
+}

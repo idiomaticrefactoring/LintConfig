@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-character-carriage-return] [Message: Invalid unescaped character carriage-return, use \"\\r\" instead.] Description: Moves the cursor to the start of line, subsequent characters overwrite the start of the line. Correct code: STRING = \"Valid carriage return: \\r\" Additional details: This message exists because one of our checkers is very generic, but it's never going to raise during normal use as it's a syntax-error that would prevent the python ast (and thus pylint) from constructing a code representation of the file. You could encounter it by feeding a properly constructed node directly to the checker. Created by the unicode_checker checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: for-loop-writes] [Message: Use of <code>{}.write</code> in a for loop] What it does Checks for the use of IOBase.write in a for loop. Why is this bad? When writing a batch of elements, it's more idiomatic to use a single method call to IOBase.writelines, rather than write elements one by one. Example from pathlib import Path with Path(\"file\").open(\"w\") as f: for line in lines: f.write(line) with Path(\"file\").open(\"wb\") as f_b: for line_b in lines_b: f_b.write(line_b.encode()) Use instead: from pathlib import Path with Path(\"file\").open(\"w\") as f: f.writelines(lines) with Path(\"file\").open(\"wb\") as f_b: f_b.writelines(line_b.encode() for line_b in lines_b) Fix safety This fix is marked as unsafe if it would cause comments to be deleted.",
+  "option": {}
+}

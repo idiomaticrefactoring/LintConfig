@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-final-newline] [Message: Final newline missing] Description: Used when the last line in a file is missing a newline. Problematic code: crlf.py: print(\"Hello\") # CRLF (\\r\\n) print(\"world\") # End-of-file (EOF) # [missing-final-newline] lf.py: print(\"Hello\") # LF (\\n) print(\"world\") # End-of-file (EOF) # [missing-final-newline] Correct code: crlf.py: print(\"Hello\") # CRLF (\\r\\n) print(\"world\") # CRLF (\\r\\n) # End-of-file (EOF) lf.py: print(\"Hello\") # LF (\\n) print(\"world\") # LF (\\n) # End-of-file (EOF) Additional details: The POSIX standard defines a line as:\"A sequence of zero or more non- <newline> characters plus a terminating <newline> character.\" Related links: POSIX Standard POSIX Standard Chapter 3.206 Line Created by the format checker.",
+  "option": {}
+}

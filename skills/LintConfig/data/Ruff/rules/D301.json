@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: escape-sequence-in-docstring] [Message: Use <code>r\"\"\"</code> if any backslashes in a docstring] What it does Checks for docstrings that include backslashes, but are not defined as raw string literals. Why is this bad? In Python, backslashes are typically used to escape characters in strings. In raw strings (those prefixed with an r), however, backslashes are treated as literal characters. PEP 257 recommends the use of raw strings (i.e., r\"\"\"raw triple double quotes\"\"\") for docstrings that include backslashes. The use of a raw string ensures that any backslashes are treated as literal characters, and not as escape sequences, which avoids confusion. Example def foobar(): \"\"\"Docstring for foo\\bar.\"\"\" foobar.__doc__ # \"Docstring for foar.\" Use instead: def foobar(): r\"\"\"Docstring for foo\\bar.\"\"\" foobar.__doc__ # \"Docstring for foo\\bar.\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

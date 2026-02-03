@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: property-without-return] [Message: <code>{name}</code> is a property without a <code>return</code> statement] What it does Detects class @property methods that does not have a return statement. Why is this bad? Property methods are expected to return a computed value, a missing return in a property usually indicates an implementation mistake. Example class User: @property def full_name(self): f\"{self.first_name} {self.last_name}\" Use instead: class User: @property def full_name(self): return f\"{self.first_name} {self.last_name}\"",
+  "option": {
+    "lint.pydocstyle.property-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a property (in addition to the builtin\n@property and standard-library @functools.cached_property).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list can use a non-imperative summary line.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]\n\n\n\n[lint.pydocstyle]\nproperty-decorators = [\"gi.repository.GObject.Property\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

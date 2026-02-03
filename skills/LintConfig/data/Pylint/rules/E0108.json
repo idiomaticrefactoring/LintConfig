@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: duplicate-argument-name] [Message: Duplicate argument name %r in function definition] Description: Duplicate argument names in function definitions are syntax errors. Problematic code: def get_fruits(apple, banana, apple): # [duplicate-argument-name] pass Correct code: def get_fruits(apple, banana, orange): pass Created by the basic checker.",
+  "option": {}
+}

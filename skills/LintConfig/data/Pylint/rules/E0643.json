@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: potential-index-error] [Message: Invalid index for iterable length] Description: Emitted when an index used on an iterable goes beyond the length of that iterable. Problematic code: print([1, 2, 3][3]) # [potential-index-error] Correct code: print([1, 2, 3][2]) Created by the variables checker.",
+  "option": {}
+}

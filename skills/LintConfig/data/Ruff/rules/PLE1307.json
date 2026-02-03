@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-string-format-type] [Message: Format type does not match argument type] What it does Checks for mismatched argument types in \"old-style\" format strings. Why is this bad? The format string is not checked at compile time, so it is easy to introduce bugs by mistyping the format string. Example print(\"%d\" % \"1\") Use instead: print(\"%d\" % 1)",
+  "option": {}
+}

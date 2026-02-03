@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: parse-error] [Message: error while code parsing: %s] Description: Used when an exception occurred while building the Astroid representation which could be handled by astroid. Additional details: This is a message linked to an internal problem in pylint. There's nothing to change in your code. Created by the main checker.",
+  "option": {}
+}

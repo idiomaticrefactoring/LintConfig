@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-inline-option] [Message: Unable to consider inline option %r] Description: Used when an inline option is either badly formatted or can't be used inside modules. Caution This message is disabled by default. To enable it, add bad-inline-option to the enable option. Caution By default, this message will not fail the execution (pylint will return 0). To make pylint fail for this message use the --fail-on=I0010 option or --fail-on=I to fail on all enabled informational messages. Problematic code: # 2:[bad-inline-option] # pylint: disable line-too-long Correct code: # pylint: disable=line-too-long Created by the main checker.",
+  "option": {}
+}

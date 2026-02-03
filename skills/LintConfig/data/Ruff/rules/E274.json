@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: tab-before-keyword] [Message: Tab before keyword] What it does Checks for extraneous tabs before keywords. Why is this bad? Example True\\tand False Use instead: True and False",
+  "option": {}
+}

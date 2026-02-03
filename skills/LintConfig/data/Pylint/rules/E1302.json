@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: mixed-format-string] [Message: Mixing named and unnamed conversion specifiers in format string] Description: Used when a format string contains both named (e.g. '%(foo)d') and unnamed (e.g. '%d') conversion specifiers. This is also used when a named conversion specifier contains * for the minimum field width and/or precision. Problematic code: print(\"x=%(x)d, y=%d\" % (0, 1)) # [mixed-format-string] Correct code: only_named.py: print(\"x=%(x)d, y=%(y)d\" % {\"x\": 0, \"y\": 1}) only_ordered.py: print(\"x=%d, y=%d\" % (0, 1)) Created by the string checker.",
+  "option": {}
+}

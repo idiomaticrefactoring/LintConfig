@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: typing-text-str-alias] [Message: <code>{}.Text</code> is deprecated, use <code>str</code>] What it does Checks for uses of typing.Text. In preview mode, also checks for typing_extensions.Text. Why is this bad? typing.Text is an alias for str, and only exists for Python 2 compatibility. As of Python 3.11, typing.Text is deprecated. Use str instead. Example from typing import Text foo: Text = \"bar\" Use instead: foo: str = \"bar\"",
+  "option": {}
+}

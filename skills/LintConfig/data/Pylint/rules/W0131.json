@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: named-expr-without-context] [Message: Named expression used without context] Description: Emitted if named expression is used to do a regular assignment outside a context like if, for, while, or a comprehension. Problematic code: (a := 42) # [named-expr-without-context] Correct code: if a := 42: print(\"Success\") Created by the basic checker.",
+  "option": {}
+}

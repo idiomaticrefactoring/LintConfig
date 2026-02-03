@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: invalid-bool-return-type] [Message: <code>__bool__</code> does not return <code>bool</code>] What it does Checks for __bool__ implementations that return a type other than bool. Why is this bad? The __bool__ method should return a bool object. Returning a different type may cause unexpected behavior. Example class Foo: def __bool__(self): return 2 Use instead: class Foo: def __bool__(self): return True",
+  "option": {}
+}

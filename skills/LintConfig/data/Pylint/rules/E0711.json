@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: notimplemented-raised] [Message: NotImplemented raised - should raise NotImplementedError] Description: Used when NotImplemented is raised instead of NotImplementedError Problematic code: class Worm: def bore(self): raise NotImplemented # [notimplemented-raised] Correct code: class Worm: def bore(self): raise NotImplementedError Created by the exceptions checker.",
+  "option": {}
+}

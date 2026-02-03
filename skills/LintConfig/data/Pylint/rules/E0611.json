@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-name-in-module] [Message: No name %r in module %r] Description: Used when a name cannot be found in a module. Problematic code: from os import pizza # [no-name-in-module] Correct code: from os import path Created by the variables checker.",
+  "option": {}
+}

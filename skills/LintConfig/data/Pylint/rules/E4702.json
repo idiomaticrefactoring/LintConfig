@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: modified-iterating-dict] [Message: Iterated dict '%s' is being modified inside for loop body, iterate through a copy of it instead.] Description: Emitted when items are added or removed to a dict being iterated through. Doing so raises a RuntimeError. Problematic code: fruits = {\"apple\": 1, \"orange\": 2, \"mango\": 3} i = 0 for fruit in fruits: fruits[\"apple\"] = i # [modified-iterating-dict] i += 1 Correct code: fruits = {\"apple\": 1, \"orange\": 2, \"mango\": 3} i = 0 for fruit in fruits.copy(): fruits[\"apple\"] = i i += 1 Created by the modified_iteration checker.",
+  "option": {}
+}

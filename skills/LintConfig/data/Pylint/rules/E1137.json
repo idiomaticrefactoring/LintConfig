@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unsupported-assignment-operation] [Message: %r does not support item assignment] Description: Emitted when an object does not support item assignment (i.e. doesn't define __setitem__ method). Problematic code: def pick_fruits(fruits): for fruit in fruits: print(fruit) pick_fruits([\"apple\"])[0] = \"orange\" # [unsupported-assignment-operation] Correct code: def pick_fruits(fruits): for fruit in fruits: print(fruit) return [] pick_fruits([\"apple\"])[0] = \"orange\" Created by the typecheck checker.",
+  "option": {}
+}

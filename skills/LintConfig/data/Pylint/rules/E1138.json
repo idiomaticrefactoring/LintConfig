@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unsupported-delete-operation] [Message: %r does not support item deletion] Description: Emitted when an object does not support item deletion (i.e. doesn't define __delitem__ method). Problematic code: FRUITS = (\"apple\", \"orange\", \"berry\") del FRUITS[0] # [unsupported-delete-operation] Correct code: FRUITS = [\"apple\", \"orange\", \"berry\"] del FRUITS[0] Created by the typecheck checker.",
+  "option": {}
+}

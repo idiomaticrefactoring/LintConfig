@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: tab-after-comma] [Message: Tab after comma] What it does Checks for extraneous tabs after a comma. Why is this bad? Commas should be followed by one space, never tabs. Example a = 4,\\t5 Use instead: a = 4, 5",
+  "option": {}
+}

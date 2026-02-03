@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: too-many-try-statements] [Message: %s] Description: Try clause contains too many statements. Problematic code: FRUITS = {\"apple\": 1, \"orange\": 10} def pick_fruit(name): try: # [too-many-try-statements] count = FRUITS[name] count += 1 print(f\"Got fruit count {count}\") except KeyError: return Correct code: FRUITS = {\"apple\": 1, \"orange\": 10} def pick_fruit(name): try: count = FRUITS[name] except KeyError: return count += 1 print(f\"Got fruit count {count}\") Configuration file: [MAIN] load-plugins=pylint.extensions.broad_try_clause, Note This message is emitted by the optional 'broad_try_clause' checker, which requires the pylint.extensions.broad_try_clause plugin to be loaded. Created by the broad_try_clause checker.",
+  "option": {}
+}

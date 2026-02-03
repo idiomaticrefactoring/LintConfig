@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: trailing-whitespace] [Message: Trailing whitespace] Description: Used when there is whitespace between the end of a line and the newline. Problematic code: print(\"Hello\") # [trailing-whitespace] # ^^^ trailing whitespaces Correct code: print(\"Hello\") Created by the format checker.",
+  "option": {}
+}

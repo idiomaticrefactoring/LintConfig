@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-negation] [Message: Consider changing \"%s\" to \"%s\"] Description: Used when a boolean expression contains an unneeded negation, e.g. when two negation operators cancel each other out. Problematic code: double_not.py: if not not input(): # [unnecessary-negation] pass equivalent_comparator_exists.py: a = 3 b = 10 if not a > b: # [unnecessary-negation] pass Correct code: double_not.py: if input(): pass equivalent_comparator_exists.py: a = 3 b = 10 if a <= b: pass Created by the refactoring checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: import-private-name] [Message: Private name import <code>{name}</code> from external module <code>{module}</code>] What it does Checks for import statements that import a private name (a name starting with an underscore _) from another module. Why is this bad? PEP 8 states that names starting with an underscore are private. Thus, they are not intended to be used outside of the module in which they are defined. Further, as private imports are not considered part of the public API, they are prone to unexpected changes, especially outside of semantic versioning. Instead, consider using the public API of the module. This rule ignores private name imports that are exclusively used in type annotations. Ideally, types would be public; however, this is not always possible when using third-party libraries. Known problems Does not ignore private name imports from within the module that defines the private name if the module is defined with PEP 420 namespace packages (i.e., directories that omit the __init__.py file). Namespace packages must be configured via the namespace-packages setting. Example from foo import _bar",
+  "option": {
+    "namespace-packages": {
+      "option_description": "Mark the specified directories as namespace packages. For the purpose of\nmodule resolution, Ruff will treat those directories and all their subdirectories\nas if they contained an __init__.py file.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\nnamespace-packages = [\"airflow/providers\"]\n\n\n\nnamespace-packages = [\"airflow/providers\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

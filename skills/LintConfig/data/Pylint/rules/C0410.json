@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: multiple-imports] [Message: Multiple imports on one line (%s)] Description: Used when import statement importing multiple modules is detected. Problematic code: import os, sys # [multiple-imports] Correct code: import os import sys Created by the imports checker.",
+  "option": {}
+}

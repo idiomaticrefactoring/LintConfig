@@ -1,0 +1,4 @@
+{
+  "description": "two or more starred expressions in an assignment (a, *b, *c = d)",
+  "option": {}
+}

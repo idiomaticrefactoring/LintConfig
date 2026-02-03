@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: isinstance-type-none] [Message: Prefer <code>is</code> operator over <code>isinstance</code> to check if an object is <code>None</code>] What it does Checks for uses of isinstance that check if an object is of type None. Why is this bad? There is only ever one instance of None, so it is more efficient and readable to use the is operator to check if an object is None. Example isinstance(obj, type(None)) Use instead: obj is None Fix safety The fix will be marked as unsafe if there are any comments within the call.",
+  "option": {}
+}

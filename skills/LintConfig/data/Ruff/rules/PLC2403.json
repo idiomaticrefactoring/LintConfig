@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: non-ascii-import-name] [Message: Module alias <code>{name}</code> contains a non-ASCII character] What it does Checks for the use of non-ASCII characters in import statements. Why is this bad? The use of non-ASCII characters in import statements can cause confusion and compatibility issues (see: PEP 672). Example import bár Use instead: import bar If the module is third-party, use an ASCII-only alias: import bár as bar",
+  "option": {}
+}

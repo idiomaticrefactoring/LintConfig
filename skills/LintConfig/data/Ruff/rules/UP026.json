@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: deprecated-mock-import] [Message: <code>mock</code> is deprecated, use <code>unittest.mock</code>] What it does Checks for imports of the mock module that should be replaced with unittest.mock. Why is this bad? Since Python 3.3, mock has been a part of the standard library as unittest.mock. The mock package is deprecated; use unittest.mock instead. Example import mock Use instead: from unittest import mock",
+  "option": {
+    "lint.isort.required-imports": {
+      "option_description": "Add the specified import line to all files.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]\n\n\n\n[lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

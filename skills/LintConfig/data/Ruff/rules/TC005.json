@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: empty-type-checking-block] [Message: Found empty type-checking block] What it does Checks for an empty type-checking block. Why is this bad? The type-checking block does not do anything and should be removed to avoid confusion. Example from typing import TYPE_CHECKING if TYPE_CHECKING: pass print(\"Hello, world!\") Use instead: print(\"Hello, world!\")",
+  "option": {}
+}

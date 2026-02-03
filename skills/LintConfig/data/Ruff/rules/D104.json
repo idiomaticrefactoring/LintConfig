@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: undocumented-public-package] [Message: Missing docstring in public package] What it does Checks for undocumented public package definitions. Why is this bad? Public packages should be documented via docstrings to outline their purpose and contents. Generally, package docstrings should list the modules and subpackages that are exported by the package. If the codebase adheres to a standard format for package docstrings, follow that format for consistency. Example __all__ = [\"Player\", \"Game\"] Use instead: \"\"\"Game and player management package. This package provides classes for managing players and games. \"\"\" __all__ = [\"player\", \"game\"]",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

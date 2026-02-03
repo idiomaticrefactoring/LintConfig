@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: tab-after-operator] [Message: Tab after operator] What it does Checks for extraneous tabs after an operator. Why is this bad? According to PEP 8, operators should be surrounded by at most a single space on either side. Example a = 4 +\\t5 Use instead: a = 4 + 5",
+  "option": {}
+}

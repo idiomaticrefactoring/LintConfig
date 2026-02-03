@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-u-string-prefix] [Message: The u prefix for strings is no longer necessary in Python >=3.0] Description: Used when we detect a string with a u prefix. These prefixes were necessary in Python 2 to indicate a string was Unicode, but since Python 3.0 strings are Unicode by default. Problematic code: def print_fruit(): print(u\"Apple\") # [redundant-u-string-prefix] Correct code: def print_fruit(): print(\"Apple\") Created by the string checker.",
+  "option": {}
+}

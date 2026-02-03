@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: cached-instance-method] [Message: Use of <code>functools.lru_cache</code> or <code>functools.cache</code> on methods can lead to memory leaks] What it does Checks for uses of the functools.lru_cache and functools.cache decorators on methods. Why is this bad? Using the functools.lru_cache and functools.cache decorators on methods can lead to memory leaks, as the global cache will retain a reference to the instance, preventing it from being garbage collected. Instead, refactor the method to depend only on its arguments and not on the instance of the class, or use the @lru_cache decorator on a function outside of the class. This rule ignores instance methods on enumeration classes, as enum members are singletons. Example from functools import lru_cache def square(x: int) -> int: return x * x class Number: value: int @lru_cache def squared(self): return square(self.value) Use instead: from functools import lru_cache @lru_cache def square(x: int) -> int: return x * x class Number: value: int def squared(self): return square(self.value)",
+  "option": {
+    "lint.pep8-naming.classmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a class method (in addition to the builtin\n@classmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list takes a cls argument as its first argument.\n\nExpects to receive a list of fully-qualified names (e.g., pydantic.validator,\nrather than validator) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]\n\n\n\n[lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.staticmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a static method (in addition to the builtin\n@staticmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list has no self or cls argument.\n\nExpects to receive a list of fully-qualified names (e.g., belay.Device.teardown,\nrather than teardown) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]\n\n\n\n[lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

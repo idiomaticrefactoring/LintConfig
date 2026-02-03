@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-enum-extension] [Message: Extending inherited Enum class \"%s\"] Description: Used when a class tries to extend an inherited Enum class. Doing so will raise a TypeError at runtime. Problematic code: from enum import Enum class Color(Enum): ORANGE = 1 CHERRY = 2 class Fruit(Color): # [invalid-enum-extension] APPLE = 3 Correct code: from enum import Enum class Color(Enum): ORANGE = 1 CHERRY = 2 class Fruit(Enum): ORANGE = 1 CHERRY = 2 APPLE = 3 Created by the classes checker.",
+  "option": {}
+}

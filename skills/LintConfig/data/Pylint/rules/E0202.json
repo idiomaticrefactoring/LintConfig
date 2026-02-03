@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: method-hidden] [Message: An attribute defined in %s line %s hides this method] Description: Used when a class defines a method which is hidden by an instance attribute from an ancestor class or set by some client code. Problematic code: class Fruit: def __init__(self, vitamins): self.vitamins = vitamins def vitamins(self): # [method-hidden] pass Correct code: class Fruit: def __init__(self, vitamins): self.vitamins = vitamins def antioxidants(self): pass Created by the classes checker.",
+  "option": {}
+}

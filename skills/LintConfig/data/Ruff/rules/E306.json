@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: blank-lines-before-nested-definition] [Message: Expected 1 blank line before a nested definition, found 0] What it does Checks for 1 blank line between nested function or class definitions. Why is this bad? PEP 8 recommends using blank lines as follows: Two blank lines are expected between functions and classes One blank line is expected between methods of a class. Example def outer(): def inner(): pass def inner2(): pass Use instead: def outer(): def inner(): pass def inner2(): pass Typing stub files (.pyi) The typing style guide recommends to not use blank lines between classes and functions except to group them. That's why this rule is not enabled in typing stub files.",
+  "option": {}
+}

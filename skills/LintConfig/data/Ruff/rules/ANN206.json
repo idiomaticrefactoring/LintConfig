@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: missing-return-type-class-method] [Message: Missing return type annotation for classmethod <code>{name}</code>] What it does Checks that class methods have return type annotations. Why is this bad? Type annotations are a good way to document the return types of functions. They also help catch bugs, when used alongside a type checker, by ensuring that the types of any returned values, and the types expected by callers, match expectation. Example class Foo: @classmethod def bar(cls): return 1 Use instead: class Foo: @classmethod def bar(cls) -> int: return 1",
+  "option": {
+    "lint.flake8-annotations.suppress-none-returning": {
+      "option_description": "Whether to suppress ANN200-level violations for functions that meet\neither of the following criteria:\n\nContain no return statement.\nExplicit return statement(s) all return None (explicitly or\n  implicitly).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-annotations]\nsuppress-none-returning = true\n\n\n\n[lint.flake8-annotations]\nsuppress-none-returning = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

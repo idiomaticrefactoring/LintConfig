@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: typevar-name-mismatch] [Message: TypeVar name \"%s\" does not match assigned variable name \"%s\"] Description: Emitted when a TypeVar is assigned to a variable that does not match its name argument. Problematic code: from typing import TypeVar X = TypeVar(\"T\") # [typevar-name-mismatch] Correct code: from typing import TypeVar T = TypeVar(\"T\") Created by the basic checker.",
+  "option": {}
+}

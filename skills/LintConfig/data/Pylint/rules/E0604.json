@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-all-object] [Message: Invalid object %r in __all__, must contain only strings] Description: Used when an invalid (non-string) object occurs in __all__. Problematic code: __all__ = ( None, # [invalid-all-object] Fruit, Worm, ) class Fruit: pass class Worm: pass Correct code: __all__ = [\"Fruit\", \"Worm\"] class Fruit: pass class Worm: pass Additional details: From The Python Language Reference – The import statement:\"The public names defined by a module are determined by checking the module's namespace for a variable named __all__; if defined, it must be a sequence of strings which are names defined or imported by that module.\" Related links: PEP 8 – Style Guide for Python Code Created by the variables checker.",
+  "option": {}
+}

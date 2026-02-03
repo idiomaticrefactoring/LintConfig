@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-comprehension] [Message: Unnecessary use of a comprehension, use %s instead.] Description: Instead of using an identity comprehension, consider using the list, dict or set constructor. It is faster and simpler. Problematic code: NUMBERS = [1, 1, 2, 2, 3, 3] UNIQUE_NUMBERS = {number for number in NUMBERS} # [unnecessary-comprehension] Correct code: NUMBERS = [1, 1, 2, 2, 3, 3] UNIQUE_NUMBERS = set(NUMBERS) Created by the refactoring checker.",
+  "option": {}
+}

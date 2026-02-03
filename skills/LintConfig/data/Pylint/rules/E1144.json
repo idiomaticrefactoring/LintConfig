@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-slice-step] [Message: Slice step cannot be 0] Description: Used when a slice step is 0 and the object doesn't implement a custom __getitem__ method. Problematic code: LETTERS = [\"a\", \"b\", \"c\", \"d\"] LETTERS[::0] # [invalid-slice-step] Correct code: LETTERS = [\"a\", \"b\", \"c\", \"d\"] LETTERS[::2] Created by the typecheck checker.",
+  "option": {}
+}

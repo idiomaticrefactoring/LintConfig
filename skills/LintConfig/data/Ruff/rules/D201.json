@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: blank-line-before-function] [Message: No blank lines allowed before function docstring (found {num_lines})] What it does Checks for docstrings on functions that are separated by one or more blank lines from the function definition. Why is this bad? Remove any blank lines between the function definition and its docstring, for consistency. Example def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\" Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

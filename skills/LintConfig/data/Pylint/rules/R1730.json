@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-min-builtin] [Message: Consider using '%s' instead of unnecessary if block] Description: Using the min builtin instead of a conditional improves readability and conciseness. Problematic code: def get_min(value1, value2): if value1 > value2: # [consider-using-min-builtin] value1 = value2 return value1 print(get_min(1, 2)) Correct code: print(min(1, 2)) Created by the refactoring checker.",
+  "option": {}
+}

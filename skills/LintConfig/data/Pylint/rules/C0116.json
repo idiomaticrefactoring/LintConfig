@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-function-docstring] [Message: Missing function or method docstring] Description: Used when a function or method has no docstring. Some special methods like __init__ do not require a docstring. Problematic code: import sys def print_python_version(): # [missing-function-docstring] print(sys.version) Correct code: import sys def print_python_version(): \"\"\"Function printing python version.\"\"\" print(sys.version) Created by the basic checker.",
+  "option": {}
+}

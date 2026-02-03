@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: hardcoded-temp-file] [Message: Probable insecure usage of temporary file or directory: \"{}\"] What it does Checks for the use of hardcoded temporary file or directory paths. Why is this bad? The use of hardcoded paths for temporary files can be insecure. If an attacker discovers the location of a hardcoded path, they can replace the contents of the file or directory with a malicious payload. Other programs may also read or write contents to these hardcoded paths, causing unexpected behavior. Example with open(\"/tmp/foo.txt\", \"w\") as file: ... Use instead: import tempfile with tempfile.NamedTemporaryFile() as file: ...",
+  "option": {
+    "lint.flake8-bandit.hardcoded-tmp-directory": {
+      "option_description": "A list of directories to consider temporary (see S108).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-bandit]\nhardcoded-tmp-directory = [\"/foo/bar\"]\n\n\n\n[lint.flake8-bandit]\nhardcoded-tmp-directory = [\"/foo/bar\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"/tmp\", \"/var/tmp\", \"/dev/shm\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-bandit.hardcoded-tmp-directory-extend": {
+      "option_description": "A list of directories to consider temporary, in addition to those\nspecified by hardcoded-tmp-directory (see S108).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-bandit]\nhardcoded-tmp-directory-extend = [\"/foo/bar\"]\n\n\n\n[lint.flake8-bandit]\nhardcoded-tmp-directory-extend = [\"/foo/bar\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

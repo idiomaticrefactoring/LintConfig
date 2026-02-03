@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: duplicate-except] [Message: Catching previously caught exception type %s] Description: Used when an except catches a type that was already caught by a previous handler. Problematic code: try: 1 / 0 except ZeroDivisionError: pass except ZeroDivisionError: # [duplicate-except] pass Correct code: try: 1 / 0 except ZeroDivisionError: pass Created by the exceptions checker.",
+  "option": {}
+}

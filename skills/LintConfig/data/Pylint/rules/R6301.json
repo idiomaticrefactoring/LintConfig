@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-self-use] [Message: Method could be a function] Description: Used when a method doesn't use its bound instance, and so could be written as a function. Problematic code: class Person: def greeting(self): # [no-self-use] print(\"Greetings pythonista!\") Correct code: function.py: def greeting(): print(\"Greetings pythonista!\") staticmethod.py: class Person: @staticmethod def greeting(): print(\"Greetings pythonista!\") use_self.py: class Person: name: str = \"Amelia\" def greeting(self): print(f\"Greetings {self.name} the pythonista!\") Configuration file: [MAIN] load-plugins=pylint.extensions.no_self_use, Additional details: If a function is not using any class attribute it can be a @staticmethod, or a function outside the class. Note This message is emitted by the optional 'no_self_use' checker, which requires the pylint.extensions.no_self_use plugin to be loaded. Created by the no_self_use checker.",
+  "option": {}
+}

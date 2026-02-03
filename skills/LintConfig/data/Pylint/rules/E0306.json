@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-repr-returned] [Message: __repr__ does not return str] Description: Used when a __repr__ method returns something which is not a string Problematic code: class CustomRepr: \"\"\"__repr__ returns <type 'int'>\"\"\" def __repr__(self): # [invalid-repr-returned] return 1 Correct code: class CustomRepr: \"\"\"__repr__ returns <type 'str'>\"\"\" def __repr__(self): return \"apples\" Created by the classes checker.",
+  "option": {}
+}

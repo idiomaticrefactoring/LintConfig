@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-staticmethod-decorator] [Message: Consider using a decorator instead of calling staticmethod] Description: Used when a static method is defined without using the decorator syntax. Problematic code: class Worm: def bore(self): pass bore = staticmethod(bore) # [no-staticmethod-decorator] Correct code: class Worm: @staticmethod def bore(self): pass Created by the classes checker.",
+  "option": {}
+}

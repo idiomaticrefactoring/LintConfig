@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: whitespace-after-decorator] [Message: Whitespace after decorator] What it does Checks for trailing whitespace after a decorator's opening @. Why is this bad? Including whitespace after the @ symbol is not compliant with PEP 8. Example @ decorator def func(): pass Use instead: @decorator def func(): pass",
+  "option": {}
+}

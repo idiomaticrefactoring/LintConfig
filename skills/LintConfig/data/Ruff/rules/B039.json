@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: mutable-contextvar-default] [Message: Do not use mutable data structures for <code>ContextVar</code> defaults] What it does Checks for uses of mutable objects as ContextVar defaults. Why is this bad? The ContextVar default is evaluated once, when the ContextVar is defined. The same mutable object is then shared across all .get() method calls to the ContextVar. If the object is modified, those modifications will persist across calls, which can lead to unexpected behavior. Instead, prefer to use immutable data structures. Alternatively, take None as a default, and initialize a new mutable object inside for each call using the .set() method. Types outside the standard library can be marked as immutable with the lint.flake8-bugbear.extend-immutable-calls configuration option. Example from contextvars import ContextVar cv: ContextVar[list] = ContextVar(\"cv\", default=[]) Use instead: from contextvars import ContextVar cv: ContextVar[list | None] = ContextVar(\"cv\", default=None) ... if cv.get() is None: cv.set([])",
+  "option": {
+    "lint.flake8-bugbear.extend-immutable-calls": {
+      "option_description": "Additional callable functions to consider \"immutable\" when evaluating, e.g., the\nfunction-call-in-default-argument rule (B008) or function-call-in-dataclass-defaults\nrule (RUF009).\n\nExpects to receive a list of fully-qualified names (e.g., fastapi.Query, rather than\nQuery).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-bugbear]\n# Allow default arguments like, e.g., `data: List[str] = fastapi.Query(None)`.\nextend-immutable-calls = [\"fastapi.Depends\", \"fastapi.Query\"]\n\n\n\n[lint.flake8-bugbear]\n# Allow default arguments like, e.g., `data: List[str] = fastapi.Query(None)`.\nextend-immutable-calls = [\"fastapi.Depends\", \"fastapi.Query\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

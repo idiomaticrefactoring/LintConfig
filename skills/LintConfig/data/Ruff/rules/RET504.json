@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-assign] [Message: Unnecessary assignment to <code>{name}</code> before <code>return</code> statement] What it does Checks for variable assignments that immediately precede a return of the assigned variable. Why is this bad? The variable assignment is not necessary, as the value can be returned directly. Example def foo(): bar = 1 return bar Use instead: def foo(): return 1",
+  "option": {}
+}

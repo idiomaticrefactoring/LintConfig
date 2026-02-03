@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: global-statement] [Message: Using the global statement] Description: Used when you use the \"global\" statement to update a global variable. Pylint discourages its usage. That doesn't mean you cannot use it! Problematic code: var = 1 def foo(): global var # [global-statement] var = 10 print(var) foo() print(var) Correct code: var = 1 def foo(): print(var) return 10 var = foo() print(var) Created by the variables checker.",
+  "option": {}
+}

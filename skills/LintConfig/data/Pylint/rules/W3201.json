@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-dunder-name] [Message: Bad or misspelled dunder method name %s.] Description: Used when a dunder method is misspelled or defined with a name not within the predefined list of dunder names. Problematic code: class Apples: def _init_(self): # [bad-dunder-name] pass def __hello__(self): # [bad-dunder-name] print(\"hello\") Correct code: class Apples: def __init__(self): pass def hello(self): print(\"hello\") Configuration file: [MAIN] load-plugins=pylint.extensions.dunder Note This message is emitted by the optional 'dunder' checker, which requires the pylint.extensions.dunder plugin to be loaded. Created by the dunder checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-format-string-key] [Message: Unused key %r in format string dictionary] Description: Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string. Problematic code: \"The quick %(color)s fox jumps over the lazy dog.\" % { \"color\": \"brown\", \"action\": \"hops\", } # -4: [unused-format-string-key] Correct code: \"The quick %(color)s fox %(action)s over the lazy dog.\" % { \"color\": \"brown\", \"action\": \"hops\", } Created by the string checker.",
+  "option": {}
+}

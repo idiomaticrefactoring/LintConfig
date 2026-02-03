@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: bad-quotes-inline-string] [Message: Single quotes found but double quotes preferred] What it does Checks for inline strings that use single quotes or double quotes, depending on the value of the lint.flake8-quotes.inline-quotes option. Why is this bad? Consistency is good. Use either single or double quotes for inline strings, but be consistent. Example foo = 'bar' Assuming inline-quotes is set to double, use instead: foo = \"bar\" Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces consistent quotes for inline strings, making the rule redundant.",
+  "option": {
+    "lint.flake8-quotes.inline-quotes": {
+      "option_description": "Quote style to prefer for inline strings (either \"single\" or\n\"double\").\n\nWhen using the formatter, ensure that format.quote-style is set to\nthe same preferred quote style.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-quotes]\ninline-quotes = \"single\"\n\n\n\n[lint.flake8-quotes]\ninline-quotes = \"single\"",
+      "option_data_type": "\"single\" | \"double\"",
+      "default_value": "\"double\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

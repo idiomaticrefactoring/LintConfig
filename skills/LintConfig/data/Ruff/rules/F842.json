@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-annotation] [Message: Local variable <code>{name}</code> is annotated but never used] What it does Checks for local variables that are annotated but never used. Why is this bad? Annotations are used to provide type hints to static type checkers. If a variable is annotated but never used, the annotation is unnecessary. Example def foo(): bar: int",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

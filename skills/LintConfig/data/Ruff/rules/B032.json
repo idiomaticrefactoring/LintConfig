@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unintentional-type-annotation] [Message: Possible unintentional type annotation (using <code>:</code>). Did you mean to assign (using <code>=</code>)?] What it does Checks for the unintentional use of type annotations. Why is this bad? The use of a colon (:) in lieu of an assignment (=) can be syntactically valid, but is almost certainly a mistake when used in a subscript or attribute assignment. Example a[\"b\"]: 1 Use instead: a[\"b\"] = 1",
+  "option": {}
+}

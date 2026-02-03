@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-parentheses-for-call-in-test] [Message: Using a conditional statement with potentially wrong function or method call due to missing parentheses] Description: Emitted when a conditional statement (If or ternary if) seems to wrongly call a function due to missing parentheses Problematic code: import random def is_it_a_good_day(): return random.choice([True, False]) if is_it_a_good_day: # [missing-parentheses-for-call-in-test] print(\"Today is a good day!\") Correct code: import random def is_it_a_good_day(): return random.choice([True, False]) if is_it_a_good_day(): print(\"Today is a good day!\") Created by the basic checker.",
+  "option": {}
+}

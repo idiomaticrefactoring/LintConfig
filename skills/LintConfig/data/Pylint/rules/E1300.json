@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-format-character] [Message: Unsupported format character %r (%#02x) at index %d] Description: Used when an unsupported format character is used in a format string. Problematic code: print(\"%s %z\" % (\"hello\", \"world\")) # [bad-format-character] Correct code: print(\"%s %s\" % (\"hello\", \"world\")) Additional details: This check is currently only active for \"old-style\" string formatting as seen in the examples. See Issue #6085 for more information. Related links: Format String Syntax PyFormat Created by the string checker.",
+  "option": {}
+}

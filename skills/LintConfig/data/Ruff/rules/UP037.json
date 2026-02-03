@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: quoted-annotation] [Message: Remove quotes from type annotation] What it does Checks for the presence of unnecessary quotes in type annotations. Why is this bad? In Python, type annotations can be quoted to avoid forward references. However, if from __future__ import annotations is present, Python will always evaluate type annotations in a deferred manner, making the quotes unnecessary. Similarly, if the annotation is located in a typing-only context and won't be evaluated by Python at runtime, the quotes will also be considered unnecessary. For example, Python does not evaluate type annotations on assignments in function bodies. Example Given: from __future__ import annotations def foo(bar: \"Bar\") -> \"Bar\": ... Use instead: from __future__ import annotations def foo(bar: Bar) -> Bar: ... Given: def foo() -> None: bar: \"Bar\" Use instead: def foo() -> None: bar: Bar Preview When preview is enabled, if lint.future-annotations is set to true, from __future__ import annotations will be added if doing so would allow an annotation to be unquoted. Fix safety The rule's fix is marked as safe, unless preview and lint.future-annotations are enabled and a from __future__ import annotations import is added. Such an import may change the behavior of all annotations in the file. See also quoted-annotation-in-stub: A rule that removes all quoted annotations from stub files quoted-type-alias: A rule that removes unnecessary quotes from type aliases.",
+  "option": {
+    "lint.future-annotations": {
+      "option_description": "Whether to allow rules to add from __future__ import annotations in cases where this would\nsimplify a fix or enable a new diagnostic.\n\nFor example, TC001, TC002, and TC003 can move more imports into TYPE_CHECKING blocks\nif __future__ annotations are enabled.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Enable `from __future__ import annotations` imports\nfuture-annotations = true\n\n\n\n[lint]\n# Enable `from __future__ import annotations` imports\nfuture-annotations = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

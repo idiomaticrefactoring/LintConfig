@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-builtin-import] [Message: Unnecessary builtin import: <code>{import}</code>] What it does Checks for unnecessary imports of builtins. Why is this bad? Builtins are always available. Importing them is unnecessary and should be removed to avoid confusion. Example from builtins import str str(1) Use instead: str(1) Fix safety This fix is marked as unsafe because it will remove comments attached to the unused import.",
+  "option": {
+    "lint.isort.required-imports": {
+      "option_description": "Add the specified import line to all files.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]\n\n\n\n[lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

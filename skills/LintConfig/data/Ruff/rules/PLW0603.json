@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: global-statement] [Message: Using the global statement to update <code>{name}</code> is discouraged] What it does Checks for the use of global statements to update identifiers. Why is this bad? Pylint discourages the use of global variables as global mutable state is a common source of bugs and confusing behavior. Example var = 1 def foo(): global var # [global-statement] var = 10 print(var) foo() print(var) Use instead: var = 1 def foo(): var = 10 print(var) return var var = foo() print(var)",
+  "option": {}
+}

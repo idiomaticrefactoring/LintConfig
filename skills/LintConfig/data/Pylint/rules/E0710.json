@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: raising-non-exception] [Message: Raising a class which doesn't inherit from BaseException] Description: Used when a class which doesn't inherit from BaseException is raised. Problematic code: raise str # [raising-non-exception] Correct code: raise Exception(\"Goodbye world !\") Created by the exceptions checker.",
+  "option": {}
+}

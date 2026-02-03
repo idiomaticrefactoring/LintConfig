@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: non-empty-init-module] [Message: <code>__init__</code> module should not contain any code] What it does Detects the presence of code in __init__.py files. Why is this bad? __init__.py files are often empty or only contain simple code to modify a module's API. As such, it's easy to overlook them and their possible side effects when debugging. Example Instead of defining MyClass directly in __init__.py: \"\"\"My module docstring.\"\"\" class MyClass: def my_method(self): ... move the definition to another file, import it, and include it in __all__: \"\"\"My module docstring.\"\"\" from submodule import MyClass __all__ = [\"MyClass\"] Code in __init__.py files is also run at import time and can cause surprising slowdowns. To disallow any code in __init__.py files, you can enable the lint.ruff.strictly-empty-init-modules setting. In this case: from submodule import MyClass __all__ = [\"MyClass\"] the only fix is entirely emptying the file: Details In non-strict mode, this rule allows several common patterns in __init__.py files: Imports Assignments to __all__, __path__, __version__, and __author__ Module-level and attribute docstrings if TYPE_CHECKING blocks PEP-562 module-level __getattr__ and __dir__ functions",
+  "option": {
+    "lint.ruff.strictly-empty-init-modules": {
+      "option_description": "Whether to require __init__.py files to contain no code at all, including imports and\ndocstrings (see RUF067).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.ruff]\n# Make it a violation to include any code, including imports and docstrings in `__init__.py`\nstrictly-empty-init-modules = true\n\n\n\n[lint.ruff]\n# Make it a violation to include any code, including imports and docstrings in `__init__.py`\nstrictly-empty-init-modules = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

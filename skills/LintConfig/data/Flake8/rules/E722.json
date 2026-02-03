@@ -1,0 +1,4 @@
+{
+  "description": "do not use bare except, specify exception instead",
+  "option": {}
+}

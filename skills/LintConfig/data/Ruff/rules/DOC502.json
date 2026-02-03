@@ -1,0 +1,21 @@
+{
+  "description": "[Status: preview] [Name: docstring-extraneous-exception] [Message: Raised exception is not explicitly raised: <code>{id}</code>] What it does Checks for function docstrings that state that exceptions could be raised even though they are not directly raised in the function body. Why is this bad? Some conventions prefer non-explicit exceptions be omitted from the docstring. This rule is not enforced for abstract methods. It is also ignored for \"stub functions\": functions where the body only consists of pass, ..., raise NotImplementedError, or similar. Example def calculate_speed(distance: float, time: float) -> float: \"\"\"Calculate speed as distance divided by time. Args: distance: Distance traveled. time: Time spent traveling. Returns: Speed as distance divided by time. Raises: ZeroDivisionError: Divided by zero. \"\"\" return distance / time Use instead: def calculate_speed(distance: float, time: float) -> float: \"\"\"Calculate speed as distance divided by time. Args: distance: Distance traveled. time: Time spent traveling. Returns: Speed as distance divided by time. \"\"\" return distance / time Known issues It may often be desirable to document all exceptions that a function could possibly raise, even those which are not explicitly raised using raise statements in the function body.",
+  "option": {
+    "lint.pydoclint.ignore-one-line-docstrings": {
+      "option_description": "Skip docstrings which fit on a single line.\n\nNote: The corresponding setting in pydoclint\nis named skip-checking-short-docstrings.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydoclint]\n# Skip docstrings which fit on a single line.\nignore-one-line-docstrings = true\n\n\n\n[lint.pydoclint]\n# Skip docstrings which fit on a single line.\nignore-one-line-docstrings = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pydocstyle.convention": {
+      "option_description": "Whether to use Google-style, NumPy-style conventions, or the PEP 257\ndefaults when analyzing docstring sections.\n\nEnabling a convention will disable all rules that are not included in\nthe specified convention. As such, the intended workflow is to enable a\nconvention and then selectively enable or disable any additional rules\non top of it.\n\nFor example, to use Google-style conventions but avoid requiring\ndocumentation for every function parameter:\n\n[tool.ruff.lint]\n# Enable all `pydocstyle` rules, limiting to those that adhere to the\n# Google convention via `convention = \"google\"`, below.\nselect = [\"D\"]\n\n# On top of the Google convention, disable `D417`, which requires\n# documentation for every function parameter.\nignore = [\"D417\"]\n\n[tool.ruff.lint.pydocstyle]\nconvention = \"google\"\n\nTo enable an additional rule that's excluded from the convention,\nselect the desired rule via its fully qualified rule code (e.g.,\nD400 instead of D4 or D40):\n\n[tool.ruff.lint]\n# Enable D400 on top of the Google convention.\nextend-select = [\"D400\"]\n\n[tool.ruff.lint.pydocstyle]\nconvention = \"google\"\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\n# Use Google-style docstrings.\nconvention = \"google\"\n\n\n\n[lint.pydocstyle]\n# Use Google-style docstrings.\nconvention = \"google\"",
+      "option_data_type": "\"google\" | \"numpy\" | \"pep257\"",
+      "default_value": "null",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

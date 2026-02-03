@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: async-zero-sleep] [Message: Use <code>{module}.lowlevel.checkpoint()</code> instead of <code>{module}.sleep(0)</code>] What it does Checks for uses of trio.sleep(0) or anyio.sleep(0). Why is this bad? trio.sleep(0) is equivalent to calling trio.lowlevel.checkpoint(). However, the latter better conveys the intent of the code. Example import trio async def func(): await trio.sleep(0) Use instead: import trio async def func(): await trio.lowlevel.checkpoint() Fix safety This rule's fix is marked as unsafe if there's comments in the trio.sleep(0) expression, as comments may be removed. For example, the fix would be marked as unsafe in the following case: import trio async def func(): await trio.sleep( # comment # comment 0 )",
+  "option": {}
+}

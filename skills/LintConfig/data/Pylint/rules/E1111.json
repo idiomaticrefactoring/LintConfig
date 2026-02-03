@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: assignment-from-no-return] [Message: Assigning result of a function call, where the function has no return] Description: Used when an assignment is done on a function call but the inferred function doesn't return anything. Problematic code: def add(x, y): print(x + y) value = add(10, 10) # [assignment-from-no-return] Correct code: def add(x, y): return x + y value = add(10, 10) Created by the typecheck checker.",
+  "option": {}
+}

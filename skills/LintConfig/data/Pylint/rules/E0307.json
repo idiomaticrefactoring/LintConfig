@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-str-returned] [Message: __str__ does not return str] Description: Used when a __str__ method returns something which is not a string Problematic code: class CustomStr: \"\"\"__str__ returns int\"\"\" def __str__(self): # [invalid-str-returned] return 1 Correct code: class CustomStr: \"\"\"__str__ returns <type 'str'>\"\"\" def __str__(self): return \"oranges\" Created by the classes checker.",
+  "option": {}
+}

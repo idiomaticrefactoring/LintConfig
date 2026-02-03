@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: access-member-before-definition] [Message: Access to member %r before its definition line %s] Description: Used when an instance member is accessed before it's actually assigned. Problematic code: class Unicorn: def __init__(self, fluffiness_level): if self.fluffiness_level > 9000: # [access-member-before-definition] print(\"It's OVER-FLUFFYYYY ! *crush glasses*\") self.fluffiness_level = fluffiness_level Correct code: class Unicorn: def __init__(self, fluffiness_level): self.fluffiness_level = fluffiness_level if self.fluffiness_level > 9000: print(\"It's OVER-FLUFFYYYY ! *crush glasses*\") Created by the classes checker.",
+  "option": {}
+}

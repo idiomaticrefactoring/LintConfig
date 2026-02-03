@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-get] [Message: Consider using dict.get for getting values from a dict if a key is present or a default if not] Description: Using the builtin dict.get for getting a value from a dictionary if a key is present or a default if not, is simpler and considered more idiomatic, although sometimes a bit slower Problematic code: knights = {\"Gallahad\": \"the pure\", \"Robin\": \"the brave\"} if \"Gallahad\" in knights: # [consider-using-get] DESCRIPTION = knights[\"Gallahad\"] else: DESCRIPTION = \"\" Correct code: knights = {\"Gallahad\": \"the pure\", \"Robin\": \"the brave\"} description = knights.get(\"Gallahad\", \"\") Created by the refactoring checker.",
+  "option": {}
+}

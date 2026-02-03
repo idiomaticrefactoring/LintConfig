@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: whitespace-after-open-bracket] [Message: Whitespace after '{symbol}'] What it does Checks for the use of extraneous whitespace after \"(\", \"[\" or \"{\". Why is this bad? PEP 8 recommends the omission of whitespace in the following cases: \"Immediately inside parentheses, brackets or braces.\" \"Immediately before a comma, semicolon, or colon.\" Example spam( ham[1], {eggs: 2}) spam(ham[ 1], {eggs: 2}) spam(ham[1], { eggs: 2}) Use instead: spam(ham[1], {eggs: 2})",
+  "option": {}
+}

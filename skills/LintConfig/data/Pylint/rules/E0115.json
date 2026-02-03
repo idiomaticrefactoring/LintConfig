@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nonlocal-and-global] [Message: Name %r is nonlocal and global] Description: Emitted when a name is both nonlocal and global. Problematic code: NUMBER = 42 def update_number(number): # [nonlocal-and-global] global NUMBER nonlocal NUMBER NUMBER = number print(f\"New global number is: {NUMBER}\") update_number(24) Correct code: NUMBER = 42 def update_number(number): global NUMBER NUMBER = number print(f\"New global number is: {NUMBER}\") update_number(24) Created by the basic checker.",
+  "option": {}
+}

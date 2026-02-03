@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: invalid-function-name] [Message: Function name <code>{name}</code> should be lowercase] What it does Checks for functions names that do not follow the snake_case naming convention. Why is this bad? PEP 8 recommends that function names follow snake_case: Function names should be lowercase, with words separated by underscores as necessary to improve readability. mixedCase is allowed only in contexts where that’s already the prevailing style (e.g. threading.py), to retain backwards compatibility. Names can be excluded from this rule using the lint.pep8-naming.ignore-names or lint.pep8-naming.extend-ignore-names configuration options. For example, to ignore all functions starting with test_ from this rule, set the lint.pep8-naming.extend-ignore-names option to [\"test_*\"]. This rule exempts methods decorated with @typing.override. Explicitly decorating a method with @override signals to Ruff that the method is intended to override a superclass method, and that a type checker will enforce that it does so. Ruff therefore knows that it should not enforce naming conventions on such methods. Example def myFunction(): pass Use instead: def my_function(): pass",
+  "option": {
+    "lint.pep8-naming.ignore-names": {
+      "option_description": "A list of names (or patterns) to ignore when considering pep8-naming violations.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"setUp\", \"tearDown\", \"setUpClass\", \"tearDownClass\", \"setUpModule\", \"tearDownModule\", \"asyncSetUp\", \"asyncTearDown\", \"setUpTestData\", \"failureException\", \"longMessage\", \"maxDiff\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.extend-ignore-names": {
+      "option_description": "Additional names (or patterns) to ignore when considering pep8-naming violations,\nin addition to those included in ignore-names.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

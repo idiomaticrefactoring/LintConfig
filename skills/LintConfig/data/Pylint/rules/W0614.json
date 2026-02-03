@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-wildcard-import] [Message: Unused import(s) %s from wildcard import of %s] Description: Used when an imported module or variable is not used from a `'from X import *'` style import. Problematic code: from abc import * # [unused-wildcard-import] class Animal(ABC): ... Correct code: from abc import ABC class Animal(ABC): ... Created by the variables checker.",
+  "option": {}
+}

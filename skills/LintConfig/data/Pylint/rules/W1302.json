@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-format-string] [Message: Invalid format string] Description: Used when a PEP 3101 format string is invalid. Problematic code: print(\"{a[0] + a[1]}\".format(a=[0, 1])) # [bad-format-string] Correct code: print(\"{a[0]} + {a[1]}\".format(a=[0, 1])) Related links: Format String Syntax PyFormat Created by the string checker.",
+  "option": {}
+}

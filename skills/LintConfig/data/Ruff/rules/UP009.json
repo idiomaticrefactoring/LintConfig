@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: utf8-encoding-declaration] [Message: UTF-8 encoding declaration is unnecessary] What it does Checks for unnecessary UTF-8 encoding declarations. Why is this bad? PEP 3120 makes UTF-8 the default encoding, so a UTF-8 encoding declaration is unnecessary. Example # -*- coding: utf-8 -*- print(\"Hello, world!\") Use instead: print(\"Hello, world!\")",
+  "option": {}
+}

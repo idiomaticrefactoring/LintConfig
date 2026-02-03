@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-list-index-lookup] [Message: Unnecessary list index lookup, use '%s' instead] Description: Emitted when iterating over an enumeration and accessing the value by index lookup. The value can be accessed directly instead. Problematic code: letters = [\"a\", \"b\", \"c\"] for index, letter in enumerate(letters): print(letters[index]) # [unnecessary-list-index-lookup] Correct code: letters = [\"a\", \"b\", \"c\"] for index, letter in enumerate(letters): print(letter) Created by the refactoring checker.",
+  "option": {}
+}

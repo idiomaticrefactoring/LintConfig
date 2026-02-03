@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: too-many-star-expressions] [Message: More than one starred expression in assignment] Description: Emitted when there are more than one starred expressions (`*x`) in an assignment. This is a SyntaxError. Problematic code: *stars, *constellations = [\"Sirius\", \"Arcturus\", \"Vega\"] # [too-many-star-expressions] Correct code: *sirius_and_arcturus, vega = [\"Sirius\", \"Arcturus\", \"Vega\"] Created by the basic checker.",
+  "option": {}
+}

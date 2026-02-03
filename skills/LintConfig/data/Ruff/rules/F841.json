@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-variable] [Message: Local variable <code>{name}</code> is assigned to but never used] What it does Checks for the presence of unused variables in function scopes. Why is this bad? A variable that is defined but not used is likely a mistake, and should be removed to avoid confusion. If a variable is intentionally defined-but-not-used, it should be prefixed with an underscore, or some other value that adheres to the lint.dummy-variable-rgx pattern. Example def foo(): x = 1 y = 2 return x Use instead: def foo(): x = 1 return x Fix safety This rule's fix is marked as unsafe because removing an unused variable assignment may delete comments that are attached to the assignment. See also This rule does not apply to bindings in unpacked assignments (e.g. x, y = 1, 2). See unused-unpacked-variable for this case.",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

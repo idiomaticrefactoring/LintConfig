@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: binary-op-exception] [Message: Exception to catch is the result of a binary \"%s\" operation] Description: Used when the exception to catch is of the form \"except A or B:\". If intending to catch multiple, rewrite as \"except (A, B):\" Problematic code: try: 1 / 0 except ZeroDivisionError or ValueError: # [binary-op-exception] pass Correct code: try: 1 / 0 except (ZeroDivisionError, ValueError): pass Created by the exceptions checker.",
+  "option": {}
+}

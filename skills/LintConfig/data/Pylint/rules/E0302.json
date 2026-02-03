@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unexpected-special-method-signature] [Message: The special method %r expects %s param(s), %d %s given] Description: Emitted when a special method was defined with an invalid number of parameters. If it has too few or too many, it might not work at all. Problematic code: class ContextManager: def __enter__(self, context): # [unexpected-special-method-signature] pass def __exit__(self, type): # [unexpected-special-method-signature] pass Correct code: class ContextManager: def __enter__(self): pass def __exit__(self, type, value, traceback): pass Created by the classes checker.",
+  "option": {}
+}

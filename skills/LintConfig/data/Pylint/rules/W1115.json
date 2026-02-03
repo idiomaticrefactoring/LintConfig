@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: non-str-assignment-to-dunder-name] [Message: Non-string value assigned to __name__] Description: Emitted when a non-string value is assigned to __name__ Problematic code: class Fruit: pass Fruit.__name__ = 1 # [non-str-assignment-to-dunder-name] Correct code: class Fruit: pass Fruit.__name__ = \"FRUIT\" Created by the typecheck checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: multiple-imports-on-one-line] [Message: Multiple imports on one line] What it does Check for multiple imports on one line. Why is this bad? According to PEP 8, \"imports should usually be on separate lines.\" Example import sys, os Use instead: import os import sys",
+  "option": {}
+}

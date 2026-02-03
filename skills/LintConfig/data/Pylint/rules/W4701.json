@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: modified-iterating-list] [Message: Iterated list '%s' is being modified inside for loop body, consider iterating through a copy of it instead.] Description: Emitted when items are added or removed to a list being iterated through. Doing so can result in unexpected behaviour, that is why it is preferred to use a copy of the list. Problematic code: fruits = [\"apple\", \"orange\", \"mango\"] for fruit in fruits: fruits.append(\"pineapple\") # [modified-iterating-list] Correct code: fruits = [\"apple\", \"orange\", \"mango\"] for fruit in fruits.copy(): fruits.append(\"pineapple\") Created by the modified_iteration checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-direct-lambda-call] [Message: Lambda expression called directly. Execute the expression inline instead.] What it does Checks for unnecessary direct calls to lambda expressions. Why is this bad? Calling a lambda expression directly is unnecessary. The expression can be executed inline instead to improve readability. Example area = (lambda r: 3.14 * r**2)(radius) Use instead: area = 3.14 * radius**2",
+  "option": {}
+}

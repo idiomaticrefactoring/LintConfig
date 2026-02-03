@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: c-extension-no-member] [Message: %s %r has no %r member%s, but source is unavailable. Consider adding this module to extension-pkg-allow-list if you want to perform analysis based on run-time introspection of living objects.] Description: Used when a variable is accessed for non-existent member of C extension. Due to unavailability of source static analysis is impossible, but it may be performed by introspecting living objects in run-time. Caution By default, this message will not fail the execution (pylint will return 0). To make pylint fail for this message use the --fail-on=I1101 option or --fail-on=I to fail on all enabled informational messages. Additional details: c-extension-no-member is an informational variant of no-member to encourage allowing introspection of C extensions as described in the page for no-member. Created by the typecheck checker.",
+  "option": {}
+}

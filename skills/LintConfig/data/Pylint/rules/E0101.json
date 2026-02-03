@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: return-in-init] [Message: Explicit return in __init__] Description: Used when the special class method __init__ has an explicit return value. Problematic code: class Sum: def __init__(self, a, b): # [return-in-init] return a + b Correct code: class Sum: def __init__(self, a, b) -> None: self.result = a + b Related links: __init__ method documentation Created by the basic checker.",
+  "option": {}
+}

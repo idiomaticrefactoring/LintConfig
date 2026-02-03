@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-loop-control-variable] [Message: Loop control variable <code>{name}</code> not used within loop body] What it does Checks for unused variables in loops (e.g., for and while statements). Why is this bad? Defining a variable in a loop statement that is never used can confuse readers. If the variable is intended to be unused (e.g., to facilitate destructuring of a tuple or other object), prefix it with an underscore to indicate the intent. Otherwise, remove the variable entirely. Example for i, j in foo: bar(i) Use instead: for i, _j in foo: bar(i)",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

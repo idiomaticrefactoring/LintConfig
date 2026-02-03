@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-formatter-suppression-comment] [Message: This suppression comment is invalid because {}] What it does Checks for formatter suppression comments that are ineffective or incompatible with Ruff's formatter. Why is this bad? Suppression comments that do not actually prevent formatting could cause unintended changes when the formatter is run. Example In the following example, all suppression comments would cause a rule violation. def decorator(): pass @decorator # fmt: off def example(): if True: # fmt: skip expression = [ # fmt: off 1, 2, ] # yapf: disable # fmt: on # yapf: enable Fix safety This fix is always marked as unsafe because it deletes the invalid suppression comment, rather than trying to move it to a valid position, which the user more likely intended.",
+  "option": {}
+}

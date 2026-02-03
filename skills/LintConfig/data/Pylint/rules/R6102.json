@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-tuple] [Message: Consider using an in-place tuple instead of list] Description: Only for style consistency! Emitted where an in-place defined ``list`` can be replaced by a ``tuple``. Due to optimizations by CPython, there is no performance benefit from it. Problematic code: for i in [1, 2, 3]: # [consider-using-tuple] print(i) Correct code: for i in (1, 2, 3): print(i) Configuration file: [MAIN] load-plugins=pylint.extensions.code_style Note This message is emitted by the optional 'code_style' checker, which requires the pylint.extensions.code_style plugin to be loaded. Created by the code_style checker.",
+  "option": {}
+}

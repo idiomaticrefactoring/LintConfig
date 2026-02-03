@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unpacking-non-sequence] [Message: Attempting to unpack a non-sequence%s] Description: Used when something which is not a sequence is used in an unpack assignment Problematic code: a, b, c = 1 # [unpacking-non-sequence] Correct code: a, b, c = 1, 2, 3 Created by the variables checker.",
+  "option": {}
+}

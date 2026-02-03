@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-envvar-value] [Message: %s does not support %s type argument] Description: Env manipulation functions support only string type arguments. See https://docs.python.org/3/library/os.html#os.getenv. Problematic code: import os os.getenv(1) # [invalid-envvar-value] Correct code: import os os.getenv(\"1\") Created by the stdlib checker.",
+  "option": {}
+}

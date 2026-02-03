@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: simplifiable-if-statement] [Message: The if statement can be replaced with %s] Description: Used when an if statement can be replaced with 'bool(test)'. Problematic code: FLYING_THINGS = [\"bird\", \"plane\", \"superman\", \"this example\"] def is_flying_animal(an_object): # +1: [simplifiable-if-statement] if isinstance(an_object, Animal) and an_object in FLYING_THINGS: is_flying = True else: is_flying = False return is_flying Correct code: FLYING_THINGS = [\"bird\", \"plane\", \"superman\", \"this example\"] def is_flying_animal(an_object): is_flying = isinstance(an_object, Animal) and an_object.name in FLYING_THINGS return is_flying Created by the refactoring checker.",
+  "option": {}
+}

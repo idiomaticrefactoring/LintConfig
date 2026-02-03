@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-star-assignment-target] [Message: Starred assignment target must be in a list or tuple] Description: Emitted when a star expression is used as a starred assignment target. Problematic code: *fruit = [\"apple\", \"banana\", \"orange\"] # [invalid-star-assignment-target] Correct code: fruit = [\"apple\", \"banana\", \"orange\"] Created by the basic checker.",
+  "option": {}
+}

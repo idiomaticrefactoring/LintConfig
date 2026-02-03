@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: any-type] [Message: Dynamically typed expressions (typing.Any) are disallowed in <code>{name}</code>] What it does Checks that function arguments are annotated with a more specific type than Any. Why is this bad? Any is a special type indicating an unconstrained type. When an expression is annotated with type Any, type checkers will allow all operations on it. It's better to be explicit about the type of an expression, and to use Any as an \"escape hatch\" only when it is really needed. Example from typing import Any def foo(x: Any): ... Use instead: def foo(x: int): ... Known problems Type aliases are unsupported and can lead to false positives. For example, the following will trigger this rule inadvertently: from typing import Any MyAny = Any def foo(x: MyAny): ...",
+  "option": {
+    "lint.flake8-annotations.allow-star-arg-any": {
+      "option_description": "Whether to suppress ANN401 for dynamically typed *args and\n**kwargs arguments.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-annotations]\nallow-star-arg-any = true\n\n\n\n[lint.flake8-annotations]\nallow-star-arg-any = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: format-literals] [Message: Use implicit references for positional format fields] What it does Checks for unnecessary positional indices in format strings. Why is this bad? In Python 3.1 and later, format strings can use implicit positional references. For example, \"{0}, {1}\".format(\"Hello\", \"World\") can be rewritten as \"{}, {}\".format(\"Hello\", \"World\"). If the positional indices appear exactly in-order, they can be omitted in favor of automatic indices to improve readability. Example \"{0}, {1}\".format(\"Hello\", \"World\") # \"Hello, World\" Use instead: \"{}, {}\".format(\"Hello\", \"World\") # \"Hello, World\" This fix is marked as unsafe because: Comments attached to arguments are not moved, which can cause comments to mismatch the actual arguments. If arguments have side effects (e.g., print), reordering may change program behavior.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: non-unique-enums] [Message: Enum contains duplicate value: <code>{value}</code>] What it does Checks for enums that contain duplicate values. Why is this bad? Enum values should be unique. Non-unique values are redundant and likely a mistake. Example from enum import Enum class Foo(Enum): A = 1 B = 2 C = 1 Use instead: from enum import Enum class Foo(Enum): A = 1 B = 2 C = 3",
+  "option": {}
+}

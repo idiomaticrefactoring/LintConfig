@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-collection-call] [Message: Unnecessary <code>{kind}()</code> call (rewrite as a literal)] What it does Checks for unnecessary dict(), list() or tuple() calls that can be rewritten as empty literals. Why is this bad? It's unnecessary to call, e.g., dict() as opposed to using an empty literal ({}). The former is slower because the name dict must be looked up in the global scope in case it has been rebound. Example dict() dict(a=1, b=2) list() tuple() Use instead: {} {\"a\": 1, \"b\": 2} [] () Fix safety This rule's fix is marked as unsafe, as it may occasionally drop comments when rewriting the call. In most cases, though, comments will be preserved.",
+  "option": {
+    "lint.flake8-comprehensions.allow-dict-calls-with-keyword-arguments": {
+      "option_description": "Allow dict calls that make use of keyword arguments (e.g., dict(a=1, b=2)).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-comprehensions]\nallow-dict-calls-with-keyword-arguments = true\n\n\n\n[lint.flake8-comprehensions]\nallow-dict-calls-with-keyword-arguments = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

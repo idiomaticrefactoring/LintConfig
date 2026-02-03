@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: if-else-block-instead-of-if-exp] [Message: Use ternary operator <code>{contents}</code> instead of <code>if</code>-<code>else</code>-block] What it does Check for if-else-blocks that can be replaced with a ternary or binary operator. The lint is suppressed if the suggested replacement would exceed the maximum line length configured in pycodestyle.max-line-length. Why is this bad? if-else-blocks that assign a value to a variable in both branches can be expressed more concisely by using a ternary or binary operator. Example if foo: bar = x else: bar = y Use instead: bar = x if foo else y Or: if cond: z = cond else: z = other_cond Use instead: z = cond or other_cond Known issues This is an opinionated style rule that may not always be to everyone's taste, especially for code that makes use of complex if conditions. Ternary operators can also make it harder to measure code coverage with tools that use line profiling.",
+  "option": {
+    "lint.pycodestyle.max-line-length": {
+      "option_description": "The maximum line length to allow for line-too-long violations. By default,\nthis is set to the value of the line-length option.\n\nUse this option when you want to detect extra-long lines that the formatter can't automatically split by setting\npycodestyle.line-length to a value larger than line-length.\n\n# The formatter wraps lines at a length of 88.\nline-length = 88\n\n[pycodestyle]\n# E501 reports lines that exceed the length of 100.\nmax-line-length = 100\n\nThe length is determined by the number of characters per line, except for lines containing East Asian characters or emojis.\nFor these lines, the unicode width of each character is added up to determine the length.\n\nSee the line-too-long rule for more information.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pycodestyle]\nmax-line-length = 100\n\n\n\n[lint.pycodestyle]\nmax-line-length = 100",
+      "option_data_type": "int",
+      "default_value": "null",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "indent-width": {
+      "option_description": "The number of spaces per indentation level (tab).\n\nUsed by the formatter and when enforcing long-line violations (like E501) to determine the visual\nwidth of a tab.\n\nThis option changes the number of spaces the formatter inserts when\nusing soft-tabs (indent-style = space).\n\nPEP 8 recommends using 4 spaces per indentation level.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\nindent-width = 2\n\n\n\nindent-width = 2",
+      "option_data_type": "int",
+      "default_value": "4",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

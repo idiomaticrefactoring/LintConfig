@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: using-generic-type-syntax-in-unsupported-version] [Message: Generic type syntax (PEP 695) is not supported by all versions included in the py-version setting] Description: Used when the py-version set by the user is lower than 3.12 and pylint encounters generic type syntax. Problematic code: type Vector = list[float] # [using-generic-type-syntax-in-unsupported-version] Correct code: from typing import TypeAlias Vector: TypeAlias = list[float] Configuration file: [main] py-version=3.11 Additional details: Generic type syntax was introduced in Python 3.12; to use it, please use a more recent version of Python. Created by the unsupported_version checker.",
+  "option": {}
+}

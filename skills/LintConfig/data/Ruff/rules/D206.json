@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: docstring-tab-indentation] [Message: Docstring should be indented with spaces, not tabs] What it does Checks for docstrings that are indented with tabs. Why is this bad? PEP 8 recommends using spaces over tabs for indentation. Example def sort_list(l: list[int]) -> list[int]: \"\"\"Return a sorted copy of the list. Sort the list in ascending order and return a copy of the result using the bubble sort algorithm. \"\"\" Use instead: def sort_list(l: list[int]) -> list[int]: \"\"\"Return a sorted copy of the list. Sort the list in ascending order and return a copy of the result using the bubble sort algorithm. \"\"\" Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces consistent indentation, making the rule redundant. The rule is also incompatible with the formatter when using format.indent-style=\"tab\".",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

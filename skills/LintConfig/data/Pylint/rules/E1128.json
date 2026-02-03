@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: assignment-from-none] [Message: Assigning result of a function call, where the function returns None] Description: Used when an assignment is done on a function call but the inferred function returns nothing but None. Problematic code: def function(): return None f = function() # [assignment-from-none] Correct code: def function(): return None f = function() if function() else 1 Created by the typecheck checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-argument] [Message: Unused argument %r] Description: Used when a function or method argument is not used. Problematic code: def print_point(x, y): # [unused-argument] print(f\"Point is located at {x},{x}\") Correct code: def print_point(x, y): print(f\"Point is located at {x},{y}\") Created by the variables checker.",
+  "option": {}
+}

@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: pytest-warns-too-broad] [Message: <code>pytest.warns({warning})</code> is too broad, set the <code>match</code> parameter or use a more specific warning] What it does Checks for pytest.warns calls without a match parameter. Why is this bad? pytest.warns(Warning) will catch any Warning and may catch warnings that are unrelated to the code under test. To avoid this, pytest.warns should be called with a match parameter. The warning names that require a match parameter can be configured via the lint.flake8-pytest-style.warns-require-match-for and lint.flake8-pytest-style.warns-extend-require-match-for settings. Example import pytest def test_foo(): with pytest.warns(Warning): ... # empty string is also an error with pytest.warns(Warning, match=\"\"): ... Use instead: import pytest def test_foo(): with pytest.warns(Warning, match=\"expected message\"): ...",
+  "option": {
+    "lint.flake8-pytest-style.warns-require-match-for": {
+      "option_description": "List of warning names that require a match= parameter in a\npytest.warns() call.\n\nSupports glob patterns. For more information on the glob syntax, refer\nto the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-pytest-style]\nwarns-require-match-for = [\"requests.RequestsWarning\"]\n\n\n\n[lint.flake8-pytest-style]\nwarns-require-match-for = [\"requests.RequestsWarning\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"Warning\", \"UserWarning\", \"DeprecationWarning\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-pytest-style.warns-extend-require-match-for": {
+      "option_description": "List of additional warning names that require a match= parameter in a\npytest.warns() call. This extends the default list of warnings that\nrequire a match= parameter.\n\nThis option is useful if you want to extend the default list of warnings\nthat require a match= parameter without having to specify the entire\nlist.\n\nNote that this option does not remove any warnings from the default\nlist.\n\nSupports glob patterns. For more information on the glob syntax, refer\nto the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-pytest-style]\nwarns-extend-require-match-for = [\"requests.RequestsWarning\"]\n\n\n\n[lint.flake8-pytest-style]\nwarns-extend-require-match-for = [\"requests.RequestsWarning\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

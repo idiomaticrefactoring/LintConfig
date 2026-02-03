@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nonlocal-without-binding] [Message: nonlocal name %s found without binding] Description: Emitted when a nonlocal variable does not have an attached name somewhere in the parent scopes Problematic code: class Fruit: def get_color(self): nonlocal colors # [nonlocal-without-binding] Correct code: class Fruit: colors = [\"red\", \"green\"] def get_color(self): nonlocal colors Created by the basic checker.",
+  "option": {}
+}

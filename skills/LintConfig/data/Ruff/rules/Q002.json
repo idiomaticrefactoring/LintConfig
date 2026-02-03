@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: bad-quotes-docstring] [Message: Single quote docstring found but double quotes preferred] What it does Checks for docstrings that use single quotes or double quotes, depending on the value of the lint.flake8-quotes.docstring-quotes setting. Why is this bad? Consistency is good. Use either single or double quotes for docstring strings, but be consistent. Example ''' bar ''' Assuming docstring-quotes is set to double, use instead: \"\"\" bar \"\"\" Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces double quotes for docstrings, making the rule redundant.",
+  "option": {
+    "lint.flake8-quotes.docstring-quotes": {
+      "option_description": "Quote style to prefer for docstrings (either \"single\" or \"double\").\n\nWhen using the formatter, only \"double\" is compatible, as the formatter\nenforces double quotes for docstrings strings.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-quotes]\ndocstring-quotes = \"single\"\n\n\n\n[lint.flake8-quotes]\ndocstring-quotes = \"single\"",
+      "option_data_type": "\"single\" | \"double\"",
+      "default_value": "\"double\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

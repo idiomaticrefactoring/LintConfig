@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: multi-value-repeated-key-literal] [Message: Dictionary key literal <code>{name}</code> repeated] What it does Checks for dictionary literals that associate multiple values with the same key. Why is this bad? Dictionary keys should be unique. If a key is associated with multiple values, the earlier values will be overwritten. Including multiple values for the same key in a dictionary literal is likely a mistake. Example foo = { \"bar\": 1, \"baz\": 2, \"baz\": 3, } foo[\"baz\"] # 3 Use instead: foo = { \"bar\": 1, \"baz\": 2, } foo[\"baz\"] # 2 Fix safety This rule's fix is marked as unsafe because removing a repeated dictionary key may delete comments that are attached to the removed key-value pair. This can also change the program's behavior if the value expressions have side effects.",
+  "option": {}
+}

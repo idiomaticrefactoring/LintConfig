@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redeclared-assigned-name] [Message: Redeclared variable %r in assignment] Description: Emitted when we detect that a variable was redeclared in the same assignment. Problematic code: FIRST, FIRST = (1, 2) # [redeclared-assigned-name] Correct code: FIRST, SECOND = (1, 2) Created by the basic checker.",
+  "option": {}
+}

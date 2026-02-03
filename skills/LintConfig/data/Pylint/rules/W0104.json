@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pointless-statement] [Message: Statement seems to have no effect] Description: Used when a statement doesn't have (or at least seems to) any effect. Problematic code: [1, 2, 3] # [pointless-statement] Correct code: NUMBERS = [1, 2, 3] print(NUMBERS) Created by the basic checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-indentation] [Message: Bad indentation. Found %s %s, expected %s] Description: Used when an unexpected number of indentation's tabulations or spaces has been found. Problematic code: if input(): print('yes') # [bad-indentation] Correct code: if input(): print(\"yes\") Additional details: The option --indent-string can be used to set the indentation unit for this check. Created by the format checker.",
+  "option": {}
+}

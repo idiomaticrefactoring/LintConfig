@@ -1,0 +1,21 @@
+{
+  "description": "[Status: preview] [Name: too-many-blank-lines] [Message: Too many blank lines ({actual_blank_lines})] What it does Checks for extraneous blank lines. Why is this bad? PEP 8 recommends using blank lines as follows: No more than two blank lines between top-level statements. No more than one blank line between non-top-level statements. Example def func1(): pass def func2(): pass Use instead: def func1(): pass def func2(): pass Typing stub files (.pyi) The rule allows at most one blank line in typing stub files in accordance to the typing style guide recommendation. Note: The rule respects the following isort settings when determining the maximum number of blank lines allowed between two statements: lint.isort.lines-after-imports: For top-level statements directly following an import statement. lint.isort.lines-between-types: For import statements directly following a from ... import ... statement or vice versa.",
+  "option": {
+    "lint.isort.lines-after-imports": {
+      "option_description": "The number of blank lines to place after imports.\nUse -1 for automatic determination.\n\nRuff uses at most one blank line after imports in typing stub files (files with .pyi extension) in accordance to\nthe typing style recommendations (source).\n\nWhen using the formatter, only the values -1, 1, and 2 are compatible because\nit enforces at least one empty and at most two empty lines after imports.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\n# Use a single line after each import block.\nlines-after-imports = 1\n\n\n\n[lint.isort]\n# Use a single line after each import block.\nlines-after-imports = 1",
+      "option_data_type": "int",
+      "default_value": "-1",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.isort.lines-between-types": {
+      "option_description": "The number of lines to place between \"direct\" and import from imports.\n\nWhen using the formatter, only the values 0 and 1 are compatible because\nit preserves up to one empty line after imports in nested blocks.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\n# Use a single line between direct and from import.\nlines-between-types = 1\n\n\n\n[lint.isort]\n# Use a single line between direct and from import.\nlines-between-types = 1",
+      "option_data_type": "int",
+      "default_value": "0",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

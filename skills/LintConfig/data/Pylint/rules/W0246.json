@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-parent-delegation] [Message: Useless parent or super() delegation in method %r] Description: Used whenever we can detect that an overridden method is useless, relying on parent or super() delegation to do the same thing as another method from the MRO. Problematic code: class Animal: def eat(self, food): print(f\"Eating {food}\") class Human(Animal): def eat(self, food): # [useless-parent-delegation] super(Human, self).eat(food) Correct code: class Animal: def eat(self, food): print(f\"Eating {food}\") class Human(Animal): \"\"\"There is no need to override 'eat' it has the same signature as the implementation in Animal.\"\"\" Related links: Stackoverflow explanation for 'useless-super-delegation' Created by the classes checker.",
+  "option": {}
+}

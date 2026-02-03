@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-return] [Message: Useless <code>return</code> statement at end of function] What it does Checks for functions that end with an unnecessary return or return None, and contain no other return statements. Why is this bad? Python implicitly assumes a None return at the end of a function, making it unnecessary to explicitly write return None. Example def f(): print(5) return None Use instead: def f(): print(5)",
+  "option": {}
+}

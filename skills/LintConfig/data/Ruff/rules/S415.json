@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: suspicious-pyghmi-import] [Message: An IPMI-related module is being imported. Prefer an encrypted protocol over IPMI.] What it does Checks for imports of the pyghmi module. Why is this bad? pyghmi is an IPMI-related module, but IPMI is considered insecure. Instead, use an encrypted protocol. Example import pyghmi",
+  "option": {}
+}

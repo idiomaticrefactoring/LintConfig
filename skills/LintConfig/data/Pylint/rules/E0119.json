@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: misplaced-format-function] [Message: format function is not called on str] Description: Emitted when format function is not called on str object. e.g doing print(\"value: {}\").format(123) instead of print(\"value: {}\".format(123)). This might not be what the user intended to do. Problematic code: print(\"Value: {}\").format(\"Car\") # [misplaced-format-function] Correct code: print(\"Value: {}\".format(\"Car\")) Created by the basic checker.",
+  "option": {}
+}

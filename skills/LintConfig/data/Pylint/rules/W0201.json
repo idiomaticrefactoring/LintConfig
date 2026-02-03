@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: attribute-defined-outside-init] [Message: Attribute %r defined outside __init__] Description: Used when an instance attribute is defined outside the __init__ method. Problematic code: class Student: def register(self): self.is_registered = True # [attribute-defined-outside-init] Correct code: class Student: def __init__(self): self.is_registered = False def register(self): self.is_registered = True Created by the classes checker.",
+  "option": {}
+}

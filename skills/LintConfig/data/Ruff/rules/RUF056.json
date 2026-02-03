@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: falsy-dict-get-fallback] [Message: Avoid providing a falsy fallback to <code>dict.get()</code> in boolean test positions. The default fallback <code>None</code> is already falsy.] What it does Checks for dict.get(key, falsy_value) calls in boolean test positions. Why is this bad? The default fallback None is already falsy. Example if dict.get(key, False): ... Use instead: if dict.get(key): ... Fix safety This rule's fix is marked as safe, unless the dict.get() call contains comments between arguments that will be deleted. Fix availability This rule's fix is unavailable in cases where invalid arguments are provided to dict.get. As shown in the documentation, dict.get takes two positional-only arguments, so invalid cases are identified by the presence of more than two arguments or any keyword arguments.",
+  "option": {}
+}

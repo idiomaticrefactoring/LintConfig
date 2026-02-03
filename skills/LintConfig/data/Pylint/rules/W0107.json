@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-pass] [Message: Unnecessary pass statement] Description: Used when a \"pass\" statement can be removed without affecting the behaviour of the code. Problematic code: class DataEntryError(Exception): \"\"\"This exception is raised when a user has provided incorrect data.\"\"\" pass # [unnecessary-pass] Correct code: class DataEntryError(Exception): \"\"\"This exception is raised when a user has provided incorrect data.\"\"\" Created by the basic checker.",
+  "option": {}
+}

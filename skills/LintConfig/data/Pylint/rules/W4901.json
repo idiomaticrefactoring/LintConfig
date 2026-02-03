@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-module] [Message: Deprecated module %r] Description: A module marked as deprecated is imported. Problematic code: import distutils # [deprecated-module] import whatever_you_want # [deprecated-module] Correct code: import setuptools import whatever_replacement_you_want Configuration file: [main] py-version=3.7 deprecated-modules=whatever_you_want Additional details: The actual replacement needs to be studied on a case by case basis by reading the deprecation warning or the release notes. Created by the imports checker.",
+  "option": {}
+}

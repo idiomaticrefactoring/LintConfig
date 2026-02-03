@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-class-method-argument] [Message: Unused class method argument: <code>{name}</code>] What it does Checks for the presence of unused arguments in class method definitions. Why is this bad? An argument that is defined but not used is likely a mistake, and should be removed to avoid confusion. If a variable is intentionally defined-but-not-used, it should be prefixed with an underscore, or some other value that adheres to the lint.dummy-variable-rgx pattern. This rule exempts methods decorated with @typing.override. Removing a parameter from a subclass method (or changing a parameter's name) may cause type checkers to complain about a violation of the Liskov Substitution Principle if it means that the method now incompatibly overrides a method defined on a superclass. Explicitly decorating an overriding method with @override signals to Ruff that the method is intended to override a superclass method and that a type checker will enforce that it does so; Ruff therefore knows that it should not enforce rules about unused arguments on such methods. Example class Class: @classmethod def foo(cls, arg1, arg2): print(arg1) Use instead: class Class: @classmethod def foo(cls, arg1): print(arg1)",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

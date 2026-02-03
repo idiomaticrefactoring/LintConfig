@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: duplicate-bases] [Message: Duplicate bases for class %r] Description: Duplicate use of base classes in derived classes raise TypeErrors. Problematic code: class Animal: pass class Cat(Animal, Animal): # [duplicate-bases] pass Correct code: class Animal: pass class Bird(Animal): pass class Cat(Animal): pass Created by the classes checker.",
+  "option": {}
+}

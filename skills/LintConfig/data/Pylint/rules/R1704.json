@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redefined-argument-from-local] [Message: Redefining argument with the local name %r] Description: Used when a local name is redefining an argument, which might suggest a potential error. This is taken in account only for a handful of name binding operations, such as for iteration, with statement assignment and exception handler assignment. Problematic code: def show(host_id=10.11): # +1: [redefined-argument-from-local] for host_id, host in [[12.13, \"Venus\"], [14.15, \"Mars\"]]: print(host_id, host) Correct code: def show(host_id=10.11): for inner_host_id, host in [[12.13, \"Venus\"], [14.15, \"Mars\"]]: print(host_id, inner_host_id, host) Created by the refactoring checker.",
+  "option": {}
+}

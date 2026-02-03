@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: cancel-scope-no-checkpoint] [Message: A <code>with {method_name}(...):</code> context does not contain any <code>await</code> statements. This makes it pointless, as the timeout can only be triggered by a checkpoint.] What it does Checks for timeout context managers which do not contain a checkpoint. For the purposes of this check, yield is considered a checkpoint, since checkpoints may occur in the caller to which we yield. Why is this bad? Some asynchronous context managers, such as asyncio.timeout and trio.move_on_after, have no effect unless they contain a checkpoint. The use of such context managers without an await, async with or async for statement is likely a mistake. Example import asyncio async def func(): async with asyncio.timeout(2): do_something() Use instead: import asyncio async def func(): async with asyncio.timeout(2): do_something() await awaitable()",
+  "option": {}
+}

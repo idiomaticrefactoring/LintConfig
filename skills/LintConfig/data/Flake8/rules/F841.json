@@ -1,0 +1,4 @@
+{
+  "description": "local variable name is assigned to but never used",
+  "option": {}
+}

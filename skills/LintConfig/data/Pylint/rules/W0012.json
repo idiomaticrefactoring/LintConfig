@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unknown-option-value] [Message: Unknown option value for '%s', expected a valid pylint message and got '%s'] Description: Used when an unknown value is encountered for an option. Problematic code: # pylint: disable=missnig-docstring # [unknown-option-value] Correct code: # pylint: disable=missing-docstring Created by the main checker.",
+  "option": {}
+}

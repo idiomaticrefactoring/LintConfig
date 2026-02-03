@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: subprocess-run-check] [Message: 'subprocess.run' used without explicitly defining the value for 'check'.] Description: The ``check`` keyword is set to False by default. It means the process launched by ``subprocess.run`` can exit with a non-zero exit code and fail silently. It's better to set it explicitly to make clear what the error-handling behavior is. Problematic code: import subprocess proc = subprocess.run([\"ls\"]) # [subprocess-run-check] Correct code: import subprocess proc = subprocess.run([\"ls\"], check=False) Related links: subprocess.run documentation Created by the stdlib checker.",
+  "option": {}
+}

@@ -1,0 +1,518 @@
+{
+  "F401": {
+    "description": "module imported but unused",
+    "option": {}
+  },
+  "F402": {
+    "description": "import module from line N shadowed by loop variable",
+    "option": {}
+  },
+  "F403": {
+    "description": "‘from module import *’ used; unable to detect undefined names",
+    "option": {}
+  },
+  "F404": {
+    "description": "future import(s) name after other statements",
+    "option": {}
+  },
+  "F405": {
+    "description": "name may be undefined, or defined from star imports: module",
+    "option": {}
+  },
+  "F406": {
+    "description": "‘from module import *’ only allowed at module level",
+    "option": {}
+  },
+  "F407": {
+    "description": "an undefined __future__ feature name was imported",
+    "option": {}
+  },
+  "F501": {
+    "description": "invalid % format literal",
+    "option": {}
+  },
+  "F502": {
+    "description": "% format expected mapping but got sequence",
+    "option": {}
+  },
+  "F503": {
+    "description": "% format expected sequence but got mapping",
+    "option": {}
+  },
+  "F504": {
+    "description": "% format unused named arguments",
+    "option": {}
+  },
+  "F505": {
+    "description": "% format missing named arguments",
+    "option": {}
+  },
+  "F506": {
+    "description": "% format mixed positional and named arguments",
+    "option": {}
+  },
+  "F507": {
+    "description": "% format mismatch of placeholder and argument count",
+    "option": {}
+  },
+  "F508": {
+    "description": "% format with * specifier requires a sequence",
+    "option": {}
+  },
+  "F509": {
+    "description": "% format with unsupported format character",
+    "option": {}
+  },
+  "F521": {
+    "description": ".format(...) invalid format string",
+    "option": {}
+  },
+  "F522": {
+    "description": ".format(...) unused named arguments",
+    "option": {}
+  },
+  "F523": {
+    "description": ".format(...) unused positional arguments",
+    "option": {}
+  },
+  "F524": {
+    "description": ".format(...) missing argument",
+    "option": {}
+  },
+  "F525": {
+    "description": ".format(...) mixing automatic and manual numbering",
+    "option": {}
+  },
+  "F541": {
+    "description": "f-string without any placeholders",
+    "option": {}
+  },
+  "F542": {
+    "description": "t-string without any placeholders",
+    "option": {}
+  },
+  "F601": {
+    "description": "dictionary key name repeated with different values",
+    "option": {}
+  },
+  "F602": {
+    "description": "dictionary key variable name repeated with different values",
+    "option": {}
+  },
+  "F621": {
+    "description": "too many expressions in an assignment with star-unpacking",
+    "option": {}
+  },
+  "F622": {
+    "description": "two or more starred expressions in an assignment (a, *b, *c = d)",
+    "option": {}
+  },
+  "F631": {
+    "description": "assertion test is a tuple, which is always True",
+    "option": {}
+  },
+  "F632": {
+    "description": "use ==/!= to compare str, bytes, and int literals",
+    "option": {}
+  },
+  "F633": {
+    "description": "use of >> is invalid with print function",
+    "option": {}
+  },
+  "F634": {
+    "description": "if test is a tuple, which is always True",
+    "option": {}
+  },
+  "F701": {
+    "description": "a break statement outside of a while or for loop",
+    "option": {}
+  },
+  "F702": {
+    "description": "a continue statement outside of a while or for loop",
+    "option": {}
+  },
+  "F704": {
+    "description": "a yield or yield from statement outside of a function",
+    "option": {}
+  },
+  "F706": {
+    "description": "a return statement outside of a function/method",
+    "option": {}
+  },
+  "F707": {
+    "description": "an except: block as not the last exception handler",
+    "option": {}
+  },
+  "F721": {
+    "description": "syntax error in doctest",
+    "option": {}
+  },
+  "F722": {
+    "description": "syntax error in forward annotation",
+    "option": {}
+  },
+  "F723": {
+    "description": "syntax error in type comment",
+    "option": {}
+  },
+  "F811": {
+    "description": "redefinition of unused name from line N",
+    "option": {}
+  },
+  "F821": {
+    "description": "undefined name name",
+    "option": {}
+  },
+  "F822": {
+    "description": "undefined name name in __all__",
+    "option": {}
+  },
+  "F823": {
+    "description": "local variable name … referenced before assignment",
+    "option": {}
+  },
+  "F824": {
+    "description": "global name / nonlocal name is unused: name is never assigned in scope",
+    "option": {}
+  },
+  "F831": {
+    "description": "duplicate argument name in function definition",
+    "option": {}
+  },
+  "F841": {
+    "description": "local variable name is assigned to but never used",
+    "option": {}
+  },
+  "F901": {
+    "description": "raise NotImplemented should be raise NotImplementedError",
+    "option": {}
+  },
+  "E101": {
+    "description": "indentation contains mixed spaces and tabs",
+    "option": {}
+  },
+  "E111": {
+    "description": "indentation is not a multiple of four",
+    "option": {}
+  },
+  "E112": {
+    "description": "expected an indented block",
+    "option": {}
+  },
+  "E113": {
+    "description": "unexpected indentation",
+    "option": {}
+  },
+  "E114": {
+    "description": "indentation is not a multiple of four (comment)",
+    "option": {}
+  },
+  "E115": {
+    "description": "expected an indented block (comment)",
+    "option": {}
+  },
+  "E116": {
+    "description": "unexpected indentation (comment)",
+    "option": {}
+  },
+  "E117": {
+    "description": "over-indented",
+    "option": {}
+  },
+  "E121": {
+    "description": "continuation line under-indented for hanging indent",
+    "option": {}
+  },
+  "E122": {
+    "description": "continuation line missing indentation or outdented",
+    "option": {}
+  },
+  "E123": {
+    "description": "closing bracket does not match indentation of opening bracket’s line",
+    "option": {}
+  },
+  "E124": {
+    "description": "closing bracket does not match visual indentation",
+    "option": {}
+  },
+  "E125": {
+    "description": "continuation line with same indent as next logical line",
+    "option": {}
+  },
+  "E126": {
+    "description": "continuation line over-indented for hanging indent",
+    "option": {}
+  },
+  "E127": {
+    "description": "continuation line over-indented for visual indent",
+    "option": {}
+  },
+  "E128": {
+    "description": "continuation line under-indented for visual indent",
+    "option": {}
+  },
+  "E129": {
+    "description": "visually indented line with same indent as next logical line",
+    "option": {}
+  },
+  "E131": {
+    "description": "continuation line unaligned for hanging indent",
+    "option": {}
+  },
+  "E133": {
+    "description": "closing bracket is missing indentation",
+    "option": {}
+  },
+  "E201": {
+    "description": "whitespace after ‘(’",
+    "option": {}
+  },
+  "E202": {
+    "description": "whitespace before ‘)’",
+    "option": {}
+  },
+  "E203": {
+    "description": "whitespace before ‘,’, ‘;’, or ‘:’",
+    "option": {}
+  },
+  "E204": {
+    "description": "whitespace after decorator ‘@’",
+    "option": {}
+  },
+  "E211": {
+    "description": "whitespace before ‘(’",
+    "option": {}
+  },
+  "E221": {
+    "description": "multiple spaces before operator",
+    "option": {}
+  },
+  "E222": {
+    "description": "multiple spaces after operator",
+    "option": {}
+  },
+  "E223": {
+    "description": "tab before operator",
+    "option": {}
+  },
+  "E224": {
+    "description": "tab after operator",
+    "option": {}
+  },
+  "E225": {
+    "description": "missing whitespace around operator",
+    "option": {}
+  },
+  "E226": {
+    "description": "missing whitespace around arithmetic operator",
+    "option": {}
+  },
+  "E227": {
+    "description": "missing whitespace around bitwise or shift operator",
+    "option": {}
+  },
+  "E228": {
+    "description": "missing whitespace around modulo operator",
+    "option": {}
+  },
+  "E231": {
+    "description": "missing whitespace after ‘,’, ‘;’, or ‘:’",
+    "option": {}
+  },
+  "E241": {
+    "description": "multiple spaces after ‘,’",
+    "option": {}
+  },
+  "E242": {
+    "description": "tab after ‘,’",
+    "option": {}
+  },
+  "E251": {
+    "description": "unexpected spaces around keyword / parameter equals",
+    "option": {}
+  },
+  "E261": {
+    "description": "at least two spaces before inline comment",
+    "option": {}
+  },
+  "E262": {
+    "description": "inline comment should start with ‘# ‘",
+    "option": {}
+  },
+  "E265": {
+    "description": "block comment should start with ‘# ‘",
+    "option": {}
+  },
+  "E266": {
+    "description": "too many leading ‘#’ for block comment",
+    "option": {}
+  },
+  "E271": {
+    "description": "multiple spaces after keyword",
+    "option": {}
+  },
+  "E272": {
+    "description": "multiple spaces before keyword",
+    "option": {}
+  },
+  "E273": {
+    "description": "tab after keyword",
+    "option": {}
+  },
+  "E274": {
+    "description": "tab before keyword",
+    "option": {}
+  },
+  "E275": {
+    "description": "missing whitespace after keyword",
+    "option": {}
+  },
+  "E301": {
+    "description": "expected 1 blank line, found 0",
+    "option": {}
+  },
+  "E302": {
+    "description": "expected 2 blank lines, found 0",
+    "option": {}
+  },
+  "E303": {
+    "description": "too many blank lines (3)",
+    "option": {}
+  },
+  "E304": {
+    "description": "blank lines found after function decorator",
+    "option": {}
+  },
+  "E305": {
+    "description": "expected 2 blank lines after end of function or class",
+    "option": {}
+  },
+  "E306": {
+    "description": "expected 1 blank line before a nested definition",
+    "option": {}
+  },
+  "E401": {
+    "description": "multiple imports on one line",
+    "option": {}
+  },
+  "E402": {
+    "description": "module level import not at top of file",
+    "option": {}
+  },
+  "E501": {
+    "description": "line too long (82 > 79 characters)",
+    "option": {}
+  },
+  "E502": {
+    "description": "the backslash is redundant between brackets",
+    "option": {}
+  },
+  "E701": {
+    "description": "multiple statements on one line (colon)",
+    "option": {}
+  },
+  "E702": {
+    "description": "multiple statements on one line (semicolon)",
+    "option": {}
+  },
+  "E703": {
+    "description": "statement ends with a semicolon",
+    "option": {}
+  },
+  "E704": {
+    "description": "multiple statements on one line (def)",
+    "option": {}
+  },
+  "E711": {
+    "description": "comparison to None should be ‘if cond is None:’",
+    "option": {}
+  },
+  "E712": {
+    "description": "comparison to True should be ‘if cond is True:’ or ‘if cond:’",
+    "option": {}
+  },
+  "E713": {
+    "description": "test for membership should be ‘not in’",
+    "option": {}
+  },
+  "E714": {
+    "description": "test for object identity should be ‘is not’",
+    "option": {}
+  },
+  "E721": {
+    "description": "do not compare types, use ‘isinstance()’",
+    "option": {}
+  },
+  "E722": {
+    "description": "do not use bare except, specify exception instead",
+    "option": {}
+  },
+  "E731": {
+    "description": "do not assign a lambda expression, use a def",
+    "option": {}
+  },
+  "E741": {
+    "description": "do not use variables named ‘l’, ‘O’, or ‘I’",
+    "option": {}
+  },
+  "E742": {
+    "description": "do not define classes named ‘l’, ‘O’, or ‘I’",
+    "option": {}
+  },
+  "E743": {
+    "description": "do not define functions named ‘l’, ‘O’, or ‘I’",
+    "option": {}
+  },
+  "E901": {
+    "description": "SyntaxError or IndentationError",
+    "option": {}
+  },
+  "E902": {
+    "description": "IOError",
+    "option": {}
+  },
+  "W191": {
+    "description": "indentation contains tabs",
+    "option": {}
+  },
+  "W291": {
+    "description": "trailing whitespace",
+    "option": {}
+  },
+  "W292": {
+    "description": "no newline at end of file",
+    "option": {}
+  },
+  "W293": {
+    "description": "blank line contains whitespace",
+    "option": {}
+  },
+  "W391": {
+    "description": "blank line at end of file",
+    "option": {}
+  },
+  "W503": {
+    "description": "line break before binary operator",
+    "option": {}
+  },
+  "W504": {
+    "description": "line break after binary operator",
+    "option": {}
+  },
+  "W505": {
+    "description": "doc line too long (82 > 79 characters)",
+    "option": {}
+  },
+  "W605": {
+    "description": "invalid escape sequence ‘x’",
+    "option": {}
+  },
+  "E999": {
+    "description": "",
+    "option": {}
+  },
+  "C901": {
+    "description": "{func} is too complex ({complexity})",
+    "option": {}
+  }
+}

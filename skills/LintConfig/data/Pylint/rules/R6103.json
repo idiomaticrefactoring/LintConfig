@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-assignment-expr] [Message: Use '%s' instead] Description: Emitted when an if assignment is directly followed by an if statement and both can be combined by using an assignment expression ``:=``. Requires Python 3.8 and ``py-version >= 3.8``. Problematic code: apples = 2 if apples: # [consider-using-assignment-expr] print(\"God apples!\") Correct code: if apples := 2: print(\"God apples!\") Configuration file: [MAIN] py-version=3.8 load-plugins=pylint.extensions.code_style Note This message is emitted by the optional 'code_style' checker, which requires the pylint.extensions.code_style plugin to be loaded. Created by the code_style checker.",
+  "option": {}
+}

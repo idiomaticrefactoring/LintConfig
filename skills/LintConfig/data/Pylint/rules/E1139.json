@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-metaclass] [Message: Invalid metaclass %r used] Description: Emitted whenever we can detect that a class is using, as a metaclass, something which might be invalid for using as a metaclass. Problematic code: class Apple(metaclass=int): # [invalid-metaclass] pass Correct code: class Plant: pass class Apple(Plant): pass Created by the typecheck checker.",
+  "option": {}
+}

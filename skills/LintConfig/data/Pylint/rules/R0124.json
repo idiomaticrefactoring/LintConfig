@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: comparison-with-itself] [Message: Redundant comparison - %s] Description: Used when something is compared against itself. Problematic code: def is_an_orange(fruit): an_orange = \"orange\" return fruit == fruit # [comparison-with-itself] Correct code: def is_an_orange(fruit): an_orange = \"orange\" return an_orange == fruit Created by the basic checker.",
+  "option": {}
+}

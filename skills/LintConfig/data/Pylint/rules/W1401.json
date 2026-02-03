@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: anomalous-backslash-in-string] [Message: Anomalous backslash in string: '%s'. String constant might be missing an r prefix.] Description: Used when a backslash is in a literal string but not as an escape. Problematic code: string = \"\\z\" # [syntax-error] Correct code: double_escape.py: string = \"\\\\z\" existing_escape_sequence.py: string = \"\\t\" r_prefix.py: string = r\"\\z\" Additional details: \\z is same as \\\\z because there's no escape sequence for z. But it is not clear for the reader of the code. The only reason this is demonstrated to raise syntax-error is because pylint's CI now runs on Python 3.12, where this truly raises a SyntaxError. We hope to address this discrepancy in the documentation in the future. Related links: String and Bytes literals Long form stackoverflow explanation Created by the string checker.",
+  "option": {}
+}

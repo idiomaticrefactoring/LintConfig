@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: inconsistent-return-statements] [Message: Either all return statements in a function should return an expression, or none of them should.] Description: According to PEP8, if any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable) Problematic code: def get_the_answer(value: str) -> str | None: # [inconsistent-return-statements] if value: return value Correct code: def get_the_answer(value: str) -> str | None: if value: return value return None Created by the refactoring checker.",
+  "option": {}
+}

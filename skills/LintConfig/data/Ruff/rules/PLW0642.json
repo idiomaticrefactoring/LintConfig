@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: self-or-cls-assignment] [Message: Reassigned <code>{}</code> variable in {method_type} method] What it does Checks for assignment of self and cls in instance and class methods respectively. This check also applies to __new__ even though this is technically a static method. Why is this bad? The identifiers self and cls are conventional in Python for the first parameter of instance methods and class methods, respectively. Assigning new values to these variables can be confusing for others reading your code; using a different variable name can lead to clearer code. Example class Version: def add(self, other): self = self + other return self @classmethod def superclass(cls): cls = cls.__mro__[-1] return cls Use instead: class Version: def add(self, other): new_version = self + other return new_version @classmethod def superclass(cls): supercls = cls.__mro__[-1] return supercls",
+  "option": {
+    "lint.pep8-naming.classmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a class method (in addition to the builtin\n@classmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list takes a cls argument as its first argument.\n\nExpects to receive a list of fully-qualified names (e.g., pydantic.validator,\nrather than validator) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]\n\n\n\n[lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.staticmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a static method (in addition to the builtin\n@staticmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list has no self or cls argument.\n\nExpects to receive a list of fully-qualified names (e.g., belay.Device.teardown,\nrather than teardown) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]\n\n\n\n[lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

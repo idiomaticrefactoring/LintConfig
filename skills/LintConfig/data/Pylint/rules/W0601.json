@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: global-variable-undefined] [Message: Global variable %r undefined at the module level] Description: Used when a variable is defined through the \"global\" statement but the variable is not defined in the module scope. Problematic code: def update_tomato(): global TOMATO # [global-variable-undefined] TOMATO = \"moneymaker\" Correct code: TOMATO = \"black cherry\" def update_tomato(): global TOMATO TOMATO = \"moneymaker\" Created by the variables checker.",
+  "option": {}
+}

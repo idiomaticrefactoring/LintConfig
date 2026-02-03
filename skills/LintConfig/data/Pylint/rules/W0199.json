@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: assert-on-tuple] [Message: Assert called on a populated tuple. Did you mean 'assert x,y'?] Description: A call of assert on a tuple will always evaluate to true if the tuple is not empty, and will always evaluate to false if it is. Problematic code: assert (1, None) # [assert-on-tuple] Correct code: x, y = (1, None) assert x assert y Additional details: Directly asserting a non-empty tuple will always pass. The solution is totest something that could fail, or not assert at all. For unittest assertions there is the similar redundant-unittest-assert / W1503 message. Created by the basic checker.",
+  "option": {}
+}

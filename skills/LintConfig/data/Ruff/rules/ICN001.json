@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: unconventional-import-alias] [Message: <code>{name}</code> should be imported as <code>{asname}</code>] What it does Checks for imports that are typically imported using a common convention, like import pandas as pd, and enforces that convention. Why is this bad? Consistency is good. Use a common convention for imports to make your code more readable and idiomatic. For example, import pandas as pd is a common convention for importing the pandas library, and users typically expect Pandas to be aliased as pd. Example import pandas Use instead: import pandas as pd",
+  "option": {
+    "lint.flake8-import-conventions.aliases": {
+      "option_description": "The conventional aliases for imports. These aliases can be extended by\nthe extend-aliases option.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-import-conventions.aliases]\n# Declare the default aliases.\naltair = \"alt\"\n\"matplotlib.pyplot\" = \"plt\"\nnumpy = \"np\"\npandas = \"pd\"\nseaborn = \"sns\"\nscipy = \"sp\"\n\n\n\n[lint.flake8-import-conventions.aliases]\n# Declare the default aliases.\naltair = \"alt\"\n\"matplotlib.pyplot\" = \"plt\"\nnumpy = \"np\"\npandas = \"pd\"\nseaborn = \"sns\"\nscipy = \"sp\"",
+      "option_data_type": "dict[str, str]",
+      "default_value": "{\"altair\": \"alt\", \"matplotlib\": \"mpl\", \"matplotlib.pyplot\": \"plt\", \"numpy\": \"np\", \"numpy.typing\": \"npt\", \"pandas\": \"pd\", \"seaborn\": \"sns\", \"tensorflow\": \"tf\", \"tkinter\":  \"tk\", \"holoviews\": \"hv\", \"panel\": \"pn\", \"plotly.express\": \"px\", \"polars\": \"pl\", \"pyarrow\": \"pa\", \"xml.etree.ElementTree\": \"ET\"}",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-import-conventions.extend-aliases": {
+      "option_description": "A mapping from module to conventional import alias. These aliases will\nbe added to the aliases mapping.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-import-conventions.extend-aliases]\n# Declare a custom alias for the `dask` module.\n\"dask.dataframe\" = \"dd\"\n\n\n\n[lint.flake8-import-conventions.extend-aliases]\n# Declare a custom alias for the `dask` module.\n\"dask.dataframe\" = \"dd\"",
+      "option_data_type": "dict[str, str]",
+      "default_value": "{}",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

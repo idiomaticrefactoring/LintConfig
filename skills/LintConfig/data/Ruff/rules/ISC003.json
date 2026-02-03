@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: explicit-string-concatenation] [Message: Explicitly concatenated string should be implicitly concatenated] What it does Checks for string literals that are explicitly concatenated (using the + operator). Why is this bad? For string literals that wrap across multiple lines, implicit string concatenation within parentheses is preferred over explicit concatenation using the + operator, as the former is more readable. Example z = ( \"The quick brown fox jumps over the lazy \" + \"dog\" ) Use instead: z = ( \"The quick brown fox jumps over the lazy \" \"dog\" )",
+  "option": {
+    "lint.flake8-implicit-str-concat.allow-multiline": {
+      "option_description": "Whether to allow implicit string concatenations for multiline strings.\nBy default, implicit concatenations of multiline strings are\nallowed (but continuation lines, delimited with a backslash, are\nprohibited).\n\nSetting allow-multiline = false will automatically disable the\nexplicit-string-concatenation (ISC003) rule. Otherwise, both\nimplicit and explicit multiline string concatenations would be seen\nas violations, making it impossible to write a linter-compliant multiline\nstring.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-implicit-str-concat]\nallow-multiline = false\n\n\n\n[lint.flake8-implicit-str-concat]\nallow-multiline = false",
+      "option_data_type": "bool",
+      "default_value": "true",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

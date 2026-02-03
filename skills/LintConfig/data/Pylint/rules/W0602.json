@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: global-variable-not-assigned] [Message: Using global for %r but no assignment is done] Description: When a variable defined in the global scope is modified in an inner scope, the 'global' keyword is required in the inner scope only if there is an assignment operation done in the inner scope. Problematic code: TOMATO = \"black cherry\" def update_tomato(): global TOMATO # [global-variable-not-assigned] print(TOMATO) Correct code: TOMATO = \"black cherry\" def update_tomato(): global TOMATO TOMATO = \"moneymaker\" Created by the variables checker.",
+  "option": {}
+}

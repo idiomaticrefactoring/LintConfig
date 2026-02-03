@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: except-with-non-exception-classes] [Message: <code>except*</code> handlers should only be exception classes or tuples of exception classes] What it does Checks for exception handlers that catch non-exception classes. Why is this bad? Catching classes that do not inherit from BaseException will raise a TypeError. Example try: 1 / 0 except 1: ... Use instead: try: 1 / 0 except ZeroDivisionError: ...",
+  "option": {}
+}

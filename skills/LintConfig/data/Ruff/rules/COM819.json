@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: prohibited-trailing-comma] [Message: Trailing comma prohibited] What it does Checks for the presence of prohibited trailing commas. Why is this bad? Trailing commas are not essential in some cases and can therefore be viewed as unnecessary. Example foo = (1, 2, 3,) Use instead: foo = (1, 2, 3) Formatter compatibility We recommend against using this rule alongside the formatter. The formatter enforces consistent use of trailing commas, making the rule redundant.",
+  "option": {}
+}

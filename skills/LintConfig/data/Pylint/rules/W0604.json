@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: global-at-module-level] [Message: Using the global statement at the module level] Description: Used when you use the \"global\" statement at the module level since it has no effect. Problematic code: price = 25 global price # [global-at-module-level] Correct code: price = 25 Related links: Official Python FAQ - global and local PEP 3104 - Access to Names in Outer Scopes Python global statement Created by the variables checker.",
+  "option": {}
+}

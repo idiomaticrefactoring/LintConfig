@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unidiomatic-typecheck] [Message: Use isinstance() rather than type() for a typecheck.] Description: The idiomatic way to perform an explicit typecheck in Python is to use isinstance(x, Y) rather than type(x) == Y, type(x) is Y. Though there are unusual situations where these give different results. Problematic code: test_score = {\"Biology\": 95, \"History\": 80} if type(test_score) is dict: # [unidiomatic-typecheck] pass Correct code: test_score = {\"Biology\": 95, \"History\": 80} if isinstance(test_score, dict): pass Related links: Builtin function type() Builtin function isinstance() Created by the basic checker.",
+  "option": {}
+}

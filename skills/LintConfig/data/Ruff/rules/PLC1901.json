@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: compare-to-empty-string] [Message: <code>{existing}</code> can be simplified to <code>{replacement}</code> as an empty string is falsey] What it does Checks for comparisons to empty strings. Why is this bad? An empty string is falsy, so it is unnecessary to compare it to \"\". If the value can be something else Python considers falsy, such as None, 0, or another empty container, then the code is not equivalent. Known problems High false positive rate, as the check is context-insensitive and does not consider the type of the variable being compared (#4282). Example x: str = ... if x == \"\": print(\"x is empty\") Use instead: x: str = ... if not x: print(\"x is empty\")",
+  "option": {}
+}

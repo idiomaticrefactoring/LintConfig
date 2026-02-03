@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: multiple-spaces-after-keyword] [Message: Multiple spaces after keyword] What it does Checks for extraneous whitespace after keywords. Why is this bad? Example True and False Use instead: True and False",
+  "option": {}
+}

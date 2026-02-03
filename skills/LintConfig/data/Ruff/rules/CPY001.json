@@ -1,0 +1,29 @@
+{
+  "description": "[Status: preview] [Name: missing-copyright-notice] [Message: Missing copyright notice at top of file] What it does Checks for the absence of copyright notices within Python files. Note that this check only searches within the first 4096 bytes of the file. Why is this bad? In some codebases, it's common to have a license header at the top of every file. This rule ensures that the license header is present.",
+  "option": {
+    "lint.flake8-copyright.author": {
+      "option_description": "Author to enforce within the copyright notice. If provided, the\nauthor must be present immediately following the copyright notice.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-copyright]\nauthor = \"Ruff\"\n\n\n\n[lint.flake8-copyright]\nauthor = \"Ruff\"",
+      "option_data_type": "str",
+      "default_value": "null",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-copyright.min-file-size": {
+      "option_description": "A minimum file size (in bytes) required for a copyright notice to\nbe enforced. By default, all files are validated.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-copyright]\n# Avoid enforcing a header on files smaller than 1024 bytes.\nmin-file-size = 1024\n\n\n\n[lint.flake8-copyright]\n# Avoid enforcing a header on files smaller than 1024 bytes.\nmin-file-size = 1024",
+      "option_data_type": "int",
+      "default_value": "0",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-copyright.notice-rgx": {
+      "option_description": "The regular expression used to match the copyright notice, compiled\nwith the regex crate.\nDefaults to (?i)Copyright\\s+((?:\\(C\\)|©)\\s+)?\\d{4}((-|,\\s)\\d{4})*, which matches\nthe following:\n\nCopyright 2023\nCopyright (C) 2023\nCopyright 2021-2023\nCopyright (C) 2021-2023\nCopyright (C) 2021, 2023\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-copyright]\nnotice-rgx = \"(?i)Copyright \\\\(C\\\\) \\\\d{4}\"\n\n\n\n[lint.flake8-copyright]\nnotice-rgx = \"(?i)Copyright \\\\(C\\\\) \\\\d{4}\"",
+      "option_data_type": "str",
+      "default_value": "\"(?i)Copyright\\s+((?:\\(C\\)|©)\\s+)?\\d{4}((-|,\\s)\\d{4})*\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

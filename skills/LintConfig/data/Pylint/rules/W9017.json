@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: differing-param-doc] [Message: \"%s\" differing in parameter documentation] Description: Please check parameter names in declarations. Problematic code: def add(x, y): # [differing-param-doc] \"\"\"Add two numbers. :param int x: x value. :param int z: z value. \"\"\" return x + y Correct code: def add(x, y): \"\"\"Add two numbers. :param int x: x value. :param int y: y value. \"\"\" return x + y Configuration file: [MAIN] load-plugins = pylint.extensions.docparams Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

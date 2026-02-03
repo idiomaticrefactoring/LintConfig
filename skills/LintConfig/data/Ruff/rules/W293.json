@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: blank-line-with-whitespace] [Message: Blank line contains whitespace] What it does Checks for superfluous whitespace in blank lines. Why is this bad? According to PEP 8, \"avoid trailing whitespace anywhere. Because it’s usually invisible, it can be confusing\" Example class Foo(object):\\n \\n bang = 12 Use instead: class Foo(object):\\n\\n bang = 12 Fix safety This fix is marked unsafe if the whitespace is inside a multiline string, as removing it changes the string's content.",
+  "option": {}
+}

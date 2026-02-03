@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: use-implicit-booleaness-not-comparison] [Message: \"%s\" can be simplified to \"%s\", if it is strictly a sequence, as an empty %s is falsey] Description: Empty sequences are considered false in a boolean context. Following this check blindly in weakly typed code base can create hard to debug issues. If the value can be something else that is falsey but not a sequence (for example ``None``, an empty string, or ``0``) the code will not be equivalent. Problematic code: z = [] if z != []: # [use-implicit-booleaness-not-comparison] print(\"z is not an empty sequence\") Correct code: z = [] if z: print(\"z is not an empty sequence\") Created by the refactoring checker.",
+  "option": {}
+}

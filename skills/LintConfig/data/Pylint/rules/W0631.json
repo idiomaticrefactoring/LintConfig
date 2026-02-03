@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: undefined-loop-variable] [Message: Using possibly undefined loop variable %r] Description: Used when a loop variable (i.e. defined by a for loop or a list comprehension or a generator expression) is used outside the loop. Problematic code: def find_even_number(numbers): for x in numbers: if x % 2 == 0: break return x # [undefined-loop-variable] Correct code: def find_even_number(numbers): for x in numbers: if x % 2: return x return None Created by the variables checker.",
+  "option": {}
+}

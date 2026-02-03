@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: raw-string-in-exception] [Message: Exception must not use a string literal, assign to variable first] What it does Checks for the use of string literals in exception constructors. Why is this bad? Python includes the raise in the default traceback (and formatters like Rich and IPython do too). By using a string literal, the error message will be duplicated in the traceback, which can make the traceback less readable. Example Given: raise RuntimeError(\"'Some value' is incorrect\") Python will produce a traceback like: Traceback (most recent call last): File \"tmp.py\", line 2, in <module> raise RuntimeError(\"'Some value' is incorrect\") RuntimeError: 'Some value' is incorrect Instead, assign the string to a variable: msg = \"'Some value' is incorrect\" raise RuntimeError(msg) Which will produce a traceback like: Traceback (most recent call last): File \"tmp.py\", line 3, in <module> raise RuntimeError(msg) RuntimeError: 'Some value' is incorrect",
+  "option": {
+    "lint.flake8-errmsg.max-string-length": {
+      "option_description": "Maximum string length for string literals in exception messages.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-errmsg]\nmax-string-length = 20\n\n\n\n[lint.flake8-errmsg]\nmax-string-length = 20",
+      "option_data_type": "int",
+      "default_value": "0",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

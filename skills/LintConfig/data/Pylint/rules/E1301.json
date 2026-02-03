@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: truncated-format-string] [Message: Format string ends in middle of conversion specifier] Description: Used when a format string terminates before the end of a conversion specifier. Problematic code: PARG_2 = 1 print(\"strange format %2\" % PARG_2) # [truncated-format-string] Correct code: PARG_2 = 1 print(f\"strange format {PARG_2}\") Created by the string checker.",
+  "option": {}
+}

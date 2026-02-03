@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-option-value] [Message: Useless option value for '%s', %s] Description: Used when a value for an option that is now deleted from pylint is encountered. Problematic code: \"\"\"'bad-continuation' was removed from pylint in https://github.com/pylint-dev/pylint/pull/3571\"\"\" # pylint: disable=bad-continuation # [useless-option-value] Correct code: \"\"\"'bad-continuation' was removed from pylint in https://github.com/pylint-dev/pylint/pull/3571\"\"\" Additional details: You can disable this check if you don't want to cleanup your configuration of old messages. Created by the main checker.",
+  "option": {}
+}

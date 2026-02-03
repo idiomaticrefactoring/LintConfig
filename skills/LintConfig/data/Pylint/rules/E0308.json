@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-bytes-returned] [Message: __bytes__ does not return bytes] Description: Used when a __bytes__ method returns something which is not bytes Problematic code: class CustomBytes: \"\"\"__bytes__ returns <type 'str'>\"\"\" def __bytes__(self): # [invalid-bytes-returned] return \"123\" Correct code: class CustomBytes: \"\"\"__bytes__ returns <type 'bytes'>\"\"\" def __bytes__(self): return b\"some bytes\" Created by the classes checker.",
+  "option": {}
+}

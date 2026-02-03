@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-kwoa] [Message: Missing mandatory keyword argument %r in %s call] Description: Used when a function call does not pass a mandatory keyword-only argument. Problematic code: def target(pos, *, keyword): return pos + keyword def not_forwarding_kwargs(*args, **kwargs): target(*args) # [missing-kwoa] Correct code: def target(pos, *, keyword): return pos + keyword def not_forwarding_kwargs(*args, **kwargs): target(*args, **kwargs) Created by the typecheck checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nonexistent-operator] [Message: Use of the non-existent %s operator] Description: Used when you attempt to use the C-style pre-increment or pre-decrement operator -- and ++, which doesn't exist in Python. Problematic code: i = 0 while i <= 10: print(i) ++i # [nonexistent-operator] Correct code: i = 0 while i <= 10: print(i) i += 1 Created by the basic checker.",
+  "option": {}
+}

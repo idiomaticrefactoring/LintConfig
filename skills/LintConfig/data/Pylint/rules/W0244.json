@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redefined-slots-in-subclass] [Message: Redefined slots %r in subclass] Description: Used when a slot is re-defined in a subclass. Problematic code: class Base: __slots__ = (\"a\", \"b\") class Subclass(Base): __slots__ = (\"a\", \"d\") # [redefined-slots-in-subclass] Correct code: class Base: __slots__ = (\"a\", \"b\") class Subclass(Base): __slots__ = (\"d\",) Created by the classes checker.",
+  "option": {}
+}

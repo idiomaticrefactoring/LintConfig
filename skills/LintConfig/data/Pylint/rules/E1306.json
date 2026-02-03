@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: too-few-format-args] [Message: Not enough arguments for format string] Description: Used when a format string that uses unnamed conversion specifiers is given too few arguments Problematic code: print(\"Today is {0}, so tomorrow will be {1}\".format(\"Monday\")) # [too-few-format-args] Correct code: print(\"Today is {0}, so tomorrow will be {1}\".format(\"Monday\", \"Tuesday\")) Related links: String Formatting Created by the string checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: if-expr-with-false-true] [Message: Use <code>not ...</code> instead of <code>False if ... else True</code>] What it does Checks for if expressions that can be replaced by negating a given condition. Why is this bad? if expressions that evaluate to False for a truthy condition and True for a falsey condition can be replaced with not operators, which are more concise and readable. Example False if a else True Use instead: not a",
+  "option": {}
+}

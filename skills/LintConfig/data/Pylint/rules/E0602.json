@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: undefined-variable] [Message: Undefined variable %r] Description: Used when an undefined variable is accessed. Problematic code: print(number + 2) # [undefined-variable] Correct code: number = 3 print(number + 2) Created by the variables checker.",
+  "option": {}
+}

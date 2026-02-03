@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: expression-not-assigned] [Message: Expression \"%s\" is assigned to nothing] Description: Used when an expression that is not a function call is assigned to nothing. Probably something else was intended. Problematic code: str(42) == \"42\" # [expression-not-assigned] Correct code: are_equal: bool = str(42) == \"42\" Created by the basic checker.",
+  "option": {}
+}

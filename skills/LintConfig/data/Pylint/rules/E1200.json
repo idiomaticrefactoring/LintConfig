@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: logging-unsupported-format] [Message: Unsupported logging format character %r (%#02x) at index %d] Description: Used when an unsupported format character is used in a logging statement format string. Problematic code: import logging logging.info(\"%s %y !\", \"Hello\", \"World\") # [logging-unsupported-format] Correct code: import logging logging.info(\"%s %s !\", \"Hello\", \"World\") Created by the logging checker.",
+  "option": {}
+}

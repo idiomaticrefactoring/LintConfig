@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: return-outside-function] [Message: Return outside function] Description: Used when a \"return\" statement is found outside a function or method. Problematic code: return 42 # [return-outside-function] Correct code: def get_the_answer(): return 42 Created by the basic checker.",
+  "option": {}
+}

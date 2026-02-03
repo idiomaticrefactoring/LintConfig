@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-keyword-arg] [Message: Argument %r passed by position and keyword in %s call] Description: Used when a function call would result in assigning multiple values to a function parameter, one value from a positional argument and one from a keyword argument. Problematic code: def square(x): return x * x square(5, x=4) # [redundant-keyword-arg] Correct code: only_arg.py: def square(x): return x * x square(5) only_kwarg.py: def square(x): return x * x square(x=4) Created by the typecheck checker.",
+  "option": {}
+}

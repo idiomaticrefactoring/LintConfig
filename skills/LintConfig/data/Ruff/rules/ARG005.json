@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-lambda-argument] [Message: Unused lambda argument: <code>{name}</code>] What it does Checks for the presence of unused arguments in lambda expression definitions. Why is this bad? An argument that is defined but not used is likely a mistake, and should be removed to avoid confusion. If a variable is intentionally defined-but-not-used, it should be prefixed with an underscore, or some other value that adheres to the lint.dummy-variable-rgx pattern. Example my_list = [1, 2, 3, 4, 5] squares = map(lambda x, y: x**2, my_list) Use instead: my_list = [1, 2, 3, 4, 5] squares = map(lambda x: x**2, my_list)",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

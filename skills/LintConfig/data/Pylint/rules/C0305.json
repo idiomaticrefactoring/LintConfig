@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: trailing-newlines] [Message: Trailing newlines] Description: Used when there are trailing blank lines in a file. Problematic code: print(\"apple\") # The file ends with 2 lines that are empty # +1: [trailing-newlines] Correct code: print(\"apple\") Created by the format checker.",
+  "option": {}
+}

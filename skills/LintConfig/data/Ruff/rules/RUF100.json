@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unused-noqa] [Message: Unused {}] What it does Checks for noqa directives that are no longer applicable. Why is this bad? A noqa directive that no longer matches any diagnostic violations is likely included by mistake, and should be removed to avoid confusion. Example import foo # noqa: F401 def bar(): foo.bar() Use instead: import foo def bar(): foo.bar() Conflict with other linters When using RUF100 with the --fix option, Ruff may remove trailing comments that follow a # noqa directive on the same line, as it interprets the remainder of the line as a description for the suppression. To prevent Ruff from removing suppressions for other tools (like pylint or mypy), separate them with a second # character: # Bad: Ruff --fix will remove the pylint comment def visit_ImportFrom(self, node): # noqa: N802, pylint: disable=invalid-name pass # Good: Ruff will preserve the pylint comment def visit_ImportFrom(self, node): # noqa: N802 # pylint: disable=invalid-name pass",
+  "option": {
+    "lint.external": {
+      "option_description": "A list of rule codes or prefixes that are unsupported by Ruff, but should be\npreserved when (e.g.) validating # noqa directives. Useful for\nretaining # noqa directives that cover plugins not yet implemented\nby Ruff.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Avoiding flagging (and removing) any codes starting with `V` from any\n# `# noqa` directives, despite Ruff's lack of support for `vulture`.\nexternal = [\"V\"]\n\n\n\n[lint]\n# Avoiding flagging (and removing) any codes starting with `V` from any\n# `# noqa` directives, despite Ruff's lack of support for `vulture`.\nexternal = [\"V\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

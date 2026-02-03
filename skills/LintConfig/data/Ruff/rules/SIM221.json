@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: expr-or-not-expr] [Message: Use <code>True</code> instead of <code>{name} or not {name}</code>] What it does Checks for or expressions that include both an expression and its negation. Why is this bad? An or expression that includes both an expression and its negation will always evaluate to True. Example x or not x",
+  "option": {}
+}

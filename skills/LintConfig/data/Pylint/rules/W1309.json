@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: f-string-without-interpolation] [Message: Using an f-string that does not have any interpolated variables] Description: Used when we detect an f-string that does not use any interpolation variables, in which case it can be either a normal string or a bug in the code. Problematic code: x = 1 y = 2 print(f\"x + y = x + y\") # [f-string-without-interpolation] Correct code: x = 1 y = 2 print(f\"{x} + {y} = {x + y}\") Created by the string checker.",
+  "option": {}
+}

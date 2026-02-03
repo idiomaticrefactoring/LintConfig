@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: ungrouped-imports] [Message: Imports from package %s are not grouped] Description: Used when imports are not grouped by packages. Problematic code: import logging import os import sys import logging.config # [ungrouped-imports] from logging.handlers import WatchedFileHandler Correct code: import logging import logging.config import os import sys from logging.handlers import FileHandler Created by the imports checker.",
+  "option": {}
+}

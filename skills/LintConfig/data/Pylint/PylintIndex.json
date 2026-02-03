@@ -1,0 +1,1830 @@
+{
+  "F0002": {
+    "description": "[Status: stable] [Name: astroid-error] [Message: %s: %s] Used when an unexpected error occurred while building the Astroid representation.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/fatal/astroid-error.html"
+  },
+  "F0011": {
+    "description": "[Status: stable] [Name: config-parse-error] [Message: error while parsing the configuration: %s] Used when an exception occurred while parsing a pylint configuration file.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/fatal/config-parse-error.html"
+  },
+  "F0001": {
+    "description": "[Status: stable] [Name: fatal] [Message: %s] Used when an error occurred preventing the analysis of a module (unable to find it for instance).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/fatal/fatal.html"
+  },
+  "F0202": {
+    "description": "[Status: stable] [Name: method-check-failed] [Message: Unable to check methods signature (%s / %s)] Used when Pylint has been unable to check methods signature compatibility for an unexpected reason.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/fatal/method-check-failed.html"
+  },
+  "F0010": {
+    "description": "[Status: stable] [Name: parse-error] [Message: error while code parsing: %s] Used when an exception occurred while building the Astroid representation which could be handled by astroid.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/fatal/parse-error.html"
+  },
+  "E0110": {
+    "description": "[Status: stable] [Name: abstract-class-instantiated] [Message: Abstract class %r with abstract methods instantiated] Used when an abstract class with `abc.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/abstract-class-instantiated.html"
+  },
+  "E0203": {
+    "description": "[Status: stable] [Name: access-member-before-definition] [Message: Access to member %r before its definition line %s] Used when an instance member is accessed before it's actually assigned.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/access-member-before-definition.html"
+  },
+  "E0237": {
+    "description": "[Status: stable] [Name: assigning-non-slot] [Message: Assigning to attribute %r not defined in class slots] Used when assigning to an attribute not defined in the class slots.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/assigning-non-slot.html"
+  },
+  "E1111": {
+    "description": "[Status: stable] [Name: assignment-from-no-return] [Message: Assigning result of a function call, where the function has no return]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/assignment-from-no-return.html"
+  },
+  "E1128": {
+    "description": "[Status: stable] [Name: assignment-from-none] [Message: Assigning result of a function call, where the function returns None]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/assignment-from-none.html"
+  },
+  "E1145": {
+    "description": "[Status: stable] [Name: async-context-manager-with-regular-with] [Message: Context manager '%s' is async and should be used with 'async with'.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/async-context-manager-with-regular-with.html"
+  },
+  "E1142": {
+    "description": "[Status: stable] [Name: await-outside-async] [Message: 'await' should be used within an async function] Emitted when await is used outside an async function.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/await-outside-async.html"
+  },
+  "E0014": {
+    "description": "[Status: stable] [Name: bad-configuration-section] [Message: Out-of-place setting encountered in top level configuration-section '%s' : '%s']",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-configuration-section.html"
+  },
+  "E0701": {
+    "description": "[Status: stable] [Name: bad-except-order] [Message: Bad except clauses order (%s)] Used when except clauses are not in the correct order (from the more specific to the more generic).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-except-order.html"
+  },
+  "E0705": {
+    "description": "[Status: stable] [Name: bad-exception-cause] [Message: Exception cause set to something which is not an exception, nor None]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-exception-cause.html"
+  },
+  "E1300": {
+    "description": "[Status: stable] [Name: bad-format-character] [Message: Unsupported format character %r (%#02x) at index %d] Used when an unsupported format character is used in a format string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-format-character.html"
+  },
+  "E0013": {
+    "description": "[Status: stable] [Name: bad-plugin-value] [Message: Plugin '%s' is impossible to load, is it installed ? ('%s')] Used when a bad value is used in 'load-plugins'.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-plugin-value.html"
+  },
+  "E0111": {
+    "description": "[Status: stable] [Name: bad-reversed-sequence] [Message: The first reversed() argument is not a sequence] Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-reversed-sequence.html"
+  },
+  "E1310": {
+    "description": "[Status: stable] [Name: bad-str-strip-call] [Message: Suspicious argument in %s.%s call] The argument to a str.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-str-strip-call.html"
+  },
+  "E1307": {
+    "description": "[Status: stable] [Name: bad-string-format-type] [Message: Argument %r does not match format type %r] Used when a type required by format string is not suitable for actual argument type",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-string-format-type.html"
+  },
+  "E1003": {
+    "description": "[Status: stable] [Name: bad-super-call] [Message: Bad first argument %r given to super()] Used when another argument than the current class is given as first argument of the super builtin.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-super-call.html"
+  },
+  "E1901": {
+    "description": "[Status: stable] [Name: bare-name-capture-pattern] [Message: The name capture `case %s` makes the remaining patterns unreachable. Use a dotted name (for example an enum) to fix this.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bare-name-capture-pattern.html"
+  },
+  "E2502": {
+    "description": "[Status: stable] [Name: bidirectional-unicode] [Message: Contains control characters that can permit obfuscated code executed differently than displayed]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bidirectional-unicode.html"
+  },
+  "E6005": {
+    "description": "[Status: stable] [Name: broken-collections-callable] [Message: 'collections.abc.Callable' inside Optional and Union is broken in 3.9.0 / 3.9.1 (use 'typing.Callable' instead)]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/broken-collections-callable.html"
+  },
+  "E6004": {
+    "description": "[Status: stable] [Name: broken-noreturn] [Message: 'NoReturn' inside compound types is broken in 3.7.0 / 3.7.1] ``typing.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/broken-noreturn.html"
+  },
+  "E0712": {
+    "description": "[Status: stable] [Name: catching-non-exception] [Message: Catching an exception which doesn't inherit from Exception: %s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/catching-non-exception.html"
+  },
+  "E0242": {
+    "description": "[Status: stable] [Name: class-variable-slots-conflict] [Message: Value %r in slots conflicts with class variable] Used when a value in __slots__ conflicts with a class variable, property or method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/class-variable-slots-conflict.html"
+  },
+  "E0245": {
+    "description": "[Status: stable] [Name: declare-non-slot] [Message: No such name %r in __slots__] Raised when a type annotation on a class is absent from the list of names in __slots__, and __slots__ does not contain a __dict__ entry.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/declare-non-slot.html"
+  },
+  "E1141": {
+    "description": "[Status: stable] [Name: dict-iter-missing-items] [Message: Unpacking a dictionary in iteration without calling .items()]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/dict-iter-missing-items.html"
+  },
+  "E0108": {
+    "description": "[Status: stable] [Name: duplicate-argument-name] [Message: Duplicate argument name %r in function definition] Duplicate argument names in function definitions are syntax errors.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/duplicate-argument-name.html"
+  },
+  "E0241": {
+    "description": "[Status: stable] [Name: duplicate-bases] [Message: Duplicate bases for class %r] Duplicate use of base classes in derived classes raise TypeErrors.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/duplicate-bases.html"
+  },
+  "E1303": {
+    "description": "[Status: stable] [Name: format-needs-mapping] [Message: Expected mapping for format string, not %s] Used when a format string that uses named conversion specifiers is used with an argument that is not a mapping.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/format-needs-mapping.html"
+  },
+  "E0102": {
+    "description": "[Status: stable] [Name: function-redefined] [Message: %s already defined line %s] Used when a function / class / method is redefined.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/function-redefined.html"
+  },
+  "E0401": {
+    "description": "[Status: stable] [Name: import-error] [Message: Unable to import %s] Used when pylint has been unable to import a module.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/import-error.html"
+  },
+  "E0240": {
+    "description": "[Status: stable] [Name: inconsistent-mro] [Message: Inconsistent method resolution order for class %r] Used when a class has an inconsistent method resolution order.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/inconsistent-mro.html"
+  },
+  "E0239": {
+    "description": "[Status: stable] [Name: inherit-non-class] [Message: Inheriting %r, which is not a class.] Used when a class inherits from something which is not a class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/inherit-non-class.html"
+  },
+  "E0100": {
+    "description": "[Status: stable] [Name: init-is-generator] [Message: __init__ method is a generator] Used when the special class method __init__ is turned into a generator by a yield in its body.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/init-is-generator.html"
+  },
+  "E0605": {
+    "description": "[Status: stable] [Name: invalid-all-format] [Message: Invalid format for __all__, must be tuple or list] Used when __all__ has an invalid format.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-all-format.html"
+  },
+  "E0604": {
+    "description": "[Status: stable] [Name: invalid-all-object] [Message: Invalid object %r in __all__, must contain only strings] Used when an invalid (non-string) object occurs in __all__.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-all-object.html"
+  },
+  "E0304": {
+    "description": "[Status: stable] [Name: invalid-bool-returned] [Message: __bool__ does not return bool] Used when a __bool__ method returns something which is not a bool",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-bool-returned.html"
+  },
+  "E0308": {
+    "description": "[Status: stable] [Name: invalid-bytes-returned] [Message: __bytes__ does not return bytes] Used when a __bytes__ method returns something which is not bytes",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-bytes-returned.html"
+  },
+  "E2510": {
+    "description": "[Status: stable] [Name: invalid-character-backspace] [Message: Invalid unescaped character backspace, use \"\\b\" instead.] Moves the cursor back, so the character after it will overwrite the character before.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-backspace.html"
+  },
+  "E2511": {
+    "description": "[Status: stable] [Name: invalid-character-carriage-return] [Message: Invalid unescaped character carriage-return, use \"\\r\" instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-carriage-return.html"
+  },
+  "E2513": {
+    "description": "[Status: stable] [Name: invalid-character-esc] [Message: Invalid unescaped character esc, use \"\\x1B\" instead.] Commonly initiates escape codes which allow arbitrary control of the terminal.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-esc.html"
+  },
+  "E2514": {
+    "description": "[Status: stable] [Name: invalid-character-nul] [Message: Invalid unescaped character nul, use \"\\0\" instead.] Mostly end of input for python.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-nul.html"
+  },
+  "E2512": {
+    "description": "[Status: stable] [Name: invalid-character-sub] [Message: Invalid unescaped character sub, use \"\\x1A\" instead.] Ctrl+Z \"End of text\" on Windows.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-sub.html"
+  },
+  "E2515": {
+    "description": "[Status: stable] [Name: invalid-character-zero-width-space] [Message: Invalid unescaped character zero-width-space, use \"\\u200B\" instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-character-zero-width-space.html"
+  },
+  "E0243": {
+    "description": "[Status: stable] [Name: invalid-class-object] [Message: Invalid assignment to '__class__'. Should be a class definition but got a '%s']",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-class-object.html"
+  },
+  "E0244": {
+    "description": "[Status: stable] [Name: invalid-enum-extension] [Message: Extending inherited Enum class \"%s\"] Used when a class tries to extend an inherited Enum class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-enum-extension.html"
+  },
+  "E1507": {
+    "description": "[Status: stable] [Name: invalid-envvar-value] [Message: %s does not support %s type argument] Env manipulation functions support only string type arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-envvar-value.html"
+  },
+  "E3701": {
+    "description": "[Status: stable] [Name: invalid-field-call] [Message: Invalid usage of field(), %s] The dataclasses.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-field-call.html"
+  },
+  "E0311": {
+    "description": "[Status: stable] [Name: invalid-format-returned] [Message: __format__ does not return str] Used when a __format__ method returns something which is not a string",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-format-returned.html"
+  },
+  "E0313": {
+    "description": "[Status: stable] [Name: invalid-getnewargs-ex-returned] [Message: __getnewargs_ex__ does not return a tuple containing (tuple, dict)]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-getnewargs-ex-returned.html"
+  },
+  "E0312": {
+    "description": "[Status: stable] [Name: invalid-getnewargs-returned] [Message: __getnewargs__ does not return a tuple] Used when a __getnewargs__ method returns something which is not a tuple",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-getnewargs-returned.html"
+  },
+  "E0309": {
+    "description": "[Status: stable] [Name: invalid-hash-returned] [Message: __hash__ does not return int] Used when a __hash__ method returns something which is not an integer",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-hash-returned.html"
+  },
+  "E0305": {
+    "description": "[Status: stable] [Name: invalid-index-returned] [Message: __index__ does not return int] Used when an __index__ method returns something which is not an integer",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-index-returned.html"
+  },
+  "E0310": {
+    "description": "[Status: stable] [Name: invalid-length-hint-returned] [Message: __length_hint__ does not return non-negative integer] Used when a __length_hint__ method returns something which is not a non-negative integer",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-length-hint-returned.html"
+  },
+  "E0303": {
+    "description": "[Status: stable] [Name: invalid-length-returned] [Message: __len__ does not return non-negative integer] Used when a __len__ method returns something which is not a non-negative integer",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-length-returned.html"
+  },
+  "E1902": {
+    "description": "[Status: stable] [Name: invalid-match-args-definition] [Message: `__match_args__` must be a tuple of strings.] Emitted if `__match_args__` isn't a tuple of strings required for match.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-match-args-definition.html"
+  },
+  "E1139": {
+    "description": "[Status: stable] [Name: invalid-metaclass] [Message: Invalid metaclass %r used] Emitted whenever we can detect that a class is using, as a metaclass, something which might be invalid for using as a metaclass.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-metaclass.html"
+  },
+  "E0306": {
+    "description": "[Status: stable] [Name: invalid-repr-returned] [Message: __repr__ does not return str] Used when a __repr__ method returns something which is not a string",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-repr-returned.html"
+  },
+  "E1126": {
+    "description": "[Status: stable] [Name: invalid-sequence-index] [Message: Sequence index is not an int, slice, or instance with __index__]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-sequence-index.html"
+  },
+  "E1127": {
+    "description": "[Status: stable] [Name: invalid-slice-index] [Message: Slice index is not an int, None, or instance with __index__] Used when a slice index is not an integer, None, or an object with an __index__ method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-slice-index.html"
+  },
+  "E1144": {
+    "description": "[Status: stable] [Name: invalid-slice-step] [Message: Slice step cannot be 0] Used when a slice step is 0 and the object doesn't implement a custom __getitem__ method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-slice-step.html"
+  },
+  "E0238": {
+    "description": "[Status: stable] [Name: invalid-slots] [Message: Invalid __slots__ object] Used when an invalid __slots__ is found in class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-slots.html"
+  },
+  "E0236": {
+    "description": "[Status: stable] [Name: invalid-slots-object] [Message: Invalid object %r in __slots__, must contain only non empty strings]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-slots-object.html"
+  },
+  "E0113": {
+    "description": "[Status: stable] [Name: invalid-star-assignment-target] [Message: Starred assignment target must be in a list or tuple] Emitted when a star expression is used as a starred assignment target.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-star-assignment-target.html"
+  },
+  "E0307": {
+    "description": "[Status: stable] [Name: invalid-str-returned] [Message: __str__ does not return str] Used when a __str__ method returns something which is not a string",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-str-returned.html"
+  },
+  "E1130": {
+    "description": "[Status: stable] [Name: invalid-unary-operand-type] [Message: %s] Emitted when a unary operand is used on an object which does not support this type of operation.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-unary-operand-type.html"
+  },
+  "E2501": {
+    "description": "[Status: stable] [Name: invalid-unicode-codec] [Message: UTF-16 and UTF-32 aren't backward compatible. Use UTF-8 instead]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/invalid-unicode-codec.html"
+  },
+  "E1201": {
+    "description": "[Status: stable] [Name: logging-format-truncated] [Message: Logging format string ends in middle of conversion specifier]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/logging-format-truncated.html"
+  },
+  "E1206": {
+    "description": "[Status: stable] [Name: logging-too-few-args] [Message: Not enough arguments for logging format string] Used when a logging format string is given too few arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/logging-too-few-args.html"
+  },
+  "E1205": {
+    "description": "[Status: stable] [Name: logging-too-many-args] [Message: Too many arguments for logging format string] Used when a logging format string is given too many arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/logging-too-many-args.html"
+  },
+  "E1200": {
+    "description": "[Status: stable] [Name: logging-unsupported-format] [Message: Unsupported logging format character %r (%#02x) at index %d] Used when an unsupported format character is used in a logging statement format string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/logging-unsupported-format.html"
+  },
+  "E0202": {
+    "description": "[Status: stable] [Name: method-hidden] [Message: An attribute defined in %s line %s hides this method] Used when a class defines a method which is hidden by an instance attribute from an ancestor class or set by some client code.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/method-hidden.html"
+  },
+  "E0704": {
+    "description": "[Status: stable] [Name: misplaced-bare-raise] [Message: The raise statement is not inside an except clause] Used when a bare raise is not used inside an except clause.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/misplaced-bare-raise.html"
+  },
+  "E0119": {
+    "description": "[Status: stable] [Name: misplaced-format-function] [Message: format function is not called on str] Emitted when format function is not called on str object.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/misplaced-format-function.html"
+  },
+  "E1304": {
+    "description": "[Status: stable] [Name: missing-format-string-key] [Message: Missing key %r in format string dictionary] Used when a format string that uses named conversion specifiers is used with a dictionary that doesn't contain all the keys required by the format string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/missing-format-string-key.html"
+  },
+  "E1125": {
+    "description": "[Status: stable] [Name: missing-kwoa] [Message: Missing mandatory keyword argument %r in %s call] Used when a function call does not pass a mandatory keyword-only argument.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/missing-kwoa.html"
+  },
+  "E1302": {
+    "description": "[Status: stable] [Name: mixed-format-string] [Message: Mixing named and unnamed conversion specifiers in format string]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/mixed-format-string.html"
+  },
+  "E4702": {
+    "description": "[Status: stable] [Name: modified-iterating-dict] [Message: Iterated dict '%s' is being modified inside for loop body, iterate through a copy of it instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/modified-iterating-dict.html"
+  },
+  "E4703": {
+    "description": "[Status: stable] [Name: modified-iterating-set] [Message: Iterated set '%s' is being modified inside for loop body, iterate through a copy of it instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/modified-iterating-set.html"
+  },
+  "E1904": {
+    "description": "[Status: stable] [Name: multiple-class-sub-patterns] [Message: Multiple sub-patterns for attribute %s] Emitted when there is more than one sub-pattern for a specific attribute in a class pattern.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/multiple-class-sub-patterns.html"
+  },
+  "E1101": {
+    "description": "[Status: stable] [Name: no-member] [Message: %s %r has no %r member%s] Used when a variable is accessed for a nonexistent member.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/no-member.html"
+  },
+  "E0211": {
+    "description": "[Status: stable] [Name: no-method-argument] [Message: Method %r has no argument] Used when a method which should have the bound instance as first argument has no argument defined.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/no-method-argument.html"
+  },
+  "E0611": {
+    "description": "[Status: stable] [Name: no-name-in-module] [Message: No name %r in module %r] Used when a name cannot be found in a module.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/no-name-in-module.html"
+  },
+  "E0213": {
+    "description": "[Status: stable] [Name: no-self-argument] [Message: Method %r should have \"self\" as first argument] Used when a method has an attribute different the \"self\" as first argument.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/no-self-argument.html"
+  },
+  "E1120": {
+    "description": "[Status: stable] [Name: no-value-for-parameter] [Message: No value for argument %s in %s call] Used when a function call passes too few arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/no-value-for-parameter.html"
+  },
+  "E0301": {
+    "description": "[Status: stable] [Name: non-iterator-returned] [Message: __iter__ returns non-iterator] Used when an __iter__ method returns something which is not an iterable (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/non-iterator-returned.html"
+  },
+  "E0107": {
+    "description": "[Status: stable] [Name: nonexistent-operator] [Message: Use of the non-existent %s operator] Used when you attempt to use the C-style pre-increment or pre-decrement operator -- and ++, which doesn't exist in Python.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/nonexistent-operator.html"
+  },
+  "E0115": {
+    "description": "[Status: stable] [Name: nonlocal-and-global] [Message: Name %r is nonlocal and global] Emitted when a name is both nonlocal and global.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/nonlocal-and-global.html"
+  },
+  "E0117": {
+    "description": "[Status: stable] [Name: nonlocal-without-binding] [Message: nonlocal name %s found without binding] Emitted when a nonlocal variable does not have an attached name somewhere in the parent scopes",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/nonlocal-without-binding.html"
+  },
+  "E1134": {
+    "description": "[Status: stable] [Name: not-a-mapping] [Message: Non-mapping value %s is used in a mapping context] Used when a non-mapping value is used in place where mapping is expected",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-a-mapping.html"
+  },
+  "E1133": {
+    "description": "[Status: stable] [Name: not-an-iterable] [Message: Non-iterable value %s is used in an iterating context] Used when a non-iterable value is used in place where iterable is expected",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-an-iterable.html"
+  },
+  "E1701": {
+    "description": "[Status: stable] [Name: not-async-context-manager] [Message: Async context manager '%s' doesn't implement __aenter__ and __aexit__.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-async-context-manager.html"
+  },
+  "E1102": {
+    "description": "[Status: stable] [Name: not-callable] [Message: %s is not callable] Used when an object being called has been inferred to a non callable object.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-callable.html"
+  },
+  "E1129": {
+    "description": "[Status: stable] [Name: not-context-manager] [Message: Context manager '%s' doesn't implement __enter__ and __exit__.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-context-manager.html"
+  },
+  "E0103": {
+    "description": "[Status: stable] [Name: not-in-loop] [Message: %r not properly in loop] Used when break or continue keywords are used outside a loop.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/not-in-loop.html"
+  },
+  "E0711": {
+    "description": "[Status: stable] [Name: notimplemented-raised] [Message: NotImplemented raised - should raise NotImplementedError] Used when NotImplemented is raised instead of NotImplementedError",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/notimplemented-raised.html"
+  },
+  "E3102": {
+    "description": "[Status: stable] [Name: positional-only-arguments-expected] [Message: `%s()` got some positional-only arguments passed as keyword arguments: %s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/positional-only-arguments-expected.html"
+  },
+  "E0606": {
+    "description": "[Status: stable] [Name: possibly-used-before-assignment] [Message: Possibly using variable %r before assignment] Emitted when a local variable is accessed before its assignment took place in both branches of an if/else switch.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/possibly-used-before-assignment.html"
+  },
+  "E0643": {
+    "description": "[Status: stable] [Name: potential-index-error] [Message: Invalid index for iterable length] Emitted when an index used on an iterable goes beyond the length of that iterable.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/potential-index-error.html"
+  },
+  "E0702": {
+    "description": "[Status: stable] [Name: raising-bad-type] [Message: Raising %s while only classes or instances are allowed] Used when something which is neither a class nor an instance is raised (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/raising-bad-type.html"
+  },
+  "E0710": {
+    "description": "[Status: stable] [Name: raising-non-exception] [Message: Raising a class which doesn't inherit from BaseException] Used when a class which doesn't inherit from BaseException is raised.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/raising-non-exception.html"
+  },
+  "E1124": {
+    "description": "[Status: stable] [Name: redundant-keyword-arg] [Message: Argument %r passed by position and keyword in %s call] Used when a function call would result in assigning multiple values to a function parameter, one value from a positional argument and one from a keyword argument.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/redundant-keyword-arg.html"
+  },
+  "E0402": {
+    "description": "[Status: stable] [Name: relative-beyond-top-level] [Message: Attempted relative import beyond top-level package] Used when a relative import tries to access too many levels in the current package.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/relative-beyond-top-level.html"
+  },
+  "E1132": {
+    "description": "[Status: stable] [Name: repeated-keyword] [Message: Got multiple values for keyword argument %r in function call]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/repeated-keyword.html"
+  },
+  "E0106": {
+    "description": "[Status: stable] [Name: return-arg-in-generator] [Message: Return with argument inside generator] Used when a \"return\" statement with an argument is found in a generator function or method (e.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/return-arg-in-generator.html"
+  },
+  "E0101": {
+    "description": "[Status: stable] [Name: return-in-init] [Message: Explicit return in __init__] Used when the special class method __init__ has an explicit return value.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/return-in-init.html"
+  },
+  "E0104": {
+    "description": "[Status: stable] [Name: return-outside-function] [Message: Return outside function] Used when a \"return\" statement is found outside a function or method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/return-outside-function.html"
+  },
+  "E1519": {
+    "description": "[Status: stable] [Name: singledispatch-method] [Message: singledispatch decorator should not be used with methods, use singledispatchmethod instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/singledispatch-method.html"
+  },
+  "E1520": {
+    "description": "[Status: stable] [Name: singledispatchmethod-function] [Message: singledispatchmethod decorator should not be used with functions, use singledispatch instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/singledispatchmethod-function.html"
+  },
+  "E0114": {
+    "description": "[Status: stable] [Name: star-needs-assignment-target] [Message: Can use starred expression only in assignment target] Emitted when a star expression is not used in an assignment target.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/star-needs-assignment-target.html"
+  },
+  "E0001": {
+    "description": "[Status: stable] [Name: syntax-error] [Message: %s] Used when a syntax error is raised for a module.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/syntax-error.html"
+  },
+  "E1306": {
+    "description": "[Status: stable] [Name: too-few-format-args] [Message: Not enough arguments for format string] Used when a format string that uses unnamed conversion specifiers is given too few arguments",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/too-few-format-args.html"
+  },
+  "E1305": {
+    "description": "[Status: stable] [Name: too-many-format-args] [Message: Too many arguments for format string] Used when a format string that uses unnamed conversion specifiers is given too many arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/too-many-format-args.html"
+  },
+  "E1121": {
+    "description": "[Status: stable] [Name: too-many-function-args] [Message: Too many positional arguments for %s call] Used when a function call passes too many positional arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/too-many-function-args.html"
+  },
+  "E1903": {
+    "description": "[Status: stable] [Name: too-many-positional-sub-patterns] [Message: %s expects %d positional sub-patterns (given %d)] Emitted when the number of allowed positional sub-patterns exceeds the number of allowed sub-patterns specified in `__match_args__`.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/too-many-positional-sub-patterns.html"
+  },
+  "E0112": {
+    "description": "[Status: stable] [Name: too-many-star-expressions] [Message: More than one starred expression in assignment] Emitted when there are more than one starred expressions (`*x`) in an assignment.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/too-many-star-expressions.html"
+  },
+  "E1301": {
+    "description": "[Status: stable] [Name: truncated-format-string] [Message: Format string ends in middle of conversion specifier] Used when a format string terminates before the end of a conversion specifier.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/truncated-format-string.html"
+  },
+  "E0603": {
+    "description": "[Status: stable] [Name: undefined-all-variable] [Message: Undefined variable name %r in __all__] Used when an undefined variable name is referenced in __all__.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/undefined-all-variable.html"
+  },
+  "E0602": {
+    "description": "[Status: stable] [Name: undefined-variable] [Message: Undefined variable %r] Used when an undefined variable is accessed.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/undefined-variable.html"
+  },
+  "E1123": {
+    "description": "[Status: stable] [Name: unexpected-keyword-arg] [Message: Unexpected keyword argument %r in %s call] Used when a function call passes a keyword argument that doesn't correspond to one of the function's parameter names.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unexpected-keyword-arg.html"
+  },
+  "E0302": {
+    "description": "[Status: stable] [Name: unexpected-special-method-signature] [Message: The special method %r expects %s param(s), %d %s given] Emitted when a special method was defined with an invalid number of parameters.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unexpected-special-method-signature.html"
+  },
+  "E1143": {
+    "description": "[Status: stable] [Name: unhashable-member] [Message: '%s' is unhashable and can't be used as a %s in a %s] Emitted when a dict key or set member is not hashable (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unhashable-member.html"
+  },
+  "E0633": {
+    "description": "[Status: stable] [Name: unpacking-non-sequence] [Message: Attempting to unpack a non-sequence%s] Used when something which is not a sequence is used in an unpack assignment",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unpacking-non-sequence.html"
+  },
+  "E0011": {
+    "description": "[Status: stable] [Name: unrecognized-inline-option] [Message: Unrecognized file option %r] Used when an unknown inline option is encountered.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unrecognized-inline-option.html"
+  },
+  "E0015": {
+    "description": "[Status: stable] [Name: unrecognized-option] [Message: Unrecognized option found: %s] Used when we detect an option that we do not recognize.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unrecognized-option.html"
+  },
+  "E1136": {
+    "description": "[Status: stable] [Name: unsubscriptable-object] [Message: Value '%s' is unsubscriptable] Emitted when a subscripted value doesn't support subscription (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unsubscriptable-object.html"
+  },
+  "E1137": {
+    "description": "[Status: stable] [Name: unsupported-assignment-operation] [Message: %r does not support item assignment] Emitted when an object does not support item assignment (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unsupported-assignment-operation.html"
+  },
+  "E1131": {
+    "description": "[Status: stable] [Name: unsupported-binary-operation] [Message: %s] Emitted when a binary arithmetic operation between two operands is not supported.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unsupported-binary-operation.html"
+  },
+  "E1138": {
+    "description": "[Status: stable] [Name: unsupported-delete-operation] [Message: %r does not support item deletion] Emitted when an object does not support item deletion (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unsupported-delete-operation.html"
+  },
+  "E1135": {
+    "description": "[Status: stable] [Name: unsupported-membership-test] [Message: Value '%s' doesn't support membership test] Emitted when an instance in membership test expression doesn't implement membership protocol (__contains__/__iter__/__getitem__).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unsupported-membership-test.html"
+  },
+  "E0601": {
+    "description": "[Status: stable] [Name: used-before-assignment] [Message: Using variable %r before assignment] Emitted when a local variable is accessed before its assignment took place.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/used-before-assignment.html"
+  },
+  "E0118": {
+    "description": "[Status: stable] [Name: used-prior-global-declaration] [Message: Name %r is used prior to global declaration] Emitted when a name is used prior a global declaration, which results in an error since Python 3.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/used-prior-global-declaration.html"
+  },
+  "E1700": {
+    "description": "[Status: stable] [Name: yield-inside-async-function] [Message: Yield inside async function] Used when an `yield` or `yield from` statement is found inside an async function.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/yield-inside-async-function.html"
+  },
+  "E0105": {
+    "description": "[Status: stable] [Name: yield-outside-function] [Message: Yield outside function] Used when a \"yield\" statement is found outside a function or method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/yield-outside-function.html"
+  },
+  "E0235": {
+    "description": "[Status: stable] [Name: bad-context-manager]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-context-manager.html"
+  },
+  "E0703": {
+    "description": "[Status: stable] [Name: bad-exception-context]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-exception-context.html"
+  },
+  "E0012": {
+    "description": "[Status: stable] [Name: bad-option-value]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/bad-option-value.html"
+  },
+  "E1103": {
+    "description": "[Status: stable] [Name: maybe-no-member]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/maybe-no-member.html"
+  },
+  "E1140": {
+    "description": "[Status: stable] [Name: unhashable-dict-key]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/error/unhashable-dict-key.html"
+  },
+  "W0223": {
+    "description": "[Status: stable] [Name: abstract-method] [Message: Method %r is abstract in class %r but is not overridden in child class %r]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/abstract-method.html"
+  },
+  "W1401": {
+    "description": "[Status: stable] [Name: anomalous-backslash-in-string] [Message: Anomalous backslash in string: '%s'. String constant might be missing an r prefix.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/anomalous-backslash-in-string.html"
+  },
+  "W1402": {
+    "description": "[Status: stable] [Name: anomalous-unicode-escape-in-string] [Message: Anomalous Unicode escape in byte string: '%s'. String constant might be missing an r or u prefix.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/anomalous-unicode-escape-in-string.html"
+  },
+  "W0221": {
+    "description": "[Status: stable] [Name: arguments-differ] [Message: %s %s %r method] Used when a method has a different number of arguments than in the implemented interface or in an overridden method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/arguments-differ.html"
+  },
+  "W1114": {
+    "description": "[Status: stable] [Name: arguments-out-of-order] [Message: Positional arguments appear to be out of order] Emitted when the caller's argument names fully match the parameter names in the function signature but do not have the same order.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/arguments-out-of-order.html"
+  },
+  "W0237": {
+    "description": "[Status: stable] [Name: arguments-renamed] [Message: %s %s %r method] Used when a method parameter has a different name than in the implemented interface or in an overridden method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/arguments-renamed.html"
+  },
+  "W0129": {
+    "description": "[Status: stable] [Name: assert-on-string-literal] [Message: Assert statement has a string literal as its first argument. The assert will %s fail.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/assert-on-string-literal.html"
+  },
+  "W0199": {
+    "description": "[Status: stable] [Name: assert-on-tuple] [Message: Assert called on a populated tuple. Did you mean 'assert x,y'?]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/assert-on-tuple.html"
+  },
+  "W0201": {
+    "description": "[Status: stable] [Name: attribute-defined-outside-init] [Message: Attribute %r defined outside __init__] Used when an instance attribute is defined outside the __init__ method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/attribute-defined-outside-init.html"
+  },
+  "W0141": {
+    "description": "[Status: stable] [Name: bad-builtin] [Message: Used builtin function %s] Used when a disallowed builtin function is used (see the bad-function option).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-builtin.html"
+  },
+  "W3601": {
+    "description": "[Status: stable] [Name: bad-chained-comparison] [Message: Suspicious %s-part chained comparison using semantically incompatible operators (%s)]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-chained-comparison.html"
+  },
+  "W3201": {
+    "description": "[Status: stable] [Name: bad-dunder-name] [Message: Bad or misspelled dunder method name %s.] Used when a dunder method is misspelled or defined with a name not within the predefined list of dunder names.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-dunder-name.html"
+  },
+  "W1302": {
+    "description": "[Status: stable] [Name: bad-format-string] [Message: Invalid format string] Used when a PEP 3101 format string is invalid.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-format-string.html"
+  },
+  "W1300": {
+    "description": "[Status: stable] [Name: bad-format-string-key] [Message: Format string dictionary key should be a string, not %s] Used when a format string that uses named conversion specifiers is used with a dictionary whose keys are not all strings.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-format-string-key.html"
+  },
+  "W0311": {
+    "description": "[Status: stable] [Name: bad-indentation] [Message: Bad indentation. Found %s %s, expected %s] Used when an unexpected number of indentation's tabulations or spaces has been found.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-indentation.html"
+  },
+  "W1501": {
+    "description": "[Status: stable] [Name: bad-open-mode] [Message: \"%s\" is not a valid mode for open.] Python supports: r, w, a[, x] modes with b, +, and U (only with r) options.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-open-mode.html"
+  },
+  "W0211": {
+    "description": "[Status: stable] [Name: bad-staticmethod-argument] [Message: Static method with %r as first argument] Used when a static method has \"self\" or a value specified in valid-classmethod-first-arg option or valid-metaclass-classmethod-first-arg option as first argument.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-staticmethod-argument.html"
+  },
+  "W1506": {
+    "description": "[Status: stable] [Name: bad-thread-instantiation] [Message: threading.Thread needs the target function] The warning is emitted when a threading.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bad-thread-instantiation.html"
+  },
+  "W0702": {
+    "description": "[Status: stable] [Name: bare-except] [Message: No exception type(s) specified] A bare ``except:`` clause will catch ``SystemExit`` and ``KeyboardInterrupt`` exceptions, making it harder to interrupt a program with ``Control-C``, and can disguise other problems.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/bare-except.html"
+  },
+  "W0711": {
+    "description": "[Status: stable] [Name: binary-op-exception] [Message: Exception to catch is the result of a binary \"%s\" operation] Used when the exception to catch is of the form \"except A or B:\".",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/binary-op-exception.html"
+  },
+  "W1502": {
+    "description": "[Status: stable] [Name: boolean-datetime] [Message: Using datetime.time in a boolean context.] Using datetime.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/boolean-datetime.html"
+  },
+  "W0137": {
+    "description": "[Status: stable] [Name: break-in-finally] [Message: 'break' discouraged inside 'finally' clause] Emitted when the `break` keyword is found inside a finally clause.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/break-in-finally.html"
+  },
+  "W0718": {
+    "description": "[Status: stable] [Name: broad-exception-caught] [Message: Catching too general exception %s] If you use a naked ``except Exception:`` clause, you might end up catching exceptions other than the ones you expect to catch.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/broad-exception-caught.html"
+  },
+  "W0719": {
+    "description": "[Status: stable] [Name: broad-exception-raised] [Message: Raising too general exception: %s] Raising exceptions that are too generic force you to catch exceptions generically too.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/broad-exception-raised.html"
+  },
+  "W0640": {
+    "description": "[Status: stable] [Name: cell-var-from-loop] [Message: Cell variable %s defined in loop] A variable used in a closure is defined in a loop.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/cell-var-from-loop.html"
+  },
+  "W0143": {
+    "description": "[Status: stable] [Name: comparison-with-callable] [Message: Comparing against a callable, did you omit the parenthesis?] This message is emitted when pylint detects that a comparison with a callable was made, which might suggest that some parenthesis were omitted, resulting in potential unwanted behaviour.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/comparison-with-callable.html"
+  },
+  "W0124": {
+    "description": "[Status: stable] [Name: confusing-with-statement] [Message: Following \"as\" with another context manager looks like a tuple.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/confusing-with-statement.html"
+  },
+  "W0160": {
+    "description": "[Status: stable] [Name: consider-ternary-expression] [Message: Consider rewriting as a ternary expression] Multiple assign statements spread across if/else blocks can be rewritten with a single assignment and ternary expression",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/consider-ternary-expression.html"
+  },
+  "W0135": {
+    "description": "[Status: stable] [Name: contextmanager-generator-missing-cleanup] [Message: The context used in function %r will not be exited.] Used when a contextmanager is used inside a generator function and the cleanup is not handled.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/contextmanager-generator-missing-cleanup.html"
+  },
+  "W0136": {
+    "description": "[Status: stable] [Name: continue-in-finally] [Message: 'continue' discouraged inside 'finally' clause] Emitted when the `continue` keyword is found inside a finally clause.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/continue-in-finally.html"
+  },
+  "W0102": {
+    "description": "[Status: stable] [Name: dangerous-default-value] [Message: Dangerous default value %s as argument] Used when a mutable value as list or dictionary is detected in a default value for an argument.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/dangerous-default-value.html"
+  },
+  "W4903": {
+    "description": "[Status: stable] [Name: deprecated-argument] [Message: Using deprecated argument %s of method %s()] The argument is marked as deprecated and will be removed in the future.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-argument.html"
+  },
+  "W4906": {
+    "description": "[Status: stable] [Name: deprecated-attribute] [Message: Using deprecated attribute %r] The attribute is marked as deprecated and will be removed in the future.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-attribute.html"
+  },
+  "W4904": {
+    "description": "[Status: stable] [Name: deprecated-class] [Message: Using deprecated class %s of module %s] The class is marked as deprecated and will be removed in the future.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-class.html"
+  },
+  "W4905": {
+    "description": "[Status: stable] [Name: deprecated-decorator] [Message: Using deprecated decorator %s()] The decorator is marked as deprecated and will be removed in the future.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-decorator.html"
+  },
+  "W4902": {
+    "description": "[Status: stable] [Name: deprecated-method] [Message: Using deprecated method %s()] The method is marked as deprecated and will be removed in the future.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-method.html"
+  },
+  "W4901": {
+    "description": "[Status: stable] [Name: deprecated-module] [Message: Deprecated module %r] A module marked as deprecated is imported.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-module.html"
+  },
+  "W6001": {
+    "description": "[Status: stable] [Name: deprecated-typing-alias] [Message: '%s' is deprecated, use '%s' instead] Emitted when a deprecated typing alias is used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/deprecated-typing-alias.html"
+  },
+  "W9017": {
+    "description": "[Status: stable] [Name: differing-param-doc] [Message: \"%s\" differing in parameter documentation] Please check parameter names in declarations.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/differing-param-doc.html"
+  },
+  "W9018": {
+    "description": "[Status: stable] [Name: differing-type-doc] [Message: \"%s\" differing in parameter type documentation] Please check parameter names in type declarations.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/differing-type-doc.html"
+  },
+  "W0705": {
+    "description": "[Status: stable] [Name: duplicate-except] [Message: Catching previously caught exception type %s] Used when an except catches a type that was already caught by a previous handler.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/duplicate-except.html"
+  },
+  "W0109": {
+    "description": "[Status: stable] [Name: duplicate-key] [Message: Duplicate key %r in dictionary] Used when a dictionary expression binds the same key multiple times.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/duplicate-key.html"
+  },
+  "W1308": {
+    "description": "[Status: stable] [Name: duplicate-string-formatting-argument] [Message: Duplicate string formatting argument %r, consider passing as named argument]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/duplicate-string-formatting-argument.html"
+  },
+  "W0130": {
+    "description": "[Status: stable] [Name: duplicate-value] [Message: Duplicate value %r in set] This message is emitted when a set contains the same value two or more times.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/duplicate-value.html"
+  },
+  "W1641": {
+    "description": "[Status: stable] [Name: eq-without-hash] [Message: Implementing __eq__ without also implementing __hash__] Used when a class implements __eq__ but not __hash__.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/eq-without-hash.html"
+  },
+  "W0123": {
+    "description": "[Status: stable] [Name: eval-used] [Message: Use of eval] Used when you use the \"eval\" function, to discourage its usage.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/eval-used.html"
+  },
+  "W0122": {
+    "description": "[Status: stable] [Name: exec-used] [Message: Use of exec] Raised when the 'exec' statement is used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/exec-used.html"
+  },
+  "W0106": {
+    "description": "[Status: stable] [Name: expression-not-assigned] [Message: Expression \"%s\" is assigned to nothing] Used when an expression that is not a function call is assigned to nothing.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/expression-not-assigned.html"
+  },
+  "W1309": {
+    "description": "[Status: stable] [Name: f-string-without-interpolation] [Message: Using an f-string that does not have any interpolated variables]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/f-string-without-interpolation.html"
+  },
+  "W0511": {
+    "description": "[Status: stable] [Name: fixme] [Message: %s] Used when a warning note as FIXME or XXX is detected.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/fixme.html"
+  },
+  "W1515": {
+    "description": "[Status: stable] [Name: forgotten-debug-statement] [Message: Leaving functions creating breakpoints in production code is not recommended]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/forgotten-debug-statement.html"
+  },
+  "W1305": {
+    "description": "[Status: stable] [Name: format-combined-specification] [Message: Format string contains both automatic field numbering and manual field specification]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/format-combined-specification.html"
+  },
+  "W1310": {
+    "description": "[Status: stable] [Name: format-string-without-interpolation] [Message: Using formatting for a string that does not have any interpolated variables]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/format-string-without-interpolation.html"
+  },
+  "W0604": {
+    "description": "[Status: stable] [Name: global-at-module-level] [Message: Using the global statement at the module level] Used when you use the \"global\" statement at the module level since it has no effect.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/global-at-module-level.html"
+  },
+  "W0603": {
+    "description": "[Status: stable] [Name: global-statement] [Message: Using the global statement] Used when you use the \"global\" statement to update a global variable.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/global-statement.html"
+  },
+  "W0602": {
+    "description": "[Status: stable] [Name: global-variable-not-assigned] [Message: Using global for %r but no assignment is done] When a variable defined in the global scope is modified in an inner scope, the 'global' keyword is required in the inner scope only if there is an assignment operation done in the inner scope.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/global-variable-not-assigned.html"
+  },
+  "W0601": {
+    "description": "[Status: stable] [Name: global-variable-undefined] [Message: Global variable %r undefined at the module level] Used when a variable is defined through the \"global\" statement but the variable is not defined in the module scope.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/global-variable-undefined.html"
+  },
+  "W0213": {
+    "description": "[Status: stable] [Name: implicit-flag-alias] [Message: Flag member %(overlap)s shares bit positions with %(sources)s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/implicit-flag-alias.html"
+  },
+  "W1404": {
+    "description": "[Status: stable] [Name: implicit-str-concat] [Message: Implicit string concatenation found in %s] String literals are implicitly concatenated in a literal iterable definition : maybe a comma is missing ?",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/implicit-str-concat.html"
+  },
+  "W0406": {
+    "description": "[Status: stable] [Name: import-self] [Message: Module import itself] Used when a module is importing itself.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/import-self.html"
+  },
+  "W1405": {
+    "description": "[Status: stable] [Name: inconsistent-quotes] [Message: Quote delimiter %s is inconsistent with the rest of the file]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/inconsistent-quotes.html"
+  },
+  "W1508": {
+    "description": "[Status: stable] [Name: invalid-envvar-default] [Message: %s default type is %s. Expected str or None.] Env manipulation functions return None or str values.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/invalid-envvar-default.html"
+  },
+  "W1307": {
+    "description": "[Status: stable] [Name: invalid-format-index] [Message: Using invalid lookup key %r in format specifier %r] Used when a PEP 3101 format string uses a lookup specifier ({a[1]}), but the argument passed for formatting doesn't contain or doesn't have that key as an attribute.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/invalid-format-index.html"
+  },
+  "W0236": {
+    "description": "[Status: stable] [Name: invalid-overridden-method] [Message: Method %r was expected to be %r, found it instead as %r] Used when we detect that a method was overridden in a way that does not match its base class which could result in potential bugs at runtime.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/invalid-overridden-method.html"
+  },
+  "W1116": {
+    "description": "[Status: stable] [Name: isinstance-second-argument-not-valid-type] [Message: Second argument of isinstance is not a type] Emitted when the second argument of an isinstance call is not a type.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/isinstance-second-argument-not-valid-type.html"
+  },
+  "W1113": {
+    "description": "[Status: stable] [Name: keyword-arg-before-vararg] [Message: Keyword argument before variable positional arguments list in the definition of %s function]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/keyword-arg-before-vararg.html"
+  },
+  "W1117": {
+    "description": "[Status: stable] [Name: kwarg-superseded-by-positional-arg] [Message: %r will be included in %r since a positional-only parameter with this name already exists]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/kwarg-superseded-by-positional-arg.html"
+  },
+  "W1202": {
+    "description": "[Status: stable] [Name: logging-format-interpolation] [Message: Use %s formatting in logging functions] Used when a logging statement has a call form of \"logging.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/logging-format-interpolation.html"
+  },
+  "W1203": {
+    "description": "[Status: stable] [Name: logging-fstring-interpolation] [Message: Use %s formatting in logging functions] Used when a logging statement has a call form of \"logging.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/logging-fstring-interpolation.html"
+  },
+  "W1201": {
+    "description": "[Status: stable] [Name: logging-not-lazy] [Message: Use %s formatting in logging functions] Used when a logging statement has a call form of \"logging.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/logging-not-lazy.html"
+  },
+  "W0150": {
+    "description": "[Status: stable] [Name: lost-exception] [Message: %s statement in finally block may swallow exception] Used when a break or a return statement is found inside the finally clause of a try.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/lost-exception.html"
+  },
+  "W1518": {
+    "description": "[Status: stable] [Name: method-cache-max-size-none] [Message: 'lru_cache(maxsize=None)' or 'cache' will keep all method args alive indefinitely, including 'self']",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/method-cache-max-size-none.html"
+  },
+  "W0410": {
+    "description": "[Status: stable] [Name: misplaced-future] [Message: __future__ import is not the first non docstring statement] Python 2.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/misplaced-future.html"
+  },
+  "W9021": {
+    "description": "[Status: stable] [Name: missing-any-param-doc] [Message: Missing any documentation in \"%s\"] Please add parameter and/or type documentation.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-any-param-doc.html"
+  },
+  "W1303": {
+    "description": "[Status: stable] [Name: missing-format-argument-key] [Message: Missing keyword argument %r for format string] Used when a PEP 3101 format string that uses named fields doesn't receive one or more required keywords.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-format-argument-key.html"
+  },
+  "W1306": {
+    "description": "[Status: stable] [Name: missing-format-attribute] [Message: Missing format attribute %r in format specifier %r] Used when a PEP 3101 format string uses an attribute specifier ({0.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-format-attribute.html"
+  },
+  "W9015": {
+    "description": "[Status: stable] [Name: missing-param-doc] [Message: \"%s\" missing in parameter documentation] Please add parameter declarations for all parameters.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-param-doc.html"
+  },
+  "W0126": {
+    "description": "[Status: stable] [Name: missing-parentheses-for-call-in-test] [Message: Using a conditional statement with potentially wrong function or method call due to missing parentheses]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-parentheses-for-call-in-test.html"
+  },
+  "W9006": {
+    "description": "[Status: stable] [Name: missing-raises-doc] [Message: \"%s\" not documented as being raised] Please document exceptions for all raised exception types.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-raises-doc.html"
+  },
+  "W9011": {
+    "description": "[Status: stable] [Name: missing-return-doc] [Message: Missing return documentation] Please add documentation about what this method returns.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-return-doc.html"
+  },
+  "W9012": {
+    "description": "[Status: stable] [Name: missing-return-type-doc] [Message: Missing return type documentation] Please document the type returned by this method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-return-type-doc.html"
+  },
+  "W3101": {
+    "description": "[Status: stable] [Name: missing-timeout] [Message: Missing timeout argument for method '%s' can cause your program to hang indefinitely]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-timeout.html"
+  },
+  "W9016": {
+    "description": "[Status: stable] [Name: missing-type-doc] [Message: \"%s\" missing in parameter type documentation] Please add parameter type declarations for all parameters.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-type-doc.html"
+  },
+  "W9013": {
+    "description": "[Status: stable] [Name: missing-yield-doc] [Message: Missing yield documentation] Please add documentation about what this generator yields.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-yield-doc.html"
+  },
+  "W9014": {
+    "description": "[Status: stable] [Name: missing-yield-type-doc] [Message: Missing yield type documentation] Please document the type yielded by this method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/missing-yield-type-doc.html"
+  },
+  "W4701": {
+    "description": "[Status: stable] [Name: modified-iterating-list] [Message: Iterated list '%s' is being modified inside for loop body, consider iterating through a copy of it instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/modified-iterating-list.html"
+  },
+  "W9005": {
+    "description": "[Status: stable] [Name: multiple-constructor-doc] [Message: \"%s\" has constructor parameters documented in class and __init__]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/multiple-constructor-doc.html"
+  },
+  "W0131": {
+    "description": "[Status: stable] [Name: named-expr-without-context] [Message: Named expression used without context] Emitted if named expression is used to do a regular assignment outside a context like if, for, while, or a comprehension.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/named-expr-without-context.html"
+  },
+  "W0177": {
+    "description": "[Status: stable] [Name: nan-comparison] [Message: Comparison %s should be %s] Used when an expression is compared to NaN values like numpy.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/nan-comparison.html"
+  },
+  "W3301": {
+    "description": "[Status: stable] [Name: nested-min-max] [Message: Do not use nested call of '%s'; it's possible to do '%s' instead]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/nested-min-max.html"
+  },
+  "W2402": {
+    "description": "[Status: stable] [Name: non-ascii-file-name] [Message: %s name \"%s\" contains a non-ASCII character.] Under python 3.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/non-ascii-file-name.html"
+  },
+  "W0233": {
+    "description": "[Status: stable] [Name: non-parent-init-called] [Message: __init__ method from a non direct base class %r is called] Used when an __init__ method is called on a class which is not in the direct ancestors for the analysed class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/non-parent-init-called.html"
+  },
+  "W1115": {
+    "description": "[Status: stable] [Name: non-str-assignment-to-dunder-name] [Message: Non-string value assigned to __name__] Emitted when a non-string value is assigned to __name__",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/non-str-assignment-to-dunder-name.html"
+  },
+  "W0714": {
+    "description": "[Status: stable] [Name: overlapping-except] [Message: Overlapping exceptions (%s)] Used when exceptions in handler overlap or are identical",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/overlapping-except.html"
+  },
+  "W0239": {
+    "description": "[Status: stable] [Name: overridden-final-method] [Message: Method %r overrides a method decorated with typing.final which is defined in class %r]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/overridden-final-method.html"
+  },
+  "W0133": {
+    "description": "[Status: stable] [Name: pointless-exception-statement] [Message: Exception statement has no effect] Used when an exception is created without being assigned, raised or returned for subsequent use elsewhere.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/pointless-exception-statement.html"
+  },
+  "W0104": {
+    "description": "[Status: stable] [Name: pointless-statement] [Message: Statement seems to have no effect] Used when a statement doesn't have (or at least seems to) any effect.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/pointless-statement.html"
+  },
+  "W0105": {
+    "description": "[Status: stable] [Name: pointless-string-statement] [Message: String statement has no effect] Used when a string is used as a statement (which of course has no effect).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/pointless-string-statement.html"
+  },
+  "W0641": {
+    "description": "[Status: stable] [Name: possibly-unused-variable] [Message: Possibly unused variable %r] Used when a variable is defined but might not be used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/possibly-unused-variable.html"
+  },
+  "W0407": {
+    "description": "[Status: stable] [Name: preferred-module] [Message: Prefer importing %r instead of %r] Used when a module imported has a preferred replacement module.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/preferred-module.html"
+  },
+  "W0212": {
+    "description": "[Status: stable] [Name: protected-access] [Message: Access to a protected member %s of a client class] Used when a protected member (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/protected-access.html"
+  },
+  "W0707": {
+    "description": "[Status: stable] [Name: raise-missing-from] [Message: Consider explicitly re-raising using %s'%s from %s'] Python's exception chaining shows the traceback of the current exception, but also of the original exception.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/raise-missing-from.html"
+  },
+  "W0715": {
+    "description": "[Status: stable] [Name: raising-format-tuple] [Message: Exception arguments suggest string formatting might be intended]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/raising-format-tuple.html"
+  },
+  "W0128": {
+    "description": "[Status: stable] [Name: redeclared-assigned-name] [Message: Redeclared variable %r in assignment] Emitted when we detect that a variable was redeclared in the same assignment.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redeclared-assigned-name.html"
+  },
+  "W0622": {
+    "description": "[Status: stable] [Name: redefined-builtin] [Message: Redefining built-in %r] Used when a variable or function override a built-in.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redefined-builtin.html"
+  },
+  "W2901": {
+    "description": "[Status: stable] [Name: redefined-loop-name] [Message: Redefining %r from loop (line %s)] Used when a loop variable is overwritten in the loop body.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redefined-loop-name.html"
+  },
+  "W0621": {
+    "description": "[Status: stable] [Name: redefined-outer-name] [Message: Redefining name %r from outer scope (line %s)] Used when a variable's name hides a name defined in an outer scope or except handler.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redefined-outer-name.html"
+  },
+  "W0244": {
+    "description": "[Status: stable] [Name: redefined-slots-in-subclass] [Message: Redefined slots %r in subclass] Used when a slot is re-defined in a subclass.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redefined-slots-in-subclass.html"
+  },
+  "W9008": {
+    "description": "[Status: stable] [Name: redundant-returns-doc] [Message: Redundant returns documentation] Please remove the return/rtype documentation from this method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redundant-returns-doc.html"
+  },
+  "W1406": {
+    "description": "[Status: stable] [Name: redundant-u-string-prefix] [Message: The u prefix for strings is no longer necessary in Python >=3.0]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redundant-u-string-prefix.html"
+  },
+  "W1503": {
+    "description": "[Status: stable] [Name: redundant-unittest-assert] [Message: Redundant use of %s with constant value %r] The first argument of assertTrue and assertFalse is a condition.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redundant-unittest-assert.html"
+  },
+  "W9010": {
+    "description": "[Status: stable] [Name: redundant-yields-doc] [Message: Redundant yields documentation] Please remove the yields documentation from this method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/redundant-yields-doc.html"
+  },
+  "W0404": {
+    "description": "[Status: stable] [Name: reimported] [Message: Reimport %r (imported line %s)] Used when a module is imported more than once.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/reimported.html"
+  },
+  "W0134": {
+    "description": "[Status: stable] [Name: return-in-finally] [Message: 'return' shadowed by the 'finally' clause.] Emitted when a 'return' statement is found in a 'finally' block.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/return-in-finally.html"
+  },
+  "W0127": {
+    "description": "[Status: stable] [Name: self-assigning-variable] [Message: Assigning the same variable %r to itself] Emitted when we detect that a variable is assigned to itself",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/self-assigning-variable.html"
+  },
+  "W0642": {
+    "description": "[Status: stable] [Name: self-cls-assignment] [Message: Invalid assignment to %s in method] Invalid assignment to self or cls in instance or class method respectively.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/self-cls-assignment.html"
+  },
+  "W0416": {
+    "description": "[Status: stable] [Name: shadowed-import] [Message: Shadowed %r (imported line %s)] Used when a module is aliased with a name that shadows another import.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/shadowed-import.html"
+  },
+  "W1507": {
+    "description": "[Status: stable] [Name: shallow-copy-environ] [Message: Using copy.copy(os.environ). Use os.environ.copy() instead.] os.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/shallow-copy-environ.html"
+  },
+  "W0222": {
+    "description": "[Status: stable] [Name: signature-differs] [Message: Signature differs from %s %r method] Used when a method signature is different than in the implemented interface or in an overridden method.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/signature-differs.html"
+  },
+  "W0240": {
+    "description": "[Status: stable] [Name: subclassed-final-class] [Message: Class %r is a subclass of a class decorated with typing.final: %r]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/subclassed-final-class.html"
+  },
+  "W1509": {
+    "description": "[Status: stable] [Name: subprocess-popen-preexec-fn] [Message: Using preexec_fn keyword which may be unsafe in the presence of threads]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/subprocess-popen-preexec-fn.html"
+  },
+  "W1510": {
+    "description": "[Status: stable] [Name: subprocess-run-check] [Message: 'subprocess.run' used without explicitly defining the value for 'check'.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/subprocess-run-check.html"
+  },
+  "W0231": {
+    "description": "[Status: stable] [Name: super-init-not-called] [Message: __init__ method from base class %r is not called] Used when an ancestor class method has an __init__ method which is not called by a derived class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/super-init-not-called.html"
+  },
+  "W0245": {
+    "description": "[Status: stable] [Name: super-without-brackets] [Message: Super call without brackets] Used when a call to super does not have brackets and thus is not an actual call and does not work as expected.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/super-without-brackets.html"
+  },
+  "W0717": {
+    "description": "[Status: stable] [Name: too-many-try-statements] [Message: %s] Try clause contains too many statements.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/too-many-try-statements.html"
+  },
+  "W0706": {
+    "description": "[Status: stable] [Name: try-except-raise] [Message: The except handler raises immediately] Used when an except handler uses raise as its first or only operator.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/try-except-raise.html"
+  },
+  "W0644": {
+    "description": "[Status: stable] [Name: unbalanced-dict-unpacking] [Message: Possible unbalanced dict unpacking with %s: left side has %d label%s, right side has %d value%s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unbalanced-dict-unpacking.html"
+  },
+  "W0632": {
+    "description": "[Status: stable] [Name: unbalanced-tuple-unpacking] [Message: Possible unbalanced tuple unpacking with sequence %s: left side has %d label%s, right side has %d value%s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unbalanced-tuple-unpacking.html"
+  },
+  "W0631": {
+    "description": "[Status: stable] [Name: undefined-loop-variable] [Message: Using possibly undefined loop variable %r] Used when a loop variable (i.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/undefined-loop-variable.html"
+  },
+  "W0012": {
+    "description": "[Status: stable] [Name: unknown-option-value] [Message: Unknown option value for '%s', expected a valid pylint message and got '%s']",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unknown-option-value.html"
+  },
+  "W2301": {
+    "description": "[Status: stable] [Name: unnecessary-ellipsis] [Message: Unnecessary ellipsis constant] Used when the ellipsis constant is encountered and can be avoided.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unnecessary-ellipsis.html"
+  },
+  "W0108": {
+    "description": "[Status: stable] [Name: unnecessary-lambda] [Message: Lambda may not be necessary] Used when the body of a lambda expression is a function call on the same argument list as the lambda itself; such lambda expressions are in all but a few cases replaceable with the function being called in the body of the lambda.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unnecessary-lambda.html"
+  },
+  "W0107": {
+    "description": "[Status: stable] [Name: unnecessary-pass] [Message: Unnecessary pass statement] Used when a \"pass\" statement can be removed without affecting the behaviour of the code.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unnecessary-pass.html"
+  },
+  "W0301": {
+    "description": "[Status: stable] [Name: unnecessary-semicolon] [Message: Unnecessary semicolon] Used when a statement is ended by a semi-colon (\";\"), which isn't necessary (that's python, not C ;).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unnecessary-semicolon.html"
+  },
+  "W0101": {
+    "description": "[Status: stable] [Name: unreachable] [Message: Unreachable code] Used when there is some code behind a \"return\" or \"raise\" statement, which will never be accessed.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unreachable.html"
+  },
+  "W1514": {
+    "description": "[Status: stable] [Name: unspecified-encoding] [Message: Using open without explicitly specifying an encoding] It is better to specify an encoding when opening documents.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unspecified-encoding.html"
+  },
+  "W0613": {
+    "description": "[Status: stable] [Name: unused-argument] [Message: Unused argument %r] Used when a function or method argument is not used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-argument.html"
+  },
+  "W1304": {
+    "description": "[Status: stable] [Name: unused-format-string-argument] [Message: Unused format argument %r] Used when a PEP 3101 format string that uses named fields is used with an argument that is not required by the format string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-format-string-argument.html"
+  },
+  "W1301": {
+    "description": "[Status: stable] [Name: unused-format-string-key] [Message: Unused key %r in format string dictionary] Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-format-string-key.html"
+  },
+  "W0611": {
+    "description": "[Status: stable] [Name: unused-import] [Message: Unused %s] Used when an imported module or variable is not used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-import.html"
+  },
+  "W0238": {
+    "description": "[Status: stable] [Name: unused-private-member] [Message: Unused private member `%s.%s`] Emitted when a private member of a class is defined but not used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-private-member.html"
+  },
+  "W0612": {
+    "description": "[Status: stable] [Name: unused-variable] [Message: Unused variable %r] Used when a variable is defined but not used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-variable.html"
+  },
+  "W0614": {
+    "description": "[Status: stable] [Name: unused-wildcard-import] [Message: Unused import(s) %s from wildcard import of %s] Used when an imported module or variable is not used from a `'from X import *'` style import.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unused-wildcard-import.html"
+  },
+  "W0120": {
+    "description": "[Status: stable] [Name: useless-else-on-loop] [Message: Else clause on loop without a break statement, remove the else and de-indent all the code inside it]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-else-on-loop.html"
+  },
+  "W9019": {
+    "description": "[Status: stable] [Name: useless-param-doc] [Message: \"%s\" useless ignored parameter documentation] Please remove the ignored parameter documentation.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-param-doc.html"
+  },
+  "W0246": {
+    "description": "[Status: stable] [Name: useless-parent-delegation] [Message: Useless parent or super() delegation in method %r] Used whenever we can detect that an overridden method is useless, relying on parent or super() delegation to do the same thing as another method from the MRO.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-parent-delegation.html"
+  },
+  "W9020": {
+    "description": "[Status: stable] [Name: useless-type-doc] [Message: \"%s\" useless ignored parameter type documentation] Please remove the ignored parameter type documentation.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-type-doc.html"
+  },
+  "W2101": {
+    "description": "[Status: stable] [Name: useless-with-lock] [Message: '%s()' directly created in 'with' has no effect] Used when a new lock instance is created by using with statement which has no effect.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-with-lock.html"
+  },
+  "W2605": {
+    "description": "[Status: stable] [Name: using-assignment-expression-in-unsupported-version] [Message: Assignment expression is not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-assignment-expression-in-unsupported-version.html"
+  },
+  "W0125": {
+    "description": "[Status: stable] [Name: using-constant-test] [Message: Using a conditional statement with a constant value] Emitted when a conditional statement (If or ternary if) uses a constant value for its test.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-constant-test.html"
+  },
+  "W2603": {
+    "description": "[Status: stable] [Name: using-exception-groups-in-unsupported-version] [Message: Exception groups are not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-exception-groups-in-unsupported-version.html"
+  },
+  "W2601": {
+    "description": "[Status: stable] [Name: using-f-string-in-unsupported-version] [Message: F-strings are not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-f-string-in-unsupported-version.html"
+  },
+  "W2602": {
+    "description": "[Status: stable] [Name: using-final-decorator-in-unsupported-version] [Message: typing.final is not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-final-decorator-in-unsupported-version.html"
+  },
+  "W2604": {
+    "description": "[Status: stable] [Name: using-generic-type-syntax-in-unsupported-version] [Message: Generic type syntax (PEP 695) is not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-generic-type-syntax-in-unsupported-version.html"
+  },
+  "W2606": {
+    "description": "[Status: stable] [Name: using-positional-only-args-in-unsupported-version] [Message: Positional-only arguments are not supported by all versions included in the py-version setting]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/using-positional-only-args-in-unsupported-version.html"
+  },
+  "W0149": {
+    "description": "[Status: stable] [Name: while-used] [Message: Used `while` loop] Unbounded `while` loops can often be rewritten as bounded `for` loops.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/while-used.html"
+  },
+  "W0401": {
+    "description": "[Status: stable] [Name: wildcard-import] [Message: Wildcard import %s] Used when `from module import *` is detected.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/wildcard-import.html"
+  },
+  "W0716": {
+    "description": "[Status: stable] [Name: wrong-exception-operation] [Message: Invalid exception operation. %s] Used when an operation is done against an exception, but the operation is not valid for the exception in question.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/wrong-exception-operation.html"
+  },
+  "W0703": {
+    "description": "[Status: stable] [Name: broad-except]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/broad-except.html"
+  },
+  "W1517": {
+    "description": "[Status: stable] [Name: cache-max-size-none]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/cache-max-size-none.html"
+  },
+  "W1403": {
+    "description": "[Status: stable] [Name: implicit-str-concat-in-sequence]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/implicit-str-concat-in-sequence.html"
+  },
+  "W1516": {
+    "description": "[Status: stable] [Name: lru-cache-decorating-method]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/lru-cache-decorating-method.html"
+  },
+  "W0235": {
+    "description": "[Status: stable] [Name: useless-super-delegation]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/useless-super-delegation.html"
+  },
+  "C0202": {
+    "description": "[Status: stable] [Name: bad-classmethod-argument] [Message: Class method %s should have %s as first argument] Used when a class method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to \"cls\"), recommended to easily differentiate them from regular instance methods.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/bad-classmethod-argument.html"
+  },
+  "C0198": {
+    "description": "[Status: stable] [Name: bad-docstring-quotes] [Message: Bad docstring quotes in %s, expected \"\"\", given %s] Used when a docstring does not have triple double quotes.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/bad-docstring-quotes.html"
+  },
+  "C2503": {
+    "description": "[Status: stable] [Name: bad-file-encoding] [Message: PEP8 recommends UTF-8 as encoding for Python files] PEP8 recommends UTF-8 default encoding for Python files.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/bad-file-encoding.html"
+  },
+  "C0204": {
+    "description": "[Status: stable] [Name: bad-mcs-classmethod-argument] [Message: Metaclass class method %s should have %s as first argument] Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to \"mcs\"), recommended to easily differentiate them from regular instance methods.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/bad-mcs-classmethod-argument.html"
+  },
+  "C0203": {
+    "description": "[Status: stable] [Name: bad-mcs-method-argument] [Message: Metaclass method %s should have %s as first argument] Used when a metaclass method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to \"cls\"), recommended to easily differentiate them from regular instance methods.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/bad-mcs-method-argument.html"
+  },
+  "C0201": {
+    "description": "[Status: stable] [Name: consider-iterating-dictionary] [Message: Consider iterating the dictionary directly instead of calling .keys()]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/consider-iterating-dictionary.html"
+  },
+  "C0501": {
+    "description": "[Status: stable] [Name: consider-using-any-or-all] [Message: `for` loop could be `%s`] A for loop that checks for a condition and return a bool can be replaced with any or all.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/consider-using-any-or-all.html"
+  },
+  "C0206": {
+    "description": "[Status: stable] [Name: consider-using-dict-items] [Message: Consider iterating with .items()] Emitted when iterating over the keys of a dictionary and accessing the value by index lookup.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/consider-using-dict-items.html"
+  },
+  "C0200": {
+    "description": "[Status: stable] [Name: consider-using-enumerate] [Message: Consider using enumerate instead of iterating with range and len]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/consider-using-enumerate.html"
+  },
+  "C0209": {
+    "description": "[Status: stable] [Name: consider-using-f-string] [Message: Formatting a regular string which could be an f-string] Used when we detect a string that is being formatted with format() or % which could potentially be an f-string.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/consider-using-f-string.html"
+  },
+  "C3401": {
+    "description": "[Status: stable] [Name: dict-init-mutate] [Message: Declare all known key/values when initializing the dictionary.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/dict-init-mutate.html"
+  },
+  "C0104": {
+    "description": "[Status: stable] [Name: disallowed-name] [Message: Disallowed name \"%s\"] Used when the name matches bad-names or bad-names-rgxs- (unauthorized names).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/disallowed-name.html"
+  },
+  "C0199": {
+    "description": "[Status: stable] [Name: docstring-first-line-empty] [Message: First line empty in %s docstring] Used when a blank line is found at the beginning of a docstring.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/docstring-first-line-empty.html"
+  },
+  "C0112": {
+    "description": "[Status: stable] [Name: empty-docstring] [Message: Empty %s docstring] Used when a module, function, class or method has an empty docstring (it would be too easy ;).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/empty-docstring.html"
+  },
+  "C0415": {
+    "description": "[Status: stable] [Name: import-outside-toplevel] [Message: Import outside toplevel (%s)] Used when an import statement is used anywhere other than the module toplevel.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/import-outside-toplevel.html"
+  },
+  "C2701": {
+    "description": "[Status: stable] [Name: import-private-name] [Message: Imported private %s (%s)] Used when a private module or object prefixed with _ is imported.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/import-private-name.html"
+  },
+  "C0403": {
+    "description": "[Status: stable] [Name: invalid-characters-in-docstring] [Message: Invalid characters %r in a docstring] Used when a word in docstring cannot be checked by enchant.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/invalid-characters-in-docstring.html"
+  },
+  "C0103": {
+    "description": "[Status: stable] [Name: invalid-name] [Message: %s name \"%s\" doesn't conform to %s] Used when the name doesn't conform to naming rules associated to its type (constant, variable, class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/invalid-name.html"
+  },
+  "C0301": {
+    "description": "[Status: stable] [Name: line-too-long] [Message: Line too long (%s/%s)] Used when a line is longer than a given number of characters.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/line-too-long.html"
+  },
+  "C2201": {
+    "description": "[Status: stable] [Name: misplaced-comparison-constant] [Message: Comparison should be %s] Used when the constant is placed on the left side of a comparison.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/misplaced-comparison-constant.html"
+  },
+  "C0115": {
+    "description": "[Status: stable] [Name: missing-class-docstring] [Message: Missing class docstring] Used when a class has no docstring.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/missing-class-docstring.html"
+  },
+  "C0304": {
+    "description": "[Status: stable] [Name: missing-final-newline] [Message: Final newline missing] Used when the last line in a file is missing a newline.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/missing-final-newline.html"
+  },
+  "C0116": {
+    "description": "[Status: stable] [Name: missing-function-docstring] [Message: Missing function or method docstring] Used when a function or method has no docstring.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/missing-function-docstring.html"
+  },
+  "C0114": {
+    "description": "[Status: stable] [Name: missing-module-docstring] [Message: Missing module docstring] Used when a module has no docstring.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/missing-module-docstring.html"
+  },
+  "C0327": {
+    "description": "[Status: stable] [Name: mixed-line-endings] [Message: Mixed line endings LF and CRLF] Used when there are mixed (LF and CRLF) newline signs in a file.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/mixed-line-endings.html"
+  },
+  "C0410": {
+    "description": "[Status: stable] [Name: multiple-imports] [Message: Multiple imports on one line (%s)] Used when import statement importing multiple modules is detected.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/multiple-imports.html"
+  },
+  "C0321": {
+    "description": "[Status: stable] [Name: multiple-statements] [Message: More than one statement on a single line] Used when more than on statement are found on the same line.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/multiple-statements.html"
+  },
+  "C2403": {
+    "description": "[Status: stable] [Name: non-ascii-module-import] [Message: %s name \"%s\" contains a non-ASCII character, use an ASCII-only alias for import.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/non-ascii-module-import.html"
+  },
+  "C2401": {
+    "description": "[Status: stable] [Name: non-ascii-name] [Message: %s name \"%s\" contains a non-ASCII character, consider renaming it.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/non-ascii-name.html"
+  },
+  "C0205": {
+    "description": "[Status: stable] [Name: single-string-used-for-slots] [Message: Class __slots__ should be a non-string iterable] Used when a class __slots__ is a simple string, rather than an iterable.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/single-string-used-for-slots.html"
+  },
+  "C0121": {
+    "description": "[Status: stable] [Name: singleton-comparison] [Message: Comparison %s should be %s] Used when an expression is compared to singleton values like True, False or None.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/singleton-comparison.html"
+  },
+  "C0325": {
+    "description": "[Status: stable] [Name: superfluous-parens] [Message: Unnecessary parens after %r keyword] Used when a single item in parentheses follows an if, for, or other keyword.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/superfluous-parens.html"
+  },
+  "C0302": {
+    "description": "[Status: stable] [Name: too-many-lines] [Message: Too many lines in module (%s/%s)] Used when a module has too many lines, reducing its readability.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/too-many-lines.html"
+  },
+  "C0305": {
+    "description": "[Status: stable] [Name: trailing-newlines] [Message: Trailing newlines] Used when there are trailing blank lines in a file.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/trailing-newlines.html"
+  },
+  "C0303": {
+    "description": "[Status: stable] [Name: trailing-whitespace] [Message: Trailing whitespace] Used when there is whitespace between the end of a line and the newline.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/trailing-whitespace.html"
+  },
+  "C0131": {
+    "description": "[Status: stable] [Name: typevar-double-variance] [Message: TypeVar cannot be both covariant and contravariant] Emitted when both the \"covariant\" and \"contravariant\" keyword arguments are set to \"True\" in a TypeVar.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/typevar-double-variance.html"
+  },
+  "C0105": {
+    "description": "[Status: stable] [Name: typevar-name-incorrect-variance] [Message: Type variable name does not reflect variance%s] Emitted when a TypeVar name doesn't reflect its type variance.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/typevar-name-incorrect-variance.html"
+  },
+  "C0132": {
+    "description": "[Status: stable] [Name: typevar-name-mismatch] [Message: TypeVar name \"%s\" does not match assigned variable name \"%s\"]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/typevar-name-mismatch.html"
+  },
+  "C0328": {
+    "description": "[Status: stable] [Name: unexpected-line-ending-format] [Message: Unexpected line ending format. There is '%s' while it should be '%s'.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unexpected-line-ending-format.html"
+  },
+  "C0412": {
+    "description": "[Status: stable] [Name: ungrouped-imports] [Message: Imports from package %s are not grouped] Used when imports are not grouped by packages.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/ungrouped-imports.html"
+  },
+  "C0123": {
+    "description": "[Status: stable] [Name: unidiomatic-typecheck] [Message: Use isinstance() rather than type() for a typecheck.] The idiomatic way to perform an explicit typecheck in Python is to use isinstance(x, Y) rather than type(x) == Y, type(x) is Y.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unidiomatic-typecheck.html"
+  },
+  "C3002": {
+    "description": "[Status: stable] [Name: unnecessary-direct-lambda-call] [Message: Lambda expression called directly. Execute the expression inline instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unnecessary-direct-lambda-call.html"
+  },
+  "C2801": {
+    "description": "[Status: stable] [Name: unnecessary-dunder-call] [Message: Unnecessarily calls dunder method %s. %s.] Used when a dunder method is manually called instead of using the corresponding function/method/operator.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unnecessary-dunder-call.html"
+  },
+  "C3001": {
+    "description": "[Status: stable] [Name: unnecessary-lambda-assignment] [Message: Lambda expression assigned to a variable. Define a function using the \"def\" keyword instead.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unnecessary-lambda-assignment.html"
+  },
+  "C0117": {
+    "description": "[Status: stable] [Name: unnecessary-negation] [Message: Consider changing \"%s\" to \"%s\"] Used when a boolean expression contains an unneeded negation, e.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unnecessary-negation.html"
+  },
+  "C1803": {
+    "description": "[Status: stable] [Name: use-implicit-booleaness-not-comparison] [Message: \"%s\" can be simplified to \"%s\", if it is strictly a sequence, as an empty %s is falsey]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-implicit-booleaness-not-comparison.html"
+  },
+  "C1804": {
+    "description": "[Status: stable] [Name: use-implicit-booleaness-not-comparison-to-string] [Message: \"%s\" can be simplified to \"%s\", if it is strictly a string, as an empty string is falsey]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-implicit-booleaness-not-comparison-to-string.html"
+  },
+  "C1805": {
+    "description": "[Status: stable] [Name: use-implicit-booleaness-not-comparison-to-zero] [Message: \"%s\" can be simplified to \"%s\", if it is strictly an int, as 0 is falsey]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-implicit-booleaness-not-comparison-to-zero.html"
+  },
+  "C1802": {
+    "description": "[Status: stable] [Name: use-implicit-booleaness-not-len] [Message: Do not use `len(SEQUENCE)` without comparison to determine if a sequence is empty]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-implicit-booleaness-not-len.html"
+  },
+  "C0207": {
+    "description": "[Status: stable] [Name: use-maxsplit-arg] [Message: Use %s instead] Emitted when accessing only the first or last element of str.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-maxsplit-arg.html"
+  },
+  "C0208": {
+    "description": "[Status: stable] [Name: use-sequence-for-iteration] [Message: Use a sequence type when iterating over values] When iterating over values, sequence types (e.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/use-sequence-for-iteration.html"
+  },
+  "C0414": {
+    "description": "[Status: stable] [Name: useless-import-alias] [Message: Import alias does not rename original package] Used when an import alias is same as original package, e.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/useless-import-alias.html"
+  },
+  "C0411": {
+    "description": "[Status: stable] [Name: wrong-import-order] [Message: %s should be placed before %s] Used when PEP8 import order is not respected (standard imports first, then third-party libraries, then local imports).",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/wrong-import-order.html"
+  },
+  "C0413": {
+    "description": "[Status: stable] [Name: wrong-import-position] [Message: Import \"%s\" should be placed at the top of the module] Used when code and imports are mixed.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/wrong-import-position.html"
+  },
+  "C0401": {
+    "description": "[Status: stable] [Name: wrong-spelling-in-comment] [Message: Wrong spelling of a word '%s' in a comment: %s %s Did you mean: '%s'?]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/wrong-spelling-in-comment.html"
+  },
+  "C0402": {
+    "description": "[Status: stable] [Name: wrong-spelling-in-docstring] [Message: Wrong spelling of a word '%s' in a docstring: %s %s Did you mean: '%s'?]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/wrong-spelling-in-docstring.html"
+  },
+  "C0102": {
+    "description": "[Status: stable] [Name: blacklisted-name]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/blacklisted-name.html"
+  },
+  "C1901": {
+    "description": "[Status: stable] [Name: compare-to-empty-string]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/compare-to-empty-string.html"
+  },
+  "C2001": {
+    "description": "[Status: stable] [Name: compare-to-zero]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/compare-to-zero.html"
+  },
+  "C1801": {
+    "description": "[Status: stable] [Name: len-as-condition]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/len-as-condition.html"
+  },
+  "C0111": {
+    "description": "[Status: stable] [Name: missing-docstring]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/missing-docstring.html"
+  },
+  "C0113": {
+    "description": "[Status: stable] [Name: unneeded-not]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/convention/unneeded-not.html"
+  },
+  "R1716": {
+    "description": "[Status: stable] [Name: chained-comparison] [Message: Simplify chained comparison between the operands] This message is emitted when pylint encounters boolean operation like \"a < b and b < c\", suggesting instead to refactor it to \"a < b < c\"",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/chained-comparison.html"
+  },
+  "R0133": {
+    "description": "[Status: stable] [Name: comparison-of-constants] [Message: Comparison between constants: \"%s %s %s\" has a constant value]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/comparison-of-constants.html"
+  },
+  "R0124": {
+    "description": "[Status: stable] [Name: comparison-with-itself] [Message: Redundant comparison - %s] Used when something is compared against itself.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/comparison-with-itself.html"
+  },
+  "R1727": {
+    "description": "[Status: stable] [Name: condition-evals-to-constant] [Message: Boolean condition '%s' will always evaluate to '%s'] Emitted when a boolean condition can be simplified to a constant value.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/condition-evals-to-constant.html"
+  },
+  "R5601": {
+    "description": "[Status: stable] [Name: confusing-consecutive-elif] [Message: Consecutive elif with differing indentation level, consider creating a function to separate the inner elif]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/confusing-consecutive-elif.html"
+  },
+  "R6003": {
+    "description": "[Status: stable] [Name: consider-alternative-union-syntax] [Message: Consider using alternative union syntax instead of '%s'%s] Emitted when ``typing.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-alternative-union-syntax.html"
+  },
+  "R6106": {
+    "description": "[Status: stable] [Name: consider-math-not-float] [Message: Consider %smath.%s instead of %s] Using math.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-math-not-float.html"
+  },
+  "R1701": {
+    "description": "[Status: stable] [Name: consider-merging-isinstance] [Message: Consider merging these isinstance calls to isinstance(%s, (%s))]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-merging-isinstance.html"
+  },
+  "R3501": {
+    "description": "[Status: stable] [Name: consider-refactoring-into-while-condition] [Message: Consider using 'while %s' instead of 'while %s:' an 'if', and a 'break']",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-refactoring-into-while-condition.html"
+  },
+  "R1712": {
+    "description": "[Status: stable] [Name: consider-swap-variables] [Message: Consider using tuple unpacking for swapping variables] You do not have to use a temporary variable in order to swap variables.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-swap-variables.html"
+  },
+  "R6002": {
+    "description": "[Status: stable] [Name: consider-using-alias] [Message: '%s' will be deprecated with PY39, consider using '%s' instead%s]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-alias.html"
+  },
+  "R6103": {
+    "description": "[Status: stable] [Name: consider-using-assignment-expr] [Message: Use '%s' instead] Emitted when an if assignment is directly followed by an if statement and both can be combined by using an assignment expression ``:=``.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-assignment-expr.html"
+  },
+  "R6104": {
+    "description": "[Status: stable] [Name: consider-using-augmented-assign] [Message: Use '%s' to do an augmented assign directly] Emitted when an assignment is referring to the object that it is assigning to.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-augmented-assign.html"
+  },
+  "R1717": {
+    "description": "[Status: stable] [Name: consider-using-dict-comprehension] [Message: Consider using a dictionary comprehension] Emitted when we detect the creation of a dictionary using the dict() callable and a transient list.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-dict-comprehension.html"
+  },
+  "R0402": {
+    "description": "[Status: stable] [Name: consider-using-from-import] [Message: Use 'from %s import %s' instead] Emitted when a submodule of a package is imported and aliased with the same name, e.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-from-import.html"
+  },
+  "R1728": {
+    "description": "[Status: stable] [Name: consider-using-generator] [Message: Consider using a generator instead '%s(%s)'] If your container can be large using a generator will bring better performance.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-generator.html"
+  },
+  "R1715": {
+    "description": "[Status: stable] [Name: consider-using-get] [Message: Consider using dict.get for getting values from a dict if a key is present or a default if not]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-get.html"
+  },
+  "R1714": {
+    "description": "[Status: stable] [Name: consider-using-in] [Message: Consider merging these comparisons with 'in' by using '%s %sin (%s)'. Use a set instead if elements are hashable.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-in.html"
+  },
+  "R1713": {
+    "description": "[Status: stable] [Name: consider-using-join] [Message: Consider using str.join(sequence) for concatenating strings from an iterable]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-join.html"
+  },
+  "R1731": {
+    "description": "[Status: stable] [Name: consider-using-max-builtin] [Message: Consider using '%s' instead of unnecessary if block] Using the max builtin instead of a conditional improves readability and conciseness.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-max-builtin.html"
+  },
+  "R1730": {
+    "description": "[Status: stable] [Name: consider-using-min-builtin] [Message: Consider using '%s' instead of unnecessary if block] Using the min builtin instead of a conditional improves readability and conciseness.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-min-builtin.html"
+  },
+  "R6101": {
+    "description": "[Status: stable] [Name: consider-using-namedtuple-or-dataclass] [Message: Consider using namedtuple or dataclass for dictionary values]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-namedtuple-or-dataclass.html"
+  },
+  "R1718": {
+    "description": "[Status: stable] [Name: consider-using-set-comprehension] [Message: Consider using a set comprehension] Although there is nothing syntactically wrong with this code, it is hard to read and can be simplified to a set comprehension.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-set-comprehension.html"
+  },
+  "R1722": {
+    "description": "[Status: stable] [Name: consider-using-sys-exit] [Message: Consider using 'sys.exit' instead] Contrary to 'exit()' or 'quit()', 'sys.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-sys-exit.html"
+  },
+  "R1706": {
+    "description": "[Status: stable] [Name: consider-using-ternary] [Message: Consider using ternary (%s)] Used when one of known pre-python 2.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-ternary.html"
+  },
+  "R6102": {
+    "description": "[Status: stable] [Name: consider-using-tuple] [Message: Consider using an in-place tuple instead of list] Only for style consistency! Emitted where an in-place defined ``list`` can be replaced by a ``tuple``.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-tuple.html"
+  },
+  "R1732": {
+    "description": "[Status: stable] [Name: consider-using-with] [Message: Consider using 'with' for resource-allocating operations] Emitted if a resource-allocating assignment or call may be replaced by a 'with' block.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/consider-using-with.html"
+  },
+  "R0401": {
+    "description": "[Status: stable] [Name: cyclic-import] [Message: Cyclic import (%s)] Used when a cyclic import between two or more modules is detected.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/cyclic-import.html"
+  },
+  "R0801": {
+    "description": "[Status: stable] [Name: duplicate-code] [Message: Similar lines in %s files %s] Indicates that a set of similar lines has been detected among multiple file.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/duplicate-code.html"
+  },
+  "R5501": {
+    "description": "[Status: stable] [Name: else-if-used] [Message: Consider using \"elif\" instead of \"else\" then \"if\" to remove one indentation level]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/else-if-used.html"
+  },
+  "R2044": {
+    "description": "[Status: stable] [Name: empty-comment] [Message: Line with empty comment] Used when a # symbol appears on a line not followed by an actual comment",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/empty-comment.html"
+  },
+  "R1710": {
+    "description": "[Status: stable] [Name: inconsistent-return-statements] [Message: Either all return statements in a function should return an expression, or none of them should.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/inconsistent-return-statements.html"
+  },
+  "R0123": {
+    "description": "[Status: stable] [Name: literal-comparison] [Message: In '%s', use '%s' when comparing constant literals not '%s' ('%s')]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/literal-comparison.html"
+  },
+  "R2004": {
+    "description": "[Status: stable] [Name: magic-value-comparison] [Message: Consider using a named constant or an enum instead of '%s'.] Using named constants instead of magic values helps improve readability and maintainability of your code, try to avoid them in comparisons.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/magic-value-comparison.html"
+  },
+  "R1905": {
+    "description": "[Status: stable] [Name: match-class-bind-self] [Message: Use '%s() as %s' instead] Match class patterns are faster if the name binding happens for the whole pattern and any lookup for `__match_args__` can be avoided.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/match-class-bind-self.html"
+  },
+  "R1906": {
+    "description": "[Status: stable] [Name: match-class-positional-attributes] [Message: Use keyword attributes instead of positional ones (%s)] Keyword attributes are more explicit and slightly faster since CPython can skip the `__match_args__` lookup.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/match-class-positional-attributes.html"
+  },
+  "R0202": {
+    "description": "[Status: stable] [Name: no-classmethod-decorator] [Message: Consider using a decorator instead of calling classmethod] Used when a class method is defined without using the decorator syntax.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-classmethod-decorator.html"
+  },
+  "R1723": {
+    "description": "[Status: stable] [Name: no-else-break] [Message: Unnecessary \"%s\" after \"break\", %s] Used in order to highlight an unnecessary block of code following an if containing a break statement.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-else-break.html"
+  },
+  "R1724": {
+    "description": "[Status: stable] [Name: no-else-continue] [Message: Unnecessary \"%s\" after \"continue\", %s] Used in order to highlight an unnecessary block of code following an if containing a continue statement.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-else-continue.html"
+  },
+  "R1720": {
+    "description": "[Status: stable] [Name: no-else-raise] [Message: Unnecessary \"%s\" after \"raise\", %s] Used in order to highlight an unnecessary block of code following an if, or a try/except containing a raise statement.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-else-raise.html"
+  },
+  "R1705": {
+    "description": "[Status: stable] [Name: no-else-return] [Message: Unnecessary \"%s\" after \"return\", %s] Used in order to highlight an unnecessary block of code following an if, or a try/except containing a return statement.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-else-return.html"
+  },
+  "R6301": {
+    "description": "[Status: stable] [Name: no-self-use] [Message: Method could be a function] Used when a method doesn't use its bound instance, and so could be written as a function.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-self-use.html"
+  },
+  "R0203": {
+    "description": "[Status: stable] [Name: no-staticmethod-decorator] [Message: Consider using a decorator instead of calling staticmethod] Used when a static method is defined without using the decorator syntax.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/no-staticmethod-decorator.html"
+  },
+  "R6105": {
+    "description": "[Status: stable] [Name: prefer-typing-namedtuple] [Message: Prefer 'typing.NamedTuple' over 'collections.namedtuple'] 'typing.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/prefer-typing-namedtuple.html"
+  },
+  "R0206": {
+    "description": "[Status: stable] [Name: property-with-parameters] [Message: Cannot have defined parameters for properties] Used when we detect that a property also has parameters, which are useless, given that properties cannot be called with additional arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/property-with-parameters.html"
+  },
+  "R1704": {
+    "description": "[Status: stable] [Name: redefined-argument-from-local] [Message: Redefining argument with the local name %r] Used when a local name is redefining an argument, which might suggest a potential error.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/redefined-argument-from-local.html"
+  },
+  "R0204": {
+    "description": "[Status: stable] [Name: redefined-variable-type] [Message: Redefinition of %s type from %s to %s] Used when the type of a variable changes inside a method or a function.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/redefined-variable-type.html"
+  },
+  "R6006": {
+    "description": "[Status: stable] [Name: redundant-typehint-argument] [Message: Type `%s` is used more than once in union type annotation. Remove redundant typehints.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/redundant-typehint-argument.html"
+  },
+  "R1726": {
+    "description": "[Status: stable] [Name: simplifiable-condition] [Message: Boolean condition \"%s\" may be simplified to \"%s\"] Emitted when a boolean condition is able to be simplified.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/simplifiable-condition.html"
+  },
+  "R1719": {
+    "description": "[Status: stable] [Name: simplifiable-if-expression] [Message: The if expression can be replaced with %s] Used when an if expression can be replaced with 'bool(test)' or simply 'test' if the boolean cast is implicit.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/simplifiable-if-expression.html"
+  },
+  "R1703": {
+    "description": "[Status: stable] [Name: simplifiable-if-statement] [Message: The if statement can be replaced with %s] Used when an if statement can be replaced with 'bool(test)'.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/simplifiable-if-statement.html"
+  },
+  "R1709": {
+    "description": "[Status: stable] [Name: simplify-boolean-expression] [Message: Boolean expression may be simplified to %s] Emitted when redundant pre-python 2.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/simplify-boolean-expression.html"
+  },
+  "R1708": {
+    "description": "[Status: stable] [Name: stop-iteration-return] [Message: Do not raise StopIteration in generator, use return statement instead]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/stop-iteration-return.html"
+  },
+  "R1725": {
+    "description": "[Status: stable] [Name: super-with-arguments] [Message: Consider using Python 3 style super() without arguments] Emitted when calling the super() builtin with the current class and instance.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/super-with-arguments.html"
+  },
+  "R1260": {
+    "description": "[Status: stable] [Name: too-complex] [Message: %s is too complex. The McCabe rating is %d] Used when a method or function is too complex based on McCabe Complexity Cyclomatic",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-complex.html"
+  },
+  "R0903": {
+    "description": "[Status: stable] [Name: too-few-public-methods] [Message: Too few public methods (%s/%s)] Used when class has too few public methods, so be sure it's really worth it.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-few-public-methods.html"
+  },
+  "R0901": {
+    "description": "[Status: stable] [Name: too-many-ancestors] [Message: Too many ancestors (%s/%s)] Used when class has too many parent classes, try to reduce this to get a simpler (and so easier to use) class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-ancestors.html"
+  },
+  "R0913": {
+    "description": "[Status: stable] [Name: too-many-arguments] [Message: Too many arguments (%s/%s)] Used when a function or method takes too many arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-arguments.html"
+  },
+  "R0916": {
+    "description": "[Status: stable] [Name: too-many-boolean-expressions] [Message: Too many boolean expressions in if statement (%s/%s)] Used when an if statement contains too many boolean expressions.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-boolean-expressions.html"
+  },
+  "R0912": {
+    "description": "[Status: stable] [Name: too-many-branches] [Message: Too many branches (%s/%s)] Used when a function or method has too many branches, making it hard to follow.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-branches.html"
+  },
+  "R0902": {
+    "description": "[Status: stable] [Name: too-many-instance-attributes] [Message: Too many instance attributes (%s/%s)] Used when class has too many instance attributes, try to reduce this to get a simpler (and so easier to use) class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-instance-attributes.html"
+  },
+  "R0914": {
+    "description": "[Status: stable] [Name: too-many-locals] [Message: Too many local variables (%s/%s)] Used when a function or method has too many local variables.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-locals.html"
+  },
+  "R1702": {
+    "description": "[Status: stable] [Name: too-many-nested-blocks] [Message: Too many nested blocks (%s/%s)] Used when a function or a method has too many nested blocks.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-nested-blocks.html"
+  },
+  "R0917": {
+    "description": "[Status: stable] [Name: too-many-positional-arguments] [Message: Too many positional arguments (%s/%s)] Used when a function has too many positional arguments.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-positional-arguments.html"
+  },
+  "R0904": {
+    "description": "[Status: stable] [Name: too-many-public-methods] [Message: Too many public methods (%s/%s)] Used when class has too many public methods, try to reduce this to get a simpler (and so easier to use) class.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-public-methods.html"
+  },
+  "R0911": {
+    "description": "[Status: stable] [Name: too-many-return-statements] [Message: Too many return statements (%s/%s)] Used when a function or method has too many return statement, making it hard to follow.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-return-statements.html"
+  },
+  "R0915": {
+    "description": "[Status: stable] [Name: too-many-statements] [Message: Too many statements (%s/%s)] Used when a function or method has too many statements.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/too-many-statements.html"
+  },
+  "R1707": {
+    "description": "[Status: stable] [Name: trailing-comma-tuple] [Message: Disallow trailing comma tuple] In Python, a tuple is actually created by the comma symbol, not by the parentheses.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/trailing-comma-tuple.html"
+  },
+  "R1721": {
+    "description": "[Status: stable] [Name: unnecessary-comprehension] [Message: Unnecessary use of a comprehension, use %s instead.] Instead of using an identity comprehension, consider using the list, dict or set constructor.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/unnecessary-comprehension.html"
+  },
+  "R6007": {
+    "description": "[Status: stable] [Name: unnecessary-default-type-args] [Message: Type `%s` has unnecessary default type args. Change it to `%s`.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/unnecessary-default-type-args.html"
+  },
+  "R1733": {
+    "description": "[Status: stable] [Name: unnecessary-dict-index-lookup] [Message: Unnecessary dictionary index lookup, use '%s' instead] Emitted when iterating over the dictionary items (key-item pairs) and accessing the value by index lookup.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/unnecessary-dict-index-lookup.html"
+  },
+  "R1736": {
+    "description": "[Status: stable] [Name: unnecessary-list-index-lookup] [Message: Unnecessary list index lookup, use '%s' instead] Emitted when iterating over an enumeration and accessing the value by index lookup.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/unnecessary-list-index-lookup.html"
+  },
+  "R1729": {
+    "description": "[Status: stable] [Name: use-a-generator] [Message: Use a generator instead '%s(%s)'] Comprehension inside of 'any', 'all', 'max', 'min' or 'sum' is unnecessary.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/use-a-generator.html"
+  },
+  "R1735": {
+    "description": "[Status: stable] [Name: use-dict-literal] [Message: Consider using '%s' instead of a call to 'dict'.] Emitted when using dict() to create a dictionary instead of a literal '{.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/use-dict-literal.html"
+  },
+  "R1734": {
+    "description": "[Status: stable] [Name: use-list-literal] [Message: Consider using [] instead of list()] Emitted when using list() to create an empty list instead of the literal [].",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/use-list-literal.html"
+  },
+  "R6201": {
+    "description": "[Status: stable] [Name: use-set-for-membership] [Message: Consider using set for membership test] Membership tests are more efficient when performed on a lookup optimized datatype like ``sets``.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/use-set-for-membership.html"
+  },
+  "R1737": {
+    "description": "[Status: stable] [Name: use-yield-from] [Message: Use 'yield from' directly instead of yielding each element one by one]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/use-yield-from.html"
+  },
+  "R0205": {
+    "description": "[Status: stable] [Name: useless-object-inheritance] [Message: Class %r inherits from object, can be safely removed from bases in python3]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/useless-object-inheritance.html"
+  },
+  "R0022": {
+    "description": "[Status: stable] [Name: useless-option-value] [Message: Useless option value for '%s', %s] Used when a value for an option that is now deleted from pylint is encountered.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/useless-option-value.html"
+  },
+  "R1711": {
+    "description": "[Status: stable] [Name: useless-return] [Message: Useless return at end of function or method] Emitted when a single \"return\" or \"return None\" statement is found at the end of function or method definition.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/refactor/useless-return.html"
+  },
+  "I0010": {
+    "description": "[Status: stable] [Name: bad-inline-option] [Message: Unable to consider inline option %r] Used when an inline option is either badly formatted or can't be used inside modules.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/bad-inline-option.html"
+  },
+  "I1101": {
+    "description": "[Status: stable] [Name: c-extension-no-member] [Message: %s %r has no %r member%s, but source is unavailable. Consider adding this module to extension-pkg-allow-list if you want to perform analysis based on run-time introspection of living objects.]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/c-extension-no-member.html"
+  },
+  "I0022": {
+    "description": "[Status: stable] [Name: deprecated-pragma] [Message: Pragma \"%s\" is deprecated, use \"%s\" instead] Some inline pylint options have been renamed or reworked, only the most recent form should be used.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/deprecated-pragma.html"
+  },
+  "I0013": {
+    "description": "[Status: stable] [Name: file-ignored] [Message: Ignoring entire file] Used to inform that the file will not be checked",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/file-ignored.html"
+  },
+  "I0011": {
+    "description": "[Status: stable] [Name: locally-disabled] [Message: Locally disabling %s (%s)] Used when an inline option disables a message or a messages category.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/locally-disabled.html"
+  },
+  "I0001": {
+    "description": "[Status: stable] [Name: raw-checker-failed] [Message: Unable to run raw checkers on built-in module %s] Used to inform that a built-in module has not been checked using the raw checkers.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/raw-checker-failed.html"
+  },
+  "I0020": {
+    "description": "[Status: stable] [Name: suppressed-message] [Message: Suppressed %s (from line %d)] A message was triggered on a line, but suppressed explicitly by a disable= comment in the file.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/suppressed-message.html"
+  },
+  "I0023": {
+    "description": "[Status: stable] [Name: use-symbolic-message-instead] [Message: %s] Used when a message is enabled or disabled by id.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/use-symbolic-message-instead.html"
+  },
+  "I0021": {
+    "description": "[Status: stable] [Name: useless-suppression] [Message: Useless suppression of %s] Reported when a message is explicitly disabled for a line or a block of code, but never triggered.",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/useless-suppression.html"
+  },
+  "I0014": {
+    "description": "[Status: stable] [Name: deprecated-disable-all]",
+    "ruleurl": "https://pylint.readthedocs.io/en/stable/user_guide/messages/information/deprecated-disable-all.html"
+  }
+}

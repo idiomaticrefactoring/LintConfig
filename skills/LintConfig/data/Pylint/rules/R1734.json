@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: use-list-literal] [Message: Consider using [] instead of list()] Description: Emitted when using list() to create an empty list instead of the literal []. The literal is faster as it avoids an additional function call. Problematic code: empty_list = list() # [use-list-literal] Correct code: empty_list = [] Created by the refactoring checker.",
+  "option": {}
+}

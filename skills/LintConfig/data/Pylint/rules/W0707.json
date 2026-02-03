@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: raise-missing-from] [Message: Consider explicitly re-raising using %s'%s from %s'] Description: Python's exception chaining shows the traceback of the current exception, but also of the original exception. When you raise a new exception after another exception was caught it's likely that the second exception is a friendly re-wrapping of the first exception. In such cases `raise from` provides a better link between the two tracebacks in the final error. Problematic code: try: 1 / 0 except ZeroDivisionError as e: raise ValueError(\"Rectangle Area cannot be zero\") # [raise-missing-from] Correct code: try: 1 / 0 except ZeroDivisionError as e: raise ValueError(\"Rectangle Area cannot be zero\") from e Related links: PEP 3134 Created by the exceptions checker.",
+  "option": {}
+}

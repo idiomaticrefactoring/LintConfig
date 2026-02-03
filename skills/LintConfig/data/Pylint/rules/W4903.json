@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-argument] [Message: Using deprecated argument %s of method %s()] Description: The argument is marked as deprecated and will be removed in the future. Problematic code: int(x=1) # [deprecated-argument] Correct code: int(1) Configuration file: Additional details: The actual replacement needs to be studied on a case by case basis by reading the deprecation warning or the release notes. Created by the stdlib checker.",
+  "option": {}
+}

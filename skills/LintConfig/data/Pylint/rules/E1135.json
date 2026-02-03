@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unsupported-membership-test] [Message: Value '%s' doesn't support membership test] Description: Emitted when an instance in membership test expression doesn't implement membership protocol (__contains__/__iter__/__getitem__). Problematic code: class Fruit: pass apple = \"apple\" in Fruit() # [unsupported-membership-test] Correct code: class Fruit: FRUITS = [\"apple\", \"orange\"] def __contains__(self, name): return name in self.FRUITS apple = \"apple\" in Fruit() Created by the typecheck checker.",
+  "option": {}
+}

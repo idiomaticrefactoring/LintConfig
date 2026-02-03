@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-lambda] [Message: Lambda may not be necessary] Description: Used when the body of a lambda expression is a function call on the same argument list as the lambda itself; such lambda expressions are in all but a few cases replaceable with the function being called in the body of the lambda. Problematic code: pandas.py: df.apply(lambda x: str(x)) # [unnecessary-lambda] print.py: function = lambda x: print(x) # [unnecessary-lambda] function(\"Hello world !\") Correct code: pandas.py: df.apply(str) print.py: print(\"Hello world !\") Created by the basic checker.",
+  "option": {}
+}

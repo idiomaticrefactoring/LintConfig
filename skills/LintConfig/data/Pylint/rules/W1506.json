@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-thread-instantiation] [Message: threading.Thread needs the target function] Description: The warning is emitted when a threading.Thread class is instantiated without the target function being passed as a kwarg or as a second argument. By default, the first parameter is the group param, not the target param. Problematic code: import threading def thread_target(n): print(n**2) thread = threading.Thread(lambda: None) # [bad-thread-instantiation] thread.start() Correct code: import threading def thread_target(n): print(n**2) thread = threading.Thread(target=thread_target, args=(10,)) thread.start() Created by the stdlib checker.",
+  "option": {}
+}

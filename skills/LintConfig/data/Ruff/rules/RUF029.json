@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: unused-async] [Message: Function <code>{name}</code> is declared <code>async</code>, but doesn't <code>await</code> or use <code>async</code> features.] What it does Checks for functions declared async that do not await or otherwise use features requiring the function to be declared async. Why is this bad? Declaring a function async when it's not is usually a mistake, and will artificially limit the contexts where that function may be called. In some cases, labeling a function async is semantically meaningful (e.g. with the trio library). Example async def foo(): bar() Use instead: def foo(): bar()",
+  "option": {}
+}

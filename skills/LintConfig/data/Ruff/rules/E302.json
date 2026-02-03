@@ -1,0 +1,13 @@
+{
+  "description": "[Status: preview] [Name: blank-lines-top-level] [Message: Expected {expected_blank_lines:?} blank lines, found {actual_blank_lines}] What it does Checks for missing blank lines between top level functions and classes. Why is this bad? PEP 8 recommends exactly two blank lines between top level functions and classes. The rule respects the lint.isort.lines-after-imports setting when determining the required number of blank lines between top-level import statements and function or class definitions for compatibility with isort. Example def func1(): pass def func2(): pass Use instead: def func1(): pass def func2(): pass Typing stub files (.pyi) The typing style guide recommends to not use blank lines between classes and functions except to group them. That's why this rule is not enabled in typing stub files.",
+  "option": {
+    "lint.isort.lines-after-imports": {
+      "option_description": "The number of blank lines to place after imports.\nUse -1 for automatic determination.\n\nRuff uses at most one blank line after imports in typing stub files (files with .pyi extension) in accordance to\nthe typing style recommendations (source).\n\nWhen using the formatter, only the values -1, 1, and 2 are compatible because\nit enforces at least one empty and at most two empty lines after imports.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\n# Use a single line after each import block.\nlines-after-imports = 1\n\n\n\n[lint.isort]\n# Use a single line after each import block.\nlines-after-imports = 1",
+      "option_data_type": "int",
+      "default_value": "-1",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

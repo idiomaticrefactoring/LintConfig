@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: type-of-primitive] [Message: Use <code>{}</code> instead of <code>type(...)</code>] What it does Checks for uses of type that take a primitive as an argument. Why is this bad? type() returns the type of a given object. A type of a primitive can always be known in advance and accessed directly, which is more concise and explicit than using type(). Example type(1) Use instead: int",
+  "option": {}
+}

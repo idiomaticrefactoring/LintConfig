@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-character-sub] [Message: Invalid unescaped character sub, use \"\\x1A\" instead.] Description: Ctrl+Z \"End of text\" on Windows. Some programs (such as type) ignore the rest of the file after it. Problematic code: STRING = \"Invalid character sub \u001a\" # [invalid-character-sub] Correct code: STRING = \"Valid character sub x1A\" Created by the unicode_checker checker.",
+  "option": {}
+}

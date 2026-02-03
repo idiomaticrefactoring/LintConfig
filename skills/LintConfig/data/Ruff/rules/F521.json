@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: string-dot-format-invalid-format] [Message: <code>.format</code> call has invalid format string: {message}] What it does Checks for str.format calls with invalid format strings. Why is this bad? Invalid format strings will raise a ValueError. Example \"{\".format(foo) Use instead: \"{}\".format(foo)",
+  "option": {}
+}

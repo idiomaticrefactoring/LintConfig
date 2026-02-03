@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: lowercase-imported-as-non-lowercase] [Message: Lowercase <code>{name}</code> imported as non-lowercase <code>{asname}</code>] What it does Checks for lowercase imports that are aliased to non-lowercase names. Why is this bad? PEP 8 recommends naming conventions for classes, functions, constants, and more. The use of inconsistent naming styles between import and alias names may lead readers to expect an import to be of another type (e.g., confuse a Python class with a constant). Import aliases should thus follow the same naming style as the member being imported. Example from example import myclassname as MyClassName Use instead: from example import myclassname",
+  "option": {
+    "lint.pep8-naming.ignore-names": {
+      "option_description": "A list of names (or patterns) to ignore when considering pep8-naming violations.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"setUp\", \"tearDown\", \"setUpClass\", \"tearDownClass\", \"setUpModule\", \"tearDownModule\", \"asyncSetUp\", \"asyncTearDown\", \"setUpTestData\", \"failureException\", \"longMessage\", \"maxDiff\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.extend-ignore-names": {
+      "option_description": "Additional names (or patterns) to ignore when considering pep8-naming violations,\nin addition to those included in ignore-names.\n\nSupports glob patterns. For example, to ignore all names starting with test_\nor ending with _test, you could use ignore-names = [\"test_*\", \"*_test\"].\nFor more information on the glob syntax, refer to the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]\n\n\n\n[lint.pep8-naming]\nextend-ignore-names = [\"callMethod\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

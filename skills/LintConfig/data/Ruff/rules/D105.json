@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: undocumented-magic-method] [Message: Missing docstring in magic method] What it does Checks for undocumented magic method definitions. Why is this bad? Magic methods (methods with names that start and end with double underscores) are used to implement operator overloading and other special behavior. Such methods should be documented via docstrings to outline their behavior. Generally, magic method docstrings should describe the method's behavior, arguments, side effects, exceptions, return values, and any other information that may be relevant to the user. If the codebase adheres to a standard format for method docstrings, follow that format for consistency. Example class Cat(Animal): def __str__(self) -> str: return f\"Cat: {self.name}\" cat = Cat(\"Dusty\") print(cat) # \"Cat: Dusty\" Use instead: class Cat(Animal): def __str__(self) -> str: \"\"\"Return a string representation of the cat.\"\"\" return f\"Cat: {self.name}\" cat = Cat(\"Dusty\") print(cat) # \"Cat: Dusty\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

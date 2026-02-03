@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pytest-extraneous-scope-function] [Message: <code>scope='function'</code> is implied in <code>@pytest.fixture()</code>] What it does Checks for pytest.fixture calls with scope=\"function\". Why is this bad? scope=\"function\" can be omitted, as it is the default. Example import pytest @pytest.fixture(scope=\"function\") def my_fixture(): ... Use instead: import pytest @pytest.fixture() def my_fixture(): ...",
+  "option": {}
+}

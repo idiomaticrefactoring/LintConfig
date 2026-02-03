@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: logging-format-truncated] [Message: Logging format string ends in middle of conversion specifier] Description: Used when a logging statement format string terminates before the end of a conversion specifier. Problematic code: import logging import sys logging.warning(\"Python version: %\", sys.version) # [logging-format-truncated] Correct code: import logging import sys logging.warning(\"Python version: %s\", sys.version) Created by the logging checker.",
+  "option": {}
+}

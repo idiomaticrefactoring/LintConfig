@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: replace-stdout-stderr] [Message: Prefer <code>capture_output</code> over sending <code>stdout</code> and <code>stderr</code> to <code>PIPE</code>] What it does Checks for uses of subprocess.run that send stdout and stderr to a pipe. Why is this bad? As of Python 3.7, subprocess.run has a capture_output keyword argument that can be set to True to capture stdout and stderr outputs. This is equivalent to setting stdout and stderr to subprocess.PIPE, but is more explicit and readable. Example import subprocess subprocess.run([\"foo\"], stdout=subprocess.PIPE, stderr=subprocess.PIPE) Use instead: import subprocess subprocess.run([\"foo\"], capture_output=True) Fix safety This rule's fix is marked as unsafe because replacing stdout=subprocess.PIPE and stderr=subprocess.PIPE with capture_output=True may delete comments attached to the original arguments.",
+  "option": {}
+}

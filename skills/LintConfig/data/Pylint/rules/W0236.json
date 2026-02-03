@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-overridden-method] [Message: Method %r was expected to be %r, found it instead as %r] Description: Used when we detect that a method was overridden in a way that does not match its base class which could result in potential bugs at runtime. Problematic code: class Fruit: async def bore(self, insect): insect.eat(self) class Apple(Fruit): def bore(self, insect): # [invalid-overridden-method] insect.eat(self) Correct code: class Fruit: async def bore(self, insect): insect.eat(self) class Apple(Fruit): async def bore(self, insect): insect.eat(self) Created by the classes checker.",
+  "option": {}
+}

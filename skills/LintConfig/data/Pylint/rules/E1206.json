@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: logging-too-few-args] [Message: Not enough arguments for logging format string] Description: Used when a logging format string is given too few arguments. Problematic code: import logging try: function() except Exception as e: logging.error(\"%s error occurred: %s\", e) # [logging-too-few-args] raise Correct code: import logging try: function() except Exception as e: logging.error(\"%s error occurred: %s\", type(e), e) raise Created by the logging checker.",
+  "option": {}
+}

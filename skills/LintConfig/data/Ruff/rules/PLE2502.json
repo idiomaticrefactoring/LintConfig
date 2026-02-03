@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bidirectional-unicode] [Message: Contains control characters that can permit obfuscated code] What it does Checks for bidirectional formatting characters. Why is this bad? The interaction between bidirectional formatting characters and the surrounding code can be surprising to those that are unfamiliar with right-to-left writing systems. In some cases, bidirectional formatting characters can also be used to obfuscate code and introduce or mask security vulnerabilities. Example example = \"x‏\" * 100 # \"‏x\" is assigned The example uses two RIGHT-TO-LEFT MARKs to make the 100 * appear inside the comment. Without the RIGHT-TO-LEFT MARKs, the code looks like this: example = \"x\" * 100 # \"x\" is assigned",
+  "option": {}
+}

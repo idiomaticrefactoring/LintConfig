@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: self-assigning-variable] [Message: Assigning the same variable %r to itself] Description: Emitted when we detect that a variable is assigned to itself Problematic code: year = 2000 year = year # [self-assigning-variable] Correct code: year = 2000 Related links: Python assignment statement Created by the basic checker.",
+  "option": {}
+}

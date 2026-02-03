@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: fatal] [Message: %s] Description: Used when an error occurred preventing the analysis of a module (unable to find it for instance). Additional details: This is a message linked to an internal problem in pylint. There's nothing to change in your code. Created by the main checker.",
+  "option": {}
+}

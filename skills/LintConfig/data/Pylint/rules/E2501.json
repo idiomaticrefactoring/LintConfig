@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-unicode-codec] [Message: UTF-16 and UTF-32 aren't backward compatible. Use UTF-8 instead] Description: For compatibility use UTF-8 instead of UTF-16/UTF-32. See also https://bugs.python.org/issue1503789 for a history of this issue. And https://softwareengineering.stackexchange.com/questions/102205/ for some possible problems when using UTF-16 for instance. Additional details: This message is a placeholder for a potential future issue with unicode codecs. Created by the unicode_checker checker.",
+  "option": {}
+}

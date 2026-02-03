@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: no-staticmethod-decorator] [Message: Static method defined without decorator] What it does Checks for the use of a staticmethod being made without the decorator. Why is this bad? When it comes to consistency and readability, it's preferred to use the decorator. Example class Foo: def bar(arg1, arg2): ... bar = staticmethod(bar) Use instead: class Foo: @staticmethod def bar(arg1, arg2): ...",
+  "option": {}
+}

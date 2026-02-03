@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: datetime-timezone-utc] [Message: Use <code>datetime.UTC</code> alias] What it does Checks for uses of datetime.timezone.utc. Why is this bad? As of Python 3.11, datetime.UTC is an alias for datetime.timezone.utc. The alias is more readable and generally preferred over the full path. Example import datetime datetime.timezone.utc Use instead: import datetime datetime.UTC",
+  "option": {
+    "target-version": {
+      "option_description": "The minimum Python version to target, e.g., when considering automatic\ncode upgrades, like rewriting type annotations. Ruff will not propose\nchanges using features that are not available in the given version.\n\nFor example, to represent supporting Python >=3.11 or ==3.11\nspecify target-version = \"py311\".\n\nIf you're already using a pyproject.toml file, we recommend\nproject.requires-python instead, as it's based on Python packaging\nstandards, and will be respected by other tools. For example, Ruff\ntreats the following as identical to target-version = \"py38\":\n\n[project]\nrequires-python = \">=3.8\"\n\nIf both are specified, target-version takes precedence over\nrequires-python. See Inferring the Python version\nfor a complete description of how the target-version is determined\nwhen left unspecified.\n\nNote that a stub file can sometimes make use of a typing feature\nbefore it is available at runtime, as long as the stub does not make\nuse of new syntax. For example, a type checker will understand\nint | str in a stub as being a Union type annotation, even if the\ntype checker is run using Python 3.9, despite the fact that the |\noperator can only be used to create union types at runtime on Python\n3.10+. As such, Ruff will often recommend newer features in a stub\nfile than it would for an equivalent runtime file with the same target\nversion.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\n# Always generate Python 3.7-compatible code.\ntarget-version = \"py37\"\n\n\n\n# Always generate Python 3.7-compatible code.\ntarget-version = \"py37\"",
+      "option_data_type": "\"py37\" | \"py38\" | \"py39\" | \"py310\" | \"py311\" | \"py312\" | \"py313\" | \"py314\"",
+      "default_value": "\"py310\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

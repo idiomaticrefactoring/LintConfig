@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: eval-used] [Message: Use of eval] Description: Used when you use the \"eval\" function, to discourage its usage. Consider using `ast.literal_eval` for safely evaluating strings containing Python expressions from untrusted sources. Problematic code: eval(\"[1, 2, 3]\") # [eval-used] Correct code: from ast import literal_eval literal_eval(\"[1, 2, 3]\") Created by the basic checker.",
+  "option": {}
+}

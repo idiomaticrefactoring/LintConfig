@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: missing-module-docstring] [Message: Missing module docstring] Description: Used when a module has no docstring. Empty modules do not require a docstring. Problematic code: import sys # [missing-module-docstring] def print_python_version(): print(sys.version) Correct code: \"\"\"Module providing a function printing python version.\"\"\" import sys def print_python_version(): print(sys.version) Created by the basic checker.",
+  "option": {}
+}

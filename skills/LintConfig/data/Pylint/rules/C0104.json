@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: disallowed-name] [Message: Disallowed name \"%s\"] Description: Used when the name matches bad-names or bad-names-rgxs- (unauthorized names). Problematic code: def foo(): # [disallowed-name] print(\"apples\") Correct code: def print_fruit(): print(\"apples\") Configuration file: [MAIN] bad-names=foo,bar,baz Created by the basic checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: comparison-of-constant] [Message: Two constants compared in a comparison, consider replacing <code>{left_constant} {op} {right_constant}</code>] What it does Checks for comparisons between constants. Why is this bad? Comparing two constants will always resolve to the same value, so the comparison is redundant. Instead, the expression should be replaced with the result of the comparison. Example foo = 1 == 1 Use instead: foo = True",
+  "option": {}
+}

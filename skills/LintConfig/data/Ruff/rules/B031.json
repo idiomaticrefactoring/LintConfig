@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: reuse-of-groupby-generator] [Message: Using the generator returned from <code>itertools.groupby()</code> more than once will do nothing on the second usage] What it does Checks for multiple usage of the generator returned from itertools.groupby(). Why is this bad? Using the generator more than once will do nothing on the second usage. If that data is needed later, it should be stored as a list. Example: import itertools for name, group in itertools.groupby(data): for _ in range(5): do_something_with_the_group(group) Use instead: import itertools for name, group in itertools.groupby(data): values = list(group) for _ in range(5): do_something_with_the_group(values)",
+  "option": {}
+}

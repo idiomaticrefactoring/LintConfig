@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-returns-doc] [Message: Redundant returns documentation] Description: Please remove the return/rtype documentation from this method. Problematic code: def print_fruits(fruits): # [redundant-returns-doc] \"\"\"Print list of fruits Returns ------- str \"\"\" print(fruits) return None Correct code: def print_fruits(fruits): \"\"\"Print list of fruits Returns ------- str \"\"\" print(fruits) return \",\".join(fruits) Configuration file: [MAIN] load-plugins = pylint.extensions.docparams Note This message is emitted by the optional 'parameter_documentation' checker, which requires the pylint.extensions.docparams plugin to be loaded. Created by the parameter_documentation checker.",
+  "option": {}
+}

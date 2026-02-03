@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: isinstance-second-argument-not-valid-type] [Message: Second argument of isinstance is not a type] Description: Emitted when the second argument of an isinstance call is not a type. Problematic code: isinstance(\"apples and oranges\", hex) # [isinstance-second-argument-not-valid-type] Correct code: isinstance(\"apples and oranges\", str) Created by the typecheck checker.",
+  "option": {}
+}

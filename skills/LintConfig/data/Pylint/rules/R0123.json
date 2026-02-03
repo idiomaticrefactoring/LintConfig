@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: literal-comparison] [Message: In '%s', use '%s' when comparing constant literals not '%s' ('%s')] Description: Used when comparing an object to a literal, which is usually what you do not want to do, since you can compare to a different literal than what was expected altogether. Problematic code: def is_an_orange(fruit): return fruit is \"orange\" # [literal-comparison] Correct code: def is_an_orange(fruit): return fruit == \"orange\" Related links: Comparison operations in Python Created by the basic checker.",
+  "option": {}
+}

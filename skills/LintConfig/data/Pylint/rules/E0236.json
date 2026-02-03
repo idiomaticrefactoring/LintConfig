@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-slots-object] [Message: Invalid object %r in __slots__, must contain only non empty strings] Description: Used when an invalid (non-string) object occurs in __slots__. Problematic code: class Person: __slots__ = (\"name\", 3) # [invalid-slots-object] Correct code: class Person: __slots__ = (\"name\", \"surname\") Related links: Documentation for __slots__ Created by the classes checker.",
+  "option": {}
+}

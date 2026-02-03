@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-field-call] [Message: Invalid usage of field(), %s] Description: The dataclasses.field() specifier should only be used as the value of an assignment within a dataclass, or within the make_dataclass() function. Problematic code: from dataclasses import dataclass, field @dataclass class C: a: float b: float c: float field(init=False) # [invalid-field-call] def __post_init__(self): self.c = self.a + self.b print(field(init=False)) # [invalid-field-call] Correct code: from dataclasses import dataclass, field, make_dataclass C = make_dataclass( \"C\", [(\"x\", int), \"y\", (\"z\", int, field(default=5))], namespace={\"add_one\": lambda self: self.x + 1}, ) @dataclass class C: a: float b: float c: float = field(init=False) def __post_init__(self): self.c = self.a + self.b Created by the dataclass checker.",
+  "option": {}
+}

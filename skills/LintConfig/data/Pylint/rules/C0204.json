@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-mcs-classmethod-argument] [Message: Metaclass class method %s should have %s as first argument] Description: Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to \"mcs\"), recommended to easily differentiate them from regular instance methods. Problematic code: class Meta(type): @classmethod def foo(some): # [bad-mcs-classmethod-argument] pass Correct code: class Meta(type): @classmethod def foo(mcs): pass Created by the classes checker.",
+  "option": {}
+}

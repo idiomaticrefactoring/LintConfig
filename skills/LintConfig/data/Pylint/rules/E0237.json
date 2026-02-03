@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: assigning-non-slot] [Message: Assigning to attribute %r not defined in class slots] Description: Used when assigning to an attribute not defined in the class slots. Problematic code: class Student: __slots__ = (\"name\",) def __init__(self, name, surname): self.name = name self.surname = surname # [assigning-non-slot] self.setup() def setup(self): pass Correct code: class Student: __slots__ = (\"name\", \"surname\") def __init__(self, name, surname): self.name = name self.surname = surname self.setup() def setup(self): pass Created by the classes checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: function-call-in-dataclass-default-argument] [Message: Do not perform function call <code>{name}</code> in dataclass defaults] What it does Checks for function calls in dataclass attribute defaults. Why is this bad? Function calls are only performed once, at definition time. The returned value is then reused by all instances of the dataclass. This can lead to unexpected behavior when the function call returns a mutable object, as changes to the object will be shared across all instances. If a field needs to be initialized with a mutable object, use the field(default_factory=...) pattern. Attributes whose default arguments are NewType calls where the original type is immutable are ignored. Example from dataclasses import dataclass def simple_list() -> list[int]: return [1, 2, 3, 4] @dataclass class A: mutable_default: list[int] = simple_list() Use instead: from dataclasses import dataclass, field def creating_list() -> list[int]: return [1, 2, 3, 4] @dataclass class A: mutable_default: list[int] = field(default_factory=creating_list)",
+  "option": {
+    "lint.flake8-bugbear.extend-immutable-calls": {
+      "option_description": "Additional callable functions to consider \"immutable\" when evaluating, e.g., the\nfunction-call-in-default-argument rule (B008) or function-call-in-dataclass-defaults\nrule (RUF009).\n\nExpects to receive a list of fully-qualified names (e.g., fastapi.Query, rather than\nQuery).\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-bugbear]\n# Allow default arguments like, e.g., `data: List[str] = fastapi.Query(None)`.\nextend-immutable-calls = [\"fastapi.Depends\", \"fastapi.Query\"]\n\n\n\n[lint.flake8-bugbear]\n# Allow default arguments like, e.g., `data: List[str] = fastapi.Query(None)`.\nextend-immutable-calls = [\"fastapi.Depends\", \"fastapi.Query\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

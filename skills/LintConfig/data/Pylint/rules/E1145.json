@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: async-context-manager-with-regular-with] [Message: Context manager '%s' is async and should be used with 'async with'.] Description: Used when an async context manager is used with a regular 'with' statement instead of 'async with'. Problematic code: from contextlib import asynccontextmanager @asynccontextmanager async def async_context(): yield with async_context(): # [async-context-manager-with-regular-with] print(\"This will cause an error at runtime\") Correct code: import asyncio from contextlib import asynccontextmanager @asynccontextmanager async def async_context(): yield async def main(): async with async_context(): print(\"This works correctly\") Related links: PEP 492 - Coroutines with async and await syntax contextlib.asynccontextmanager Created by the typecheck checker.",
+  "option": {}
+}

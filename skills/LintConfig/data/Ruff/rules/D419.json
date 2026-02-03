@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: empty-docstring] [Message: Docstring is empty] What it does Checks for empty docstrings. Why is this bad? An empty docstring is indicative of incomplete documentation. It should either be removed or replaced with a meaningful docstring. Example def average(values: list[float]) -> float: \"\"\"\"\"\" Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

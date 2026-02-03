@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: collapsible-if] [Message: Use a single <code>if</code> statement instead of nested <code>if</code> statements] What it does Checks for nested if statements that can be collapsed into a single if statement. Why is this bad? Nesting if statements leads to deeper indentation and makes code harder to read. Instead, combine the conditions into a single if statement with an and operator. Example if foo: if bar: ... Use instead: if foo and bar: ...",
+  "option": {
+    "lint.pycodestyle.max-line-length": {
+      "option_description": "The maximum line length to allow for line-too-long violations. By default,\nthis is set to the value of the line-length option.\n\nUse this option when you want to detect extra-long lines that the formatter can't automatically split by setting\npycodestyle.line-length to a value larger than line-length.\n\n# The formatter wraps lines at a length of 88.\nline-length = 88\n\n[pycodestyle]\n# E501 reports lines that exceed the length of 100.\nmax-line-length = 100\n\nThe length is determined by the number of characters per line, except for lines containing East Asian characters or emojis.\nFor these lines, the unicode width of each character is added up to determine the length.\n\nSee the line-too-long rule for more information.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pycodestyle]\nmax-line-length = 100\n\n\n\n[lint.pycodestyle]\nmax-line-length = 100",
+      "option_data_type": "int",
+      "default_value": "null",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "indent-width": {
+      "option_description": "The number of spaces per indentation level (tab).\n\nUsed by the formatter and when enforcing long-line violations (like E501) to determine the visual\nwidth of a tab.\n\nThis option changes the number of spaces the formatter inserts when\nusing soft-tabs (indent-style = space).\n\nPEP 8 recommends using 4 spaces per indentation level.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff]\nindent-width = 2\n\n\n\nindent-width = 2",
+      "option_data_type": "int",
+      "default_value": "4",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: suspicious-ftplib-import] [Message: <code>ftplib</code> and related modules are considered insecure. Use SSH, SFTP, SCP, or another encrypted protocol.] What it does Checks for imports of the ftplib module. Why is this bad? FTP is considered insecure. Instead, use SSH, SFTP, SCP, or another encrypted protocol. Example import ftplib",
+  "option": {}
+}

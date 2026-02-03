@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unbalanced-dict-unpacking] [Message: Possible unbalanced dict unpacking with %s: left side has %d label%s, right side has %d value%s] Description: Used when there is an unbalanced dict unpacking in assignment or for loop Problematic code: FRUITS = {\"apple\": 2, \"orange\": 3, \"mellon\": 10} for fruit, price in FRUITS.values(): # [unbalanced-dict-unpacking] print(fruit) Correct code: FRUITS = {\"apple\": 2, \"orange\": 3, \"mellon\": 10} for fruit, price in FRUITS.items(): print(fruit) Created by the variables checker.",
+  "option": {}
+}

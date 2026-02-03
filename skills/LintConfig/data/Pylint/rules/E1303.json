@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: format-needs-mapping] [Message: Expected mapping for format string, not %s] Description: Used when a format string that uses named conversion specifiers is used with an argument that is not a mapping. Problematic code: print(\"%(x)d %(y)d\" % [1, 2]) # [format-needs-mapping] Correct code: print(\"%(x)d %(y)d\" % {\"x\": 1, \"y\": 2}) Created by the string checker.",
+  "option": {}
+}

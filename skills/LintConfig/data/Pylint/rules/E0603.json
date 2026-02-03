@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: undefined-all-variable] [Message: Undefined variable name %r in __all__] Description: Used when an undefined variable name is referenced in __all__. Problematic code: __all__ = [\"get_fruit_colour\"] # [undefined-all-variable] def get_fruit_color(): pass Correct code: __all__ = [\"get_fruit_color\"] def get_fruit_color(): pass Related links: Importing * From a Package Created by the variables checker.",
+  "option": {}
+}

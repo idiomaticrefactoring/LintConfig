@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-max-builtin] [Message: Consider using '%s' instead of unnecessary if block] Description: Using the max builtin instead of a conditional improves readability and conciseness. Problematic code: def get_max(value1, value2): if value1 < value2: # [consider-using-max-builtin] value1 = value2 return value1 print(get_max(1, 2)) Correct code: print(max(1, 2)) Created by the refactoring checker.",
+  "option": {}
+}

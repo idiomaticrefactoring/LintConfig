@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: ambiguous-unicode-character-comment] [Message: Comment contains ambiguous {}. Did you mean {}?] What it does Checks for ambiguous Unicode characters in comments. Why is this bad? Some Unicode characters are visually similar to ASCII characters, but have different code points. For example, GREEK CAPITAL LETTER ALPHA (U+0391) is visually similar, but not identical, to the ASCII character A. The use of ambiguous Unicode characters can confuse readers, cause subtle bugs, and even make malicious code look harmless. In preview, this rule will also flag Unicode characters that are confusable with other, non-preferred Unicode characters. For example, the spec recommends GREEK CAPITAL LETTER OMEGA over OHM SIGN. You can omit characters from being flagged as ambiguous via the lint.allowed-confusables setting. Example foo() # nоqa # \"о\" is Cyrillic (`U+043E`) Use instead: foo() # noqa # \"o\" is Latin (`U+006F`)",
+  "option": {
+    "lint.allowed-confusables": {
+      "option_description": "A list of allowed \"confusable\" Unicode characters to ignore when\nenforcing RUF001, RUF002, and RUF003.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Allow minus-sign (U+2212), greek-small-letter-rho (U+03C1), and the asterisk-operator (U+2217),\n# which could be confused for \"-\", \"p\", and \"*\", respectively.\nallowed-confusables = [\"−\", \"ρ\", \"∗\"]\n\n\n\n[lint]\n# Allow minus-sign (U+2212), greek-small-letter-rho (U+03C1), and the asterisk-operator (U+2217),\n# which could be confused for \"-\", \"p\", and \"*\", respectively.\nallowed-confusables = [\"−\", \"ρ\", \"∗\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

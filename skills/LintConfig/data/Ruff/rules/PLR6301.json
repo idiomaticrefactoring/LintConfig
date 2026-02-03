@@ -1,0 +1,21 @@
+{
+  "description": "[Status: preview] [Name: no-self-use] [Message: Method <code>{method_name}</code> could be a function, class method, or static method] What it does Checks for the presence of unused self parameter in methods definitions. Why is this bad? Unused self parameters are usually a sign of a method that could be replaced by a function, class method, or static method. This rule exempts methods decorated with @typing.override. Converting an instance method into a static method or class method may cause type checkers to complain about a violation of the Liskov Substitution Principle if it means that the method now incompatibly overrides a method defined on a superclass. Explicitly decorating an overriding method with @override signals to Ruff that the method is intended to override a superclass method and that a type checker will enforce that it does so; Ruff therefore knows that it should not enforce rules about unused self parameters on such methods. Example class Person: def greeting(self): print(\"Greetings friend!\") Use instead: def greeting(): print(\"Greetings friend!\") or class Person: @staticmethod def greeting(): print(\"Greetings friend!\")",
+  "option": {
+    "lint.pep8-naming.classmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a class method (in addition to the builtin\n@classmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list takes a cls argument as its first argument.\n\nExpects to receive a list of fully-qualified names (e.g., pydantic.validator,\nrather than validator) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]\n\n\n\n[lint.pep8-naming]\nclassmethod-decorators = [\n    # Allow Pydantic's `@validator` decorator to trigger class method treatment.\n    \"pydantic.validator\",\n    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.\n    \"declared_attr\",\n    \"expression\",\n    \"comparator\",\n]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.pep8-naming.staticmethod-decorators": {
+      "option_description": "A list of decorators that, when applied to a method, indicate that the\nmethod should be treated as a static method (in addition to the builtin\n@staticmethod).\n\nFor example, Ruff will expect that any method decorated by a decorator\nin this list has no self or cls argument.\n\nExpects to receive a list of fully-qualified names (e.g., belay.Device.teardown,\nrather than teardown) or alternatively a plain name which is then matched against\nthe last segment in case the decorator itself consists of a dotted name.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]\n\n\n\n[lint.pep8-naming]\n# Allow Belay's `@Device.teardown` decorator to trigger static method treatment.\nstaticmethod-decorators = [\"belay.Device.teardown\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

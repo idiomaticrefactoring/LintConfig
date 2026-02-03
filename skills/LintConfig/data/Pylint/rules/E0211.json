@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-method-argument] [Message: Method %r has no argument] Description: Used when a method which should have the bound instance as first argument has no argument defined. Problematic code: class Person: def print_greeting(): # [no-method-argument] print(\"hello\") Correct code: class Person: def print_greeting(self): print(\"hello\") Created by the classes checker.",
+  "option": {}
+}

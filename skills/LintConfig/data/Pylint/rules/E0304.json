@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-bool-returned] [Message: __bool__ does not return bool] Description: Used when a __bool__ method returns something which is not a bool Problematic code: class CustomBool: \"\"\"__bool__ returns an int\"\"\" def __bool__(self): # [invalid-bool-returned] return 1 Correct code: class CustomBool: \"\"\"__bool__ returns `bool`\"\"\" def __bool__(self): return True Created by the classes checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: double-negation] [Message: Use <code>{expr}</code> instead of <code>not (not {expr})</code>] What it does Checks for double negations (i.e., multiple not operators). Why is this bad? A double negation is redundant and less readable than omitting the not operators entirely. Example not (not a) Use instead: a",
+  "option": {}
+}

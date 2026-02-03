@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: await-outside-async] [Message: 'await' should be used within an async function] Description: Emitted when await is used outside an async function. Problematic code: import asyncio def main(): await asyncio.sleep(1) # [await-outside-async] Correct code: import asyncio async def main(): await asyncio.sleep(1) Related links: PEP 492 Created by the typecheck checker.",
+  "option": {}
+}

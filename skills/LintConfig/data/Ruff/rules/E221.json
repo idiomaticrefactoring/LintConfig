@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: multiple-spaces-before-operator] [Message: Multiple spaces before operator] What it does Checks for extraneous whitespace before an operator. Why is this bad? According to PEP 8, operators should be surrounded by at most a single space on either side. Example a = 4 + 5 Use instead: a = 4 + 5",
+  "option": {}
+}

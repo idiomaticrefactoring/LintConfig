@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: needless-else] [Message: Empty <code>else</code> clause] What it does Checks for else clauses that only contains pass and ... statements. Why is this bad? Such an else clause does nothing and can be removed. Example if foo: bar() else: pass Use instead: if foo: bar()",
+  "option": {}
+}

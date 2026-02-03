@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: too-few-spaces-before-inline-comment] [Message: Insert at least two spaces before an inline comment] What it does Checks if inline comments are separated by at least two spaces. Why is this bad? An inline comment is a comment on the same line as a statement. Per PEP 8, inline comments should be separated by at least two spaces from the preceding statement. Example x = x + 1 # Increment x Use instead: x = x + 1 # Increment x x = x + 1 # Increment x",
+  "option": {}
+}

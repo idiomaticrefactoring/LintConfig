@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: math-constant] [Message: Replace <code>{literal}</code> with <code>math.{constant}</code>] What it does Checks for literals that are similar to constants in math module. Why is this bad? Hard-coding mathematical constants like π increases code duplication, reduces readability, and may lead to a lack of precision. Example A = 3.141592 * r**2 Use instead: A = math.pi * r**2",
+  "option": {}
+}

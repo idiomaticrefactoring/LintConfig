@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: super-without-brackets] [Message: Super call without brackets] Description: Used when a call to super does not have brackets and thus is not an actual call and does not work as expected. Problematic code: class Soup: @staticmethod def temp(): print(\"Soup is hot!\") class TomatoSoup(Soup): @staticmethod def temp(): super.temp() # [super-without-brackets] print(\"But tomato soup is even hotter!\") Correct code: class Soup: @staticmethod def temp(): print(\"Soup is hot!\") class TomatoSoup(Soup): @staticmethod def temp(): super().temp() print(\"But tomato soup is even hotter!\") Created by the classes checker.",
+  "option": {}
+}

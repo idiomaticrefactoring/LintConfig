@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: undocumented-public-method] [Message: Missing docstring in public method] What it does Checks for undocumented public method definitions. Why is this bad? Public methods should be documented via docstrings to outline their purpose and behavior. Generally, a method docstring should describe the method's behavior, arguments, side effects, exceptions, return values, and any other information that may be relevant to the user. If the codebase adheres to a standard format for method docstrings, follow that format for consistency. This rule exempts methods decorated with @typing.override, since it is a common practice to document a method on a superclass but not on an overriding method in a subclass. Example class Cat(Animal): def greet(self, happy: bool = True): if happy: print(\"Meow!\") else: raise ValueError(\"Tried to greet an unhappy cat.\") Use instead (in the NumPy docstring format): class Cat(Animal): def greet(self, happy: bool = True): \"\"\"Print a greeting from the cat. Parameters ---------- happy : bool, optional Whether the cat is happy, is True by default. Raises ------ ValueError If the cat is not happy. \"\"\" if happy: print(\"Meow!\") else: raise ValueError(\"Tried to greet an unhappy cat.\") Or (in the Google docstring format): class Cat(Animal): def greet(self, happy: bool = True): \"\"\"Print a greeting from the cat. Args: happy: Whether the cat is happy, is True by default. Raises: ValueError: If the cat is not happy. \"\"\" if happy: print(\"Meow!\") else: raise ValueError(\"Tried to greet an unhappy cat.\")",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

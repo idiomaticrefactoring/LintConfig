@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-slice-index] [Message: Slice index is not an int, None, or instance with __index__] Description: Used when a slice index is not an integer, None, or an object with an __index__ method. Problematic code: LETTERS = [\"a\", \"b\", \"c\", \"d\"] FIRST_THREE = LETTERS[:\"3\"] # [invalid-slice-index] Correct code: LETTERS = [\"a\", \"b\", \"c\", \"d\"] FIRST_THREE = LETTERS[:3] Created by the typecheck checker.",
+  "option": {}
+}

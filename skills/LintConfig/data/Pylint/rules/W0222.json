@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: signature-differs] [Message: Signature differs from %s %r method] Description: Used when a method signature is different than in the implemented interface or in an overridden method. Problematic code: class Animal: def run(self, distance=0): print(f\"Ran {distance} km!\") class Dog(Animal): def run(self, distance): # [signature-differs] super(Animal, self).run(distance) print(\"Fetched that stick, wuff !\") Correct code: class Animal: def run(self, distance=0): print(f\"Ran {distance} km!\") class Dog(Animal): def run(self, distance=0): super(Animal, self).run(distance) print(\"Fetched that stick, wuff !\") Created by the classes checker.",
+  "option": {}
+}

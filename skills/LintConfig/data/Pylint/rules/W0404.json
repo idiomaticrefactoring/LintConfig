@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: reimported] [Message: Reimport %r (imported line %s)] Description: Used when a module is imported more than once. Problematic code: import re import re # [reimported] Correct code: import re Created by the imports checker.",
+  "option": {}
+}

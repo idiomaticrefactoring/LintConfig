@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: subprocess-popen-preexec-fn] [Message: Using preexec_fn keyword which may be unsafe in the presence of threads] Description: The preexec_fn parameter is not safe to use in the presence of threads in your application. The child process could deadlock before exec is called. If you must use it, keep it trivial! Minimize the number of libraries you call into. See https://docs.python.org/3/library/subprocess.html#popen-constructor Problematic code: import subprocess def foo(): pass subprocess.Popen(preexec_fn=foo) # [subprocess-popen-preexec-fn] Correct code: import subprocess subprocess.Popen() Created by the stdlib checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pytest-unnecessary-asyncio-mark-on-fixture] [Message: <code>pytest.mark.asyncio</code> is unnecessary for fixtures] What it does Checks for unnecessary @pytest.mark.asyncio decorators applied to fixtures. Why is this bad? pytest.mark.asyncio is unnecessary for fixtures. Example import pytest @pytest.mark.asyncio() @pytest.fixture() async def my_fixture(): return 0 Use instead: import pytest @pytest.fixture() async def my_fixture(): return 0",
+  "option": {}
+}

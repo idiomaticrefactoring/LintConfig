@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-set-comprehension] [Message: Consider using a set comprehension] Description: Although there is nothing syntactically wrong with this code, it is hard to read and can be simplified to a set comprehension. Also it is faster since you don't need to create another transient list Problematic code: NUMBERS = [1, 2, 2, 3, 4, 4] # +1: [consider-using-set-comprehension] UNIQUE_EVEN_NUMBERS = set([number for number in NUMBERS if number % 2 == 0]) Correct code: NUMBERS = [1, 2, 2, 3, 4, 4] UNIQUE_EVEN_NUMBERS = {number for number in NUMBERS if number % 2 == 0} Additional details: pyupgrade or ruff can fix this issue automatically. Created by the refactoring checker.",
+  "option": {}
+}

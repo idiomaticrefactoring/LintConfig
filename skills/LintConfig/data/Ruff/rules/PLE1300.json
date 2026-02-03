@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-string-format-character] [Message: Unsupported format character '{format_char}'] What it does Checks for unsupported format types in format strings. Why is this bad? An invalid format string character will result in an error at runtime. Example # `z` is not a valid format type. print(\"%z\" % \"1\") print(\"{:z}\".format(\"1\"))",
+  "option": {}
+}

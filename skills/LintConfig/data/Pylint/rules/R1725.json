@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: super-with-arguments] [Message: Consider using Python 3 style super() without arguments] Description: Emitted when calling the super() builtin with the current class and instance. On Python 3 these arguments are the default and they can be omitted. Problematic code: class Fruit: pass class Orange(Fruit): def __init__(self): super(Orange, self).__init__() # [super-with-arguments] Correct code: class Fruit: pass class Orange(Fruit): def __init__(self): super().__init__() Created by the refactoring checker.",
+  "option": {}
+}

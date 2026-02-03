@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-builtin] [Message: Used builtin function %s] Description: Used when a disallowed builtin function is used (see the bad-function option). Usual disallowed functions are the ones like map, or filter , where Python offers now some cleaner alternative like list comprehension. Problematic code: numbers = list(map(lambda x: 2 * x, [1, 2, 3])) # [bad-builtin] print(numbers) Correct code: numbers = [2 * x for x in [1, 2, 3]] print(numbers) Configuration file: [MAIN] load-plugins = pylint.extensions.bad_builtin Note This message is emitted by the optional 'deprecated_builtins' checker, which requires the pylint.extensions.bad_builtin plugin to be loaded. Created by the deprecated_builtins checker.",
+  "option": {}
+}

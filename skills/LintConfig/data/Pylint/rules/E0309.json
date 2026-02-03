@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-hash-returned] [Message: __hash__ does not return int] Description: Used when a __hash__ method returns something which is not an integer Problematic code: class CustomHash: \"\"\"__hash__ returns dict\"\"\" def __hash__(self): # [invalid-hash-returned] return {} Correct code: class CustomHash: \"\"\"__hash__ returns `int`\"\"\" def __hash__(self): return 19 Created by the classes checker.",
+  "option": {}
+}

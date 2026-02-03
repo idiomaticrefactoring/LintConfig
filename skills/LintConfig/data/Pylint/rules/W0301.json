@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-semicolon] [Message: Unnecessary semicolon] Description: Used when a statement is ended by a semi-colon (\";\"), which isn't necessary (that's python, not C ;). Problematic code: print(\"Hello World!\"); # [unnecessary-semicolon] Correct code: print(\"Hello World!\") Created by the format checker.",
+  "option": {}
+}

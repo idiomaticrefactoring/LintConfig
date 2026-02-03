@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unhashable-member] [Message: '%s' is unhashable and can't be used as a %s in a %s] Description: Emitted when a dict key or set member is not hashable (i.e. doesn't define __hash__ method). Problematic code: # Print the number of apples: print({\"apple\": 42}[[\"apple\"]]) # [unhashable-member] Correct code: # Print the number of apples: print({\"apple\": 42}[\"apple\"]) Created by the typecheck checker.",
+  "option": {}
+}

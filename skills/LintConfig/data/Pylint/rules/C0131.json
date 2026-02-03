@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: typevar-double-variance] [Message: TypeVar cannot be both covariant and contravariant] Description: Emitted when both the \"covariant\" and \"contravariant\" keyword arguments are set to \"True\" in a TypeVar. Problematic code: from typing import TypeVar T = TypeVar(\"T\", covariant=True, contravariant=True) # [typevar-double-variance] Correct code: from typing import TypeVar T_co = TypeVar(\"T_co\", covariant=True) T_contra = TypeVar(\"T_contra\", contravariant=True) Created by the basic checker.",
+  "option": {}
+}

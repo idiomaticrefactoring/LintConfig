@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: nested-min-max] [Message: Do not use nested call of '%s'; it's possible to do '%s' instead] Description: Nested calls ``min(1, min(2, 3))`` can be rewritten as ``min(1, 2, 3)``. Problematic code: print(min(1, min(2, 3))) # [nested-min-max] Correct code: print(min(1, 2, 3)) Created by the nested_min_max checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: useless-import-alias] [Message: Import alias does not rename original package] What it does Checks for import aliases that do not rename the original package. This rule does not apply in __init__.py files. Why is this bad? The import alias is redundant and should be removed to avoid confusion. Fix safety This fix is marked as always unsafe because the user may be intentionally re-exporting the import. While statements like import numpy as numpy appear redundant, they can have semantic meaning in certain contexts. Example import numpy as numpy Use instead: import numpy as np or import numpy",
+  "option": {
+    "lint.isort.required-imports": {
+      "option_description": "Add the specified import line to all files.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]\n\n\n\n[lint.isort]\nrequired-imports = [\"from __future__ import annotations\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

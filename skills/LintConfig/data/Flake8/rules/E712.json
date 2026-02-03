@@ -1,0 +1,4 @@
+{
+  "description": "comparison to True should be ‘if cond is True:’ or ‘if cond:’",
+  "option": {}
+}

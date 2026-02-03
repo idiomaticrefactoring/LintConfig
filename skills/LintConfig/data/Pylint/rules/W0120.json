@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-else-on-loop] [Message: Else clause on loop without a break statement, remove the else and de-indent all the code inside it] Description: Loops should only have an else clause if they can exit early with a break statement, otherwise the statements under else should be on the same scope as the loop itself. Problematic code: def find_even_number(numbers): for x in numbers: if x % 2 == 0: return x else: # [useless-else-on-loop] print(\"Did not find an even number\") Correct code: def find_even_number(numbers): for x in numbers: if x % 2 == 0: return x print(\"Did not find an even number\") Created by the basic checker.",
+  "option": {}
+}

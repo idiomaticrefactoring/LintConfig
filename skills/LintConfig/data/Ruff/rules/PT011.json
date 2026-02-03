@@ -1,0 +1,21 @@
+{
+  "description": "[Status: stable] [Name: pytest-raises-too-broad] [Message: <code>pytest.raises({exception})</code> is too broad, set the <code>match</code> parameter or use a more specific exception] What it does Checks for pytest.raises calls without a match or check parameter. Why is this bad? pytest.raises(Error) will catch any Error and may catch errors that are unrelated to the code under test. To avoid this, pytest.raises should be called with a match parameter (to constrain the exception message) or a check parameter (to constrain the exception itself). The exception names that require a match or check parameter can be configured via the lint.flake8-pytest-style.raises-require-match-for and lint.flake8-pytest-style.raises-extend-require-match-for settings. Example import pytest def test_foo(): with pytest.raises(ValueError): ... # empty string is also an error with pytest.raises(ValueError, match=\"\"): ... Use instead: import pytest def test_foo(): with pytest.raises(ValueError, match=\"expected message\"): ... Or, for pytest 8.4.0 and later: import pytest def test_foo(): with pytest.raises(OSError, check=lambda e: e.errno == 42): ...",
+  "option": {
+    "lint.flake8-pytest-style.raises-require-match-for": {
+      "option_description": "List of exception names that require a match= parameter in a\npytest.raises() call.\n\nSupports glob patterns. For more information on the glob syntax, refer\nto the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-pytest-style]\nraises-require-match-for = [\"requests.RequestException\"]\n\n\n\n[lint.flake8-pytest-style]\nraises-require-match-for = [\"requests.RequestException\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[\"BaseException\", \"Exception\", \"ValueError\", \"OSError\", \"IOError\", \"EnvironmentError\", \"socket.error\"]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-pytest-style.raises-extend-require-match-for": {
+      "option_description": "List of additional exception names that require a match= parameter in a\npytest.raises() call. This extends the default list of exceptions\nthat require a match= parameter.\nThis option is useful if you want to extend the default list of\nexceptions that require a match= parameter without having to specify\nthe entire list.\nNote that this option does not remove any exceptions from the default\nlist.\n\nSupports glob patterns. For more information on the glob syntax, refer\nto the globset documentation.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-pytest-style]\nraises-extend-require-match-for = [\"requests.RequestException\"]\n\n\n\n[lint.flake8-pytest-style]\nraises-extend-require-match-for = [\"requests.RequestException\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

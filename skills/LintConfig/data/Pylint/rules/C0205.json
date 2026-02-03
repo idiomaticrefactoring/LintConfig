@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: single-string-used-for-slots] [Message: Class __slots__ should be a non-string iterable] Description: Used when a class __slots__ is a simple string, rather than an iterable. Problematic code: class Fruit: # [single-string-used-for-slots] __slots__ = \"name\" def __init__(self, name): self.name = name Correct code: class Fruit: __slots__ = (\"name\",) def __init__(self, name): self.name = name Created by the classes checker.",
+  "option": {}
+}

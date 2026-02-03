@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: singleton-comparison] [Message: Comparison %s should be %s] Description: Used when an expression is compared to singleton values like True, False or None. Problematic code: game_won = True if game_won == True: # [singleton-comparison] print(\"Game won !\") Correct code: game_won = True if game_won: print(\"Game won !\") Related links: PEP 285 – Adding a bool type Created by the basic checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-format-string-argument] [Message: Unused format argument %r] Description: Used when a PEP 3101 format string that uses named fields is used with an argument that is not required by the format string. Problematic code: print(\"{x} {y}\".format(x=1, y=2, z=3)) # [unused-format-string-argument] Correct code: add_format_target.py: print(\"{x} {y} {z}\".format(x=1, y=2, z=3)) remove_unused_args.py: print(\"{x} {y}\".format(x=1, y=2)) Created by the string checker.",
+  "option": {}
+}

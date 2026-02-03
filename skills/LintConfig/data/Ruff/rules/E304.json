@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: blank-line-after-decorator] [Message: Blank lines found after function decorator ({lines})] What it does Checks for extraneous blank line(s) after function decorators. Why is this bad? There should be no blank lines between a decorator and the object it is decorating. Example class User(object): @property def name(self): pass Use instead: class User(object): @property def name(self): pass",
+  "option": {}
+}

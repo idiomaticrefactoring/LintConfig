@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unused-import] [Message: Unused %s] Description: Used when an imported module or variable is not used. Problematic code: from logging import getLogger from pathlib import Path # [unused-import] LOGGER = getLogger(__name__) Correct code: from logging import getLogger LOGGER = getLogger(__name__) Additional details: By default, this check is skipped for __init__.py files, as they often contain imports from submodules for the convenience of end users. While these imports are not used within __init__.py, they serve the purpose of providing intuitive import paths for the module's important classes and constants. Related links: --init-import Created by the variables checker.",
+  "option": {}
+}

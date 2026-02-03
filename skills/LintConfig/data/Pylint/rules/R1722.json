@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: consider-using-sys-exit] [Message: Consider using 'sys.exit' instead] Description: Contrary to 'exit()' or 'quit()', 'sys.exit' does not rely on the site module being available (as the 'sys' module is always available). Problematic code: if __name__ == \"__main__\": user = input(\"Enter user name: \") print(f\"Hello, {user}\") exit(0) # [consider-using-sys-exit] Correct code: import sys if __name__ == \"__main__\": user = input(\"Enter user name: \") print(f\"Hello, {user}\") sys.exit(0) Created by the refactoring checker.",
+  "option": {}
+}

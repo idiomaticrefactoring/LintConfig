@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-open-mode] [Message: \"%s\" is not a valid mode for open.] Description: Python supports: r, w, a[, x] modes with b, +, and U (only with r) options. See https://docs.python.org/3/library/functions.html#open Problematic code: def open_and_get_content(file_path): with open(file_path, \"rwx\") as file: # [bad-open-mode] return file.read() Correct code: def open_and_get_content(file_path): with open(file_path, \"r\") as file: return file.read() Created by the stdlib checker.",
+  "option": {}
+}

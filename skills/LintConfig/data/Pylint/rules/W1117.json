@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: kwarg-superseded-by-positional-arg] [Message: %r will be included in %r since a positional-only parameter with this name already exists] Description: Emitted when a function is called with a keyword argument that has the same name as a positional-only parameter and the function contains a keyword variadic parameter dict. Problematic code: def print_name(name=\"Sarah\", /, **kwds): print(name) print_name(name=\"Jacob\") # [kwarg-superseded-by-positional-arg] # Will print \"Sarah\" Correct code: def print_name(name=\"Sarah\", /, **kwds): print(name) print_name(\"Jacob\") # Will print \"Jacob\" Created by the typecheck checker.",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: wildcard-import] [Message: Wildcard import %s] Description: Used when `from module import *` is detected. Problematic code: from abc import * # [wildcard-import] Correct code: # Either import module or # only import required objects from module. import abc from abc import ABC, abstractmethod Created by the imports checker.",
+  "option": {}
+}

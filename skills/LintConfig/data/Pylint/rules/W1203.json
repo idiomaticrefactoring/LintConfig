@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: logging-fstring-interpolation] [Message: Use %s formatting in logging functions] Description: Used when a logging statement has a call form of \"logging.<logging method>(f\"...\")\".Use another type of string formatting instead. You can use % formatting but leave interpolation to the logging function by passing the parameters as arguments. If logging-format-interpolation is disabled then you can use str.format. If logging-not-lazy is disabled then you can use % formatting as normal. Problematic code: import logging import sys logging.error(f\"Python version: {sys.version}\") # [logging-fstring-interpolation] Correct code: import logging import sys logging.error(\"Python version: %s\", sys.version) Additional details: This message permits to allow f-string in logging and still be warned of logging-format-interpolation. Related links: logging variable data Rationale Created by the logging checker.",
+  "option": {}
+}

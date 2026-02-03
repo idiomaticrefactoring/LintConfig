@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: yield-outside-function] [Message: Yield outside function] Description: Used when a \"yield\" statement is found outside a function or method. Problematic code: for i in range(10): yield i # [yield-outside-function] Correct code: def one_to_ten(): for i in range(10): yield i Created by the basic checker.",
+  "option": {}
+}

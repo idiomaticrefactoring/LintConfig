@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: format-combined-specification] [Message: Format string contains both automatic field numbering and manual field specification] Description: Used when a PEP 3101 format string contains both automatic field numbering (e.g. '{}') and manual field specification (e.g. '{0}'). Problematic code: print(\"{} {1}\".format(\"hello\", \"world\")) # [format-combined-specification] Correct code: index_formatting.py: print(\"{0} {1}\".format(\"hello\", \"world\")) order_formatting.py: print(\"{} {}\".format(\"hello\", \"world\")) Created by the string checker.",
+  "option": {}
+}

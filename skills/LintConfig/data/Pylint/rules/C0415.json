@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: import-outside-toplevel] [Message: Import outside toplevel (%s)] Description: Used when an import statement is used anywhere other than the module toplevel. Move this import to the top of the file. Problematic code: def print_python_version(): import sys # [import-outside-toplevel] print(sys.version_info) Correct code: import sys def print_python_version(): print(sys.version_info) Created by the imports checker.",
+  "option": {}
+}

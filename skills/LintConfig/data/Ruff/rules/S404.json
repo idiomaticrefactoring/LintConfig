@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: suspicious-subprocess-import] [Message: <code>subprocess</code> module is possibly insecure] What it does Checks for imports of the subprocess module. Why is this bad? It is possible to inject malicious commands into subprocess calls. Consider possible security implications associated with this module. Example import subprocess",
+  "option": {}
+}

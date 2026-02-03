@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-self-argument] [Message: Method %r should have \"self\" as first argument] Description: Used when a method has an attribute different the \"self\" as first argument. This is considered as an error since this is a so common convention that you shouldn't break it! Problematic code: class Fruit: def __init__(this, name): # [no-self-argument] this.name = name Correct code: class Fruit: def __init__(self, name): self.name = name Created by the classes checker.",
+  "option": {}
+}

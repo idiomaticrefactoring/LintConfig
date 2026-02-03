@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-class-object] [Message: Invalid assignment to '__class__'. Should be a class definition but got a '%s'] Description: Used when an invalid object is assigned to a __class__ property. Only a class is permitted. Problematic code: class Apple: pass Apple.__class__ = 1 # [invalid-class-object] Correct code: class Apple: pass class RedDelicious: pass Apple.__class__ = RedDelicious Created by the classes checker.",
+  "option": {}
+}

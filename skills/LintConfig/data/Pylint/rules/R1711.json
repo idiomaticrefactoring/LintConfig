@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: useless-return] [Message: Useless return at end of function or method] Description: Emitted when a single \"return\" or \"return None\" statement is found at the end of function or method definition. This statement can safely be removed because Python will implicitly return None Problematic code: import sys def print_python_version(): # [useless-return] print(sys.version) return None Correct code: import sys def print_python_version(): print(sys.version) Created by the refactoring checker.",
+  "option": {}
+}

@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-multiline-docstring] [Message: One-line docstring should fit on one line] What it does Checks for single-line docstrings that are broken across multiple lines. Why is this bad? PEP 257 recommends that docstrings that can fit on one line should be formatted on a single line, for consistency and readability. Example def average(values: list[float]) -> float: \"\"\" Return the mean of the given values. \"\"\" Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\" Fix safety The fix is marked as unsafe because it could affect tools that parse docstrings, documentation generators, or custom introspection utilities that rely on specific docstring formatting.",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

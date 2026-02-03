@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: redeclared-assigned-name] [Message: Redeclared variable <code>{name}</code> in assignment] What it does Checks for declared assignments to the same variable multiple times in the same assignment. Why is this bad? Assigning a variable multiple times in the same assignment is redundant, as the final assignment to the variable is what the value will be. Example a, b, a = (1, 2, 3) print(a) # 3 Use instead: # this is assuming you want to assign 3 to `a` _, b, a = (1, 2, 3) print(a) # 3",
+  "option": {
+    "lint.dummy-variable-rgx": {
+      "option_description": "A regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches _, __, and _var, but not _var_.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"\n\n\n\n[lint]\n# Only ignore variables named \"_\".\ndummy-variable-rgx = \"^_$\"",
+      "option_data_type": "str",
+      "default_value": "\"^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$\"",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

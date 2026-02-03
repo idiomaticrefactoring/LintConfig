@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-else-continue] [Message: Unnecessary \"%s\" after \"continue\", %s] Description: Used in order to highlight an unnecessary block of code following an if containing a continue statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a continue statement. Problematic code: def even_number_under(n: int): for i in range(n): if i % 2 == 1: # [no-else-continue] continue else: yield i Correct code: def even_number_under(n: int): for i in range(n): if i % 2 == 1: continue yield i Created by the refactoring checker.",
+  "option": {}
+}

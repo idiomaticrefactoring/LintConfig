@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: new-line-after-last-paragraph] [Message: Multi-line docstring closing quotes should be on a separate line] What it does Checks for multi-line docstrings whose closing quotes are not on their own line. Why is this bad? PEP 257 recommends that the closing quotes of a multi-line docstring be on their own line, for consistency and compatibility with documentation tools that may need to parse the docstring. Example def sort_list(l: List[int]) -> List[int]: \"\"\"Return a sorted copy of the list. Sort the list in ascending order and return a copy of the result using the bubble sort algorithm.\"\"\" Use instead: def sort_list(l: List[int]) -> List[int]: \"\"\"Return a sorted copy of the list. Sort the list in ascending order and return a copy of the result using the bubble sort algorithm. \"\"\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

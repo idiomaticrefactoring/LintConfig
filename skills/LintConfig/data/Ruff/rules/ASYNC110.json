@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: async-busy-wait] [Message: Use <code>{module}.Event</code> instead of awaiting <code>{module}.sleep</code> in a <code>while</code> loop] What it does Checks for the use of an async sleep function in a while loop. Why is this bad? Busy-waiting for a condition in a loop forces a tradeoff between efficiency and latency: shorter sleep times improve responsiveness but waste more CPU cycles, while longer sleep times reduce CPU usage but delay reaction to state changes. Waiting on an Event object like asyncio.Event, trio.Event, or anyio.Event eliminates this tradeoff, allowing immediate response with minimal wasted CPU time. Example import asyncio DONE = False async def func(): while not DONE: await asyncio.sleep(1) Use instead: import asyncio DONE = asyncio.Event() async def func(): await DONE.wait()",
+  "option": {}
+}

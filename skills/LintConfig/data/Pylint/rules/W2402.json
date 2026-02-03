@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: non-ascii-file-name] [Message: %s name \"%s\" contains a non-ASCII character.] Description: Under python 3.5, PEP 3131 allows non-ascii identifiers, but not non-ascii file names.Since Python 3.5, even though Python supports UTF-8 files, some editors or tools don't. Problematic code: bàd.py: # [non-ascii-file-name] not_bétter.py: # [non-ascii-file-name] Correct code: __init__.py: bad.py: not_better.py: Related links: PEP 489 PEP 672 Python issue 20485 Created by the nonascii-checker checker.",
+  "option": {}
+}

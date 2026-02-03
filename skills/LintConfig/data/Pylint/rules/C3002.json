@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unnecessary-direct-lambda-call] [Message: Lambda expression called directly. Execute the expression inline instead.] Description: Used when a lambda expression is directly called rather than executing its contents inline. Problematic code: y = (lambda x: x**2 + 2 * x + 1)(a) # [unnecessary-direct-lambda-call] Correct code: y = a**2 + 2 * a + 1 Created by the lambda-expressions checker.",
+  "option": {}
+}

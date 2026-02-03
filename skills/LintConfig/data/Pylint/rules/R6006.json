@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-typehint-argument] [Message: Type `%s` is used more than once in union type annotation. Remove redundant typehints.] Description: Duplicated type arguments will be skipped by `mypy` tool, therefore should be removed to avoid confusion. Problematic code: from typing import Union sweet_count: Union[int, str, int] = 42 # [redundant-typehint-argument] Correct code: from typing import Union sweet_count: Union[str, int] = 42 Configuration file: [main] load-plugins=pylint.extensions.typing Note This message is emitted by the optional 'typing' checker, which requires the pylint.extensions.typing plugin to be loaded. Created by the typing checker.",
+  "option": {}
+}

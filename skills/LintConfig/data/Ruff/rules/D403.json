@@ -1,0 +1,13 @@
+{
+  "description": "[Status: stable] [Name: first-word-uncapitalized] [Message: First word of the docstring should be capitalized: <code>{}</code> -> <code>{}</code>] What it does Checks for docstrings that do not start with a capital letter. Why is this bad? The first non-whitespace character in a docstring should be capitalized for grammatical correctness and consistency. Example def average(values: list[float]) -> float: \"\"\"return the mean of the given values.\"\"\" Use instead: def average(values: list[float]) -> float: \"\"\"Return the mean of the given values.\"\"\"",
+  "option": {
+    "lint.pydocstyle.ignore-decorators": {
+      "option_description": "Ignore docstrings for functions or methods decorated with the\nspecified fully-qualified decorators.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]\n\n\n\n[lint.pydocstyle]\nignore-decorators = [\"typing.overload\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

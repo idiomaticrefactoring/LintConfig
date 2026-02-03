@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: wrong-import-position] [Message: Import \"%s\" should be placed at the top of the module] Description: Used when code and imports are mixed. Problematic code: import os home = os.environ[\"HOME\"] import sys # [wrong-import-position] print(f\"Home directory is {home}\", file=sys.stderr) Correct code: import os import sys home = os.environ[\"HOME\"] print(f\"Home directory is {home}\", file=sys.stderr) Created by the imports checker.",
+  "option": {}
+}

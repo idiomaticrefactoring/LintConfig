@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unrecognized-inline-option] [Message: Unrecognized file option %r] Description: Used when an unknown inline option is encountered. Problematic code: # +1: [unrecognized-inline-option] # pylint:applesoranges=1 Correct code: # pylint: enable=too-many-public-methods Created by the main checker.",
+  "option": {}
+}

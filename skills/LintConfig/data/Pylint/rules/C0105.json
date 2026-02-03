@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: typevar-name-incorrect-variance] [Message: Type variable name does not reflect variance%s] Description: Emitted when a TypeVar name doesn't reflect its type variance. According to PEP8, it is recommended to add suffixes '_co' and '_contra' to the variables used to declare covariant or contravariant behaviour respectively. Invariant (default) variables do not require a suffix. The message is also emitted when invariant variables do have a suffix. Problematic code: from typing import TypeVar T_co = TypeVar(\"T_co\") # [typevar-name-incorrect-variance] Correct code: from typing import TypeVar T = TypeVar(\"T\") Additional details: When naming type vars, only use a _co suffix when indicating covariance or _contra when indicating contravariance. Created by the basic checker.",
+  "option": {}
+}

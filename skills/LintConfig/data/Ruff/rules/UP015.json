@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redundant-open-modes] [Message: Unnecessary mode argument] What it does Checks for redundant open mode arguments. Why is this bad? Redundant open mode arguments are unnecessary and should be removed to avoid confusion. Example with open(\"foo.txt\", \"r\") as f: ... Use instead: with open(\"foo.txt\") as f: ...",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: deprecated-decorator] [Message: Using deprecated decorator %s()] Description: The decorator is marked as deprecated and will be removed in the future. Problematic code: import abc class Animal: @abc.abstractclassmethod # [deprecated-decorator] def breath(cls): pass Correct code: import abc class Animal: @abc.classmethod @abc.abstractmethod def breath(cls): pass Configuration file: [main] py-version = 3.3 Additional details: The actual replacement needs to be studied on a case by case basis by reading the deprecation warning or the release notes. Created by the stdlib checker.",
+  "option": {}
+}

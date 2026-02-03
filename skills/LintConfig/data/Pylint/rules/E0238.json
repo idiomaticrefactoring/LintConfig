@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-slots] [Message: Invalid __slots__ object] Description: Used when an invalid __slots__ is found in class. Only a string, an iterable or a sequence is permitted. Problematic code: class Person: # [invalid-slots] __slots__ = 42 Correct code: class Person: __slots__ = (\"name\", \"age\") Created by the classes checker.",
+  "option": {}
+}

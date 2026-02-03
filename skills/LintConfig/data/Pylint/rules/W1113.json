@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: keyword-arg-before-vararg] [Message: Keyword argument before variable positional arguments list in the definition of %s function] Description: When defining a keyword argument before variable positional arguments, one can end up in having multiple values passed for the aforementioned parameter in case the method is called with keyword arguments. Problematic code: def func(x=None, *args): # [keyword-arg-before-vararg] return [x, *args] Correct code: def func(*args, x=None): return [*args, x] Created by the typecheck checker.",
+  "option": {}
+}

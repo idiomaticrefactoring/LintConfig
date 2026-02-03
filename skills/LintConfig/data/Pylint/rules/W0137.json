@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: break-in-finally] [Message: 'break' discouraged inside 'finally' clause] Description: Emitted when the `break` keyword is found inside a finally clause. This will raise a SyntaxWarning starting in Python 3.14. Problematic code: while True: try: pass finally: break # [break-in-finally] Correct code: while True: try: pass except ValueError: pass else: break Related links: Python 3 docs 'finally' clause PEP 765 - Disallow return/break/continue that exit a finally block Created by the basic checker.",
+  "option": {}
+}

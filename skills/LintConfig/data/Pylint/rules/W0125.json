@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: using-constant-test] [Message: Using a conditional statement with a constant value] Description: Emitted when a conditional statement (If or ternary if) uses a constant value for its test. This might not be what the user intended to do. Problematic code: if 0: # [using-constant-test] print(\"This code is never executed.\") if 1: # [using-constant-test] print(\"This code is always executed.\") Correct code: print(\"This code is always executed.\") Created by the basic checker.",
+  "option": {}
+}

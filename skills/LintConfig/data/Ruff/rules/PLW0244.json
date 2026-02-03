@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: redefined-slots-in-subclass] [Message: Slot <code>{slot_name}</code> redefined from base class <code>{base}</code>] What it does Checks for a re-defined slot in a subclass. Why is this bad? If a class defines a slot also defined in a base class, the instance variable defined by the base class slot is inaccessible (except by retrieving its descriptor directly from the base class). Example class Base: __slots__ = (\"a\", \"b\") class Subclass(Base): __slots__ = (\"a\", \"d\") # slot \"a\" redefined Use instead: class Base: __slots__ = (\"a\", \"b\") class Subclass(Base): __slots__ = \"d\"",
+  "option": {}
+}

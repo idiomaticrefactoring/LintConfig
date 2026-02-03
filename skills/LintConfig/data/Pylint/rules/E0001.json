@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: syntax-error] [Message: %s] Description: Used when a syntax error is raised for a module. Problematic code: fruit_stock = { 'apple': 42, 'orange': 21 # [syntax-error] 'banana': 12 } Correct code: fruit_stock = {\"apple\": 42, \"orange\": 21, \"banana\": 12} Additional details: The python's ast builtin module cannot parse your code if there's a syntax error, so if there's a syntax error other messages won't be available at all. Related links: Why can't pylint recover from a syntax error ? Created by the main checker.",
+  "option": {}
+}

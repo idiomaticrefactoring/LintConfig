@@ -1,0 +1,53 @@
+{
+  "description": "[Status: stable] [Name: typing-only-third-party-import] [Message: Move third-party import <code>{}</code> into a type-checking block] What it does Checks for third-party imports that are only used for type annotations, but aren't defined in a type-checking block. Why is this bad? Unused imports add a performance overhead at runtime, and risk creating import cycles. If an import is only used in typing-only contexts, it can instead be imported conditionally under an if TYPE_CHECKING: block to minimize runtime overhead. If lint.flake8-type-checking.quote-annotations is set to true, annotations will be wrapped in quotes if doing so would enable the corresponding import to be moved into an if TYPE_CHECKING: block. If a class requires that type annotations be available at runtime (as is the case for Pydantic, SQLAlchemy, and other libraries), consider using the lint.flake8-type-checking.runtime-evaluated-base-classes and lint.flake8-type-checking.runtime-evaluated-decorators settings to mark them as such. If lint.future-annotations is set to true, from __future__ import annotations will be added if doing so would enable an import to be moved into an if TYPE_CHECKING: block. This takes precedence over the lint.flake8-type-checking.quote-annotations setting described above if both settings are enabled. Example from __future__ import annotations import pandas as pd def func(df: pd.DataFrame) -> int: return len(df) Use instead: from __future__ import annotations from typing import TYPE_CHECKING if TYPE_CHECKING: import pandas as pd def func(df: pd.DataFrame) -> int: return len(df)",
+  "option": {
+    "lint.flake8-type-checking.quote-annotations": {
+      "option_description": "Whether to add quotes around type annotations, if doing so would allow\nthe corresponding import to be moved into a type-checking block.\n\nFor example, in the following, Python requires that Sequence be\navailable at runtime, despite the fact that it's only used in a type\nannotation:\n\nfrom collections.abc import Sequence\n\n\ndef func(value: Sequence[int]) -> None:\n    ...\n\nIn other words, moving from collections.abc import Sequence into an\nif TYPE_CHECKING: block above would cause a runtime error, as the\ntype would no longer be available at runtime.\n\nBy default, Ruff will respect such runtime semantics and avoid moving\nthe import to prevent such runtime errors.\n\nSetting quote-annotations to true will instruct Ruff to add quotes\naround the annotation (e.g., \"Sequence[int]\"), which in turn enables\nRuff to move the import into an if TYPE_CHECKING: block, like so:\n\nfrom typing import TYPE_CHECKING\n\nif TYPE_CHECKING:\n    from collections.abc import Sequence\n\n\ndef func(value: \"Sequence[int]\") -> None:\n    ...\n\nNote that this setting has no effect when from __future__ import annotations\nis present, as __future__ annotations are always treated equivalently\nto quoted annotations. Similarly, this setting has no effect on Python\nversions after 3.14 because these annotations are also deferred.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-type-checking]\n# Add quotes around type annotations, if doing so would allow\n# an import to be moved into a type-checking block.\nquote-annotations = true\n\n\n\n[lint.flake8-type-checking]\n# Add quotes around type annotations, if doing so would allow\n# an import to be moved into a type-checking block.\nquote-annotations = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-type-checking.runtime-evaluated-base-classes": {
+      "option_description": "Exempt classes that list any of the enumerated classes as a base class\nfrom needing to be moved into type-checking blocks.\n\nCommon examples include Pydantic's pydantic.BaseModel and SQLAlchemy's\nsqlalchemy.orm.DeclarativeBase, but can also support user-defined\nclasses that inherit from those base classes. For example, if you define\na common DeclarativeBase subclass that's used throughout your project\n(e.g., class Base(DeclarativeBase) ... in base.py), you can add it to\nthis list (runtime-evaluated-base-classes = [\"base.Base\"]) to exempt\nmodels from being moved into type-checking blocks.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-type-checking]\nruntime-evaluated-base-classes = [\"pydantic.BaseModel\", \"sqlalchemy.orm.DeclarativeBase\"]\n\n\n\n[lint.flake8-type-checking]\nruntime-evaluated-base-classes = [\"pydantic.BaseModel\", \"sqlalchemy.orm.DeclarativeBase\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-type-checking.runtime-evaluated-decorators": {
+      "option_description": "Exempt classes and functions decorated with any of the enumerated\ndecorators from being moved into type-checking blocks.\n\nCommon examples include Pydantic's @pydantic.validate_call decorator\n(for functions) and attrs' @attrs.define decorator (for classes).\n\nThis also supports framework decorators like FastAPI's fastapi.FastAPI.get\nwhich will work across assignments in the same module.\n\nFor example:\nimport fastapi\n\napp = FastAPI(\"app\")\n\n@app.get(\"/home\")\ndef home() -> str: ...\n\nHere app.get will correctly be identified as fastapi.FastAPI.get.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-type-checking]\nruntime-evaluated-decorators = [\"pydantic.validate_call\", \"attrs.define\"]\n\n\n\n[lint.flake8-type-checking]\nruntime-evaluated-decorators = [\"pydantic.validate_call\", \"attrs.define\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.flake8-type-checking.strict": {
+      "option_description": "Enforce TC001, TC002, and TC003 rules even when valid runtime imports\nare present for the same module.\n\nSee flake8-type-checking's strict option.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint.flake8-type-checking]\nstrict = true\n\n\n\n[lint.flake8-type-checking]\nstrict = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.typing-modules": {
+      "option_description": "A list of modules whose exports should be treated equivalently to\nmembers of the typing module.\n\nThis is useful for ensuring proper type annotation inference for\nprojects that re-export typing and typing_extensions members\nfrom a compatibility module. If omitted, any members imported from\nmodules apart from typing and typing_extensions will be treated\nas ordinary Python objects.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\ntyping-modules = [\"airflow.typing_compat\"]\n\n\n\n[lint]\ntyping-modules = [\"airflow.typing_compat\"]",
+      "option_data_type": "list[str]",
+      "default_value": "[]",
+      "option_values": {
+        "valuelist": []
+      }
+    },
+    "lint.future-annotations": {
+      "option_description": "Whether to allow rules to add from __future__ import annotations in cases where this would\nsimplify a fix or enable a new diagnostic.\n\nFor example, TC001, TC002, and TC003 can move more imports into TYPE_CHECKING blocks\nif __future__ annotations are enabled.\n\n\n\nExample usage:\n\npyproject.tomlruff.toml\n\n\n[tool.ruff.lint]\n# Enable `from __future__ import annotations` imports\nfuture-annotations = true\n\n\n\n[lint]\n# Enable `from __future__ import annotations` imports\nfuture-annotations = true",
+      "option_data_type": "bool",
+      "default_value": "false",
+      "option_values": {
+        "valuelist": []
+      }
+    }
+  }
+}

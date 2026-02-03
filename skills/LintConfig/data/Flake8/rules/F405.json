@@ -1,0 +1,4 @@
+{
+  "description": "name may be undefined, or defined from star imports: module",
+  "option": {}
+}

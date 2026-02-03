@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: pass-statement-stub-body] [Message: Empty body should contain <code>...</code>, not <code>pass</code>] What it does Checks for pass statements in empty stub bodies. Why is this bad? For stylistic consistency, ... should always be used rather than pass in stub files. Example def foo(bar: int) -> list[int]: pass Use instead: def foo(bar: int) -> list[int]: ...",
+  "option": {}
+}

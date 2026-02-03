@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: unbalanced-tuple-unpacking] [Message: Possible unbalanced tuple unpacking with sequence %s: left side has %d label%s, right side has %d value%s] Description: Used when there is an unbalanced tuple unpacking in assignment Problematic code: fruits = (\"orange\", \"apple\", \"strawberry\", \"peer\") orange, apple, strawberry = fruits # [unbalanced-tuple-unpacking] Correct code: fruits = (\"orange\", \"apple\", \"strawberry\", \"peer\") orange, apple, *remaining_fruits = fruits Related links: PEP 3132 - Extended Iterable Unpacking Created by the variables checker.",
+  "option": {}
+}

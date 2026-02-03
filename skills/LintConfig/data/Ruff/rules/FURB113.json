@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: repeated-append] [Message: Use <code>{suggestion}</code> instead of repeatedly calling <code>{name}.append()</code>] What it does Checks for consecutive calls to append. Why is this bad? Consecutive calls to append can be less efficient than batching them into a single extend. Each append resizes the list individually, whereas an extend can resize the list once for all elements. Known problems This rule is prone to false negatives due to type inference limitations, as it will only detect lists that are instantiated as literals or annotated with a type annotation. Example nums = [1, 2, 3] nums.append(4) nums.append(5) nums.append(6) Use instead: nums = [1, 2, 3] nums.extend((4, 5, 6))",
+  "option": {}
+}

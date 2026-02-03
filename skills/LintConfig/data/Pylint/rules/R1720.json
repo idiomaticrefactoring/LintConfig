@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: no-else-raise] [Message: Unnecessary \"%s\" after \"raise\", %s] Description: Used in order to highlight an unnecessary block of code following an if, or a try/except containing a raise statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a raise statement. Problematic code: def integer_sum(a: int, b: int) -> int: if not (isinstance(a, int) and isinstance(b, int)): # [no-else-raise] raise ValueError(\"Function supports only integer parameters.\") else: return a + b Correct code: def integer_sum(a: int, b: int) -> int: if not (isinstance(a, int) and isinstance(b, int)): raise ValueError(\"Function supports only integer parameters.\") return a + b Created by the refactoring checker.",
+  "option": {}
+}

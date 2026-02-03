@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bare-name-capture-pattern] [Message: The name capture `case %s` makes the remaining patterns unreachable. Use a dotted name (for example an enum) to fix this.] Description: Emitted when a name capture pattern is used in a match statement and there are case statements below it. Problematic code: red = 0 green = 1 blue = 2 def func(color): match color: case red: # [bare-name-capture-pattern] print(\"I see red!\") case green: # [bare-name-capture-pattern] print(\"Grass is green\") case blue: print(\"I'm feeling the blues :(\") Correct code: from enum import Enum class Color(Enum): RED = 0 GREEN = 1 BLUE = 2 def func(color: Color) -> None: match color: case Color.RED: print(\"I see red!\") case Color.GREEN: print(\"Grass is green\") case Color.BLUE: print(\"I'm feeling the blues :(\") Related links: PEP 636 Created by the match_statements checker.",
+  "option": {}
+}

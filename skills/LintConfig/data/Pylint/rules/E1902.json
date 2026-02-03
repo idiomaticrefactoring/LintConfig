@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: invalid-match-args-definition] [Message: `__match_args__` must be a tuple of strings.] Description: Emitted if `__match_args__` isn't a tuple of strings required for match. Problematic code: class Book: __match_args__ = [\"title\", \"year\"] # [invalid-match-args-definition] def __init__(self, title, year): self.title = title self.year = year Correct code: class Book: __match_args__ = (\"title\", \"year\") def __init__(self, title, year): self.title = title self.year = year Related links: Python documentation Created by the match_statements checker.",
+  "option": {}
+}

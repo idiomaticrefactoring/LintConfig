@@ -1,0 +1,4 @@
+{
+  "description": "[Status: preview] [Name: unexpected-indentation-comment] [Message: Unexpected indentation (comment)] What it does Checks for unexpected indentation of comment. Why is this bad? Comments should match the indentation of the containing code block. Example a = 1 # b = 2 Use instead: a = 1 # b = 2",
+  "option": {}
+}

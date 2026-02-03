@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: bad-file-permissions] [Message: <code>os.chmod</code> setting a permissive mask <code>{mask:#o}</code> on file or directory] What it does Checks for files with overly permissive permissions. Why is this bad? Overly permissive file permissions may allow unintended access and arbitrary code execution. Example import os os.chmod(\"/etc/secrets.txt\", 0o666) # rw-rw-rw- Use instead: import os os.chmod(\"/etc/secrets.txt\", 0o600) # rw-------",
+  "option": {}
+}

@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: redefined-variable-type] [Message: Redefinition of %s type from %s to %s] Description: Used when the type of a variable changes inside a method or a function. Problematic code: x = 1 x = \"2\" # [redefined-variable-type] Correct code: x = 1 x = 2 Configuration file: [MAIN] load-plugins=pylint.extensions.redefined_variable_type, Note This message is emitted by the optional 'multiple_types' checker, which requires the pylint.extensions.redefined_variable_type plugin to be loaded. Created by the multiple_types checker.",
+  "option": {}
+}

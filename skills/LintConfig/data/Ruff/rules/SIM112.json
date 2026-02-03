@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: uncapitalized-environment-variables] [Message: Use capitalized environment variable <code>{expected}</code> instead of <code>{actual}</code>] What it does Check for environment variables that are not capitalized. Why is this bad? By convention, environment variables should be capitalized. On Windows, environment variables are case-insensitive and are converted to uppercase, so using lowercase environment variables can lead to subtle bugs. Example import os os.environ[\"foo\"] Use instead: import os os.environ[\"FOO\"] Fix safety This fix is always marked as unsafe because automatically capitalizing environment variable names can change program behavior in environments where the variable names are case-sensitive, such as most Unix-like systems.",
+  "option": {}
+}

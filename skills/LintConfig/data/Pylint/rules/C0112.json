@@ -1,0 +1,4 @@
+{
+  "description": "[Status: stable] [Name: empty-docstring] [Message: Empty %s docstring] Description: Used when a module, function, class or method has an empty docstring (it would be too easy ;). Problematic code: def foo(): # [empty-docstring] \"\"\"\"\"\" Correct code: def foo(): \"\"\"A dummy description.\"\"\" Created by the basic checker.",
+  "option": {}
+}
