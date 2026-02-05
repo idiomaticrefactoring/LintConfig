@@ -24,6 +24,13 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 
 
 ## Installation
+
+### Prerequisites
+
+- Python 3.x (for rule data preparation scripts, if needed)
+- Access to one of the supported AI coding assistants
+- Install **ripgrep** to enable search tool in Claude Code.  See [this issue](https://github.com/anthropics/claude-code/issues/6726) for details.
+
 ### Recommended: forced-eval hook
 Add hooks for claude code. ( Although Skills are designed to auto-activate in Claude Code, but in practice, activation is unreliable without explicit hooks. )
 ```
@@ -63,12 +70,6 @@ cp -r LintConfig/skills/LintConfig ~/.cursor/skills/
 | Codex | `~/.codex/skills/` | Use `/lintconfig` command |
 | Gemini | `~/.gemini/skills/` | Auto-activate |
 
-
-
-### Prerequisites
-
-- Python 3.x (for rule data preparation scripts, if needed)
-- Access to one of the supported AI coding assistants
 
 ## Usage
 
