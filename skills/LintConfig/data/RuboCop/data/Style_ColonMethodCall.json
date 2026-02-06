@@ -1,0 +1,9 @@
+{
+  "name": "Style/ColonMethodCall",
+  "full_description": "Do not use :: for method call.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#double-colons",
+  "is_safe": true,
+  "parameters": []
+}

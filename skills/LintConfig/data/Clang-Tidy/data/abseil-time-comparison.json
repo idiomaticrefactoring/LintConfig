@@ -1,0 +1,11 @@
+{
+  "name": "abseil-time-comparison",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/time-comparison.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Prefer comparisons in the \nabsl::Time\n domain instead of the integer domain.\n\nN.B.: In cases where an \nabsl::Time\n is being converted to an integer,\nalignment may occur. If the comparison depends on this alignment, doing the\ncomparison in the \nabsl::Time\n domain may yield a different result. In\npractice this is very rare, and still indicates a bug which should be fixed.\n\nExamples:\n\n// Original - Comparison in the integer domain\n\n\nint\n \nx\n;\n\n\nabsl\n::\nTime\n \nt\n;\n\n\nif\n \n(\nx\n \n<\n \nabsl\n::\nToUnixSeconds\n(\nt\n))\n \n...\n\n\n\n// Suggested - Compare in the absl::Time domain instead\n\n\nif\n \n(\nabsl\n::\nFromUnixSeconds\n(\nx\n)\n \n<\n \nt\n)\n \n...",
+    "configurations": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "useFocusableInteractive",
+  "group": "a11y",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-focusable-interactive",
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'a11y' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "useConsistentTypeDefinitions",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-consistent-type-definitions",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

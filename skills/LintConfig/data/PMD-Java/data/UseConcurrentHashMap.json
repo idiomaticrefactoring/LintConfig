@@ -1,0 +1,12 @@
+{
+    "name": "UseConcurrentHashMap",
+    "category": "multithreading",
+    "summary": "Since Java5 brought a new implementation of the Map designed for multi-threaded access, you can\nperform efficient map reads without blocking other threads.",
+    "message": "If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#useconcurrenthashmap",
+    "since": "4.2.6",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class ConcurrentApp {\npublic void getMyInstance() {\nMap map1 = new HashMap();           // fine for single-threaded access\nMap map2 = new ConcurrentHashMap(); // preferred for use with multiple threads\n\n// the following case will be ignored by this rule\nMap map3 = someModule.methodThatReturnMap(); // might be OK, if the returned map is already thread-safe\n}\n}"
+}

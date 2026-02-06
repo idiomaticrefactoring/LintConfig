@@ -1,0 +1,23 @@
+{
+  "name": "no-dupe-keys",
+  "meta": {
+    "description": "Disallow duplicate keys in object literals",
+    "url": "https://eslint.org/docs/latest/rules/no-dupe-keys",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow duplicate keys in object literals\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsHandled by TypeScriptVersionResources\nMultiple properties with the same key in object literals can cause unexpected behavior in your application.\nconstfoo={bar:\"baz\",bar:\"qux\"};1234Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

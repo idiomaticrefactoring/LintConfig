@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-misleading-setter-of-reference",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misleading-setter-of-reference.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds setter-like member functions that take a pointer parameter and set a\nreference member of the same class with the pointed value.\n\nThe check detects member functions that take a single pointer parameter,\nand contain a single expression statement that dereferences the parameter and\nassigns the result to a data member with a reference type.\n\nThe fact that a setter function takes a pointer might cause the belief that an\ninternal reference (if it would be a pointer) is changed instead of the\npointed-to (or referenced) value.\n\nExample:\n\nclass\n \nMyClass\n \n{\n\n\n  \nint\n \n&\nInternalRef\n;\n  \n// non-const reference member\n\n\npublic\n:\n\n\n  \nMyClass\n(\nint\n \n&\nValue\n)\n \n:\n \nInternalRef\n(\nValue\n)\n \n{}\n\n\n\n  \n// Warning: This setter could lead to unintended behaviour.\n\n\n  \nvoid\n \nsetRef\n(\nint\n \n*\nValue\n)\n \n{\n\n\n    \nInternalRef\n \n=\n \n*\nValue\n;\n  \n// This assigns to the referenced value, not changing what InternalRef references.\n\n\n  \n}\n\n\n};\n\n\n\nint\n \nmain\n()\n \n{\n\n\n  \nint\n \nValue1\n \n=\n \n42\n;\n\n\n  \nint\n \nValue2\n \n=\n \n100\n;\n\n\n  \nMyClass\n \nX\n(\nValue1\n);\n\n\n\n  \n// This might look like it changes what InternalRef references to,\n\n\n  \n// but it actually modifies Value1 to be 100.\n\n\n  \nX\n.\nsetRef\n(\n&\nValue2\n);\n\n\n}\n\nPossible fixes:\n\n\nChange the parameter type of the âsetâ function to non-pointer type (for\nexample, a const reference).\n\n\nChange the type of the member variable to a pointer and in the âsetâ\nfunction assign a value to the pointer (without dereference).",
+    "configurations": []
+  }
+}

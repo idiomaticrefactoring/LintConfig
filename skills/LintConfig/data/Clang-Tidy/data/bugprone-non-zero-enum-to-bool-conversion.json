@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-non-zero-enum-to-bool-conversion",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/non-zero-enum-to-bool-conversion.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Detect implicit and explicit casts of \nenum\n type into \nbool\n where\n\nenum\n type doesnât have a zero-value enumerator. If the \nenum\n is used\nonly to hold values equal to its enumerators, then conversion to \nbool\n will\nalways result in \ntrue\n value. This can lead to unnecessary code that reduces\nreadability and maintainability and can result in bugs.\n\nMay produce false positives if the \nenum\n is used to store other values\n(used as a bit-mask or zero-initialized on purpose). To deal with them,\n\n//\n \nNOLINT\n or casting first to the underlying type before casting to\n\nbool\n can be used.\n\nIt is important to note that this check will not generate warnings if the\ndefinition of the enumeration type is not available.\nAdditionally, C++11 enumeration classes are supported by this check.\n\nOverall, this check serves to improve code quality and readability by\nidentifying and flagging instances where implicit or explicit casts from\nenumeration types to boolean could cause potential issues.\n\nExample\nÂ¶\n\n\nenum\n \nEStatus\n \n{\n\n\n  \nOK\n \n=\n \n1\n,\n\n\n  \nNOT_OK\n,\n\n\n  \nUNKNOWN\n\n\n};\n\n\n\nvoid\n \nprocess\n(\nEStatus\n \nstatus\n)\n \n{\n\n\n  \nif\n \n(\n!\nstatus\n)\n \n{\n\n\n    \n// this true-branch won't be executed\n\n\n    \nreturn\n;\n\n\n  \n}\n\n\n  \n// proceed with \"valid data\"\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nEnumIgnoreList\nÂ¶\n\n\nOption is used to ignore certain enum types when checking for\nimplicit/explicit casts to bool. It accepts a semicolon-separated list of\n(fully qualified) enum type names or regular expressions that match the enum\ntype names.\nThe default value is an empty string, which means no enums will be ignored.",
+    "configurations": []
+  }
+}

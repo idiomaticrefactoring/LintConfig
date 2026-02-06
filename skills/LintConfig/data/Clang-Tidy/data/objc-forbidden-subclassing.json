@@ -1,0 +1,11 @@
+{
+  "name": "objc-forbidden-subclassing",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/forbidden-subclassing.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds Objective-C classes which are subclasses of classes which are\nnot designed to be subclassed.\n\nBy default, includes a list of Objective-C classes which are publicly\ndocumented as not supporting subclassing.\n\nNote\n\n\nInstead of using this check, for code under your control, you should add\n\n__attribute__((objc_subclassing_restricted))\n before your \n@interface\n\ndeclarations to ensure the compiler prevents others from subclassing your\nObjective-C classes.\nSee \nhttps://clang.llvm.org/docs/AttributeReference.html#objc-subclassing-restricted\n\nOptions\nÂ¶\n\n\n\n\n\n\nForbiddenSuperClassNames\nÂ¶\n\n\nSemicolon-separated list of names of Objective-C classes which\ndo not support subclassing.\n\n\nDefaults to \nABNewPersonViewController;ABPeoplePickerNavigationController;ABPersonViewController;ABUnknownPersonViewController;NSHashTable;NSMapTable;NSPointerArray;NSPointerFunctions;NSTimer;UIActionSheet;UIAlertView;UIImagePickerController;UITextInputMode;UIWebView\n.",
+    "configurations": []
+  }
+}

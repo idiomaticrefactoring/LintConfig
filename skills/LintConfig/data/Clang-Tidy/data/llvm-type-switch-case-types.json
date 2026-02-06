@@ -1,0 +1,11 @@
+{
+  "name": "llvm-type-switch-case-types",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/type-switch-case-types.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds \nllvm::TypeSwitch::Case\n calls with redundant explicit template\narguments that can be inferred from the lambda parameter type.\n\nThis check identifies two patterns:\n\nRedundant explicit type\n: When the lambda parameter type matches the\n\nCase\n template argument, the explicit type can be removed.\n\n\nAuto parameter with explicit type\n: When a lambda uses \nauto\n but\n\nCase\n has an explicit template argument, suggests using an explicit\ntype in the lambda instead.\n\nExample\nÂ¶\n\n\nllvm\n::\nTypeSwitch\n<\nBase\n \n*\n,\n \nint\n>\n(\nbase\n)\n\n\n    \n.\nCase\n<\nDerivedA\n>\n([](\nDerivedA\n \n*\na\n)\n \n{\n \nreturn\n \n1\n;\n \n})\n \n// Redundant.\n\n\n    \n.\nCase\n<\nDerivedB\n>\n([](\nauto\n \nb\n)\n \n{\n \nreturn\n \n2\n;\n \n});\n     \n// `auto` with explicit type.\n\n\n\n\n\n\nTransforms to:\n\n\nllvm\n::\nTypeSwitch\n<\nBase\n \n*\n,\n \nint\n>\n(\nbase\n)\n\n\n    \n.\nCase\n([](\nDerivedA\n \n*\na\n)\n \n{\n \nreturn\n \n1\n;\n \n})\n       \n// Type inferred from lambda.\n\n\n    \n.\nCase\n<\nDerivedB\n>\n([](\nauto\n \nb\n)\n \n{\n \nreturn\n \n2\n;\n \n});\n \n// Warning only.\n\n\n\n\n\n\nNote: The second case (\nauto\n parameter) only emits a warning without a\nfix-it, because the deduced type of \nauto\n depends on \ndyn_cast\n behavior\nwhich varies between pointer types and MLIR handle types.",
+    "configurations": []
+  }
+}

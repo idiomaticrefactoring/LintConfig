@@ -1,0 +1,23 @@
+{
+  "name": "class-methods-use-this",
+  "meta": {
+    "description": "Enforce that class methods utilize this",
+    "url": "https://eslint.org/docs/latest/rules/class-methods-use-this",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-import-assign",
+  "meta": {
+    "description": "Disallow assigning to imported bindings",
+    "url": "https://eslint.org/docs/latest/rules/no-import-assign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow assigning to imported bindings\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItHandled by TypeScriptVersionResources\nThe updates of imported bindings by ES Modules cause runtime errors.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

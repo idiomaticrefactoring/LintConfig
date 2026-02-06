@@ -1,0 +1,12 @@
+{
+    "name": "MethodWithSameNameAsEnclosingClass",
+    "category": "errorprone",
+    "summary": "A method should not have the same name as its containing class.\nThis would be confusing as it would look like a constructor.",
+    "message": "A method should not have the same name as its containing class",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#methodwithsamenameasenclosingclass",
+    "since": "1.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class MyClass {\n\npublic MyClass() {}         // this is OK because it is a constructor\n\npublic void MyClass() {}    // this is bad because it is a method\n}"
+}

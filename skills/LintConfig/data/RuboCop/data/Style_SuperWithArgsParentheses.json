@@ -1,0 +1,9 @@
+{
+  "name": "Style/SuperWithArgsParentheses",
+  "full_description": "Use parentheses for `super` with arguments.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#super-with-args",
+  "is_safe": true,
+  "parameters": []
+}

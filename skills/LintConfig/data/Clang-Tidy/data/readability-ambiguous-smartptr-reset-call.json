@@ -1,0 +1,11 @@
+{
+  "name": "readability-ambiguous-smartptr-reset-call",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/ambiguous-smartptr-reset-call.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds potentially erroneous calls to \nreset\n method on smart pointers when\nthe pointee type also has a \nreset\n method. Having a \nreset\n method in\nboth classes makes it easy to accidentally make the pointer null when\nintending to reset the underlying object.\n\nstruct\n \nResettable\n \n{\n\n\n  \nvoid\n \nreset\n()\n \n{\n \n/* Own reset logic */\n \n}\n\n\n};\n\n\n\nauto\n \nptr\n \n=\n \nstd\n::\nmake_unique\n<\nResettable\n>\n();\n\n\n\nptr\n->\nreset\n();\n  \n// Calls underlying reset method\n\n\nptr\n.\nreset\n();\n   \n// Makes the pointer null\n\nBoth calls are valid C++ code, but the second one might not be what the\ndeveloper intended, as it destroys the pointed-to object rather than resetting\nits state. Itâs easy to make such a typo because the difference between\n\n.\n and \n->\n is really small.\n\nThe recommended approach is to make the intent explicit by using either member\naccess or direct assignment:\n\nstd\n::\nunique_ptr\n<\nResettable\n>\n \nptr\n \n=\n \nstd\n::\nmake_unique\n<\nResettable\n>\n();\n\n\n\n(\n*\nptr\n).\nreset\n();\n  \n// Clearly calls underlying reset method\n\n\nptr\n \n=\n \nnullptr\n;\n   \n// Clearly makes the pointer null\n\nThe default smart pointers and classes that are considered are\n\nstd::unique_ptr\n, \nstd::shared_ptr\n, \nboost::shared_ptr\n. To specify\nother smart pointers or other classes use the \nSmartPointers\n option.\n\nNote\n\n\nThe check may emit invalid fix-its and misleading warning messages when\nspecifying custom smart pointers or other classes in the\n\nSmartPointers\n option. For example, \nboost::scoped_ptr\n does not\nhave an \noperator=\n which makes fix-its invalid.\n\nNote\n\n\nAutomatic fix-its are enabled only if \nclang-tidy\n is invoked with\nthe \nâfix-notes\n option.\n\nOptions\nÂ¶\n\n\n\n\n\n\nSmartPointers\nÂ¶\n\n\nSemicolon-separated list of fully qualified class names of custom smart\npointers. Default value is \n::std::unique_ptr;::std::shared_ptr;\n::boost::shared_ptr\n.",
+    "configurations": []
+  }
+}

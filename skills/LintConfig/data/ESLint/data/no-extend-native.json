@@ -1,0 +1,23 @@
+{
+  "name": "no-extend-native",
+  "meta": {
+    "description": "Disallow extending native types",
+    "url": "https://eslint.org/docs/latest/rules/no-extend-native",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow extending native types\nTable of ContentsRule DetailsOptionsexceptionsKnown LimitationsWhen Not To Use ItRelated RulesVersionResources\nIn JavaScript, you can extend any object, including builtin or “native” objects. Sometimes people change the behavior of these native objects in ways that break the assumptions made about them in other parts of the code.\nFor example here we are overriding a builtin method that will then affect all Objects, even other builtins.\n// seems harmlessObject.prototype.extra=55;// loop through some userIdsconstusers={\"123\":\"Stan\",\"456\":\"David\"};// not what you'd expectfor(constidinusers){console.log(id);// \"123\", \"456\", \"extra\"}12345678910111213Copy code to clipboard\nA common suggestion to avoid this problem would be to wrap the inside of theforloop withusers.hasOwnProperty(id). However, if this rule is strictly enforced throughout your codebase you won’t need to take that step.",
+    "sub_configuration_introduction": "This rule accepts anexceptionsoption, which can be used to specify a list of builtins for which extensions will be allowed.\nExamples ofcorrectcode for the sample{ \"exceptions\": [\"Object\"] }option:",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-command-processor",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/command-processor.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Flags calls to \nsystem()\n, \npopen()\n, and \n_popen()\n, which\nexecute a command processor. It does not flag calls to \nsystem()\n with a null\npointer argument, as such a call checks for the presence of a command processor\nbut does not actually attempt to execute a command.\n\nReferences\nÂ¶\n\n\nThis check corresponds to the CERT C Coding Standard rule\n\nENV33-C. Do not call system()\n.",
+    "configurations": []
+  }
+}

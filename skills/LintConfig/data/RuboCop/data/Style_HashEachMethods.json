@@ -1,0 +1,17 @@
+{
+  "name": "Style/HashEachMethods",
+  "full_description": "Use Hash#each_key and Hash#each_value.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#hash-each",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "AllowedReceivers",
+      "default_value": [
+        "Thread.current"
+      ],
+      "type": "list"
+    }
+  ]
+}

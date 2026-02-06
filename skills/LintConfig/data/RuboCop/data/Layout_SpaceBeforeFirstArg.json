@@ -1,0 +1,15 @@
+{
+  "name": "Layout/SpaceBeforeFirstArg",
+  "full_description": "Checks that exactly one space is used between a method name and the first argument for method calls without parentheses.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowForAlignment",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

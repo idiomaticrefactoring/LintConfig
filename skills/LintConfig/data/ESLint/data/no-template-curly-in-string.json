@@ -1,0 +1,23 @@
+{
+  "name": "no-template-curly-in-string",
+  "meta": {
+    "description": "Disallow template literal placeholder syntax in regular strings",
+    "url": "https://eslint.org/docs/latest/rules/no-template-curly-in-string",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow template literal placeholder syntax in regular strings\nTable of ContentsRule DetailsExamplesWhen Not To Use ItVersionResources\nECMAScript 6 allows programmers to create strings containing variable or expressions using template literals, instead of string concatenation, by writing expressions like${variable}between two backtick quotes (`). It can be easy to use the wrong quotes when wanting to use template literals, by writing\"${variable}\", and end up with the literal value\"${variable}\"instead of a string containing the value of the injected expressions.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

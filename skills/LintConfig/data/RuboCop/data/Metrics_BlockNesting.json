@@ -1,0 +1,25 @@
+{
+  "name": "Metrics/BlockNesting",
+  "full_description": "Avoid excessive block nesting.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#three-is-the-number-thou-shalt-count",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "CountBlocks",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "CountModifierForms",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "Max",
+      "default_value": 3,
+      "type": "int"
+    }
+  ]
+}

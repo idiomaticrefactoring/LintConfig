@@ -1,0 +1,19 @@
+{
+    "name": "funcArgNamesDifferent",
+    "meta": {
+        "severity": "style",
+        "cwe": "628",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "content": {
+        "introduction": "Function 'function' argument 2 names different: declaration 'A' definition 'B'.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "628",
+            "inconclusive": true,
+            "related_symbols_placeholder": [
+                "function"
+            ]
+        }
+    }
+}

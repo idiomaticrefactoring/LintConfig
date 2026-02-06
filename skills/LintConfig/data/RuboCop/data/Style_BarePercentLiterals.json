@@ -1,0 +1,23 @@
+{
+  "name": "Style/BarePercentLiterals",
+  "full_description": "Checks if usage of %() or %Q() matches configuration.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#percent-q-shorthand",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "bare_percent",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "percent_q",
+        "bare_percent"
+      ],
+      "type": "list"
+    }
+  ]
+}

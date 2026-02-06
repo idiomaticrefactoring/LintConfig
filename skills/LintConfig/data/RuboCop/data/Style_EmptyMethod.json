@@ -1,0 +1,28 @@
+{
+  "name": "Style/EmptyMethod",
+  "full_description": "Checks the formatting of empty method definitions.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-single-line-methods",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AutoCorrect",
+      "default_value": "contextual",
+      "type": "str"
+    },
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "compact",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "compact",
+        "expanded"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "invalidScanfFormatWidth",
+    "meta": {
+        "severity": "error",
+        "cwe": "687",
+        "url": "https://cwe.mitre.org/data/definitions/687.html"
+    },
+    "content": {
+        "introduction": "Width 5 given in format string (no. 10) is larger than destination buffer '[0]', use %-1s to prevent overflowing it.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "687",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-script-url",
+  "meta": {
+    "description": "Disallow javascript: URLs",
+    "url": "https://eslint.org/docs/latest/rules/no-script-url",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

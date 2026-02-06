@@ -1,0 +1,16 @@
+{
+    "name": "returnTempReference",
+    "meta": {
+        "severity": "error",
+        "cwe": "562",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "content": {
+        "introduction": "Reference to temporary returned.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "562",
+            "inconclusive": false
+        }
+    }
+}

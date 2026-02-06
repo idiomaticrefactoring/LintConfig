@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-stringview-nullptr",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/stringview-nullptr.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for various ways that the \nconst\n \nCharT*\n constructor of\n\nstd::basic_string_view\n can be passed a null argument and replaces them\nwith the default constructor in most cases. For the comparison operators,\nbraced initializer list does not compile so instead a call to \n.empty()\n\nor the empty string literal are used, where appropriate.\n\nThis prevents code from invoking behavior which is unconditionally undefined.\nThe single-argument \nconst\n \nCharT*\n constructor does not check for the null\ncase before dereferencing its input. The standard is slated to add an\nexplicitly-deleted overload to catch some of these cases: wg21.link/p2166\n\nTo catch the additional cases of \nNULL\n (which expands to \n__null\n) and\n\n0\n, first run the \nmodernize-use-nullptr\n check to convert the callers to\n\nnullptr\n.\n\nstd\n::\nstring_view\n \nsv\n \n=\n \nnullptr\n;\n\n\n\nsv\n \n=\n \nnullptr\n;\n\n\n\nbool\n \nis_empty\n \n=\n \nsv\n \n==\n \nnullptr\n;\n\n\nbool\n \nisnt_empty\n \n=\n \nsv\n \n!=\n \nnullptr\n;\n\n\n\naccepts_sv\n(\nnullptr\n);\n\n\n\naccepts_sv\n({{}});\n  \n// A\n\n\n\naccepts_sv\n({\nnullptr\n,\n \n0\n});\n  \n// B\n\nis translated intoâ¦\n\nstd\n::\nstring_view\n \nsv\n \n=\n \n{};\n\n\n\nsv\n \n=\n \n{};\n\n\n\nbool\n \nis_empty\n \n=\n \nsv\n.\nempty\n();\n\n\nbool\n \nisnt_empty\n \n=\n \n!\nsv\n.\nempty\n();\n\n\n\naccepts_sv\n(\n\"\"\n);\n\n\n\naccepts_sv\n(\n\"\"\n);\n  \n// A\n\n\n\naccepts_sv\n({\nnullptr\n,\n \n0\n});\n  \n// B\n\nNote\n\n\nThe source pattern with trailing comment âAâ selects the \n(const\n \nCharT*)\n\nconstructor overload and then value-initializes the pointer, causing a null\ndereference. It happens to not include the \nnullptr\n literal, but it is\nstill within the scope of this ClangTidy check.\n\nNote\n\n\nThe source pattern with trailing comment âBâ selects the\n\n(const\n \nCharT*,\n \nsize_type)\n constructor which is perfectly valid, since the\nlength argument is \n0\n. It is not changed by this ClangTidy check.",
+    "configurations": []
+  }
+}

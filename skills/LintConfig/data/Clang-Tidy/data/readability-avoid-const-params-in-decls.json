@@ -1,0 +1,11 @@
+{
+  "name": "readability-avoid-const-params-in-decls",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-const-params-in-decls.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks whether a function declaration has parameters that are top level\n\nconst\n.\n\nconst\n values in declarations do not affect the signature of a function, so\nthey should not be put there.\n\nExamples:\n\nvoid\n \nf\n(\nconst\n \nstring\n);\n   \n// Bad: const is top level.\n\n\nvoid\n \nf\n(\nconst\n \nstring\n&\n);\n  \n// Good: const is not top level.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warnings inside macros. Default\nis \ntrue\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "boost-use-to-string",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/boost/use-to-string.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check finds conversion from integer type like \nint\n to\n\nstd::string\n or \nstd::wstring\n using \nboost::lexical_cast\n,\nand replace it with calls to \nstd::to_string\n and \nstd::to_wstring\n.\n\nIt doesnât replace conversion from floating points despite the \nto_string\n\noverloads, because it would change the behavior.\n\nauto\n \nstr\n \n=\n \nboost\n::\nlexical_cast\n<\nstd\n::\nstring\n>\n(\n42\n);\n\n\nauto\n \nwstr\n \n=\n \nboost\n::\nlexical_cast\n<\nstd\n::\nwstring\n>\n(\n2137L\nL\n);\n\n\n\n// Will be changed to\n\n\nauto\n \nstr\n \n=\n \nstd\n::\nto_string\n(\n42\n);\n\n\nauto\n \nwstr\n \n=\n \nstd\n::\nto_wstring\n(\n2137L\nL\n);",
+    "configurations": []
+  }
+}

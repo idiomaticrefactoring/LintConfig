@@ -1,0 +1,11 @@
+{
+  "name": "abseil-redundant-strcat-calls",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/redundant-strcat-calls.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Suggests removal of unnecessary calls to \nabsl::StrCat\n when the result is\nbeing passed to another call to \nabsl::StrCat\n or \nabsl::StrAppend\n.\n\nThe extra calls cause unnecessary temporary strings to be constructed. Removing\nthem makes the code smaller and faster.\n\nExamples:\n\nstd\n::\nstring\n \ns\n \n=\n \nabsl\n::\nStrCat\n(\n\"A\"\n,\n \nabsl\n::\nStrCat\n(\n\"B\"\n,\n \nabsl\n::\nStrCat\n(\n\"C\"\n,\n \n\"D\"\n)));\n\n\n//before\n\n\n\nstd\n::\nstring\n \ns\n \n=\n \nabsl\n::\nStrCat\n(\n\"A\"\n,\n \n\"B\"\n,\n \n\"C\"\n,\n \n\"D\"\n);\n\n\n//after\n\n\n\nabsl\n::\nStrAppend\n(\n&\ns\n,\n \nabsl\n::\nStrCat\n(\n\"E\"\n,\n \n\"F\"\n,\n \n\"G\"\n));\n\n\n//before\n\n\n\nabsl\n::\nStrAppend\n(\n&\ns\n,\n \n\"E\"\n,\n \n\"F\"\n,\n \n\"G\"\n);\n\n\n//after",
+    "configurations": []
+  }
+}

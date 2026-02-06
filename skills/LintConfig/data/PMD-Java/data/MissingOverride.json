@@ -1,0 +1,12 @@
+{
+    "name": "MissingOverride",
+    "category": "bestpractices",
+    "summary": "Annotating overridden methods with @Override ensures at compile time that\nthe method really overrides one, which helps refactoring and clarifies intent.",
+    "message": "The method ''{0}'' is missing an @Override annotation.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#missingoverride",
+    "since": "6.2.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo implements Runnable {\n// This method is overridden, and should have an @Override annotation\npublic void run() {\n\n}\n}"
+}

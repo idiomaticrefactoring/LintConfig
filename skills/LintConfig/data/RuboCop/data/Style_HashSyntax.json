@@ -1,0 +1,51 @@
+{
+  "name": "Style/HashSyntax",
+  "full_description": "Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#hash-literals",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "ruby19",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "ruby19",
+        "hash_rockets",
+        "no_mixed_keys",
+        "ruby19_no_mixed_keys"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "EnforcedShorthandSyntax",
+      "default_value": "either",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedShorthandSyntax",
+      "default_value": [
+        "always",
+        "never",
+        "either",
+        "consistent",
+        "either_consistent"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "UseHashRocketsWithSymbolValues",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "PreferHashRocketsForNonAlnumEndingSymbols",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

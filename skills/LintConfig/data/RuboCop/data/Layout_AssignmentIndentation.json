@@ -1,0 +1,15 @@
+{
+  "name": "Layout/AssignmentIndentation",
+  "full_description": "Checks the indentation of the first line of the right-hand-side of a multi-line assignment.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

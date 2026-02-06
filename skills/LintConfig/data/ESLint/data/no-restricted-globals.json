@@ -1,0 +1,23 @@
+{
+  "name": "no-restricted-globals",
+  "meta": {
+    "description": "Disallow specified global variables",
+    "url": "https://eslint.org/docs/latest/rules/no-restricted-globals",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow specified global variables\nTable of ContentsRule DetailsOptionsglobalscheckGlobalObjectglobalObjectsRelated RulesVersionResources\nDisallowing usage of specific global variables can be useful if you want to allow a set of global\nvariables, but still want to disallow some of those.\nFor instance, early Internet Explorer versions exposed the current DOM event as a global variableevent, but using this variable has been considered as a bad practice for a long time. Restricting\nthis will make sure this variable isn’t used in browser code.",
+    "sub_configuration_introduction": "This rule has both string and object options to specify the global variables to restrict.\nUsing the string option, you can specify the name of a global variable that you want to restrict as a value in the rule options array:\nAlternatively, the rule also accepts objects, where the global name and an optional custom message are specified:\nExamples ofincorrectcode for sample\"event\", \"fdescribe\"global variable names:\nExamples ofcorrectcode for a sample\"event\"global variable name:\nExamples ofincorrectcode for a sample\"event\"global variable name, along with a custom error message:\nAn object option whose value is an array containing the names of the globals you want to restrict.\nExamples ofincorrectcode for\"event\"and\"fdescribe\"global variable names:\nCustom messages for a particular global can also be specified inglobalsarray using objects withnameandmessage:\nExamples ofincorrectcode for an\"event\"global variable name, along with a custom error message:\nA boolean option that enables detection of restricted globals accessed via global objects. Default isfalse.\nExamples ofincorrectcode forcheckGlobalObject: trueoption:\nAn array option that specifies additional global object names to check whencheckGlobalObjectis enabled. By default, the rule checks these global objects:globalThis,self, andwindow.\nExamples ofincorrectcode forglobalObjectsoption:\nRestricted globals used in TypeScript type annotations—such as type references, interface inheritance, or class implementations—are ignored by this rule.\nExamples ofcorrectTypeScript code for “Promise”, “Event”, and “Window” global variable names:",
+    "config_examples": []
+  }
+}

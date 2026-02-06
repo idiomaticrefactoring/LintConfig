@@ -1,0 +1,23 @@
+{
+  "name": "no-global-assign",
+  "meta": {
+    "description": "Disallow assignments to native objects or read-only global variables",
+    "url": "https://eslint.org/docs/latest/rules/no-global-assign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow assignments to native objects or read-only global variables\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionsWhen Not To Use ItRelated RulesVersionResources\nJavaScript environments contain a number of built-in global variables, such aswindowin browsers andprocessin Node.js. In almost all cases, you don’t want to assign a value to these global variables as doing so could result in losing access to important functionality. For example, you probably don’t want to do this in browser code:\nwindow={};1Copy code to clipboard\nWhile examples such aswindoware obvious, there are often hundreds of built-in global objects provided by JavaScript environments. It can be hard to know if you’re assigning to a global variable or not.",
+    "sub_configuration_introduction": "This rule accepts anexceptionsoption, which can be used to specify a list of builtins for which reassignments will be allowed:",
+    "config_examples": []
+  }
+}

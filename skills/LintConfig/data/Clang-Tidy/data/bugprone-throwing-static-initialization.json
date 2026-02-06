@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-throwing-static-initialization",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/throwing-static-initialization.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds all \nstatic\n or \nthread_local\n variable declarations where the\ninitializer for the object may throw an exception.\n\nReferences\nÂ¶\n\n\nThis check corresponds to the CERT C++ Coding Standard rule\n\nERR58-CPP. Handle all exceptions thrown before main() begins executing\n.",
+    "configurations": []
+  }
+}

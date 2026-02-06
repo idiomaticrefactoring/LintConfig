@@ -1,0 +1,22 @@
+{
+  "name": "noUnsafeDeclarationMerging",
+  "group": "suspicious",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-unsafe-declaration-merging",
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'suspicious' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "prefer-exponentiation-operator",
+  "meta": {
+    "description": "Disallow the use of Math.pow in favor of the ** operator",
+    "url": "https://eslint.org/docs/latest/rules/prefer-exponentiation-operator",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

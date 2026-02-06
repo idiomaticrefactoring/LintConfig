@@ -1,0 +1,9 @@
+{
+  "name": "Style/ExpandPathArguments",
+  "full_description": "Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

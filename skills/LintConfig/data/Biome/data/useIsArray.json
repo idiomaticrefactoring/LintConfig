@@ -1,0 +1,22 @@
+{
+  "name": "useIsArray",
+  "group": "suspicious",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-is-array",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'suspicious' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

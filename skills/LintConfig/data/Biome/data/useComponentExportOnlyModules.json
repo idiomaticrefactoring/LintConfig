@@ -1,0 +1,22 @@
+{
+  "name": "useComponentExportOnlyModules",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-component-export-only-modules",
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

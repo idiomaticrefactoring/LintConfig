@@ -1,0 +1,23 @@
+{
+  "name": "no-new-func",
+  "meta": {
+    "description": "Disallow new operators with the Function object",
+    "url": "https://eslint.org/docs/latest/rules/no-new-func",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallownewoperators with theFunctionobject\nTable of ContentsRule DetailsWhen Not To Use ItVersionResources\nIt’s possible to create functions in JavaScript from strings at runtime using theFunctionconstructor, such as:\nconsta=newFunction(\"a\",\"b\",\"return a + b\");constb=Function(\"a\",\"b\",\"return a + b\");constc=Function.call(null,\"a\",\"b\",\"return a + b\");constd=Function.apply(null,[\"a\",\"b\",\"return a + b\"]);constx=Function.bind(null,\"a\",\"b\",\"return a + b\")();12345Copy code to clipboard\nThis is considered by many to be a bad practice due to the difficulty in debugging and reading these types of functions. In addition, Content-Security-Policy (CSP) directives may disallow the use ofeval()and similar methods for creating code from strings.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

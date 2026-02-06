@@ -1,0 +1,12 @@
+{
+    "name": "ExcessivePublicCount",
+    "category": "design",
+    "summary": "Classes with large numbers of public methods and attributes require disproportionate testing efforts\nsince combinational side effects grow rapidly and increase risk. Refactoring these classes into\nsmaller ones not only increases testability and reliability but also allows new variations to be\ndeveloped easily.",
+    "message": "This class has {0} public methods and attributes; current threshold is {1}.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#excessivepubliccount",
+    "since": "1.04",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic String value;\npublic Bar something;\npublic Variable var;\n// [... more more public attributes ...]\n\npublic void doWork() {}\npublic void doMoreWork() {}\npublic void doWorkAgain() {}\n// [... more more public methods ...]\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-creat",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-creat.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The usage of \ncreat()\n is not recommended, itâs better to use \nopen()\n.\n\nExamples:\n\nint\n \nfd\n \n=\n \ncreat\n(\npath\n,\n \nmode\n);\n\n\n\n// becomes\n\n\n\nint\n \nfd\n \n=\n \nopen\n(\npath\n,\n \nO_WRONLY\n \n|\n \nO_CREAT\n \n|\n \nO_TRUNC\n \n|\n \nO_CLOEXEC\n,\n \nmode\n);",
+    "configurations": []
+  }
+}

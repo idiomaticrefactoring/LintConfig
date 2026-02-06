@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-misplaced-pointer-arithmetic-in-alloc",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-pointer-arithmetic-in-alloc.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds cases where an integer expression is added to or subtracted from the\nresult of a memory allocation function (\nmalloc()\n, \ncalloc()\n,\n\nrealloc()\n, \nalloca()\n) instead of its argument. The check detects error\ncases even if one of these functions is called by a constant function pointer.\n\nExample code:\n\nvoid\n \nbad_malloc\n(\nint\n \nn\n)\n \n{\n\n\n  \nchar\n \n*\np\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nn\n)\n \n+\n \n10\n;\n\n\n}\n\nThe suggested fix is to add the integer expression to the argument of\n\nmalloc\n and not to its result. In the example above the fix would be\n\nchar\n \n*\np\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nn\n \n+\n \n10\n);",
+    "configurations": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AvoidCatchingNPE",
+    "category": "errorprone",
+    "summary": "Code should never throw NullPointerExceptions under normal circumstances.  A catch block may hide the\noriginal error, causing other, more subtle problems later on.\n\n**Deprecated:** This rule is deprecated since PMD 7.18.0 and will be removed with PMD 8.0.0.\nThis rule has been subsumed by {% rule AvoidCatchingGenericException %},\nwhich is now configurable as to which exceptions cause a violation.",
+    "message": "Avoid catching NullPointerException; consider removing the cause of the NPE.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidcatchingnpe",
+    "since": "1.8",
+    "priority": "3",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": "public class Foo {\nvoid bar() {\ntry {\n// do something\n} catch (NullPointerException npe) {\n}\n}\n}"
+}

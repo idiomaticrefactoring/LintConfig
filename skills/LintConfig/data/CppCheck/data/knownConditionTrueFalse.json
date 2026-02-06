@@ -1,0 +1,16 @@
+{
+    "name": "knownConditionTrueFalse",
+    "meta": {
+        "severity": "style",
+        "cwe": "570",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "content": {
+        "introduction": "Condition 'x' is always false",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "570",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "preprocessorErrorDirective",
+    "meta": {
+        "severity": "error",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "#error message",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

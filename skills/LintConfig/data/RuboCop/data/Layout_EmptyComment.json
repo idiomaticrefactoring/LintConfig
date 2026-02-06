@@ -1,0 +1,25 @@
+{
+  "name": "Layout/EmptyComment",
+  "full_description": "Checks empty comment.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AutoCorrect",
+      "default_value": "contextual",
+      "type": "str"
+    },
+    {
+      "parameter_name": "AllowBorderComment",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowMarginComment",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

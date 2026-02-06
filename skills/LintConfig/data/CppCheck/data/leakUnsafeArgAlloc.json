@@ -1,0 +1,19 @@
+{
+    "name": "leakUnsafeArgAlloc",
+    "meta": {
+        "severity": "warning",
+        "cwe": "401",
+        "url": "https://cwe.mitre.org/data/definitions/401.html"
+    },
+    "content": {
+        "introduction": "Unsafe allocation. If funcName() throws, memory could be leaked. Use make_shared<int>() instead.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "401",
+            "inconclusive": true,
+            "related_symbols_placeholder": [
+                "funcName"
+            ]
+        }
+    }
+}

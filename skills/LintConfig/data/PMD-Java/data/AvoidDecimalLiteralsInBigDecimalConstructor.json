@@ -1,0 +1,12 @@
+{
+    "name": "AvoidDecimalLiteralsInBigDecimalConstructor",
+    "category": "errorprone",
+    "summary": "One might assume that the result of \"new BigDecimal(0.1)\" is exactly equal to 0.1, but it is actually\nequal to .1000000000000000055511151231257827021181583404541015625.\nThis is because 0.1 cannot be represented exactly as a double (or as a binary fraction of any finite\nlength). Thus, the long value that is being passed in to the constructor is not exactly equal to 0.1,\nappearances notwithstanding.\n\nThe (String) constructor, on the other hand, is perfectly predictable: 'new BigDecimal(\"0.1\")' is\nexactly equal to 0.1, as one would expect.  Therefore, it is generally recommended that the\n(String) constructor be used in preference to this one.",
+    "message": "Avoid creating BigDecimal with a decimal (float/double) literal. Use a String literal",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoiddecimalliteralsinbigdecimalconstructor",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "BigDecimal bd = new BigDecimal(1.123);       // loss of precision, this would trigger the rule\n\nBigDecimal bd = new BigDecimal(\"1.123\");     // preferred approach\n\nBigDecimal bd = new BigDecimal(12);          // preferred approach, ok for integer values"
+}

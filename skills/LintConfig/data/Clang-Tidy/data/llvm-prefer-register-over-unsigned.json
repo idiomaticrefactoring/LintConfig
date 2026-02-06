@@ -1,0 +1,11 @@
+{
+  "name": "llvm-prefer-register-over-unsigned",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/prefer-register-over-unsigned.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds historical use of \nunsigned\n to hold vregs and physregs and rewrites\nthem to use \nRegister\n.\n\nCurrently this works by finding all variables of unsigned integer type whose\ninitializer begins with an implicit cast from \nRegister\n to \nunsigned\n.\n\nvoid\n \nexample\n(\nMachineOperand\n \n&\nMO\n)\n \n{\n\n\n  \nunsigned\n \nReg\n \n=\n \nMO\n.\ngetReg\n();\n\n\n  \n...\n\n\n}\n\nbecomes:\n\nvoid\n \nexample\n(\nMachineOperand\n \n&\nMO\n)\n \n{\n\n\n  \nRegister\n \nReg\n \n=\n \nMO\n.\ngetReg\n();\n\n\n  \n...\n\n\n}",
+    "configurations": []
+  }
+}

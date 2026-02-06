@@ -1,0 +1,12 @@
+{
+    "name": "NoPackage",
+    "category": "codestyle",
+    "summary": "Detects when a class, interface, enum or annotation does not have a package definition.",
+    "message": "All classes, interfaces, enums and annotations must belong to a named package",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#nopackage",
+    "since": "3.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// no package declaration\npublic class ClassInDefaultPackage {\n}"
+}

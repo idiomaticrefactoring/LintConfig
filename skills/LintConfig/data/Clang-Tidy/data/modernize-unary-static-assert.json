@@ -1,0 +1,11 @@
+{
+  "name": "modernize-unary-static-assert",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/unary-static-assert.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The check diagnoses any \nstatic_assert\n declaration with an\nempty string literal and provides a fix-it note to replace the\ndeclaration with a single-argument \nstatic_assert\n declaration.\n\nThe check is only applicable for C++17 and later code.\n\nThe following code:\n\nvoid\n \nf_textless\n(\nint\n \na\n)\n \n{\n\n\n  \nstatic_assert\n(\nsizeof\n(\na\n)\n \n<=\n \n10\n,\n \n\"\"\n);\n\n\n}\n\nis replaced by:\n\nvoid\n \nf_textless\n(\nint\n \na\n)\n \n{\n\n\n  \nstatic_assert\n(\nsizeof\n(\na\n)\n \n<=\n \n10\n);\n\n\n}",
+    "configurations": []
+  }
+}

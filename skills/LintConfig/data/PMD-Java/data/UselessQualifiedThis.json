@@ -1,0 +1,12 @@
+{
+    "name": "UselessQualifiedThis",
+    "category": "codestyle",
+    "summary": "Reports qualified this usages in the same class.",
+    "message": "Useless qualified this usage in the same class.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#uselessqualifiedthis",
+    "since": "5.4.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nfinal Foo otherFoo = Foo.this;  // use \"this\" directly\n\npublic void doSomething() {\nfinal Foo anotherFoo = Foo.this;  // use \"this\" directly\n}\n\nprivate ActionListener returnListener() {\nreturn new ActionListener() {\n@Override\npublic void actionPerformed(ActionEvent e) {\ndoSomethingWithQualifiedThis(Foo.this);  // This is fine\n}\n};\n}\n\nprivate class Foo3 {\nfinal Foo myFoo = Foo.this;  // This is fine\n}\n\nprivate class Foo2 {\nfinal Foo2 myFoo2 = Foo2.this;  // Use \"this\" directly\n}\n}"
+}

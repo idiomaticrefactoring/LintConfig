@@ -1,0 +1,23 @@
+{
+  "name": "no-empty-character-class",
+  "meta": {
+    "description": "Disallow empty character classes in regular expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-empty-character-class",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow empty character classes in regular expressions\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsKnown LimitationsVersionResources\nBecause empty character classes in regular expressions do not match anything, they might be typing mistakes.\nconstfoo=/^abc[]/;1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

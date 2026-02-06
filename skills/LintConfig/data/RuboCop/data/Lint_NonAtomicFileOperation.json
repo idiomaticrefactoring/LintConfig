@@ -1,0 +1,9 @@
+{
+  "name": "Lint/NonAtomicFileOperation",
+  "full_description": "Checks for non-atomic file operations.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#atomic-file-operations",
+  "is_safe": true,
+  "parameters": []
+}

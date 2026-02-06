@@ -1,0 +1,12 @@
+{
+    "name": "VariableCanBeInlined",
+    "category": "codestyle",
+    "summary": "Local variables should not be declared and then immediately returned or thrown. Such\nvariable declarations add unnecessary complexity and make the code harder to read.\nIt is often simpler and cleaner to return or throw the value directly.\n\nThis rule implements SonarSource rule [S1488](https://sonarsource.github.io/rspec/#/rspec/S1488).",
+    "message": "Consider simply using the value vs. storing it in local variable ''{0}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#variablecanbeinlined",
+    "since": "7.17.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\nObject foo() {\nvar foo = \"foo\";\nreturn foo;  // instead, just 'return \"foo\";'\n}\n\nObject bar() {\nvar ex = getIllegalArgumentException();\nthrow ex; // instead, just 'throw getIllegalArgumentException();'\n}\n\nObject baz() {\nvar baz = switch (foo()) {\ncase \"foo\" -> {\nvar foo = foo();\nyield foo;  // Can be simplified to 'yield foo();'\n}\ncase \"bar\" -> {\nvar bar = bar();\nyield bar;  // Can be simplified to 'yield bar();'\n}\ndefault -> bar(\"baz\");\n};\nreturn baz; // instead, just 'return switch (foo()) {...'\n}\n}"
+}

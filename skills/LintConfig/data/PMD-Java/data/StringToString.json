@@ -1,0 +1,12 @@
+{
+    "name": "StringToString",
+    "category": "performance",
+    "summary": "Avoid calling toString() on objects already known to be string instances; this is unnecessary.",
+    "message": "Avoid calling toString() on String objects; this is unnecessary.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#stringtostring",
+    "since": "1.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "private String baz() {\nString bar = \"howdy\";\nreturn bar.toString();\n}"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AvoidUsingVolatile",
+    "category": "multithreading",
+    "summary": "Use of the keyword 'volatile' is generally used to fine tune a Java application, and therefore, requires\na good expertise of the Java Memory Model. Moreover, its range of action is somewhat misknown. Therefore,\nthe volatile keyword should not be used for maintenance purpose and portability.",
+    "message": "Use of modifier volatile is not recommended.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#avoidusingvolatile",
+    "since": "4.1",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Data {\nprivate volatile String var1; // not suggested\nprivate          String var2; // preferred\n}"
+}

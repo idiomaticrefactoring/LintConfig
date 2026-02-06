@@ -1,0 +1,23 @@
+{
+  "name": "no-constructor-return",
+  "meta": {
+    "description": "Disallow returning value from constructor",
+    "url": "https://eslint.org/docs/latest/rules/no-constructor-return",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow returning value from constructor\nTable of ContentsRule DetailsVersionResources\nIn JavaScript, returning a value in the constructor of a class may be a mistake. Forbidding this pattern prevents mistakes resulting from unfamiliarity with the language or a copy-paste error.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

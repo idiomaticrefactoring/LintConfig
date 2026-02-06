@@ -1,0 +1,12 @@
+{
+    "name": "MisplacedNullCheck",
+    "category": "errorprone",
+    "summary": "The null check here is misplaced. If the variable is null a `NullPointerException` will be thrown.\nEither the check is useless (the variable will never be `null`) or it is incorrect.",
+    "message": "The null check here is misplaced; if the variable ''{0}'' is null there will be a NullPointerException",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#misplacednullcheck",
+    "since": "3.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nvoid bar() {\nif (a.equals(baz) && a != null) {} // a could be null, misplaced null check\n\nif (a != null && a.equals(baz)) {} // correct null check\n}\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-suspicious-memory-comparison",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-memory-comparison.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds potentially incorrect calls to \nmemcmp()\n based on properties of the\narguments. The following cases are covered:\n\nCase 1: Non-standard-layout type\n\nComparing the object representations of non-standard-layout objects may not\nproperly compare the value representations.\n\nCase 2: Types with no unique object representation\n\nObjects with the same value may not have the same object representation.\nThis may be caused by padding or floating-point types.\n\nSee also:\n\nEXP42-C. Do not compare padding data\n\nand\n\nFLP37-C. Do not use object representations to compare floating-point values\n\nThis check is also related to and partially overlaps the CERT C++ Coding Standard rules\n\nOOP57-CPP. Prefer special member functions and overloaded operators to\nC Standard Library functions\n\nand\n\nEXP62-CPP. Do not access the bits of an object representation that are not\npart of the objectâs value representation\n\ncert-exp42-c\n redirects here as an alias of this check.",
+    "configurations": []
+  }
+}

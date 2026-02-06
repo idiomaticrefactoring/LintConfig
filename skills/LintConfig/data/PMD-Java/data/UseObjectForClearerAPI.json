@@ -1,0 +1,12 @@
+{
+    "name": "UseObjectForClearerAPI",
+    "category": "design",
+    "summary": "When you write a public method, you should be thinking in terms of an API. If your method is public, it means other class\nwill use it, therefore, you want (or need) to offer a comprehensive and evolutive API. If you pass a lot of information\nas a simple series of Strings, you may think of using an Object to represent all those information. You'll get a simpler\nAPI (such as doWork(Workload workload), rather than a tedious series of Strings) and more importantly, if you need at some\npoint to pass extra data, you'll be able to do so by simply modifying or extending Workload without any modification to\nyour API.",
+    "message": "Rather than using a lot of String arguments, consider using a container object for those values.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#useobjectforclearerapi",
+    "since": "4.2.6",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class MyClass {\npublic void connect(String username,\nString pssd,\nString databaseName,\nString databaseAddress)\n// Instead of those parameters object\n// would ensure a cleaner API and permit\n// to add extra data transparently (no code change):\n// void connect(UserData data);\n{\n\n}\n}"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "DoNotUseThreads",
+    "category": "multithreading",
+    "summary": "The J2EE specification explicitly forbids the use of threads. Threads are resources, that should be managed and monitored by the J2EE server.\nIf the application creates threads on its own or uses own custom thread pools, then these threads are not managed, which could lead to resource exhaustion.\nAlso, EJBs might be moved between machines in a cluster and only managed resources can be moved along.",
+    "message": "To be compliant to J2EE, a webapp should not use any thread.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#donotusethreads",
+    "since": "4.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// This is not allowed\npublic class UsingThread extends Thread {\n\n}\n\n// Neither this,\npublic class UsingExecutorService {\n\npublic void methodX() {\nExecutorService executorService = Executors.newFixedThreadPool(5);\n}\n}\n\n// Nor this,\npublic class Example implements ExecutorService {\n\n}\n\n// Nor this,\npublic class Example extends AbstractExecutorService {\n\n}\n\n// Nor this\npublic class UsingExecutors {\n\npublic void methodX() {\nExecutors.newSingleThreadExecutor().submit(() -> System.out.println(\"Hello!\"));\n}\n}"
+}

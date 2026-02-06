@@ -1,0 +1,9 @@
+{
+  "name": "Lint/RescueType",
+  "full_description": "Avoid rescuing from non constants that could result in a `TypeError`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

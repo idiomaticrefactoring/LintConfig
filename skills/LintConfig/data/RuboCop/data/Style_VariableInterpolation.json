@@ -1,0 +1,9 @@
+{
+  "name": "Style/VariableInterpolation",
+  "full_description": "Don't interpolate global, instance and class variables directly in strings.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#curlies-interpolate",
+  "is_safe": true,
+  "parameters": []
+}

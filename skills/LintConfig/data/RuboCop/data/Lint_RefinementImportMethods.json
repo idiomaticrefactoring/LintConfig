@@ -1,0 +1,9 @@
+{
+  "name": "Lint/RefinementImportMethods",
+  "full_description": "Use `Refinement#import_methods` when using `include` or `prepend` in `refine` block.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

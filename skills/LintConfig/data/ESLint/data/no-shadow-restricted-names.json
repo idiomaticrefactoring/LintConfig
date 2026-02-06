@@ -1,0 +1,23 @@
+{
+  "name": "no-shadow-restricted-names",
+  "meta": {
+    "description": "Disallow identifiers from shadowing restricted names",
+    "url": "https://eslint.org/docs/latest/rules/no-shadow-restricted-names",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Style/GuardClause",
+  "full_description": "Checks for conditionals that can be replaced with guard clauses.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-nested-conditionals",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "MinBodyLength",
+      "default_value": 1,
+      "type": "int"
+    },
+    {
+      "parameter_name": "AllowConsecutiveConditionals",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

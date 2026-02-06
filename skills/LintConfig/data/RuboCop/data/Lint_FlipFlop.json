@@ -1,0 +1,9 @@
+{
+  "name": "Lint/FlipFlop",
+  "full_description": "Checks for flip-flops.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-flip-flops",
+  "is_safe": true,
+  "parameters": []
+}

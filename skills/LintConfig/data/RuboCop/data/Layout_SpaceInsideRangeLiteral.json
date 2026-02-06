@@ -1,0 +1,9 @@
+{
+  "name": "Layout/SpaceInsideRangeLiteral",
+  "full_description": "No spaces inside range literals.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-space-inside-range-literals",
+  "is_safe": true,
+  "parameters": []
+}

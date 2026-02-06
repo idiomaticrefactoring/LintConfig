@@ -1,0 +1,16 @@
+{
+    "name": "invalidTestForOverflow",
+    "meta": {
+        "severity": "warning",
+        "cwe": "391",
+        "url": "https://cwe.mitre.org/data/definitions/391.html"
+    },
+    "content": {
+        "introduction": "Invalid test for overflow 'x + c < x'; signed integer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it's always false.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "391",
+            "inconclusive": false
+        }
+    }
+}

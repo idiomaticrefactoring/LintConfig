@@ -1,0 +1,23 @@
+{
+  "name": "no-inner-declarations",
+  "meta": {
+    "description": "Disallow variable or function declarations in nested blocks",
+    "url": "https://eslint.org/docs/latest/rules/no-inner-declarations",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow variable orfunctiondeclarations in nested blocks\nTable of ContentsRule DetailsOptionsfunctionsbothblockScopedFunctionsWhen Not To Use ItVersionResources\nIn JavaScript, prior to ES6, a function declaration is only allowed in the first level of a program or the body of another function, though parsers sometimeserroneously accept them elsewhere. This only applies to function declarations; named or anonymous function expressions can occur anywhere an expression is permitted.\n// GoodfunctiondoSomething(){}// Badif(test){functiondoSomethingElse(){}}functionanotherThing(){varfn;if(test){// Goodfn=functionexpression(){};// Badfunctiondeclaration(){}}}1234567891011121314151617181920Copy code to clipboard\nIn ES6,block-level functions(functions declared inside a block) are limited to the scope of the block they are declared in and outside of the block scope they can’t be accessed and called, but only when the code is in strict mode (code with\"use strict\"tag or ESM modules). In non-strict mode, they can be accessed and called outside of the block scope.\n\"use strict\";if(test){functiondoSomething(){}doSomething();// no error}doSomething();// error123456789Copy code to clipboard\nA variable declaration is permitted anywhere a statement can go, even nested deeply inside other blocks. This is often undesirable due to variable hoisting, and moving declarations to the root of the program or function body can increase clarity. Note thatblock bindings(let,const) are not hoisted and therefore they are not affected by this rule.\n// Goodvarfoo=42;// Goodif(foo){letbar1;}// Badwhile(test){varbar2;}functiondoSomething(){// Goodvarbaz=true;// Badif(baz){varquux;}}12345678910111213141516171819202122Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has a string and an object option:\n\"functions\"(default) disallowsfunctiondeclarations in nested blocks\"both\"disallowsfunctionandvardeclarations in nested blocks{ blockScopedFunctions: \"allow\" }(default) this option allowsfunctiondeclarations in nested blocks when code is in strict mode (code with\"use strict\"tag or ESM modules) andlanguageOptions.ecmaVersionis set to2015or above. This option can be disabled by setting it to\"disallow\".\nExamples ofincorrectcode for this rule with the default\"functions\"option:\nExamples ofcorrectcode for this rule with the default\"functions\"option:\nExamples ofincorrectcode for this rule with the\"both\"option:\nExamples ofcorrectcode for this rule with the\"both\"option:\nExample ofincorrectcode for this rule with{ blockScopedFunctions: \"disallow\" }option withecmaVersion: 2015:\nExample ofcorrectcode for this rule with{ blockScopedFunctions: \"disallow\" }option withecmaVersion: 2015:\nExample ofcorrectcode for this rule with{ blockScopedFunctions: \"allow\" }option withecmaVersion: 2015:\nESM modulesand bothclassdeclarations and expressions are always in strict mode.",
+    "config_examples": []
+  }
+}

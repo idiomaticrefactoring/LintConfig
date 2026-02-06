@@ -1,0 +1,33 @@
+{
+  "name": "Layout/CaseIndentation",
+  "full_description": "Indentation of when in a case/(when|in)/[else/]end.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#indent-when-to-case",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "case",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "case",
+        "end"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "IndentOneStep",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

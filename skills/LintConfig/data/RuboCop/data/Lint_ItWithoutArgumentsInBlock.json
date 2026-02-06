@@ -1,0 +1,17 @@
+{
+  "name": "Lint/ItWithoutArgumentsInBlock",
+  "full_description": "Checks uses of `it` calls without arguments in block.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://bugs.ruby-lang.org/issues/18980"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AvoidInstantiatingObjectsInLoops",
+    "category": "performance",
+    "summary": "New objects created within loops should be checked to see if they can created outside them and reused.",
+    "message": "Avoid instantiating new objects inside loops",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops",
+    "since": "2.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Something {\npublic static void main( String as[] ) {\nfor (int i = 0; i < 10; i++) {\nFoo f = new Foo(); // Avoid this whenever you can it's really expensive\n}\n}\n}"
+}

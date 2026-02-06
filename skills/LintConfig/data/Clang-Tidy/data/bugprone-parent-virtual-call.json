@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-parent-virtual-call",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/parent-virtual-call.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Detects and fixes calls to grand-â¦parent virtual methods instead of calls\nto overridden parentâs virtual methods.\n\nstruct\n \nA\n \n{\n\n\n  \nint\n \nvirtual\n \nfoo\n()\n \n{...}\n\n\n};\n\n\n\nstruct\n \nB\n:\n \npublic\n \nA\n \n{\n\n\n  \nint\n \nfoo\n()\n \noverride\n \n{...}\n\n\n};\n\n\n\nstruct\n \nC\n:\n \npublic\n \nB\n \n{\n\n\n  \nint\n \nfoo\n()\n \noverride\n \n{\n \nA\n::\nfoo\n();\n \n}\n\n\n//                     ^^^^^^^^\n\n\n// warning: qualified name A::foo refers to a member overridden in subclass; did you mean 'B'?  [bugprone-parent-virtual-call]\n\n\n};",
+    "configurations": []
+  }
+}

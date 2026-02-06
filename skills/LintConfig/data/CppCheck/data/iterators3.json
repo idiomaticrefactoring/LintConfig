@@ -1,0 +1,19 @@
+{
+    "name": "iterators3",
+    "meta": {
+        "severity": "error",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Same iterator is used with containers 'container' that are temporaries or defined in different scopes.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "664",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "container"
+            ]
+        }
+    }
+}

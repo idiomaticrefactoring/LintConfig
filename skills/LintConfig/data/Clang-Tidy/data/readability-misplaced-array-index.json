@@ -1,0 +1,11 @@
+{
+  "name": "readability-misplaced-array-index",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/misplaced-array-index.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check warns for unusual array index syntax.\n\nThe following code has unusual array index syntax:\n\nvoid\n \nf\n(\nint\n \n*\nX\n,\n \nint\n \nY\n)\n \n{\n\n\n  \nY\n[\nX\n]\n \n=\n \n0\n;\n\n\n}\n\nbecomes\n\nvoid\n \nf\n(\nint\n \n*\nX\n,\n \nint\n \nY\n)\n \n{\n\n\n  \nX\n[\nY\n]\n \n=\n \n0\n;\n\n\n}\n\nThe check warns about such unusual syntax for readability reasons:\n\n\nThere are programmers that are not familiar with this unusual syntax.\n\n\nIt is possible that variables are mixed up.",
+    "configurations": []
+  }
+}

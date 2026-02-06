@@ -1,0 +1,9 @@
+{
+  "name": "Layout/SingleLineBlockChain",
+  "full_description": "Put method call on a separate line if chained to a single line block.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

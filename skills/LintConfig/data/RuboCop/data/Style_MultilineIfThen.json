@@ -1,0 +1,9 @@
+{
+  "name": "Style/MultilineIfThen",
+  "full_description": "Do not use then for multi-line if/unless.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-then",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Lint/ArrayLiteralInRegexp",
+  "full_description": "Checks for an array literal interpolated inside a regexp.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

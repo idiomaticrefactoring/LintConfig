@@ -1,0 +1,11 @@
+{
+  "name": "readability-redundant-function-ptr-dereference",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-function-ptr-dereference.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds redundant dereferences of a function pointer.\n\nBefore:\n\nint\n \nf\n(\nint\n,\nint\n);\n\n\nint\n \n(\n*\np\n)(\nint\n,\n \nint\n)\n \n=\n \n&\nf\n;\n\n\n\nint\n \ni\n \n=\n \n(\n**\np\n)(\n10\n,\n \n50\n);\n\nAfter:\n\nint\n \nf\n(\nint\n,\nint\n);\n\n\nint\n \n(\n*\np\n)(\nint\n,\n \nint\n)\n \n=\n \n&\nf\n;\n\n\n\nint\n \ni\n \n=\n \n(\n*\np\n)(\n10\n,\n \n50\n);",
+    "configurations": []
+  }
+}

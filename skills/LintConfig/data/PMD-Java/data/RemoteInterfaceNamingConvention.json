@@ -1,0 +1,12 @@
+{
+    "name": "RemoteInterfaceNamingConvention",
+    "category": "codestyle",
+    "summary": "Remote Interface of a Session EJB should not have a suffix.",
+    "message": "Remote Interface of a Session EJB should NOT be suffixed",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#remoteinterfacenamingconvention",
+    "since": "4.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "/* Poor Session suffix */\npublic interface BadSuffixSession extends javax.ejb.EJBObject {}\n\n/* Poor EJB suffix */\npublic interface BadSuffixEJB extends javax.ejb.EJBObject {}\n\n/* Poor Bean suffix */\npublic interface BadSuffixBean extends javax.ejb.EJBObject {}"
+}

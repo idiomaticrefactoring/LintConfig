@@ -1,0 +1,16 @@
+{
+    "name": "va_start_wrongParameter",
+    "meta": {
+        "severity": "warning",
+        "cwe": "688",
+        "url": "https://cwe.mitre.org/data/definitions/688.html"
+    },
+    "content": {
+        "introduction": "'arg1' given to va_start() is not last named argument of the function. Did you intend to pass 'arg2'?",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "688",
+            "inconclusive": false
+        }
+    }
+}

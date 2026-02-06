@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-avoid-goto",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-goto.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "The usage of \ngoto\n for control flow is error prone and should be replaced\nwith looping constructs. Only forward jumps in nested loops are accepted.\n\nThis check implements \nES.76\n\nfrom the C++ Core Guidelines and\n\n6.3.1\n\nfrom High Integrity C++ Coding Standard.\n\nFor more information on why to avoid programming\nwith \ngoto\n you can read the famous paper \nA Case against the GO TO Statement.\n.\n\nThe check diagnoses \ngoto\n for backward jumps in every language mode. These\nshould be replaced with \nC/C++\n looping constructs.\n\n// Bad, handwritten for loop.\n\n\nint\n \ni\n \n=\n \n0\n;\n\n\n// Jump label for the loop\n\n\nloop_start\n:\n\n\ndo_some_operation\n();\n\n\n\nif\n \n(\ni\n \n<\n \n100\n)\n \n{\n\n\n  \n++\ni\n;\n\n\n  \ngoto\n \nloop_start\n;\n\n\n}\n\n\n\n// Better\n\n\nfor\n(\nint\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \n100\n;\n \n++\ni\n)\n\n\n  \ndo_some_operation\n();\n\nModern C++ needs \ngoto\n only to jump out of nested loops.\n\nfor\n(\nint\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \n100\n;\n \n++\ni\n)\n \n{\n\n\n  \nfor\n(\nint\n \nj\n \n=\n \n0\n;\n \nj\n \n<\n \n100\n;\n \n++\nj\n)\n \n{\n\n\n    \nif\n \n(\ni\n \n*\n \nj\n \n>\n \n500\n)\n\n\n      \ngoto\n \nearly_exit\n;\n\n\n  \n}\n\n\n}\n\n\n\nearly_exit\n:\n\n\nsome_operation\n();\n\nAll other uses of \ngoto\n are diagnosed in \nC++\n.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not warn if a \ngoto\n statement is\nexpanded from a macro. Default is \nfalse\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Layout/FirstMethodArgumentLineBreak",
+  "full_description": "Checks for a line break before the first argument in a multi-line method call.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowMultilineFinalElement",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

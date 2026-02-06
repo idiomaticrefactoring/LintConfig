@@ -1,0 +1,19 @@
+{
+    "name": "memsetClassReference",
+    "meta": {
+        "severity": "error",
+        "cwe": "665",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "content": {
+        "introduction": "Using 'memfunc' on class that contains a reference.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "665",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "memfunc"
+            ]
+        }
+    }
+}

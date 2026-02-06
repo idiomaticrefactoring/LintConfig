@@ -1,0 +1,11 @@
+{
+  "name": "abseil-cleanup-ctad",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/cleanup-ctad.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Suggests switching the initialization pattern of \nabsl::Cleanup\n\ninstances from the factory function to class template argument\ndeduction (CTAD), in C++17 and higher.\n\nauto\n \nc1\n \n=\n \nabsl\n::\nMakeCleanup\n([]\n \n{});\n\n\n\nconst\n \nauto\n \nc2\n \n=\n \nabsl\n::\nMakeCleanup\n(\nstd\n::\nfunction\n<\nvoid\n()\n>\n([]\n \n{}));\n\nbecomes\n\nabsl\n::\nCleanup\n \nc1\n \n=\n \n[]\n \n{};\n\n\n\nconst\n \nabsl\n::\nCleanup\n \nc2\n \n=\n \nstd\n::\nfunction\n<\nvoid\n()\n>\n([]\n \n{});",
+    "configurations": []
+  }
+}

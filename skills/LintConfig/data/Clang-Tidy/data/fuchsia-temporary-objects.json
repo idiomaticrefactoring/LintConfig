@@ -1,0 +1,11 @@
+{
+  "name": "fuchsia-temporary-objects",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/temporary-objects.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns on construction of specific temporary objects in the Zircon kernel.\nIf the object should be flagged, the fully qualified type name must be\nexplicitly passed to the check.\n\nFor example, given the list of classes âFooâ and âNS::Barâ, all of the\nfollowing will trigger the warning:\n\nFoo\n();\n\n\nFoo\n \nF\n \n=\n \nFoo\n();\n\n\nfunc\n(\nFoo\n());\n\n\n\nnamespace\n \nNS\n \n{\n\n\n\nBar\n();\n\n\n\n}\n\nWith the same list, the following will not trigger the warning:\n\nFoo\n \nF\n;\n                 \n// Non-temporary construction okay\n\n\nFoo\n \nF\n(\nparam\n);\n          \n// Non-temporary construction okay\n\n\nFoo\n \n*\nF\n \n=\n \nnew\n \nFoo\n();\n    \n// New construction okay\n\n\n\nBar\n();\n                 \n// Not NS::Bar, so okay\n\n\nNS\n::\nBar\n \nB\n;\n             \n// Non-temporary construction okay\n\nNote that objects must be explicitly specified in order to be flagged,\nand so objects that inherit a specified object will not be flagged.\n\nThis check matches temporary objects without regard for inheritance and so a\nprohibited base class type does not similarly prohibit derived class types.\n\nclass\n \nDerived\n \n:\n \nFoo\n \n{}\n \n// Derived is not explicitly disallowed\n\n\nDerived\n();\n             \n// and so temporary construction is okay\n\nOptions\nÂ¶\n\n\n\n\n\n\nNames\nÂ¶\n\n\nA semi-colon-separated list of fully-qualified names of C++ classes that\nshould not be constructed as temporaries. Default is empty string.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "llvm-namespace-comment",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/namespace-comment.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "google-readability-namespace-comments\n redirects here as an alias for this\ncheck.\n\nChecks that long namespaces have a closing comment.\n\nhttps://llvm.org/docs/CodingStandards.html#namespace-indentation\n\nhttps://google.github.io/styleguide/cppguide.html#Namespaces\n\nnamespace\n \nn1\n \n{\n\n\nvoid\n \nf\n();\n\n\n}\n\n\n\n// becomes\n\n\n\nnamespace\n \nn1\n \n{\n\n\nvoid\n \nf\n();\n\n\n}\n  \n// namespace n1\n\nOptions\nÂ¶\n\n\n\n\n\n\nShortNamespaceLines\nÂ¶\n\n\nRequires the closing brace of the namespace definition to be followed by a\nclosing comment if the body of the namespace has more than\n\nShortNamespaceLines\n lines of code. The value is an unsigned integer that\ndefaults to \n1U\n.\n\n\n\n\n\n\n\n\nSpacesBeforeComments\nÂ¶\n\n\nAn unsigned integer specifying the number of spaces before the comment\nclosing a namespace definition. Default is \n1U\n.\n\n\n\n\n\n\n\n\nAllowOmittingNamespaceComments\nÂ¶\n\n\nWhen \ntrue\n, the check will accept if no namespace comment is present.\nThe check will only fail if the specified namespace comment is different\nthan expected. Default is \nfalse\n.",
+    "configurations": []
+  }
+}

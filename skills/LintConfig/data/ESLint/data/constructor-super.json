@@ -1,0 +1,23 @@
+{
+  "name": "constructor-super",
+  "meta": {
+    "description": "Require super() calls in constructors",
+    "url": "https://eslint.org/docs/latest/rules/constructor-super",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Requiresuper()calls in constructors\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItHandled by TypeScriptVersionResources\nConstructors of derived classes must callsuper().\nConstructors of non derived classes must not callsuper().\nIf this is not observed, the JavaScript engine will raise a runtime error.\nThis rule checks whether or not there is a validsuper()call.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

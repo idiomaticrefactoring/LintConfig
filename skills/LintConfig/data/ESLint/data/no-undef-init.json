@@ -1,0 +1,23 @@
+{
+  "name": "no-undef-init",
+  "meta": {
+    "description": "Disallow initializing variables to undefined",
+    "url": "https://eslint.org/docs/latest/rules/no-undef-init",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow initializing variables toundefined\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsWhen Not To Use ItRelated RulesVersionResources\nIn JavaScript, a variable that is declared and not initialized to any value automatically gets the value ofundefined. For example:\nvarfoo;console.log(foo===undefined);// true123Copy code to clipboard\nIt’s therefore unnecessary to initialize a variable toundefined, such as:\nvarfoo=undefined;1Copy code to clipboard\nIt’s considered a best practice to avoid initializing variables toundefined.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

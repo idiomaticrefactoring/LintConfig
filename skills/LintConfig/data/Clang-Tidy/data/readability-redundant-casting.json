@@ -1,0 +1,11 @@
+{
+  "name": "readability-redundant-casting",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-casting.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Detects explicit type casting operations that involve the same source and\ndestination types, and subsequently recommend their removal. Covers a range of\nexplicit casting operations, including \nstatic_cast\n, \nconst_cast\n, C-style\ncasts, and \nreinterpret_cast\n. Its primary objective is to enhance code\nreadability and maintainability by eliminating unnecessary type casting.\n\nint\n \nvalue\n \n=\n \n42\n;\n\n\nint\n \nresult\n \n=\n \nstatic_cast\n<\nint\n>\n(\nvalue\n);\n\nIn this example, the \nstatic_cast<int>(value)\n is redundant, as it performs\na cast from an \nint\n to another \nint\n.\n\nCasting operations involving constructor conversions, user-defined conversions,\nfunctional casts, type-dependent casts, casts between distinct type aliases\nthat refer to the same underlying type, as well as bitfield-related casts and\ncasts directly from lvalue to rvalue, are all disregarded by the check.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warnings inside macros. Default\nis \ntrue\n.\n\n\n\n\n\n\n\n\nIgnoreTypeAliases\nÂ¶\n\n\nWhen set to \nfalse\n, the check will consider type aliases, and when set to\n\ntrue\n, it will resolve all type aliases and operate on the underlying\ntypes. Default is \nfalse\n.",
+    "configurations": []
+  }
+}

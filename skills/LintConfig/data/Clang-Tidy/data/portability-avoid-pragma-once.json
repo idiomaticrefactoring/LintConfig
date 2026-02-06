@@ -1,0 +1,11 @@
+{
+  "name": "portability-avoid-pragma-once",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/avoid-pragma-once.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds uses of \n#pragma\n \nonce\n and suggests replacing them with standard\ninclude guards (\n#ifndef\n/\n#define\n/\n#endif\n) for improved portability.\n\n#pragma\n \nonce\n is a non-standard extension, despite being widely supported\nby modern compilers. Relying on it can lead to portability issues in\nsome environments.\n\nSome older or specialized C/C++ compilers, particularly in embedded systems,\nmay not fully support \n#pragma\n \nonce\n.\n\nIt can also fail in certain file system configurations, like network drives\nor complex symbolic links, potentially leading to compilation issues.\n\nConsider the following header file:\n\n// my_header.h\n\n\n#pragma once \n// warning: avoid 'pragma once' directive; use include guards instead\n\nThe warning suggests using include guards:\n\n// my_header.h\n\n\n#ifndef PATH_TO_MY_HEADER_H \n// Good: use include guards.\n\n\n#define PATH_TO_MY_HEADER_H\n\n\n\n#endif \n// PATH_TO_MY_HEADER_H",
+    "configurations": []
+  }
+}

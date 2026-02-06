@@ -1,0 +1,12 @@
+{
+    "name": "PrimitiveWrapperInstantiation",
+    "category": "bestpractices",
+    "summary": "Reports usages of primitive wrapper constructors. They are deprecated\nsince Java 9 and should not be used. Even before Java 9, they can\nbe replaced with usage of the corresponding static `valueOf` factory method\n(which may be automatically inserted by the compiler since Java 1.5).\nThis has the advantage that it may reuse common instances instead of creating\na new instance each time.\n\nNote that for `Boolean`, the named constants `Boolean.TRUE` and `Boolean.FALSE`\nare preferred instead of `Boolean.valueOf`.",
+    "message": "Do not use `new {0}(...)`, prefer `{0}.valueOf(...)`",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#primitivewrapperinstantiation",
+    "since": "6.37.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate Integer ZERO = new Integer(0);      // violation\nprivate Integer ZERO1 = Integer.valueOf(0); // better\nprivate Integer ZERO1 = 0;                  // even better\n}"
+}

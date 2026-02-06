@@ -1,0 +1,12 @@
+{
+    "name": "LogicInversion",
+    "category": "design",
+    "summary": "Use opposite operator instead of negating the whole expression with a logic complement operator.",
+    "message": "Use opposite operator instead of the logic complement operator.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#logicinversion",
+    "since": "5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public boolean bar(int a, int b) {\n\nif (!(a == b)) { // use !=\nreturn false;\n}\n\nif (!(a < b)) { // use >=\nreturn false;\n}\n\nreturn true;\n}"
+}

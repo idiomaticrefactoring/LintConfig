@@ -1,0 +1,12 @@
+{
+    "name": "EmptyControlStatement",
+    "category": "codestyle",
+    "summary": "Reports control statements whose body is empty, as well as empty initializers.\n\nThe checked code constructs are the following:\n- bodies of `try` statements\n- `finally` clauses of `try` statements\n- `switch` statements\n- `synchronized` statements\n- `if` statements\n- loop statements: `while`, `for`, `do .. while`\n- initializers\n- blocks used as statements (for scoping)\n\nThis rule replaces the rules EmptyFinallyBlock,\nEmptyIfStmt, EmptyInitializer, EmptyStatementBlock,\nEmptySwitchStatements, EmptySynchronizedBlock, EmptyTryBlock, and EmptyWhileStmt.\n\nNotice that {% rule java/errorprone/EmptyCatchBlock %} is still an independent rule.\n\nEmptyStatementNotInLoop is replaced by {% rule java/codestyle/UnnecessarySemicolon %}.",
+    "message": "This control statement has an empty branch",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#emptycontrolstatement",
+    "since": "6.46.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\n{\nif (true); // empty if statement\nif (true) { // empty as well\n}\n}\n\n{} // empty initializer\n}"
+}

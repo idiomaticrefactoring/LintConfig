@@ -1,0 +1,23 @@
+{
+  "name": "no-implicit-coercion",
+  "meta": {
+    "description": "Disallow shorthand type conversions",
+    "url": "https://eslint.org/docs/latest/rules/no-implicit-coercion",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Disallow shorthand type conversions\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsbooleannumberstringdisallowTemplateShorthandallowWhen Not To Use ItVersionResources\nIn JavaScript, there are a lot of different ways to convert value types.\nSome of them might be hard to read and understand.\nSuch as:\nconstb=!!foo;constb1=~foo.indexOf(\".\");constn=+foo;constn1=-(-foo);constn2=foo-0;constn3=1*foo;consts=\"\"+foo;foo+=``;12345678Copy code to clipboard\nThose can be replaced with the following code:\nconstb=Boolean(foo);constb1=foo.indexOf(\".\")!==-1;constn=Number(foo);constn1=Number(foo);constn2=Number(foo);constn3=Number(foo);consts=String(foo);foo=String(foo);12345678Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has three main options and one override option to allow some coercions as required.\n\"boolean\"(trueby default) - When this istrue, this rule warns shorter type conversions forbooleantype.\"number\"(trueby default) - When this istrue, this rule warns shorter type conversions fornumbertype.\"string\"(trueby default) - When this istrue, this rule warns shorter type conversions forstringtype.\"disallowTemplateShorthand\"(falseby default) - When this istrue, this rule warnsstringtype conversions using${expression}form.\"allow\"(emptyby default) - Each entry in this array can be one of~,!!,+,- -,-, or*that are to be allowed.\nNote that operator+inallowlist would allow+foo(number coercion) as well as\"\" + foo(string coercion).\nExamples ofincorrectcode for the default{ \"boolean\": true }option:\nExamples ofcorrectcode for the default{ \"boolean\": true }option:\nExamples ofincorrectcode for the default{ \"number\": true }option:\nExamples ofcorrectcode for the default{ \"number\": true }option:\nExamples ofincorrectcode for the default{ \"string\": true }option:\nExamples ofcorrectcode for the default{ \"string\": true }option:\nThis option isnotaffected by thestringoption.\nExamples ofincorrectcode for the{ \"disallowTemplateShorthand\": true }option:\nExamples ofcorrectcode for the{ \"disallowTemplateShorthand\": true }option:\nExamples ofcorrectcode for the default{ \"disallowTemplateShorthand\": false }option:\nUsingallowlist, we can override and allow specific operators.\nExamples ofcorrectcode for the sample{ \"allow\": [\"!!\", \"~\"] }option:",
+    "config_examples": []
+  }
+}

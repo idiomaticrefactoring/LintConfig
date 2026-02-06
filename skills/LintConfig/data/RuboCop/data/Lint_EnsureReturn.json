@@ -1,0 +1,9 @@
+{
+  "name": "Lint/EnsureReturn",
+  "full_description": "Do not use return in an ensure block.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-return-ensure",
+  "is_safe": true,
+  "parameters": []
+}

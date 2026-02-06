@@ -1,0 +1,12 @@
+{
+    "name": "UseDiamondOperator",
+    "category": "codestyle",
+    "summary": "In some cases, explicit type arguments in a constructor call for a generic type\nmay be replaced by diamond type arguments (`<>`), and be inferred by the compiler.\nThis rule recommends that you use diamond type arguments anywhere possible, since\nit avoids duplication of the type arguments, and makes the code more concise and readable.\n\nThis rule is useful when upgrading a codebase to Java 1.7, Java 1.8, or Java 9.\nThe diamond syntax was first introduced in Java 1.7. In Java 8, improvements in Java's\ntype inference made more type arguments redundant. In Java 9, type arguments inference\nwas made possible for anonymous class constructors.",
+    "message": "Explicit type arguments can be replaced by a diamond: `{0}`",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#usediamondoperator",
+    "since": "6.11.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.util.*;\nclass Foo {\nstatic {\nList<String> strings;\nstrings = new ArrayList<String>(); // unnecessary duplication of type parameters\nstrings = new ArrayList<>();       // using diamond type arguments is more concise\n\nstrings = new ArrayList(); // accidental use of a raw type, you can use ArrayList<> instead\n\nstrings = new ArrayList<>() {\n// for anonymous classes, this is possible since Java 9 only\n};\n}\n}"
+}

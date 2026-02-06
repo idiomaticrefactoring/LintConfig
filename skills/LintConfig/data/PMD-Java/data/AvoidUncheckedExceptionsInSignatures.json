@@ -1,0 +1,12 @@
+{
+    "name": "AvoidUncheckedExceptionsInSignatures",
+    "category": "design",
+    "summary": "Reports unchecked exceptions in the `throws` clause of a method or constructor.\nJava doesn't force the caller to handle an unchecked exception,\nso it's unnecessary except for documentation. A better practice is to document the\nexceptional cases with a `@throws` Javadoc tag, which allows being more descriptive.",
+    "message": "A method or constructor should not explicitly declare unchecked exception {0} in its ''throws'' clause",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures",
+    "since": "6.13.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public void foo() throws RuntimeException {\n}"
+}

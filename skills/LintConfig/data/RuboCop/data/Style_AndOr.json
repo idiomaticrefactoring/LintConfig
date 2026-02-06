@@ -1,0 +1,23 @@
+{
+  "name": "Style/AndOr",
+  "full_description": "Use &&/|| instead of and/or.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-and-or-or",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "conditionals",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "always",
+        "conditionals"
+      ],
+      "type": "list"
+    }
+  ]
+}

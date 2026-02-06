@@ -1,0 +1,12 @@
+{
+    "name": "UseEqualsToCompareStrings",
+    "category": "errorprone",
+    "summary": "Using '==' or '!=' to compare strings is only reliable if the interned string (`String#intern()`)\nis used on both sides.\n\nUse the `equals()` method instead.",
+    "message": "Use equals() to compare strings instead of ''=='' or ''!=''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#useequalstocomparestrings",
+    "since": "4.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public boolean test(String s) {\nif (s == \"one\") return true;        // unreliable\nif (\"two\".equals(s)) return true;   // better\nreturn false;\n}"
+}

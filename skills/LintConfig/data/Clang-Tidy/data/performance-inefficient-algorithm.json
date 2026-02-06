@@ -1,0 +1,11 @@
+{
+  "name": "performance-inefficient-algorithm",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/inefficient-algorithm.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Warns on inefficient use of STL algorithms on associative containers.\n\nAssociative containers implement some of the algorithms as methods which\nshould be preferred to the algorithms in the algorithm header. The methods\ncan take advantage of the order of the elements.\n\nstd\n::\nset\n<\nint\n>\n \ns\n;\n\n\nauto\n \nit\n \n=\n \nstd\n::\nfind\n(\ns\n.\nbegin\n(),\n \ns\n.\nend\n(),\n \n43\n);\n\n\n\n// becomes\n\n\n\nauto\n \nit\n \n=\n \ns\n.\nfind\n(\n43\n);\n\nstd\n::\nset\n<\nint\n>\n \ns\n;\n\n\nauto\n \nc\n \n=\n \nstd\n::\ncount\n(\ns\n.\nbegin\n(),\n \ns\n.\nend\n(),\n \n43\n);\n\n\n\n// becomes\n\n\n\nauto\n \nc\n \n=\n \ns\n.\ncount\n(\n43\n);",
+    "configurations": []
+  }
+}

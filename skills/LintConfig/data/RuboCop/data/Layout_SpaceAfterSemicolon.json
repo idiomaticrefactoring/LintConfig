@@ -1,0 +1,9 @@
+{
+  "name": "Layout/SpaceAfterSemicolon",
+  "full_description": "Use spaces after semicolons.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#spaces-operators",
+  "is_safe": true,
+  "parameters": []
+}

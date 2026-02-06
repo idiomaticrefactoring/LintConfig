@@ -1,0 +1,12 @@
+{
+    "name": "FinalFieldCouldBeStatic",
+    "category": "design",
+    "summary": "If a final field is assigned to a compile-time constant, it could be made static, thus saving overhead\nin each object at runtime.",
+    "message": "The final field {0} could be made static",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#finalfieldcouldbestatic",
+    "since": "1.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic final int BAR = 42; // this could be static and save some space\n}"
+}

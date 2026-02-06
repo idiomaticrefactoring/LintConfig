@@ -1,0 +1,9 @@
+{
+  "name": "Lint/DuplicateMatchPattern",
+  "full_description": "Do not repeat patterns in `in` keywords.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,10 @@
+{
+  "name": "SubclassedFromCoreClass",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "Candidate classes for the _Subclassed From Core Class_ smell are classes which inherit from Core Classes like Hash, String and Array.\nInheriting from Core Classes means that you are going to have a bad time debugging (the explanation below is taken from [here](http://words.steveklabnik.com/beware-subclassing-ruby-core-classes)):\n> What do you think this code should do?\n```ruby\nList = Class.new(Array)\nl = List.new\nl << 1\nl << 2\nputs l.reverse.class # => Array\n```\n> If you said “it prints Array” y...",
+  "configuration_docs": "_Subclassed From Core Class_ offers the [Basic Smell Options](Basic-Smell-Options.md).",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Subclassed-From-Core-Class.md"
+}

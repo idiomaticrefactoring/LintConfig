@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-unused-local-non-trivial-variable",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unused-local-non-trivial-variable.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns when a local non trivial variable is unused within a function.\nThe following types of variables are excluded from this check:\n\ntrivial and trivially copyable\n\n\nreferences and pointers\n\n\nexception variables in catch clauses\n\n\nstatic or thread local\n\n\nstructured bindings\n\n\nvariables with \n[[maybe_unused]]\n attribute\n\n\nname-independent variables\n\nThis check can be configured to warn on all non-trivial variables by setting\n\nIncludeTypes\n to \n.*\n, and excluding specific types using \nExcludeTypes\n.\n\nIn the this example, \nmy_lock\n would generate a warning that it is unused.\n\nstd\n::\nmutex\n \nmy_lock\n;\n\n\n// my_lock local variable is never used\n\nIn the next example, \nfuture2\n would generate a warning that it is unused.\n\nstd\n::\nfuture\n<\nMyObject\n>\n \nfuture1\n;\n\n\nstd\n::\nfuture\n<\nMyObject\n>\n \nfuture2\n;\n\n\n// ...\n\n\nMyObject\n \nfoo\n \n=\n \nfuture1\n.\nget\n();\n\n\n// future2 is not used.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIncludeTypes\nÂ¶\n\n\nSemicolon-separated list of regular expressions matching types of variables\nto check. By default the following types are checked:\n\n\n\n\n::std::.*mutex\n\n\n::std::future\n\n\n::std::basic_string\n\n\n::std::basic_regex\n\n\n::std::basic_istringstream\n\n\n::std::basic_stringstream\n\n\n::std::bitset\n\n\n::std::filesystem::path\n\n\n\n\n\n\n\n\n\n\nExcludeTypes\nÂ¶\n\n\nA semicolon-separated list of regular expressions matching types that are\nexcluded from the \nIncludeTypes\n matches. By default it is an empty list.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "portability-template-virtual-member-function",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/template-virtual-member-function.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds cases when an uninstantiated virtual member function in a template class\ncauses cross-compiler incompatibility.\n\nUpon instantiating a template class, non-virtual member functions donât have\nto be instantiated unless they are used. Virtual member function instantiation\non the other hand is unspecified and depends on the implementation of the\ncompiler.\n\nIn the following snippets the virtual member function is not instantiated by\nGCC and Clang, but it is instantiated by MSVC, so while the snippet is accepted\nby the former compilers, it is rejected by the latter.\n\ntemplate\n<\ntypename\n \nT\n>\n\n\nstruct\n \nCrossPlatformError\n \n{\n\n\n    \nvirtual\n \n~\nCrossPlatformError\n()\n \n=\n \ndefault\n;\n\n\n\n    \nstatic\n \nvoid\n \nused\n()\n \n{}\n\n\n\n    \nvirtual\n \nvoid\n \nunused\n()\n \n{\n\n\n        \nT\n \nMSVCError\n \n=\n \nthis\n;\n\n\n    \n};\n\n\n};\n\n\n\nint\n \nmain\n()\n \n{\n\n\n    \nCrossPlatformError\n<\nint\n>::\nused\n();\n\n\n    \nreturn\n \n0\n;\n\n\n}\n\nCross-platform projects that need to support MSVC on Windows might see compiler\nerrors because certain virtual member functions are instantiated, which are not\ninstantiated by other compilers on other platforms. This check highlights such\nvirtual member functions.",
+    "configurations": []
+  }
+}

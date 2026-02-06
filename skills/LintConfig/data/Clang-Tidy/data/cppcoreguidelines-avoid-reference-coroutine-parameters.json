@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-avoid-reference-coroutine-parameters",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-reference-coroutine-parameters.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns when a coroutine accepts reference parameters. After a coroutine suspend\npoint, references could be dangling and no longer valid. Instead, pass\nparameters as values.\n\nExamples:\n\nstd\n::\nfuture\n<\nint\n>\n \nsomeCoroutine\n(\nint\n&\n \nval\n)\n \n{\n\n\n  \nco_await\n \n...;\n\n\n  \n// When the coroutine is resumed, 'val' might no longer be valid.\n\n\n  \nif\n \n(\nval\n)\n \n...\n\n\n}\n\nThis check implements \nCP.53\n\nfrom the C++ Core Guidelines.",
+    "configurations": []
+  }
+}

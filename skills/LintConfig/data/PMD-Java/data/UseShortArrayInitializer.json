@@ -1,0 +1,12 @@
+{
+    "name": "UseShortArrayInitializer",
+    "category": "codestyle",
+    "summary": "When declaring and initializing array fields or variables, it is not necessary to explicitly create a new array\nusing `new`. Instead one can simply define the initial content of the array as a expression in curly braces.\n\nE.g. `int[] x = new int[] { 1, 2, 3 };` can be written as `int[] x = { 1, 2, 3 };`.",
+    "message": "Array initialization can be written shorter",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#useshortarrayinitializer",
+    "since": "6.15.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "Foo[] x = new Foo[] { ... }; // Overly verbose\nFoo[] x = { ... }; //Equivalent to above line"
+}

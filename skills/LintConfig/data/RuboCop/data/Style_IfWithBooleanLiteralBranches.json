@@ -1,0 +1,18 @@
+{
+  "name": "Style/IfWithBooleanLiteralBranches",
+  "full_description": "Checks for redundant `if` with boolean literal branches.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [
+        "infinite?",
+        "nonzero?"
+      ],
+      "type": "list"
+    }
+  ]
+}

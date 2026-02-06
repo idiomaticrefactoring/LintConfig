@@ -1,0 +1,11 @@
+{
+  "name": "readability-container-contains",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/container-contains.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds usages of \ncontainer.count()\n and\n\ncontainer.find()\n \n==\n \ncontainer.end()\n which should be replaced by a call to\nthe \ncontainer.contains()\n method.\n\nWhether an element is contained inside a container should be checked with\n\ncontains\n instead of \ncount\n/\nfind\n because \ncontains\n conveys the\nintent more clearly. Furthermore, for containers which permit multiple entries\nper key (\nmultimap\n, \nmultiset\n, â¦), \ncontains\n is more efficient than\n\ncount\n because \ncount\n has to do unnecessary additional work.\n\nExamples:\n\nInitial expression\n\n\nResult\n\n\n\n\nmyMap.find(x)\n \n==\n \nmyMap.end()\n\n\n!myMap.contains(x)\n\n\n\n\nmyMap.find(x)\n \n!=\n \nmyMap.end()\n\n\nmyMap.contains(x)\n\n\n\n\nmyStr.find(x)\n \n!=\n \nstd::string::npos\n\n\nmyStr.contains(x)\n\n\n\n\nif\n \n(myMap.count(x))\n\n\nif\n \n(myMap.contains(x))\n\n\n\n\nbool\n \nexists\n \n=\n \nmyMap.count(x)\n\n\nbool\n \nexists\n \n=\n \nmyMap.contains(x)\n\n\n\n\nbool\n \nexists\n \n=\n \nmyMap.count(x)\n \n>\n \n0\n\n\nbool\n \nexists\n \n=\n \nmyMap.contains(x)\n\n\n\n\nbool\n \nexists\n \n=\n \nmyMap.count(x)\n \n>=\n \n1\n\n\nbool\n \nexists\n \n=\n \nmyMap.contains(x)\n\n\n\n\nbool\n \nmissing\n \n=\n \nmyMap.count(x)\n \n==\n \n0\n\n\nbool\n \nmissing\n \n=\n \n!myMap.contains(x)\n\nThis check will apply to any class that has a \ncontains\n method, notably\nincluding \nstd::set\n, \nstd::unordered_set\n, \nstd::map\n, and\n\nstd::unordered_map\n as of C++20, and \nstd::string\n and\n\nstd::string_view\n as of C++23.",
+    "configurations": []
+  }
+}

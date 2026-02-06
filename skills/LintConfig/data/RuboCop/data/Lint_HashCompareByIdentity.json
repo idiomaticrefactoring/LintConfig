@@ -1,0 +1,9 @@
+{
+  "name": "Lint/HashCompareByIdentity",
+  "full_description": "Prefer using `Hash#compare_by_identity` than using `object_id` for keys.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#identity-comparison",
+  "is_safe": false,
+  "parameters": []
+}

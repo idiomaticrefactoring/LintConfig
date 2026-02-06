@@ -1,0 +1,16 @@
+{
+    "name": "constParameterCallback",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Parameter 'x' can be declared with const, however it seems that 'f' is a callback function.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

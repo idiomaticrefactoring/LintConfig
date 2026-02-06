@@ -1,0 +1,16 @@
+{
+    "name": "overlappingWriteUnion",
+    "meta": {
+        "severity": "error",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Overlapping read/write of union is undefined behavior",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

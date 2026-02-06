@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-assignment-in-if-condition",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/assignment-in-if-condition.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds assignments within conditions of \nif\n statements.\nSuch assignments are bug-prone because they may have been intended as\nequality tests.\n\nThis check finds all assignments within \nif\n conditions, including ones that\nare not flagged by \n-Wparentheses\n due to an extra set of parentheses, and\nincluding assignments that call an overloaded \noperator=()\n. The identified\nassignments violate\n\nBARR group âRule 8.2.câ\n.\n\nint\n \nf\n \n=\n \n3\n;\n\n\nif\n(\nf\n \n=\n \n4\n)\n \n{\n \n// This is identified by both `Wparentheses` and this check - should it have been: `if (f == 4)` ?\n\n\n  \nf\n \n=\n \nf\n \n+\n \n1\n;\n\n\n}\n\n\n\nif\n((\nf\n \n==\n \n5\n)\n \n||\n \n(\nf\n \n=\n \n6\n))\n \n{\n \n// the assignment here `(f = 6)` is identified by this check, but not by `-Wparentheses`. Should it have been `(f == 6)` ?\n\n\n  \nf\n \n=\n \nf\n \n+\n \n2\n;\n\n\n}",
+    "configurations": []
+  }
+}

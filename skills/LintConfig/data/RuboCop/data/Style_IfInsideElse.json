@@ -1,0 +1,15 @@
+{
+  "name": "Style/IfInsideElse",
+  "full_description": "Finds if nodes inside else, which can be converted to elsif.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowIfModifier",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "google-build-using-namespace",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/build-using-namespace.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds \nusing\n \nnamespace\n directives.\n\nThe check implements the following rule of the\n\nGoogle C++ Style Guide\n:\n\nYou may not use a using-directive to make all names from a namespace\navailable.\n\n// Forbidden -- This pollutes the namespace.\n\n\nusing\n \nnamespace\n \nfoo\n;\n\nCorresponding cpplint.py check name: \nbuild/namespaces\n.",
+    "configurations": []
+  }
+}

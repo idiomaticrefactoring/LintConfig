@@ -1,0 +1,12 @@
+{
+    "name": "AvoidFieldNameMatchingTypeName",
+    "category": "errorprone",
+    "summary": "It is somewhat confusing to have a field name matching the declaring type name.\nThis probably means that type and/or field names should be chosen more carefully.",
+    "message": "It is somewhat confusing to have a field name matching the declaring class name",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidfieldnamematchingtypename",
+    "since": "3.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo extends Bar {\nint foo;    // There is probably a better name that can be used\n}\npublic interface Operation {\nint OPERATION = 1; // There is probably a better name that can be used\n}"
+}

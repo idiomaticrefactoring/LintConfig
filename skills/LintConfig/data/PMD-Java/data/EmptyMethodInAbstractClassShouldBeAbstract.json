@@ -1,0 +1,12 @@
+{
+    "name": "EmptyMethodInAbstractClassShouldBeAbstract",
+    "category": "codestyle",
+    "summary": "Empty or auto-generated methods in an abstract class should be tagged as abstract. This helps to remove their inappropriate\nusage by developers who should be implementing their own versions in the concrete subclasses.",
+    "message": "An empty method in an abstract class should be abstract instead",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#emptymethodinabstractclassshouldbeabstract",
+    "since": "4.1",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public abstract class ShouldBeAbstract {\npublic Object couldBeAbstract() {\n// Should be abstract method ?\nreturn null;\n}\n\npublic void couldBeAbstract() {\n}\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-raw-memory-call-on-non-trivial-type",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-non-trivial-type.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Flags use of the C standard library functions \nmemset\n, \nmemcpy\n and\n\nmemcmp\n and similar derivatives on non-trivial types.\n\nThe check will detect the following functions: \nmemset\n, \nstd::memset\n,\n\nstd::memcpy\n, \nmemcpy\n, \nstd::memmove\n, \nmemmove\n, \nstd::strcpy\n,\n\nstrcpy\n, \nmemccpy\n, \nstpncpy\n, \nstrncpy\n, \nstd::memcmp\n, \nmemcmp\n,\n\nstd::strcmp\n, \nstrcmp\n, \nstrncmp\n.\n\nOptions\nÂ¶\n\n\n\n\n\n\nMemSetNames\nÂ¶\n\n\nSpecify extra functions to flag that act similarly to \nmemset\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\n\n\n\n\n\n\n\n\nMemCpyNames\nÂ¶\n\n\nSpecify extra functions to flag that act similarly to \nmemcpy\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\n\n\n\n\n\n\n\n\nMemCmpNames\nÂ¶\n\n\nSpecify extra functions to flag that act similarly to \nmemcmp\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\n\n\n\n\nThis check corresponds to the CERT C++ Coding Standard rule\n\nOOP57-CPP. Prefer special member functions and overloaded operators to C\nStandard Library functions\n.",
+    "configurations": []
+  }
+}

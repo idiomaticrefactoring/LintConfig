@@ -1,0 +1,16 @@
+{
+    "name": "memsetZeroBytes",
+    "meta": {
+        "severity": "warning",
+        "cwe": "687",
+        "url": "https://cwe.mitre.org/data/definitions/687.html"
+    },
+    "content": {
+        "introduction": "memset() called to fill 0 bytes. The second and third arguments might be inverted. The function memset ( void * ptr, int value, size_t num ) sets the first num bytes of the block of memory pointed by ptr to the specified value.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "687",
+            "inconclusive": false
+        }
+    }
+}

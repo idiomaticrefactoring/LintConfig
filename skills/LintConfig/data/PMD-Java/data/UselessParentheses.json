@@ -1,0 +1,12 @@
+{
+    "name": "UselessParentheses",
+    "category": "codestyle",
+    "summary": "Parenthesized expressions are used to override the default operator precedence\nrules. Parentheses whose removal would not change the relative nesting of operators\nare unnecessary, because they don't change the semantics of the enclosing expression.\n\nSome parentheses that strictly speaking are unnecessary, may still be considered useful\nfor readability. This rule allows to ignore violations on two kinds of unnecessary parentheses:\n- \"Clarifying\" parentheses, which separate operators of difference precedence. While\nunnecessary, they make precedence rules explicit, which may be useful for rarely used\noperators. For example:\n```java\n(a + b) & c // is equivalent to `a + b & c`, but probably clearer\n```\nUnset the property `ignoreClarifying` to report them.\n\n- \"Balancing\" parentheses, which are unnecessary but visually balance out another pair\nof parentheses around an equality operator. For example, those two expressions are equivalent:\n```java\n(a == null) != (b == null)\na == null != (b == null)\n```\nThe parentheses on the right are required, and the parentheses on the left are\njust more visually pleasing. Unset the property `ignoreBalancing` to report them.",
+    "message": "Useless parentheses.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#uselessparentheses",
+    "since": "5.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\n{\nint n = 0;\nn = (n);         // here\nn = (n * 2) * 3; // and here\nn = n * (2 * 3); // and here\n}\n}"
+}

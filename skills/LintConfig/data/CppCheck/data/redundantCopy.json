@@ -1,0 +1,19 @@
+{
+    "name": "redundantCopy",
+    "meta": {
+        "severity": "performance",
+        "cwe": "563",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "content": {
+        "introduction": "Buffer 'var' is being written before its old content has been used.",
+        "attributes": {
+            "severity": "performance",
+            "cwe_id": "563",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "var"
+            ]
+        }
+    }
+}

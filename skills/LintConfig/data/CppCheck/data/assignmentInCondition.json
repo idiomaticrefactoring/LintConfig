@@ -1,0 +1,16 @@
+{
+    "name": "assignmentInCondition",
+    "meta": {
+        "severity": "style",
+        "cwe": "571",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "content": {
+        "introduction": "Suspicious assignment in condition. Condition 'x=y' is always true.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "571",
+            "inconclusive": false
+        }
+    }
+}

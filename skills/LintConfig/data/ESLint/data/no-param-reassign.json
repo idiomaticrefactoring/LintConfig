@@ -1,0 +1,23 @@
+{
+  "name": "no-param-reassign",
+  "meta": {
+    "description": "Disallow reassigning function parameters",
+    "url": "https://eslint.org/docs/latest/rules/no-param-reassign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

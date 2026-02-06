@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-multi-level-implicit-pointer-conversion",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/multi-level-implicit-pointer-conversion.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Detects implicit conversions between pointers of different levels of\nindirection.\n\nConversions between pointer types of different levels of indirection can be\ndangerous and may lead to undefined behavior, particularly if the converted\npointer is later cast to a type with a different level of indirection.\nFor example, converting a pointer to a pointer to an \nint\n (\nint**\n) to\na \nvoid*\n can result in the loss of information about the original level of\nindirection, which can cause problems when attempting to use the converted\npointer. If the converted pointer is later cast to a type with a different\nlevel of indirection and dereferenced, it may lead to access violations,\nmemory corruption, or other undefined behavior.\n\nConsider the following example:\n\nvoid\n \nfoo\n(\nvoid\n*\n \nptr\n);\n\n\n\nint\n \nmain\n()\n \n{\n\n\n  \nint\n \nx\n \n=\n \n42\n;\n\n\n  \nint\n*\n \nptr\n \n=\n \n&\nx\n;\n\n\n  \nint\n**\n \nptr_ptr\n \n=\n \n&\nptr\n;\n\n\n  \nfoo\n(\nptr_ptr\n);\n \n// warning will trigger here\n\n\n  \nreturn\n \n0\n;\n\n\n}\n\nIn this example, \nfoo()\n is called with \nptr_ptr\n as its argument. However,\n\nptr_ptr\n is a \nint**\n pointer, while \nfoo()\n expects a \nvoid*\n pointer.\nThis results in an implicit pointer level conversion, which could cause issues\nif \nfoo()\n dereferences the pointer assuming itâs a \nint*\n pointer.\n\nUsing an explicit cast is a recommended solution to prevent issues caused by\nimplicit pointer level conversion, as it allows the developer to explicitly\nstate their intention and show their reasoning for the type conversion.\nAdditionally, it is recommended that developers thoroughly check and verify the\nsafety of the conversion before using an explicit cast. This extra level of\ncaution can help catch potential issues early on in the development process,\nimproving the overall reliability and maintainability of the code.\n\nOptions\nÂ¶\n\n\n\n\n\n\nEnableInC\nÂ¶\n\n\nIf \ntrue\n, enables the check in C code (it is always enabled in C++ code).\nDefault is \ntrue\n.",
+    "configurations": []
+  }
+}

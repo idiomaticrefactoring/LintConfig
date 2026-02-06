@@ -1,0 +1,28 @@
+{
+  "name": "Style/RaiseArgs",
+  "full_description": "Checks the arguments passed to raise/fail.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#exception-class-messages",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "exploded",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "compact",
+        "exploded"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedCompactTypes",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

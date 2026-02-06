@@ -1,0 +1,11 @@
+{
+  "name": "readability-redundant-access-specifiers",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-access-specifiers.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds classes, structs, and unions containing redundant member (field and\nmethod) access specifiers.\n\nExample\nÂ¶\n\n\nclass\n \nFoo\n \n{\n\n\npublic\n:\n\n\n  \nint\n \nx\n;\n\n\n  \nint\n \ny\n;\n\n\npublic\n:\n\n\n  \nint\n \nz\n;\n\n\nprotected\n:\n\n\n  \nint\n \na\n;\n\n\npublic\n:\n\n\n  \nint\n \nc\n;\n\n\n}\n\n\n\n\n\n\nIn the example above, the second \npublic\n declaration can be removed without\nany changes of behavior.\n\nOptions\nÂ¶\n\n\n\n\n\n\nCheckFirstDeclaration\nÂ¶\n\n\nIf set to \ntrue\n, the check will also diagnose if the first access\nspecifier declaration is redundant (e.g. \nprivate\n inside \nclass\n,\nor \npublic\n inside \nstruct\n or \nunion\n).\nDefault is \nfalse\n.\n\n\n\n\n\n\nExample\nÂ¶\n\n\nstruct\n \nBar\n \n{\n\n\npublic\n:\n\n\n  \nint\n \nx\n;\n\n\n}\n\n\n\n\n\n\nIf \nCheckFirstDeclaration\n option is enabled, a warning about redundant\naccess specifier will be emitted, because \npublic\n is the default member access\nfor structs.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UnnecessaryCaseChange",
+    "category": "errorprone",
+    "summary": "Using equalsIgnoreCase() is faster than using toUpperCase/toLowerCase().equals()",
+    "message": "Using equalsIgnoreCase() is cleaner than using toUpperCase/toLowerCase().equals().",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#unnecessarycasechange",
+    "since": "3.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "boolean answer1 = buz.toUpperCase().equals(\"BAZ\");              // should be buz.equalsIgnoreCase(\"BAZ\")\n\nboolean answer2 = buz.toUpperCase().equalsIgnoreCase(\"BAZ\");    // another unnecessary toUpperCase()"
+}

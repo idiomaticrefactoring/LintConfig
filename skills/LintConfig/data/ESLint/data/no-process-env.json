@@ -1,0 +1,23 @@
+{
+  "name": "no-process-env",
+  "meta": {
+    "description": "Replaced by no-process-env in eslint-plugin-n",
+    "url": null,
+    "type": "",
+    "status": {
+      "deprecated": true,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "",
+    "config_examples": []
+  }
+}

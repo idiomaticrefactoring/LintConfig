@@ -1,0 +1,23 @@
+{
+  "name": "Style/UnlessLogicalOperators",
+  "full_description": "Checks for use of logical operators in an unless condition.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "forbid_mixed_logical_operators",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "forbid_mixed_logical_operators",
+        "forbid_logical_operators"
+      ],
+      "type": "list"
+    }
+  ]
+}

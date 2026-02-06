@@ -1,0 +1,15 @@
+{
+  "name": "Style/ModuleMemberExistenceCheck",
+  "full_description": "Checks for usage of `Module` methods returning arrays that can be replaced with equivalent predicates.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

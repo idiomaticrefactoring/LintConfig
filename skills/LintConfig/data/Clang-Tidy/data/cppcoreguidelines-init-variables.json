@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-init-variables",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/init-variables.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks whether there are local variables that are declared without an initial\nvalue. These may lead to unexpected behavior if there is a code path that reads\nthe variable before assigning to it.\n\nThis rule is part of the \nType safety (Type.5)\n\nprofile and \nES.20\n\nfrom the C++ Core Guidelines.\n\nOnly integers, booleans, floats, doubles and pointers are checked. The fix\noption initializes all detected values with the value of zero. An exception is\nfloat and double types, which are initialized to NaN.\n\nAs an example a function that looks like this:\n\nvoid\n \nfunction\n()\n \n{\n\n\n  \nint\n \nx\n;\n\n\n  \nchar\n \n*\ntxt\n;\n\n\n  \ndouble\n \nd\n;\n\n\n\n  \n// Rest of the function.\n\n\n}\n\nWould be rewritten to look like this:\n\n#include\n \n<math.h>\n\n\n\nvoid\n \nfunction\n()\n \n{\n\n\n  \nint\n \nx\n \n=\n \n0\n;\n\n\n  \nchar\n \n*\ntxt\n \n=\n \nnullptr\n;\n\n\n  \ndouble\n \nd\n \n=\n \nNAN\n;\n\n\n\n  \n// Rest of the function.\n\n\n}\n\nIt warns for the uninitialized enum case, but without a FixIt:\n\nenum\n \nA\n \n{\nA1\n,\n \nA2\n,\n \nA3\n};\n\n\nenum\n \nA_c\n \n:\n \nchar\n \n{\n \nA_c1\n,\n \nA_c2\n,\n \nA_c3\n \n};\n\n\nenum\n \nclass\n \nB\n \n{\n \nB1\n,\n \nB2\n,\n \nB3\n \n};\n\n\nenum\n \nclass\n \nB_i\n \n:\n \nint\n \n{\n \nB_i1\n,\n \nB_i2\n,\n \nB_i3\n \n};\n\n\nvoid\n \nfunction\n()\n \n{\n\n\n  \nA\n \na\n;\n     \n// Warning: variable 'a' is not initialized\n\n\n  \nA_c\n \na_c\n;\n \n// Warning: variable 'a_c' is not initialized\n\n\n  \nB\n \nb\n;\n     \n// Warning: variable 'b' is not initialized\n\n\n  \nB_i\n \nb_i\n;\n \n// Warning: variable 'b_i' is not initialized\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nIncludeStyle\nÂ¶\n\n\nA string specifying which include-style is used, \nllvm\n or \ngoogle\n. Default\nis \nllvm\n.\n\n\n\n\n\n\n\n\nMathHeader\nÂ¶\n\n\nA string specifying the header to include to get the definition of \nNAN\n.\nDefault is \n<math.h>\n.",
+    "configurations": []
+  }
+}

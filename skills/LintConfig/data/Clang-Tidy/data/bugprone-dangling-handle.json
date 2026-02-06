@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-dangling-handle",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/dangling-handle.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Detect dangling references in value handles like \nstd::string_view\n.\nThese dangling references can be a result of constructing handles from\ntemporary values, where the temporary is destroyed soon after the handle\nis created.\n\nExamples:\n\nstring_view\n \nView\n \n=\n \nstring\n();\n  \n// View will dangle.\n\n\nstring\n \nA\n;\n\n\nView\n \n=\n \nA\n \n+\n \n\"A\"\n;\n  \n// still dangle.\n\n\n\nvector\n<\nstring_view\n>\n \nV\n;\n\n\nV\n.\npush_back\n(\nstring\n());\n  \n// V[0] is dangling.\n\n\nV\n.\nresize\n(\n3\n,\n \nstring\n());\n  \n// V[1] and V[2] will also dangle.\n\n\n\nstring_view\n \nf\n()\n \n{\n\n\n  \n// All these return values will dangle.\n\n\n  \nreturn\n \nstring\n();\n\n\n  \nstring\n \nS\n;\n\n\n  \nreturn\n \nS\n;\n\n\n  \nchar\n \nArray\n[\n10\n]{};\n\n\n  \nreturn\n \nArray\n;\n\n\n}\n\n\n\nspan\n<\nint\n>\n \ng\n()\n \n{\n\n\n  \narray\n<\nint\n,\n \n1\n>\n \nV\n;\n\n\n  \nreturn\n \n{\nV\n};\n\n\n  \nint\n \nArray\n[\n10\n]{};\n\n\n  \nreturn\n \n{\nArray\n};\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nHandleClasses\nÂ¶\n\n\nA semicolon-separated list of class names that should be treated as handles.\nBy default only \nstd::basic_string_view\n,\n\nstd::experimental::basic_string_view\n and \nstd::span\n are considered.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "google-runtime-int",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/runtime-int.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds uses of \nshort\n, \nlong\n and \nlong\n \nlong\n and suggest replacing them\nwith \nu?intXX(_t)?\n.\n\nThe corresponding style guide rule:\n\nhttps://google.github.io/styleguide/cppguide.html#Integer_Types\n.\n\nCorresponding cpplint.py check: \nruntime/int\n.\n\nOptions\nÂ¶\n\n\n\n\n\n\nUnsignedTypePrefix\nÂ¶\n\n\nA string specifying the unsigned type prefix. Default is \nuint\n.\n\n\n\n\n\n\n\n\nSignedTypePrefix\nÂ¶\n\n\nA string specifying the signed type prefix. Default is \nint\n.\n\n\n\n\n\n\n\n\nTypeSuffix\nÂ¶\n\n\nA string specifying the type suffix. Default is an empty string.",
+    "configurations": []
+  }
+}

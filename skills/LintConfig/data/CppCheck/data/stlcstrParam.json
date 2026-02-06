@@ -1,0 +1,16 @@
+{
+    "name": "stlcstrParam",
+    "meta": {
+        "severity": "performance",
+        "cwe": "704",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "content": {
+        "introduction": "The conversion from const char* as returned by c_str() to std::string creates an unnecessary string copy or length calculation. Solve that by directly passing the string.",
+        "attributes": {
+            "severity": "performance",
+            "cwe_id": "704",
+            "inconclusive": false
+        }
+    }
+}

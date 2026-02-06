@@ -1,0 +1,23 @@
+{
+  "name": "no-unneeded-ternary",
+  "meta": {
+    "description": "Disallow ternary operators when simpler alternatives exist",
+    "url": "https://eslint.org/docs/latest/rules/no-unneeded-ternary",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow ternary operators when simpler alternatives exist\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsdefaultAssignmentWhen Not To Use ItRelated RulesVersionResources\nIt’s a common mistake in JavaScript to use a conditional expression to select between two Boolean values instead of using!to convert the test to a Boolean.\nHere are some examples:\n// BadconstisYes=answer===1?true:false;// GoodconstisYes=answer===1;// BadconstisNo=answer===1?false:true;// GoodconstisNo=answer!==1;1234567891011Copy code to clipboard\nAnother common mistake is using a single variable as both the conditional test and the consequent. In such cases, the logicalORcan be used to provide the same functionality.\nHere is an example:\n// Badfoo(bar?bar:1);// Goodfoo(bar||1);12345Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\n\"defaultAssignment\": true(default) allows the conditional expression as a default assignment pattern\"defaultAssignment\": falsedisallows the conditional expression as a default assignment pattern\nWhen set totrue, which it is by default, ThedefaultAssignmentoption allows expressions of the formx ? x : expr(wherexis any identifier andexpris any expression).\nExamples of additionalincorrectcode for this rule with the{ \"defaultAssignment\": false }option:\nNote thatdefaultAssignment: falsestill allows expressions of the formx ? expr : x(where the identifier is on the right hand side of the ternary).",
+    "config_examples": []
+  }
+}

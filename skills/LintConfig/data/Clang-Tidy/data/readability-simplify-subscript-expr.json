@@ -1,0 +1,11 @@
+{
+  "name": "readability-simplify-subscript-expr",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/simplify-subscript-expr.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check simplifies subscript expressions. Currently this covers calling\n\n.data()\n and immediately doing an array subscript operation to obtain a\nsingle element, in which case simply calling \noperator[]\n suffice.\n\nExamples:\n\nstd\n::\nstring\n \ns\n \n=\n \n...;\n\n\nchar\n \nc\n \n=\n \ns\n.\ndata\n()[\ni\n];\n  \n// char c = s[i];\n\nOptions\nÂ¶\n\n\n\n\n\n\nTypes\nÂ¶\n\n\nThe list of type(s) that triggers this check. Default is\n\n::std::basic_string;::std::basic_string_view;::std::vector;::std::array;::std::span",
+    "configurations": []
+  }
+}

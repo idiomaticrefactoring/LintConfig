@@ -1,0 +1,12 @@
+{
+    "name": "UseEnumCollections",
+    "category": "bestpractices",
+    "summary": "Wherever possible, use `EnumSet` or `EnumMap` instead of `HashSet` and `HashMap` when the keys\nare of an enum type. The specialized enum collections are more space- and time-efficient.\nThis rule reports constructor expressions for hash sets or maps whose key\ntype is an enum type.",
+    "message": "This collection could be an {0}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#useenumcollections",
+    "since": "7.3.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.util.EnumMap;\nimport java.util.HashSet;\n\nenum Example {\nA, B, C;\n\npublic static Set<Example> newSet() {\nreturn new HashSet<>(); // Could be EnumSet.noneOf(Example.class)\n}\n\npublic static <V> Map<Example, V> newMap() {\nreturn new HashMap<>(); // Could be new EnumMap<>(Example.class)\n}\n}"
+}

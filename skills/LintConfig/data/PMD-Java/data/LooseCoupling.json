@@ -1,0 +1,12 @@
+{
+    "name": "LooseCoupling",
+    "category": "bestpractices",
+    "summary": "Excessive coupling to implementation types (e.g., `HashSet`) limits your ability to use alternate\nimplementations in the future as requirements change. Whenever available, declare variables\nand parameters using a more general type (e.g, `Set`).\n\nThis rule reports uses of concrete collection types. User-defined types that should be treated\nthe same as interfaces can be configured with the property `allowedTypes`.",
+    "message": "Avoid using implementation types like ''{0}''; use the interface instead",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#loosecoupling",
+    "since": "0.7",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.util.ArrayList;\nimport java.util.HashSet;\n\npublic class Bar {\n// sub-optimal approach\nprivate ArrayList<SomeType> list = new ArrayList<>();\n\npublic HashSet<SomeType> getFoo() {\nreturn new HashSet<SomeType>();\n}\n\n// preferred approach\nprivate List<SomeType> list = new ArrayList<>();\n\npublic Set<SomeType> getFoo() {\nreturn new HashSet<SomeType>();\n}\n}"
+}

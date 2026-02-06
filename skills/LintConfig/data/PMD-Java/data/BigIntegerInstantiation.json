@@ -1,0 +1,12 @@
+{
+    "name": "BigIntegerInstantiation",
+    "category": "performance",
+    "summary": "Don't create instances of already existing BigInteger (`BigInteger.ZERO`, `BigInteger.ONE`),\nfor Java 1.5 onwards, BigInteger.TEN and BigDecimal (`BigDecimal.ZERO`, `BigDecimal.ONE`, `BigDecimal.TEN`) and\nfor Java 9 onwards `BigInteger.TWO`.",
+    "message": "Don''t create instances of already existing BigInteger and BigDecimal (ZERO, ONE, TEN)",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#bigintegerinstantiation",
+    "since": "3.9",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "BigInteger bi1 = new BigInteger(\"1\");    // reference BigInteger.ONE instead\nBigInteger bi2 = new BigInteger(\"0\");    // reference BigInteger.ZERO instead\nBigInteger bi3;\nbi3 = new BigInteger(\"0\");               // reference BigInteger.ZERO instead\n\nBigDecimal bd1 = new BigDecimal(0);      // reference BigDecimal.ZERO instead\nBigDecimal bd2 = new BigDecimal(\"0.\") ;  // reference BigDecimal.ZERO instead\nBigDecimal bd3 = new BigDecimal(10);     // reference BigDecimal.TEN instead"
+}

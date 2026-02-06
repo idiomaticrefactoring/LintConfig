@@ -1,0 +1,11 @@
+{
+  "name": "misc-multiple-inheritance",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/multiple-inheritance.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns if a class inherits from multiple classes that are not pure virtual.\n\nFor example, declaring a class that inherits from multiple concrete classes is\ndisallowed:\n\nclass\n \nBase_A\n \n{\n\n\npublic\n:\n\n\n  \nvirtual\n \nint\n \nfoo\n()\n \n{\n \nreturn\n \n0\n;\n \n}\n\n\n};\n\n\n\nclass\n \nBase_B\n \n{\n\n\npublic\n:\n\n\n  \nvirtual\n \nint\n \nbar\n()\n \n{\n \nreturn\n \n0\n;\n \n}\n\n\n};\n\n\n\n// Warning\n\n\nclass\n \nBad_Child1\n \n:\n \npublic\n \nBase_A\n,\n \nBase_B\n \n{};\n\nA class that inherits from a pure virtual is allowed:\n\nclass\n \nInterface_A\n \n{\n\n\npublic\n:\n\n\n  \nvirtual\n \nint\n \nfoo\n()\n \n=\n \n0\n;\n\n\n};\n\n\n\nclass\n \nInterface_B\n \n{\n\n\npublic\n:\n\n\n  \nvirtual\n \nint\n \nbar\n()\n \n=\n \n0\n;\n\n\n};\n\n\n\n// No warning\n\n\nclass\n \nGood_Child1\n \n:\n \npublic\n \nInterface_A\n,\n \nInterface_B\n \n{\n\n\n  \nvirtual\n \nint\n \nfoo\n()\n \noverride\n \n{\n \nreturn\n \n0\n;\n \n}\n\n\n  \nvirtual\n \nint\n \nbar\n()\n \noverride\n \n{\n \nreturn\n \n0\n;\n \n}\n\n\n};\n\nReferences\nÂ¶\n\n\nSee the features disallowed in Fuchsia at \nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+    "configurations": []
+  }
+}

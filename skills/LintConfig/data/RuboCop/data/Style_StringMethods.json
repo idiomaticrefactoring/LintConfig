@@ -1,0 +1,17 @@
+{
+  "name": "Style/StringMethods",
+  "full_description": "Checks if configured preferred methods are used over non-preferred.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "PreferredMethods",
+      "default_value": {
+        "intern": "to_sym"
+      },
+      "type": "dict"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-object-constructor",
+  "meta": {
+    "description": "Disallow calls to the Object constructor without an argument",
+    "url": "https://eslint.org/docs/latest/rules/no-object-constructor",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Disallow calls to theObjectconstructor without an argument\n💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions\nTable of ContentsRule DetailsWhen Not To Use ItRelated RulesVersionResources\nUse of theObjectconstructor to construct a new empty object is generally discouraged in favor of object literal notation because of conciseness and because theObjectglobal may be redefined.\nThe exception is when theObjectconstructor is used to intentionally wrap a specified value which is passed as an argument.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

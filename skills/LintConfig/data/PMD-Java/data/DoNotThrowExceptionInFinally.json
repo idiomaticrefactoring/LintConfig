@@ -1,0 +1,12 @@
+{
+    "name": "DoNotThrowExceptionInFinally",
+    "category": "errorprone",
+    "summary": "Throwing exceptions within a 'finally' block is confusing since they may mask other exceptions\nor code defects.\nNote: This is a PMD implementation of the Lint4j rule \"A throw in a finally block\"",
+    "message": "A throw statement in a finally block makes the control flow hard to understand.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#donotthrowexceptioninfinally",
+    "since": "4.2",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void bar() {\ntry {\n// Here do some stuff\n} catch( Exception e) {\n// Handling the issue\n} finally {\n// is this really a good idea ?\nthrow new Exception();\n}\n}\n}"
+}

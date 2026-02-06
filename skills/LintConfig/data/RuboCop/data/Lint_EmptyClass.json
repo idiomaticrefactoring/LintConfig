@@ -1,0 +1,15 @@
+{
+  "name": "Lint/EmptyClass",
+  "full_description": "Checks for classes and metaclasses without a body.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowComments",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "misc-anonymous-namespace-in-header",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/anonymous-namespace-in-header.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds anonymous namespaces in headers.\n\nAnonymous namespaces in headers can lead to One Definition Rule (ODR)\nviolations because each translation unit including the header will get its\nown unique version of the symbols. This increases binary size and can cause\nconfusing link-time errors.\n\nReferences\nÂ¶\n\n\nThis check corresponds to the CERT C++ Coding Standard rule\n\nDCL59-CPP. Do not define an unnamed namespace in a header file\n.\n\n\nCorresponding cpplint.py check name: \nbuild/namespaces\n.",
+    "configurations": []
+  }
+}

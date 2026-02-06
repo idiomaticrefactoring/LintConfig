@@ -1,0 +1,22 @@
+{
+  "name": "useValidAriaRole",
+  "group": "a11y",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-valid-aria-role",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'a11y' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

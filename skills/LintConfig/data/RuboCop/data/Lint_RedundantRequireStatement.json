@@ -1,0 +1,9 @@
+{
+  "name": "Lint/RedundantRequireStatement",
+  "full_description": "Checks for unnecessary `require` statement.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

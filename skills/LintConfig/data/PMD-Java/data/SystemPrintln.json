@@ -1,0 +1,12 @@
+{
+    "name": "SystemPrintln",
+    "category": "bestpractices",
+    "summary": "References to System.(out|err).print are usually intended for debugging purposes and can remain in\nthe codebase even in production code. By using a logger one can enable/disable this behaviour at\nwill (and by priority) and avoid clogging the Standard out log.",
+    "message": "Usage of System.out/err",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#systemprintln",
+    "since": "2.1",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo{\nLogger log = Logger.getLogger(Foo.class.getName());\npublic void testA () {\nSystem.out.println(\"Entering test\");\n// Better use this\nlog.fine(\"Entering test\");\n}\n}"
+}

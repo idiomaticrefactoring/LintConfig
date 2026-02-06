@@ -1,0 +1,12 @@
+{
+    "name": "CloneMethodMustBePublic",
+    "category": "errorprone",
+    "summary": "The java manual says \"By convention, classes that implement this interface should override\nObject.clone (which is protected) with a public method.\"",
+    "message": "clone() method must be public if the class implements Cloneable",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#clonemethodmustbepublic",
+    "since": "5.4.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo implements Cloneable {\n@Override\nprotected Object clone() throws CloneNotSupportedException { // Violation, must be public\n}\n}\n\npublic class Foo implements Cloneable {\n@Override\nprotected Foo clone() { // Violation, must be public\n}\n}\n\npublic class Foo implements Cloneable {\n@Override\npublic Object clone() // Ok\n}"
+}

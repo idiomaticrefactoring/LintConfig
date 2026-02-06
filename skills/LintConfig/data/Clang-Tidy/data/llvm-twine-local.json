@@ -1,0 +1,11 @@
+{
+  "name": "llvm-twine-local",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/twine-local.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Looks for local \nTwine\n variables which are prone to use after frees and\nshould be generally avoided.\n\nstatic\n \nTwine\n \nMoo\n \n=\n \nTwine\n(\n\"bark\"\n)\n \n+\n \n\"bah\"\n;\n\n\n\n// becomes\n\n\n\nstatic\n \nstd\n::\nstring\n \nMoo\n \n=\n \n(\nTwine\n(\n\"bark\"\n)\n \n+\n \n\"bah\"\n).\nstr\n();\n\nThe \nTwine\n does not own the memory of its contents, so it is not\nrecommended to use \nTwine\n created from temporary strings or string literals.\n\nstatic\n \nTwine\n \ngetModuleIdentifier\n(\nStringRef\n \nmoduleName\n)\n \n{\n\n\n  \nreturn\n \nmoduleName\n \n+\n \n\"_module\"\n;\n\n\n}\n\n\nvoid\n \nfoo\n()\n \n{\n\n\n  \nTwine\n \nresult\n \n=\n \ngetModuleIdentifier\n(\nstd\n::\nstring\n{\n\"abc\"\n}\n \n+\n \n\"def\"\n);\n\n\n  \n// temporary std::string is destroyed here, result is dangling\n\n\n}\n\nAfter applying this fix-it hints, the code will use \nstd::string\n instead of\n\nTwine\n for local variables. However, \nTwine\n has lots of methods that\nare incompatible with \nstd::string\n, so the user may need to adjust the code\nmanually after applying the fix-it hints.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-pro-type-union-access",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-union-access.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check flags all access to members of unions. Passing unions as a whole is\nnot flagged.\n\nReading from a union member assumes that member was the last one written, and\nwriting to a union member assumes another member with a nontrivial destructor\nhad its destructor called. This is fragile because it cannot generally be\nenforced to be safe in the language and so relies on programmer discipline to\nget it right.\n\nThis rule is part of the \nType safety (Type.7)\n\nprofile from the C++ Core Guidelines.",
+    "configurations": []
+  }
+}

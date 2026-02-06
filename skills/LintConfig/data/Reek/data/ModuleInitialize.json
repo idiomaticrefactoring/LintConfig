@@ -1,0 +1,10 @@
+{
+  "name": "ModuleInitialize",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "A module is usually a mixin, so when an `#initialize` method is present it is\nhard to tell initialization order and parameters so having `#initialize`\nin a module is usually a bad idea.",
+  "configuration_docs": "Module Initialize supports the [Basic Smell Options](Basic-Smell-Options.md).",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Module-Initialize.md"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Layout/BlockAlignment",
+  "full_description": "Align block ends correctly.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyleAlignWith",
+      "default_value": "either",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStylesAlignWith",
+      "default_value": [
+        "either",
+        "start_of_block",
+        "start_of_line"
+      ],
+      "type": "list"
+    }
+  ]
+}

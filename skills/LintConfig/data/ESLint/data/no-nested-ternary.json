@@ -1,0 +1,23 @@
+{
+  "name": "no-nested-ternary",
+  "meta": {
+    "description": "Disallow nested ternary expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-nested-ternary",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow nested ternary expressions\n❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsRelated RulesVersionResources\nNesting ternary expressions can make code more difficult to understand.\nconstfoo=bar?baz:qux===quxx?bing:bam;1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "readability-redundant-inline-specifier",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-inline-specifier.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Detects redundant \ninline\n specifiers on function and variable declarations.\n\nExamples:\n\nconstexpr\n \ninline\n \nvoid\n \nf\n()\n \n{}\n\nIn the example above the keyword \ninline\n is redundant since constexpr\nfunctions are implicitly inlined\n\nclass\n \nMyClass\n \n{\n\n\n    \ninline\n \nvoid\n \nmyMethod\n()\n \n{}\n\n\n};\n\nIn the example above the keyword \ninline\n is redundant since member functions\ndefined entirely inside a class/struct/union definition are implicitly inlined.\n\nOptions\nÂ¶\n\n\n\n\n\n\nStrictMode\nÂ¶\n\n\nIf set to \ntrue\n, the check will also flag functions and variables that\nalready have internal linkage as redundant. Default is \nfalse\n.",
+    "configurations": []
+  }
+}

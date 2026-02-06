@@ -1,0 +1,27 @@
+{
+  "name": "Style/CommentAnnotation",
+  "full_description": "Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE).",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#annotate-keywords",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Keywords",
+      "default_value": [
+        "TODO",
+        "FIXME",
+        "OPTIMIZE",
+        "HACK",
+        "REVIEW",
+        "NOTE"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "RequireColon",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "knownArgumentHiddenVariableExpression",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Argument 'x*0' to function 'func' is always 0. Constant literal calculation disable/hide variable expression 'x'.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

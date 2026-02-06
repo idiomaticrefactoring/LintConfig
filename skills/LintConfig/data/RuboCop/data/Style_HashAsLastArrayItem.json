@@ -1,0 +1,23 @@
+{
+  "name": "Style/HashAsLastArrayItem",
+  "full_description": "Checks for presence or absence of braces around hash literal as a last array item depending on configuration.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#hash-literal-as-last-array-item",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "braces",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "braces",
+        "no_braces"
+      ],
+      "type": "list"
+    }
+  ]
+}

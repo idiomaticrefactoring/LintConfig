@@ -1,0 +1,9 @@
+{
+  "name": "Lint/FloatComparison",
+  "full_description": "Checks for the presence of precise comparison of floating point numbers.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#float-comparison",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noDelete",
+  "group": "performance",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-delete",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'performance' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "SwitchDensity",
+    "category": "design",
+    "summary": "A high ratio of statements to labels in a switch statement implies that the switch statement\nis overloaded.  Consider moving the statements into new methods or creating subclasses based\non the switch variable.",
+    "message": "A high ratio of statements to labels in a switch statement.  Consider refactoring.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#switchdensity",
+    "since": "1.02",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void bar(int x) {\nswitch (x) {\ncase 1: {\n// lots of statements\nbreak;\n} case 2: {\n// lots of statements\nbreak;\n}\n}\n}\n}"
+}

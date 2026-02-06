@@ -1,0 +1,12 @@
+{
+    "name": "AvoidRethrowingException",
+    "category": "design",
+    "summary": "Catch blocks that merely rethrow a caught exception only add to code size and runtime complexity.",
+    "message": "A catch statement that catches an exception only to rethrow it should be avoided.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#avoidrethrowingexception",
+    "since": "3.8",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public void bar() {\ntry {\n// do something\n}  catch (SomeException se) {\nthrow se;\n}\n}"
+}

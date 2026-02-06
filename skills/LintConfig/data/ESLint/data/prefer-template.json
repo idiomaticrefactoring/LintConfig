@@ -1,0 +1,23 @@
+{
+  "name": "prefer-template",
+  "meta": {
+    "description": "Require template literals instead of string concatenation",
+    "url": "https://eslint.org/docs/latest/rules/prefer-template",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Require template literals instead of string concatenation\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsExamplesWhen Not To Use ItRelated RulesVersionResources\nIn ES2015 (ES6), we can use template literals instead of string concatenation.\nconststr=\"Hello, \"+name+\"!\";1Copy code to clipboard\nconststr=`Hello,${name}!`;1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

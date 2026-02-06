@@ -1,0 +1,19 @@
+{
+    "name": "leakReturnValNotUsed",
+    "meta": {
+        "severity": "error",
+        "cwe": "771",
+        "url": "https://cwe.mitre.org/data/definitions/771.html"
+    },
+    "content": {
+        "introduction": "Return value of allocation function 'funcName' is not stored.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "771",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "funcName"
+            ]
+        }
+    }
+}

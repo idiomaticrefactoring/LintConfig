@@ -1,0 +1,16 @@
+{
+    "name": "truncLongCastAssignment",
+    "meta": {
+        "severity": "style",
+        "cwe": "197",
+        "url": "https://cwe.mitre.org/data/definitions/197.html"
+    },
+    "content": {
+        "introduction": "int result is assigned to long variable. If the variable is long to avoid loss of information, then there is loss of information. To avoid loss of information you must cast a calculation operand to long, for example 'l = a * b;' => 'l = (long)a * b;'.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "197",
+            "inconclusive": false
+        }
+    }
+}

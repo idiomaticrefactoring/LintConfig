@@ -1,0 +1,22 @@
+{
+  "name": "useIndexOf",
+  "group": "complexity",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-index-of",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'complexity' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UnnecessaryConversionTemporary",
+    "category": "errorprone",
+    "summary": "Avoid the use temporary objects when converting primitives to Strings. Use the static conversion methods\non the wrapper classes instead.",
+    "message": "Avoid unnecessary temporaries when converting primitives to Strings",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#unnecessaryconversiontemporary",
+    "since": "0.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public String convert(int x) {\nString foo = new Integer(x).toString(); // this wastes an object\n\nreturn Integer.toString(x);             // preferred approach\n}"
+}

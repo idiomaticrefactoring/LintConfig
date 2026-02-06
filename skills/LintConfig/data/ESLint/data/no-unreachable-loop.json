@@ -1,0 +1,23 @@
+{
+  "name": "no-unreachable-loop",
+  "meta": {
+    "description": "Disallow loops with a body that allows only one iteration",
+    "url": "https://eslint.org/docs/latest/rules/no-unreachable-loop",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow loops with a body that allows only one iteration\nTable of ContentsRule DetailsOptionsignoreKnown LimitationsRelated RulesVersionResources\nA loop that can never reach the second iteration is a possible error in the code.\nfor(leti=0;i<arr.length;i++){if(arr[i].name===myName){doSomething(arr[i]);// break was supposed to be here}break;}1234567Copy code to clipboard\nIn rare cases where only one iteration (or at most one iteration) is intended behavior, the code should be refactored to useifconditionals instead ofwhile,do-whileandforloops. It’s considered a best practice to avoid using loop constructs for such cases.",
+    "sub_configuration_introduction": "This rule has an object option, with one option:\n\"ignore\"- an optional array of loop types that will be ignored by this rule.\nYou can specify up to 5 different elements in the\"ignore\"array:\n\"WhileStatement\"- to ignore allwhileloops.\"DoWhileStatement\"- to ignore alldo-whileloops.\"ForStatement\"- to ignore allforloops (does not apply tofor-inandfor-ofloops).\"ForInStatement\"- to ignore allfor-inloops.\"ForOfStatement\"- to ignore allfor-ofloops.\nExamples ofcorrectcode for this rule with the\"ignore\"option:",
+    "config_examples": []
+  }
+}

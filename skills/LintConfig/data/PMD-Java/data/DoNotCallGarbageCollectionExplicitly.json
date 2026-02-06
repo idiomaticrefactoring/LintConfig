@@ -1,0 +1,12 @@
+{
+    "name": "DoNotCallGarbageCollectionExplicitly",
+    "category": "errorprone",
+    "summary": "Calls to `System.gc()`, `Runtime.getRuntime().gc()`, and `System.runFinalization()` are not advised.\nCode should have the same behavior whether the garbage collection is disabled using the option\n`-Xdisableexplicitgc` or not.\n\nMoreover, \"modern\" JVMs do a very good job handling garbage collections. If memory usage issues unrelated to memory\nleaks develop within an application, it should be dealt with JVM options rather than within the code itself.",
+    "message": "Do not explicitly trigger a garbage collection.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#donotcallgarbagecollectionexplicitly",
+    "since": "4.2",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class GCCall {\npublic GCCall() {\n// Explicit gc call !\nSystem.gc();\n}\n\npublic void doSomething() {\n// Explicit gc call !\nRuntime.getRuntime().gc();\n}\n\npublic explicitGCcall() {\n// Explicit gc call !\nSystem.gc();\n}\n\npublic void doSomething() {\n// Explicit gc call !\nRuntime.getRuntime().gc();\n}\n}"
+}

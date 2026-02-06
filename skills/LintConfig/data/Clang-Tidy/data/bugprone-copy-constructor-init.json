@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-copy-constructor-init",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/copy-constructor-init.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds copy constructors where the constructor doesnât call the copy constructor\nof the base class.\n\nclass\n \nCopyable\n \n{\n\n\npublic\n:\n\n\n  \nCopyable\n()\n \n=\n \ndefault\n;\n\n\n  \nCopyable\n(\nconst\n \nCopyable\n \n&\n)\n \n=\n \ndefault\n;\n\n\n\n  \nint\n \nmemberToBeCopied\n \n=\n \n0\n;\n\n\n};\n\n\n\nclass\n \nX2\n \n:\n \npublic\n \nCopyable\n \n{\n\n\n  \nX2\n(\nconst\n \nX2\n \n&\nother\n)\n \n{}\n \n// Copyable(other) is missing\n\n\n};\n\nAlso finds copy constructors where the constructor of\nthe base class donât have parameter.\n\nclass\n \nX3\n \n:\n \npublic\n \nCopyable\n \n{\n\n\n  \nX3\n(\nconst\n \nX3\n \n&\nother\n)\n \n:\n \nCopyable\n()\n \n{}\n \n// other is missing\n\n\n};\n\nFailure to properly initialize base class sub-objects during copy construction\ncan result in undefined behavior, crashes, data corruption, or other unexpected\noutcomes. The check ensures that the copy constructor of a derived class\nproperly calls the copy constructor of the base class, helping to prevent bugs\nand improve code quality.\n\nLimitations\nÂ¶\n\n\n\n\nIt wonât generate warnings for empty classes, as there are no class members\n(including base class sub-objects) to worry about.\n\n\nIt wonât generate warnings for base classes that have copy constructor\nprivate or deleted.\n\n\nIt wonât generate warnings for base classes that are initialized using other\nnon-default constructor, as this could be intentional.\n\n\n\n\nThe check also suggests a fix-its in some cases.",
+    "configurations": []
+  }
+}

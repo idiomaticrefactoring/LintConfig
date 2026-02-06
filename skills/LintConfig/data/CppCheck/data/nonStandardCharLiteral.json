@@ -1,0 +1,16 @@
+{
+    "name": "nonStandardCharLiteral",
+    "meta": {
+        "severity": "portability",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Non-standard character literal. ",
+        "attributes": {
+            "severity": "portability",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

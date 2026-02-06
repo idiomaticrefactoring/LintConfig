@@ -1,0 +1,12 @@
+{
+    "name": "ImplicitFunctionalInterface",
+    "category": "bestpractices",
+    "summary": "Reports functional interfaces that were not explicitly declared as such with\nthe annotation `@FunctionalInterface`. If an interface is accidentally a functional\ninterface, then it should bear a `@SuppressWarnings(\"PMD.ImplicitFunctionalInterface\")`\nannotation to make this clear.",
+    "message": "Annotate this interface with @FunctionalInterface or with @SuppressWarnings(\"PMD.ImplicitFunctionalInterface\") to clarify your intent.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#implicitfunctionalinterface",
+    "since": "7.12.0",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// The intent on this declaration is unclear, and the rule will report it.\npublic interface MyInterface {\nvoid doSomething();\n}\n\n// This is clearly intended as a functional interface.\n@FunctionalInterface\npublic interface MyInterface {\nvoid doSomething();\n}\n\n// This is clearly NOT intended as a functional interface.\n@SuppressWarnings(\"PMD.ImplicitFunctionalInterface\")\npublic interface MyInterface {\nvoid doSomething();\n}"
+}

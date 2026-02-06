@@ -1,0 +1,12 @@
+{
+    "name": "ReturnFromFinallyBlock",
+    "category": "errorprone",
+    "summary": "Avoid returning from a finally block, this can discard exceptions.",
+    "message": "Avoid returning from a finally block",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#returnfromfinallyblock",
+    "since": "1.05",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Bar {\npublic String foo() {\ntry {\nthrow new Exception( \"My Exception\" );\n} catch (Exception e) {\nthrow e;\n} finally {\nreturn \"A. O. K.\"; // return not recommended here\n}\n}\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "modernize-shrink-to-fit",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/shrink-to-fit.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Replace copy and swap tricks on shrinkable containers with the\n\nshrink_to_fit()\n method call.\n\nThe \nshrink_to_fit()\n method is more readable and more effective than\nthe copy and swap trick to reduce the capacity of a shrinkable container.\nNote that, the \nshrink_to_fit()\n method is only available in C++11 and up.",
+    "configurations": []
+  }
+}

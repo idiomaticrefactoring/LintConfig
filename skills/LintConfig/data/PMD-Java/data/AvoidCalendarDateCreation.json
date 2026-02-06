@@ -1,0 +1,12 @@
+{
+    "name": "AvoidCalendarDateCreation",
+    "category": "performance",
+    "summary": "Problem: `java.util.Calendar` is a heavyweight object and expensive to create. It should only be used, if\ncalendar calculations are needed.\n\nSolution: Use `new Date()`, Java 8+ `java.time.LocalDateTime.now()` or `ZonedDateTime.now()`.",
+    "message": "A Calendar is used to get the current time, this is expensive.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#avoidcalendardatecreation",
+    "since": "6.25.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.time.LocalDateTime;\nimport java.util.Calendar;\nimport java.util.Date;\n\npublic class DateStuff {\nprivate Date bad1() {\nreturn Calendar.getInstance().getTime(); // now\n}\nprivate Date good1a() {\nreturn new Date(); // now\n}\nprivate LocalDateTime good1b() {\nreturn LocalDateTime.now();\n}\nprivate long bad2() {\nreturn Calendar.getInstance().getTimeInMillis();\n}\nprivate long good2() {\nreturn System.currentTimeMillis();\n}\n}"
+}

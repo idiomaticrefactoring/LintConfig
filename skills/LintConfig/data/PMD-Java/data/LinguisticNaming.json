@@ -1,0 +1,12 @@
+{
+    "name": "LinguisticNaming",
+    "category": "codestyle",
+    "summary": "This rule finds Linguistic Naming Antipatterns. It checks for fields, that are named, as if they should\nbe boolean but have a different type. It also checks for methods, that according to their name, should\nreturn a boolean, but don't. Further, it checks, that getters return something and setters won't.\nFinally, it checks that methods, that start with \"to\" - so called transform methods - actually return\nsomething, since according to their name, they should convert or transform one object into another.\nThere is additionally an option, to check for methods that contain \"To\" in their name - which are\nalso transform methods. However, this is disabled by default, since this detection is prone to\nfalse positives.\n\nFor more information, see [Linguistic Antipatterns - What They Are and How\nDevelopers Perceive Them](https://doi.org/10.1007/s10664-014-9350-8).",
+    "message": "Linguistics Antipattern - Method name and return type is inconsistent linguistically",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#linguisticnaming",
+    "since": "6.7.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class LinguisticNaming {\nint isValid;    // the field name indicates a boolean, but it is an int.\nboolean isTrue; // correct type of the field\n\nvoid myMethod() {\nint hasMoneyLocal;      // the local variable name indicates a boolean, but it is an int.\nboolean hasSalaryLocal; // correct naming and type\n}\n\n// the name of the method indicates, it is a boolean, but the method returns an int.\nint isValid() {\nreturn 1;\n}\n// correct naming and return type\nboolean isSmall() {\nreturn true;\n}\n\n// the name indicates, this is a setter, but it returns something\nint setName() {\nreturn 1;\n}\n\n// the name indicates, this is a getter, but it doesn't return anything\nvoid getName() {\n// nothing to return?\n}\n\n// the name indicates, it transforms an object and should return the result\nvoid toDataType() {\n// nothing to return?\n}\n// the name indicates, it transforms an object and should return the result\nvoid grapeToWine() {\n// nothing to return?\n}\n}"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "literalWithCharPtrCompare",
+    "meta": {
+        "severity": "warning",
+        "cwe": "595",
+        "url": "https://cwe.mitre.org/data/definitions/595.html"
+    },
+    "content": {
+        "introduction": "String literal compared with variable 'foo'. Did you intend to use strcmp() instead?",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "595",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "foo"
+            ]
+        }
+    }
+}

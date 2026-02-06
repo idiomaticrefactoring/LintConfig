@@ -1,0 +1,11 @@
+{
+  "name": "llvmlibc-callee-namespace",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvmlibc/callee-namespace.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Checks all calls resolve to functions within correct namespace.\n\n// Implementation inside the LIBC_NAMESPACE namespace.\n\n\n// Correct if:\n\n\n// - LIBC_NAMESPACE is a macro\n\n\n// - LIBC_NAMESPACE expansion starts with `__llvm_libc`\n\n\nnamespace\n \nLIBC_NAMESPACE\n \n{\n\n\n\n// Allow calls with the fully qualified name.\n\n\nLIBC_NAMESPACE\n::\nstrlen\n(\n\"hello\"\n);\n\n\n\n// Allow calls to compiler provided functions.\n\n\n(\nvoid\n)\n__builtin_abs\n(\n-1\n);\n\n\n\n// Bare calls are allowed as long as they resolve to the correct namespace.\n\n\nstrlen\n(\n\"world\"\n);\n\n\n\n// Disallow calling into functions in the global namespace.\n\n\n::\nstrlen\n(\n\"!\"\n);\n\n\n\n}\n \n// namespace LIBC_NAMESPACE",
+    "configurations": []
+  }
+}

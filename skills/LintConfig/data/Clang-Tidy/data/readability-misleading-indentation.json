@@ -1,0 +1,11 @@
+{
+  "name": "readability-misleading-indentation",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/misleading-indentation.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Correct indentation helps to understand code. Mismatch of the syntactical\nstructure and the indentation of the code may hide serious problems.\nMissing braces can also make it significantly harder to read the code,\ntherefore it is important to use braces.\n\nThe way to avoid dangling else is to always check that an \nelse\n belongs\nto the \nif\n that begins in the same column.\n\nYou can omit braces when your inner part of e.g. an \nif\n statement has only\none statement in it. Although in that case you should begin the next statement\nin the same column with the \nif\n.\n\nExamples:\n\n// Dangling else:\n\n\nif\n \n(\ncond1\n)\n\n\n  \nif\n \n(\ncond2\n)\n\n\n    \nfoo1\n();\n\n\nelse\n\n\n  \nfoo2\n();\n  \n// Wrong indentation: else belongs to if(cond2) statement.\n\n\n\n// Missing braces:\n\n\nif\n \n(\ncond1\n)\n\n\n  \nfoo1\n();\n\n\n  \nfoo2\n();\n  \n// Not guarded by if(cond1).\n\nLimitations\nÂ¶\n\n\nNote that this check only works as expected when the tabs or spaces are used\nconsistently and not mixed.",
+    "configurations": []
+  }
+}

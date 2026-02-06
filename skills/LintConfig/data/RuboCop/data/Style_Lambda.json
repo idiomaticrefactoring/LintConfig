@@ -1,0 +1,24 @@
+{
+  "name": "Style/Lambda",
+  "full_description": "Use the new lambda literal syntax for single-line blocks.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#lambda-multi-line",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "line_count_dependent",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "line_count_dependent",
+        "lambda",
+        "literal"
+      ],
+      "type": "list"
+    }
+  ]
+}

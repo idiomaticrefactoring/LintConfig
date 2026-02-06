@@ -1,0 +1,12 @@
+{
+    "name": "ComparisonWithNaN",
+    "category": "errorprone",
+    "summary": "Reports comparisons with double and float `NaN` (Not-a-Number) values.\nThese are [specified](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.21.1)\nto have unintuitive behavior: NaN is considered unequal to itself.\nThis means a check like `someDouble == Double.NaN` will always return\nfalse, even if `someDouble` is really the NaN value. To test whether a\nvalue is the NaN value, one should instead use `Double.isNaN(someDouble)`\n(or `Float.isNaN`). The `!=` operator should be treated similarly.\nFinally, comparisons like `someDouble <= Double.NaN` are nonsensical\nand will always evaluate to false.\n\nThis rule has been renamed from \"BadComparison\" in PMD 6.36.0.",
+    "message": "Comparisons with NaN always return false",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#comparisonwithnan",
+    "since": "6.36.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "boolean x = (y == Double.NaN);"
+}

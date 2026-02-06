@@ -1,0 +1,11 @@
+{
+  "name": "modernize-use-default-member-init",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-default-member-init.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check converts constructorsâ member initializers into the new\ndefault member initializers in C++11. Other member initializers that match the\ndefault member initializer are removed. This can reduce repeated code or allow\nuse of â= defaultâ.\n\nstruct\n \nA\n \n{\n\n\n  \nA\n()\n \n:\n \ni\n(\n5\n),\n \nj\n(\n10.0\n)\n \n{}\n\n\n  \nA\n(\nint\n \ni\n)\n \n:\n \ni\n(\ni\n),\n \nj\n(\n10.0\n)\n \n{}\n\n\n  \nint\n \ni\n;\n\n\n  \ndouble\n \nj\n;\n\n\n};\n\n\n\n// becomes\n\n\n\nstruct\n \nA\n \n{\n\n\n  \nA\n()\n \n{}\n\n\n  \nA\n(\nint\n \ni\n)\n \n:\n \ni\n(\ni\n)\n \n{}\n\n\n  \nint\n \ni\n{\n5\n};\n\n\n  \ndouble\n \nj\n{\n10.0\n};\n\n\n};\n\nNote\n\n\nOnly converts member initializers for built-in types, enums, and pointers.\nThe \nreadability-redundant-member-init\n check will remove redundant member\ninitializers for classes.\n\nOptions\nÂ¶\n\n\n\n\n\n\nUseAssignment\nÂ¶\n\n\nIf this option is set to \ntrue\n (default is \nfalse\n), the check will initialize\nmembers with an assignment. For example:\n\n\n\n\nstruct\n \nA\n \n{\n\n\n  \nA\n()\n \n{}\n\n\n  \nA\n(\nint\n \ni\n)\n \n:\n \ni\n(\ni\n)\n \n{}\n\n\n  \nint\n \ni\n \n=\n \n5\n;\n\n\n  \ndouble\n \nj\n \n=\n \n10.0\n;\n\n\n};\n\n\n\n\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf this option is set to \ntrue\n (default is \ntrue\n), the check will not warn\nabout members declared inside macros.",
+    "configurations": []
+  }
+}

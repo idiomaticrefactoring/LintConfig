@@ -1,0 +1,9 @@
+{
+  "name": "Lint/UselessSetterCall",
+  "full_description": "Checks for useless setter call to a local variable.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "object-shorthand",
+  "meta": {
+    "description": "Require or disallow method and property shorthand syntax for object literals",
+    "url": "https://eslint.org/docs/latest/rules/object-shorthand",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Layout/EmptyLines",
+  "full_description": "Don't use several empty lines in a row.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#two-or-more-empty-lines",
+  "is_safe": true,
+  "parameters": []
+}

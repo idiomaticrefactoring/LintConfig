@@ -1,0 +1,15 @@
+{
+  "name": "Style/HashConversion",
+  "full_description": "Avoid Hash[] in favor of ary.to_h or literal hashes.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#avoid-hash-constructor",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowSplatArgument",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

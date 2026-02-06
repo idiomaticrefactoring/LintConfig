@@ -1,0 +1,9 @@
+{
+  "name": "Lint/UnmodifiedReduceAccumulator",
+  "full_description": "Checks for `reduce` or `inject` blocks that do not update the accumulator each iteration.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

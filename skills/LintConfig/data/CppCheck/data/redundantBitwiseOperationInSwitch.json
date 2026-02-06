@@ -1,0 +1,19 @@
+{
+    "name": "redundantBitwiseOperationInSwitch",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Redundant bitwise operation on 'varname' in 'switch' statement. 'break;' missing?",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "varname"
+            ]
+        }
+    }
+}

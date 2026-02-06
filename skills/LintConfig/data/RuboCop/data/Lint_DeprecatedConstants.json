@@ -1,0 +1,44 @@
+{
+  "name": "Lint/DeprecatedConstants",
+  "full_description": "Checks for deprecated constants.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "DeprecatedConstants",
+      "default_value": {
+        "NIL": {
+          "Alternative": "nil",
+          "DeprecatedVersion": "2.4"
+        },
+        "TRUE": {
+          "Alternative": "true",
+          "DeprecatedVersion": "2.4"
+        },
+        "FALSE": {
+          "Alternative": "false",
+          "DeprecatedVersion": "2.4"
+        },
+        "Net::HTTPServerException": {
+          "Alternative": "Net::HTTPClientException",
+          "DeprecatedVersion": "2.6"
+        },
+        "Random::DEFAULT": {
+          "Alternative": "Random.new",
+          "DeprecatedVersion": "3.0"
+        },
+        "Struct::Group": {
+          "Alternative": "Etc::Group",
+          "DeprecatedVersion": "3.0"
+        },
+        "Struct::Passwd": {
+          "Alternative": "Etc::Passwd",
+          "DeprecatedVersion": "3.0"
+        }
+      },
+      "type": "dict"
+    }
+  ]
+}

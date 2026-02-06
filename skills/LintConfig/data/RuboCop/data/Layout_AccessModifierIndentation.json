@@ -1,0 +1,28 @@
+{
+  "name": "Layout/AccessModifierIndentation",
+  "full_description": "Checks indentation of private/protected visibility modifiers.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#indent-public-private-protected",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "indent",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "outdent",
+        "indent"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

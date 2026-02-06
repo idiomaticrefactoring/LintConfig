@@ -1,0 +1,9 @@
+{
+  "name": "Security/IoMethods",
+  "full_description": "Checks for the first argument to `IO.read`, `IO.binread`, `IO.write`, `IO.binwrite`, `IO.foreach`, and `IO.readlines`.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

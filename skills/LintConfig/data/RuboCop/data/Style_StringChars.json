@@ -1,0 +1,9 @@
+{
+  "name": "Style/StringChars",
+  "full_description": "Checks for uses of `String#split` with empty string or regexp literal argument.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#string-chars",
+  "is_safe": false,
+  "parameters": []
+}

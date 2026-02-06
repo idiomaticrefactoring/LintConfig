@@ -1,0 +1,12 @@
+{
+    "name": "ExtendsObject",
+    "category": "codestyle",
+    "summary": "No need to explicitly extend Object.",
+    "message": "No need to explicitly extend Object.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#extendsobject",
+    "since": "5.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo extends Object {     // not required\n}"
+}

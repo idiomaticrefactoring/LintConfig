@@ -1,0 +1,10 @@
+{
+  "name": "InstanceVariableAssumption",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "Classes should not assume that instance variables are set or present outside of the current class definition.\nGood:\n```ruby\nclass Foo\ndef initialize\n@bar = :foo\nend\ndef foo?\n@bar == :foo\nend\nend\n```\nGood as well:\n```ruby\nclass Foo",
+  "configuration_docs": "\"app/models\":\nInstanceVariableAssumption:\nenabled: false\n```\n_Instance Variable Assumption_ supports the [Basic Smell Options](Basic-Smell-Options.md).",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Instance-Variable-Assumption.md"
+}

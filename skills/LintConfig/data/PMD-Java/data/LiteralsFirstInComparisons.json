@@ -1,0 +1,12 @@
+{
+    "name": "LiteralsFirstInComparisons",
+    "category": "bestpractices",
+    "summary": "Position literals first in all String comparisons, if the second argument is null then NullPointerExceptions\ncan be avoided, they will just return false. Note that switching literal positions for compareTo and\ncompareToIgnoreCase may change the result, see examples.\n\nNote that compile-time constant strings are treated like literals. This is because they are inlined into\nthe class file, are necessarily non-null, and therefore cannot cause an NPE at runtime.",
+    "message": "Position literals first in String comparisons",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#literalsfirstincomparisons",
+    "since": "6.24.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\nboolean bar(String x) {\nreturn x.equals(\"2\"); // should be \"2\".equals(x)\n}\nboolean bar(String x) {\nreturn x.equalsIgnoreCase(\"2\"); // should be \"2\".equalsIgnoreCase(x)\n}\nboolean bar(String x) {\nreturn (x.compareTo(\"bar\") > 0); // should be: \"bar\".compareTo(x) < 0\n}\nboolean bar(String x) {\nreturn (x.compareToIgnoreCase(\"bar\") > 0); // should be: \"bar\".compareToIgnoreCase(x) < 0\n}\nboolean bar(String x) {\nreturn x.contentEquals(\"bar\"); // should be \"bar\".contentEquals(x)\n}\n\nstatic final String CONSTANT = \"const\";\n{\nCONSTANT.equals(\"literal\"); // not reported, this is effectively the same as writing \"const\".equals(\"foo\")\n}\n}"
+}

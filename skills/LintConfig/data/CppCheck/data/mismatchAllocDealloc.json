@@ -1,0 +1,19 @@
+{
+    "name": "mismatchAllocDealloc",
+    "meta": {
+        "severity": "error",
+        "cwe": "762",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "content": {
+        "introduction": "Mismatching allocation and deallocation: varname",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "762",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "varname"
+            ]
+        }
+    }
+}

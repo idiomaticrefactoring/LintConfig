@@ -1,0 +1,11 @@
+{
+  "name": "modernize-concat-nested-namespaces",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/concat-nested-namespaces.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for use of nested namespaces such as\n\nnamespace\n \na\n \n{\n \nnamespace\n \nb\n \n{\n \n...\n \n}\n \n}\n\nand suggests changing to the more concise syntax introduced\nin C++17: \nnamespace\n \na::b\n \n{\n \n...\n \n}\n.\nInline namespaces are not modified.\n\nFor example:\n\nnamespace\n \nn1\n \n{\n\n\nnamespace\n \nn2\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n}\n\n\n\nnamespace\n \nn3\n \n{\n\n\nnamespace\n \nn4\n \n{\n\n\nnamespace\n \nn5\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n}\n\n\nnamespace\n \nn6\n \n{\n\n\nnamespace\n \nn7\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n}\n\n\n}\n\n\n\n// in c++20\n\n\nnamespace\n \nn8\n \n{\n\n\ninline\n \nnamespace\n \nn9\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n}\n\nWill be modified to:\n\nnamespace\n \nn1\n::\nn2\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n\nnamespace\n \nn3\n \n{\n\n\nnamespace\n \nn4\n::\nn5\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\nnamespace\n \nn6\n::\nn7\n \n{\n\n\nvoid\n \nt\n();\n\n\n}\n\n\n}\n\n\n\n// in c++20\n\n\nnamespace\n \nn8\n::\ninline\n \nn9\n \n{\n\n\nvoid\n \nt\n();\n\n\n}",
+    "configurations": []
+  }
+}

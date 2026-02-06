@@ -1,0 +1,23 @@
+{
+  "name": "no-loop-func",
+  "meta": {
+    "description": "Disallow function declarations that contain unsafe references inside loop statements",
+    "url": "https://eslint.org/docs/latest/rules/no-loop-func",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow function declarations that contain unsafe references inside loop statements\nTable of ContentsRule DetailsKnown LimitationsVersionResources\nWriting functions within loops tends to result in errors due to the way the function creates a closure around the loop. For example:\nfor(vari=0;i<10;i++){funcs[i]=function(){returni;};}12345Copy code to clipboard\nIn this case, you would expect each function created within the loop to return a different number. In reality, each function returns 10, because that was the last value ofiin the scope.\nletorconstmitigate this problem.\nfor(leti=0;i<10;i++){funcs[i]=function(){returni;};}12345Copy code to clipboard\nIn this case, each function created within the loop returns a different number as expected.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

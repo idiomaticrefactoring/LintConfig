@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-float-loop-counter",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/float-loop-counter.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Flags \nfor\n loops where the induction expression has a floating-point type.\n\nReferences\nÂ¶\n\n\nThis check corresponds to the CERT C Coding Standard rule\n\nFLP30-C. Do not use floating-point variables as loop counters\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "arrayIndexThenCheck",
+    "meta": {
+        "severity": "style",
+        "cwe": "398",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "content": {
+        "introduction": "Defensive programming: The variable 'i' is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as '(a[i] && i < 10)' to '(i < 10 && a[i])'. That way the array will not be accessed if the index is out of limits.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "398",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "i"
+            ]
+        }
+    }
+}

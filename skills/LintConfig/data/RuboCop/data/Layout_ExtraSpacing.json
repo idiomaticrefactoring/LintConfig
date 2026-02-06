@@ -1,0 +1,25 @@
+{
+  "name": "Layout/ExtraSpacing",
+  "full_description": "Do not use unnecessary spacing.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowForAlignment",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowBeforeTrailingComments",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "ForceEqualSignAlignment",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

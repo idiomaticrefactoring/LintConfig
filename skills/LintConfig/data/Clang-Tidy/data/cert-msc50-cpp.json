@@ -1,0 +1,11 @@
+{
+  "name": "cert-msc50-cpp",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc50-cpp.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "The \ncert-msc50-cpp\n check is an alias, please see\n\nmisc-predictable-rand\n for more information.\n\nThis check corresponds to the CERT C Coding Standard rule\n\nMSC50-CPP. Do not use std::rand() for generating pseudorandom numbers\n.",
+    "configurations": []
+  }
+}

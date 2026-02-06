@@ -1,0 +1,12 @@
+{
+    "name": "RedundantFieldInitializer",
+    "category": "performance",
+    "summary": "Java will initialize fields with known default values so any explicit initialization of those same defaults\nis redundant and results in a larger class file (approximately three additional bytecode instructions per field).",
+    "message": "Avoid using redundant field initializer for ''${variableName}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#redundantfieldinitializer",
+    "since": "5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class C {\nboolean b   = false;    // examples of redundant initializers\nbyte by     = 0;\nshort s     = 0;\nchar c      = 0;\nint i       = 0;\nlong l      = 0;\n\nfloat f     = .0f;    // all possible float literals\ndouble d    = 0d;     // all possible double literals\nObject o    = null;\n\nMyClass mca[] = null;\nint i1 = 0, ia1[] = null;\n\nclass Nested {\nboolean b = false;\n}\n}"
+}

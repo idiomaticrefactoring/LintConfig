@@ -1,0 +1,9 @@
+{
+  "name": "Style/FileRead",
+  "full_description": "Favor `File.(bin)read` convenience methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#file-read",
+  "is_safe": true,
+  "parameters": []
+}

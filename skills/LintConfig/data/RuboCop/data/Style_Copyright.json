@@ -1,0 +1,20 @@
+{
+  "name": "Style/Copyright",
+  "full_description": "Include a copyright notice in each file before any code.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Notice",
+      "default_value": "^Copyright (\\(c\\) )?2[0-9]{3} .+",
+      "type": "str"
+    },
+    {
+      "parameter_name": "AutocorrectNotice",
+      "default_value": "",
+      "type": "str"
+    }
+  ]
+}

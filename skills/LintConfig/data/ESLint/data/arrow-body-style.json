@@ -1,0 +1,23 @@
+{
+  "name": "arrow-body-style",
+  "meta": {
+    "description": "Require braces around arrow function bodies",
+    "url": "https://eslint.org/docs/latest/rules/arrow-body-style",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Require braces around arrow function bodies\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsalwaysas-neededrequireReturnForObjectLiteralneverVersionResources\nArrow functions have two syntactic forms for their function bodies.  They may be defined with ablockbody (denoted by curly braces)() => { ... }or with a single expression() => ..., whose value is implicitly returned.",
+    "sub_configuration_introduction": "The rule takes one or two options. The first is a string, which can be:\n\"always\"enforces braces around the function body\"as-needed\"enforces no braces where they can be omitted (default)\"never\"enforces no braces around the function body (constrains arrow functions to the role of returning an expression)\nThe second one is an object for more fine-grained configuration when the first option is\"as-needed\". Currently, the only available option isrequireReturnForObjectLiteral, a boolean property. It’sfalseby default. If set totrue, it requires braces and an explicit return for object literals.\nExamples ofincorrectcode for this rule with the\"always\"option:\nExamples ofcorrectcode for this rule with the\"always\"option:\nExamples ofincorrectcode for this rule with the default\"as-needed\"option:\nExamples ofcorrectcode for this rule with the default\"as-needed\"option:\nExamples ofincorrectcode for this rule with the{ \"requireReturnForObjectLiteral\": true }option:\nExamples ofcorrectcode for this rule with the{ \"requireReturnForObjectLiteral\": true }option:\nExamples ofincorrectcode for this rule with the\"never\"option:\nExamples ofcorrectcode for this rule with the\"never\"option:",
+    "config_examples": []
+  }
+}

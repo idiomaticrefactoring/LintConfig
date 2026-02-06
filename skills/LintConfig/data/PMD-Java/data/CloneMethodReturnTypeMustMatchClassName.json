@@ -1,0 +1,12 @@
+{
+    "name": "CloneMethodReturnTypeMustMatchClassName",
+    "category": "errorprone",
+    "summary": "If a class implements `Cloneable` the return type of the method `clone()` must be the class name. That way, the caller\nof the clone method doesn't need to cast the returned clone to the correct type.\n\nNote: Such a covariant return type is only possible with Java 1.5 or higher.",
+    "message": "The return type of the clone() method must be the class name when implements Cloneable",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#clonemethodreturntypemustmatchclassname",
+    "since": "5.4.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo implements Cloneable {\n@Override\nprotected Object clone() { // Violation, Object must be Foo\n}\n}\n\npublic class Foo implements Cloneable {\n@Override\npublic Foo clone() { //Ok\n}\n}"
+}

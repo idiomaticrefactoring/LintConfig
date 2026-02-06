@@ -1,0 +1,9 @@
+{
+  "name": "Layout/SpaceAroundMethodCallOperator",
+  "full_description": "Checks method call operators to not have spaces around them.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

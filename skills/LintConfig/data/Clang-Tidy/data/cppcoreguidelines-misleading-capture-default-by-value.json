@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-misleading-capture-default-by-value",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/misleading-capture-default-by-value.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Warns when lambda specify a by-value capture default and capture \nthis\n.\n\nBy-value capture defaults in member functions can be misleading about whether\ndata members are captured by value or reference. This occurs because specifying\nthe capture default \n[=]\n actually captures the \nthis\n pointer by value,\nnot the data members themselves. As a result, data members are still indirectly\naccessed via the captured \nthis\n pointer, which essentially means they are\nbeing accessed by reference. Therefore, even when using \n[=]\n, data members\nare effectively captured by reference, which might not align with the userâs\nexpectations.\n\nExamples:\n\nstruct\n \nAClass\n \n{\n\n\n  \nint\n \nmember\n;\n\n\n  \nvoid\n \nmisleadingLogic\n()\n \n{\n\n\n    \nint\n \nlocal\n \n=\n \n0\n;\n\n\n    \nmember\n \n=\n \n0\n;\n\n\n    \nauto\n \nf\n \n=\n \n[\n=\n]()\n \nmutable\n \n{\n\n\n      \nlocal\n \n+=\n \n1\n;\n\n\n      \nmember\n \n+=\n \n1\n;\n\n\n    \n};\n\n\n    \nf\n();\n\n\n    \n// Here, local is 0 but member is 1\n\n\n  \n}\n\n\n\n  \nvoid\n \nclearLogic\n()\n \n{\n\n\n    \nint\n \nlocal\n \n=\n \n0\n;\n\n\n    \nmember\n \n=\n \n0\n;\n\n\n    \nauto\n \nf\n \n=\n \n[\nthis\n,\n \nlocal\n]()\n \nmutable\n \n{\n\n\n      \nlocal\n \n+=\n \n1\n;\n\n\n      \nmember\n \n+=\n \n1\n;\n\n\n    \n};\n\n\n    \nf\n();\n\n\n    \n// Here, local is 0 but member is 1\n\n\n  \n}\n\n\n};\n\nThis check implements \nF.54\n\nfrom the C++ Core Guidelines.",
+    "configurations": []
+  }
+}

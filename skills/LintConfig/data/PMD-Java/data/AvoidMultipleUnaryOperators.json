@@ -1,0 +1,12 @@
+{
+    "name": "AvoidMultipleUnaryOperators",
+    "category": "errorprone",
+    "summary": "The use of multiple unary operators may be problematic, and/or confusing.\nEnsure that the intended usage is not a bug, or consider simplifying the expression.",
+    "message": "Using multiple unary operators may be a bug, and/or is confusing.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidmultipleunaryoperators",
+    "since": "4.2",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// These are typo bugs, or at best needlessly complex and confusing:\nint i = - -1;\nint j = + - +1;\nint z = ~~2;\nboolean b = !!true;\nboolean c = !!!true;\n\n// These are better:\nint i = 1;\nint j = -1;\nint z = 2;\nboolean b = true;\nboolean c = false;\n\n// And these just make your brain hurt:\nint i = ~-2;\nint j = -~7;"
+}

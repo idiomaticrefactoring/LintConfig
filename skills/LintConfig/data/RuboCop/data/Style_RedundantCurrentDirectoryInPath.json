@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantCurrentDirectoryInPath",
+  "full_description": "Checks for a redundant current directory in a path given to `require_relative`.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

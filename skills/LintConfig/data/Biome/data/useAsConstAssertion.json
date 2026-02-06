@@ -1,0 +1,22 @@
+{
+  "name": "useAsConstAssertion",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-as-const-assertion",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "safe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

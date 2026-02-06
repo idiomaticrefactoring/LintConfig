@@ -1,0 +1,23 @@
+{
+  "name": "no-unused-private-class-members",
+  "meta": {
+    "description": "Disallow unused private class members",
+    "url": "https://eslint.org/docs/latest/rules/no-unused-private-class-members",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unused private class members\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItVersionResources\nPrivate class members that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring. Such class members take up space in the code and can lead to confusion by readers.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

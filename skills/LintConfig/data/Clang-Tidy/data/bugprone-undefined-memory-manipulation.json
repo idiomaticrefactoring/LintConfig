@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-undefined-memory-manipulation",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/undefined-memory-manipulation.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds calls of memory manipulation functions \nmemset()\n, \nmemcpy()\n and\n\nmemmove()\n on non-TriviallyCopyable objects resulting in undefined behavior.\n\nUsing memory manipulation functions on non-TriviallyCopyable objects can lead\nto a range of subtle and challenging issues in C++ code. The most immediate\nconcern is the potential for undefined behavior, where the state of the object\nmay become corrupted or invalid. This can manifest as crashes, data corruption,\nor unexpected behavior at runtime, making it challenging to identify and\ndiagnose the root cause. Additionally, misuse of memory manipulation functions\ncan bypass essential object-specific operations, such as constructors and\ndestructors, leading to resource leaks or improper initialization.\n\nFor example, when using \nmemcpy\n to copy \nstd::string\n, pointer data is\nbeing copied, and it can result in a double free issue.\n\n#include\n \n<cstring>\n\n\n#include\n \n<string>\n\n\n\nint\n \nmain\n()\n \n{\n\n\n    \nstd\n::\nstring\n \nsource\n \n=\n \n\"Hello\"\n;\n\n\n    \nstd\n::\nstring\n \ndestination\n;\n\n\n\n    \nstd\n::\nmemcpy\n(\n&\ndestination\n,\n \n&\nsource\n,\n \nsizeof\n(\nstd\n::\nstring\n));\n\n\n\n    \n// Undefined behavior may occur here, during std::string destructor call.\n\n\n    \nreturn\n \n0\n;\n\n\n}",
+    "configurations": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "pointerPositive",
+    "meta": {
+        "severity": "style",
+        "cwe": "570",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "content": {
+        "introduction": "A pointer can not be negative so it is either pointless or an error to check if it is not.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "570",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "macroWithSemicolon",
+    "meta": {
+        "severity": "information",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Ensure that '' is defined either using -I, --include or -D.",
+        "attributes": {
+            "severity": "information",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

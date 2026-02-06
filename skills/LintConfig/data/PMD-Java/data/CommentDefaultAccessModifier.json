@@ -1,0 +1,12 @@
+{
+    "name": "CommentDefaultAccessModifier",
+    "category": "codestyle",
+    "summary": "To avoid mistakes if we want that an Annotation, Class, Enum, Method, Constructor or Field have a default access modifier\nwe must add a comment at the beginning of its declaration.\nBy default, the comment must be `/* default */` or `/* package */`, if you want another, you have to provide a regular expression.\n\nThis rule ignores by default all cases that have a `@VisibleForTesting` annotation or any JUnit5/TestNG annotation. Use the\nproperty \"ignoredAnnotations\" to customize the recognized annotations.",
+    "message": "Missing commented default access modifier on {0} ''{1}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier",
+    "since": "5.4.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nfinal String stringValue = \"some string\";\nString getString() {\nreturn stringValue;\n}\n\nclass NestedFoo {\n}\n}\n\n// should be\npublic class Foo {\n/* default */ final String stringValue = \"some string\";\n/* default */ String getString() {\nreturn stringValue;\n}\n\n/* default */ class NestedFoo {\n}\n}"
+}

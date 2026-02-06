@@ -1,0 +1,11 @@
+{
+  "name": "darwin-avoid-spinlock",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/darwin/avoid-spinlock.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds usages of \nOSSpinlock\n, which is deprecated due to potential livelock\nproblems.\n\nThis check will detect following function invocations:\n\nOSSpinlockLock\n\n\nOSSpinlockTry\n\n\nOSSpinlockUnlock\n\nThe corresponding information about the problem of \nOSSpinlock\n: \nhttps://blog.postmates.com/why-spinlocks-are-bad-on-ios-b69fc5221058",
+    "configurations": []
+  }
+}

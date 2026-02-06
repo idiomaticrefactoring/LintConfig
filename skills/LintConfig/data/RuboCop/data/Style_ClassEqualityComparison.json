@@ -1,0 +1,24 @@
+{
+  "name": "Style/ClassEqualityComparison",
+  "full_description": "Enforces the use of `Object#instance_of?` instead of class comparison for equality.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#instance-of-vs-class-comparison",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [
+        "==",
+        "equal?",
+        "eql?"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

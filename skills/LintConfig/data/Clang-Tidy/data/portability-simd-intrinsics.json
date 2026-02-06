@@ -1,0 +1,11 @@
+{
+  "name": "portability-simd-intrinsics",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/simd-intrinsics.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds SIMD intrinsics calls and suggests \nstd::experimental::simd\n (\nP0214\n)\nalternatives.\n\nIf the option \nSuggest\n is set to \ntrue\n, for\n\n_mm_add_epi32\n(\na\n,\n \nb\n);\n \n// x86\n\n\nvec_add\n(\na\n,\n \nb\n);\n       \n// Power\n\nthe check suggests an alternative: \noperator+\n on \nstd::experimental::simd\n\nobjects.\n\nOtherwise, it just complains the intrinsics are non-portable (and there are\n\nP0214\n alternatives).\n\nMany architectures provide SIMD operations (e.g. x86 SSE/AVX, Power\nAltiVec/VSX, ARM NEON). It is common that SIMD code implementing the same\nalgorithm, is written in multiple target-dispatching pieces to optimize for\ndifferent architectures or micro-architectures.\n\nThe C++ standard proposal \nP0214\n and its extensions cover many common SIMD\noperations. By migrating from target-dependent intrinsics to \nP0214\n\noperations, the SIMD code can be simplified and pieces for different targets\ncan be unified.\n\nRefer to \nP0214\n for introduction and motivation for the data-parallel\nstandard library.\n\nOptions\nÂ¶\n\n\n\n\n\n\nSuggest\nÂ¶\n\n\nIf this option is set to \ntrue\n (default is \nfalse\n), the check will suggest\n\nP0214\n alternatives, otherwise it only points out the intrinsic function is\nnon-portable.\n\n\n\n\n\n\n\n\nStd\nÂ¶\n\n\nThe namespace used to suggest \nP0214\n alternatives. If not specified, \nstd::\n\nfor \n-std=c++20\n and \nstd::experimental::\n for \n-std=c++11\n.",
+    "configurations": []
+  }
+}

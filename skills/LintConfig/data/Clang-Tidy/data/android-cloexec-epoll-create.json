@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-epoll-create",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-epoll-create.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The usage of \nepoll_create()\n is not recommended, itâs better to use\n\nepoll_create1()\n, which allows close-on-exec.\n\nExamples:\n\nepoll_create\n(\nsize\n);\n\n\n\n// becomes\n\n\n\nepoll_create1\n(\nEPOLL_CLOEXEC\n);",
+    "configurations": []
+  }
+}

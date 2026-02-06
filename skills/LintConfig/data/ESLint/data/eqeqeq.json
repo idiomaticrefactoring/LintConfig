@@ -1,0 +1,23 @@
+{
+  "name": "eqeqeq",
+  "meta": {
+    "description": "Require the use of === and !==",
+    "url": "https://eslint.org/docs/latest/rules/eqeqeq",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Require the use of===and!==\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions\nTable of ContentsRule DetailsOptionsalwayssmartallow-nullWhen Not To Use ItVersionResources\nIt is considered good practice to use the type-safe equality operators===and!==instead of their regular counterparts==and!=.\nThe reason for this is that==and!=do type coercion which follows the rather obscureAbstract Equality Comparison Algorithm.\nFor instance, the following statements are all consideredtrue:\n[] == false[] == ![]3 == \"03\"\nIf one of those occurs in an innocent-looking statement such asa == bthe actual problem is very difficult to spot.",
+    "sub_configuration_introduction": "The\"always\"option (default) enforces the use of===and!==in every situation (except when you opt-in to more specific handling ofnull[see below]).\nExamples ofincorrectcode for the\"always\"option:\nExamples ofcorrectcode for the\"always\"option:\nThis rule optionally takes a second argument, which should be an object with the following supported properties:\n\"null\": Customize how this rule treatsnullliterals. Possible values:always(default) - Always use===or!==.never- Never use===or!==withnull.ignore- Do not apply this rule tonull.\nThe\"smart\"option enforces the use of===and!==except for these cases:\nComparing two literal values.Evaluating the value oftypeof.Comparing againstnull.\nExamples ofincorrectcode for the\"smart\"option:\nExamples ofcorrectcode for the\"smart\"option:\nDeprecated:Instead of using this option use\"always\"and pass a\"null\"option property with value\"ignore\". This will tell ESLint to always enforce strict equality except when comparing with thenullliteral.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "clarifyCalculation",
+    "meta": {
+        "severity": "style",
+        "cwe": "783",
+        "url": "https://cwe.mitre.org/data/definitions/783.html"
+    },
+    "content": {
+        "introduction": "Suspicious calculation. Please use parentheses to clarify the code. The code ''a+b?c:d'' should be written as either ''(a+b)?c:d'' or ''a+(b?c:d)''.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "783",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "unreachableCode",
+    "meta": {
+        "severity": "style",
+        "cwe": "561",
+        "url": "https://cwe.mitre.org/data/definitions/561.html"
+    },
+    "content": {
+        "introduction": "Statements following return, break, continue, goto or throw will never be executed.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "561",
+            "inconclusive": false
+        }
+    }
+}

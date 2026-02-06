@@ -1,0 +1,19 @@
+{
+    "name": "assertWithSideEffect",
+    "meta": {
+        "severity": "warning",
+        "cwe": "398",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "content": {
+        "introduction": "Non-pure function: 'function' is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "398",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "function"
+            ]
+        }
+    }
+}

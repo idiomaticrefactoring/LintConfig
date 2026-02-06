@@ -1,0 +1,15 @@
+{
+  "name": "Layout/TrailingWhitespace",
+  "full_description": "Avoid trailing whitespace.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-trailing-whitespace",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowInHeredoc",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

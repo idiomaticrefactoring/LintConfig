@@ -1,0 +1,9 @@
+{
+  "name": "Layout/EmptyLineAfterMagicComment",
+  "full_description": "Add an empty line after magic comments to separate them from code.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#separate-magic-comments-from-code",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,16 @@
+{
+    "name": "returnDanglingLifetime",
+    "meta": {
+        "severity": "error",
+        "cwe": "562",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "content": {
+        "introduction": "Returning object that will be invalid when returning.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "562",
+            "inconclusive": false
+        }
+    }
+}

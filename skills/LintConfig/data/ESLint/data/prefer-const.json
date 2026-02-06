@@ -1,0 +1,23 @@
+{
+  "name": "prefer-const",
+  "meta": {
+    "description": "Require const declarations for variables that are never reassigned after declared",
+    "url": "https://eslint.org/docs/latest/rules/prefer-const",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Requireconstdeclarations for variables that are never reassigned after declared\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption\nTable of ContentsRule DetailsOptionsdestructuringignoreReadBeforeAssignWhen Not To Use ItRelated RulesVersionResources\nIf a variable is never reassigned, using theconstdeclaration is better.\nconstdeclaration tells readers, “this variable is never reassigned,” reducing cognitive load and improving maintainability.",
+    "sub_configuration_introduction": "The kind of the way to address variables in destructuring.\nThere are 2 values:\n\"any\"(default) - If any variables in destructuring should beconst, this rule warns for those variables.\"all\"- If all variables in destructuring should beconst, this rule warns the variables. Otherwise, ignores them.\nExamples ofincorrectcode for the default{\"destructuring\": \"any\"}option:\nExamples ofcorrectcode for the default{\"destructuring\": \"any\"}option:\nExamples ofincorrectcode for the{\"destructuring\": \"all\"}option:\nExamples ofcorrectcode for the{\"destructuring\": \"all\"}option:\nThis is an option to avoid conflicting withno-use-before-definerule (without\"nofunc\"option).\nIftrueis specified, this rule will ignore variables that are read between the declaration and the first assignment.\nDefault isfalse.\nExamples ofcorrectcode for the{\"ignoreReadBeforeAssign\": true}option:\nExamples ofcorrectcode for the default{\"ignoreReadBeforeAssign\": false}option:",
+    "config_examples": []
+  }
+}

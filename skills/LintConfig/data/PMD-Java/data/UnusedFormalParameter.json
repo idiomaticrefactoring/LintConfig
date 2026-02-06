@@ -1,0 +1,12 @@
+{
+    "name": "UnusedFormalParameter",
+    "category": "bestpractices",
+    "summary": "Reports parameters of methods and constructors that are not referenced them in the method body.\nParameters whose name starts with `ignored` or `unused` are filtered out.\n\nRemoving unused formal parameters from public methods could cause a ripple effect through the code base.\nHence, by default, this rule only considers private methods. To include non-private methods, set the\n`checkAll` property to `true`. The same applies to public constructors.",
+    "message": "Avoid unused {0} parameters such as ''{1}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#unusedformalparameter",
+    "since": "0.8",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate void bar(String howdy) {\n// howdy is not used\n}\n}"
+}

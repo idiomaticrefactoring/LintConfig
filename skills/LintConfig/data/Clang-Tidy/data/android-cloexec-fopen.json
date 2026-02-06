@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-fopen",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-fopen.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "fopen()\n should include \ne\n in their mode string; so \nre\n would be\nvalid. This is equivalent to having set \nFD_CLOEXEC\n \non\n that descriptor.\n\nExamples:\n\nfopen\n(\n\"fn\"\n,\n \n\"r\"\n);\n\n\n\n// becomes\n\n\n\nfopen\n(\n\"fn\"\n,\n \n\"re\"\n);",
+    "configurations": []
+  }
+}

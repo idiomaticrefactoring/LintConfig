@@ -1,0 +1,25 @@
+{
+  "name": "Lint/UnusedBlockArgument",
+  "full_description": "Checks for unused block arguments.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#underscore-unused-vars",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AutoCorrect",
+      "default_value": "contextual",
+      "type": "str"
+    },
+    {
+      "parameter_name": "IgnoreEmptyBlocks",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowUnusedKeywordArguments",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

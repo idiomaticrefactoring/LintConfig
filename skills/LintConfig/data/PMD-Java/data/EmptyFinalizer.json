@@ -1,0 +1,12 @@
+{
+    "name": "EmptyFinalizer",
+    "category": "errorprone",
+    "summary": "Empty finalize methods serve no purpose and should be removed. Note that Oracle has declared Object.finalize() as deprecated since JDK 9.",
+    "message": "Avoid empty finalize methods",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#emptyfinalizer",
+    "since": "1.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprotected void finalize() {}\n}"
+}

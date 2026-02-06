@@ -1,0 +1,24 @@
+{
+  "name": "Style/FormatString",
+  "full_description": "Enforce the use of Kernel#sprintf, Kernel#format or String#%.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#sprintf",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "format",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "format",
+        "sprintf",
+        "percent"
+      ],
+      "type": "list"
+    }
+  ]
+}

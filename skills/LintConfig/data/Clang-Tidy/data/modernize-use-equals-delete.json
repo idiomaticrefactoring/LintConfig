@@ -1,0 +1,11 @@
+{
+  "name": "modernize-use-equals-delete",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-equals-delete.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Identifies unimplemented private special member functions, and recommends using\n\n=\n \ndelete\n for them. Additionally, it recommends relocating any deleted\nmember function from the \nprivate\n to the \npublic\n section.\n\nBefore the introduction of C++11, the primary method to effectively âeraseâ a\nparticular function involved declaring it as \nprivate\n without providing a\ndefinition. This approach would result in either a compiler error (when\nattempting to call a private function) or a linker error (due to an undefined\nreference).\n\nHowever, subsequent to the advent of C++11, a more conventional approach\nemerged for achieving this purpose. It involves flagging functions as\n\n=\n \ndelete\n and keeping them in the \npublic\n section of the class.\n\nTo prevent false positives, this check is only active within a translation\nunit where all other member functions have been implemented. The check will\ngenerate partial fixes by introducing \n=\n \ndelete\n, but the user is responsible\nfor manually relocating functions to the \npublic\n section.\n\n// Example: bad\n\n\nclass\n \nA\n \n{\n\n\n \nprivate\n:\n\n\n  \nA\n(\nconst\n \nA\n&\n);\n\n\n  \nA\n&\n \noperator\n=\n(\nconst\n \nA\n&\n);\n\n\n};\n\n\n\n// Example: good\n\n\nclass\n \nA\n \n{\n\n\n \npublic\n:\n\n\n  \nA\n(\nconst\n \nA\n&\n)\n \n=\n \ndelete\n;\n\n\n  \nA\n&\n \noperator\n=\n(\nconst\n \nA\n&\n)\n \n=\n \ndelete\n;\n\n\n};\n\nIgnoreMacros\nÂ¶\n\n\nIf this option is set to \ntrue\n (default is \ntrue\n), the check will not warn\nabout functions declared inside macros.",
+    "configurations": []
+  }
+}

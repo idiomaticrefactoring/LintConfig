@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-dup",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-dup.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The usage of \ndup()\n is not recommended, itâs better to use \nfcntl()\n,\nwhich can set the close-on-exec flag. Otherwise, an opened sensitive file would\nremain open across a fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\nint\n \nfd\n \n=\n \ndup\n(\noldfd\n);\n\n\n\n// becomes\n\n\n\nint\n \nfd\n \n=\n \nfcntl\n(\noldfd\n,\n \nF_DUPFD_CLOEXEC\n);",
+    "configurations": []
+  }
+}

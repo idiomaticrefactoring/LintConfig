@@ -1,0 +1,9 @@
+{
+  "name": "Layout/MultilineBlockLayout",
+  "full_description": "Ensures newlines after multiline block do statements.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

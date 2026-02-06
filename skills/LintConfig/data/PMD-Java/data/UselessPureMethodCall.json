@@ -1,0 +1,12 @@
+{
+    "name": "UselessPureMethodCall",
+    "category": "errorprone",
+    "summary": "This rule detects method calls of pure methods whose result is unused. A pure method is a method without\nside effects. Therefore, ignoring the result of such a method call is likely a mistake.\n\nEither the method call can be removed or the result should be used.",
+    "message": "Do not call pure method {0} if the result is not used.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#uselesspuremethodcall",
+    "since": "7.17.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Something {\npublic void foo() {\nList.of(\"foo\").size(); // result unused\nStream.of(\"bar\").map(item -> System.out.format(\"%s\", item)); // result unused\nStream.of(\"bar\").forEach(item -> System.out.format(\"%s\", item)); // better\n}\n}"
+}

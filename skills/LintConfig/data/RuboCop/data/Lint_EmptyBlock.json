@@ -1,0 +1,20 @@
+{
+  "name": "Lint/EmptyBlock",
+  "full_description": "Checks for blocks without a body.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowComments",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowEmptyLambdas",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

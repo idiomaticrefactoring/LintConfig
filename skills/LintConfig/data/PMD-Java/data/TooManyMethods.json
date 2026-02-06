@@ -1,0 +1,19 @@
+{
+    "name": "TooManyMethods",
+    "category": "design",
+    "summary": "A class with too many methods is probably a good suspect for refactoring, in order to reduce its\ncomplexity and find a way to have more fine grained objects.",
+    "message": "This class has too many methods, consider refactoring it.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#toomanymethods",
+    "since": "4.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "maxmethods",
+            "description": "The method count reporting threshold",
+            "defaultValue": "10",
+            "type": "Integer"
+        }
+    ],
+    "examples": ""
+}

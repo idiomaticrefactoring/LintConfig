@@ -1,0 +1,23 @@
+{
+  "name": "no-label-var",
+  "meta": {
+    "description": "Disallow labels that share a name with a variable",
+    "url": "https://eslint.org/docs/latest/rules/no-label-var",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow labels that share a name with a variable\n❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsWhen Not To Use ItRelated RulesVersionResources",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

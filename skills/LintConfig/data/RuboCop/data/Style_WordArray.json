@@ -1,0 +1,33 @@
+{
+  "name": "Style/WordArray",
+  "full_description": "Use %w or %W for arrays of words.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#percent-w",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "percent",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "percent",
+        "brackets"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "MinSize",
+      "default_value": 2,
+      "type": "int"
+    },
+    {
+      "parameter_name": "WordRegex",
+      "default_value": "/\\A(?:\\p{Word}|\\p{Word}-\\p{Word}|\\n|\\t)+\\z/",
+      "type": "str"
+    }
+  ]
+}

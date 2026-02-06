@@ -1,0 +1,10 @@
+{
+  "name": "ControlParameter",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "_Control Parameter_ is a case of [Control Couple](Control-Couple.md).",
+  "configuration_docs": "_Control Parameter_ supports the [Basic Smell Options](Basic-Smell-Options.md).",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Control-Parameter.md"
+}

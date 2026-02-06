@@ -1,0 +1,11 @@
+{
+  "name": "abseil-duration-addition",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-addition.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for cases where addition should be performed in the \nabsl::Time\n\ndomain. When adding two values, and one is known to be an \nabsl::Time\n,\nwe can infer that the other should be interpreted as an \nabsl::Duration\n\nof a similar scale, and make that inference explicit.\n\nExamples:\n\n// Original - Addition in the integer domain\n\n\nint\n \nx\n;\n\n\nabsl\n::\nTime\n \nt\n;\n\n\nint\n \nresult\n \n=\n \nabsl\n::\nToUnixSeconds\n(\nt\n)\n \n+\n \nx\n;\n\n\n\n// Suggestion - Addition in the absl::Time domain\n\n\nint\n \nresult\n \n=\n \nabsl\n::\nToUnixSeconds\n(\nt\n \n+\n \nabsl\n::\nSeconds\n(\nx\n));",
+    "configurations": []
+  }
+}

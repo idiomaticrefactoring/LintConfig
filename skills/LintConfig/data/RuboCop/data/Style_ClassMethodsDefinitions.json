@@ -1,0 +1,23 @@
+{
+  "name": "Style/ClassMethodsDefinitions",
+  "full_description": "Enforces using `def self.method_name` or `class << self` to define class methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "#def-self-class-methods",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "def_self",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "def_self",
+        "self_class"
+      ],
+      "type": "list"
+    }
+  ]
+}

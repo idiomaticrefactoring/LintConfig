@@ -1,0 +1,22 @@
+{
+  "name": "noUnusedFunctionParameters",
+  "group": "correctness",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-unused-function-parameters",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'correctness' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "abseil-duration-unnecessary-conversion",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-unnecessary-conversion.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds and fixes cases where \nabsl::Duration\n values are being converted to\nnumeric types and back again.\n\nFloating-point examples:\n\n// Original - Conversion to double and back again\n\n\nabsl\n::\nDuration\n \nd1\n;\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nabsl\n::\nSeconds\n(\nabsl\n::\nToDoubleSeconds\n(\nd1\n));\n\n\n\n// Suggestion - Remove unnecessary conversions\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nd1\n;\n\n\n\n// Original - Division to convert to double and back again\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nabsl\n::\nSeconds\n(\nabsl\n::\nFDivDuration\n(\nd1\n,\n \nabsl\n::\nSeconds\n(\n1\n)));\n\n\n\n// Suggestion - Remove division and conversion\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nd1\n;\n\nInteger examples:\n\n// Original - Conversion to integer and back again\n\n\nabsl\n::\nDuration\n \nd1\n;\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nabsl\n::\nHours\n(\nabsl\n::\nToInt64Hours\n(\nd1\n));\n\n\n\n// Suggestion - Remove unnecessary conversions\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nd1\n;\n\n\n\n// Original - Integer division followed by conversion\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nabsl\n::\nSeconds\n(\nd1\n \n/\n \nabsl\n::\nSeconds\n(\n1\n));\n\n\n\n// Suggestion - Remove division and conversion\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nd1\n;\n\nUnwrapping scalar operations:\n\n// Original - Multiplication by a scalar\n\n\nabsl\n::\nDuration\n \nd1\n;\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nabsl\n::\nSeconds\n(\nabsl\n::\nToInt64Seconds\n(\nd1\n)\n \n*\n \n2\n);\n\n\n\n// Suggestion - Remove unnecessary conversion\n\n\nabsl\n::\nDuration\n \nd2\n \n=\n \nd1\n \n*\n \n2\n;\n\nNote: Converting to an integer and back to an \nabsl::Duration\n might be a\ntruncating operation if the value is not aligned to the scale of conversion.\nIn the rare case where this is the intended result, callers should use\n\nabsl::Trunc\n to truncate explicitly.",
+    "configurations": []
+  }
+}

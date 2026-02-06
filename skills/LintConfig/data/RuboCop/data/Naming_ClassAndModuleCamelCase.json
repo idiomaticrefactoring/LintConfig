@@ -1,0 +1,17 @@
+{
+  "name": "Naming/ClassAndModuleCamelCase",
+  "full_description": "Use CamelCase for classes and modules.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#camelcase-classes",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedNames",
+      "default_value": [
+        "module_parent"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "readability-avoid-return-with-void-value",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-return-with-void-value.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds return statements with \nvoid\n values used within functions with\n\nvoid\n result types.\n\nA function with a \nvoid\n return type is intended to perform a task without\nproducing a return value. Return statements with expressions could lead\nto confusion and may miscommunicate the functionâs intended behavior.\n\nExample:\n\nvoid\n \ng\n();\n\n\nvoid\n \nf\n()\n \n{\n\n    \n//\n \n...\n\n    \nreturn\n \ng\n();\n\n\n}\n\nIn a long function body, the \nreturn\n statement suggests that the function\nreturns a value. However, \nreturn\n \ng();\n is a combination of two statements\nthat should be written as\n\ng\n();\n\n\nreturn\n;\n\nto make clear that \ng()\n is called and immediately afterwards the function\nreturns (nothing).\n\nIn C, the same issue is detected by the compiler if the \n-Wpedantic\n mode\nis enabled.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nThe value \nfalse\n specifies that return statements expanded\nfrom macros are not checked. The default value is \ntrue\n.\n\n\n\n\n\n\n\n\nStrictMode\nÂ¶\n\n\nThe value \nfalse\n specifies that a direct return statement shall\nbe excluded from the analysis if it is the only statement not\ncontained in a block, like \nif\n \n(cond)\n \nreturn\n \ng();\n. The default\nvalue is \ntrue\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-duplicate-imports",
+  "meta": {
+    "description": "Disallow duplicate module imports",
+    "url": "https://eslint.org/docs/latest/rules/no-duplicate-imports",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow duplicate module imports\nTable of ContentsRule DetailsOptionsincludeExportsallowSeparateTypeImportsVersionResources\nUsing a singleimportstatement per module will make the code clearer because you can see everything being imported from that module on one line.\nIn the following example themoduleimport on line 1 is repeated on line 3. These can be combined to make the list of imports more succinct.\nimport{merge}from'module';importsomethingfrom'another-module';import{find}from'module';123Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\n\"includeExports\":true(defaultfalse) checks for exports in addition to imports.\"allowSeparateTypeImports\":true(defaultfalse) allows a type import alongside a value import from the same module in TypeScript files.\nIf re-exporting from an imported module, you should add the imports to theimport-statement, and export that directly, not useexport ... from.\nExample ofincorrectcode for this rule with the{ \"includeExports\": true }option:\nExample ofcorrectcode for this rule with the{ \"includeExports\": true }option:\nExample ofcorrectcode for this rule with the{ \"includeExports\": true }option:\nTypeScript allows importing types usingimport type. By default, this rule flags instances ofimport typethat have the same specifier asimport. TheallowSeparateTypeImportsoption allows you to override this behavior.\nExample ofincorrectTypeScript code for this rule with the default{ \"allowSeparateTypeImports\": false }option:\nExample ofcorrectTypeScript code for this rule with the default{ \"allowSeparateTypeImports\": false }option:\nExample ofincorrectTypeScript code for this rule with the{ \"allowSeparateTypeImports\": true }option:\nExample ofcorrectTypeScript code for this rule with the{ \"allowSeparateTypeImports\": true }option:",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AbstractClassWithoutAbstractMethod",
+    "category": "bestpractices",
+    "summary": "The abstract class does not contain any abstract methods. An abstract class suggests\nan incomplete implementation, which is to be completed by subclasses implementing the\nabstract methods. If the class is intended to be used as a base class only (not to be instantiated\ndirectly) a protected constructor can be provided to prevent direct instantiation.",
+    "message": "This abstract class does not have any abstract methods",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#abstractclasswithoutabstractmethod",
+    "since": "3.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public abstract class Foo {\nvoid int method1() { ... }\nvoid int method2() { ... }\n// consider using abstract methods or removing\n// the abstract modifier and adding protected constructors\n}"
+}

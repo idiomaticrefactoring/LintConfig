@@ -1,0 +1,12 @@
+{
+    "name": "GenericsNaming",
+    "category": "codestyle",
+    "summary": "Names for references to generic values should be limited to a single uppercase letter.\n\n**Deprecated:** This rule is deprecated since PMD 7.17.0 and will be removed with PMD 8.0.0. This rule has been replaced by {% rule TypeParameterNamingConventions %}, which provides more comprehensive and configurable naming conventions for type parameters.",
+    "message": "Generics names should be a one letter long and upper case.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#genericsnaming",
+    "since": "4.2.6",
+    "priority": "4",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": "public interface GenericDao<E extends BaseModel, K extends Serializable> extends BaseDao {\n// This is ok...\n}\n\npublic interface GenericDao<E extends BaseModel, K extends Serializable> {\n// Also this\n}\n\npublic interface GenericDao<e extends BaseModel, K extends Serializable> {\n// 'e' should be an 'E'\n}\n\npublic interface GenericDao<EF extends BaseModel, K extends Serializable> {\n// 'EF' is not ok.\n}"
+}

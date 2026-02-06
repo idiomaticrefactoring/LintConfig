@@ -1,0 +1,12 @@
+{
+    "name": "LoosePackageCoupling",
+    "category": "design",
+    "summary": "Avoid using classes from the configured package hierarchy outside of the package hierarchy,\nexcept when using one of the configured allowed classes.",
+    "message": "Use of ''{0}'' outside of package hierarchy ''{1}'' is not recommended; use recommended classes instead",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#loosepackagecoupling",
+    "since": "5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "package some.package;\n\nimport some.other.package.subpackage.subsubpackage.DontUseThisClass;\n\npublic class Bar {\nDontUseThisClass boo = new DontUseThisClass();\n}"
+}

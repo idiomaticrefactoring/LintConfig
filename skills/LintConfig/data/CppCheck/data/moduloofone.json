@@ -1,0 +1,16 @@
+{
+    "name": "moduloofone",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Modulo of one is always equal to zero",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

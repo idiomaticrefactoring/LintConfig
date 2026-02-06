@@ -1,0 +1,9 @@
+{
+  "name": "Style/ArrayJoin",
+  "full_description": "Use Array#join instead of Array#*.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#array-join",
+  "is_safe": true,
+  "parameters": []
+}

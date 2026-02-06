@@ -1,0 +1,12 @@
+{
+    "name": "UnnecessaryImport",
+    "category": "codestyle",
+    "summary": "Reports import statements that can be removed. They are either unused,\nduplicated, or the members they import are already implicitly in scope,\nbecause they're in java.lang, or the current package.\n\nIf some imports cannot be resolved, for instance because you run PMD with\nan incomplete auxiliary classpath, some imports may be conservatively marked\nas used even if they're not to avoid false positives.",
+    "message": "Unnecessary import ''{0}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#unnecessaryimport",
+    "since": "6.34.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.io.File;            // not used, can be removed\nimport java.util.Collections;   // used below\nimport java.util.*;             // so this one is not used\n\nimport java.lang.Object;        // imports from java.lang, unnecessary\nimport java.lang.Object;        // duplicate, unnecessary\n\npublic class Foo {\nstatic Object emptyList() {\nreturn Collections.emptyList();\n}\n}"
+}

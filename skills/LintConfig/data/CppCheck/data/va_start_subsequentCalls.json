@@ -1,0 +1,16 @@
+{
+    "name": "va_start_subsequentCalls",
+    "meta": {
+        "severity": "error",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "va_start() or va_copy() called subsequently on 'vl' without va_end() in between.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

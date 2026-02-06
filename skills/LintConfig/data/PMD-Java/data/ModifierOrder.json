@@ -1,0 +1,12 @@
+{
+    "name": "ModifierOrder",
+    "category": "codestyle",
+    "summary": "Enforces the modifier order recommended by the JLS. Apart from sorting modifiers,\nthis rule also enforces that all annotations appear before all modifier keywords.\nBy setting the property `typeAnnotations`, you can also enforce that type\nannotations appear right of the modifier keywords, next to the type they apply to.\nThis property can have three values:\n- `onType`: Type annotations must be placed next to the type they apply to\n- `onDecl`: Type annotations must be placed with other annotations, before modifiers.\nThis is not enforced if the type annotations syntactically appears within the type, e.g.\nin `public Map.@Nullable Entry<K,V> method()` or `public <T> @NonNull T method()`.\n- `anywhere` (default): Either position fits. They still cannot be interspersed within keyword\nmodifiers. Annotations that are not type annotations are still required to be before keyword\nmodifiers.",
+    "message": "Wrong modifier order (the actual message is written by the rule)",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#modifierorder",
+    "since": "7.17.0",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "abstract public class Foo { // Warn: `public` should appear before `abstract`\n\n// This order is not recommended, annotations should appear before keyword modifiers,\n// and may appear after if they are type annotations.\npublic\n@Override\nstatic fooStuff() {\n}\n\n// This order is ok if property typeAnnotations is \"anywhere\", and enforced if it is \"on decl\":\n@Nullable\npublic Object fooStuff() {}\n\n// This order is ok if property typeAnnotations is \"anywhere\", and enforced if it is \"on type\":\npublic @Nullable Object fooStuff() {}\n\n\n}"
+}

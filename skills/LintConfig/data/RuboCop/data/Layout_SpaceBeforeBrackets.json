@@ -1,0 +1,9 @@
+{
+  "name": "Layout/SpaceBeforeBrackets",
+  "full_description": "Checks for receiver with a space before the opening brackets.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#space-in-brackets-access",
+  "is_safe": true,
+  "parameters": []
+}

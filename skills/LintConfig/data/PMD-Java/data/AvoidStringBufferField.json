@@ -1,0 +1,12 @@
+{
+    "name": "AvoidStringBufferField",
+    "category": "bestpractices",
+    "summary": "StringBuffers/StringBuilders can grow considerably, and so may become a source of memory leaks\nif held within objects with long lifetimes.",
+    "message": "StringBuffers can grow quite a lot, and so may become a source of memory leak (if the owning class has a long life time).",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#avoidstringbufferfield",
+    "since": "4.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate StringBuffer buffer;    // potential memory leak as an instance variable;\n}"
+}

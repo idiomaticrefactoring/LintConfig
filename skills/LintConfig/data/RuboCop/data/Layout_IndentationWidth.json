@@ -1,0 +1,33 @@
+{
+  "name": "Layout/IndentationWidth",
+  "full_description": "Use 2 spaces for indentation.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#spaces-indentation",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Width",
+      "default_value": 2,
+      "type": "int"
+    },
+    {
+      "parameter_name": "EnforcedStyleAlignWith",
+      "default_value": "start_of_line",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStylesAlignWith",
+      "default_value": [
+        "start_of_line",
+        "relative_to_receiver"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

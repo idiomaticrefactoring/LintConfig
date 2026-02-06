@@ -1,0 +1,11 @@
+{
+  "name": "android-comparison-in-temp-failure-retry",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/comparison-in-temp-failure-retry.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Diagnoses comparisons that appear to be incorrectly placed in the argument to\nthe \nTEMP_FAILURE_RETRY\n macro. Having such a use is incorrect in the vast\nmajority of cases, and will often silently defeat the purpose of the\n\nTEMP_FAILURE_RETRY\n macro.\n\nFor context, \nTEMP_FAILURE_RETRY\n is \na convenience macro\n\nprovided by both glibc and Bionic. Its purpose is to repeatedly run a syscall\nuntil it either succeeds, or fails for reasons other than being interrupted.\n\nExample buggy usage looks like:\n\nchar\n \ncs\n[\n1\n];\n\n\nwhile\n \n(\nTEMP_FAILURE_RETRY\n(\nread\n(\nSTDIN_FILENO\n,\n \ncs\n,\n \nsizeof\n(\ncs\n))\n \n!=\n \n0\n))\n \n{\n\n\n  \n// Do something with cs.\n\n\n}\n\nBecause \nTEMP_FAILURE_RETRY\n will check for whether the result\n\nof the comparison\n is \n-1\n, and retry if so.\n\nIf you encounter this, the fix is simple: lift the comparison out of the\n\nTEMP_FAILURE_RETRY\n argument, like so:\n\nchar\n \ncs\n[\n1\n];\n\n\nwhile\n \n(\nTEMP_FAILURE_RETRY\n(\nread\n(\nSTDIN_FILENO\n,\n \ncs\n,\n \nsizeof\n(\ncs\n)))\n \n!=\n \n0\n)\n \n{\n\n\n  \n// Do something with cs.\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nRetryMacros\nÂ¶\n\n\nA comma-separated list of the names of retry macros to be checked.\nDefault is \nTEMP_FAILURE_RETRY\n.",
+    "configurations": []
+  }
+}

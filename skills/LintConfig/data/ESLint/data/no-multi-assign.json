@@ -1,0 +1,23 @@
+{
+  "name": "no-multi-assign",
+  "meta": {
+    "description": "Disallow use of chained assignment expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-multi-assign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow use of chained assignment expressions\nTable of ContentsRule DetailsOptionsignoreNonDeclarationRelated RulesVersionResources\nChaining the assignment of variables can lead to unexpected results and be difficult to read.\n(function(){constfoo=bar=0;// Did you mean `foo = bar == 0`?bar=1;// This will not fail since `bar` is not constant.})();console.log(bar);// This will output 1 since `bar` is not scoped.12345Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\n\"ignoreNonDeclaration\": When set totrue, the rule allows chains that don’t include initializing a variable in a declaration or initializing a class field. Default isfalse.\nExamples ofcorrectcode for the{ \"ignoreNonDeclaration\": true }option:\nExamples ofincorrectcode for the{ \"ignoreNonDeclaration\": true }option:",
+    "config_examples": []
+  }
+}

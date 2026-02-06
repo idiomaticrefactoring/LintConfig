@@ -1,0 +1,12 @@
+{
+    "name": "FormalParameterNamingConventions",
+    "category": "codestyle",
+    "summary": "Configurable naming conventions for formal parameters of methods and lambdas.\nThis rule reports formal parameters which do not match the regex that applies to their\nspecific kind (e.g. lambda parameter, or final formal parameter). Each regex can be\nconfigured through properties.\n\nBy default this rule uses the standard Java naming convention (Camel case).",
+    "message": "The {0} name ''{1}'' doesn''t match ''{2}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#formalparameternamingconventions",
+    "since": "6.6.0",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\n\nabstract void bar(int myInt); // This is Camel case, so it's ok\n\nvoid bar(int my_i) { // this will be reported\n\n}\n\nvoid lambdas() {\n\n// lambdas parameters can be configured separately\nConsumer<String> lambda1 = s_str -> { };\n\n// lambda parameters with an explicit type can be configured separately\nConsumer<String> lambda1 = (String str) -> { };\n\n}\n\n}"
+}

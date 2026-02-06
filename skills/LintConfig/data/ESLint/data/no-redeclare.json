@@ -1,0 +1,23 @@
+{
+  "name": "no-redeclare",
+  "meta": {
+    "description": "Disallow variable redeclaration",
+    "url": "https://eslint.org/docs/latest/rules/no-redeclare",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow variable redeclaration\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionsbuiltinGlobalsHandled by TypeScriptRelated RulesVersionResources\nIn JavaScript, it’s possible to redeclare the same variable name usingvar. This can lead to confusion as to where the variable is actually declared and initialized.",
+    "sub_configuration_introduction": "This rule takes one optional argument, an object with a boolean property\"builtinGlobals\". It defaults totrue.\nIf set totrue, this rule also checks redeclaration of built-in globals, such asObject,Array,Number…\nThe\"builtinGlobals\"option will check for redeclaration of built-in globals in global scope.\nExamples ofincorrectcode for the{ \"builtinGlobals\": true }option:\nNote that when usingsourceType: \"commonjs\"(orecmaFeatures.globalReturn, if using the default parser), the top scope of a program is not actually the global scope, but rather a “module” scope. When this is the case, declaring a variable named after a builtin global is not a redeclaration, but rather a shadowing of the global variable. In that case, theno-shadowrule with the\"builtinGlobals\"option should be used.",
+    "config_examples": []
+  }
+}

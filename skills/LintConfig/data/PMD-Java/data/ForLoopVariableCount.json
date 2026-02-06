@@ -1,0 +1,19 @@
+{
+    "name": "ForLoopVariableCount",
+    "category": "bestpractices",
+    "summary": "Having a lot of control variables in a 'for' loop makes it harder to see what range of values\nthe loop iterates over. By default this rule allows a regular 'for' loop with only one variable.",
+    "message": "Too many control variables in the 'for' statement",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#forloopvariablecount",
+    "since": "6.11.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "maximumVariables",
+            "description": "A regular for statement will have 1 control variable",
+            "defaultValue": "1",
+            "type": "Integer"
+        }
+    ],
+    "examples": "// this will be reported with the default setting of at most one control variable in a for loop\nfor (int i = 0, j = 0; i < 10; i++, j += 2) {\nfoo();"
+}

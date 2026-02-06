@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-macro-usage",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/macro-usage.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds macro usage that is considered problematic because better language\nconstructs exist for the task.\n\nThe relevant sections in the C++ Core Guidelines are\n\nES.31\n, and\n\nES.32\n.\n\nExamples:\n\n#define C 0\n\n\n#define F1(x, y) ((a) > (b) ? (a) : (b))\n\n\n#define F2(...) (__VA_ARGS__)\n\n\n#define F3(x, y) x##y\n\n\n#define COMMA ,\n\n\n#define NORETURN [[noreturn]]\n\n\n#define DEPRECATED attribute((deprecated))\n\n\n#if LIB_EXPORTS\n\n\n#define DLLEXPORTS __declspec(dllexport)\n\n\n#else\n\n\n#define DLLEXPORTS __declspec(dllimport)\n\n\n#endif\n\nresults in the following warnings:\n\n4\n \nwarnings\n \ngenerated\n.\n\n\ntest\n.\ncpp\n:\n1\n:\n9\n:\n \nwarning\n:\n \nmacro\n \n'C'\n \nused\n \nto\n \ndeclare\n \na\n \nconstant\n;\n \nconsider\n \nusing\n \na\n \n'constexpr'\n \nconstant\n \n[\ncppcoreguidelines\n-\nmacro\n-\nusage\n]\n\n\n#define C 0\n\n        \n^\n\n\ntest\n.\ncpp\n:\n2\n:\n9\n:\n \nwarning\n:\n \nfunction\n-\nlike\n \nmacro\n \n'F1'\n \nused\n;\n \nconsider\n \na\n \n'constexpr'\n \ntemplate\n \nfunction\n \n[\ncppcoreguidelines\n-\nmacro\n-\nusage\n]\n\n\n#define F1(x, y) ((a) > (b) ? (a) : (b))\n\n        \n^\n\n\ntest\n.\ncpp\n:\n3\n:\n9\n:\n \nwarning\n:\n \nvariadic\n \nmacro\n \n'F2'\n \nused\n;\n \nconsider\n \nusing\n \na\n \n'constexpr'\n \nvariadic\n \ntemplate\n \nfunction\n \n[\ncppcoreguidelines\n-\nmacro\n-\nusage\n]\n\n\n#define F2(...) (__VA_ARGS__)\n\n        \n^\n\nOptions\nÂ¶\n\n\n\n\n\n\nAllowedRegexp\nÂ¶\n\n\nA regular expression to filter allowed macros. For example\n\nDEBUG*|LIBTORRENT*|TORRENT*|UNI*\n could be applied to filter \nlibtorrent\n.\nDefault value is \n^DEBUG_*\n.\n\n\n\n\n\n\n\n\nCheckCapsOnly\nÂ¶\n\n\nBoolean flag to warn on all macros except those with CAPS_ONLY names.\nThis option is intended to ease introduction of this check into older\ncode bases. Default value is \nfalse\n.\n\n\n\n\n\n\n\n\nIgnoreCommandLineMacros\nÂ¶\n\n\nBoolean flag to toggle ignoring command-line-defined macros.\nDefault value is \ntrue\n.",
+    "configurations": []
+  }
+}

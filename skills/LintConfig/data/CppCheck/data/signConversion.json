@@ -1,0 +1,16 @@
+{
+    "name": "signConversion",
+    "meta": {
+        "severity": "warning",
+        "cwe": "195",
+        "url": "https://cwe.mitre.org/data/definitions/195.html"
+    },
+    "content": {
+        "introduction": "Expression 'var' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "195",
+            "inconclusive": false
+        }
+    }
+}

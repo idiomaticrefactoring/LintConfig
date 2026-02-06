@@ -1,0 +1,12 @@
+{
+    "name": "StaticEJBFieldShouldBeFinal",
+    "category": "errorprone",
+    "summary": "According to the J2EE specification, an EJB should not have any static fields\nwith write access. However, static read-only fields are allowed. This ensures proper\nbehavior especially when instances are distributed by the container on several JREs.",
+    "message": "EJB's shouldn't have non-final static fields",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#staticejbfieldshouldbefinal",
+    "since": "4.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class SomeEJB extends EJBObject implements EJBLocalHome {\n\nprivate static int CountA;          // poor, field can be edited\n\nprivate static final int CountB;    // preferred, read-only access\n}"
+}

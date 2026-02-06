@@ -1,0 +1,11 @@
+{
+  "name": "misc-misleading-identifier",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misleading-identifier.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds identifiers that contain Unicode characters with right-to-left direction,\nwhich can be confusing as they may change the understanding of a whole\nstatement line, as described in \nTrojan Source\n.\n\nAn example of such misleading code follows:\n\n#include <stdio.h>\n\nshort int × = (short int)0;\nshort int × = (short int)12345;\n\nint main() {\n  int × = ×; // a local variable, set to zero?\n  printf(\"× is %d\\n\", ×);\n  printf(\"× is %d\\n\", ×);\n}",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "objc-assert-equals",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/assert-equals.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds improper usages of \nXCTAssertEqual\n and \nXCTAssertNotEqual\n and replaces\nthem with \nXCTAssertEqualObjects\n or \nXCTAssertNotEqualObjects\n.\n\nThis makes tests less fragile, as many improperly rely on pointer equality for\nstrings that have equal values.  This assumption is not guaranteed by the\nlanguage.",
+    "configurations": []
+  }
+}

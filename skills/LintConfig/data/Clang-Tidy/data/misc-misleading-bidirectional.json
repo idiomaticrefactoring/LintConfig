@@ -1,0 +1,11 @@
+{
+  "name": "misc-misleading-bidirectional",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misleading-bidirectional.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns about unterminated bidirectional unicode sequence, detecting potential attack\nas described in the \nTrojan Source\n attack.\n\nExample:\n\n#include\n \n<iostream>\n\n\n\nint\n \nmain\n()\n \n{\n\n\n    \nbool\n \nisAdmin\n \n=\n \nfalse\n;\n\n\n    \n/*â® } â¦if (isAdmin)â© â¦ begin admins only */\n\n\n        \nstd\n::\ncout\n \n<<\n \n\"You are an admin.\n\\n\n\"\n;\n\n\n    \n/* end admins only â® { â¦*/\n\n\n    \nreturn\n \n0\n;\n\n\n}",
+    "configurations": []
+  }
+}

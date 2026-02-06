@@ -1,0 +1,16 @@
+{
+    "name": "IOWithoutPositioning",
+    "meta": {
+        "severity": "error",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

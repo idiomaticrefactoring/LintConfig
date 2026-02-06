@@ -1,0 +1,12 @@
+{
+    "name": "JUnit4TestShouldUseAfterAnnotation",
+    "category": "bestpractices",
+    "summary": "Deprecated. Use UnitTestShouldUseAfterAnnotation instead.",
+    "message": "",
+    "url": "",
+    "since": "",
+    "priority": "3",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": ""
+}

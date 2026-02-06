@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-pro-bounds-constant-array-index",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-constant-array-index.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check flags all array subscript expressions on static arrays and\n\nstd::arrays\n that either do not have a constant integer expression index or\nare out of bounds (for \nstd::array\n). For out-of-bounds checking of static\narrays, see the \n-Warray-bounds\n Clang diagnostic.\n\nThis rule is part of the \nBounds safety (Bounds 2)\n\nprofile from the C++ Core Guidelines.\n\nOptionally, this check can generate fixes using \ngsl::at\n for indexing.\n\nOptions\nÂ¶\n\n\n\n\n\n\nGslHeader\nÂ¶\n\n\nThe check can generate fixes after this option has been set to the name of\nthe include file that contains \ngsl::at()\n, e.g. \nâgsl/gsl.hâ\n.\nDefault is an empty string.\n\n\n\n\n\n\n\n\nIncludeStyle\nÂ¶\n\n\nA string specifying which include-style is used, \nllvm\n or \ngoogle\n. Default\nis \nllvm\n.",
+    "configurations": []
+  }
+}

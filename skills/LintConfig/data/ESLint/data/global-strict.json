@@ -1,0 +1,23 @@
+{
+  "name": "global-strict",
+  "meta": {
+    "description": "Replaced by strict",
+    "url": null,
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": true,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "",
+    "config_examples": []
+  }
+}

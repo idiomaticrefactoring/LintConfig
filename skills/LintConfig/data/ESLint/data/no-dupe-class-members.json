@@ -1,0 +1,23 @@
+{
+  "name": "no-dupe-class-members",
+  "meta": {
+    "description": "Disallow duplicate class members",
+    "url": "https://eslint.org/docs/latest/rules/no-dupe-class-members",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow duplicate class members\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsExamplesWhen Not To Use ItHandled by TypeScriptVersionResources\nIf there are declarations of the same name in class members, the last declaration overwrites other declarations silently.\nIt can cause unexpected behaviors.\nclassFoo{bar(){console.log(\"hello\");}bar(){console.log(\"goodbye\");}}constfoo=newFoo();foo.bar();// goodbye1234567Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

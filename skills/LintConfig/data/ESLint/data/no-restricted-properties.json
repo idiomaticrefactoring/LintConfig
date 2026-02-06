@@ -1,0 +1,23 @@
+{
+  "name": "no-restricted-properties",
+  "meta": {
+    "description": "Disallow certain properties on certain objects",
+    "url": "https://eslint.org/docs/latest/rules/no-restricted-properties",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow certain properties on certain objects\nTable of ContentsRule DetailsOptionsWhen Not To Use ItRelated RulesVersionResources\nCertain properties on objects may be disallowed in a codebase. This is useful for deprecating an API or restricting usage of a module’s methods. For example, you may want to disallow usingdescribe.onlywhen using Mocha or telling people to useObject.assigninstead of_.extend.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

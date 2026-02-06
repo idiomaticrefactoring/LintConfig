@@ -1,0 +1,12 @@
+{
+    "name": "CouplingBetweenObjects",
+    "category": "design",
+    "summary": "This rule counts the number of unique attributes, local variables, and return types within an object.\nA number higher than the specified threshold can indicate a high degree of coupling.",
+    "message": "A value of {0} may denote a high amount of coupling within the class (threshold: {1})",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#couplingbetweenobjects",
+    "since": "1.04",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import com.Blah;\nimport org.Bar;\nimport org.Bardo;\n\npublic class Foo {\nprivate Blah var1;\nprivate Bar var2;\n\n//followed by many imports of unique objects\nObjectC doWork() {\nBardo var55;\nObjectA var44;\nObjectZ var93;\nreturn something();\n}\n}"
+}

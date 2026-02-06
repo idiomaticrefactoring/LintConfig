@@ -1,0 +1,20 @@
+{
+    "name": "virtualDestructor",
+    "meta": {
+        "severity": "error",
+        "cwe": "404",
+        "url": "https://cwe.mitre.org/data/definitions/404.html"
+    },
+    "content": {
+        "introduction": "Class 'Base' which is inherited by class 'Derived' does not have a virtual destructor. If you destroy instances of the derived class by deleting a pointer that points to the base class, only the destructor of the base class is executed. Thus, dynamic memory that is managed by the derived class could leak. This can be avoided by adding a virtual destructor to the base class.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "404",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "Base",
+                "Derived"
+            ]
+        }
+    }
+}

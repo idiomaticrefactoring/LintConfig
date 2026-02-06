@@ -1,0 +1,11 @@
+{
+  "name": "misc-misplaced-const",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misplaced-const.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check diagnoses when a \nconst\n qualifier is applied to a \ntypedef\n/\n\nusing\n to a pointer type rather than to the pointee, because such constructs\nare often misleading to developers because the \nconst\n applies to the pointer\nrather than the pointee.\n\nFor instance, in the following code, the resulting type is \nint\n \n*\n \nconst\n\nrather than \nconst\n \nint\n \n*\n:\n\ntypedef\n \nint\n \n*\nint_ptr\n;\n\n\nvoid\n \nf\n(\nconst\n \nint_ptr\n \nptr\n)\n \n{\n\n\n  \n*\nptr\n \n=\n \n0\n;\n \n// potentially quite unexpectedly the int can be modified here\n\n\n  \nptr\n \n=\n \n0\n;\n \n// does not compile\n\n\n}\n\nThe check does not diagnose when the underlying \ntypedef\n/\nusing\n type is a\npointer to a \nconst\n type or a function pointer type. This is because the\n\nconst\n qualifier is less likely to be mistaken because it would be redundant\n(or disallowed) on the underlying pointee type.",
+    "configurations": []
+  }
+}

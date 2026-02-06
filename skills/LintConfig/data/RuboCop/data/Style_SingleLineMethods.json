@@ -1,0 +1,15 @@
+{
+  "name": "Style/SingleLineMethods",
+  "full_description": "Avoid single-line methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-single-line-methods",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowIfMethodIsEmpty",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

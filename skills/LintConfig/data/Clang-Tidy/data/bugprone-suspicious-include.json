@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-suspicious-include",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-include.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "The check detects various cases when an include refers to what appears to be an\nimplementation file, which often leads to hard-to-track-down ODR violations.\n\nExamples:\n\n#include\n \n\"Dinosaur.hpp\"\n     // OK, .hpp files tend not to have definitions.\n\n\n#include\n \n\"Pterodactyl.h\"\n    // OK, .h files tend not to have definitions.\n\n\n#include\n \n\"Velociraptor.cpp\"\n // Warning, filename is suspicious.\n\n\n#include_next <stdio.c>     \n// Warning, filename is suspicious.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoredRegex\nÂ¶\n\n\nA regular expression for the file name to be ignored by the check. Default\nis empty string.",
+    "configurations": []
+  }
+}

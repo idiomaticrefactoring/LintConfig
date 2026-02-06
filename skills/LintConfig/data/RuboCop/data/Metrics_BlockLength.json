@@ -1,0 +1,37 @@
+{
+  "name": "Metrics/BlockLength",
+  "full_description": "Avoid long blocks with many lines.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "CountComments",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "Max",
+      "default_value": 25,
+      "type": "int"
+    },
+    {
+      "parameter_name": "CountAsOne",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [
+        "refine"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

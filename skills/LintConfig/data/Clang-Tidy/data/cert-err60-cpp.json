@@ -1,0 +1,11 @@
+{
+  "name": "cert-err60-cpp",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err60-cpp.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "The \ncert-err60-cpp\n check is an alias, please see\n\nbugprone-exception-copy-constructor-throws\n\nfor more information.\n\nThis check corresponds to the CERT C++ Coding Standard rule\n\nERR60-CPP. Exception objects must be nothrow copy constructible\n.",
+    "configurations": []
+  }
+}

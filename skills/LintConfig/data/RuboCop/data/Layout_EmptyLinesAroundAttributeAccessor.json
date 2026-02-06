@@ -1,0 +1,25 @@
+{
+  "name": "Layout/EmptyLinesAroundAttributeAccessor",
+  "full_description": "Keep blank lines around attribute accessors.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#empty-lines-around-attribute-accessor",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowAliasSyntax",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [
+        "alias_method",
+        "public",
+        "protected",
+        "private"
+      ],
+      "type": "list"
+    }
+  ]
+}

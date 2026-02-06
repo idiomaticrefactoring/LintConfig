@@ -1,0 +1,12 @@
+{
+    "name": "SimplifyConditional",
+    "category": "design",
+    "summary": "No need to check for null before an instanceof; the instanceof keyword returns false when given a null argument.",
+    "message": "No need to check for null before an instanceof",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#simplifyconditional",
+    "since": "3.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\nvoid bar(Object x) {\nif (x != null && x instanceof Bar) {\n// just drop the \"x != null\" check\n}\n}\n}"
+}

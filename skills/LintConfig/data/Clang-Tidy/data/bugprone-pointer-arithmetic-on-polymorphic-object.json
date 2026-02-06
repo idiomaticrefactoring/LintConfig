@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-pointer-arithmetic-on-polymorphic-object",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/pointer-arithmetic-on-polymorphic-object.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds pointer arithmetic performed on classes that contain a virtual function.\n\nPointer arithmetic on polymorphic objects where the pointerâs static type is\ndifferent from its dynamic type is undefined behavior, as the two types could\nhave different sizes, and thus the vtable pointer could point to an\ninvalid address.\n\nFinding pointers where the static type contains a virtual member function is a\ngood heuristic, as the pointer is likely to point to a different,\nderived object.\n\nExample:\n\nstruct\n \nBase\n \n{\n\n\n  \nvirtual\n \n~\nBase\n();\n\n\n  \nint\n \ni\n;\n\n\n};\n\n\n\nstruct\n \nDerived\n \n:\n \npublic\n \nBase\n \n{};\n\n\n\nvoid\n \nfoo\n(\nBase\n*\n \nb\n)\n \n{\n\n\n  \nb\n \n+=\n \n1\n;\n\n\n  \n// warning: pointer arithmetic on class that declares a virtual function can\n\n\n  \n// result in undefined behavior if the dynamic type differs from the\n\n\n  \n// pointer type\n\n\n}\n\n\n\nint\n \nbar\n(\nconst\n \nDerived\n \nd\n[])\n \n{\n\n\n  \nreturn\n \nd\n[\n1\n].\ni\n;\n \n// warning due to pointer arithmetic on polymorphic object\n\n\n}\n\n\n\n// Making Derived final suppresses the warning\n\n\nstruct\n \nFinalDerived\n \nfinal\n \n:\n \npublic\n \nBase\n \n{};\n\n\n\nint\n \nbaz\n(\nconst\n \nFinalDerived\n \nd\n[])\n \n{\n\n\n  \nreturn\n \nd\n[\n1\n].\ni\n;\n \n// no warning as FinalDerived is final\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreInheritedVirtualFunctions\nÂ¶\n\n\nWhen \ntrue\n, objects that only inherit a virtual function are not checked.\nClasses that do not declare a new virtual function are excluded\nby default, as they make up the majority of false positives.\nDefault: \nfalse\n.\n\n\nvoid\n \nbar\n(\nBase\n \nb\n[],\n \nDerived\n \nd\n[])\n \n{\n\n\n  \nb\n \n+=\n \n1\n;\n \n// warning, as Base declares a virtual destructor\n\n\n  \nd\n \n+=\n \n1\n;\n \n// warning only if IgnoreVirtualDeclarationsOnly is set to false\n\n\n}\n\nReferences\nÂ¶\n\n\nThis check corresponds to the SEI Cert rule\n\nCTR56-CPP. Do not use pointer arithmetic on polymorphic objects\n.",
+    "configurations": []
+  }
+}

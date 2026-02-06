@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-avoid-const-or-ref-data-members",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-const-or-ref-data-members.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check warns when structs or classes that are copyable or movable, and have\nconst-qualified or reference (lvalue or rvalue) data members. Having such\nmembers is rarely useful, and makes the class only copy-constructible but not\ncopy-assignable.\n\nExamples:\n\n// Bad, const-qualified member\n\n\nstruct\n \nConst\n \n{\n\n\n  \nconst\n \nint\n \nx\n;\n\n\n}\n\n\n\n// Good:\n\n\nclass\n \nFoo\n \n{\n\n\n \npublic\n:\n\n\n  \nint\n \nget\n()\n \nconst\n \n{\n \nreturn\n \nx\n;\n \n}\n\n\n \nprivate\n:\n\n\n  \nint\n \nx\n;\n\n\n};\n\n\n\n// Bad, lvalue reference member\n\n\nstruct\n \nRef\n \n{\n\n\n  \nint\n&\n \nx\n;\n\n\n};\n\n\n\n// Good:\n\n\nstruct\n \nFoo\n \n{\n\n\n  \nint\n*\n \nx\n;\n\n\n  \nstd\n::\nunique_ptr\n<\nint\n>\n \nx\n;\n\n\n  \nstd\n::\nshared_ptr\n<\nint\n>\n \nx\n;\n\n\n  \ngsl\n::\nnot_null\n<\nint\n*>\n \nx\n;\n\n\n};\n\n\n\n// Bad, rvalue reference member\n\n\nstruct\n \nRefRef\n \n{\n\n\n  \nint\n&&\n \nx\n;\n\n\n};\n\nThis check implements \nC.12\n\nfrom the C++ Core Guidelines.\n\nFurther reading:\n\nData members: Never const\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-suspicious-semicolon",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-semicolon.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds most instances of stray semicolons that unexpectedly alter the meaning of\nthe code. More specifically, it looks for \nif\n, \nwhile\n, \nfor\n and\n\nfor-range\n statements whose body is a single semicolon, and then analyzes\nthe context of the code (e.g. indentation) in an attempt to determine whether\nthat is intentional.\n\nif\n \n(\nx\n \n<\n \ny\n);\n\n\n{\n\n\n  \nx\n++\n;\n\n\n}\n\nHere the body of the \nif\n statement consists of only the semicolon at the end\nof the first line, and \nx\n will be incremented regardless of the condition.\n\nwhile\n \n((\nline\n \n=\n \nreadLine\n(\nfile\n))\n \n!=\n \nNULL\n);\n\n\n  \nprocessLine\n(\nline\n);\n\nAs a result of this code, \nprocessLine()\n will only be called once, when the\n\nwhile\n loop with the empty body exits with \nline\n \n==\n \nNULL\n. The indentation\nof the code indicates the intention of the programmer.\n\nif\n \n(\nx\n \n>=\n \ny\n);\n\n\nx\n \n-=\n \ny\n;\n\nWhile the indentation does not imply any nesting, there is simply no valid\nreason to have an \nif\n statement with an empty body (but it can make sense for\na loop). So this check issues a warning for the code above.\n\nTo solve the issue remove the stray semicolon or in case the empty body is\nintentional, reflect this using code indentation or put the semicolon in a new\nline. For example:\n\nwhile\n \n(\nreadWhitespace\n());\n\n\n  \nToken\n \nt\n \n=\n \nreadNextToken\n();\n\nHere the second line is indented in a way that suggests that it is meant to be\nthe body of the \nwhile\n loop - whose body is in fact empty, because of the\nsemicolon at the end of the first line.\n\nEither remove the indentation from the second line:\n\nwhile\n \n(\nreadWhitespace\n());\n\n\nToken\n \nt\n \n=\n \nreadNextToken\n();\n\nâ¦ or move the semicolon from the end of the first line to a new line:\n\nwhile\n \n(\nreadWhitespace\n())\n\n\n  \n;\n\n\n\n  \nToken\n \nt\n \n=\n \nreadNextToken\n();\n\nIn this case the check will assume that you know what you are doing, and will\nnot raise a warning.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Style/StructInheritance",
+  "full_description": "Checks for inheritance from Struct.new.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-extend-struct-new",
+  "is_safe": true,
+  "parameters": []
+}

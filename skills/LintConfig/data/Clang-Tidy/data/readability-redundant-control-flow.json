@@ -1,0 +1,11 @@
+{
+  "name": "readability-redundant-control-flow",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-control-flow.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check looks for procedures (functions returning no value) with \nreturn\n\nstatements at the end of the function. Such \nreturn\n statements are\nredundant.\n\nLoop statements (\nfor\n, \nwhile\n, \ndo\n \nwhile\n) are checked for redundant\n\ncontinue\n statements at the end of the loop body.\n\nExamples:\n\nThe following function \nf\n contains a redundant \nreturn\n statement:\n\nextern\n \nvoid\n \ng\n();\n\n\nvoid\n \nf\n()\n \n{\n\n\n  \ng\n();\n\n\n  \nreturn\n;\n\n\n}\n\nbecomes\n\nextern\n \nvoid\n \ng\n();\n\n\nvoid\n \nf\n()\n \n{\n\n\n  \ng\n();\n\n\n}\n\nThe following function \nk\n contains a redundant \ncontinue\n statement:\n\nvoid\n \nk\n()\n \n{\n\n\n  \nfor\n \n(\nint\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \n10\n;\n \n++\ni\n)\n \n{\n\n\n    \ncontinue\n;\n\n\n  \n}\n\n\n}\n\nbecomes\n\nvoid\n \nk\n()\n \n{\n\n\n  \nfor\n \n(\nint\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \n10\n;\n \n++\ni\n)\n \n{\n\n\n  \n}\n\n\n}",
+    "configurations": []
+  }
+}

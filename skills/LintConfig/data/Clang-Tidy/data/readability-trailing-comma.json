@@ -1,0 +1,11 @@
+{
+  "name": "readability-trailing-comma",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/trailing-comma.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for presence or absence of trailing commas in enum definitions and\ninitializer lists.\n\nThe check supports separate policies for single-line and multi-line constructs,\nallowing different styles for each. By default, the check enforces trailing\ncommas in multi-line constructs and removes them from single-line constructs.\n\nTrailing commas in multi-line constructs offer several benefits:\n\nAdding or removing elements at the end only changes a single line, making\ndiffs smaller and easier to read.\n\n\nFormatters may change code to a more desired style.\n\n\nCode generators avoid the need for special handling of the last element.\n\n// Without trailing commas - adding \"Yellow\" requires modifying the \"Blue\" line\n\n\nenum\n \nColor\n \n{\n\n\n  \nRed\n,\n\n\n  \nGreen\n,\n\n\n  \nBlue\n\n\n};\n\n\n\n// With trailing commas - adding \"Yellow\" is a clean, single-line change\n\n\nenum\n \nColor\n \n{\n\n\n  \nRed\n,\n\n\n  \nGreen\n,\n\n\n  \nBlue\n,\n\n\n};\n\nLimitations\nÂ¶\n\n\nThe check currently doesnât analyze code inside macros.\n\nOptions\nÂ¶\n\n\n\n\n\n\nSingleLineCommaPolicy\nÂ¶\n\n\nControls whether to add, remove, or ignore trailing commas in single-line\nenum definitions and initializer lists.\nValid values are:\n\n\n\n\nAppend\n: Add trailing commas where missing.\n\n\nRemove\n: Remove trailing commas where present.\n\n\nIgnore\n: Do not check single-line constructs.\n\n\n\n\nDefault is \nRemove\n.\n\n\n\n\n\n\n\n\nMultiLineCommaPolicy\nÂ¶\n\n\nControls whether to add, remove, or ignore trailing commas in multi-line\nenum definitions and initializer lists.\nValid values are:\n\n\n\n\nAppend\n: Add trailing commas where missing.\n\n\nRemove\n: Remove trailing commas where present.\n\n\nIgnore\n: Do not check multi-line constructs.\n\n\n\n\nDefault is \nAppend\n.",
+    "configurations": []
+  }
+}

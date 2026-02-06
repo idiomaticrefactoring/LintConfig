@@ -1,0 +1,15 @@
+{
+  "name": "Style/SafeNavigationChainLength",
+  "full_description": "Enforces safe navigation chains length to not exceed the configured maximum.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#safe-navigation",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Max",
+      "default_value": 2,
+      "type": "int"
+    }
+  ]
+}

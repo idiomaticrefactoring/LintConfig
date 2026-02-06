@@ -1,0 +1,12 @@
+{
+    "name": "DefaultLabelNotLastInSwitchStmt",
+    "category": "bestpractices",
+    "summary": "Deprecated. Use DefaultLabelNotLastInSwitch instead.",
+    "message": "",
+    "url": "",
+    "since": "",
+    "priority": "3",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": ""
+}

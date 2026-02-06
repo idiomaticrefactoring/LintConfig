@@ -1,0 +1,33 @@
+{
+  "name": "Style/NumericPredicate",
+  "full_description": "Checks for the use of predicate- or comparison methods for numeric comparisons.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#predicate-methods",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "predicate",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "predicate",
+        "comparison"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UseCollectionIsEmpty",
+    "category": "bestpractices",
+    "summary": "The isEmpty() method on java.util.Collection is provided to determine if a collection has any elements.\nComparing the value of size() to 0 does not convey intent as well as the isEmpty() method.",
+    "message": "Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#usecollectionisempty",
+    "since": "3.9",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nvoid good() {\nList foo = getList();\nif (foo.isEmpty()) {\n// blah\n}\n}\n\nvoid bad() {\nList foo = getList();\nif (foo.size() == 0) {\n// blah\n}\n}\n}"
+}

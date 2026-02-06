@@ -1,0 +1,12 @@
+{
+    "name": "ExcessiveParameterList",
+    "category": "design",
+    "summary": "Methods with numerous parameters are a challenge to maintain, especially if most of them share the\nsame datatype. These situations usually denote the need for new objects to wrap the numerous parameters.",
+    "message": "Avoid long parameter lists ({0} parameters - threshold is {1}).",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#excessiveparameterlist",
+    "since": "0.9",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public void addPerson(      // too many arguments liable to be mixed up\nint birthYear, int birthMonth, int birthDate, int height, int weight, int ssn) {\n\n. . . .\n}\n\npublic void addPerson(      // preferred approach\nDate birthdate, BodyMeasurements measurements, int ssn) {\n\n. . . .\n}"
+}

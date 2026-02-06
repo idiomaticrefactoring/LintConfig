@@ -1,0 +1,23 @@
+{
+  "name": "no-useless-computed-key",
+  "meta": {
+    "description": "Disallow unnecessary computed property keys in objects and classes",
+    "url": "https://eslint.org/docs/latest/rules/no-useless-computed-key",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unnecessary computed property keys in objects and classes\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsenforceForClassMembersWhen Not To Use ItVersionResources\nIt’s unnecessary to use computed properties with literals such as:\nconstfoo={[\"a\"]:\"b\"};1Copy code to clipboard\nThe code can be rewritten as:\nconstfoo={\"a\":\"b\"};1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\nenforceForClassMembersset tofalsedisables this rule for class members (Defaulttrue).\nBy default, this rule also checks class declarations and class expressions,\nas the default value forenforceForClassMembersistrue.\nWhenenforceForClassMembersis set tofalse, the rule will allow unnecessary computed keys inside of class fields, class methods, class getters, and class setters.\nExamples ofincorrectcode for this rule with the{ \"enforceForClassMembers\": false }option:\nExamples ofcorrectcode for this rule with the{ \"enforceForClassMembers\": false }option:",
+    "config_examples": []
+  }
+}

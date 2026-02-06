@@ -1,0 +1,9 @@
+{
+  "name": "Lint/DeprecatedOpenSSLConstant",
+  "full_description": "Don't use algorithm constants for `OpenSSL::Cipher` and `OpenSSL::Digest`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

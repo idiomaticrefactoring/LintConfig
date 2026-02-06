@@ -1,0 +1,12 @@
+{
+    "name": "AvoidProtectedFieldInFinalClass",
+    "category": "codestyle",
+    "summary": "Do not use protected fields in final classes since they cannot be subclassed.\nClarify your intent by using private or package access modifiers instead.",
+    "message": "Avoid protected fields in a final class.  Change to private or package access.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#avoidprotectedfieldinfinalclass",
+    "since": "2.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public final class Bar {\nprivate int x;\nprotected int y;  // bar cannot be subclassed, so is y really private or package visible?\nBar() {}\n}"
+}

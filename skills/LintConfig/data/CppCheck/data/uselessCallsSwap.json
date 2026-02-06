@@ -1,0 +1,19 @@
+{
+    "name": "uselessCallsSwap",
+    "meta": {
+        "severity": "performance",
+        "cwe": "628",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "content": {
+        "introduction": "The 'swap()' function has no logical effect when given itself as parameter (str.swap(str)). As it is currently the code is inefficient. Is the object or the parameter wrong here?",
+        "attributes": {
+            "severity": "performance",
+            "cwe_id": "628",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "str"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "MissingSafeMethod",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "Candidate methods for the _Missing Safe Method_ smell are methods whose names\nend with an exclamation mark.\nAn exclamation mark in method names means (the explanation below is taken from\n[here](http://dablog.rubypal.com/2007/8/15/bang-methods-or-danger-will-rubyist)):\n> The ! in method names that end with ! means, “This method is dangerous”—or,\n> more precisely, this method is the “dangerous” version of an otherwise\n> equivalent method, with the same name minus the !. “Danger” is relative; the\n>...",
+  "configuration_docs": "_Missing Safe Method_ offers the [Basic Smell Options](Basic-Smell-Options.md).\nImagine code like this:\n```ruby\nclass Alfa\ndef bravo!\nend\nend\n```\nThis would report:\n>>\nruby.rb -- 1 warning:\n[1]:MissingSafeMethod: Alfa has missing safe method 'bravo!'\nIf you want to suppress this warning you can do this via source comment like this:\n```ruby",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Missing-Safe-Method.md"
+}

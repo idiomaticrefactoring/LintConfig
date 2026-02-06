@@ -1,0 +1,17 @@
+{
+  "name": "Gemspec/AddRuntimeDependency",
+  "full_description": "Prefer `add_dependency` over `add_runtime_dependency`.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#add_dependency_vs_add_runtime_dependency",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://github.com/ruby/rubygems/issues/7799#issuecomment-2192720316"
+      ],
+      "type": "list"
+    }
+  ]
+}

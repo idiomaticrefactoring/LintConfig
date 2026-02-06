@@ -1,0 +1,16 @@
+{
+    "name": "returnStdMoveLocal",
+    "meta": {
+        "severity": "performance",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local",
+        "attributes": {
+            "severity": "performance",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

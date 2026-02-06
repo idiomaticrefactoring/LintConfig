@@ -1,0 +1,11 @@
+{
+  "name": "objc-missing-hash",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/missing-hash.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds Objective-C implementations that implement \n-isEqual:\n without also\nappropriately implementing \n-hash\n.\n\nApple documentation highlights that objects that are equal must have the same\nhash value:\n\nhttps://developer.apple.com/documentation/objectivec/1418956-nsobject/1418795-isequal?language=objc\n\nNote that the check only verifies the presence of \n-hash\n in scenarios where\nits omission could result in unexpected behavior. The verification of the\nimplementation of \n-hash\n is the responsibility of the developer, e.g.,\nthrough the addition of unit tests to verify the implementation.",
+    "configurations": []
+  }
+}

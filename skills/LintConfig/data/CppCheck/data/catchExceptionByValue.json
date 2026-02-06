@@ -1,0 +1,16 @@
+{
+    "name": "catchExceptionByValue",
+    "meta": {
+        "severity": "style",
+        "cwe": "398",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "content": {
+        "introduction": "The exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "398",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "useConsistentArrowReturn",
+  "group": "nursery",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-consistent-arrow-return",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "safe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'nursery' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

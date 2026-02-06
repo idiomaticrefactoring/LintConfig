@@ -1,0 +1,23 @@
+{
+  "name": "no-unsafe-optional-chaining",
+  "meta": {
+    "description": "Disallow use of optional chaining in contexts where the undefined value is not allowed",
+    "url": "https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow use of optional chaining in contexts where theundefinedvalue is not allowed\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionsdisallowArithmeticOperatorsVersionResources\nThe optional chaining (?.) expression can short-circuit with a return value ofundefined. Therefore, treating an evaluated optional chaining expression as a function, object, number, etc., can cause TypeError or unexpected results. For example:\nconstobj=undefined;1inobj?.foo;// TypeErrorwith(obj?.foo);// TypeErrorfor(barofobj?.foo);// TypeErrorbarinstanceofobj?.foo;// TypeErrorconst{bar}=obj?.foo;// TypeError1234567Copy code to clipboard\nAlso, parentheses limit the scope of short-circuiting in chains. For example:\nconstobj=undefined;(obj?.foo)();// TypeError(obj?.foo).bar;// TypeError1234Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\ndisallowArithmeticOperators: Disallow arithmetic operations on optional chaining expressions (Defaultfalse). If this istrue, this rule warns arithmetic operations on optional chaining expressions, which possibly result inNaN.\nWith this option set totruethe rule is enforced for:\nUnary operators:-,+Arithmetic operators:+,-,/,*,%,**Assignment operators:+=,-=,/=,*=,%=,**=\nExamples of additionalincorrectcode for this rule with the{ \"disallowArithmeticOperators\": true }option:",
+    "config_examples": []
+  }
+}

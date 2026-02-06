@@ -1,0 +1,9 @@
+{
+  "name": "Lint/RescueException",
+  "full_description": "Avoid rescuing the Exception class.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-blind-rescues",
+  "is_safe": true,
+  "parameters": []
+}

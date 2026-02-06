@@ -1,0 +1,9 @@
+{
+  "name": "Style/BlockComments",
+  "full_description": "Do not use block comments.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-block-comments",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Style/LineEndConcatenation",
+  "full_description": "Use \\ instead of + or << to concatenate two string literals at line end.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

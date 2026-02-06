@@ -1,0 +1,12 @@
+{
+    "name": "CallSuperLast",
+    "category": "errorprone",
+    "summary": "Super should be called at the end of the method",
+    "message": "super should be called at the end of the method",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#callsuperlast",
+    "since": "4.2.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import android.app.Activity;\n\npublic class DummyActivity extends Activity {\npublic void onPause() {\nfoo();\n// missing call to super.onPause()\n}\n}"
+}

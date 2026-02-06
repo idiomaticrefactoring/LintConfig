@@ -1,0 +1,12 @@
+{
+    "name": "ClassCastExceptionWithToArray",
+    "category": "errorprone",
+    "summary": "When deriving an array of a specific class from your Collection, one should provide an array of\nthe same class as the parameter of the `toArray()` method. Doing otherwise will result\nin a `ClassCastException`.",
+    "message": "This usage of the Collection.toArray() method will throw a ClassCastException.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#classcastexceptionwithtoarray",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "Collection c = new ArrayList();\nInteger obj = new Integer(1);\nc.add(obj);\n\n// this would trigger the rule (and throw a ClassCastException if executed)\nInteger[] a = (Integer [])c.toArray();\n\n// this is fine and will not trigger the rule\nInteger[] b = (Integer [])c.toArray(new Integer[0]);"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Style/ObjectThen",
+  "full_description": "Enforces the use of consistent method names `Object#yield_self` or `Object#then`.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#object-yield-self-vs-object-then",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "then",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "then",
+        "yield_self"
+      ],
+      "type": "list"
+    }
+  ]
+}

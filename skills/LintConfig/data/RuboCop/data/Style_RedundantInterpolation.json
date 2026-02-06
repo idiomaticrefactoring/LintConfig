@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantInterpolation",
+  "full_description": "Checks for strings that are just an interpolated expression.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

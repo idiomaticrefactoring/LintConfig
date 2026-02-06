@@ -1,0 +1,19 @@
+{
+    "name": "unreadVariable",
+    "meta": {
+        "severity": "style",
+        "cwe": "563",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "content": {
+        "introduction": "Variable 'varname' is assigned a value that is never used.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "563",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "varname"
+            ]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "redundantCondition",
+    "meta": {
+        "severity": "style",
+        "cwe": "398",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "content": {
+        "introduction": "Redundant condition: If x > 11 the condition x > 10 is always true.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "398",
+            "inconclusive": false
+        }
+    }
+}

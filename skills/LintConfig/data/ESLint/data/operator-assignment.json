@@ -1,0 +1,23 @@
+{
+  "name": "operator-assignment",
+  "meta": {
+    "description": "Require or disallow assignment operator shorthand where possible",
+    "url": "https://eslint.org/docs/latest/rules/operator-assignment",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Require or disallow assignment operator shorthand where possible\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsalwaysneverWhen Not To Use ItVersionResources\nJavaScript provides shorthand operators that combine variable assignment and some simple mathematical operations. For example,x = x + 4can be shortened tox += 4. The supported shorthand forms are as follows:\nShorthand | Separate\n-----------|------------\n x += y    | x = x + y\n x -= y    | x = x - y\n x *= y    | x = x * y\n x /= y    | x = x / y\n x %= y    | x = x % y\n x **= y   | x = x ** y\n x <<= y   | x = x << y\n x >>= y   | x = x >> y\n x >>>= y  | x = x >>> y\n x &= y    | x = x & y\n x ^= y    | x = x ^ y\n x |= y    | x = x | y1234567891011121314Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has a single string option:\n\"always\"(default)  requires assignment operator shorthand where possible\"never\"disallows assignment operator shorthand\nExamples ofincorrectcode for this rule with the default\"always\"option:\nExamples ofcorrectcode for this rule with the default\"always\"option:\nExamples ofincorrectcode for this rule with the\"never\"option:\nExamples ofcorrectcode for this rule with the\"never\"option:",
+    "config_examples": []
+  }
+}

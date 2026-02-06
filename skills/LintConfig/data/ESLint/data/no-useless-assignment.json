@@ -1,0 +1,23 @@
+{
+  "name": "no-useless-assignment",
+  "meta": {
+    "description": "Disallow variable assignments when the value is not used",
+    "url": "https://eslint.org/docs/latest/rules/no-useless-assignment",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

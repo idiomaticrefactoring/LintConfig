@@ -1,0 +1,9 @@
+{
+  "name": "Style/MultilineMethodSignature",
+  "full_description": "Avoid multi-line method signatures.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

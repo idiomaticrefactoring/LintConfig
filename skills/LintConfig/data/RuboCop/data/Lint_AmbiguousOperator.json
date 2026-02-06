@@ -1,0 +1,9 @@
+{
+  "name": "Lint/AmbiguousOperator",
+  "full_description": "Checks for ambiguous operators in the first argument of a method invocation without parentheses.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#method-invocation-parens",
+  "is_safe": true,
+  "parameters": []
+}

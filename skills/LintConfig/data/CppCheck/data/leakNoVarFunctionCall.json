@@ -1,0 +1,16 @@
+{
+    "name": "leakNoVarFunctionCall",
+    "meta": {
+        "severity": "error",
+        "cwe": "772",
+        "url": "https://cwe.mitre.org/data/definitions/772.html"
+    },
+    "content": {
+        "introduction": "Allocation with funcName, funcName doesn't release it.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "772",
+            "inconclusive": false
+        }
+    }
+}

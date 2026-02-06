@@ -1,0 +1,23 @@
+{
+  "name": "no-extra-label",
+  "meta": {
+    "description": "Disallow unnecessary labels",
+    "url": "https://eslint.org/docs/latest/rules/no-extra-label",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unnecessary labels\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsWhen Not To Use ItRelated RulesVersionResources\nIf a loop contains no nested loops or switches, labeling the loop is unnecessary.\nA:while(a){breakA;}123Copy code to clipboard\nYou can achieve the same result by removing the label and usingbreakorcontinuewithout a label.\nProbably those labels would confuse developers because they expect labels to jump to further.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

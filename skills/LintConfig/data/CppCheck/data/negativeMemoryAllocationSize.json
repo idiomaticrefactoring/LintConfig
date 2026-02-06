@@ -1,0 +1,16 @@
+{
+    "name": "negativeMemoryAllocationSize",
+    "meta": {
+        "severity": "error",
+        "cwe": "131",
+        "url": "https://cwe.mitre.org/data/definitions/131.html"
+    },
+    "content": {
+        "introduction": "Memory allocation size is negative.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "131",
+            "inconclusive": false
+        }
+    }
+}

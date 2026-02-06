@@ -1,0 +1,23 @@
+{
+  "name": "curly",
+  "meta": {
+    "description": "Enforce consistent brace style for all control statements",
+    "url": "https://eslint.org/docs/latest/rules/curly",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforce consistent brace style for all control statements\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsallmultimulti-linemulti-or-nestconsistentWhen Not To Use ItVersionResources\nJavaScript allows the omission of curly braces when a block contains only one statement. However, it is considered by many to be best practice toneveromit curly braces around blocks, even when they are optional, because it can lead to bugs and reduces code clarity. So the following:\nif(foo)foo++;1Copy code to clipboard\nCan be rewritten as:\nif(foo){foo++;}123Copy code to clipboard\nThere are, however, some who prefer to only use braces when there is more than one statement to be executed.",
+    "sub_configuration_introduction": "Examples ofincorrectcode for the default\"all\"option:\nExamples ofcorrectcode for the default\"all\"option:\nBy default, this rule warns wheneverif,else,for,while, ordoare used without block statements as their body. However, you can specify that block statements should be used only when there are multiple statements in the block and warn when there is only one statement in the block.\nExamples ofincorrectcode for the\"multi\"option:\nExamples ofcorrectcode for the\"multi\"option:\nAlternatively, you can relax the rule to allow brace-less single-lineif,else if,else,for,while, ordo, while still enforcing the use of curly braces for other instances.\nExamples ofincorrectcode for the\"multi-line\"option:\nExamples ofcorrectcode for the\"multi-line\"option:\nYou can use another configuration that forces brace-lessif,else if,else,for,while, ordoif their body contains only one single-line statement. And forces braces in all other cases.\nExamples ofincorrectcode for the\"multi-or-nest\"option:\nExamples ofcorrectcode for the\"multi-or-nest\"option:\nFor single-line statements preceded by a comment, braces are allowed but not required.\nExamples of additionalcorrectcode for the\"multi-or-nest\"option:\nWhen using any of themulti*options, you can add an option to enforce all bodies of aif,else ifandelsechain to be with or without braces.\nExamples ofincorrectcode for the\"multi\", \"consistent\"options:\nExamples ofcorrectcode for the\"multi\", \"consistent\"options:",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Style/SingleLineBlockParams",
+  "full_description": "Enforces the names of some block params.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Methods",
+      "default_value": [
+        {
+          "reduce": [
+            "acc",
+            "elem"
+          ]
+        },
+        {
+          "inject": [
+            "acc",
+            "elem"
+          ]
+        }
+      ],
+      "type": "list"
+    }
+  ]
+}

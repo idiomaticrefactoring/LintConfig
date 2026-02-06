@@ -1,0 +1,35 @@
+{
+  "name": "Metrics/MethodLength",
+  "full_description": "Avoid methods longer than 10 lines of code.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#short-methods",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "CountComments",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "Max",
+      "default_value": 10,
+      "type": "int"
+    },
+    {
+      "parameter_name": "CountAsOne",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

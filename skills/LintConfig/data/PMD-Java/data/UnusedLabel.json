@@ -1,0 +1,12 @@
+{
+    "name": "UnusedLabel",
+    "category": "bestpractices",
+    "summary": "Unused labeled are unnecessary and may be confusing as you might be wondering what this label is used for.\nTo improve readability the unused label should simply be removed.\n\nThis rule implements SonarSource rule [S1065](https://sonarsource.github.io/rspec/#/rspec/S1065).",
+    "message": "Avoid unused labels such as ''{0}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#unusedlabel",
+    "since": "7.18.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Example {\nvoid main() {\nlbl1: {                     // violation: Label \"lbl1\" is not nused\nint x = 1;\nSystem.out.println(x);\n}\n}\n}"
+}

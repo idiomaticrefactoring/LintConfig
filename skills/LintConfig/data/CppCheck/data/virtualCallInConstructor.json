@@ -1,0 +1,16 @@
+{
+    "name": "virtualCallInConstructor",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Virtual function 'f' is called from constructor '' at line 1. Dynamic binding is not used.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

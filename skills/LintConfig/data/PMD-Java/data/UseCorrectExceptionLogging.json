@@ -1,0 +1,12 @@
+{
+    "name": "UseCorrectExceptionLogging",
+    "category": "errorprone",
+    "summary": "To make sure the full stacktrace is printed out, use the logging statement with two arguments: a String and a Throwable.\n\nThis rule only applies to [Apache Commons Logging](https://commons.apache.org/proper/commons-logging/).",
+    "message": "Use the correct logging statement for logging exceptions",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#usecorrectexceptionlogging",
+    "since": "3.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Main {\nprivate static final Log _LOG = LogFactory.getLog( Main.class );\nvoid bar() {\ntry {\n} catch( Exception e ) {\n_LOG.error( e ); //Wrong!\n} catch( OtherException oe ) {\n_LOG.error( oe.getMessage(), oe ); //Correct\n}\n}\n}"
+}

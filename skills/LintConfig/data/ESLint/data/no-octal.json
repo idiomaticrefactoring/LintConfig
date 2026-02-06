@@ -1,0 +1,23 @@
+{
+  "name": "no-octal",
+  "meta": {
+    "description": "Disallow octal literals",
+    "url": "https://eslint.org/docs/latest/rules/no-octal",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow octal literals\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsCompatibilityVersionResources\nOctal literals are numerals that begin with a leading zero, such as:\nconstnum=071;// 571Copy code to clipboard\nBecause the leading zero which identifies an octal literal has been a source of confusion and error in JavaScript code, ECMAScript 5 deprecates the use of octal numeric literals.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

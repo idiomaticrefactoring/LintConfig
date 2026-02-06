@@ -1,0 +1,12 @@
+{
+    "name": "NonSerializableClass",
+    "category": "errorprone",
+    "summary": "If a class is marked as `Serializable`, then all fields need to be serializable as well. In order to exclude\na field, it can be marked as transient. Static fields are not considered.\n\nThis rule reports all fields, that are not serializable.\n\nIf a class implements the methods to perform manual serialization (`writeObject`, `readObject`) or uses\na replacement object (`writeReplace`, `readResolve`) then this class is ignored.\n\nNote: This rule has been revamped with PMD 6.52.0. It was previously called \"BeanMembersShouldSerialize\".\nThe property `prefix` has been deprecated, since in a serializable class all fields have to be\nserializable regardless of the name.",
+    "message": "The field ''{0}'' of serializable class ''{1}'' is of non-serializable type ''{2}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#nonserializableclass",
+    "since": "1.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Buzz implements java.io.Serializable {\nprivate static final long serialVersionUID = 1L;\n\nprivate transient int someFoo;          // good, it's transient\nprivate static int otherFoo;            // also OK, it's static\nprivate java.io.FileInputStream stream; // bad - FileInputStream is not serializable\n\npublic void setStream(FileInputStream stream) {\nthis.stream = stream;\n}\n\npublic int getSomeFoo() {\nreturn this.someFoo;\n}\n}"
+}

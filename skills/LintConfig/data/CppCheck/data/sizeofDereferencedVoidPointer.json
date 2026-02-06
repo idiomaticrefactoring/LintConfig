@@ -1,0 +1,16 @@
+{
+    "name": "sizeofDereferencedVoidPointer",
+    "meta": {
+        "severity": "portability",
+        "cwe": "682",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "content": {
+        "introduction": "'*varname' is of type 'void', the behaviour of 'sizeof(void)' is not covered by the ISO C standard. A value for 'sizeof(void)' is defined only as part of a GNU C extension, which defines 'sizeof(void)' to be 1.",
+        "attributes": {
+            "severity": "portability",
+            "cwe_id": "682",
+            "inconclusive": false
+        }
+    }
+}

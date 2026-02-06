@@ -1,0 +1,9 @@
+{
+  "name": "Style/WhenThen",
+  "full_description": "Use when x then ... for one-line cases.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-when-semicolons",
+  "is_safe": true,
+  "parameters": []
+}

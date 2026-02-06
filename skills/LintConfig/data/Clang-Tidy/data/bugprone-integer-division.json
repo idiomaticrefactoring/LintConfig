@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-integer-division",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/integer-division.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds cases where integer division in a floating point context is likely to\ncause unintended loss of precision.\n\nNo reports are made if divisions are part of the following expressions:\n\noperands of operators expecting integral or bool types,\n\n\ncall expressions of integral or bool types, and\n\n\nexplicit cast expressions to integral or bool types,\n\nas these are interpreted as signs of deliberateness from the programmer.\n\nExamples:\n\nfloat\n \nfloatFunc\n(\nfloat\n);\n\n\nint\n \nintFunc\n(\nint\n);\n\n\ndouble\n \nd\n;\n\n\nint\n \ni\n \n=\n \n42\n;\n\n\n\n// Warn, floating-point values expected.\n\n\nd\n \n=\n \n32\n \n*\n \n8\n \n/\n \n(\n2\n \n+\n \ni\n);\n\n\nd\n \n=\n \n8\n \n*\n \nfloatFunc\n(\n1\n \n+\n \n7\n \n/\n \n2\n);\n\n\nd\n \n=\n \ni\n \n/\n \n(\n1\n \n<<\n \n4\n);\n\n\n\n// OK, no integer division.\n\n\nd\n \n=\n \n32\n \n*\n \n8.0\n \n/\n \n(\n2\n \n+\n \ni\n);\n\n\nd\n \n=\n \n8\n \n*\n \nfloatFunc\n(\n1\n \n+\n \n7.0\n \n/\n \n2\n);\n\n\nd\n \n=\n \n(\ndouble\n)\ni\n \n/\n \n(\n1\n \n<<\n \n4\n);\n\n\n\n// OK, there are signs of deliberateness.\n\n\nd\n \n=\n \n1\n \n<<\n \n(\ni\n \n/\n \n2\n);\n\n\nd\n \n=\n \n9\n \n+\n \nintFunc\n(\n6\n \n*\n \ni\n \n/\n \n32\n);\n\n\nd\n \n=\n \n(\nint\n)(\ni\n \n/\n \n32\n)\n \n-\n \n8\n;",
+    "configurations": []
+  }
+}

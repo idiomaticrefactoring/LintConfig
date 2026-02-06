@@ -1,0 +1,31 @@
+{
+  "name": "Style/SafeNavigation",
+  "full_description": "Transforms usages of a method call safeguarded by a check for the existence of the object to safe navigation (`&.`). Autocorrection is unsafe as it assumes the object will be `nil` or truthy, but never `false`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "ConvertCodeThatCanStartToReturnNil",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [
+        "present?",
+        "blank?",
+        "presence",
+        "try",
+        "try!"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "MaxChainLength",
+      "default_value": 2,
+      "type": "int"
+    }
+  ]
+}

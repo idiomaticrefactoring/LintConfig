@@ -1,0 +1,12 @@
+{
+    "name": "ExceptionAsFlowControl",
+    "category": "design",
+    "summary": "This rule reports exceptions thrown and caught in an enclosing try statement.\nThis use of exceptions as a form of `goto` statement is discouraged, as that may\nhide actual exceptions, and obscures control flow, especially when debugging.\nTo fix a violation, add the necessary validation or use an alternate control structure.",
+    "message": "Exception thrown at line {0} is caught in this block.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#exceptionasflowcontrol",
+    "since": "1.8",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public void bar() {\ntry {\ntry {\n} catch (Exception e) {\nthrow new WrapperException(e);\n// this is essentially a GOTO to the WrapperException catch block\n}\n} catch (WrapperException e) {\n// do some more stuff\n}\n}"
+}

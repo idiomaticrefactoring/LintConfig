@@ -1,0 +1,22 @@
+{
+  "name": "noShoutyConstants",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-shouty-constants",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

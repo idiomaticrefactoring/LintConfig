@@ -1,0 +1,11 @@
+{
+  "name": "readability-avoid-unconditional-preprocessor-if",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-unconditional-preprocessor-if.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds code blocks that are constantly enabled or disabled in preprocessor\ndirectives by analyzing \n#if\n conditions, such as \n#if\n \n0\n and \n#if\n \n1\n,\netc.\n\n#if 0\n\n\n    // some disabled code\n\n\n#endif\n\n\n\n#if 1\n\n\n   \n// some enabled code that can be disabled manually\n\n\n#endif\n\nUnconditional preprocessor directives, such as \n#if\n \n0\n for disabled code\nand \n#if\n \n1\n for enabled code, can lead to dead code and always enabled code,\nrespectively. Dead code can make understanding the codebase more difficult,\nhinder readability, and may be a sign of unfinished functionality or abandoned\nfeatures. This can cause maintenance issues, confusion for future developers,\nand potential compilation problems.\n\nAs a solution for both cases, consider using preprocessor macros or defines,\nlike \n#ifdef\n \nDEBUGGING_ENABLED\n, to control code enabling or disabling.\nThis approach provides better coordination and flexibility when working with\ndifferent parts of the codebase. Alternatively, you can comment out the entire\ncode using \n/*\n \n*/\n block comments and add a hint, such as \n@todo\n,\nto indicate future actions.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-return-await",
+  "meta": {
+    "description": "",
+    "url": null,
+    "type": "",
+    "status": {
+      "deprecated": true,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "",
+    "config_examples": []
+  }
+}

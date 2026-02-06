@@ -1,0 +1,11 @@
+{
+  "name": "google-objc-function-naming",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-function-naming.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds function declarations in Objective-C files that do not follow the pattern\ndescribed in the Google Objective-C Style Guide.\n\nThe corresponding style guide rule can be found here:\n\nhttps://google.github.io/styleguide/objcguide.html#function-names\n\nAll function names should be in Pascal case. Functions whose storage class is\nnot static should have an appropriate prefix.\n\nThe following code sample does not follow this pattern:\n\nstatic\n \nbool\n \nis_positive\n(\nint\n \ni\n)\n \n{\n \nreturn\n \ni\n \n>\n \n0\n;\n \n}\n\n\nbool\n \nIsNegative\n(\nint\n \ni\n)\n \n{\n \nreturn\n \ni\n \n<\n \n0\n;\n \n}\n\nThe sample above might be corrected to the following code:\n\nstatic\n \nbool\n \nIsPositive\n(\nint\n \ni\n)\n \n{\n \nreturn\n \ni\n \n>\n \n0\n;\n \n}\n\n\nbool\n \n*\nABCIsNegative\n(\nint\n \ni\n)\n \n{\n \nreturn\n \ni\n \n<\n \n0\n;\n \n}",
+    "configurations": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Style/RequireOrder",
+  "full_description": "Sort `require` and `require_relative` in alphabetical order.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

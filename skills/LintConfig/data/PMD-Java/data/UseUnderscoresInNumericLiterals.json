@@ -1,0 +1,19 @@
+{
+    "name": "UseUnderscoresInNumericLiterals",
+    "category": "codestyle",
+    "summary": "Since Java 1.7, numeric literals can use underscores to separate digits. This rule enforces that\nnumeric literals above a certain length use these underscores to increase readability.\n\nThe rule only supports decimal (base 10) literals for now. The acceptable length under which literals\nare not required to have underscores is configurable via a property. Even under that length, underscores\nthat are misplaced (not making groups of 3 digits) are reported.",
+    "message": "Number {0} should separate every third digit with an underscore",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#useunderscoresinnumericliterals",
+    "since": "6.10.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "acceptableDecimalLength",
+            "description": "Length under which literals in base 10 are not required to have underscores",
+            "defaultValue": "4",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class Foo {\nprivate int num = 1000000; // should be 1_000_000\n}"
+}

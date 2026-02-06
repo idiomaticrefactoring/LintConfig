@@ -1,0 +1,12 @@
+{
+    "name": "NonThreadSafeSingleton",
+    "category": "multithreading",
+    "summary": "Non-thread safe singletons can result in bad state changes. Eliminate\nstatic singletons if possible by instantiating the object directly. Static\nsingletons are usually not needed as only a single instance exists anyway.\nOther possible fixes are to synchronize the entire method or to use an\n[initialize-on-demand holder class](https://en.wikipedia.org/wiki/Initialization-on-demand_holder_idiom).\n\nRefrain from using the double-checked locking pattern. The Java Memory Model doesn't\nguarantee it to work unless the variable is declared as `volatile`, adding an unneeded\nperformance penalty. [Reference](http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html)\n\nSee Effective Java, item 48.",
+    "message": "Singleton is not thread safe",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#nonthreadsafesingleton",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "private static Foo foo = null;\n\n//multiple simultaneous callers may see partially initialized objects\npublic static Foo getFoo() {\nif (foo==null) {\nfoo = new Foo();\n}\nreturn foo;\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "google-objc-avoid-nsobject-new",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-avoid-nsobject-new.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds calls to \n+new\n or overrides of it, which are prohibited by the\nGoogle Objective-C style guide.\n\nThe Google Objective-C style guide forbids calling \n+new\n or overriding it in\nclass implementations, preferring \n+alloc\n and \n-init\n methods to\ninstantiate objects.\n\nAn example:\n\nNSDate\n \n*\nnow\n \n=\n \n[\nNSDate\n \nnew\n];\n\n\nFoo\n \n*\nbar\n \n=\n \n[\nFoo\n \nnew\n];\n\nInstead, code should use \n+alloc\n/\n-init\n or class factory methods.\n\nNSDate\n \n*\nnow\n \n=\n \n[\nNSDate\n \ndate\n];\n\n\nFoo\n \n*\nbar\n \n=\n \n[[\nFoo\n \nalloc\n]\n \ninit\n];\n\nThis check corresponds to the Google Objective-C Style Guide rule\n\nDo Not Use +new\n.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Style/AsciiComments",
+  "full_description": "Use only ascii symbols in comments.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "#english-comments",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedChars",
+      "default_value": [
+        "©"
+      ],
+      "type": "list"
+    }
+  ]
+}

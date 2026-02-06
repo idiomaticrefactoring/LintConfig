@@ -1,0 +1,23 @@
+{
+  "name": "Style/DoubleNegation",
+  "full_description": "Checks for uses of double negation (!!).",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-bang-bang",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "allowed_in_returns",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "allowed_in_returns",
+        "forbidden"
+      ],
+      "type": "list"
+    }
+  ]
+}

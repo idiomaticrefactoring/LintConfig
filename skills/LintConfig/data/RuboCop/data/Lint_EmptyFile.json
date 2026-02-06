@@ -1,0 +1,15 @@
+{
+  "name": "Lint/EmptyFile",
+  "full_description": "Enforces that Ruby source files are not empty.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowComments",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

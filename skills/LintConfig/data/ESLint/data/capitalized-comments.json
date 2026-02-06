@@ -1,0 +1,23 @@
+{
+  "name": "capitalized-comments",
+  "meta": {
+    "description": "Enforce or disallow capitalization of the first letter of a comment",
+    "url": "https://eslint.org/docs/latest/rules/capitalized-comments",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforce or disallow capitalization of the first letter of a comment\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptions\"always\"\"never\"ignorePatternignoreInlineCommentsignoreConsecutiveCommentsUsing Different Options for Line and Block CommentsWhen Not To Use ItCompatibilityVersionResources\nComments are useful for leaving information for future developers. In order for that information to be useful and not distracting, it is sometimes desirable for comments to follow a particular style. One element of comment formatting styles is whether the first word of a comment should be capitalized or lowercase.\nIn general, no comment style is any more or less valid than any others, but many developers would agree that a consistent style can improve a project’s maintainability.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

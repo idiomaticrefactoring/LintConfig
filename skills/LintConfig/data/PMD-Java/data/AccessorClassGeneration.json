@@ -1,0 +1,12 @@
+{
+    "name": "AccessorClassGeneration",
+    "category": "bestpractices",
+    "summary": "Instantiation by way of private constructors from outside the constructor's class often causes the\ngeneration of an accessor. A factory method, or non-privatization of the constructor can eliminate this\nsituation. The generated class file is actually an interface.  It gives the accessing class the ability\nto invoke a new hidden package scope constructor that takes the interface as a supplementary parameter.\nThis turns a private constructor effectively into one with package scope, and is challenging to discern.\n\n_Note:_ This rule is only executed for Java 10 or lower.\nSince Java 11, [JEP 181: Nest-Based Access Control](https://openjdk.org/jeps/181) has been implemented. This\nmeans that in Java 11 and above accessor classes are not generated anymore.",
+    "message": "Avoid instantiation through private constructors from outside of the constructor's class.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#accessorclassgeneration",
+    "since": "1.04",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Outer {\nvoid method(){\nInner ic = new Inner();//Causes generation of accessor class\n}\npublic class Inner {\nprivate Inner(){}\n}\n}"
+}

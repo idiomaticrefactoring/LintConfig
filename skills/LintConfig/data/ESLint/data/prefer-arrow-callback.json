@@ -1,0 +1,23 @@
+{
+  "name": "prefer-arrow-callback",
+  "meta": {
+    "description": "Require using arrow functions for callbacks",
+    "url": "https://eslint.org/docs/latest/rules/prefer-arrow-callback",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

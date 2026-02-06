@@ -1,0 +1,9 @@
+{
+  "name": "Lint/FloatOutOfRange",
+  "full_description": "Catches floating-point literals too large or small for Ruby to represent.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,12 @@
+{
+    "name": "ClassNamingConventions",
+    "category": "codestyle",
+    "summary": "Configurable naming conventions for type declarations. This rule reports\ntype declarations which do not match the regex that applies to their\nspecific kind (e.g. enum or interface). Each regex can be configured through\nproperties.\n\nBy default, this rule uses the standard Java naming convention (Pascal case).\n\nThe rule can detect utility classes and enforce a different naming convention\non those. E.g. setting the property `utilityClassPattern` to\n`[A-Z][a-zA-Z0-9]+(Utils?|Helper|Constants)` reports any utility class, whose name\ndoes not end in \"Util(s)\", \"Helper\" or \"Constants\".\n\nFor this rule, a utility class is defined as: a concrete class that does not\ninherit from a super class or implement any interface and only has static fields\nor methods.\n\nThis rule detects test classes using the following convention: Test classes are top-level classes, that\neither inherit from JUnit 3 TestCase or have at least one method annotated with the Test annotations from\nJUnit4/5 or TestNG.",
+    "message": "The {0} name ''{1}'' doesn''t match ''{2}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#classnamingconventions",
+    "since": "1.2",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// This is Pascal case, the recommended naming convention in Java\n// Note that the default values of this rule don't allow underscores\n// or accented characters in type names\npublic class FooBar {}\n\n// You may want abstract classes to be named 'AbstractXXX',\n// in which case you can customize the regex for abstract\n// classes to 'Abstract[A-Z]\\w+'\npublic abstract class Thing {}\n\n// This class doesn't respect the convention, and will be flagged\npublic class Éléphant {}"
+}

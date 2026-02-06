@@ -1,0 +1,16 @@
+{
+    "name": "assignBoolToFloat",
+    "meta": {
+        "severity": "style",
+        "cwe": "704",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "content": {
+        "introduction": "Boolean value assigned to floating point variable.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "704",
+            "inconclusive": false
+        }
+    }
+}

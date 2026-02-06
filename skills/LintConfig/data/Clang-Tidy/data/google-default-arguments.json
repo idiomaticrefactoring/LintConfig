@@ -1,0 +1,11 @@
+{
+  "name": "google-default-arguments",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/default-arguments.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Checks that default arguments are not given for virtual methods.\n\nSee \nhttps://google.github.io/styleguide/cppguide.html#Default_Arguments",
+    "configurations": []
+  }
+}

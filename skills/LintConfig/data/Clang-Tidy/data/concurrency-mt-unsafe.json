@@ -1,0 +1,11 @@
+{
+  "name": "concurrency-mt-unsafe",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/concurrency/mt-unsafe.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Checks for some thread-unsafe functions against a black list of\nknown-to-be-unsafe functions. Usually they access static variables without\nsynchronization (e.g. gmtime(3)) or utilize signals in a racy way.\nThe set of functions to check is specified with the \nFunctionSet\n option.\n\nNote that using some thread-unsafe functions may be still valid in\nconcurrent programming if only a single thread is used (e.g. setenv(3)),\nhowever, some functions may track a state in global variables which\nwould be clobbered by subsequent (non-parallel, but concurrent) calls to\na related function. E.g. the following code suffers from unprotected\naccesses to a global state:\n\n// getnetent(3) maintains global state with DB connection, etc.\n\n\n// If a concurrent green thread calls getnetent(3), the global state is corrupted.\n\n\nnetent\n \n=\n \ngetnetent\n();\n\n\nyield\n();\n\n\nnetent\n \n=\n \ngetnetent\n();\n\nExamples:\n\ntm\n \n=\n \ngmtime\n(\ntimep\n);\n \n// uses a global buffer\n\n\n\nsleep\n(\n1\n);\n \n// implementation may use SIGALRM\n\nOptions\nÂ¶\n\n\n\n\n\n\nFunctionSet\nÂ¶\n\n\nSpecifies which functions in libc should be considered thread-safe,\npossible values are \nposix\n, \nglibc\n, or \nany\n.\n\n\nposix\n means POSIX defined thread-unsafe functions. POSIX.1-2001\nin â2.9.1 Thread-Safetyâ defines that all functions specified in the\nstandard are thread-safe except a predefined list of thread-unsafe\nfunctions.\n\n\nGlibc defines some of them as thread-safe (e.g. dirname(3)), but adds\nnon-POSIX thread-unsafe ones (e.g. getopt_long(3)). Glibcâs list is\ncompiled from GNU web documentation with a search for MT-Safe tag:\n\nhttps://www.gnu.org/software/libc/manual/html_node/POSIX-Safety-Concepts.html\n\n\nIf you want to identify thread-unsafe API for at least one libc or\nunsure which libc will be used, use \nany\n (default).",
+    "configurations": []
+  }
+}

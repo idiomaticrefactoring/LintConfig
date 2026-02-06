@@ -1,0 +1,15 @@
+{
+  "name": "Gemspec/DeprecatedAttributeAssignment",
+  "full_description": "Checks that deprecated attribute assignments are not set in a gemspec file.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Severity",
+      "default_value": "warning",
+      "type": "str"
+    }
+  ]
+}

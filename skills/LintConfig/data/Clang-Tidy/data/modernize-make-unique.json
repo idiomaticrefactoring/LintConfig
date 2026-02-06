@@ -1,0 +1,11 @@
+{
+  "name": "modernize-make-unique",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/make-unique.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check finds the creation of \nstd::unique_ptr\n objects by explicitly\ncalling the constructor and a \nnew\n expression, and replaces it with a call\nto \nstd::make_unique\n, introduced in C++14.\n\nauto\n \nmy_ptr\n \n=\n \nstd\n::\nunique_ptr\n<\nMyPair\n>\n(\nnew\n \nMyPair\n(\n1\n,\n \n2\n));\n\n\n\n// becomes\n\n\n\nauto\n \nmy_ptr\n \n=\n \nstd\n::\nmake_unique\n<\nMyPair\n>\n(\n1\n,\n \n2\n);\n\nThis check also finds calls to \nstd::unique_ptr::reset()\n with a \nnew\n\nexpression, and replaces it with a call to \nstd::make_unique\n.\n\nmy_ptr\n.\nreset\n(\nnew\n \nMyPair\n(\n1\n,\n \n2\n));\n\n\n\n// becomes\n\n\n\nmy_ptr\n \n=\n \nstd\n::\nmake_unique\n<\nMyPair\n>\n(\n1\n,\n \n2\n);\n\nOptions\nÂ¶\n\n\n\n\n\n\nMakeSmartPtrFunction\nÂ¶\n\n\nA string specifying the name of make-unique-ptr function. Default is\n\nstd::make_unique\n.\n\n\n\n\n\n\n\n\nMakeSmartPtrFunctionHeader\nÂ¶\n\n\nA string specifying the corresponding header of make-unique-ptr function.\nDefault is \n<memory>\n.\n\n\n\n\n\n\n\n\nIncludeStyle\nÂ¶\n\n\nA string specifying which include-style is used, \nllvm\n or \ngoogle\n. Default\nis \nllvm\n.\n\n\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warnings inside macros. Default\nis \ntrue\n.\n\n\n\n\n\n\n\n\nIgnoreDefaultInitialization\nÂ¶\n\n\nIf set to \nfalse\n, the check does not suggest edits that will transform\ndefault initialization into value initialization, as this can cause\nperformance regressions. Default is \ntrue\n.",
+    "configurations": []
+  }
+}

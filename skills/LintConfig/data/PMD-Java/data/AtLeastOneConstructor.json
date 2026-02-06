@@ -1,0 +1,12 @@
+{
+    "name": "AtLeastOneConstructor",
+    "category": "codestyle",
+    "summary": "Each non-static class should declare at least one constructor.\nClasses with solely static members are ignored, refer to [UseUtilityClassRule](pmd_rules_java_design.html#useutilityclass) to detect those.",
+    "message": "Each class should declare at least one constructor",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#atleastoneconstructor",
+    "since": "1.04",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\n// missing constructor\npublic void doSomething() { ... }\npublic void doOtherThing { ... }\n}"
+}

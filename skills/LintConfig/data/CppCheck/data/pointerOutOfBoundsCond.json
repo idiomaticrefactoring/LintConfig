@@ -1,0 +1,16 @@
+{
+    "name": "pointerOutOfBoundsCond",
+    "meta": {
+        "severity": "portability",
+        "cwe": "758",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "content": {
+        "introduction": "Pointer arithmetic overflow.",
+        "attributes": {
+            "severity": "portability",
+            "cwe_id": "758",
+            "inconclusive": false
+        }
+    }
+}

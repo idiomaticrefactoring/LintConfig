@@ -1,0 +1,9 @@
+{
+  "name": "Lint/RedundantStringCoercion",
+  "full_description": "Checks for Object#to_s usage in string interpolation.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-to-s",
+  "is_safe": true,
+  "parameters": []
+}

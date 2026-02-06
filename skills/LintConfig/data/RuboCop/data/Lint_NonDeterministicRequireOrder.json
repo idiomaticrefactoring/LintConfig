@@ -1,0 +1,9 @@
+{
+  "name": "Lint/NonDeterministicRequireOrder",
+  "full_description": "Always sort arrays returned by Dir.glob when requiring files.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

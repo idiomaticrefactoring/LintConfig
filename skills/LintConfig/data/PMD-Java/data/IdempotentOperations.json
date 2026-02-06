@@ -1,0 +1,12 @@
+{
+    "name": "IdempotentOperations",
+    "category": "errorprone",
+    "summary": "Avoid idempotent operations - they have no effect.",
+    "message": "Avoid idempotent operations (like assigning a variable to itself).",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#idempotentoperations",
+    "since": "2.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void bar() {\nint x = 2;\nx = x;\n}\n}"
+}

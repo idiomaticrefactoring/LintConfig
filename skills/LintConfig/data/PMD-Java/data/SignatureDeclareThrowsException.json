@@ -1,0 +1,12 @@
+{
+    "name": "SignatureDeclareThrowsException",
+    "category": "design",
+    "summary": "A method/constructor shouldn't explicitly throw the generic java.lang.Exception, since it\nis unclear which exceptions that can be thrown from the methods. It might be\ndifficult to document and understand such vague interfaces. Use either a class\nderived from RuntimeException or a checked exception.",
+    "message": "A method/constructor should not explicitly throw java.lang.Exception",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#signaturedeclarethrowsexception",
+    "since": "1.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public void foo() throws Exception {\n}"
+}

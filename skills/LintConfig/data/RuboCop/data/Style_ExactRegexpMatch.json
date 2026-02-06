@@ -1,0 +1,9 @@
+{
+  "name": "Style/ExactRegexpMatch",
+  "full_description": "Checks for exact regexp match inside Regexp literals.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

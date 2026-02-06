@@ -1,0 +1,22 @@
+{
+  "name": "noBarrelFile",
+  "group": "performance",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-barrel-file",
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'performance' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

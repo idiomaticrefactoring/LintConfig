@@ -1,0 +1,9 @@
+{
+  "name": "Layout/EmptyLinesAfterModuleInclusion",
+  "full_description": "Keeps track of empty lines after module inclusion methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#empty-lines-after-module-inclusion",
+  "is_safe": true,
+  "parameters": []
+}

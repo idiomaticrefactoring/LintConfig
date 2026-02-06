@@ -1,0 +1,29 @@
+{
+  "name": "Layout/FirstArrayElementIndentation",
+  "full_description": "Checks the indentation of the first element in an array literal.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "special_inside_parentheses",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "special_inside_parentheses",
+        "consistent",
+        "align_brackets"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

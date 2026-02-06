@@ -1,0 +1,15 @@
+{
+  "name": "Gemspec/DuplicatedAssignment",
+  "full_description": "An attribute assignment method calls should be listed only once in a gemspec.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Severity",
+      "default_value": "warning",
+      "type": "str"
+    }
+  ]
+}

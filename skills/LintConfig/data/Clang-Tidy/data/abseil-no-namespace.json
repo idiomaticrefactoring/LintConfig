@@ -1,0 +1,11 @@
+{
+  "name": "abseil-no-namespace",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/no-namespace.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Ensures code does not open \nnamespace\n \nabsl\n as that violates Abseilâs\ncompatibility guidelines. Code should not open \nnamespace\n \nabsl\n as that\nconflicts with Abseilâs compatibility guidelines and may result in breakage.\n\nAny code that uses:\n\nnamespace\n \nabsl\n \n{\n\n\n \n...\n\n\n}\n\nwill be prompted with a warning.\n\nSee \nthe full Abseil compatibility guidelines\n for more information.",
+    "configurations": []
+  }
+}

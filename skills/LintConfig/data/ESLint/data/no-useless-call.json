@@ -1,0 +1,23 @@
+{
+  "name": "no-useless-call",
+  "meta": {
+    "description": "Disallow unnecessary calls to .call() and .apply()",
+    "url": "https://eslint.org/docs/latest/rules/no-useless-call",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unnecessary calls to.call()and.apply()\nTable of ContentsRule DetailsKnown LimitationsWhen Not To Use ItRelated RulesVersionResources\nThe function invocation can be written byFunction.prototype.call()andFunction.prototype.apply().\nButFunction.prototype.call()andFunction.prototype.apply()are slower than the normal function invocation.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

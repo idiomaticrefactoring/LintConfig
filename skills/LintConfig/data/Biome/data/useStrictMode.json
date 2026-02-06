@@ -1,0 +1,22 @@
+{
+  "name": "useStrictMode",
+  "group": "suspicious",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-strict-mode",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "safe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'suspicious' group.",
+    "options_configuration": {
+      "has_options": false,
+      "summary": "This rule has no specific options.",
+      "schema_code": ""
+    }
+  }
+}

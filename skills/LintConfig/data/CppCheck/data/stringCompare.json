@@ -1,0 +1,16 @@
+{
+    "name": "stringCompare",
+    "meta": {
+        "severity": "warning",
+        "cwe": "571",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "content": {
+        "introduction": "The compared strings, 'varname1' and 'varname2', are identical. This could be a logic bug.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "571",
+            "inconclusive": false
+        }
+    }
+}

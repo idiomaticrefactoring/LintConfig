@@ -1,0 +1,12 @@
+{
+    "name": "PrematureDeclaration",
+    "category": "codestyle",
+    "summary": "Checks for variables that are defined before they might be used. A declaration is\ndeemed to be premature if there are some statements that may return or throw an\nexception between the time the variable is declared and the time it is first read.\n\nSome variables cannot be declared close to their first usage because of side-effects\noccurring before they're first used. We try to avoid reporting those by considering\nmost method and constructor invocations to be impure. See the second example.\n\nNote that this rule is meant to improve code readability but is not an optimization.\nA smart JIT will not care whether the variable is declared prematurely or not, as it\ncan reorder code.",
+    "message": "Declaration of ''{0}'' can be moved closer to its usages",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#prematuredeclaration",
+    "since": "5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public int getLength(String[] strings) {\n\nint length = 0; // could be moved closer to the loop\n\nif (strings == null || strings.length == 0) return 0;\n\nfor (String str : strings) {\nlength += str.length();\n}\n\nreturn length;\n}"
+}

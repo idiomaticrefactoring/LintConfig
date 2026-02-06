@@ -1,0 +1,22 @@
+{
+  "name": "noRestrictedTypes",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-restricted-types",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "safe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

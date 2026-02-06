@@ -1,0 +1,12 @@
+{
+    "name": "DontImportSun",
+    "category": "errorprone",
+    "summary": "Avoid importing anything from the 'sun.*' packages. These packages are not portable\nand are likely to change.\n\nIf you find yourself having to depend on Sun APIs, confine this dependency to as\nsmall a scope as possible, for instance by writing a stable wrapper class around\nthe unstable API. You can then suppress this rule in the implementation of the wrapper.\n\n**Deprecated:** This rule is deprecated since PMD 7.21.0 and will be removed with PMD 8.0.0.\nThis rule has been replaced by {% rule UnsupportedJdkApiUsage %}.",
+    "message": "Avoid importing anything from the 'sun.*' packages",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#dontimportsun",
+    "since": "1.5",
+    "priority": "4",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": "import sun.misc.foo;\npublic class Foo {}"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-constant-condition",
+  "meta": {
+    "description": "Disallow constant expressions in conditions",
+    "url": "https://eslint.org/docs/latest/rules/no-constant-condition",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow constant expressions in conditions\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionscheckLoopsRelated RulesVersionResources\nA constant expression (for example, a literal) as a test condition might be a typo or development trigger for a specific behavior. For example, the following code looks as if it is not ready for production.\nif(false){doSomethingUnfinished();}123Copy code to clipboard",
+    "sub_configuration_introduction": "This is a string option having following values:\n\"all\"- Disallow constant expressions in all loops.\"allExceptWhileTrue\"(default) - Disallow constant expressions in all loops exceptwhileloops with expressiontrue.\"none\"- Allow constant expressions in loops.\nOr instead you can set thecheckLoopsvalue to booleans wheretrueis same as\"all\"andfalseis same as\"none\".\nExamples ofincorrectcode for whencheckLoopsis\"all\"ortrue:\nExamples ofcorrectcode for whencheckLoopsis\"all\"ortrue:\nExample ofcorrectcode for whencheckLoopsis\"allExceptWhileTrue\":\nExamples ofcorrectcode for whencheckLoopsis\"none\"orfalse:",
+    "config_examples": []
+  }
+}

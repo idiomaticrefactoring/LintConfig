@@ -1,0 +1,12 @@
+{
+    "name": "ImmutableField",
+    "category": "design",
+    "summary": "Reports non-final fields whose value never changes once object initialization ends,\nand hence may be marked final.\n\nNote that this rule does not enforce that the field value be deeply immutable itself.\nAn object can still have mutable state, even if all its member fields are declared final.\nThis is referred to as shallow immutability. For more information on mutability,\nsee *Effective Java, 3rd Edition, Item 17: Minimize mutability*.\n\nLimitations: We can only check private fields for now.",
+    "message": "Field ''{0}'' may be declared final",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#immutablefield",
+    "since": "2.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate int x; // could be final\npublic Foo() {\nx = 7;\n}\npublic void foo() {\nint a = x + 2;\n}\n}"
+}

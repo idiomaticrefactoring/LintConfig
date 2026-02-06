@@ -1,0 +1,9 @@
+{
+  "name": "Style/DoubleCopDisableDirective",
+  "full_description": "Checks for double rubocop:disable comments on a single line.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

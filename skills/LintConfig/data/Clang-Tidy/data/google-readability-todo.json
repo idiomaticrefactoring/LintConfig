@@ -1,0 +1,11 @@
+{
+  "name": "google-readability-todo",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-todo.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds TODO comments without a username or bug number.\n\nThe relevant style guide section is\n\nhttps://google.github.io/styleguide/cppguide.html#TODO_Comments\n.\n\nCorresponding cpplint.py check: \nreadability/todo\n\nOptions\nÂ¶\n\n\n\n\n\n\nStyle\nÂ¶\n\n\nA string specifying the TODO style for fix-it hints. Accepted values are\n\nHyphen\n and \nParentheses\n. Default is \nHyphen\n.\n\n\n\n\nHyphen\n will format the fix-it as: \n//\n \nTODO:\n \nusername\n \n-\n \ndetails\n.\n\n\nParentheses\n will format the fix-it as: \n//\n \nTODO(username):\n \ndetails\n.",
+    "configurations": []
+  }
+}

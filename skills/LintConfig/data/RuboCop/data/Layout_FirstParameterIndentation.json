@@ -1,0 +1,28 @@
+{
+  "name": "Layout/FirstParameterIndentation",
+  "full_description": "Checks the indentation of the first parameter in a method definition.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "consistent",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "consistent",
+        "align_parentheses"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

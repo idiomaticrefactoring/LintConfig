@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-pro-type-reinterpret-cast",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-reinterpret-cast.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check flags all uses of \nreinterpret_cast\n in C++ code.\n\nUse of these casts can violate type safety and cause the program to access a\nvariable that is actually of type \nX\n to be accessed as if it were of an\nunrelated type \nZ\n.\n\nThis rule is part of the \nType safety (Type.1.1)\n\nprofile from the C++ Core Guidelines.",
+    "configurations": []
+  }
+}

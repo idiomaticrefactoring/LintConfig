@@ -1,0 +1,11 @@
+{
+  "name": "modernize-use-override",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-override.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Adds \noverride\n (introduced in C++11) to overridden virtual functions and\nremoves \nvirtual\n from those functions as it is not required.\n\nvirtual\n on non base class implementations was used to help indicate to the\nuser that a function was virtual. C++ compilers did not use the presence of\nthis to signify an overridden function.\n\nIn C++11 \noverride\n and \nfinal\n keywords were introduced to allow\noverridden functions to be marked appropriately. Their presence allows\ncompilers to verify that an overridden function correctly overrides a base\nclass implementation.\n\nThis can be useful as compilers can generate a compile time error when:\n\nThe base class implementation function signature changes.\n\n\nThe user has not created the override with the correct signature.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreDestructors\nÂ¶\n\n\nIf set to \ntrue\n, this check will not diagnose destructors. Default is \nfalse\n.\n\n\n\n\n\n\n\n\nIgnoreTemplateInstantiations\nÂ¶\n\n\nIf set to \ntrue\n, instructs this check to ignore virtual function overrides\nthat are part of template instantiations. Default is \nfalse\n.\n\n\n\n\n\n\n\n\nAllowOverrideAndFinal\nÂ¶\n\n\nIf set to \ntrue\n, this check will not diagnose \noverride\n as redundant\nwith \nfinal\n. This is useful when code will be compiled by a compiler with\nwarning/error checking flags requiring \noverride\n explicitly on overridden\nmembers, such as \ngcc\n \n-Wsuggest-override\n/\ngcc\n \n-Werror=suggest-override\n.\nDefault is \nfalse\n.\n\n\n\n\n\n\n\n\nOverrideSpelling\nÂ¶\n\n\nSpecifies a macro to use instead of \noverride\n. This is useful when\nmaintaining source code that also needs to compile with a pre-C++11\ncompiler.\n\n\n\n\n\n\n\n\nFinalSpelling\nÂ¶\n\n\nSpecifies a macro to use instead of \nfinal\n. This is useful when\nmaintaining source code that also needs to compile with a pre-C++11\ncompiler.\n\n\n\n\n\n\nNote\n\n\nFor more information on the use of \noverride\n see \nhttps://en.cppreference.com/w/cpp/language/override",
+    "configurations": []
+  }
+}

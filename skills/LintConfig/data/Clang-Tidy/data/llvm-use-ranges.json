@@ -1,0 +1,11 @@
+{
+  "name": "llvm-use-ranges",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/use-ranges.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds calls to STL library iterator algorithms that could be replaced with\nLLVM range-based algorithms from \nllvm/ADT/STLExtras.h\n.\n\nExample\nÂ¶\n\n\nauto\n \nit\n \n=\n \nstd\n::\nfind\n(\nvec\n.\nbegin\n(),\n \nvec\n.\nend\n(),\n \nvalue\n);\n\n\nbool\n \nall\n \n=\n \nstd\n::\nall_of\n(\nvec\n.\nbegin\n(),\n \nvec\n.\nend\n(),\n\n\n                       \n[](\nint\n \nx\n)\n \n{\n \nreturn\n \nx\n \n>\n \n0\n;\n \n});\n\n\n\n\n\n\nTransforms to:\n\n\nauto\n \nit\n \n=\n \nllvm\n::\nfind\n(\nvec\n,\n \nvalue\n);\n\n\nbool\n \nall\n \n=\n \nllvm\n::\nall_of\n(\nvec\n,\n \n[](\nint\n \nx\n)\n \n{\n \nreturn\n \nx\n \n>\n \n0\n;\n \n});\n\nSupported algorithms\nÂ¶\n\n\nCalls to the following STL algorithms are checked:\n\n\nstd::accumulate\n,\n\nstd::adjacent_find\n,\n\nstd::all_of\n,\n\nstd::any_of\n,\n\nstd::binary_search\n,\n\nstd::copy_if\n,\n\nstd::copy\n,\n\nstd::count_if\n,\n\nstd::count\n,\n\nstd::equal\n,\n\nstd::fill\n,\n\nstd::find_if_not\n,\n\nstd::find_if\n,\n\nstd::find\n,\n\nstd::for_each\n,\n\nstd::includes\n,\n\nstd::is_sorted\n,\n\nstd::lower_bound\n,\n\nstd::max_element\n,\n\nstd::min_element\n,\n\nstd::mismatch\n,\n\nstd::none_of\n,\n\nstd::partition_point\n,\n\nstd::partition\n,\n\nstd::remove_if\n,\n\nstd::replace_copy_if\n,\n\nstd::replace_copy\n,\n\nstd::replace\n,\n\nstd::search\n,\n\nstd::stable_sort\n,\n\nstd::transform\n,\n\nstd::uninitialized_copy\n,\n\nstd::unique\n,\n\nstd::upper_bound\n.\n\n\nThe check will add the necessary \n#include\n \n\"llvm/ADT/STLExtras.h\"\n directive\nwhen applying fixes.",
+    "configurations": []
+  }
+}

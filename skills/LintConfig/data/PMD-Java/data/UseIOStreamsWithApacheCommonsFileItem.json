@@ -1,0 +1,12 @@
+{
+    "name": "UseIOStreamsWithApacheCommonsFileItem",
+    "category": "performance",
+    "summary": "Problem: Use of [FileItem.get()](https://javadoc.io/static/commons-fileupload/commons-fileupload/1.5/org/apache/commons/fileupload/FileItem.html#get--)\nand [FileItem.getString()](https://javadoc.io/static/commons-fileupload/commons-fileupload/1.5/org/apache/commons/fileupload/FileItem.html#getString--)\ncould exhaust memory since they load the entire file into memory.\n\nSolution: Use [FileItem.getInputStream()](https://javadoc.io/static/commons-fileupload/commons-fileupload/1.5/org/apache/commons/fileupload/FileItem.html#getInputStream--)\nand buffering.",
+    "message": "Avoid memory intensive FileItem.get() or FileItem.getString()",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#useiostreamswithapachecommonsfileitem",
+    "since": "6.25.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import org.apache.commons.fileupload.FileItem;\n\npublic class FileStuff {\nprivate String bad(FileItem fileItem) {\nreturn fileItem.getString();\n}\n\nprivate InputStream good(FileItem fileItem) {\nreturn fileItem.getInputStream();\n}\n}"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-unmodified-loop-condition",
+  "meta": {
+    "description": "Disallow unmodified loop conditions",
+    "url": "https://eslint.org/docs/latest/rules/no-unmodified-loop-condition",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unmodified loop conditions\nTable of ContentsRule DetailsWhen Not To Use ItVersionResources\nVariables in a loop condition often are modified in the loop.\nIf not, it’s possibly a mistake.\nwhile(node){doSomething(node);}123Copy code to clipboard\nwhile(node){doSomething(node);node=node.parent;}1234Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

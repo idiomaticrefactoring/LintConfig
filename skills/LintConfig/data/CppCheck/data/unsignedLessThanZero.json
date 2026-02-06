@@ -1,0 +1,19 @@
+{
+    "name": "unsignedLessThanZero",
+    "meta": {
+        "severity": "style",
+        "cwe": "570",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "content": {
+        "introduction": "The unsigned expression 'varname' will never be negative so it is either pointless or an error to check if it is.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "570",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "varname"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "readability-use-concise-preprocessor-directives",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/use-concise-preprocessor-directives.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds uses of \n#if\n that can be simplified to \n#ifdef\n or \n#ifndef\n and,\nsince C23 and C++23, uses of \n#elif\n that can be simplified to \n#elifdef\n\nor \n#elifndef\n:\n\n#if defined(MEOW)\n\n\n#if !defined(MEOW)\n\n\n\n// becomes\n\n\n\n#ifdef MEOW\n\n\n#ifndef MEOW\n\nSince C23 and C++23:\n\n#elif defined(MEOW)\n\n\n#elif !defined(MEOW)\n\n\n\n// becomes\n\n\n\n#elifdef MEOW\n\n\n#elifndef MEOW",
+    "configurations": []
+  }
+}

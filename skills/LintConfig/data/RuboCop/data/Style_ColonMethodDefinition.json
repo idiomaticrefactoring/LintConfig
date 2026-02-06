@@ -1,0 +1,9 @@
+{
+  "name": "Style/ColonMethodDefinition",
+  "full_description": "Do not use :: for defining class methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#colon-method-definition",
+  "is_safe": true,
+  "parameters": []
+}

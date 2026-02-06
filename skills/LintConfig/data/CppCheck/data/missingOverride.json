@@ -1,0 +1,19 @@
+{
+    "name": "missingOverride",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "The function '' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                null
+            ]
+        }
+    }
+}

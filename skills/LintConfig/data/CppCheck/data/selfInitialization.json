@@ -1,0 +1,19 @@
+{
+    "name": "selfInitialization",
+    "meta": {
+        "severity": "error",
+        "cwe": "665",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "content": {
+        "introduction": "Member variable 'var' is initialized by itself.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "665",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "var"
+            ]
+        }
+    }
+}

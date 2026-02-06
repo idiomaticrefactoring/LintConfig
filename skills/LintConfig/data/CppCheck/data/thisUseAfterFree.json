@@ -1,0 +1,19 @@
+{
+    "name": "thisUseAfterFree",
+    "meta": {
+        "severity": "warning",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Using member 'x' when 'this' might be invalid",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "ptr"
+            ]
+        }
+    }
+}

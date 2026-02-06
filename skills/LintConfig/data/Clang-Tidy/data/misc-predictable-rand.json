@@ -1,0 +1,11 @@
+{
+  "name": "misc-predictable-rand",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/predictable-rand.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns for the usage of \nstd::rand()\n. Pseudorandom number generators use\nmathematical algorithms to produce a sequence of numbers with good\nstatistical properties, but the numbers produced are not genuinely random.\nThe \nstd::rand()\n function takes a seed (number), runs a mathematical\noperation on it and returns the result. By manipulating the seed the result\ncan be predictable.\n\nReferences\nÂ¶\n\n\nThis check corresponds to the CERT C Coding Standard rules\n\nMSC30-C. Do not use the rand() function for generating pseudorandom numbers\n.\n\nMSC50-CPP. Do not use std::rand() for generating pseudorandom numbers\n.",
+    "configurations": []
+  }
+}

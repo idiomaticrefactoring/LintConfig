@@ -1,0 +1,15 @@
+{
+  "name": "Style/NumberedParametersLimit",
+  "full_description": "Avoid excessive numbered params in a single block.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Max",
+      "default_value": 1,
+      "type": "int"
+    }
+  ]
+}

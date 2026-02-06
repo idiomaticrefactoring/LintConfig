@@ -1,0 +1,9 @@
+{
+  "name": "Style/EachWithObject",
+  "full_description": "Prefer `each_with_object` over `inject` or `reduce`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

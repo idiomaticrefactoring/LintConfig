@@ -1,0 +1,11 @@
+{
+  "name": "readability-const-return-type",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/const-return-type.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for functions with a \nconst\n-qualified return type and recommends\nremoval of the \nconst\n keyword. Such use of \nconst\n is usually superfluous,\nand can prevent valuable compiler optimizations. Does not (yet) fix trailing\nreturn types.\n\nExamples:\n\nconst\n \nint\n \nfoo\n();\n\n\nconst\n \nClazz\n \nfoo\n();\n\n\nClazz\n \n*\nconst\n \nfoo\n();\n\nNote that this applies strictly to top-level qualification, which excludes\npointers or references to const values. For example, these are fine:\n\nconst\n \nint\n*\n \nfoo\n();\n\n\nconst\n \nint\n&\n \nfoo\n();\n\n\nconst\n \nClazz\n*\n \nfoo\n();\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warnings inside macros. Default\nis \ntrue\n.",
+    "configurations": []
+  }
+}

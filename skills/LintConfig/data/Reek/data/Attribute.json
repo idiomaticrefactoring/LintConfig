@@ -1,0 +1,10 @@
+{
+  "name": "Attribute",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": []
+  },
+  "description": "A class that publishes a setter for an instance variable invites\nclient classes to become too intimate with its inner workings, and in\nparticular with its representation of state.\nThe same holds to a lesser extent for getters, but Reek doesn't flag those.",
+  "configuration_docs": "_Attribute_ supports only the [Basic Smell Options](Basic-Smell-Options.md).",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Attribute.md"
+}

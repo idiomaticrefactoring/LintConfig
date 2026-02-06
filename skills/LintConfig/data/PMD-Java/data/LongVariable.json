@@ -1,0 +1,19 @@
+{
+    "name": "LongVariable",
+    "category": "codestyle",
+    "summary": "Fields, formal arguments, or local variable names that are too long can make the code difficult to follow.",
+    "message": "Avoid excessively long variable names like {0}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#longvariable",
+    "since": "0.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "minimum",
+            "description": "The variable length reporting threshold",
+            "defaultValue": "17",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class Something {\nint reallyLongIntName = -3;             // VIOLATION - Field\npublic static void main( String argumentsList[] ) { // VIOLATION - Formal\nint otherReallyLongName = -5;       // VIOLATION - Local\nfor (int interestingIntIndex = 0;   // VIOLATION - For\ninterestingIntIndex < 10;\ninterestingIntIndex ++ ) {\n}\n}"
+}

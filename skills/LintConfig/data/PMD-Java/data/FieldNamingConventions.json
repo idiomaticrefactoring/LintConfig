@@ -1,0 +1,12 @@
+{
+    "name": "FieldNamingConventions",
+    "category": "codestyle",
+    "summary": "Configurable naming conventions for field declarations. This rule reports variable declarations\nwhich do not match the regex that applies to their specific kind ---e.g. constants (static final),\nenum constant, final field. Each regex can be configured through properties.\n\nBy default this rule uses the standard Java naming convention (Camel case), and uses the ALL_UPPER\nconvention for constants and enum constants.",
+    "message": "The {0} name ''{1}'' doesn''t match ''{2}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#fieldnamingconventions",
+    "since": "6.7.0",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Foo {\nint myField = 1; // This is in camel case, so it's ok\nint my_Field = 1; // This contains an underscore, it's not ok by default\n// but you may allow it, or even require the \"my_\" prefix\n\nfinal int FinalField = 1; // you may configure a different convention for final fields,\n// e.g. here PascalCase: [A-Z][a-zA-Z0-9]*\n\ninterface Interface {\ndouble PI = 3.14; // interface \"fields\" use the constantPattern property\n}\n\nenum AnEnum {\nORG, NET, COM; // These use a separate property but are set to ALL_UPPER by default\n}\n}"
+}

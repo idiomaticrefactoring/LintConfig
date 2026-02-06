@@ -1,0 +1,23 @@
+{
+  "name": "for-direction",
+  "meta": {
+    "description": "Enforce for loop update clause moving the counter in the right direction",
+    "url": "https://eslint.org/docs/latest/rules/for-direction",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforceforloop update clause moving the counter in the right direction\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsVersionResources\nAforloop with a stop condition that can never be reached, such as one with a counter that moves in the wrong direction, will run infinitely. While there are occasions when an infinite loop is intended, the convention is to construct such loops aswhileloops. More typically, an infiniteforloop is a bug.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

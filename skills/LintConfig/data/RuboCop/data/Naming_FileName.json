@@ -1,0 +1,86 @@
+{
+  "name": "Naming/FileName",
+  "full_description": "Use snake_case for source file names.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#snake-case-files",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "ExpectMatchingDefinition",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "CheckDefinitionPathHierarchy",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "CheckDefinitionPathHierarchyRoots",
+      "default_value": [
+        "lib",
+        "spec",
+        "test",
+        "src"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "Regex",
+      "default_value": null,
+      "type": "NoneType"
+    },
+    {
+      "parameter_name": "IgnoreExecutableScripts",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowedAcronyms",
+      "default_value": [
+        "CLI",
+        "DSL",
+        "ACL",
+        "API",
+        "ASCII",
+        "CPU",
+        "CSS",
+        "DNS",
+        "EOF",
+        "GUID",
+        "HTML",
+        "HTTP",
+        "HTTPS",
+        "ID",
+        "IP",
+        "JSON",
+        "LHS",
+        "QPS",
+        "RAM",
+        "RHS",
+        "RPC",
+        "SLA",
+        "SMTP",
+        "SQL",
+        "SSH",
+        "TCP",
+        "TLS",
+        "TTL",
+        "UDP",
+        "UI",
+        "UID",
+        "UUID",
+        "URI",
+        "URL",
+        "UTF8",
+        "VM",
+        "XML",
+        "XMPP",
+        "XSRF",
+        "XSS"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Style/DisableCopsWithinSourceCodeDirective",
+  "full_description": "Forbids disabling/enabling cops within source code.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedCops",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

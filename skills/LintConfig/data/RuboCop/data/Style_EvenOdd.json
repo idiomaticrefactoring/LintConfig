@@ -1,0 +1,9 @@
+{
+  "name": "Style/EvenOdd",
+  "full_description": "Favor the use of `Integer#even?` && `Integer#odd?`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#predicate-methods",
+  "is_safe": true,
+  "parameters": []
+}

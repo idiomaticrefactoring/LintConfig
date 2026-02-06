@@ -1,0 +1,11 @@
+{
+  "name": "altera-struct-pack-align",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/struct-pack-align.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds structs that are inefficiently packed or aligned, and recommends\npacking and/or aligning of said structs as needed.\n\nStructs that are not packed take up more space than they should, and accessing\nstructs that are not well aligned is inefficient.\n\nFix-its are provided to fix both of these issues by inserting and/or amending\nrelevant struct attributes.\n\nBased on the \nAltera SDK for OpenCL: Best Practices Guide\n.\n\n// The following struct is originally aligned to 4 bytes, and thus takes up\n\n\n// 12 bytes of memory instead of 10. Packing the struct will make it use\n\n\n// only 10 bytes of memory, and aligning it to 16 bytes will make it\n\n\n// efficient to access.\n\n\nstruct\n \nexample\n \n{\n\n\n  \nchar\n \na\n;\n    \n// 1 byte\n\n\n  \ndouble\n \nb\n;\n  \n// 8 bytes\n\n\n  \nchar\n \nc\n;\n    \n// 1 byte\n\n\n};\n\n\n\n// The following struct is arranged in such a way that packing is not needed.\n\n\n// However, it is aligned to 4 bytes instead of 8, and thus needs to be\n\n\n// explicitly aligned.\n\n\nstruct\n \nimplicitly_packed_example\n \n{\n\n\n  \nchar\n \na\n;\n  \n// 1 byte\n\n\n  \nchar\n \nb\n;\n  \n// 1 byte\n\n\n  \nchar\n \nc\n;\n  \n// 1 byte\n\n\n  \nchar\n \nd\n;\n  \n// 1 byte\n\n\n  \nint\n \ne\n;\n   \n// 4 bytes\n\n\n};\n\n\n\n// The following struct is explicitly aligned and packed.\n\n\nstruct\n \ngood_example\n \n{\n\n\n  \nchar\n \na\n;\n    \n// 1 byte\n\n\n  \ndouble\n \nb\n;\n  \n// 8 bytes\n\n\n  \nchar\n \nc\n;\n    \n// 1 byte\n\n\n}\n \n__attribute__\n((\npacked\n))\n \n__attribute__\n((\naligned\n(\n16\n));\n\n\n\n// Explicitly aligning a struct to the wrong value will result in a warning.\n\n\n// The following example should be aligned to 16 bytes, not 32.\n\n\nstruct\n \nbadly_aligned_example\n \n{\n\n\n  \nchar\n \na\n;\n    \n// 1 byte\n\n\n  \ndouble\n \nb\n;\n  \n// 8 bytes\n\n\n  \nchar\n \nc\n;\n    \n// 1 byte\n\n\n}\n \n__attribute__\n((\npacked\n))\n \n__attribute__\n((\naligned\n(\n32\n)));",
+    "configurations": []
+  }
+}

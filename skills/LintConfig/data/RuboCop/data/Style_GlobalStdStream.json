@@ -1,0 +1,9 @@
+{
+  "name": "Style/GlobalStdStream",
+  "full_description": "Enforces the use of `$stdout/$stderr/$stdin` instead of `STDOUT/STDERR/STDIN`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#global-stdout",
+  "is_safe": true,
+  "parameters": []
+}

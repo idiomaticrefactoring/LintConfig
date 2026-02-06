@@ -1,0 +1,28 @@
+{
+  "name": "Gemspec/DependencyVersion",
+  "full_description": "Requires or forbids specifying gem dependency versions.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "required",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "required",
+        "forbidden"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedGems",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

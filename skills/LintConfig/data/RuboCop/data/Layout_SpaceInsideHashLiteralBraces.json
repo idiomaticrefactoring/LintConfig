@@ -1,0 +1,37 @@
+{
+  "name": "Layout/SpaceInsideHashLiteralBraces",
+  "full_description": "Use spaces inside hash literal braces - or don't.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#spaces-braces",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "space",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "space",
+        "no_space",
+        "compact"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "EnforcedStyleForEmptyBraces",
+      "default_value": "no_space",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStylesForEmptyBraces",
+      "default_value": [
+        "space",
+        "no_space"
+      ],
+      "type": "list"
+    }
+  ]
+}

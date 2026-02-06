@@ -1,0 +1,12 @@
+{
+    "name": "MethodNamingConventions",
+    "category": "codestyle",
+    "summary": "Configurable naming conventions for method declarations. This rule reports\nmethod declarations which do not match the regex that applies to their\nspecific kind (e.g. JUnit test or native method). Each regex can be\nconfigured through properties.\n\nBy default, this rule uses the standard Java naming convention (Camel case).",
+    "message": "The {0} name ''{1}'' doesn''t match ''{2}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#methodnamingconventions",
+    "since": "1.2",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void fooStuff() {\n}\n}"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UselessStringValueOf",
+    "category": "performance",
+    "summary": "No need to call String.valueOf to append to a string; just use the valueOf() argument directly.",
+    "message": "No need to call String.valueOf to append to a string.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#uselessstringvalueof",
+    "since": "3.8",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public String convert(int i) {\nString s;\ns = \"a\" + String.valueOf(i);    // not required\ns = \"a\" + i;                    // preferred approach\nreturn s;\n}"
+}

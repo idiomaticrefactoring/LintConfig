@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantException",
+  "full_description": "Checks for an obsolete RuntimeException argument in raise/fail.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-explicit-runtimeerror",
+  "is_safe": true,
+  "parameters": []
+}

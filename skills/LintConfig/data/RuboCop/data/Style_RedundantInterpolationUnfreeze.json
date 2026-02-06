@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantInterpolationUnfreeze",
+  "full_description": "Checks for redundant unfreezing of interpolated strings.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

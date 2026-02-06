@@ -1,0 +1,16 @@
+{
+    "name": "bufferAccessOutOfBounds",
+    "meta": {
+        "severity": "error",
+        "cwe": "788",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "content": {
+        "introduction": "Buffer is accessed out of bounds: buf",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "788",
+            "inconclusive": false
+        }
+    }
+}

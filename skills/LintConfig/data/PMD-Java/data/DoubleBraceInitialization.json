@@ -1,0 +1,12 @@
+{
+    "name": "DoubleBraceInitialization",
+    "category": "bestpractices",
+    "summary": "Double brace initialisation is a pattern to initialise eg collections concisely. But it implicitly\ngenerates a new .class file, and the object holds a strong reference to the enclosing object. For those\nreasons, it is preferable to initialize the object normally, even though it's verbose.\n\nThis rule counts any anonymous class which only has a single initializer as an instance of double-brace\ninitialization. There is currently no way to find out whether a method called in the initializer is not\naccessible from outside the anonymous class, and those legit cases should be suppressed for the time being.",
+    "message": "Double-brace initialization should be avoided",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#doublebraceinitialization",
+    "since": "6.16.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// this is double-brace initialization\nreturn new ArrayList<String>(){{\nadd(\"a\");\nadd(\"b\");\nadd(\"c\");\n}};\n\n// the better way is to not create an anonymous class:\nList<String> a = new ArrayList<>();\na.add(\"a\");\na.add(\"b\");\na.add(\"c\");\nreturn a;"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Style/ArrayFirstLast",
+  "full_description": "Use `arr.first` and `arr.last` instead of `arr[0]` and `arr[-1]`.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "#first-and-last"
+      ],
+      "type": "list"
+    }
+  ]
+}

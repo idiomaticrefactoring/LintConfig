@@ -1,0 +1,12 @@
+{
+    "name": "SwitchStmtsShouldHaveDefault",
+    "category": "bestpractices",
+    "summary": "Deprecated. Use NonExhaustiveSwitch instead.",
+    "message": "",
+    "url": "",
+    "since": "",
+    "priority": "3",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": ""
+}

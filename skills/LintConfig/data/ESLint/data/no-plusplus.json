@@ -1,0 +1,23 @@
+{
+  "name": "no-plusplus",
+  "meta": {
+    "description": "Disallow the unary operators ++ and --",
+    "url": "https://eslint.org/docs/latest/rules/no-plusplus",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow the unary operators++and--\n❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsallowForLoopAfterthoughtsVersionResources\nBecause the unary++and--operators are subject to automatic semicolon insertion, differences in whitespace can change semantics of source code.\nleti=10;letj=20;i++j// i = 11, j = 20123456Copy code to clipboard\nleti=10;letj=20;i++j// i = 10, j = 211234567Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option.\n\"allowForLoopAfterthoughts\": trueallows unary operators++and--in the afterthought (final expression) of aforloop.\nExamples ofcorrectcode for this rule with the{ \"allowForLoopAfterthoughts\": true }option:\nExamples ofincorrectcode for this rule with the{ \"allowForLoopAfterthoughts\": true }option:",
+    "config_examples": []
+  }
+}

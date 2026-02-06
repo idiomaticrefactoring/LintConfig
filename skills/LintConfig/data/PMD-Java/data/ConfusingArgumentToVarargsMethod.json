@@ -1,0 +1,12 @@
+{
+    "name": "ConfusingArgumentToVarargsMethod",
+    "category": "errorprone",
+    "summary": "Reports a confusing argument passed to a varargs method.\n\nThis can occur when an array is passed as a single varargs argument, when the array type is not exactly the\ntype of array that the varargs method expects. If, that array is a subtype of the component type of the expected\narray type, then it might not be clear what value the called varargs method will receive.\nFor instance if you have:\n```java\nvoid varargs(Object... parm);\n```\nand call it like so:\n```java\nvarargs(new String[]{\"a\"});\n```\nit is not clear whether you intended the method to receive the value `new Object[]{ new String[] {\"a\"} }` or\njust `new String[] {\"a\"}` (the latter happens). This confusion occurs because `String[]` is both a subtype\nof `Object[]` and of `Object`. To clarify your intent in this case, use a cast or pass individual elements like so:\n```java\n// varargs call\n// parm will be `new Object[] { \"a\" }`\nvarargs(\"a\");\n\n// non-varargs call\n// parm will be `new String[] { \"a\" }`\nvarargs((Object[]) new String[]{\"a\"});\n\n// varargs call\n// parm will be `new Object[] { new String[] { \"a\" } }`\nvarargs((Object) new String[]{\"a\"});\n```\n\nAnother confusing case is when you pass `null` as the varargs argument. Here it is not clear whether you intended\nto pass an array with a single null element, or a null array (the latter happens). This can similarly be clarified\nwith a cast.",
+    "message": "Unclear if a varargs or non-varargs call is intended. Cast to {0} or {0}[], or pass varargs parameters separately to clarify intent.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#confusingargumenttovarargsmethod",
+    "since": "7.1.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.util.Arrays;\n\nabstract class C {\nabstract void varargs(Object... args);\nstatic {\nvarargs(new String[] { \"a\" });\nvarargs(null);\n}\n}"
+}

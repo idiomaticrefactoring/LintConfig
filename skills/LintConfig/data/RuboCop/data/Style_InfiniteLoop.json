@@ -1,0 +1,9 @@
+{
+  "name": "Style/InfiniteLoop",
+  "full_description": "Use Kernel#loop for infinite loops. This cop is unsafe if the body may raise a `StopIteration` exception.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#infinite-loop",
+  "is_safe": false,
+  "parameters": []
+}

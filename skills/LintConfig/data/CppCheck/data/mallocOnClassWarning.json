@@ -1,0 +1,19 @@
+{
+    "name": "mallocOnClassWarning",
+    "meta": {
+        "severity": "warning",
+        "cwe": "762",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "content": {
+        "introduction": "Memory for class instance allocated with malloc(), but class provides constructors. This is unsafe, since no constructor is called and class members remain uninitialized. Consider using 'new' instead.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "762",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "malloc"
+            ]
+        }
+    }
+}

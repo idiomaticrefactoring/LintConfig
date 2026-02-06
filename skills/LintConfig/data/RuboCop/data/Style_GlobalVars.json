@@ -1,0 +1,22 @@
+{
+  "name": "Style/GlobalVars",
+  "full_description": "Do not introduce global variables.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#instance-vars",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://www.zenspider.com/ruby/quickref.html"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedVariables",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

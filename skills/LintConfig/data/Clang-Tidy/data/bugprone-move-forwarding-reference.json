@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-move-forwarding-reference",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/move-forwarding-reference.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Warns if \nstd::move\n is called on a forwarding reference, for example:\n\ntemplate\n \n<\ntypename\n \nT\n>\n\n\nvoid\n \nfoo\n(\nT\n&&\n \nt\n)\n \n{\n\n\n  \nbar\n(\nstd\n::\nmove\n(\nt\n));\n\n\n}\n\nForwarding references\n should\ntypically be passed to \nstd::forward\n instead of \nstd::move\n, and this is\nthe fix that will be suggested.\n\n(A forwarding reference is an rvalue reference of a type that is a deduced\nfunction template argument.)\n\nIn this example, the suggested fix would be\n\nbar\n(\nstd\n::\nforward\n<\nT\n>\n(\nt\n));\n\nBackground\nÂ¶\n\n\nCode like the example above is sometimes written with the expectation that\n\nT&&\n will always end up being an rvalue reference, no matter what type is\ndeduced for \nT\n, and that it is therefore not possible to pass an lvalue to\n\nfoo()\n. However, this is not true. Consider this example:\n\n\nstd\n::\nstring\n \ns\n \n=\n \n\"Hello, world\"\n;\n\n\nfoo\n(\ns\n);\n\n\n\n\n\n\nThis code compiles and, after the call to \nfoo()\n, \ns\n is left in an\nindeterminate state because it has been moved from. This may be surprising to\nthe caller of \nfoo()\n because no \nstd::move\n was used when calling\n\nfoo()\n.\n\n\nThe reason for this behavior lies in the special rule for template argument\ndeduction on function templates like \nfoo()\n â i.e. on function templates\nthat take an rvalue reference argument of a type that is a deduced function\ntemplate argument. (See section [temp.deduct.call]/3 in the C++11 standard.)\n\n\nIf \nfoo()\n is called on an lvalue (as in the example above), then \nT\n is\ndeduced to be an lvalue reference. In the example, \nT\n is deduced to be\n\nstd::string\n \n&\n. The type of the argument \nt\n therefore becomes\n\nstd::string&\n \n&&\n; by the reference collapsing rules, this collapses to\n\nstd::string&\n.\n\n\nThis means that the \nfoo(s)\n call passes \ns\n as an lvalue reference, and\n\nfoo()\n ends up moving \ns\n and thereby placing it into an indeterminate\nstate.",
+    "configurations": []
+  }
+}

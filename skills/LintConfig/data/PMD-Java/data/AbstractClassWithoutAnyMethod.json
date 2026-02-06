@@ -1,0 +1,12 @@
+{
+    "name": "AbstractClassWithoutAnyMethod",
+    "category": "design",
+    "summary": "If an abstract class does not provide any methods, it may be acting as a simple data container\nthat is not meant to be instantiated. In this case, it is probably better to use a private or\nprotected constructor in order to prevent instantiation than make the class misleadingly abstract.",
+    "message": "No abstract method which means that the keyword is most likely used to prevent instantiation. Use a private or protected constructor instead.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#abstractclasswithoutanymethod",
+    "since": "4.2",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public abstract class Example {\nString field;\nint otherField;\n}"
+}

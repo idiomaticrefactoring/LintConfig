@@ -1,0 +1,11 @@
+{
+  "name": "UtilityFunction",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": [],
+    "public_methods_only": false
+  },
+  "description": "A _Utility Function_ is any instance method that has no dependency on the state of the instance.\n_Utility Function_ is heavily related to _[Feature Envy](Feature-Envy.md)_, please check out the explanation there why _Utility Function_ is something you should care about.",
+  "configuration_docs": "Reek's _Utility Function_ detector supports the [Basic Smell Options](Basic-Smell-Options.md), plus:\n| Option                | Value       | Effect  |\n| ----------------------|-------------|---------|\n| `public_methods_only` | Boolean | Disable this smell detector for non-public methods (which means \"private\" and \"protected\") |\nA sample configuration file would look like this:\n```yaml\n---\ndetectors:\nUtilityFunction:\npublic_methods_only: true\n```",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Utility-Function.md"
+}

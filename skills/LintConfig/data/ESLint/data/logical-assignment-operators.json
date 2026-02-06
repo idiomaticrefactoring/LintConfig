@@ -1,0 +1,23 @@
+{
+  "name": "logical-assignment-operators",
+  "meta": {
+    "description": "Require or disallow logical assignment operator shorthand",
+    "url": "https://eslint.org/docs/latest/rules/logical-assignment-operators",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Require or disallow logical assignment operator shorthand\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsalwaysneverenforceForIfStatementsWhen Not To Use ItVersionResources\nES2021 introduces the assignment operator shorthand for the logical operators||,&&and??.\nBefore, this was only allowed for mathematical operations such as+or*(see the ruleoperator-assignment).\nThe shorthand can be used if the assignment target and the left expression of a logical expression are the same.\nFor examplea = a || bcan be shortened toa ||= b.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "performance-type-promotion-in-math-fn",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/type-promotion-in-math-fn.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds calls to C math library functions (from \nmath.h\n or, in C++, \ncmath\n)\nwith implicit \nfloat\n to \ndouble\n promotions.\n\nFor example, warns on \n::sin(0.f)\n, because this functionâs parameter is a\ndouble. You probably meant to call \nstd::sin(0.f)\n (in C++), or \nsinf(0.f)\n\n(in C).\n\nfloat\n \na\n;\n\n\nasin\n(\na\n);\n\n\n\n// becomes\n\n\n\nfloat\n \na\n;\n\n\nstd\n::\nasin\n(\na\n);",
+    "configurations": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Naming/BinaryOperatorParameterName",
+  "full_description": "When defining binary operators, name the argument other.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#other-arg",
+  "is_safe": true,
+  "parameters": []
+}

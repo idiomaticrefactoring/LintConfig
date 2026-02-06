@@ -1,0 +1,12 @@
+{
+    "name": "UnnecessaryLocalBeforeReturn",
+    "category": "codestyle",
+    "summary": "Avoid the creation of unnecessary local variables.\n\nThis rule has been deprecated since 7.17.0. Use the new rule\n{%rule VariableCanBeInlined %} instead, which additionally covers throw statements.",
+    "message": "Consider simply returning the value vs storing it in local variable ''{0}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn",
+    "since": "3.3",
+    "priority": "3",
+    "is_deprecated": true,
+    "configuration": [],
+    "examples": "public class Foo {\npublic int foo() {\nint x = doSomething();\nreturn x;  // instead, just 'return doSomething();'\n}\n}"
+}

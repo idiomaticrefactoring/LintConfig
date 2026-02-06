@@ -1,0 +1,9 @@
+{
+  "name": "Style/MapToSet",
+  "full_description": "Prefer `to_set` with a block over `map.to_set`.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

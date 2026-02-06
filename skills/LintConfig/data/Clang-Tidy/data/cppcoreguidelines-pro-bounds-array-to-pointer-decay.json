@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-pro-bounds-array-to-pointer-decay",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-array-to-pointer-decay.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check flags all array to pointer decays.\n\nPointers should not be used as arrays. \nspan<T>\n is a bounds-checked, safe\nalternative to using pointers to access arrays.\n\nThis rule is part of the \nBounds safety (Bounds 3)\n\nprofile from the C++ Core Guidelines.",
+    "configurations": []
+  }
+}

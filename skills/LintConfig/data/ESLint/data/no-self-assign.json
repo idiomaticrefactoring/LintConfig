@@ -1,0 +1,23 @@
+{
+  "name": "no-self-assign",
+  "meta": {
+    "description": "Disallow assignments where both sides are exactly the same",
+    "url": "https://eslint.org/docs/latest/rules/no-self-assign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow assignments where both sides are exactly the same\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionspropsWhen Not To Use ItVersionResources\nSelf assignments have no effect, so probably those are an error due to incomplete refactoring.\nThose indicate that what you should do is still remaining.\nfoo=foo;[bar,baz]=[bar,qiz];12Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has the option to check properties as well.\nprops- if this istrue,no-self-assignrule warns self-assignments of properties. Default istrue.\nExamples ofcorrectcode with the{ \"props\": false }option:",
+    "config_examples": []
+  }
+}

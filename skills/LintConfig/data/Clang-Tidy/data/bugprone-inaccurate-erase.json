@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-inaccurate-erase",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/inaccurate-erase.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for inaccurate use of the \nerase()\n method.\n\nAlgorithms like \nremove()\n do not actually remove any element from the\ncontainer but return an iterator to the first redundant element at the end\nof the container. These redundant elements must be removed using the\n\nerase()\n method. This check warns when not all of the elements will be\nremoved due to using an inappropriate overload.\n\nFor example, the following code erases only one element:\n\nstd\n::\nvector\n<\nint\n>\n \nxs\n;\n\n\n...\n\n\nxs\n.\nerase\n(\nstd\n::\nremove\n(\nxs\n.\nbegin\n(),\n \nxs\n.\nend\n(),\n \n10\n));\n\nCall the two-argument overload of \nerase()\n to remove the subrange:\n\nstd\n::\nvector\n<\nint\n>\n \nxs\n;\n\n\n...\n\n\nxs\n.\nerase\n(\nstd\n::\nremove\n(\nxs\n.\nbegin\n(),\n \nxs\n.\nend\n(),\n \n10\n),\n \nxs\n.\nend\n());",
+    "configurations": []
+  }
+}

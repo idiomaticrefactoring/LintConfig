@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-too-small-loop-variable",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/too-small-loop-variable.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Detects those \nfor\n loops that have a loop variable with a âtoo smallâ type\nwhich means this type canât represent all values which are part of the\niteration range.\n\nint\n \nmain\n()\n \n{\n\n\n  \nlong\n \nsize\n \n=\n \n294967296l\n;\n\n\n  \nfor\n \n(\nshort\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \nsize\n;\n \n++\ni\n)\n \n{}\n\n\n}\n\nThis \nfor\n loop is an infinite loop because the \nshort\n type canât\nrepresent all values in the \n[0..size]\n interval.\n\nIn a real use case size means a containerâs size which depends on the\nuser input.\n\nint\n \ndoSomething\n(\nconst\n \nstd\n::\nvector\n&\n \nitems\n)\n \n{\n\n\n  \nfor\n \n(\nshort\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \nitems\n.\nsize\n();\n \n++\ni\n)\n \n{}\n\n\n}\n\nThis algorithm works for a small amount of objects, but will lead to freeze for\na larger user input.\n\nItâs recommended to enable the compiler warning\n\n-Wtautological-constant-out-of-range-compare\n as well, since check does\nnot inspect compile-time constant loop boundaries to avoid overlaps with\nthe warning.\n\nOptions\nÂ¶\n\n\n\n\n\n\nMagnitudeBitsUpperLimit\nÂ¶\n\n\nUpper limit for the magnitude bits of the loop variable. If itâs set the check\nfilters out those catches in which the loop variableâs type has more magnitude\nbits as the specified upper limit. The default value is 16.\nFor example, if the user sets this option to 31 (bits), then a 32-bit \nunsigned\n \nint\n\nis ignored by the check, however a 32-bit \nint\n is not (A 32-bit \nsigned\n \nint\n\nhas 31 magnitude bits).\n\n\n\n\nint\n \nmain\n()\n \n{\n\n\n  \nlong\n \nsize\n \n=\n \n294967296l\n;\n\n\n  \nfor\n \n(\nunsigned\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \nsize\n;\n \n++\ni\n)\n \n{}\n \n// no warning with MagnitudeBitsUpperLimit = 31 on a system where unsigned is 32-bit\n\n\n  \nfor\n \n(\nint\n \ni\n \n=\n \n0\n;\n \ni\n \n<\n \nsize\n;\n \n++\ni\n)\n \n{}\n \n// warning with MagnitudeBitsUpperLimit = 31 on a system where int is 32-bit\n\n\n}",
+    "configurations": []
+  }
+}

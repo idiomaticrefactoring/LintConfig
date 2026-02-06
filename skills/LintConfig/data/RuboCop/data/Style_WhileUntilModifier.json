@@ -1,0 +1,9 @@
+{
+  "name": "Style/WhileUntilModifier",
+  "full_description": "Favor modifier while/until usage when you have a single-line body.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#while-as-a-modifier",
+  "is_safe": true,
+  "parameters": []
+}

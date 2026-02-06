@@ -1,0 +1,12 @@
+{
+    "name": "UnsynchronizedStaticFormatter",
+    "category": "multithreading",
+    "summary": "Instances of `java.text.Format` are generally not synchronized.\nSun recommends using separate format instances for each thread.\nIf multiple threads must access a static formatter, the formatter must be\nsynchronized on block level.",
+    "message": "Static Formatter objects should be accessed in a synchronized manner",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#unsynchronizedstaticformatter",
+    "since": "6.11.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate static final SimpleDateFormat sdf = new SimpleDateFormat();\nvoid bar() {\nsdf.format(); // poor, no thread-safety\n}\nvoid foo() {\nsynchronized (sdf) { // preferred\nsdf.format();\n}\n}\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "abseil-duration-factory-float",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-factory-float.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for cases where the floating-point overloads of various\n\nabsl::Duration\n factory functions are called when the more-efficient\ninteger versions could be used instead.\n\nThis check will not suggest fixes for literals which contain fractional\nfloating point values or non-literals. It will suggest removing\nsuperfluous casts.\n\nExamples:\n\n// Original - Providing a floating-point literal.\n\n\nabsl\n::\nDuration\n \nd\n \n=\n \nabsl\n::\nSeconds\n(\n10.0\n);\n\n\n\n// Suggested - Use an integer instead.\n\n\nabsl\n::\nDuration\n \nd\n \n=\n \nabsl\n::\nSeconds\n(\n10\n);\n\n\n\n\n// Original - Explicitly casting to a floating-point type.\n\n\nabsl\n::\nDuration\n \nd\n \n=\n \nabsl\n::\nSeconds\n(\nstatic_cast\n<\ndouble\n>\n(\n10\n));\n\n\n\n// Suggested - Remove the explicit cast\n\n\nabsl\n::\nDuration\n \nd\n \n=\n \nabsl\n::\nSeconds\n(\n10\n);",
+    "configurations": []
+  }
+}

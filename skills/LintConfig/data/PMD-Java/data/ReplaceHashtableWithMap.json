@@ -1,0 +1,12 @@
+{
+    "name": "ReplaceHashtableWithMap",
+    "category": "bestpractices",
+    "summary": "Consider replacing Hashtable usage with the newer java.util.Map if thread safety is not required.",
+    "message": "Consider replacing this Hashtable with the newer java.util.Map",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#replacehashtablewithmap",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nvoid bar() {\nHashtable h = new Hashtable();\n}\n}"
+}

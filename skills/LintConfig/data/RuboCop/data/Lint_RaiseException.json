@@ -1,0 +1,17 @@
+{
+  "name": "Lint/RaiseException",
+  "full_description": "Checks for `raise` or `fail` statements which are raising `Exception` class.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#raise-exception",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "AllowedImplicitNamespaces",
+      "default_value": [
+        "Gem"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UnnecessaryReturn",
+    "category": "codestyle",
+    "summary": "Avoid the use of unnecessary return statements. A return is unnecessary when no\ninstructions follow anyway.",
+    "message": "Unnecessary return statement",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#unnecessaryreturn",
+    "since": "1.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void bar() {\nint x = 42;\nreturn;\n}\n}"
+}

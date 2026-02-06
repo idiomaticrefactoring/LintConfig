@@ -1,0 +1,16 @@
+{
+    "name": "accessMoved",
+    "meta": {
+        "severity": "warning",
+        "cwe": "672",
+        "url": "https://cwe.mitre.org/data/definitions/672.html"
+    },
+    "content": {
+        "introduction": "Access of moved variable 'v'.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "672",
+            "inconclusive": false
+        }
+    }
+}

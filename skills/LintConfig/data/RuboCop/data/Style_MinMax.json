@@ -1,0 +1,9 @@
+{
+  "name": "Style/MinMax",
+  "full_description": "Use `Enumerable#minmax` instead of `Enumerable#min` and `Enumerable#max` in conjunction.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

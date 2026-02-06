@@ -1,0 +1,12 @@
+{
+    "name": "AvoidThrowingNullPointerException",
+    "category": "design",
+    "summary": "Avoid throwing NullPointerExceptions manually. These are confusing because most people will assume that the\nvirtual machine threw it.  To avoid a method being called with a null parameter, you may consider\nusing an IllegalArgumentException instead, making it clearly seen as a programmer-initiated exception.\nHowever, there are better ways to handle this:\n\n>*Effective Java, 3rd Edition, Item 72: Favor the use of standard exceptions*\n>\n>Arguably, every erroneous method invocation boils down to an illegal argument or state,\nbut other exceptions are standardly used for certain kinds of illegal arguments and states.\nIf a caller passes null in some parameter for which null values are prohibited, convention dictates that\nNullPointerException be thrown rather than IllegalArgumentException.\n\nTo implement that, you are encouraged to use `java.util.Objects.requireNonNull()`\n(introduced in Java 1.7). This method is designed primarily for doing parameter\nvalidation in methods and constructors with multiple parameters.\n\nYour parameter validation could thus look like the following:\n```\npublic class Foo {\nprivate String exampleValue;\n\nvoid setExampleValue(String exampleValue) {\n// check, throw and assignment in a single standard call\nthis.exampleValue = Objects.requireNonNull(exampleValue, \"exampleValue must not be null!\");\n}\n}\n```",
+    "message": "Avoid throwing null pointer exceptions.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#avoidthrowingnullpointerexception",
+    "since": "1.8",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nvoid bar() {\nthrow new NullPointerException();\n}\n}"
+}

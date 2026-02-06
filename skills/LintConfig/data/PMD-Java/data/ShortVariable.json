@@ -1,0 +1,19 @@
+{
+    "name": "ShortVariable",
+    "category": "codestyle",
+    "summary": "Fields, local variables, enum constant names or parameter names that are very short are not helpful to the reader.",
+    "message": "Avoid variables with short names like {0}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#shortvariable",
+    "since": "0.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "minimum",
+            "description": "Number of characters that are required as a minimum for a variable name.",
+            "defaultValue": "3",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class Something {\nprivate int q = 15;                         // field - too short\npublic static void main( String as[] ) {    // formal arg - too short\nint r = 20 + q;                         // local var - too short\nfor (int i = 0; i < 10; i++) {          // not a violation (inside 'for' loop)\nr += q;\n}\nfor (Integer i : numbers) {             // not a violation (inside 'for-each' loop)\nr += q;\n}\n}\n}"
+}

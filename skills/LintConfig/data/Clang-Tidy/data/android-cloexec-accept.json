@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-accept",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-accept.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The usage of \naccept()\n is not recommended, itâs better to use \naccept4()\n.\nWithout this flag, an opened sensitive file descriptor would remain open across\na fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\naccept\n(\nsockfd\n,\n \naddr\n,\n \naddrlen\n);\n\n\n\n// becomes\n\n\n\naccept4\n(\nsockfd\n,\n \naddr\n,\n \naddrlen\n,\n \nSOCK_CLOEXEC\n);",
+    "configurations": []
+  }
+}

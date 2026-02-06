@@ -1,0 +1,11 @@
+{
+  "name": "abseil-duration-conversion-cast",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-conversion-cast.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for casts of \nabsl::Duration\n conversion functions, and recommends\nthe right conversion function instead.\n\nExamples:\n\n// Original - Cast from a double to an integer\n\n\nabsl\n::\nDuration\n \nd\n;\n\n\nint\n \ni\n \n=\n \nstatic_cast\n<\nint\n>\n(\nabsl\n::\nToDoubleSeconds\n(\nd\n));\n\n\n\n// Suggested - Use the integer conversion function directly.\n\n\nint\n \ni\n \n=\n \nabsl\n::\nToInt64Seconds\n(\nd\n);\n\n\n\n\n// Original - Cast from a double to an integer\n\n\nabsl\n::\nDuration\n \nd\n;\n\n\ndouble\n \nx\n \n=\n \nstatic_cast\n<\ndouble\n>\n(\nabsl\n::\nToInt64Seconds\n(\nd\n));\n\n\n\n// Suggested - Use the integer conversion function directly.\n\n\ndouble\n \nx\n \n=\n \nabsl\n::\nToDoubleSeconds\n(\nd\n);\n\nNote: In the second example, the suggested fix could yield a different result,\nas the conversion to integer could truncate. In practice, this is very rare,\nand you should use \nabsl::Trunc\n to perform this operation explicitly instead.",
+    "configurations": []
+  }
+}

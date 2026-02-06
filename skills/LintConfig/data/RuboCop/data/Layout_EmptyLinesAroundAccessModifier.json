@@ -1,0 +1,30 @@
+{
+  "name": "Layout/EmptyLinesAroundAccessModifier",
+  "full_description": "Keep blank lines around access modifiers.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#empty-lines-around-access-modifier",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "around",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "around",
+        "only_before"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions"
+      ],
+      "type": "list"
+    }
+  ]
+}

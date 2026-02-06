@@ -1,0 +1,16 @@
+{
+    "name": "incorrectLogicOperator",
+    "meta": {
+        "severity": "warning",
+        "cwe": "571",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "content": {
+        "introduction": "Logical disjunction always evaluates to true: foo > 3 && foo < 4. Are these conditions necessary? Did you intend to use && instead? Are the numbers correct? Are you comparing the correct variables?",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "571",
+            "inconclusive": false
+        }
+    }
+}

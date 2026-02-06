@@ -1,0 +1,23 @@
+{
+  "name": "no-compare-neg-zero",
+  "meta": {
+    "description": "Disallow comparing against -0",
+    "url": "https://eslint.org/docs/latest/rules/no-compare-neg-zero",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow comparing against-0\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsVersionResources",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

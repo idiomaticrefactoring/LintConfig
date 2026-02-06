@@ -1,0 +1,12 @@
+{
+    "name": "GodClass",
+    "category": "design",
+    "summary": "The God Class rule detects the God Class design flaw using metrics. God classes do too many things,\nare very big and overly complex. They should be split apart to be more object-oriented.\nThe rule uses the detection strategy described in \"Object-Oriented Metrics in Practice\".\nThe violations are reported against the entire class.\n\nThe rule uses metrics to implement its detection strategy. The violation message\ngives information about the values of these metrics:\n* WMC: a class complexity measure, see {% jdoc java::lang.java.metrics.JavaMetrics#WEIGHED_METHOD_COUNT %}\n* ATFD: a measure of how much data external data the class uses, see {% jdoc java::lang.java.metrics.JavaMetrics#ACCESS_TO_FOREIGN_DATA %}\n* TCC: a measure of how tightly related the methods are, see {% jdoc java::lang.java.metrics.JavaMetrics#TIGHT_CLASS_COHESION %}\n\nThe rule identifies a god class by looking for classes which have all of the following properties:\n* High WMC\n* High ATFD\n* Low TCC\n\nSee also the reference:\n\nMichele Lanza and Radu Marinescu. *Object-Oriented Metrics in Practice:\nUsing Software Metrics to Characterize, Evaluate, and Improve the Design\nof Object-Oriented Systems.* Springer, Berlin, 1 edition, October 2006. Page 80.",
+    "message": "Possible God Class (WMC={0}, ATFD={2}, TCC={1})",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#godclass",
+    "since": "5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": ""
+}

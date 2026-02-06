@@ -1,0 +1,9 @@
+{
+  "name": "Style/EndBlock",
+  "full_description": "Avoid the use of END blocks.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-END-blocks",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,12 @@
+{
+    "name": "OptimizableToArrayCall",
+    "category": "performance",
+    "summary": "Calls to a collection's `toArray(E[])` method should specify a target array of zero size. This allows the JVM\nto optimize the memory allocation and copying as much as possible.\n\nPrevious versions of this rule (pre PMD 6.0.0) suggested the opposite, but current JVM implementations\nperform always better, when they have full control over the target array. And allocation an array via\nreflection is nowadays as fast as the direct allocation.\n\nSee also [Arrays of Wisdom of the Ancients](https://shipilev.net/blog/2016/arrays-wisdom-ancients/)\n\nNote: If you don't need an array of the correct type, then the simple `toArray()` method without an array\nis faster, but returns only an array of type `Object[]`.",
+    "message": "This call to Collection.toArray() may be optimizable",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#optimizabletoarraycall",
+    "since": "1.8",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "List<Foo> foos = getFoos();\n\n// much better; this one allows the jvm to allocate an array of the correct size and effectively skip\n// the zeroing, since each array element will be overridden anyways\nFoo[] fooArray = foos.toArray(new Foo[0]);\n\n// inefficient, the array needs to be zeroed out by the jvm before it is handed over to the toArray method\nFoo[] fooArray = foos.toArray(new Foo[foos.size()]);"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "new-cap",
+  "meta": {
+    "description": "Require constructor names to begin with a capital letter",
+    "url": "https://eslint.org/docs/latest/rules/new-cap",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Require constructor names to begin with a capital letter\nTable of ContentsRule DetailsOptionsnewIsCapcapIsNewnewIsCapExceptionsnewIsCapExceptionPatterncapIsNewExceptionscapIsNewExceptionPatternpropertiesWhen Not To Use ItVersionResources\nThenewoperator in JavaScript creates a new instance of a particular type of object. That type of object is represented by a constructor function. Since constructor functions are just regular functions, the only defining characteristic is thatnewis being used as part of the call. Native JavaScript functions begin with an uppercase letter to distinguish those functions that are to be used as constructors from functions that are not. Many style guides recommend following this pattern to more easily determine which functions are to be used as constructors.\nconstfriend=newPerson();1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\n\"newIsCap\": true(default) requires allnewoperators to be called with uppercase-started functions.\"newIsCap\": falseallowsnewoperators to be called with lowercase-started or uppercase-started functions.\"capIsNew\": true(default) requires all uppercase-started functions to be called withnewoperators.\"capIsNew\": falseallows uppercase-started functions to be called withoutnewoperators.\"newIsCapExceptions\"allows specified lowercase-started function names to be called with thenewoperator.\"newIsCapExceptionPattern\"allows any lowercase-started function names that match the specified regex pattern to be called with thenewoperator.\"capIsNewExceptions\"allows specified uppercase-started function names to be called without thenewoperator.\"capIsNewExceptionPattern\"allows any uppercase-started function names that match the specified regex pattern to be called without thenewoperator.\"properties\": true(default) enables checks on object properties.\"properties\": falsedisables checks on object properties.\nExamples ofincorrectcode for this rule with the default{ \"newIsCap\": true }option:\nExamples ofcorrectcode for this rule with the default{ \"newIsCap\": true }option:\nExamples ofcorrectcode for this rule with the{ \"newIsCap\": false }option:\nExamples ofincorrectcode for this rule with the default{ \"capIsNew\": true }option:\nExamples ofcorrectcode for this rule with the default{ \"capIsNew\": true }option:\nExamples ofcorrectcode for this rule with the{ \"capIsNew\": false }option:\nExamples of additionalcorrectcode for this rule with the{ \"newIsCapExceptions\": [\"events\"] }option:\nExamples of additionalcorrectcode for this rule with the{ \"newIsCapExceptionPattern\": \"^person\\\\..\" }option:\nExamples of additionalcorrectcode for this rule with the{ \"newIsCapExceptionPattern\": \"\\\\.bar$\" }option:\nExamples of additionalcorrectcode for this rule with the{ \"capIsNewExceptions\": [\"Person\"] }option:\nExamples of additionalcorrectcode for this rule with the{ \"capIsNewExceptionPattern\": \"^person\\\\..\" }option:\nExamples of additionalcorrectcode for this rule with the{ \"capIsNewExceptionPattern\": \"\\\\.Bar$\" }option:\nExamples of additionalcorrectcode for this rule with the{ \"capIsNewExceptionPattern\": \"^Foo\" }option:\nExamples ofincorrectcode for this rule with the default{ \"properties\": true }option:\nExamples ofcorrectcode for this rule with the default{ \"properties\": true }option:\nExamples ofcorrectcode for this rule with the{ \"properties\": false }option:",
+    "config_examples": []
+  }
+}

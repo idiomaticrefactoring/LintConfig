@@ -1,0 +1,12 @@
+{
+    "name": "PackageCase",
+    "category": "codestyle",
+    "summary": "Detects when a package definition contains uppercase characters.",
+    "message": "Package name contains upper case characters",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#packagecase",
+    "since": "3.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "package com.MyCompany;  // should be lowercase name\n\npublic class SomeClass {\n}"
+}

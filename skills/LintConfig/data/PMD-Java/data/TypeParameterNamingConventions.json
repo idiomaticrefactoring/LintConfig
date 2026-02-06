@@ -1,0 +1,12 @@
+{
+    "name": "TypeParameterNamingConventions",
+    "category": "codestyle",
+    "summary": "Configurable naming conventions for type parameters in generic types and methods.\nThis rule reports type parameter declarations which do not match the configured regex.\nType parameters can appear on classes, interfaces, enums, records, and methods.\n\nBy default, this rule uses the standard Java naming convention (single uppercase letter).",
+    "message": "The {0} name ''{1}'' doesn''t match ''{2}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#typeparameternamingconventions",
+    "since": "7.17.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// Generic types - valid\npublic interface Repository<T> { }\npublic class Cache<K, V> { }\n\n// Generic types - invalid\npublic interface Repository<type> { }      // lowercase\npublic class Cache<KEY, VALUE> { }         // multiple letters\n\n// Generic methods - valid\npublic class Util {\npublic static <T> T identity(T value) { return value; }\npublic <T, R> R transform(T input, Function<T, R> mapper) { }\n}\n\n// Generic methods - invalid\npublic class Util {\npublic static <element> element get(element value) { }  // lowercase\npublic <INPUT, OUTPUT> OUTPUT convert(INPUT in) { }     // multiple letters\n}"
+}

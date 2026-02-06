@@ -1,0 +1,22 @@
+{
+  "name": "useJsxKeyInIterable",
+  "group": "correctness",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-jsx-key-in-iterable",
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'correctness' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

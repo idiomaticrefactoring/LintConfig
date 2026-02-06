@@ -1,0 +1,19 @@
+{
+    "name": "UnitTestShouldUseTestAnnotation",
+    "category": "bestpractices",
+    "summary": "The rule will detect any test method starting with \"test\" that is not properly annotated, and will therefore not be run.\n\nIn JUnit 4, only methods annotated with the `@Test` annotation are executed.\nIn JUnit 5, one of the following annotations should be used for tests: `@Test`, `@RepeatedTest`, `@TestFactory`, `@TestTemplate` or `@ParameterizedTest`.\nIn TestNG, only methods annotated with the `@Test` annotation are executed.\n\nNote: This rule was named JUnit4TestShouldUseTestAnnotation before PMD 7.7.0.",
+    "message": "Unit tests should use the @Test annotation or won't be run. In case of JUnit 5, test methods might use @RepeatedTest, @TestFactory, @TestTemplate or @ParameterizedTest annotations instead.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#unittestshouldusetestannotation",
+    "since": "4.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "testClassPattern",
+            "description": "The regex pattern used to identify test classes",
+            "defaultValue": "Test",
+            "type": "Regex"
+        }
+    ],
+    "examples": "public class MyTest {\npublic void testBad() {\ndoSomething();\n}\n\n@Test\npublic void testGood() {\ndoSomething();\n}\n}"
+}

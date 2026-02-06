@@ -1,0 +1,12 @@
+{
+    "name": "AvoidAccessibilityAlteration",
+    "category": "errorprone",
+    "summary": "Methods such as `getDeclaredConstructors()`, `getDeclaredMethods()`, and `getDeclaredFields()` also\nreturn private constructors, methods and fields. These can be made accessible by calling `setAccessible(true)`.\nThis gives access to normally protected data which violates the principle of encapsulation.\n\nThis rule detects calls to `setAccessible` and finds possible accessibility alterations.\nIf the call to `setAccessible` is wrapped within a `PrivilegedAction`, then the access alteration\nis assumed to be deliberate and is not reported.\n\nNote that with Java 17 the Security Manager, which is used for `PrivilegedAction` execution,\nis deprecated: [JEP 411: Deprecate the Security Manager for Removal](https://openjdk.org/jeps/411).\nFor future-proof code, deliberate access alteration should be suppressed using the usual\nsuppression methods (e.g. by using `@SuppressWarnings` annotation).",
+    "message": "You should not modify visibility of constructors, methods or fields using setAccessible()",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidaccessibilityalteration",
+    "since": "4.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import java.lang.reflect.Constructor;\nimport java.lang.reflect.Field;\nimport java.lang.reflect.Method;\nimport java.security.AccessController;\nimport java.security.PrivilegedAction;\n\npublic class Violation {\nprivate void invalidSetAccessCalls() throws NoSuchMethodException, SecurityException {\nConstructor<?> constructor = this.getClass().getDeclaredConstructor(String.class);\n// call to forbidden setAccessible\nconstructor.setAccessible(true);\n\nMethod privateMethod = this.getClass().getDeclaredMethod(\"aPrivateMethod\");\n// call to forbidden setAccessible\nprivateMethod.setAccessible(true);\n\n// deliberate accessibility alteration\nString privateField = AccessController.doPrivileged(new PrivilegedAction<String>() {\n@Override\npublic String run() {\ntry {\nField field = Violation.class.getDeclaredField(\"aPrivateField\");\nfield.setAccessible(true);\nreturn (String) field.get(null);\n} catch (ReflectiveOperationException | SecurityException e) {\nthrow new RuntimeException(e);\n}\n}\n});\n}\n}"
+}

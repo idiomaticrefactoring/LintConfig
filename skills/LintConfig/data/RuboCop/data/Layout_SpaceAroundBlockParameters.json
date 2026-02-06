@@ -1,0 +1,23 @@
+{
+  "name": "Layout/SpaceAroundBlockParameters",
+  "full_description": "Checks the spacing inside and after block parameters pipes.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyleInsidePipes",
+      "default_value": "no_space",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStylesInsidePipes",
+      "default_value": [
+        "space",
+        "no_space"
+      ],
+      "type": "list"
+    }
+  ]
+}

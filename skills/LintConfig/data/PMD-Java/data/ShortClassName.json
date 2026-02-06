@@ -1,0 +1,19 @@
+{
+    "name": "ShortClassName",
+    "category": "codestyle",
+    "summary": "Short Classnames with fewer than e.g. five characters are not recommended.",
+    "message": "Avoid short class names like {0}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#shortclassname",
+    "since": "5.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "minimum",
+            "description": "Number of characters that are required as a minimum for a class name.",
+            "defaultValue": "5",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class Foo {\n}"
+}

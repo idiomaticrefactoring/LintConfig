@@ -1,0 +1,12 @@
+{
+    "name": "AvoidDeeplyNestedIfStmts",
+    "category": "design",
+    "summary": "Avoid creating deeply nested if-then statements since they are harder to read and error-prone to maintain.",
+    "message": "Deeply nested if..then statements are hard to read",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#avoiddeeplynestedifstmts",
+    "since": "1.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic void bar(int x, int y, int z) {\nif (x>y) {\nif (y>z) {\nif (z==x) {\n// !! too deep\n}\n}\n}\n}\n}"
+}

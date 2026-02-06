@@ -1,0 +1,12 @@
+{
+    "name": "JUnitStaticSuite",
+    "category": "errorprone",
+    "summary": "The suite() method in a JUnit test needs to be both public and static.",
+    "message": "You have a suite() method that is not both public and static, so JUnit won't call it to get your TestSuite.  Is that what you wanted to do?",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#junitstaticsuite",
+    "since": "1.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import junit.framework.*;\n\npublic class Foo extends TestCase {\npublic void suite() {}         // oops, should be static\n}"
+}

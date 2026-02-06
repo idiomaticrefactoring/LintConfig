@@ -1,0 +1,23 @@
+{
+  "name": "sort-imports",
+  "meta": {
+    "description": "Enforce sorted import declarations within modules",
+    "url": "https://eslint.org/docs/latest/rules/sort-imports",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforce sortedimportdeclarations within modules\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsExamplesDefault settingsignoreCaseignoreDeclarationSortignoreMemberSortmemberSyntaxSortOrderallowSeparatedGroupsWhen Not To Use ItRelated RulesVersionResources\nTheimportstatement is used to import members (functions, objects or primitives) that have been exported from an external module. Using a specific member syntax:\n// single - Import single member.importmyMemberfrom\"my-module.js\";import{myOtherMember}from\"my-other-module.js\";// multiple - Import multiple members.import{foo,bar}from\"my-module.js\";// all - Import all members, where myModule contains all the exported bindings.import*asmyModulefrom\"my-module.js\";123456789Copy code to clipboard\nTheimportstatement can also import a module without exported bindings. Used when the module does not export anything, but runs it own code or changes the global context object.\n// none - Import module without exported bindings.import\"my-module.js\"12Copy code to clipboard\nWhen declaring multiple imports, a sorted list ofimportdeclarations make it easier for developers to read the code and find necessary imports later. This rule is purely a matter of style.",
+    "sub_configuration_introduction": "This rule accepts an object with its properties as\nignoreCase(default:false)ignoreDeclarationSort(default:false)ignoreMemberSort(default:false)memberSyntaxSortOrder(default:[\"none\", \"all\", \"multiple\", \"single\"]); all 4 items must be present in the array, but you can change the order:none= import module without exported bindings.all= import all members provided by exported bindings.multiple= import multiple members.single= import single member.allowSeparatedGroups(default:false)\nDefault option settings are:",
+    "config_examples": []
+  }
+}

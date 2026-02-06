@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-epoll-create1",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-epoll-create1.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "epoll_create1()\n should include \nEPOLL_CLOEXEC\n in its type argument to\navoid the file descriptor leakage. Without this flag, an opened sensitive file\nwould remain open across a fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\nepoll_create1\n(\n0\n);\n\n\n\n// becomes\n\n\n\nepoll_create1\n(\nEPOLL_CLOEXEC\n);",
+    "configurations": []
+  }
+}

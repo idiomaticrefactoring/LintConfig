@@ -1,0 +1,28 @@
+{
+  "name": "Layout/IndentationStyle",
+  "full_description": "Consistent indentation either with tabs only or spaces only.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#spaces-indentation",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    },
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "spaces",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "spaces",
+        "tabs"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Style/ParenthesesAroundCondition",
+  "full_description": "Don't use parentheses around the condition of an if/unless/while.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-parens-around-condition",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowSafeAssignment",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowInMultilineConditions",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

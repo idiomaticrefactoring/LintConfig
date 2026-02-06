@@ -1,0 +1,15 @@
+{
+  "name": "Lint/UselessDefaultValueArgument",
+  "full_description": "Checks for usage of `fetch` or `Array.new` with default value argument and block.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "AllowedReceivers",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

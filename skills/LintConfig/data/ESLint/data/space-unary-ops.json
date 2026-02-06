@@ -1,0 +1,23 @@
+{
+  "name": "space-unary-ops",
+  "meta": {
+    "description": "Replaced by space-unary-ops in @stylistic/eslint-plugin",
+    "url": null,
+    "type": "",
+    "status": {
+      "deprecated": true,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "",
+    "config_examples": []
+  }
+}

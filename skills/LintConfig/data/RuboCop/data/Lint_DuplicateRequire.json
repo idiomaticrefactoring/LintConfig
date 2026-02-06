@@ -1,0 +1,9 @@
+{
+  "name": "Lint/DuplicateRequire",
+  "full_description": "Checks for duplicate `require`s and `require_relative`s.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

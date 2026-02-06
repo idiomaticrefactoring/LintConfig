@@ -1,0 +1,25 @@
+{
+  "name": "Metrics/ParameterLists",
+  "full_description": "Avoid parameter lists longer than three or four parameters.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#too-many-params",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Max",
+      "default_value": 5,
+      "type": "int"
+    },
+    {
+      "parameter_name": "CountKeywordArgs",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "MaxOptionalParameters",
+      "default_value": 3,
+      "type": "int"
+    }
+  ]
+}

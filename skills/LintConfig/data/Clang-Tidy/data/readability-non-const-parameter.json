@@ -1,0 +1,11 @@
+{
+  "name": "readability-non-const-parameter",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/non-const-parameter.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The check finds function parameters of a pointer type that could be changed to\npoint to a constant type instead.\n\nWhen \nconst\n is used properly, many mistakes can be avoided. Advantages when\nusing \nconst\n properly:\n\nprevent unintentional modification of data;\n\n\nget additional warnings such as using uninitialized data;\n\n\nmake it easier for developers to see possible side effects.\n\nThis check is not strict about constness, it only warns when the constness will\nmake the function interface safer.\n\n// warning here; the declaration \"const char *p\" would make the function\n\n\n// interface safer.\n\n\nchar\n \nf1\n(\nchar\n \n*\np\n)\n \n{\n\n\n  \nreturn\n \n*\np\n;\n\n\n}\n\n\n\n// no warning; the declaration could be more const \"const int * const p\" but\n\n\n// that does not make the function interface safer.\n\n\nint\n \nf2\n(\nconst\n \nint\n \n*\np\n)\n \n{\n\n\n  \nreturn\n \n*\np\n;\n\n\n}\n\n\n\n// no warning; making x const does not make the function interface safer\n\n\nint\n \nf3\n(\nint\n \nx\n)\n \n{\n\n\n  \nreturn\n \nx\n;\n\n\n}\n\n\n\n// no warning; Technically, *p can be const (\"const struct S *p\"). But making\n\n\n// *p const could be misleading. People might think that it's safe to pass\n\n\n// const data to this function.\n\n\nstruct\n \nS\n \n{\n \nint\n \n*\na\n;\n \nint\n \n*\nb\n;\n \n};\n\n\nint\n \nf3\n(\nstruct\n \nS\n \n*\np\n)\n \n{\n\n\n  \n*\n(\np\n->\na\n)\n \n=\n \n0\n;\n\n\n}\n\n\n\n// no warning; p is referenced by an lvalue.\n\n\nvoid\n \nf4\n(\nint\n \n*\np\n)\n \n{\n\n\n  \nint\n \n&\nx\n \n=\n \n*\np\n;\n\n\n}",
+    "configurations": []
+  }
+}

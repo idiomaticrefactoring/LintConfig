@@ -1,0 +1,16 @@
+{
+    "name": "invalidFree",
+    "meta": {
+        "severity": "error",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Mismatching address is freed. The address you get from malloc() must be freed without offset.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

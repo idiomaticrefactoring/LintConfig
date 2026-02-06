@@ -1,0 +1,16 @@
+{
+    "name": "identicalConditionAfterEarlyExit",
+    "meta": {
+        "severity": "warning",
+        "cwe": "398",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "content": {
+        "introduction": "Identical condition 'x', second condition is always false",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "398",
+            "inconclusive": false
+        }
+    }
+}

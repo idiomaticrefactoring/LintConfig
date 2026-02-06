@@ -1,0 +1,19 @@
+{
+    "name": "funcArgOrderDifferent",
+    "meta": {
+        "severity": "warning",
+        "cwe": "683",
+        "url": "https://cwe.mitre.org/data/definitions/683.html"
+    },
+    "content": {
+        "introduction": "Function 'function' argument order different: declaration '' definition ''",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "683",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "function"
+            ]
+        }
+    }
+}

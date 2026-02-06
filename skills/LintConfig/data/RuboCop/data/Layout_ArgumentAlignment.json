@@ -1,0 +1,28 @@
+{
+  "name": "Layout/ArgumentAlignment",
+  "full_description": "Align the arguments of a method call if they span more than one line.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-double-indent",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "with_first_argument",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "with_first_argument",
+        "with_fixed_indentation"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "IndentationWidth",
+      "default_value": null,
+      "type": "NoneType"
+    }
+  ]
+}

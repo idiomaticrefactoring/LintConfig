@@ -1,0 +1,9 @@
+{
+  "name": "Style/MinMaxComparison",
+  "full_description": "Enforces the use of `max` or `min` instead of comparison for greater or less.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

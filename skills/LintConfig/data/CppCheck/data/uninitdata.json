@@ -1,0 +1,19 @@
+{
+    "name": "uninitdata",
+    "meta": {
+        "severity": "error",
+        "cwe": "457",
+        "url": "https://cwe.mitre.org/data/definitions/457.html"
+    },
+    "content": {
+        "introduction": "Memory is allocated but not initialized: varname",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "457",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "varname"
+            ]
+        }
+    }
+}

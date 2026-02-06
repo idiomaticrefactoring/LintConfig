@@ -1,0 +1,23 @@
+{
+  "name": "no-nonoctal-decimal-escape",
+  "meta": {
+    "description": "Disallow &#92;8 and &#92;9 escape sequences in string literals",
+    "url": "https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

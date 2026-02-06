@@ -1,0 +1,16 @@
+{
+    "name": "assignBoolToPointer",
+    "meta": {
+        "severity": "error",
+        "cwe": "587",
+        "url": "https://cwe.mitre.org/data/definitions/587.html"
+    },
+    "content": {
+        "introduction": "Boolean value assigned to pointer.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "587",
+            "inconclusive": false
+        }
+    }
+}

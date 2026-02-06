@@ -1,0 +1,12 @@
+{
+    "name": "UseStringBufferLength",
+    "category": "performance",
+    "summary": "Use StringBuffer.length() to determine StringBuffer length rather than using StringBuffer.toString().equals(\"\")\nor StringBuffer.toString().length() == ...",
+    "message": "This is an inefficient use of CharSequence.toString; call CharSequence.length instead.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#usestringbufferlength",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "StringBuffer sb = new StringBuffer();\n\nif (sb.toString().equals(\"\")) {}        // inefficient\n\nif (sb.length() == 0) {}                // preferred"
+}

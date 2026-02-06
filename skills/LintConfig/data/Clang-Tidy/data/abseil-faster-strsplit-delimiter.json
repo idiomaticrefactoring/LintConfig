@@ -1,0 +1,11 @@
+{
+  "name": "abseil-faster-strsplit-delimiter",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/faster-strsplit-delimiter.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds instances of \nabsl::StrSplit()\n or \nabsl::MaxSplits()\n where the\ndelimiter is a single character string literal and replaces with a character.\nThe check will offer a suggestion to change the string literal into a\ncharacter. It will also catch code using \nabsl::ByAnyChar()\n for just a\nsingle character and will transform that into a single character as well.\n\nThese changes will give the same result, but using characters rather than\nsingle character string literals is more efficient and readable.\n\nExamples:\n\n// Original - the argument is a string literal.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \n\"B\"\n))\n \n{\n\n\n\n// Suggested - the argument is a character, which causes the more efficient\n\n\n// overload of absl::StrSplit() to be used.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \n'B'\n))\n \n{\n\n\n\n\n// Original - the argument is a string literal inside absl::ByAnyChar call.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \nabsl\n::\nByAnyChar\n(\n\"B\"\n)))\n \n{\n\n\n\n// Suggested - the argument is a character, which causes the more efficient\n\n\n// overload of absl::StrSplit() to be used and we do not need absl::ByAnyChar\n\n\n// anymore.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \n'B'\n))\n \n{\n\n\n\n\n// Original - the argument is a string literal inside absl::MaxSplits call.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \nabsl\n::\nMaxSplits\n(\n\"B\"\n,\n \n1\n)))\n \n{\n\n\n\n// Suggested - the argument is a character, which causes the more efficient\n\n\n// overload of absl::StrSplit() to be used.\n\n\nfor\n \n(\nauto\n \npiece\n \n:\n \nabsl\n::\nStrSplit\n(\nstr\n,\n \nabsl\n::\nMaxSplits\n(\n'B'\n,\n \n1\n)))\n \n{",
+    "configurations": []
+  }
+}

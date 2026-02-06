@@ -1,0 +1,19 @@
+{
+    "name": "CompareObjectsWithEquals",
+    "category": "errorprone",
+    "summary": "Use `equals()` to compare object references; avoid comparing them with `==`.\n\nSince comparing objects with named constants is useful in some cases (eg, when\ndefining constants for sentinel values), the rule ignores comparisons against\nfields with all-caps name (eg `this == SENTINEL`), which is a common naming\nconvention for constant fields.\n\nYou may allow some types to be compared by reference by listing the exceptions\nin the `typesThatCompareByReference` property.",
+    "message": "Use equals() to compare object references.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#compareobjectswithequals",
+    "since": "3.2",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "typesThatCompareByReference",
+            "description": "List of canonical type names for which reference comparison is allowed.",
+            "defaultValue": "",
+            "type": "List[String]"
+        }
+    ],
+    "examples": "class Foo {\nboolean bar(String a, String b) {\nreturn a == b;\n}\n}"
+}

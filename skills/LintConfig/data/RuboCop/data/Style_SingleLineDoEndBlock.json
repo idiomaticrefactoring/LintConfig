@@ -1,0 +1,9 @@
+{
+  "name": "Style/SingleLineDoEndBlock",
+  "full_description": "Checks for single-line `do`...`end` blocks.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#single-line-do-end-block",
+  "is_safe": true,
+  "parameters": []
+}

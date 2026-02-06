@@ -1,0 +1,33 @@
+{
+  "name": "Style/Next",
+  "full_description": "Use `next` to skip iteration instead of a condition at the end.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-nested-conditionals",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "skip_modifier_ifs",
+      "type": "str"
+    },
+    {
+      "parameter_name": "MinBodyLength",
+      "default_value": 3,
+      "type": "int"
+    },
+    {
+      "parameter_name": "AllowConsecutiveConditionals",
+      "default_value": false,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "skip_modifier_ifs",
+        "always"
+      ],
+      "type": "list"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AvoidBranchingStatementAsLastInLoop",
+    "category": "errorprone",
+    "summary": "Using a branching statement as the last part of a loop may be a bug, and/or is confusing.\nEnsure that the usage is not a bug, or consider using another approach.",
+    "message": "Avoid using a branching statement as the last in a loop.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop",
+    "since": "5.0",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// unusual use of branching statement in a loop\nfor (int i = 0; i < 10; i++) {\nif (i*i <= 25) {\ncontinue;\n}\nbreak;\n}\n\n// this makes more sense...\nfor (int i = 0; i < 10; i++) {\nif (i*i > 25) {\nbreak;\n}\n}"
+}

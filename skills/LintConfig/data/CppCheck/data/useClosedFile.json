@@ -1,0 +1,16 @@
+{
+    "name": "useClosedFile",
+    "meta": {
+        "severity": "error",
+        "cwe": "910",
+        "url": "https://cwe.mitre.org/data/definitions/910.html"
+    },
+    "content": {
+        "introduction": "Used file that is not opened.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "910",
+            "inconclusive": false
+        }
+    }
+}

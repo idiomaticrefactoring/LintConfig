@@ -1,0 +1,22 @@
+{
+  "name": "useSortedClasses",
+  "group": "nursery",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-sorted-classes",
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'nursery' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

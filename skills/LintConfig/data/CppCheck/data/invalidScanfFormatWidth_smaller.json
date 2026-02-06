@@ -1,0 +1,16 @@
+{
+    "name": "invalidScanfFormatWidth_smaller",
+    "meta": {
+        "severity": "warning",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Width -1 given in format string (no. 99) is smaller than destination buffer '[0]'.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "",
+            "inconclusive": true
+        }
+    }
+}

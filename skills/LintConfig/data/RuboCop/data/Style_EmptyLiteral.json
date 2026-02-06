@@ -1,0 +1,9 @@
+{
+  "name": "Style/EmptyLiteral",
+  "full_description": "Prefer literals to Array.new/Hash.new/String.new.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#literal-array-hash",
+  "is_safe": true,
+  "parameters": []
+}

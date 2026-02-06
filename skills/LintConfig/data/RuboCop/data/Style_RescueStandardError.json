@@ -1,0 +1,23 @@
+{
+  "name": "Style/RescueStandardError",
+  "full_description": "Avoid rescuing without specifying an error class.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "explicit",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "implicit",
+        "explicit"
+      ],
+      "type": "list"
+    }
+  ]
+}

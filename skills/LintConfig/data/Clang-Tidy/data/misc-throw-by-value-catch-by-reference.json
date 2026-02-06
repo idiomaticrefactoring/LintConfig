@@ -1,0 +1,11 @@
+{
+  "name": "misc-throw-by-value-catch-by-reference",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/throw-by-value-catch-by-reference.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "cert-err09-cpp\n and \ncert-err61-cpp\n redirect here as aliases of this check.\n\nFinds violations of the rule âThrow by value, catch by referenceâ presented for\nexample in âC++ Coding Standardsâ by H. Sutter and A. Alexandrescu, as well as\nthe CERT C++ Coding Standard rule \nERR61-CPP. Catch exceptions by lvalue\nreference\n.\n\nExceptions:\n\n\nThrowing string literals will not be flagged despite being a pointer. They\nare not susceptible to slicing and the usage of string literals is\nidiomatic.\n\n\nCatching character pointers (\nchar\n, \nwchar_t\n, unicode character\ntypes) will not be flagged to allow catching string literals.\n\n\nMoved named values will not be flagged as not throwing an anonymous\ntemporary. In this case we can be sure that the user knows that the object\ncanât be accessed outside catch blocks handling the error.\n\n\nThrowing function parameters will not be flagged as not throwing an\nanonymous temporary. This allows helper functions for throwing.\n\n\nRe-throwing caught exception variables will not be flagged as not throwing\nan anonymous temporary. Although this can usually be done by just writing\n\nthrow;\n it happens often enough in real code.\n\nOptions\nÂ¶\n\n\n\n\n\n\nCheckThrowTemporaries\nÂ¶\n\n\nTriggers detection of violations of the CERT recommendation ERR09-CPP. Throw\nanonymous temporaries.\nDefault is \ntrue\n.\n\n\n\n\n\n\n\n\nWarnOnLargeObject\nÂ¶\n\n\nAlso warns for any large, trivial object caught by value. Catching a large\nobject by value is not dangerous but affects the performance negatively. The\nmaximum size of an object allowed to be caught without warning can be set\nusing the \nMaxSize\n option.\nDefault is \nfalse\n.\n\n\n\n\n\n\n\n\nMaxSize\nÂ¶\n\n\nDetermines the maximum size of an object allowed to be caught without\nwarning. Only applicable if \nWarnOnLargeObject\n is set to \ntrue\n. If\nthe option is set by the user to \nstd::numeric_limits<uint64_t>::max()\n then\nit reverts to the default value.\nDefault is the size of \nsize_t\n.",
+    "configurations": []
+  }
+}

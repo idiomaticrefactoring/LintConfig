@@ -1,0 +1,19 @@
+{
+    "name": "TooManyFields",
+    "category": "design",
+    "summary": "Classes that have too many fields can become unwieldy and could be redesigned to have fewer fields,\npossibly through grouping related fields in new objects.  For example, a class with individual\ncity/state/zip fields could park them within a single Address field.",
+    "message": "Too many fields",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#toomanyfields",
+    "since": "3.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "maxfields",
+            "description": "Max allowable fields",
+            "defaultValue": "15",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class Person {   // too many separate fields\nint birthYear;\nint birthMonth;\nint birthDate;\nfloat height;\nfloat weight;\n}\n\npublic class Person {   // this is more manageable\nDate birthDate;\nBodyMeasurements measurements;\n}"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-unexpected-multiline",
+  "meta": {
+    "description": "Disallow confusing multiline expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-unexpected-multiline",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow confusing multiline expressions\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItRelated RulesVersionResources\nSemicolons are usually optional in JavaScript, because of automatic semicolon insertion (ASI). You can require or disallow semicolons with thesemirule.\nThe rules for ASI are relatively straightforward: As once described by Isaac Schlueter, a newline character always ends a statement, just like a semicolon,exceptwhere one of the following is true:\nThe statement has an unclosed paren, array literal, or object literal or ends in some other way that is not a valid way to end a statement. (For instance, ending with.or,.)The line is--or++(in which case it will decrement/increment the next token.)It is afor(),while(),do,if(), orelse, and there is no{The next line starts with[,(,+,*,/,-,,,., or some other binary operator that can only be found between two tokens in a single expression.\nIn the exceptions where a newline doesnotend a statement, a typing mistake to omit a semicolon causes two unrelated consecutive lines to be interpreted as one expression. Especially for a coding style without semicolons, readers might overlook the mistake. Although syntactically correct, the code might throw exceptions when it is executed.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

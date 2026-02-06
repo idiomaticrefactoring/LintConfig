@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-no-malloc",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/no-malloc.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check handles C-Style memory management using \nmalloc()\n, \nrealloc()\n,\n\ncalloc()\n and \nfree()\n. It warns about its use and tries to suggest the\nuse of an appropriate RAII object.\nFurthermore, it can be configured to check against a user-specified list of\nfunctions that are used for memory management (e.g. \nposix_memalign()\n).\n\nThis check implements \nR.10\n\nfrom the C++ Core Guidelines.\n\nThere is no attempt made to provide fix-it hints, since manual resource\nmanagement isnât easily transformed automatically into RAII.\n\n// Warns each of the following lines.\n\n\n// Containers like std::vector or std::string should be used.\n\n\nchar\n*\n \nsome_string\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nsizeof\n(\nchar\n)\n \n*\n \n20\n);\n\n\nchar\n*\n \nsome_string\n \n=\n \n(\nchar\n*\n)\n \nrealloc\n(\nsizeof\n(\nchar\n)\n \n*\n \n30\n);\n\n\nfree\n(\nsome_string\n);\n\n\n\nint\n*\n \nint_array\n \n=\n \n(\nint\n*\n)\n \ncalloc\n(\n30\n,\n \nsizeof\n(\nint\n));\n\n\n\n// Rather use a smartpointer or stack variable.\n\n\nstruct\n \nsome_struct\n*\n \ns\n \n=\n \n(\nstruct\n \nsome_struct\n*\n)\n \nmalloc\n(\nsizeof\n(\nstruct\n \nsome_struct\n));\n\nOptions\nÂ¶\n\n\n\n\n\n\nAllocations\nÂ¶\n\n\nSemicolon-separated list of fully qualified names of memory allocation functions.\nDefaults to \n::malloc;::calloc\n.\n\n\n\n\n\n\n\n\nDeallocations\nÂ¶\n\n\nSemicolon-separated list of fully qualified names of memory allocation functions.\nDefaults to \n::free\n.\n\n\n\n\n\n\n\n\nReallocations\nÂ¶\n\n\nSemicolon-separated list of fully qualified names of memory allocation functions.\nDefaults to \n::realloc\n.",
+    "configurations": []
+  }
+}

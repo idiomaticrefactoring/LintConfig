@@ -1,0 +1,9 @@
+{
+  "name": "Style/DefWithParentheses",
+  "full_description": "Use def with parentheses when there are arguments.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#method-parens",
+  "is_safe": true,
+  "parameters": []
+}

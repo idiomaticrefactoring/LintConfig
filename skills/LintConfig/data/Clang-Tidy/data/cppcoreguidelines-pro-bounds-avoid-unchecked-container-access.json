@@ -1,0 +1,11 @@
+{
+  "name": "cppcoreguidelines-pro-bounds-avoid-unchecked-container-access",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-avoid-unchecked-container-access.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds calls to \noperator[]\n in STL containers and suggests replacing them\nwith safe alternatives.\nSafe alternatives include STL \nat\n or GSL \nat\n functions, \nbegin()\n or\n\nend()\n functions, \nrange-for\n loops, \nstd::span\n, or an appropriate\nfunction from \n<algorithms>\n.\n\nFor example, both\n\nstd\n::\nvector\n<\nint\n>\n \na\n;\n\n\nint\n \nb\n \n=\n \na\n[\n4\n];\n\nand\n\nstd\n::\nunique_ptr\n<\nvector\n>\n \na\n;\n\n\nint\n \nb\n \n=\n \na\n[\n0\n];\n\nwill generate a warning.\n\nSTL containers for which \noperator[]\n is well-defined for all inputs are\nexcluded from this check (e.g.: \nstd::map::operator[]\n).\n\nThis check enforces part of the \nSL.con.3\n\nguideline and is part of the \nBounds Safety (Bounds 4)\n\nprofile from the C++ Core Guidelines.\n\nOptions\nÂ¶\n\n\n\n\n\n\nExcludeClasses\nÂ¶\n\n\nSemicolon-separated list of regular expressions matching class names that\noverwrites the default exclusion list. The default is:\n\n::std::map;::std::unordered_map;::std::flat_map\n.\n\n\n\n\n\n\n\n\nFixMode\nÂ¶\n\n\nDetermines what fixes are suggested. Either \nnone\n, \nat\n (use\n\na.at(index)\n if a fitting function exists) or \nfunction\n (use a\nfunction \nf(a,\n \nindex)\n). The default is \nnone\n.\n\n\n\n\n\n\n\n\nFixFunction\nÂ¶\n\n\nThe function to use in the \nfunction\n mode. For C++23 and beyond, the\npassed function must support the empty subscript operator, i.e., the case\nwhere \na[]\n becomes \nf(a)\n. \nFixFunctionEmptyArgs\n can be\nused to override the suggested function in that case. The default is \ngsl::at\n.\n\n\n\n\n\n\n\n\nFixFunctionEmptyArgs\nÂ¶\n\n\nThe function to use in the \nfunction\n mode for the empty subscript operator\ncase in C++23 and beyond only. If no fixes should be made for empty\nsubscript operators, pass an empty string. In that case, only the warnings\nwill be printed. The default is the value of \nFixFunction\n.",
+    "configurations": []
+  }
+}

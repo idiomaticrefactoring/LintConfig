@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-nondeterministic-pointer-iteration-order",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/nondeterministic-pointer-iteration-order.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds nondeterministic usages of pointers in unordered containers.\n\nOne canonical example is iteration across a container of pointers.\n\n{\n\n\n  \nint\n \na\n \n=\n \n1\n,\n \nb\n \n=\n \n2\n;\n\n\n  \nstd\n::\nunordered_set\n<\nint\n \n*>\n \nUnorderedPtrSet\n \n=\n \n{\n&\na\n,\n \n&\nb\n};\n\n\n  \nfor\n \n(\nauto\n \ni\n \n:\n \nUnorderedPtrSet\n)\n\n\n    \nf\n(\ni\n);\n\n\n}\n\nAnother such example is sorting a container of pointers.\n\n{\n\n\n  \nint\n \na\n \n=\n \n1\n,\n \nb\n \n=\n \n2\n;\n\n\n  \nstd\n::\nvector\n<\nint\n \n*>\n \nVectorOfPtr\n \n=\n \n{\n&\na\n,\n \n&\nb\n};\n\n\n  \nstd\n::\nsort\n(\nVectorOfPtr\n.\nbegin\n(),\n \nVectorOfPtr\n.\nend\n());\n\n\n}\n\nIteration of a containers of pointers may present the order of different\npointers differently across different runs of a program. In some cases this\nmay be acceptable behavior, in others this may be unexpected behavior. This\ncheck is advisory for this reason.\n\nThis check only detects range-based for loops over unordered sets and maps. It\nalso detects calls sorting-like algorithms on containers holding pointers.\nOther similar usages will not be found and are false negatives.\n\nLimitations\nÂ¶\n\n\n\n\nThis check currently does not check if a nondeterministic iteration order is\nlikely to be a mistake, and instead marks all such iterations as bugprone.\n\n\nstd::reference_wrapper is not considered yet.\n\n\nOnly for loops are considered, other iterators can be included in\nimprovements.",
+    "configurations": []
+  }
+}

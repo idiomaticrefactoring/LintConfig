@@ -1,0 +1,22 @@
+{
+  "name": "useErrorCause",
+  "group": "nursery",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-error-cause",
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "fix_type": null,
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'nursery' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

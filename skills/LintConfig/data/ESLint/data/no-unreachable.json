@@ -1,0 +1,23 @@
+{
+  "name": "no-unreachable",
+  "meta": {
+    "description": "Disallow unreachable code after return, throw, continue, and break statements",
+    "url": "https://eslint.org/docs/latest/rules/no-unreachable",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unreachable code afterreturn,throw,continue, andbreakstatements\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsHandled by TypeScriptVersionResources\nBecause thereturn,throw,continue, andbreakstatements unconditionally exit a block of code, any statements after them cannot be executed. Unreachable statements are usually a mistake.\nfunctionfn(){x=1;returnx;x=3;// this will never execute}12345Copy code to clipboard\nAnother kind of mistake is defining instance fields in a subclass whose constructor doesn’t callsuper(). Instance fields of a subclass are only added to the instance aftersuper(). If there are nosuper()calls, their definitions are never applied and therefore are unreachable code.\nclassCextendsB{#x;// this will never be added to instancesconstructor(){return{};}}1234567Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

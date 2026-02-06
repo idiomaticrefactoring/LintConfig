@@ -1,0 +1,23 @@
+{
+  "name": "max-classes-per-file",
+  "meta": {
+    "description": "Enforce a maximum number of classes per file",
+    "url": "https://eslint.org/docs/latest/rules/max-classes-per-file",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforce a maximum number of classes per file\nTable of ContentsRule DetailsOptionsVersionResources\nFiles containing multiple classes can often result in a less navigable\nand poorly structured codebase. Best practice is to keep each file\nlimited to a single responsibility.",
+    "sub_configuration_introduction": "This rule may be configured with either an object or a number.\nIf the option is an object, it may contain one or both of:\nignoreExpressions: a boolean option (defaulted tofalse) to ignore class expressions.max: a numeric option (defaulted to 1) to specify the maximum number of classes.\nFor example:\nExamples ofcorrectcode for this rule with themaxoption set to2:\nExamples ofcorrectcode for this rule with theignoreExpressionsoption set totrue:",
+    "config_examples": []
+  }
+}

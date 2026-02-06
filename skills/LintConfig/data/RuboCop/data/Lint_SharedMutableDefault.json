@@ -1,0 +1,9 @@
+{
+  "name": "Lint/SharedMutableDefault",
+  "full_description": "Checks for mutable literals used as default arguments during Hash initialization.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#no-mutable-defaults",
+  "is_safe": true,
+  "parameters": []
+}

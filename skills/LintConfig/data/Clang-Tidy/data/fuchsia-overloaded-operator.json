@@ -1,0 +1,11 @@
+{
+  "name": "fuchsia-overloaded-operator",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/overloaded-operator.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns if an operator is overloaded, except for the assignment (copy and move)\noperators.\n\nFor example:\n\nint\n \noperator\n+\n(\nint\n);\n     \n// Warning\n\n\n\nB\n \n&\noperator\n=\n(\nconst\n \nB\n \n&\nOther\n);\n  \n// No warning\n\n\nB\n \n&\noperator\n=\n(\nB\n \n&&\nOther\n)\n \n// No warning\n\nSee the features disallowed in Fuchsia at \nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+    "configurations": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Style/RedundantFetchBlock",
+  "full_description": "Use `fetch(key, value)` instead of `fetch(key) { value }` when value has Numeric, Rational, Complex, Symbol or String type, `false`, `true`, `nil` or is a constant.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://github.com/fastruby/fast-ruby#hashfetch-with-argument-vs-hashfetch--block-code"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "SafeForConstants",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

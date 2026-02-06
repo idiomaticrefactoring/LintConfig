@@ -1,0 +1,9 @@
+{
+  "name": "Style/AmbiguousEndlessMethodDefinition",
+  "full_description": "Checks for endless methods inside operators of lower precedence.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#ambiguous-endless-method-definitions",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-string-constructor",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/string-constructor.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds string constructors that are suspicious and probably errors.\n\nA common mistake is to swap parameters to the âfillâ string-constructor.\n\nExamples:\n\nstd\n::\nstring\n \nstr\n(\n'x'\n,\n \n50\n);\n \n// should be str(50, 'x')\n\nCalling the string-literal constructor with a length bigger than the literal is\nsuspicious and adds extra random characters to the string.\n\nExamples:\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n200\n);\n   \n// Will include random characters after \"test\".\n\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n2\n,\n \n5\n);\n  \n// Will include random characters after \"st\".\n\n\nstd\n::\nstring_view\n(\n\"test\"\n,\n \n200\n);\n\nCreating an empty string from constructors with parameters is considered\nsuspicious. The programmer should use the empty constructor instead.\n\nExamples:\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n0\n);\n   \n// Creation of an empty string.\n\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n1\n,\n \n0\n);\n\n\nstd\n::\nstring_view\n(\n\"test\"\n,\n \n0\n);\n\nPassing an invalid first character position parameter to constructor will\ncause \nstd::out_of_range\n exception at runtime.\n\nExamples:\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n-1\n,\n \n10\n);\n \n// Negative first character position.\n\n\nstd\n::\nstring\n(\n\"test\"\n,\n \n10\n,\n \n10\n);\n \n// First character position is bigger than string literal character range\".\n\nOptions\nÂ¶\n\n\n\n\n\n\nWarnOnLargeLength\nÂ¶\n\n\nWhen \ntrue\n, the check will warn on a string with a length greater than\n\nLargeLengthThreshold\n. Default is \ntrue\n.\n\n\n\n\n\n\n\n\nLargeLengthThreshold\nÂ¶\n\n\nAn integer specifying the large length threshold. Default is \n0x800000\n.\n\n\n\n\n\n\n\n\nStringNames\nÂ¶\n\n\nDefault is \n::std::basic_string;::std::basic_string_view\n.\n\n\nSemicolon-delimited list of class names to apply this check to.\nBy default \n::std::basic_string\n applies to \nstd::string\n and\n\nstd::wstring\n. Set to e.g. \n::std::basic_string;llvm::StringRef;QString\n\nto perform this check on custom classes.",
+    "configurations": []
+  }
+}

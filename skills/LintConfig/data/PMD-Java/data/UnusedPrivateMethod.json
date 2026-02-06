@@ -1,0 +1,12 @@
+{
+    "name": "UnusedPrivateMethod",
+    "category": "bestpractices",
+    "summary": "Unused Private Method detects when a private method is declared but is unused.",
+    "message": "Avoid unused private methods such as ''{0}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#unusedprivatemethod",
+    "since": "0.7",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Something {\nprivate void foo() {} // unused\n}"
+}

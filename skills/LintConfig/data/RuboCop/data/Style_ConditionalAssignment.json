@@ -1,0 +1,33 @@
+{
+  "name": "Style/ConditionalAssignment",
+  "full_description": "Use the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "assign_to_condition",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "assign_to_condition",
+        "assign_inside_condition"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "SingleLineConditionsOnly",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "IncludeTernaryExpressions",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

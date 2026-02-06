@@ -1,0 +1,16 @@
+{
+    "name": "clarifyStatement",
+    "meta": {
+        "severity": "warning",
+        "cwe": "783",
+        "url": "https://cwe.mitre.org/data/definitions/783.html"
+    },
+    "content": {
+        "introduction": "A statement like '*A++;' might not do what you intended. Postfix 'operator++' is executed before 'operator*'. Thus, the dereference is meaningless. Did you intend to write '(*A)++;'?",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "783",
+            "inconclusive": false
+        }
+    }
+}

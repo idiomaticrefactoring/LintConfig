@@ -1,0 +1,19 @@
+{
+    "name": "uselessOverride",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "The function '' overrides a function in a base class but just delegates back to the base class.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                null
+            ]
+        }
+    }
+}

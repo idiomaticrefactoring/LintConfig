@@ -1,0 +1,9 @@
+{
+  "name": "Style/CommentedKeyword",
+  "full_description": "Do not place comments on the same line as certain keywords.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

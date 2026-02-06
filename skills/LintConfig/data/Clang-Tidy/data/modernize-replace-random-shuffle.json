@@ -1,0 +1,11 @@
+{
+  "name": "modernize-replace-random-shuffle",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/replace-random-shuffle.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check will find occurrences of \nstd::random_shuffle\n and replace it with\n\nstd::shuffle\n. In C++17 \nstd::random_shuffle\n will no longer be available\nand thus we need to replace it.\n\nBelow are two examples of what kind of occurrences will be found and two\nexamples of what it will be replaced with.\n\nstd\n::\nvector\n<\nint\n>\n \nv\n;\n\n\n\n// First example\n\n\nstd\n::\nrandom_shuffle\n(\nvec\n.\nbegin\n(),\n \nvec\n.\nend\n());\n\n\n\n// Second example\n\n\nstd\n::\nrandom_shuffle\n(\nvec\n.\nbegin\n(),\n \nvec\n.\nend\n(),\n \nrandomFunc\n);\n\nBoth of these examples will be replaced with:\n\nstd\n::\nshuffle\n(\nvec\n.\nbegin\n(),\n \nvec\n.\nend\n(),\n \nstd\n::\nmt19937\n(\nstd\n::\nrandom_device\n()()));\n\nThe second example will also receive a warning that \nrandomFunc\n is no longer\nsupported in the same way as before so if the user wants the same\nfunctionality, the user will need to change the implementation of the\n\nrandomFunc\n.\n\nOne thing to be aware of here is that \nstd::random_device\n is quite expensive\nto initialize. So if you are using the code in a performance critical place,\nyou probably want to initialize it elsewhere.\n\nAnother thing is that the seeding quality of the suggested fix is quite poor:\n\nstd::mt19937\n has an internal state of 624 32-bit integers, but is only\nseeded with a single integer. So if you require\nhigher quality randomness, you should consider seeding better, for example:\n\nstd\n::\nshuffle\n(\nv\n.\nbegin\n(),\n \nv\n.\nend\n(),\n \n[]()\n \n{\n\n\n  \nstd\n::\nmt19937\n::\nresult_type\n \nseeds\n[\nstd\n::\nmt19937\n::\nstate_size\n];\n\n\n  \nstd\n::\nrandom_device\n \ndevice\n;\n\n\n  \nstd\n::\nuniform_int_distribution\n<\ntypename\n \nstd\n::\nmt19937\n::\nresult_type\n>\n \ndist\n;\n\n\n  \nstd\n::\ngenerate\n(\nstd\n::\nbegin\n(\nseeds\n),\n \nstd\n::\nend\n(\nseeds\n),\n \n[\n&\n]\n \n{\n \nreturn\n \ndist\n(\ndevice\n);\n \n});\n\n\n  \nstd\n::\nseed_seq\n \nseq\n(\nstd\n::\nbegin\n(\nseeds\n),\n \nstd\n::\nend\n(\nseeds\n));\n\n\n  \nreturn\n \nstd\n::\nmt19937\n(\nseq\n);\n\n\n}());",
+    "configurations": []
+  }
+}

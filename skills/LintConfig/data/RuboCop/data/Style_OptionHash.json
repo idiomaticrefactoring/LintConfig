@@ -1,0 +1,26 @@
+{
+  "name": "Style/OptionHash",
+  "full_description": "Don't use option hashes when you can use keyword arguments.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "#keyword-arguments-vs-option-hashes",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "SuspiciousParamNames",
+      "default_value": [
+        "options",
+        "opts",
+        "args",
+        "params",
+        "parameters"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "Allowlist",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

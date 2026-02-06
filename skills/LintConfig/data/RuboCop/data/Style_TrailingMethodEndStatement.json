@@ -1,0 +1,9 @@
+{
+  "name": "Style/TrailingMethodEndStatement",
+  "full_description": "Checks for trailing end statement on line of method body.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

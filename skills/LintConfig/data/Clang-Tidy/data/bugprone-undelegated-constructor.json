@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-undelegated-constructor",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/undelegated-constructor.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds creation of temporary objects in constructors that look like a\nfunction call to another constructor of the same class.\n\nThe user most likely meant to use a delegating constructor or base class\ninitializer.",
+    "configurations": []
+  }
+}

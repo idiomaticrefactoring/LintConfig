@@ -1,0 +1,16 @@
+{
+    "name": "multiplySizeof",
+    "meta": {
+        "severity": "warning",
+        "cwe": "682",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "content": {
+        "introduction": "Multiplying sizeof() with sizeof() indicates a logic error.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "682",
+            "inconclusive": true
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Style/FormatStringToken",
+  "full_description": "Use a consistent style for format string tokens.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "annotated",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "annotated",
+        "template",
+        "unannotated"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "MaxUnannotatedPlaceholdersAllowed",
+      "default_value": 1,
+      "type": "int"
+    },
+    {
+      "parameter_name": "Mode",
+      "default_value": "aggressive",
+      "type": "str"
+    },
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

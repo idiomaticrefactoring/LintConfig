@@ -1,0 +1,12 @@
+{
+    "name": "StringBufferInstantiationWithChar",
+    "category": "errorprone",
+    "summary": "Individual character values provided as initialization arguments will be converted into integers.\nThis can lead to internal buffer sizes that are larger than expected. Some examples:\n\n```\nnew StringBuffer()      //  16\nnew StringBuffer(6)     //  6\nnew StringBuffer(\"hello world\")  // 11 + 16 = 27\nnew StringBuffer('A')   //  chr(A) = 65\nnew StringBuffer(\"A\")   //  1 + 16 = 17\n\nnew StringBuilder()     //  16\nnew StringBuilder(6)    //  6\nnew StringBuilder(\"hello world\")  // 11 + 16 = 27\nnew StringBuilder('C')   //  chr(C) = 67\nnew StringBuilder(\"A\")   //  1 + 16 = 17\n```",
+    "message": "Argument to `new StringBuilder()` or `new StringBuffer()` is implicitly converted from char to int",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#stringbufferinstantiationwithchar",
+    "since": "3.9",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// misleading instantiation, these buffers\n// are actually sized to 99 characters long\nStringBuffer  sb1 = new StringBuffer('c');\nStringBuilder sb2 = new StringBuilder('c');\n\n// in these forms, just single characters are allocated\nStringBuffer  sb3 = new StringBuffer(\"c\");\nStringBuilder sb4 = new StringBuilder(\"c\");"
+}

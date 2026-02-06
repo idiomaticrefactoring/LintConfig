@@ -1,0 +1,23 @@
+{
+  "name": "default-case",
+  "meta": {
+    "description": "Require default cases in switch statements",
+    "url": "https://eslint.org/docs/latest/rules/default-case",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Requiredefaultcases inswitchstatements\nTable of ContentsRule DetailsOptionscommentPatternWhen Not To Use ItRelated RulesVersionResources\nSome code conventions require that allswitchstatements have adefaultcase, even if the default case is empty, such as:\nswitch(foo){case1:doSomething();break;case2:doSomething();break;default:// do nothing}123456789101112Copy code to clipboard\nThe thinking is that it’s better to always explicitly state what the default behavior should be so that it’s clear whether or not the developer forgot to include the default behavior by mistake.\nOther code conventions allow you to skip thedefaultcase so long as there is a comment indicating the omission is intentional, such as:\nswitch(foo){case1:doSomething();break;case2:doSomething();break;// no default}1234567891011Copy code to clipboard\nOnce again, the intent here is to show that the developer intended for there to be no default behavior.",
+    "sub_configuration_introduction": "This rule accepts a single options argument:\nSet thecommentPatternoption to a regular expression string to change the default/^no default$/icomment test pattern.\nExamples ofcorrectcode for the{ \"commentPattern\": \"^skip\\\\sdefault\" }option:",
+    "config_examples": []
+  }
+}

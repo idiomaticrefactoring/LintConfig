@@ -1,0 +1,22 @@
+{
+  "name": "Gemspec/RequireMFA",
+  "full_description": "Checks that the gemspec has metadata to require Multi-Factor Authentication from RubyGems.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "Severity",
+      "default_value": "warning",
+      "type": "str"
+    },
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://guides.rubygems.org/mfa-requirement-opt-in/"
+      ],
+      "type": "list"
+    }
+  ]
+}

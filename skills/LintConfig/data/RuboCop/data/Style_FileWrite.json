@@ -1,0 +1,9 @@
+{
+  "name": "Style/FileWrite",
+  "full_description": "Favor `File.(bin)write` convenience methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#file-write",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Lint/AmbiguousBlockAssociation",
+  "full_description": "Checks for ambiguous block association with method when param passed without parentheses.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "AllowedMethods",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

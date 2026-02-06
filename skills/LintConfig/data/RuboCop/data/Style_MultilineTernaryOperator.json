@@ -1,0 +1,9 @@
+{
+  "name": "Style/MultilineTernaryOperator",
+  "full_description": "Avoid multi-line ?: (the ternary operator); use if/unless instead.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#no-multiline-ternary",
+  "is_safe": true,
+  "parameters": []
+}

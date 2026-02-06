@@ -1,0 +1,12 @@
+{
+    "name": "UseNotifyAllInsteadOfNotify",
+    "category": "multithreading",
+    "summary": "Thread.notify() awakens a thread monitoring the object. If more than one thread is monitoring, then only\none is chosen.  The thread chosen is arbitrary; thus it's usually safer to call notifyAll() instead.",
+    "message": "Call Thread.notifyAll() rather than Thread.notify()",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#usenotifyallinsteadofnotify",
+    "since": "3.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "void bar() {\nx.notify();\n// If many threads are monitoring x, only one (and you won't know which) will be notified.\n// use instead:\nx.notifyAll();\n}"
+}

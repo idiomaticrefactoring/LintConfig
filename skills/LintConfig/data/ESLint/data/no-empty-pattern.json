@@ -1,0 +1,23 @@
+{
+  "name": "no-empty-pattern",
+  "meta": {
+    "description": "Disallow empty destructuring patterns",
+    "url": "https://eslint.org/docs/latest/rules/no-empty-pattern",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow empty destructuring patterns\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionsallowObjectPatternsAsParametersVersionResources\nWhen using destructuring, it’s possible to create a pattern that has no effect. This happens when empty curly braces are used to the right of an embedded object destructuring pattern, such as:\n// doesn't create any variablesconst{a:{}}=foo;12Copy code to clipboard\nIn this code, no new variables are created becauseais just a location helper while the{}is expected to contain the variables to create, such as:\n// creates variable bconst{a:{b}}=foo;12Copy code to clipboard\nIn many cases, the empty object pattern is a mistake where the author intended to use a default value instead, such as:\n// creates variable aconst{a={}}=foo;12Copy code to clipboard\nThe difference between these two patterns is subtle, especially because the problematic empty pattern looks just like an object literal.",
+    "sub_configuration_introduction": "This rule has an object option for exceptions:\nSet tofalseby default. Setting this option totrueallows empty object patterns as function parameters.\nNote:This rule doesn’t allow empty array patterns as function parameters.\nExamples ofincorrectcode for this rule with the{\"allowObjectPatternsAsParameters\": true}option:\nExamples ofcorrectcode for this rule with the{\"allowObjectPatternsAsParameters\": true}option:",
+    "config_examples": []
+  }
+}

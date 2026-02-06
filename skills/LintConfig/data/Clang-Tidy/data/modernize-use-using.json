@@ -1,0 +1,11 @@
+{
+  "name": "modernize-use-using",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-using.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The check converts the usage of \ntypedef\n with \nusing\n keyword.\n\nBefore:\n\ntypedef\n \nint\n \nvariable\n;\n\n\n\nclass\n \nClass\n{};\n\n\ntypedef\n \nvoid\n \n(\nClass\n::*\n \nMyPtrType\n)()\n \nconst\n;\n\n\n\ntypedef\n \nstruct\n \n{\n \nint\n \na\n;\n \n}\n \nR_t\n,\n \n*\nR_p\n;\n\nAfter:\n\nusing\n \nvariable\n \n=\n \nint\n;\n\n\n\nclass\n \nClass\n{};\n\n\nusing\n \nMyPtrType\n \n=\n \nvoid\n \n(\nClass\n::*\n)()\n \nconst\n;\n\n\n\nusing\n \nR_t\n \n=\n \nstruct\n \n{\n \nint\n \na\n;\n \n};\n\n\nusing\n \nR_p\n \n=\n \nR_t\n*\n;\n\nThe checker ignores \ntypedef\n within \nextern âCâ { â¦ }\n blocks.\n\nextern\n \n\"C\"\n \n{\n\n\n  \ntypedef\n \nint\n \nInExternC\n;\n \n// Left intact.\n\n\n}\n\nThis check requires using C++11 or higher to run.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIgnoreMacros\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warnings inside macros. Default\nis \ntrue\n.\n\n\n\n\n\n\n\n\nIgnoreExternC\nÂ¶\n\n\nIf set to \ntrue\n, the check will not give warning inside \nextern\n \n\"C\"\n\nscope. Default is \nfalse",
+    "configurations": []
+  }
+}

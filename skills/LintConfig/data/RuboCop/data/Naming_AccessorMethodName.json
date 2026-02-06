@@ -1,0 +1,9 @@
+{
+  "name": "Naming/AccessorMethodName",
+  "full_description": "Checks the naming of accessor methods for get_/set_.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#accessor_mutator_method_names",
+  "is_safe": true,
+  "parameters": []
+}

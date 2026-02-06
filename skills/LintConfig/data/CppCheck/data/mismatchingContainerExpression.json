@@ -1,0 +1,16 @@
+{
+    "name": "mismatchingContainerExpression",
+    "meta": {
+        "severity": "warning",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Iterators to containers from different expressions 'v1' and 'v2' are used together.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

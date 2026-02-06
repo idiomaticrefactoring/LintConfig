@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-unique-ptr-array-mismatch",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unique-ptr-array-mismatch.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds initializations of C++ unique pointers to non-array type that are\ninitialized with an array.\n\nIf a pointer \nstd::unique_ptr<T>\n is initialized with a new-expression\n\nnew\n \nT[]\n the memory is not deallocated correctly. A plain \ndelete\n is used\nin this case to deallocate the target memory. Instead a \ndelete[]\n call is\nneeded. A \nstd::unique_ptr<T[]>\n uses the correct delete operator. The check\ndoes not emit warning if an \nunique_ptr\n with user-specified deleter type is\nused.\n\nThe check offers replacement of \nunique_ptr<T>\n to \nunique_ptr<T[]>\n if it\nis used at a single variable declaration (one variable in one statement).\n\nExample:\n\nstd\n::\nunique_ptr\n<\nFoo\n>\n \nx\n(\nnew\n \nFoo\n[\n10\n]);\n \n// -> std::unique_ptr<Foo[]> x(new Foo[10]);\n\n\n//                     ^ warning: unique pointer to non-array is initialized with array\n\n\nstd\n::\nunique_ptr\n<\nFoo\n>\n \nx1\n(\nnew\n \nFoo\n),\n \nx2\n(\nnew\n \nFoo\n[\n10\n]);\n \n// no replacement\n\n\n//                                   ^ warning: unique pointer to non-array is initialized with array\n\n\n\nD\n \nd\n;\n\n\nstd\n::\nunique_ptr\n<\nFoo\n,\n \nD\n>\n \nx3\n(\nnew\n \nFoo\n[\n10\n],\n \nd\n);\n \n// no warning (custom deleter used)\n\n\n\nstruct\n \nS\n \n{\n\n\n  \nstd\n::\nunique_ptr\n<\nFoo\n>\n \nx\n(\nnew\n \nFoo\n[\n10\n]);\n \n// no replacement in this case\n\n\n  \n//                     ^ warning: unique pointer to non-array is initialized with array\n\n\n};\n\nThis check partially covers the CERT C++ Coding Standard rule\n\nMEM51-CPP. Properly deallocate dynamically allocated resources\n\nHowever, only the \nstd::unique_ptr\n case is detected by this check.",
+    "configurations": []
+  }
+}

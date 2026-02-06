@@ -1,0 +1,23 @@
+{
+  "name": "no-lone-blocks",
+  "meta": {
+    "description": "Disallow unnecessary nested blocks",
+    "url": "https://eslint.org/docs/latest/rules/no-lone-blocks",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow unnecessary nested blocks\nTable of ContentsRule DetailsVersionResources\nIn JavaScript, prior to ES6, standalone code blocks delimited by curly braces do not create a new scope and have no use. For example, these curly braces do nothing tofoo:\n{varfoo=bar();}123Copy code to clipboard\nIn ES6, code blocks may create a new scope if a block-level binding (letandconst), a class declaration or a function declaration (in strict mode) are present. A block is not considered redundant in these cases.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

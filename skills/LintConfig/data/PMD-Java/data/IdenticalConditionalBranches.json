@@ -1,0 +1,12 @@
+{
+    "name": "IdenticalConditionalBranches",
+    "category": "errorprone",
+    "summary": "Conditional statement that does the same thing when the condition is true and false\nis either incorrect (one of the branches should be changed) or redundant\n(can be replaced by one of its branches).",
+    "message": "Conditional statement ignores the condition",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#identicalconditionalbranches",
+    "since": "7.18.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "class Test {\nint method1() {\nif (Math.random() > 0.5) {\nreturn 1;\n} else {\nreturn 1;\n}\n}\nint method2() {\nreturn Math.random() > 0.5 ? 1 : 1;\n}\n}"
+}

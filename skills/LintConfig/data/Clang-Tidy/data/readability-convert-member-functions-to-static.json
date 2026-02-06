@@ -1,0 +1,11 @@
+{
+  "name": "readability-convert-member-functions-to-static",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/convert-member-functions-to-static.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds non-static member functions that can be made \nstatic\n\nbecause the functions donât use \nthis\n.\n\nAfter applying modifications as suggested by the check, running the check again\nmight find more opportunities to mark member functions \nstatic\n.\n\nAfter making a member function \nstatic\n, you might want to run the check\n\nreadability-static-accessed-through-instance\n to replace calls like\n\nInstance.method()\n by \nClass::method()\n.",
+    "configurations": []
+  }
+}

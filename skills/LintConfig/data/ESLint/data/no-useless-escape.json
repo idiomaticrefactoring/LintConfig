@@ -1,0 +1,23 @@
+{
+  "name": "no-useless-escape",
+  "meta": {
+    "description": "Disallow unnecessary escape characters",
+    "url": "https://eslint.org/docs/latest/rules/no-useless-escape",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Disallow unnecessary escape characters\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions\nTable of ContentsRule DetailsOptionsallowRegexCharactersWhen Not To Use ItVersionResources\nEscaping non-special characters in strings, template literals, and regular expressions doesn’t have any effect, as demonstrated in the following example:\nletfoo=\"hol\\a\";// > foo = \"hola\"letbar=`${foo}\\!`;// > bar = \"hola!\"letbaz=/\\:/// same functionality with /:/123Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an object option:\nallowRegexCharacters- An array of characters that should be allowed to have unnecessary escapes in regular expressions. This is useful for characters like-where escaping can prevent accidental character ranges. For example, in/[0\\-]/, the escape is technically unnecessary but helps prevent the pattern from becoming a range if another character is added later (e.g.,/[0\\-9]/vs/[0-9]/).\nExamples ofincorrectcode for the{ \"allowRegexCharacters\": [\"-\"] }option:\nExamples ofcorrectcode for the{ \"allowRegexCharacters\": [\"-\"] }option:",
+    "config_examples": []
+  }
+}

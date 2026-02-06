@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-suspicious-realloc-usage",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-realloc-usage.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check finds usages of \nrealloc\n where the return value is assigned to\nthe same expression as passed to the first argument:\n\np\n \n=\n \nrealloc(p,\n \nsize);\n\nThe problem with this construct is that if \nrealloc\n fails it returns a\nnull pointer but does not deallocate the original memory. If no other variable\nis pointing to it, the original memory block is not available any more for the\nprogram to use or free. In either case \np\n \n=\n \nrealloc(p,\n \nsize);\n indicates bad\ncoding style and can be replaced by \nq\n \n=\n \nrealloc(p,\n \nsize);\n.\n\nThe pointer expression (used at \nrealloc\n) can be a variable or a field\nmember of a data structure, but can not contain function calls or unresolved\ntypes.\n\nIn obvious cases when the pointer used at realloc is assigned to another\nvariable before the \nrealloc\n call, no warning is emitted. This happens only\nif a simple expression in form of \nq\n \n=\n \np\n or \nvoid\n \n*q\n \n=\n \np\n is found in the\nsame function where \np\n \n=\n \nrealloc(p,\n \n...)\n is found. The assignment has to be\nbefore the call to realloc (but otherwise at any place) in the same function.\nThis suppression works only if \np\n is a single variable.\n\nExamples:\n\nstruct\n \nA\n \n{\n\n\n  \nvoid\n \n*\np\n;\n\n\n};\n\n\n\nA\n \n&\ngetA\n();\n\n\n\nvoid\n \nfoo\n(\nvoid\n \n*\np\n,\n \nA\n \n*\na\n,\n \nint\n \nnew_size\n)\n \n{\n\n\n  \np\n \n=\n \nrealloc\n(\np\n,\n \nnew_size\n);\n \n// warning: 'p' may be set to null if 'realloc' fails, which may result in a leak of the original buffer\n\n\n  \na\n->\np\n \n=\n \nrealloc\n(\na\n->\np\n,\n \nnew_size\n);\n \n// warning: 'a->p' may be set to null if 'realloc' fails, which may result in a leak of the original buffer\n\n\n  \ngetA\n().\np\n \n=\n \nrealloc\n(\ngetA\n().\np\n,\n \nnew_size\n);\n \n// no warning\n\n\n}\n\n\n\nvoid\n \nfoo1\n(\nvoid\n \n*\np\n,\n \nint\n \nnew_size\n)\n \n{\n\n\n  \nvoid\n \n*\np1\n \n=\n \np\n;\n\n\n  \np\n \n=\n \nrealloc\n(\np\n,\n \nnew_size\n);\n \n// no warning\n\n\n}",
+    "configurations": []
+  }
+}

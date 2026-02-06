@@ -1,0 +1,11 @@
+{
+  "name": "modernize-min-max-use-initializer-list",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/min-max-use-initializer-list.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Replaces nested \nstd::min\n and \nstd::max\n calls with an initializer list\nwhere applicable.\n\nFor instance, consider the following code:\n\nint\n \na\n \n=\n \nstd\n::\nmax\n(\nstd\n::\nmax\n(\ni\n,\n \nj\n),\n \nk\n);\n\nThe check will transform the above code to:\n\nint\n \na\n \n=\n \nstd\n::\nmax\n({\ni\n,\n \nj\n,\n \nk\n});",
+    "configurations": []
+  }
+}

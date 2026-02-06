@@ -1,0 +1,23 @@
+{
+  "name": "max-params",
+  "meta": {
+    "description": "Enforce a maximum number of parameters in function definitions",
+    "url": "https://eslint.org/docs/latest/rules/max-params",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Enforce a maximum number of parameters in function definitions\nTable of ContentsRule DetailsOptionsmaxcountVoidThis (TypeScript only)Related RulesVersionResources\nFunctions that take numerous parameters can be difficult to read and write because it requires the memorization of what each parameter is, its type, and the order they should appear in. As a result, many coders adhere to a convention that caps the number of parameters a function can take.\nfunctionfoo(bar,baz,qux,qxx){// four parameters, may be too manydoSomething();}123Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has a number or object option:\n\"max\"(default3) enforces a maximum number of parameters in function definitions\"countVoidThis\"(defaultfalse) counts athisdeclaration when the type isvoid(TypeScript only)\nDeprecated:The object propertymaximumis deprecated; please use the object propertymaxinstead.\nExamples ofincorrectcode for this rule with the default{ \"max\": 3 }option:\nExamples ofcorrectcode for this rule with the default{ \"max\": 3 }option:\nThis rule has a TypeScript-specific optioncountVoidThisthat allows you to count athisdeclaration when the type isvoid.\nExamples ofcorrectTypeScript code for this rule with the default{ \"countVoidThis\": false }option:\nExamples ofincorrectTypeScript code for this rule with the default{ \"countVoidThis\": false }option:\nExamples ofcorrectTypeScript code for this rule with the{ \"countVoidThis\": true }option:\nExamples ofincorrectTypeScript code for this rule with the{ \"countVoidThis\": true }option:",
+    "config_examples": []
+  }
+}

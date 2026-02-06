@@ -1,0 +1,23 @@
+{
+  "name": "default-case-last",
+  "meta": {
+    "description": "Enforce default clauses in switch statements to be last",
+    "url": "https://eslint.org/docs/latest/rules/default-case-last",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-unused-raii",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unused-raii.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds temporaries that look like RAII objects.\n\nThe canonical example for this is a scoped lock.\n\n{\n\n\n  \nscoped_lock\n(\n&\nglobal_mutex\n);\n\n\n  \ncritical_section\n();\n\n\n}\n\nThe destructor of the scoped_lock is called before the \ncritical_section\n is\nentered, leaving it unprotected.\n\nWe apply a number of heuristics to reduce the false positive count of this\ncheck:\n\nIgnore code expanded from macros. Testing frameworks make heavy use of this.\n\n\nIgnore types with trivial destructors. They are very unlikely to be RAII\nobjects and thereâs no difference when they are deleted.\n\n\nIgnore objects at the end of a compound statement (doesnât change behavior).\n\n\nIgnore objects returned from a call.",
+    "configurations": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "AvoidDuplicateLiterals",
+    "category": "errorprone",
+    "summary": "Code containing duplicate String literals can usually be improved by declaring the String as a constant field.",
+    "message": "The String literal {0} appears {1} times in this file; the first occurrence is on line {2}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#avoidduplicateliterals",
+    "since": "1.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "private void bar() {\nbuz(\"Howdy\");\nbuz(\"Howdy\");\nbuz(\"Howdy\");\nbuz(\"Howdy\");\n}\nprivate void buz(String x) {}"
+}

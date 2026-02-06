@@ -1,0 +1,12 @@
+{
+    "name": "AvoidFileStream",
+    "category": "performance",
+    "summary": "The FileInputStream and FileOutputStream classes contains a finalizer method which will cause garbage\ncollection pauses.\nSee [JDK-8080225](https://bugs.openjdk.org/browse/JDK-8080225) for details.\n\nThe FileReader and FileWriter constructors instantiate FileInputStream and FileOutputStream,\nagain causing garbage collection issues while finalizer methods are called.\n\n* Use `Files.newInputStream(Paths.get(fileName))` instead of `new FileInputStream(fileName)`.\n* Use `Files.newOutputStream(Paths.get(fileName))` instead of `new FileOutputStream(fileName)`.\n* Use `Files.newBufferedReader(Paths.get(fileName))` instead of `new FileReader(fileName)`.\n* Use `Files.newBufferedWriter(Paths.get(fileName))` instead of `new FileWriter(fileName)`.\n\nPlease note, that the `java.nio` API does not throw a `FileNotFoundException` anymore, instead\nit throws a `NoSuchFileException`. If your code dealt explicitly with a `FileNotFoundException`,\nthen this needs to be adjusted. Both exceptions are subclasses of `IOException`, so catching\nthat one covers both.",
+    "message": "Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#avoidfilestream",
+    "since": "6.0.0",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "// these instantiations cause garbage collection pauses, even if properly closed\n\nFileInputStream fis = new FileInputStream(fileName);\nFileOutputStream fos = new FileOutputStream(fileName);\nFileReader fr = new FileReader(fileName);\nFileWriter fw = new FileWriter(fileName);\n\n// the following instantiations help prevent Garbage Collection pauses, no finalization\n\ntry(InputStream is = Files.newInputStream(Paths.get(fileName))) {\n}\ntry(OutputStream os = Files.newOutputStream(Paths.get(fileName))) {\n}\ntry(BufferedReader br = Files.newBufferedReader(Paths.get(fileName), StandardCharsets.UTF_8)) {\n}\ntry(BufferedWriter wr = Files.newBufferedWriter(Paths.get(fileName), StandardCharsets.UTF_8)) {\n}"
+}

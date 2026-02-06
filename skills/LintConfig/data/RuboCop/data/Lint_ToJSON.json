@@ -1,0 +1,9 @@
+{
+  "name": "Lint/ToJSON",
+  "full_description": "Ensure #to_json includes an optional argument.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

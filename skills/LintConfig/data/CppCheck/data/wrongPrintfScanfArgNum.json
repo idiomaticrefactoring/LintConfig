@@ -1,0 +1,16 @@
+{
+    "name": "wrongPrintfScanfArgNum",
+    "meta": {
+        "severity": "error",
+        "cwe": "685",
+        "url": "https://cwe.mitre.org/data/definitions/685.html"
+    },
+    "content": {
+        "introduction": "printf format string requires 3 parameters but only 2 are given.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "685",
+            "inconclusive": false
+        }
+    }
+}

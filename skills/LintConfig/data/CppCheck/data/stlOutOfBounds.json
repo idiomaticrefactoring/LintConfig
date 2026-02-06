@@ -1,0 +1,19 @@
+{
+    "name": "stlOutOfBounds",
+    "meta": {
+        "severity": "error",
+        "cwe": "788",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "content": {
+        "introduction": "When i==foo.size(), foo[i] is out of bounds.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "788",
+            "inconclusive": false,
+            "related_symbols_placeholder": [
+                "foo"
+            ]
+        }
+    }
+}

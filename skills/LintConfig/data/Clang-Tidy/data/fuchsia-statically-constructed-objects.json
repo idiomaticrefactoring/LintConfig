@@ -1,0 +1,11 @@
+{
+  "name": "fuchsia-statically-constructed-objects",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/statically-constructed-objects.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns if global, non-trivial objects with static storage are constructed,\nunless the object is statically initialized with a \nconstexpr\n constructor\nor has no explicit constructor.\n\nFor example:\n\nclass\n \nA\n \n{};\n\n\n\nclass\n \nB\n \n{\n\n\npublic\n:\n\n\n  \nB\n(\nint\n \nVal\n)\n \n:\n \nVal\n(\nVal\n)\n \n{}\n\n\nprivate\n:\n\n\n  \nint\n \nVal\n;\n\n\n};\n\n\n\nclass\n \nC\n \n{\n\n\npublic\n:\n\n\n  \nconstexpr\n \nC\n(\nint\n \nVal\n)\n \n:\n \nVal\n(\nVal\n)\n \n{}\n\n\n  \nC\n(\nint\n \nVal1\n,\n \nint\n \nVal2\n)\n \n:\n \nVal\n(\nVal1\n+\nVal2\n)\n \n{}\n\n\n\nprivate\n:\n\n\n  \nint\n \nVal\n;\n\n\n};\n\n\n\nstatic\n \nA\n \na\n;\n         \n// No warning, as there is no explicit constructor\n\n\nstatic\n \nC\n \nc\n(\n0\n);\n      \n// No warning, as constructor is constexpr\n\n\n\nstatic\n \nB\n \nb\n(\n0\n);\n      \n// Warning, as constructor is not constexpr\n\n\nstatic\n \nC\n \nc2\n(\n0\n,\n \n1\n);\n  \n// Warning, as constructor is not constexpr\n\n\n\nstatic\n \nint\n \ni\n;\n       \n// No warning, as it is trivial\n\n\n\nextern\n \nint\n \nget_i\n();\n\n\nstatic\n \nC\n \nc3\n(\nget_i\n());\n// Warning, as the constructor is dynamically initialized\n\nSee the features disallowed in Fuchsia at \nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+    "configurations": []
+  }
+}

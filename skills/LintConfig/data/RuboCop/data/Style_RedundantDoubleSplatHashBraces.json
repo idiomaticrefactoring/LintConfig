@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantDoubleSplatHashBraces",
+  "full_description": "Checks for redundant uses of double splat hash braces.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

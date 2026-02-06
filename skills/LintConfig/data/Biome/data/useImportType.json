@@ -1,0 +1,22 @@
+{
+  "name": "useImportType",
+  "group": "style",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/use-import-type",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "safe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'style' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

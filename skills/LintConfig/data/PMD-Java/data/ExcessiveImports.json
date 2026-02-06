@@ -1,0 +1,12 @@
+{
+    "name": "ExcessiveImports",
+    "category": "design",
+    "summary": "A high number of imports can indicate a high degree of coupling within an object. This rule\ncounts the number of unique imports and reports a violation if the count is above the\nuser-specified threshold.",
+    "message": "A high number of imports ({0}) can indicate a high degree of coupling within an object; current threshold is {1}.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#excessiveimports",
+    "since": "1.04",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import blah.blah.Baz;\nimport blah.blah.Bif;\n// 28 others from the same package elided\npublic class Foo {\npublic void doWork() {}\n}"
+}

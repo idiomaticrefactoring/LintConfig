@@ -1,0 +1,16 @@
+{
+    "name": "localMutex",
+    "meta": {
+        "severity": "warning",
+        "cwe": "667",
+        "url": "https://cwe.mitre.org/data/definitions/667.html"
+    },
+    "content": {
+        "introduction": "The lock is ineffective because the mutex is locked at the same scope as the mutex itself.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "667",
+            "inconclusive": false
+        }
+    }
+}

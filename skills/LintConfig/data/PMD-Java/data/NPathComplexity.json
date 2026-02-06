@@ -1,0 +1,12 @@
+{
+    "name": "NPathComplexity",
+    "category": "design",
+    "summary": "The NPath complexity of a method is the number of acyclic execution paths through that method.\nWhile cyclomatic complexity counts the number of decision points in a method, NPath counts the number of\nfull paths from the beginning to the end of the block of the method. That metric grows exponentially, as\nit multiplies the complexity of statements in the same block. For more details on the calculation, see the\ndocumentation {% jdoc java::lang.java.metrics.JavaMetrics#NPATH %}.\n\nA threshold of 200 is generally considered the point where measures should be taken to reduce\ncomplexity and increase readability.",
+    "message": "The {0} ''{1}'' has an NPath complexity of {2}, current threshold is {3}",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#npathcomplexity",
+    "since": "3.9",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\npublic static void bar() { // Ncss = 252: reported!\nboolean a, b = true;\ntry { // 2 * 2 + 2 = 6\nif (true) { // 2\nList buz = new ArrayList();\n}\n\nfor(int i = 0; i < 19; i++) { // * 2\nList buz = new ArrayList();\n}\n} catch(Exception e) {\nif (true) { // 2\ne.printStackTrace();\n}\n}\n\nwhile (j++ < 20) { //  * 2\nList buz = new ArrayList();\n}\n\nswitch(j) { // * 7\ncase 1:\ncase 2: break;\ncase 3: j = 5; break;\ncase 4: if (b && a) { bar(); } break;\ndefault: break;\n}\n\ndo { // * 3\nList buz = new ArrayList();\n} while (a && j++ < 30);\n}\n}"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "UnusedPrivateField",
+    "category": "bestpractices",
+    "summary": "Detects when a private field is declared and/or assigned a value, but not used.\n\nSince PMD 6.50.0 private fields are ignored, if the fields are annotated with any annotation or the\nenclosing class has any annotation. Annotations often enable a framework (such as dependency injection, mocking\nor e.g. Lombok) which use the fields by reflection or other means. This usage can't be detected by static code analysis.\nPreviously these frameworks where explicitly allowed by listing their annotations in the property\n\"ignoredAnnotations\", but that turned out to be prone of false positive for any not explicitly considered framework.",
+    "message": "Avoid unused private fields such as ''{0}''.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#unusedprivatefield",
+    "since": "0.1",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Something {\nprivate static int FOO = 2; // Unused\nprivate int i = 5; // Unused\nprivate int j = 6;\npublic int addOne() {\nreturn j++;\n}\n}"
+}

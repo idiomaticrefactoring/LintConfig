@@ -1,0 +1,12 @@
+{
+    "name": "FinalParameterInAbstractMethod",
+    "category": "codestyle",
+    "summary": "Declaring a method parameter as final for an interface method is useless because the implementation may choose to not respect it.",
+    "message": "Final parameter in abstract method",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#finalparameterinabstractmethod",
+    "since": "6.42.0",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public interface MyInterface {\nvoid process(final Object arg); // Avoid using final here\n}"
+}

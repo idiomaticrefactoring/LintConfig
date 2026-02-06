@@ -1,0 +1,10 @@
+{
+  "name": "UnusedPrivateMethod",
+  "default_configuration": {
+    "enabled": false,
+    "exclude": []
+  },
+  "description": "Classes should use their private methods. Otherwise this is dead\ncode which is confusing and bad for maintenance.\nThe _Unused Private Method_ detector reports unused private instance\nmethods and instance methods only - class methods are ignored.",
+  "configuration_docs": "_Unused Private Method_ offers the [Basic Smell Options](Basic-Smell-Options.md).\nPrivate methods that are called via dynamic dispatch\nwill trigger a false alarm since detecting something like this is far out of\nscope for Reek. In this case you can disable this detector via the `exclude`\nconfiguration option (which is part of the [Basic Smell Options](Basic-Smell-Options.md))\nfor instance like this (an example from Reek's own codebase):\n```ruby",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Unused-Private-Method.md"
+}

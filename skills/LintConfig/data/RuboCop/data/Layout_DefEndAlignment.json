@@ -1,0 +1,28 @@
+{
+  "name": "Layout/DefEndAlignment",
+  "full_description": "Align ends corresponding to defs correctly.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyleAlignWith",
+      "default_value": "start_of_line",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStylesAlignWith",
+      "default_value": [
+        "start_of_line",
+        "def"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "Severity",
+      "default_value": "warning",
+      "type": "str"
+    }
+  ]
+}

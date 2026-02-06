@@ -1,0 +1,23 @@
+{
+  "name": "radix",
+  "meta": {
+    "description": "Enforce the consistent use of the radix argument when using parseInt()",
+    "url": "https://eslint.org/docs/latest/rules/radix",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

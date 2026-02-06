@@ -1,0 +1,23 @@
+{
+  "name": "Style/NumberedParameters",
+  "full_description": "Restrict the usage of numbered parameters.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "allow_single_line",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "allow_single_line",
+        "disallow"
+      ],
+      "type": "list"
+    }
+  ]
+}

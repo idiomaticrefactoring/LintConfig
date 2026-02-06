@@ -1,0 +1,19 @@
+{
+    "name": "OneDeclarationPerLine",
+    "category": "bestpractices",
+    "summary": "Java allows the use of several variables declaration of the same type on one line.\nHowever, it can lead to quite messy code. This rule looks for several declarations on the same line.",
+    "message": "Use one line for each declaration, it enhances code readability.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#onedeclarationperline",
+    "since": "5.0",
+    "priority": "4",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "strictMode",
+            "description": "If true, mark combined declaration even if the declarations are on separate lines.",
+            "defaultValue": "false",
+            "type": "Boolean"
+        }
+    ],
+    "examples": "String name;            // separate declarations\nString lastname;\n\nString name, lastname;  // combined declaration, a violation\n\nString name,\nlastname;        // combined declaration on multiple lines, no violation by default.\n// Set property strictMode to true to mark this as violation."
+}

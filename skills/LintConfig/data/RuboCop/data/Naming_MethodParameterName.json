@@ -1,0 +1,46 @@
+{
+  "name": "Naming/MethodParameterName",
+  "full_description": "Checks for method parameter names that contain capital letters, end in numbers, or do not meet a minimal length.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "MinNameLength",
+      "default_value": 3,
+      "type": "int"
+    },
+    {
+      "parameter_name": "AllowNamesEndingInNumbers",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "AllowedNames",
+      "default_value": [
+        "as",
+        "at",
+        "by",
+        "cc",
+        "db",
+        "id",
+        "if",
+        "in",
+        "io",
+        "ip",
+        "of",
+        "on",
+        "os",
+        "pp",
+        "to"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "ForbiddenNames",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

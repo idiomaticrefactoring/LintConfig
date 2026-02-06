@@ -1,0 +1,23 @@
+{
+  "name": "no-duplicate-case",
+  "meta": {
+    "description": "Disallow duplicate case labels",
+    "url": "https://eslint.org/docs/latest/rules/no-duplicate-case",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow duplicate case labels\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItVersionResources\nIf aswitchstatement has duplicate test expressions incaseclauses, it is likely that a programmer copied acaseclause but forgot to change the test expression.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

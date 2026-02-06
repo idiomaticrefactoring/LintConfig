@@ -1,0 +1,11 @@
+{
+  "name": "performance-noexcept-move-constructor",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/noexcept-move-constructor.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The check flags user-defined move constructors and assignment operators not\nmarked with \nnoexcept\n or marked with \nnoexcept(expr)\n where \nexpr\n\nevaluates to \nfalse\n (but is not a \nfalse\n literal itself).\n\nMove constructors of all the types used with STL containers, for example,\nshould be declared \nnoexcept\n. Otherwise STL may choose copy constructors\ninstead. The same is valid for move assignment operations.",
+    "configurations": []
+  }
+}

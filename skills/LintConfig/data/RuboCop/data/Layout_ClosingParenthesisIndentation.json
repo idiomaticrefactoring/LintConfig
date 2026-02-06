@@ -1,0 +1,9 @@
+{
+  "name": "Layout/ClosingParenthesisIndentation",
+  "full_description": "Checks the indentation of hanging closing parentheses.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

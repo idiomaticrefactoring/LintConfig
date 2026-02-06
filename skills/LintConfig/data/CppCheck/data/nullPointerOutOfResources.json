@@ -1,0 +1,16 @@
+{
+    "name": "nullPointerOutOfResources",
+    "meta": {
+        "severity": "warning",
+        "cwe": "476",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "content": {
+        "introduction": "Null pointer dereference",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "476",
+            "inconclusive": false
+        }
+    }
+}

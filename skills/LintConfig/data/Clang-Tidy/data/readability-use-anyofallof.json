@@ -1,0 +1,11 @@
+{
+  "name": "readability-use-anyofallof",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/use-anyofallof.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds range-based for loops that can be replaced by a call to\n\nstd::any_of\n or \nstd::all_of\n. In C++20 mode, suggests\n\nstd::ranges::any_of\n or \nstd::ranges::all_of\n.\n\nExample:\n\nbool\n \nall_even\n(\nstd\n::\nvector\n<\nint\n>\n \nV\n)\n \n{\n\n\n  \nfor\n \n(\nint\n \nI\n \n:\n \nV\n)\n \n{\n\n\n    \nif\n \n(\nI\n \n%\n \n2\n)\n\n\n      \nreturn\n \nfalse\n;\n\n\n  \n}\n\n\n  \nreturn\n \ntrue\n;\n\n\n  \n// Replace loop by\n\n\n  \n// return std::ranges::all_of(V, [](int I) { return I % 2 == 0; });\n\n\n}",
+    "configurations": []
+  }
+}

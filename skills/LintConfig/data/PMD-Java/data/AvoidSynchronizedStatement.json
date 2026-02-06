@@ -1,0 +1,12 @@
+{
+    "name": "AvoidSynchronizedStatement",
+    "category": "multithreading",
+    "summary": "Synchronization will pin virtual threads and can cause performance problems.",
+    "message": "Use ReentrantLock rather than synchronization",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_multithreading.html#avoidsynchronizedstatement",
+    "since": "7.5.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\n// Try to avoid this:\nvoid foo() {\n// code that doesn't need mutual exclusion\nsynchronized(this) {\n// code that requires mutual exclusion\n}\n// more code that doesn't need mutual exclusion\n}\n// Prefer this:\nLock instanceLock = new ReentrantLock();\n\nvoid foo() {\n// code that doesn't need mutual exclusion\ntry {\ninstanceLock.lock();  // or instanceLock.tryLock(long time, TimeUnit unit)\n// code that requires mutual exclusion\n} finally {\ninstanceLock.unlock();\n}\n// more code that doesn't need mutual exclusion\n}\n}"
+}

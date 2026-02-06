@@ -1,0 +1,19 @@
+{
+    "name": "UncommentedEmptyConstructor",
+    "category": "documentation",
+    "summary": "Uncommented Empty Constructor finds instances where a constructor does not\ncontain statements, but there is no comment. By explicitly commenting empty\nconstructors it is easier to distinguish between intentional (commented)\nand unintentional empty constructors.",
+    "message": "Document empty constructor",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_documentation.html#uncommentedemptyconstructor",
+    "since": "3.4",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "ignoreExplicitConstructorInvocation",
+            "description": "Ignore explicit constructor invocation when deciding whether constructor is empty or not",
+            "defaultValue": "false",
+            "type": "Boolean"
+        }
+    ],
+    "examples": "public Foo() {\n// This constructor is intentionally empty. Nothing special is needed here.\n}"
+}

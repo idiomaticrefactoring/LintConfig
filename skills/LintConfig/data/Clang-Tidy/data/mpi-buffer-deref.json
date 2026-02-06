@@ -1,0 +1,11 @@
+{
+  "name": "mpi-buffer-deref",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/mpi/buffer-deref.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "This check verifies if a buffer passed to an MPI (Message Passing Interface)\nfunction is sufficiently dereferenced. Buffers should be passed as a single\npointer or array. As MPI function signatures specify \nvoid\n \n*\n for their\nbuffer types, insufficiently dereferenced buffers can be passed, like for\nexample as double pointers or multidimensional arrays, without a compiler\nwarning emitted.\n\nExamples:\n\n// A double pointer is passed to the MPI function.\n\n\nchar\n \n*\nbuf\n;\n\n\nMPI_Send\n(\n&\nbuf\n,\n \n1\n,\n \nMPI_CHAR\n,\n \n0\n,\n \n0\n,\n \nMPI_COMM_WORLD\n);\n\n\n\n// A multidimensional array is passed to the MPI function.\n\n\nshort\n \nbuf\n[\n1\n][\n1\n];\n\n\nMPI_Send\n(\nbuf\n,\n \n1\n,\n \nMPI_SHORT\n,\n \n0\n,\n \n0\n,\n \nMPI_COMM_WORLD\n);\n\n\n\n// A pointer to an array is passed to the MPI function.\n\n\nshort\n \n*\nbuf\n[\n1\n];\n\n\nMPI_Send\n(\nbuf\n,\n \n1\n,\n \nMPI_SHORT\n,\n \n0\n,\n \n0\n,\n \nMPI_COMM_WORLD\n);",
+    "configurations": []
+  }
+}

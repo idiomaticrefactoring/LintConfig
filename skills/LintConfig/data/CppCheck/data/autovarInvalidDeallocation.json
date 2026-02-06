@@ -1,0 +1,16 @@
+{
+    "name": "autovarInvalidDeallocation",
+    "meta": {
+        "severity": "error",
+        "cwe": "590",
+        "url": "https://cwe.mitre.org/data/definitions/590.html"
+    },
+    "content": {
+        "introduction": "The deallocation of an auto-variable results in undefined behaviour. You should only free memory that has been allocated dynamically.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "590",
+            "inconclusive": false
+        }
+    }
+}

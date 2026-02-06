@@ -1,0 +1,11 @@
+{
+  "name": "android-cloexec-inotify-init",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-inotify-init.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "The usage of \ninotify_init()\n is not recommended, itâs better to use\n\ninotify_init1()\n.\n\nExamples:\n\ninotify_init\n();\n\n\n\n// becomes\n\n\n\ninotify_init1\n(\nIN_CLOEXEC\n);",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-multiple-statement-macro",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/multiple-statement-macro.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Detect multiple statement macros that are used in unbraced conditionals. Only\nthe first statement of the macro will be inside the conditional and the other\nones will be executed unconditionally.\n\nExample:\n\n#define INCREMENT_TWO(x, y) (x)++; (y)++\n\n\nif\n \n(\ndo_increment\n)\n\n\n  \nINCREMENT_TWO\n(\na\n,\n \nb\n);\n  \n// (b)++ will be executed unconditionally.",
+    "configurations": []
+  }
+}

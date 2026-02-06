@@ -1,0 +1,23 @@
+{
+  "name": "no-this-before-super",
+  "meta": {
+    "description": "Disallow this/super before calling super() in constructors",
+    "url": "https://eslint.org/docs/latest/rules/no-this-before-super",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallowthis/superbefore callingsuper()in constructors\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsExamplesWhen Not To Use ItHandled by TypeScriptVersionResources\nIn the constructor of derived classes, ifthis/superare used beforesuper()calls, it raises a reference error.\nThis rule checksthis/superkeywords in constructors, then reports those that are beforesuper().",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

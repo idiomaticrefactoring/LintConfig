@@ -1,0 +1,16 @@
+{
+    "name": "purgedConfiguration",
+    "meta": {
+        "severity": "information",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "The configuration '' was not checked because its code equals another one.",
+        "attributes": {
+            "severity": "information",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

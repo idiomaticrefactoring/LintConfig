@@ -1,0 +1,11 @@
+{
+  "name": "readability-uniqueptr-delete-release",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/uniqueptr-delete-release.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Replace \ndelete\n \n<unique_ptr>.release()\n with \n<unique_ptr>\n \n=\n \nnullptr\n.\nThe latter is shorter, simpler and does not require use of raw pointer APIs.\n\nstd\n::\nunique_ptr\n<\nint\n>\n \nP\n;\n\n\ndelete\n \nP\n.\nrelease\n();\n\n\n\n// becomes\n\n\n\nstd\n::\nunique_ptr\n<\nint\n>\n \nP\n;\n\n\nP\n \n=\n \nnullptr\n;\n\nOptions\nÂ¶\n\n\n\n\n\n\nPreferResetCall\nÂ¶\n\n\nIf \ntrue\n, refactor by calling the reset member function instead of\nassigning to \nnullptr\n. Default value is \nfalse\n.\n\n\nstd\n::\nunique_ptr\n<\nint\n>\n \nP\n;\n\n\ndelete\n \nP\n.\nrelease\n();\n\n\n\n// becomes\n\n\n\nstd\n::\nunique_ptr\n<\nint\n>\n \nP\n;\n\n\nP\n.\nreset\n();",
+    "configurations": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Style/InlineComment",
+  "full_description": "Avoid trailing inline comments.",
+  "introduction": "No further details provided.",
+  "default_enabled": false,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

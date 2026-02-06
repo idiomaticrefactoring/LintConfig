@@ -1,0 +1,28 @@
+{
+  "name": "Style/StringLiterals",
+  "full_description": "Checks if uses of quotes match the configured preference.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#consistent-string-literals",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "single_quotes",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "single_quotes",
+        "double_quotes"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "ConsistentQuotesInMultiline",
+      "default_value": false,
+      "type": "bool"
+    }
+  ]
+}

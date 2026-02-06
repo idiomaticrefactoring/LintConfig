@@ -1,0 +1,15 @@
+{
+  "name": "Style/SendWithLiteralMethodName",
+  "full_description": "Detects the use of the `public_send` method with a static method name argument.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "AllowSend",
+      "default_value": true,
+      "type": "bool"
+    }
+  ]
+}

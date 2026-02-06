@@ -1,0 +1,9 @@
+{
+  "name": "Style/RedundantSort",
+  "full_description": "Use `min` instead of `sort.first`, `max_by` instead of `sort_by...last`, etc.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

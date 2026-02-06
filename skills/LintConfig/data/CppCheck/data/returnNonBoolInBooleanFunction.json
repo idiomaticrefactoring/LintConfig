@@ -1,0 +1,16 @@
+{
+    "name": "returnNonBoolInBooleanFunction",
+    "meta": {
+        "severity": "style",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Non-boolean value returned from function returning bool",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

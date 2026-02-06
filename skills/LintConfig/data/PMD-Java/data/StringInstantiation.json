@@ -1,0 +1,12 @@
+{
+    "name": "StringInstantiation",
+    "category": "performance",
+    "summary": "Avoid instantiating String objects; this is usually unnecessary since they are immutable and can be safely shared.",
+    "message": "Avoid instantiating String objects; this is usually unnecessary.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#stringinstantiation",
+    "since": "1.0",
+    "priority": "2",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "private String bar = new String(\"bar\"); // just do a String bar = \"bar\";"
+}

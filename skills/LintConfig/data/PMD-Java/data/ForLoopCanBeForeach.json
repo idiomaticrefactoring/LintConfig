@@ -1,0 +1,12 @@
+{
+    "name": "ForLoopCanBeForeach",
+    "category": "bestpractices",
+    "summary": "Reports loops that can be safely replaced with the foreach syntax. The rule considers loops over\nlists, arrays and iterators. A loop is safe to replace if it only uses the index variable to\naccess an element of the list or array, only has one update statement, and loops through *every*\nelement of the list or array left to right.",
+    "message": "This 'for' loop can be replaced by a 'foreach' loop",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#forloopcanbeforeach",
+    "since": "6.0.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class MyClass {\nvoid loop(List<String> l) {\nfor (int i = 0; i < l.size(); i++) { // pre Java 1.5\nSystem.out.println(l.get(i));\n}\n\nfor (String s : l) {        // post Java 1.5\nSystem.out.println(s);\n}\n}\n}"
+}

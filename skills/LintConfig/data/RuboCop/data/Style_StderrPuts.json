@@ -1,0 +1,9 @@
+{
+  "name": "Style/StderrPuts",
+  "full_description": "Use `warn` instead of `$stderr.puts`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#warn",
+  "is_safe": true,
+  "parameters": []
+}

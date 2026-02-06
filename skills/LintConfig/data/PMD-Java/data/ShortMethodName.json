@@ -1,0 +1,19 @@
+{
+    "name": "ShortMethodName",
+    "category": "codestyle",
+    "summary": "Method names that are very short are not helpful to the reader.",
+    "message": "Avoid using short method names",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_codestyle.html#shortmethodname",
+    "since": "0.3",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [
+        {
+            "name": "minimum",
+            "description": "Number of characters that are required as a minimum for a method name.",
+            "defaultValue": "3",
+            "type": "Integer"
+        }
+    ],
+    "examples": "public class ShortMethod {\npublic void a( int i ) { // Violation\n}\n}"
+}

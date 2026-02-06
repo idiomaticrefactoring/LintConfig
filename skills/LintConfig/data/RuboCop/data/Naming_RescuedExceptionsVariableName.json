@@ -1,0 +1,15 @@
+{
+  "name": "Naming/RescuedExceptionsVariableName",
+  "full_description": "Use consistent rescued exceptions variables naming.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "PreferredName",
+      "default_value": "e",
+      "type": "str"
+    }
+  ]
+}

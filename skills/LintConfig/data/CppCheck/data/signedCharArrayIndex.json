@@ -1,0 +1,16 @@
+{
+    "name": "signedCharArrayIndex",
+    "meta": {
+        "severity": "warning",
+        "cwe": "128",
+        "url": "https://cwe.mitre.org/data/definitions/128.html"
+    },
+    "content": {
+        "introduction": "Signed 'char' type used as array index. If the value can be greater than 127 there will be a buffer underflow because of sign extension.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "128",
+            "inconclusive": false
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Style/SingleArgumentDig",
+  "full_description": "Avoid using single argument dig method.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "no-div-regex",
+  "meta": {
+    "description": "Disallow equal signs explicitly at the beginning of regular expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-div-regex",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": true,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow equal signs explicitly at the beginning of regular expressions\n🔧FixableSome problems reported by this rule are automatically fixable by the--fixcommand lineoption❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsRelated RulesVersionResources\nCharacters/=at the beginning of a regular expression literal can be confused with a division assignment operator.\nfunctionbar(){return/=foo/;}1Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "invalidLengthModifierError",
+    "meta": {
+        "severity": "warning",
+        "cwe": "704",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "content": {
+        "introduction": "'I' in format string (no. 1) is a length modifier and cannot be used without a conversion specifier.",
+        "attributes": {
+            "severity": "warning",
+            "cwe_id": "704",
+            "inconclusive": false
+        }
+    }
+}

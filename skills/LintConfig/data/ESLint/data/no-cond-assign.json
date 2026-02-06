@@ -1,0 +1,23 @@
+{
+  "name": "no-cond-assign",
+  "meta": {
+    "description": "Disallow assignment operators in conditional expressions",
+    "url": "https://eslint.org/docs/latest/rules/no-cond-assign",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow assignment operators in conditional expressions\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsOptionsexcept-parensalwaysRelated RulesVersionResources\nIn conditional statements, it is very easy to mistype a comparison operator (such as==) as an assignment operator (such as=). For example:\n// Check the user's job titleif(user.jobTitle=\"manager\"){// user.jobTitle is now incorrect}1234Copy code to clipboard\nThere are valid reasons to use assignment operators in conditional statements. However, it can be difficult to tell whether a specific assignment was intentional.",
+    "sub_configuration_introduction": "This rule has a string option:\n\"except-parens\"(default) allows assignments in test conditionsonly ifthey are enclosed in parentheses (for example, to allow reassigning a variable in the test of awhileordo...whileloop).\"always\"disallows all assignments in test conditions.\nExamples ofincorrectcode for this rule with the default\"except-parens\"option:\nExamples ofcorrectcode for this rule with the default\"except-parens\"option:\nExamples ofincorrectcode for this rule with the\"always\"option:\nExamples ofcorrectcode for this rule with the\"always\"option:",
+    "config_examples": []
+  }
+}

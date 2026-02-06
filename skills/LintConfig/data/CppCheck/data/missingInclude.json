@@ -1,0 +1,16 @@
+{
+    "name": "missingInclude",
+    "meta": {
+        "severity": "information",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Include file: \"\" not found.",
+        "attributes": {
+            "severity": "information",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

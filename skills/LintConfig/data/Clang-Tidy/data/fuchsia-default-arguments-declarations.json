@@ -1,0 +1,11 @@
+{
+  "name": "fuchsia-default-arguments-declarations",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/default-arguments-declarations.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Warns if a function or method is declared with default parameters.\n\nFor example, the declaration:\n\nint\n \nfoo\n(\nint\n \nvalue\n \n=\n \n5\n)\n \n{\n \nreturn\n \nvalue\n;\n \n}\n\nwill cause a warning.\n\nSee the features disallowed in Fuchsia at \nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+    "configurations": []
+  }
+}

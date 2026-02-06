@@ -1,0 +1,11 @@
+{
+  "name": "portability-restrict-system-includes",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/restrict-system-includes.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks to selectively allow or disallow a configurable list of system headers.\n\nFor example:\n\nIn order to \nonly\n allow \nzlib.h\n from the system you would set the options\nto \n-*,zlib.h\n.\n\n#include\n \n<curses.h>\n       // Bad: disallowed system header.\n\n\n#include\n \n<openssl/ssl.h>\n  // Bad: disallowed system header.\n\n\n#include\n \n<zlib.h>\n         // Good: allowed system header.\n\n\n#include\n \n\"src/myfile.h\"\n   // Good: non-system header always allowed.\n\nIn order to allow everything \nexcept\n \nzlib.h\n from the system you would set\nthe options to \n*,-zlib.h\n.\n\n#include\n \n<curses.h>\n       // Good: allowed system header.\n\n\n#include\n \n<openssl/ssl.h>\n  // Good: allowed system header.\n\n\n#include\n \n<zlib.h>\n         // Bad: disallowed system header.\n\n\n#include\n \n\"src/myfile.h\"\n   // Good: non-system header always allowed.\n\nSince the options support globbing you can use wildcarding to allow groups of\nheaders.\n\n-*,openssl/*.h\n will allow all openssl headers but disallow any others.\n\n#include\n \n<curses.h>\n       // Bad: disallowed system header.\n\n\n#include\n \n<openssl/ssl.h>\n  // Good: allowed system header.\n\n\n#include\n \n<openssl/rsa.h>\n  // Good: allowed system header.\n\n\n#include\n \n<zlib.h>\n         // Bad: disallowed system header.\n\n\n#include\n \n\"src/myfile.h\"\n   // Good: non-system header always allowed.\n\nOptions\nÂ¶\n\n\n\n\n\n\nIncludes\nÂ¶\n\n\nA string containing a comma separated glob list of allowed include\nfilenames. Similar to the -checks glob list for running clang-tidy itself,\nthe two wildcard characters are \n*\n and \n-\n, to include and exclude globs,\nrespectively. The default is \n*\n, which allows all includes.",
+    "configurations": []
+  }
+}

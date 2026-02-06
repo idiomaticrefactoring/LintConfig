@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-misplaced-widening-cast",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-widening-cast.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "This check will warn when there is a cast of a calculation result to a bigger\ntype. If the intention of the cast is to avoid loss of precision then the cast\nis misplaced, and there can be loss of precision. Otherwise the cast is\nineffective.\n\nExample code:\n\nlong\n \nf\n(\nint\n \nx\n)\n \n{\n\n\n    \nreturn\n \n(\nlong\n)(\nx\n \n*\n \n1000\n);\n\n\n}\n\nThe result \nx\n \n*\n \n1000\n is first calculated using \nint\n precision. If the\nresult exceeds \nint\n precision there is loss of precision. Then the result is\ncasted to \nlong\n.\n\nIf there is no loss of precision then the cast can be removed or you can\nexplicitly cast to \nint\n instead.\n\nIf you want to avoid loss of precision then put the cast in a proper location,\nfor instance:\n\nlong\n \nf\n(\nint\n \nx\n)\n \n{\n\n\n    \nreturn\n \n(\nlong\n)\nx\n \n*\n \n1000\n;\n\n\n}\n\nImplicit casts\nÂ¶\n\n\nForgetting to place the cast at all is at least as dangerous and at least as\ncommon as misplacing it. If \nCheckImplicitCasts\n is enabled the check\nalso detects these cases, for instance:\n\n\nlong\n \nf\n(\nint\n \nx\n)\n \n{\n\n\n    \nreturn\n \nx\n \n*\n \n1000\n;\n\n\n}\n\nFloating point\nÂ¶\n\n\nCurrently warnings are only written for integer conversion. No warning is\nwritten for this code:\n\n\ndouble\n \nf\n(\nfloat\n \nx\n)\n \n{\n\n\n    \nreturn\n \n(\ndouble\n)(\nx\n \n*\n \n10.0f\n);\n\n\n}\n\nOptions\nÂ¶\n\n\n\n\n\n\nCheckImplicitCasts\nÂ¶\n\n\nIf \ntrue\n, enables detection of implicit casts. Default is \nfalse\n.",
+    "configurations": []
+  }
+}

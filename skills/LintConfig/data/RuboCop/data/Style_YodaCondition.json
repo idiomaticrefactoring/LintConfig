@@ -1,0 +1,32 @@
+{
+  "name": "Style/YodaCondition",
+  "full_description": "Forbid or enforce yoda conditions.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": false,
+  "parameters": [
+    {
+      "parameter_name": "References",
+      "default_value": [
+        "https://en.wikipedia.org/wiki/Yoda_conditions"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "forbid_for_all_comparison_operators",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "forbid_for_all_comparison_operators",
+        "forbid_for_equality_operators_only",
+        "require_for_all_comparison_operators",
+        "require_for_equality_operators_only"
+      ],
+      "type": "list"
+    }
+  ]
+}

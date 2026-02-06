@@ -1,0 +1,16 @@
+{
+    "name": "danglingTempReference",
+    "meta": {
+        "severity": "error",
+        "cwe": "562",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "content": {
+        "introduction": "Using reference to dangling temporary.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "562",
+            "inconclusive": false
+        }
+    }
+}

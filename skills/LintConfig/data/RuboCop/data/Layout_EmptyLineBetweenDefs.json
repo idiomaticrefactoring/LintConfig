@@ -1,0 +1,40 @@
+{
+  "name": "Layout/EmptyLineBetweenDefs",
+  "full_description": "Use empty lines between class/module/method defs.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#empty-lines-between-methods",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EmptyLineBetweenMethodDefs",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "EmptyLineBetweenClassDefs",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "EmptyLineBetweenModuleDefs",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "DefLikeMacros",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowAdjacentOneLineDefs",
+      "default_value": true,
+      "type": "bool"
+    },
+    {
+      "parameter_name": "NumberOfEmptyLines",
+      "default_value": 1,
+      "type": "int"
+    }
+  ]
+}

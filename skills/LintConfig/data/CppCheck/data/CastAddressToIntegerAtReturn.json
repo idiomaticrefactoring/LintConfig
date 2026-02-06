@@ -1,0 +1,16 @@
+{
+    "name": "CastAddressToIntegerAtReturn",
+    "meta": {
+        "severity": "portability",
+        "cwe": "758",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "content": {
+        "introduction": "Returning an address value in a function with integer (int/long/etc) return type is not portable across different platforms and compilers. For example in 32-bit Windows and Linux they are same width, but in 64-bit Windows and Linux they are of different width. In worst case you end up casting 64-bit address down to 32-bit integer. The safe way is to always return an integer.",
+        "attributes": {
+            "severity": "portability",
+            "cwe_id": "758",
+            "inconclusive": false
+        }
+    }
+}

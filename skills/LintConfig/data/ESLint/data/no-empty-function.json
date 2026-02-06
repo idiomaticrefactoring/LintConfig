@@ -1,0 +1,23 @@
+{
+  "name": "no-empty-function",
+  "meta": {
+    "description": "Disallow empty functions",
+    "url": "https://eslint.org/docs/latest/rules/no-empty-function",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": true
+    }
+  },
+  "content": {
+    "introduction": "Disallow empty functions\n💡hasSuggestionsSome problems reported by this rule are manually fixable by editorsuggestions\nTable of ContentsRule DetailsOptionsallow: functionsallow: arrowFunctionsallow: generatorFunctionsallow: methodsallow: generatorMethodsallow: gettersallow: settersallow: constructorsallow: asyncFunctionsallow: asyncMethodsallow: privateConstructorsallow: protectedConstructorsallow: decoratedFunctionsallow: overrideMethodsWhen Not To Use ItRelated RulesVersionResources\nEmpty functions can reduce readability because readers need to guess whether it’s intentional or not.\nSo writing a clear comment for empty functions is a good practice.\nfunctionfoo(){// do nothing.}123Copy code to clipboard\nEspecially, the empty block of arrow functions might be confusing developers.\nIt’s very similar to an empty object literal.\nlist.map(()=>{});// This is a block, would return undefined.list.map(()=>({}));// This is an empty object.12Copy code to clipboard",
+    "sub_configuration_introduction": "This rule has an option to allow specific kinds of functions to be empty.\nallow(string[]) - A list of kind to allow empty functions. List items are some of the following strings. An empty array ([]) by default.\"functions\"- Normal functions.\"arrowFunctions\"- Arrow functions.\"generatorFunctions\"- Generator functions.\"methods\"- Class methods and method shorthands of object literals.\"generatorMethods\"- Class methods and method shorthands of object literals with generator.\"getters\"- Getters.\"setters\"- Setters.\"constructors\"- Class constructors.\"asyncFunctions\"- Async functions.\"asyncMethods\"- Async class methods and method shorthands of object literals.\"privateConstructors\"- Private class constructors. (TypeScript only)\"protectedConstructors\"- Protected class constructors. (TypeScript only)\"decoratedFunctions\"- Class methods with decorators. (TypeScript only)\"overrideMethods\"- Methods that use the override keyword. (TypeScript only)\nExamples ofcorrectcode for the{ \"allow\": [\"functions\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"arrowFunctions\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"generatorFunctions\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"methods\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"generatorMethods\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"getters\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"setters\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"constructors\"] }option:\nExamples ofcorrectcode for the{ \"allow\": [\"asyncFunctions\"] }options:\nExamples ofcorrectcode for the{ \"allow\": [\"asyncMethods\"] }options:\nExamples ofcorrectTypeScript code for the{ \"allow\": [\"privateConstructors\"] }option:\nExamples ofcorrectTypeScript code for the{ \"allow\": [\"protectedConstructors\"] }option:\nExamples ofcorrectTypeScript code for the{ \"allow\": [\"decoratedFunctions\"] }option:\nExamples ofcorrectTypeScript code for the{ \"allow\": [\"overrideMethods\"] }option:",
+    "config_examples": []
+  }
+}

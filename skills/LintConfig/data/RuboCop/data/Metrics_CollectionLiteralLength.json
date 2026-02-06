@@ -1,0 +1,15 @@
+{
+  "name": "Metrics/CollectionLiteralLength",
+  "full_description": "Checks for `Array` or `Hash` literals with many entries.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "LengthThreshold",
+      "default_value": 250,
+      "type": "int"
+    }
+  ]
+}

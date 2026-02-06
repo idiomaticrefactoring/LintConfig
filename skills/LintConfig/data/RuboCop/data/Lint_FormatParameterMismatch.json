@@ -1,0 +1,9 @@
+{
+  "name": "Lint/FormatParameterMismatch",
+  "full_description": "The number of parameters to format/sprint must match the fields.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,16 @@
+{
+    "name": "unknownEvaluationOrder",
+    "meta": {
+        "severity": "error",
+        "cwe": "768",
+        "url": "https://cwe.mitre.org/data/definitions/768.html"
+    },
+    "content": {
+        "introduction": "Expression 'x = x++;' depends on order of evaluation of side effects",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "768",
+            "inconclusive": false
+        }
+    }
+}

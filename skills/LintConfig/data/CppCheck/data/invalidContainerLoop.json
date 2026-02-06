@@ -1,0 +1,16 @@
+{
+    "name": "invalidContainerLoop",
+    "meta": {
+        "severity": "error",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Calling 'erase' while iterating the container is invalid.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

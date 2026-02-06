@@ -1,0 +1,23 @@
+{
+  "name": "no-async-promise-executor",
+  "meta": {
+    "description": "Disallow using an async function as a Promise executor",
+    "url": "https://eslint.org/docs/latest/rules/no-async-promise-executor",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": true,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow using an async function as a Promise executor\n✅RecommendedUsing therecommendedconfig from@eslint/jsin aconfiguration fileenables this rule\nTable of ContentsRule DetailsWhen Not To Use ItVersionResources\nThenew Promiseconstructor accepts anexecutorfunction as an argument, which hasresolveandrejectparameters that can be used to control the state of the created Promise. For example:\nconstresult=newPromise(functionexecutor(resolve,reject){readFile('foo.txt',function(err,result){if(err){reject(err);}else{resolve(result);}});});123456789Copy code to clipboard\nThe executor function can also be anasync function. However, this is usually a mistake, for a few reasons:\nIf an async executor function throws an error, the error will be lost and won’t cause the newly-constructedPromiseto reject. This could make it difficult to debug and handle some errors.If a Promise executor function is usingawait, this is usually a sign that it is not actually necessary to use thenew Promiseconstructor, or the scope of thenew Promiseconstructor can be reduced.",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

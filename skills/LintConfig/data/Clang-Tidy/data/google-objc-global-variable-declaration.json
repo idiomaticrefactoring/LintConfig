@@ -1,0 +1,11 @@
+{
+  "name": "google-objc-global-variable-declaration",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-global-variable-declaration.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds global variable declarations in Objective-C files that do not follow the\npattern of variable names in Googleâs Objective-C Style Guide.\n\nThe corresponding style guide rule:\n\nhttps://google.github.io/styleguide/objcguide.html#variable-names\n\nAll the global variables should follow the pattern of \ng[A-Z].*\n (variables)\nor \nk[A-Z].*\n (constants). The check will suggest a variable name that\nfollows the pattern if it can be inferred from the original name.\n\nFor code:\n\nstatic\n \nNSString\n*\n \nmyString\n \n=\n \n@\"hello\"\n;\n\nThe fix will be:\n\nstatic\n \nNSString\n*\n \ngMyString\n \n=\n \n@\"hello\"\n;\n\nAnother example of constant:\n\nstatic\n \nNSString\n*\n \nconst\n \nmyConstString\n \n=\n \n@\"hello\"\n;\n\nThe fix will be:\n\nstatic\n \nNSString\n*\n \nconst\n \nkMyConstString\n \n=\n \n@\"hello\"\n;\n\nHowever for code that prefixed with non-alphabetical characters like:\n\nstatic\n \nNSString\n*\n \n__anotherString\n \n=\n \n@\"world\"\n;\n\nThe check will give a warning message but will not be able to suggest\na fix. The user needs to fix it on their own.",
+    "configurations": []
+  }
+}

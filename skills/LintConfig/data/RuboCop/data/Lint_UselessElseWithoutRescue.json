@@ -1,0 +1,9 @@
+{
+  "name": "Lint/UselessElseWithoutRescue",
+  "full_description": "Checks for useless `else` in `begin..end` without `rescue`.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

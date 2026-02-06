@@ -1,0 +1,16 @@
+{
+    "name": "sameIteratorExpression",
+    "meta": {
+        "severity": "style",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Same iterators expression are used for algorithm.",
+        "attributes": {
+            "severity": "style",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

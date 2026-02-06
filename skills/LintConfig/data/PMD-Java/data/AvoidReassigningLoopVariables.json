@@ -1,0 +1,12 @@
+{
+    "name": "AvoidReassigningLoopVariables",
+    "category": "bestpractices",
+    "summary": "Reassigning loop variables can lead to hard-to-find bugs. Prevent or limit how these variables can be changed.\n\nIn foreach-loops, configured by the `foreachReassign` property:\n- `deny`: Report any reassignment of the loop variable in the loop body. _This is the default._\n- `allow`: Don't check the loop variable.\n- `firstOnly`: Report any reassignments of the loop variable, except as the first statement in the loop body.\n_This is useful if some kind of normalization or clean-up of the value before using is permitted, but any other change of the variable is not._\n\nIn for-loops, configured by the `forReassign` property:\n- `deny`: Report any reassignment of the control variable in the loop body. _This is the default._\n- `allow`: Don't check the control variable.\n- `skip`: Report any reassignments of the control variable, except conditional increments/decrements (`++`, `--`, `+=`, `-=`).\n_This prevents accidental reassignments or unconditional increments of the control variable._",
+    "message": "Avoid reassigning the loop control variable ''{0}''",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#avoidreassigningloopvariables",
+    "since": "6.11.0",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {\nprivate void foo() {\nfor (String s : listOfStrings()) {\ns = s.trim(); // OK, when foreachReassign is \"firstOnly\" or \"allow\"\ndoSomethingWith(s);\n\ns = s.toUpper(); // OK, when foreachReassign is \"allow\"\ndoSomethingElseWith(s);\n}\n\nfor (int i=0; i < 10; i++) {\nif (check(i)) {\ni++; // OK, when forReassign is \"skip\" or \"allow\"\n}\n\ni = 5;  // OK, when forReassign is \"allow\"\n\ndoSomethingWith(i);\n}\n}\n}"
+}

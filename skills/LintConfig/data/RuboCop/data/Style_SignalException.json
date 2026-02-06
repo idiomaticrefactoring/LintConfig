@@ -1,0 +1,24 @@
+{
+  "name": "Style/SignalException",
+  "full_description": "Checks for proper usage of fail and raise.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#prefer-raise-over-fail",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "only_raise",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "only_raise",
+        "only_fail",
+        "semantic"
+      ],
+      "type": "list"
+    }
+  ]
+}

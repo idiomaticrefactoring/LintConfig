@@ -1,0 +1,12 @@
+{
+    "name": "CallSuperFirst",
+    "category": "errorprone",
+    "summary": "Super should be called at the start of the method",
+    "message": "super should be called at the start of the method",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#callsuperfirst",
+    "since": "4.2.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "import android.app.Activity;\nimport android.os.Bundle;\n\npublic class DummyActivity extends Activity {\npublic void onCreate(Bundle bundle) {\n// missing call to super.onCreate(bundle)\nfoo();\n}\n}"
+}

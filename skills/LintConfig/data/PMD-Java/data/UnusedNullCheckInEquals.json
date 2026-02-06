@@ -1,0 +1,12 @@
+{
+    "name": "UnusedNullCheckInEquals",
+    "category": "errorprone",
+    "summary": "After checking an object reference for null, you should invoke equals() on that object rather than passing\nit to another object's equals() method.",
+    "message": "Invoke equals() on the object you''ve already ensured is not null",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_errorprone.html#unusednullcheckinequals",
+    "since": "3.5",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Test {\n\npublic String method1() { return \"ok\";}\npublic String method2() { return null;}\n\npublic void method(String a) {\nString b;\n// I don't know it method1() can be \"null\"\n// but I know \"a\" is not null..\n// I'd better write a.equals(method1())\n\nif (a!=null && method1().equals(a)) { // will trigger the rule\n//whatever\n}\n\nif (method1().equals(a) && a != null) { // won't trigger the rule\n//whatever\n}\n\nif (a!=null && method1().equals(b)) { // won't trigger the rule\n//whatever\n}\n\nif (a!=null && \"LITERAL\".equals(a)) { // won't trigger the rule\n//whatever\n}\n\nif (a!=null && !a.equals(\"go\")) { // won't trigger the rule\na=method2();\nif (method1().equals(a)) {\n//whatever\n}\n}\n}\n}"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gemspec/AttributeAssignment",
+  "full_description": "Use consistent style for Gemspec attributes assignment.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

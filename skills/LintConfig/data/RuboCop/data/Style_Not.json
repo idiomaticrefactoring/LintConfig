@@ -1,0 +1,9 @@
+{
+  "name": "Style/Not",
+  "full_description": "Use ! instead of not.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#bang-not-not",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noDoubleEquals",
+  "group": "suspicious",
+  "meta": {
+    "description": "",
+    "url": "https://biomejs.dev/linter/rules/no-double-equals",
+    "capabilities": {
+      "recommended": true,
+      "fixable": true,
+      "fix_type": "unsafe",
+      "experimental": false
+    }
+  },
+  "content": {
+    "introduction": "Belongs to the 'suspicious' group.",
+    "options_configuration": {
+      "has_options": true,
+      "summary": "",
+      "schema_code": ""
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Style/EmptyStringInsideInterpolation",
+  "full_description": "Checks for empty strings being assigned inside string interpolation.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#empty-strings-in-interpolation",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "trailing_conditional",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "trailing_conditional",
+        "ternary"
+      ],
+      "type": "list"
+    }
+  ]
+}

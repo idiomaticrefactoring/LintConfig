@@ -1,0 +1,11 @@
+{
+  "name": "google-runtime-float",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/runtime-float.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds uses of \nlong\n \ndouble\n and suggests against their use due to lack of\nportability.\n\nThe corresponding style guide rule:\n\nhttps://google.github.io/styleguide/cppguide.html#Floating-Point_Types",
+    "configurations": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Naming/HeredocDelimiterCase",
+  "full_description": "Use configured case for heredoc delimiters.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#heredoc-delimiters",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "uppercase",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "lowercase",
+        "uppercase"
+      ],
+      "type": "list"
+    }
+  ]
+}

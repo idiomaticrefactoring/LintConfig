@@ -1,0 +1,41 @@
+{
+  "name": "Naming/MethodName",
+  "full_description": "Use the configured style when naming methods.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "#snake-case-symbols-methods-vars",
+  "is_safe": true,
+  "parameters": [
+    {
+      "parameter_name": "EnforcedStyle",
+      "default_value": "snake_case",
+      "type": "str"
+    },
+    {
+      "parameter_name": "SupportedStyles",
+      "default_value": [
+        "snake_case",
+        "camelCase"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "AllowedPatterns",
+      "default_value": [],
+      "type": "list"
+    },
+    {
+      "parameter_name": "ForbiddenIdentifiers",
+      "default_value": [
+        "__id__",
+        "__send__"
+      ],
+      "type": "list"
+    },
+    {
+      "parameter_name": "ForbiddenPatterns",
+      "default_value": [],
+      "type": "list"
+    }
+  ]
+}

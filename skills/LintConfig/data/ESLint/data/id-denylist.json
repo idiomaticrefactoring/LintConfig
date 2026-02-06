@@ -1,0 +1,23 @@
+{
+  "name": "id-denylist",
+  "meta": {
+    "description": "Disallow specified identifiers",
+    "url": "https://eslint.org/docs/latest/rules/id-denylist",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": true
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "Disallow specified identifiers\n❄️FrozenThis rule is currentlyfrozenand is not accepting feature requests.\nTable of ContentsRule DetailsOptionsWhen Not To Use ItVersionResources\n“There are only two hard things in Computer Science: cache invalidation and naming things.” — Phil Karlton\nGeneric names can lead to hard-to-decipher code. This rule allows you to specify a deny list of disallowed identifier names to avoid this practice.",
+    "sub_configuration_introduction": "The rule takes one or more strings as options: the names of restricted identifiers.\nFor example, to restrict the use of common generic identifiers:\nNote:The first element of the array is for the rule severity (seeConfigure Rules). The other elements in the array are the identifiers that you want to disallow.\nExamples ofincorrectcode for this rule with sample\"data\", \"callback\"restricted identifiers:\nExamples ofcorrectcode for this rule with sample\"data\", \"callback\"restricted identifiers:",
+    "config_examples": []
+  }
+}

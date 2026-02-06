@@ -1,0 +1,9 @@
+{
+  "name": "Style/OperatorMethodCall",
+  "full_description": "Checks for redundant dot before operator method call.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#operator-method-call",
+  "is_safe": true,
+  "parameters": []
+}

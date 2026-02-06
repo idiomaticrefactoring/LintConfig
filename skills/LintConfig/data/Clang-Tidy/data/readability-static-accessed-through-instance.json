@@ -1,0 +1,11 @@
+{
+  "name": "readability-static-accessed-through-instance",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/static-accessed-through-instance.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Checks for member expressions that access static members through instances, and\nreplaces them with uses of the appropriate qualified-id.\n\nExample:\n\nThe following code:\n\nstruct\n \nC\n \n{\n\n\n  \nstatic\n \nvoid\n \nfoo\n();\n\n\n  \nstatic\n \nint\n \nx\n;\n\n\n  \nenum\n \n{\n \nE1\n \n};\n\n\n  \nenum\n \nE\n \n{\n \nE2\n \n};\n\n\n};\n\n\n\nC\n \n*\nc1\n \n=\n \nnew\n \nC\n();\n\n\nc1\n->\nfoo\n();\n\n\nc1\n->\nx\n;\n\n\nc1\n->\nE1\n;\n\n\nc1\n->\nE2\n;\n\nis changed to:\n\nC\n \n*\nc1\n \n=\n \nnew\n \nC\n();\n\n\nC\n::\nfoo\n();\n\n\nC\n::\nx\n;\n\n\nC\n::\nE1\n;\n\n\nC\n::\nE2\n;\n\nThe \nâfix\n commandline option provides default support for safe fixes, whereas\n\nâfix-notes\n enables fixes that may replace expressions with side effects,\npotentially altering the programâs behavior.",
+    "configurations": []
+  }
+}

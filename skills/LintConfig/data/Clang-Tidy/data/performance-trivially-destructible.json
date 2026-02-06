@@ -1,0 +1,11 @@
+{
+  "name": "performance-trivially-destructible",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/trivially-destructible.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds types that could be made trivially-destructible by removing out-of-line\ndefaulted destructor declarations.\n\nstruct\n \nA\n:\n \nTrivialType\n \n{\n\n\n  \n~\nA\n();\n \n// Makes A non-trivially-destructible.\n\n\n  \nTrivialType\n \ntrivial_fields\n;\n\n\n};\n\n\nA\n::~\nA\n()\n \n=\n \ndefault\n;",
+    "configurations": []
+  }
+}

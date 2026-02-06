@@ -1,0 +1,23 @@
+{
+  "name": "no-implicit-globals",
+  "meta": {
+    "description": "Disallow declarations in the global scope",
+    "url": "https://eslint.org/docs/latest/rules/no-implicit-globals",
+    "type": "",
+    "status": {
+      "deprecated": false,
+      "removed": false,
+      "frozen": false
+    },
+    "capabilities": {
+      "recommended": false,
+      "fixable": false,
+      "has_suggestions": false
+    }
+  },
+  "content": {
+    "introduction": "",
+    "sub_configuration_introduction": "This rule has no options.",
+    "config_examples": []
+  }
+}

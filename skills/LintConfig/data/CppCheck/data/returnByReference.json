@@ -1,0 +1,16 @@
+{
+    "name": "returnByReference",
+    "meta": {
+        "severity": "performance",
+        "cwe": "",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "content": {
+        "introduction": "Function 'func()' should return member 'var' by const reference.",
+        "attributes": {
+            "severity": "performance",
+            "cwe_id": "",
+            "inconclusive": false
+        }
+    }
+}

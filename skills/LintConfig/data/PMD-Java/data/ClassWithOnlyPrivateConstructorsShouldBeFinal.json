@@ -1,0 +1,12 @@
+{
+    "name": "ClassWithOnlyPrivateConstructorsShouldBeFinal",
+    "category": "design",
+    "summary": "Reports classes that may be made final because they cannot be extended from outside\ntheir compilation unit anyway. This is because all their constructors are private,\nso a subclass could not call the super constructor.",
+    "message": "This class has only private constructors and may be final",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_design.html#classwithonlyprivateconstructorsshouldbefinal",
+    "since": "4.1",
+    "priority": "1",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "public class Foo {  //Should be final\nprivate Foo() { }\n}"
+}

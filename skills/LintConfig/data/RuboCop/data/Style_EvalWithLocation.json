@@ -1,0 +1,9 @@
+{
+  "name": "Style/EvalWithLocation",
+  "full_description": "Pass `__FILE__` and `__LINE__` to `eval` method, as they are used by backtraces.",
+  "introduction": "No further details provided.",
+  "default_enabled": true,
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

@@ -1,0 +1,16 @@
+{
+    "name": "mismatchingContainerIterator",
+    "meta": {
+        "severity": "error",
+        "cwe": "664",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "content": {
+        "introduction": "Iterator 'it' referring to container 'v2' is used with container 'v1'.",
+        "attributes": {
+            "severity": "error",
+            "cwe_id": "664",
+            "inconclusive": false
+        }
+    }
+}

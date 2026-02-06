@@ -1,0 +1,12 @@
+{
+    "name": "InsufficientStringBufferDeclaration",
+    "category": "performance",
+    "summary": "Failing to pre-size a StringBuffer or StringBuilder properly could cause it to re-size many times\nduring runtime. This rule attempts to determine the total number the characters that are actually\npassed into StringBuffer.append(), but represents a best guess \"worst case\" scenario. An empty\nStringBuffer/StringBuilder constructor initializes the object to 16 characters. This default\nis assumed if the length of the constructor can not be determined.",
+    "message": "{0} has been initialized with size {1}, but has at least {2} characters appended.",
+    "url": "${pmd.website.baseurl}/pmd_rules_java_performance.html#insufficientstringbufferdeclaration",
+    "since": "3.6",
+    "priority": "3",
+    "is_deprecated": false,
+    "configuration": [],
+    "examples": "StringBuilder bad = new StringBuilder();\nbad.append(\"This is a long string that will exceed the default 16 characters\");\n\nStringBuilder good = new StringBuilder(41);\ngood.append(\"This is a long string, which is pre-sized\");"
+}

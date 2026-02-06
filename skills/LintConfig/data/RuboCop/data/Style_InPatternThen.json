@@ -1,0 +1,9 @@
+{
+  "name": "Style/InPatternThen",
+  "full_description": "Checks for `in;` uses in `case` expressions.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "#no-in-pattern-semicolons",
+  "is_safe": true,
+  "parameters": []
+}

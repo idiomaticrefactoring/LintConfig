@@ -1,0 +1,9 @@
+{
+  "name": "Lint/MixedCaseRange",
+  "full_description": "Checks for mixed-case character ranges since they include likely unintended characters.",
+  "introduction": "No further details provided.",
+  "default_enabled": "pending",
+  "style_guide_url": "",
+  "is_safe": true,
+  "parameters": []
+}

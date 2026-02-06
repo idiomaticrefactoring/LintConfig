@@ -1,0 +1,11 @@
+{
+  "name": "misc-no-recursion",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/no-recursion.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Finds strongly connected functions (by analyzing the call graph for\nSCCâs (Strongly Connected Components) that are loops),\ndiagnoses each function in the cycle,\nand displays one example of a possible call graph loop (recursion).\n\nReferences:\n\nCERT C++ Coding Standard rule \nDCL56-CPP. Avoid cycles during initialization of static objects\n.\n\n\nJPL Institutional Coding Standard for the C Programming Language\n(JPL DOCID D-60411) rule \n2.4 Do not use direct or indirect recursion\n.\n\n\nOpenCL Specification, Version 1.2 rule \n6.9 Restrictions: i. Recursion is not supported.\n.\n\nLimitations\nÂ¶\n\n\n\n\nThe check does not handle calls done through function pointers\n\n\nThe check does not handle C++ destructors",
+    "configurations": []
+  }
+}

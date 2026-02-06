@@ -1,0 +1,17 @@
+{
+  "name": "UncommunicativeParameterName",
+  "default_configuration": {
+    "enabled": true,
+    "exclude": [],
+    "reject": [
+      "/^.$/",
+      "/[0-9]$/",
+      "/[A-Z]/",
+      "/^_/"
+    ],
+    "accept": []
+  },
+  "description": "An _Uncommunicative Parameter Name_ is a parameter name that doesn't\ncommunicate its intent well enough. This code smell is a case of\n[Uncommunicative Name](Uncommunicative-Name.md).",
+  "configuration_docs": "Reek's _Uncommunicative Parameter Name_ detector supports the [Basic Smell Options](Basic-Smell-Options.md), plus:\n| Option   | Value       | Effect  |\n| ---------|-------------|---------|\n| `reject` | array of strings | The set of names that Reek uses to check for bad names. Defaults to single-letter names, names containing an uppercase letter, names with a number at the end and '_'. |\n| `accept` | array of strings | The set of names that Reek will accept (and not report) even if they match one of the `reject` expressions. |\nAn example configuration could look like this:\n```yaml\n---\nUncommunicativeParameterName:\naccept:\n- x\n- arg1\nreject:\n- foobar\n```\nReek will convert whatever you give it as a string to the corresponding regex, so \"foobar\" from above will be converted to /foobar/ internally.\nApplying a configuration to a source file like this:\n```ruby\ndef omg(x); x; end # Should not be reported\ndef omg(arg1); arg1; end # Should not be reported\ndef omg(foobar); foobar; end # Should be reported\n```\nReek would report:\n```\nsmelly.rb -- 1 warning:\n[3]:UncommunicativeParameterName: omg has the parameter name 'foobar'\n```\nSometimes just strings are not enough for configuration. E.g. consider this code sample:\n```ruby\nclass Klass\ndef my_method(foo, foobar); end\nend\n```\nand now imagine that you want to reject the name \"foo\" but not \"foobar\". This wouldn't be possible with just using strings.\nFor this reason Reek has a special syntax that allows you to use regexes by using a forward slash at the beginning and the end of the string.\nEverything within the forward slashes will be loaded as a regex.\nA possible configuration that allows \"foobar\" but rejects \"foo\" could look like this:\n```yaml\n---\nUncommunicativeParameterName:\nreject:\n- \"/^foo$/\"\n```",
+  "reference_url": "https://raw.githubusercontent.com/troessner/reek/master/docs/Uncommunicative-Parameter-Name.md"
+}

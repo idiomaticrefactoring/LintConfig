@@ -1,0 +1,11 @@
+{
+  "name": "abseil-no-internal-dependencies",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/no-internal-dependencies.html",
+    "fixable": false
+  },
+  "content": {
+    "introduction": "Warns if code using Abseil depends on internal details. If something is in a\nnamespace that includes the word âinternalâ, code is not allowed to depend upon\nit because itâs an implementation detail. They cannot friend it, include it,\nyou mention it or refer to it in any way. Doing so violates Abseilâs\ncompatibility guidelines and may result in breakage. See\n\nhttps://abseil.io/about/compatibility\n for more information.\n\nThe following cases will result in warnings:\n\nabsl\n::\nstrings_internal\n::\nfoo\n();\n\n\n// warning triggered on this line\n\n\nclass\n \nfoo\n \n{\n\n\n  \nfriend\n \nstruct\n \nabsl\n::\ncontainer_internal\n::\nfaa\n;\n\n\n  \n// warning triggered on this line\n\n\n};\n\n\nabsl\n::\nmemory_internal\n::\nMakeUniqueResult\n();\n\n\n// warning triggered on this line",
+    "configurations": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bugprone-misplaced-operator-in-strlen-in-alloc",
+  "meta": {
+    "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-operator-in-strlen-in-alloc.html",
+    "fixable": true
+  },
+  "content": {
+    "introduction": "Finds cases where \n1\n is added to the string in the argument to \nstrlen()\n,\n\nstrnlen()\n, \nstrnlen_s()\n, \nwcslen()\n, \nwcsnlen()\n, and\n\nwcsnlen_s()\n instead of the result and the value is used as an argument to a\nmemory allocation function (\nmalloc()\n, \ncalloc()\n, \nrealloc()\n,\n\nalloca()\n) or the \nnew[]\n operator in \nC++\n. The check detects error cases\neven if one of these functions (except the \nnew[]\n operator) is called by a\nconstant function pointer. Cases where \n1\n is added both to the parameter and\nthe result of the \nstrlen()\n-like function are ignored, as are cases where\nthe whole addition is surrounded by extra parentheses.\n\nC\n example code:\n\nvoid\n \nbad_malloc\n(\nchar\n \n*\nstr\n)\n \n{\n\n\n  \nchar\n \n*\nc\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nstrlen\n(\nstr\n \n+\n \n1\n));\n\n\n}\n\nThe suggested fix is to add \n1\n to the return value of \nstrlen()\n and not\nto its argument. In the example above the fix would be\n\nchar\n \n*\nc\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nstrlen\n(\nstr\n)\n \n+\n \n1\n);\n\nC++\n example code:\n\nvoid\n \nbad_new\n(\nchar\n \n*\nstr\n)\n \n{\n\n\n  \nchar\n \n*\nc\n \n=\n \nnew\n \nchar\n[\nstrlen\n(\nstr\n \n+\n \n1\n)];\n\n\n}\n\nAs in the \nC\n code with the \nmalloc()\n function, the suggested fix is to\nadd \n1\n to the return value of \nstrlen()\n and not to its argument. In the\nexample above the fix would be\n\nchar\n \n*\nc\n \n=\n \nnew\n \nchar\n[\nstrlen\n(\nstr\n)\n \n+\n \n1\n];\n\nExample for silencing the diagnostic:\n\nvoid\n \nbad_malloc\n(\nchar\n \n*\nstr\n)\n \n{\n\n\n  \nchar\n \n*\nc\n \n=\n \n(\nchar\n*\n)\n \nmalloc\n(\nstrlen\n((\nstr\n \n+\n \n1\n)));\n\n\n}",
+    "configurations": []
+  }
+}
