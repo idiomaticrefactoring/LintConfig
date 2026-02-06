@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantSelfAssignment",
-  "full_description": "Checks for places where redundant assignments are made for in place modification methods.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

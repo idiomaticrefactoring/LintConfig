@@ -1,9 +1,0 @@
-{
-  "name": "Style/DocumentDynamicEvalDefinition",
-  "full_description": "When using `class_eval` (or other `eval`) with string interpolation, add a comment block showing its appearance if interpolated.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#eval-comment-docs",
-  "is_safe": true,
-  "parameters": []
-}

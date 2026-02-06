@@ -1,9 +1,0 @@
-{
-  "name": "Lint/NoReturnInBeginEndBlocks",
-  "full_description": "Do not `return` inside `begin..end` blocks in assignment contexts.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

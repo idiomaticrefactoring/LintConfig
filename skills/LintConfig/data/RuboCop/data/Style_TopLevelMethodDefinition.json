@@ -1,9 +1,0 @@
-{
-  "name": "Style/TopLevelMethodDefinition",
-  "full_description": "Looks for top-level method definitions.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#top-level-methods",
-  "is_safe": true,
-  "parameters": []
-}

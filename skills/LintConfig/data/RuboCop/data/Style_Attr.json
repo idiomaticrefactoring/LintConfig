@@ -1,9 +1,0 @@
-{
-  "name": "Style/Attr",
-  "full_description": "Checks for uses of Module#attr.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#attr",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Layout/SpaceBeforeComment",
-  "full_description": "Checks for missing space between code and a comment on the same line.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

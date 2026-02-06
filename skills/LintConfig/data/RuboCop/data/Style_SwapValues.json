@@ -1,9 +1,0 @@
-{
-  "name": "Style/SwapValues",
-  "full_description": "Enforces the use of shorthand-style swapping of 2 variables.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#values-swapping",
-  "is_safe": true,
-  "parameters": []
-}

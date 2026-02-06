@@ -1,9 +1,0 @@
-{
-  "name": "Style/ArrayCoercion",
-  "full_description": "Use Array() instead of explicit Array check or [*var], when dealing with a variable you want to treat as an Array, but you're not certain it's an array.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#array-coercion",
-  "is_safe": false,
-  "parameters": []
-}

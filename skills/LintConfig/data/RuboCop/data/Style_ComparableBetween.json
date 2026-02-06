@@ -1,9 +1,0 @@
-{
-  "name": "Style/ComparableBetween",
-  "full_description": "Enforces the use of `Comparable#between?` instead of logical comparison.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#ranges-or-between",
-  "is_safe": false,
-  "parameters": []
-}

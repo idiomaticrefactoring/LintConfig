@@ -1,9 +1,0 @@
-{
-  "name": "Style/BitwisePredicate",
-  "full_description": "Prefer bitwise predicate methods over direct comparison operations.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#bitwise-predicate-methods",
-  "is_safe": false,
-  "parameters": []
-}

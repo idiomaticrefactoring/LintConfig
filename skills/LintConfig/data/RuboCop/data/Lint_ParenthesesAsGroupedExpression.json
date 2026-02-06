@@ -1,9 +1,0 @@
-{
-  "name": "Lint/ParenthesesAsGroupedExpression",
-  "full_description": "Checks for method calls with a space before the opening parenthesis.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#parens-no-spaces",
-  "is_safe": true,
-  "parameters": []
-}

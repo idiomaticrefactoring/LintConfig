@@ -1,9 +1,0 @@
-{
-  "name": "Lint/OrAssignmentToConstant",
-  "full_description": "Checks unintended or-assignment to constant.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

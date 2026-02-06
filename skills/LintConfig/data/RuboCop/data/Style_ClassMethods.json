@@ -1,9 +1,0 @@
-{
-  "name": "Style/ClassMethods",
-  "full_description": "Use self when defining module/class methods.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#def-self-class-methods",
-  "is_safe": true,
-  "parameters": []
-}

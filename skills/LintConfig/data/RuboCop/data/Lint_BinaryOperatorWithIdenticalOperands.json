@@ -1,9 +1,0 @@
-{
-  "name": "Lint/BinaryOperatorWithIdenticalOperands",
-  "full_description": "Checks for places where binary operator has identical operands.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

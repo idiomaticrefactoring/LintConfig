@@ -1,9 +1,0 @@
-{
-  "name": "Lint/HeredocMethodCallPosition",
-  "full_description": "Checks for the ordering of a method call where the receiver of the call is a HEREDOC.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#heredoc-method-calls",
-  "is_safe": true,
-  "parameters": []
-}

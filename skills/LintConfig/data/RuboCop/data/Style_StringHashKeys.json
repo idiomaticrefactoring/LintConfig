@@ -1,9 +1,0 @@
-{
-  "name": "Style/StringHashKeys",
-  "full_description": "Prefer symbols instead of strings as hash keys.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#symbols-as-keys",
-  "is_safe": false,
-  "parameters": []
-}

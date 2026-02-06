@@ -1,9 +1,0 @@
-{
-  "name": "Style/CombinableLoops",
-  "full_description": "Checks for places where multiple consecutive loops over the same data can be combined into a single loop.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

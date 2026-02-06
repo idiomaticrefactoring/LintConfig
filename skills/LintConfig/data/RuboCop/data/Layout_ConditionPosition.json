@@ -1,9 +1,0 @@
-{
-  "name": "Layout/ConditionPosition",
-  "full_description": "Checks for condition placed in a confusing position relative to the keyword.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#same-line-condition",
-  "is_safe": true,
-  "parameters": []
-}

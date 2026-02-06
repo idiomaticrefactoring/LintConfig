@@ -1,9 +1,0 @@
-{
-  "name": "Lint/NonLocalExitFromIterator",
-  "full_description": "Do not use return in iterator to cause non-local exit.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

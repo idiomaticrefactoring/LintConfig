@@ -1,9 +1,0 @@
-{
-  "name": "Naming/ConstantName",
-  "full_description": "Constants should use SCREAMING_SNAKE_CASE.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#screaming-snake-case",
-  "is_safe": true,
-  "parameters": []
-}

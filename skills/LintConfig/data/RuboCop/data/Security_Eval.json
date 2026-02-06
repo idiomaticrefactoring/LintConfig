@@ -1,9 +1,0 @@
-{
-  "name": "Security/Eval",
-  "full_description": "The use of eval represents a serious security risk.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

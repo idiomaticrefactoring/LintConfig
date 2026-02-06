@@ -1,9 +1,0 @@
-{
-  "name": "Style/MissingRespondToMissing",
-  "full_description": "Checks if `method_missing` is implemented without implementing `respond_to_missing`.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-method-missing",
-  "is_safe": true,
-  "parameters": []
-}

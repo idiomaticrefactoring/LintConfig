@@ -1,9 +1,0 @@
-{
-  "name": "Style/MultilineInPatternThen",
-  "full_description": "Do not use `then` for multi-line `in` statement.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#no-then",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Style/DataInheritance",
-  "full_description": "Checks for inheritance from Data.define.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#no-extend-data-define",
-  "is_safe": true,
-  "parameters": []
-}

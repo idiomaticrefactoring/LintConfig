@@ -1,9 +1,0 @@
-{
-  "name": "Lint/RegexpAsCondition",
-  "full_description": "Do not use regexp literal as a condition. The regexp literal matches `$_` implicitly.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Style/IdenticalConditionalBranches",
-  "full_description": "Checks that conditional statements do not have an identical line at the end of each branch, which can validly be moved out of the conditional.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

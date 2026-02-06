@@ -1,9 +1,0 @@
-{
-  "name": "Style/ComparableClamp",
-  "full_description": "Enforces the use of `Comparable#clamp` instead of comparison by minimum and maximum.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

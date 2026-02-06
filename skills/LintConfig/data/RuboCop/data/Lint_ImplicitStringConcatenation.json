@@ -1,9 +1,0 @@
-{
-  "name": "Lint/ImplicitStringConcatenation",
-  "full_description": "Checks for adjacent string literals on the same line, which could better be represented as a single string literal.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

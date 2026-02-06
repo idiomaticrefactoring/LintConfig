@@ -1,9 +1,0 @@
-{
-  "name": "Style/Strip",
-  "full_description": "Use `strip` instead of `lstrip.rstrip`.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

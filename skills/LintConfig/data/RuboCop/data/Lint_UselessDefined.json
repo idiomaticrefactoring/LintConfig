@@ -1,9 +1,0 @@
-{
-  "name": "Lint/UselessDefined",
-  "full_description": "Checks for calls to `defined?` with strings and symbols. The result of such a call will always be truthy.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

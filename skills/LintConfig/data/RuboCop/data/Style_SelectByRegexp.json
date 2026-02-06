@@ -1,9 +1,0 @@
-{
-  "name": "Style/SelectByRegexp",
-  "full_description": "Prefer grep/grep_v to select/reject with a regexp match.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Lint/OutOfRangeRegexpRef",
-  "full_description": "Checks for out of range reference for Regexp because it always returns nil.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

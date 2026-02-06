@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantArrayFlatten",
-  "full_description": "Checks for redundant calls of `Array#flatten`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

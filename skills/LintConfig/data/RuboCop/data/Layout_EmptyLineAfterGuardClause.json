@@ -1,9 +1,0 @@
-{
-  "name": "Layout/EmptyLineAfterGuardClause",
-  "full_description": "Add empty line after guard clause.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

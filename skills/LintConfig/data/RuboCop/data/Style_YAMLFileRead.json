@@ -1,9 +1,0 @@
-{
-  "name": "Style/YAMLFileRead",
-  "full_description": "Checks for the use of `YAML.load`, `YAML.safe_load`, and `YAML.parse` with `File.read` argument.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

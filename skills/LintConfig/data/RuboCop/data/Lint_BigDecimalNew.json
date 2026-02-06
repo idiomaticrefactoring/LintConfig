@@ -1,9 +1,0 @@
-{
-  "name": "Lint/BigDecimalNew",
-  "full_description": "`BigDecimal.new()` is deprecated. Use `BigDecimal()` instead.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

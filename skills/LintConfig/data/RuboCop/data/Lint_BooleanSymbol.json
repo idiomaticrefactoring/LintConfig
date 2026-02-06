@@ -1,9 +1,0 @@
-{
-  "name": "Lint/BooleanSymbol",
-  "full_description": "Checks for `:true` and `:false` symbols.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

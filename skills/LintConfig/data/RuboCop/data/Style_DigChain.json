@@ -1,9 +1,0 @@
-{
-  "name": "Style/DigChain",
-  "full_description": "Use `dig` with multiple parameters instead of chaining multiple calls.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

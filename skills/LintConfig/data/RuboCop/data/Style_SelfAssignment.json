@@ -1,9 +1,0 @@
-{
-  "name": "Style/SelfAssignment",
-  "full_description": "Checks for places where self-assignment shorthand should have been used.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#self-assignment",
-  "is_safe": true,
-  "parameters": []
-}

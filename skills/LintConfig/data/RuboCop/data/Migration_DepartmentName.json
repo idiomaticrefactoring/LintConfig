@@ -1,9 +1,0 @@
-{
-  "name": "Migration/DepartmentName",
-  "full_description": "Check that cop names in rubocop:disable (etc) comments are given with department name.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantRegexpConstructor",
-  "full_description": "Checks for the instantiation of regexp using redundant `Regexp.new` or `Regexp.compile`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

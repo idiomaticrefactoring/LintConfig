@@ -1,9 +1,0 @@
-{
-  "name": "Style/MultilineIfModifier",
-  "full_description": "Only use if/unless modifiers on single line statements.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-multiline-if-modifiers",
-  "is_safe": true,
-  "parameters": []
-}

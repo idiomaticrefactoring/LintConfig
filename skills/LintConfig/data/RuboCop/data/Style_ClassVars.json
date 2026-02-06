@@ -1,9 +1,0 @@
-{
-  "name": "Style/ClassVars",
-  "full_description": "Avoid the use of class variables.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-class-vars",
-  "is_safe": true,
-  "parameters": []
-}

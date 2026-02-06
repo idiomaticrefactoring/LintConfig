@@ -1,9 +1,0 @@
-{
-  "name": "Style/SuperArguments",
-  "full_description": "Call `super` without arguments and parentheses when the signature is identical.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

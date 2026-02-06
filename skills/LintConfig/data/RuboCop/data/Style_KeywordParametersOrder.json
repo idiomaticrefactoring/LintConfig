@@ -1,9 +1,0 @@
-{
-  "name": "Style/KeywordParametersOrder",
-  "full_description": "Enforces that optional keyword parameters are placed at the end of the parameters list.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#keyword-parameters-order",
-  "is_safe": true,
-  "parameters": []
-}

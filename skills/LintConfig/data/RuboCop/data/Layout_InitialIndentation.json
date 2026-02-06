@@ -1,9 +1,0 @@
-{
-  "name": "Layout/InitialIndentation",
-  "full_description": "Checks the indentation of the first non-blank non-comment line in a file.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

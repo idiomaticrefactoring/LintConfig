@@ -1,9 +1,0 @@
-{
-  "name": "Style/Encoding",
-  "full_description": "Use UTF-8 as the source file encoding.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#utf-8",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Layout/SpaceAfterMethodName",
-  "full_description": "Do not put a space between a method name and the opening parenthesis in a method definition.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#parens-no-spaces",
-  "is_safe": true,
-  "parameters": []
-}

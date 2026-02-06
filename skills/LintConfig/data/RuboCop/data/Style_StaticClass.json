@@ -1,9 +1,0 @@
-{
-  "name": "Style/StaticClass",
-  "full_description": "Prefer modules to classes with only class methods.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#modules-vs-classes",
-  "is_safe": false,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Layout/SpaceAfterNot",
-  "full_description": "Tracks redundant space after the ! operator.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-space-bang",
-  "is_safe": true,
-  "parameters": []
-}

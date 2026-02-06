@@ -1,9 +1,0 @@
-{
-  "name": "Style/CombinableDefined",
-  "full_description": "Checks successive `defined?` calls that can be combined into a single call.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

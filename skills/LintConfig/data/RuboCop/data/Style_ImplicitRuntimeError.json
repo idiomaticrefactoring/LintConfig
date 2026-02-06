@@ -1,9 +1,0 @@
-{
-  "name": "Style/ImplicitRuntimeError",
-  "full_description": "Use `raise` or `fail` with an explicit exception class and message, rather than just a message.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

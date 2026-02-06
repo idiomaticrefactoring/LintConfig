@@ -1,9 +1,0 @@
-{
-  "name": "Style/MapIntoArray",
-  "full_description": "Checks for usages of `each` with `<<`, `push`, or `append` which can be replaced by `map`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#functional-code",
-  "is_safe": false,
-  "parameters": []
-}

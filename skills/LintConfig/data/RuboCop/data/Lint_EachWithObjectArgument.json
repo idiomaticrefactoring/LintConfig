@@ -1,9 +1,0 @@
-{
-  "name": "Lint/EachWithObjectArgument",
-  "full_description": "Checks for immutable argument given to each_with_object.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

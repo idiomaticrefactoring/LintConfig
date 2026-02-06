@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantSelf",
-  "full_description": "Don't use self where it's not needed.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-self-unless-required",
-  "is_safe": true,
-  "parameters": []
-}

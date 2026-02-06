@@ -1,9 +1,0 @@
-{
-  "name": "Lint/LiteralAssignmentInCondition",
-  "full_description": "Checks for literal assignments in the conditions.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

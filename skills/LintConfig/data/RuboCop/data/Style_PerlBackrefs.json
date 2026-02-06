@@ -1,9 +1,0 @@
-{
-  "name": "Style/PerlBackrefs",
-  "full_description": "Avoid Perl-style regex back references.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-perl-regexp-last-matchers",
-  "is_safe": true,
-  "parameters": []
-}

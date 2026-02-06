@@ -1,9 +1,0 @@
-{
-  "name": "Style/EachForSimpleLoop",
-  "full_description": "Use `Integer#times` for a simple loop which iterates a fixed number of times.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

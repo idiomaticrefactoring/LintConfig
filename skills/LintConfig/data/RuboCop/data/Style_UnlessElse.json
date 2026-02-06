@@ -1,9 +1,0 @@
-{
-  "name": "Style/UnlessElse",
-  "full_description": "Do not use unless with else. Rewrite these with the positive case first.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-else-with-unless",
-  "is_safe": true,
-  "parameters": []
-}

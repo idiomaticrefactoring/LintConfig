@@ -1,9 +1,0 @@
-{
-  "name": "Style/EnvHome",
-  "full_description": "Checks for consistent usage of `ENV['HOME']`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

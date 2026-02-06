@@ -1,9 +1,0 @@
-{
-  "name": "Lint/SafeNavigationWithEmpty",
-  "full_description": "Avoid `foo&.empty?` in conditionals.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

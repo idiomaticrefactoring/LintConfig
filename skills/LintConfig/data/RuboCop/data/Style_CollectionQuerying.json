@@ -1,9 +1,0 @@
-{
-  "name": "Style/CollectionQuerying",
-  "full_description": "Prefer `Enumerable` predicate methods over expressions with `count`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "#collection-querying",
-  "is_safe": false,
-  "parameters": []
-}

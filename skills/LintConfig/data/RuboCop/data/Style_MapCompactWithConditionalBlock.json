@@ -1,9 +1,0 @@
-{
-  "name": "Style/MapCompactWithConditionalBlock",
-  "full_description": "Prefer `select` or `reject` over `map { ... }.compact`.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

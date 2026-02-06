@@ -1,9 +1,0 @@
-{
-  "name": "Style/MethodCalledOnDoEndBlock",
-  "full_description": "Avoid chaining a method call on a do...end block.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#single-line-blocks",
-  "is_safe": true,
-  "parameters": []
-}

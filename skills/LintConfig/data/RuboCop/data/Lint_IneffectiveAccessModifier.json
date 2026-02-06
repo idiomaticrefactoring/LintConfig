@@ -1,9 +1,0 @@
-{
-  "name": "Lint/IneffectiveAccessModifier",
-  "full_description": "Checks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

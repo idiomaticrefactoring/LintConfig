@@ -1,9 +1,0 @@
-{
-  "name": "Lint/NumericOperationWithConstantResult",
-  "full_description": "Checks for numeric operations with constant results.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Lint/OrderedMagicComments",
-  "full_description": "Checks the proper ordering of magic comments and whether a magic comment is not placed before a shebang.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

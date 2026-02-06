@@ -1,9 +1,0 @@
-{
-  "name": "Lint/MixedRegexpCaptureTypes",
-  "full_description": "Do not mix named captures and numbered captures in a Regexp literal.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

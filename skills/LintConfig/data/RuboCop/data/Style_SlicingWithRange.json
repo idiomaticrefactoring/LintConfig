@@ -1,9 +1,0 @@
-{
-  "name": "Style/SlicingWithRange",
-  "full_description": "Checks array slicing is done with redundant, endless, and beginless ranges when suitable.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#slicing-with-ranges",
-  "is_safe": false,
-  "parameters": []
-}

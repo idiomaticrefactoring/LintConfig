@@ -1,9 +1,0 @@
-{
-  "name": "Style/IfWithSemicolon",
-  "full_description": "Do not use if x; .... Use the ternary operator instead.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-semicolon-ifs",
-  "is_safe": true,
-  "parameters": []
-}

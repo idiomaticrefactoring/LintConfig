@@ -1,9 +1,0 @@
-{
-  "name": "Style/CharacterLiteral",
-  "full_description": "Checks for uses of character literals.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#no-character-literals",
-  "is_safe": true,
-  "parameters": []
-}

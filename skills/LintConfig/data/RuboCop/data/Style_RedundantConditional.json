@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantConditional",
-  "full_description": "Don't return true/false from a conditional.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

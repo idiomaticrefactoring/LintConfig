@@ -1,9 +1,0 @@
-{
-  "name": "Style/ZeroLengthPredicate",
-  "full_description": "Use #empty? when testing for objects of length 0.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

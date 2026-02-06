@@ -1,9 +1,0 @@
-{
-  "name": "Style/OptionalArguments",
-  "full_description": "Checks for optional arguments that do not appear at the end of the argument list.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#optional-arguments",
-  "is_safe": false,
-  "parameters": []
-}

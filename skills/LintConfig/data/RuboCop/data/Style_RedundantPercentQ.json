@@ -1,9 +1,0 @@
-{
-  "name": "Style/RedundantPercentQ",
-  "full_description": "Checks for %q/%Q when single quotes or double quotes would do.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#percent-q",
-  "is_safe": true,
-  "parameters": []
-}

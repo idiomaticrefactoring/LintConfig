@@ -1,9 +1,0 @@
-{
-  "name": "Style/Send",
-  "full_description": "Prefer `Object#__send__` or `Object#public_send` to `send`, as `send` may overlap with existing methods.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#prefer-public-send",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Style/Dir",
-  "full_description": "Use the `__dir__` method to retrieve the canonicalized absolute path to the current file.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

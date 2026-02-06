@@ -1,9 +1,0 @@
-{
-  "name": "Style/DirEmpty",
-  "full_description": "Prefer to use `Dir.empty?('path/to/dir')` when checking if a directory is empty.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

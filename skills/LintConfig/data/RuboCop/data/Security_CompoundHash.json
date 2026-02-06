@@ -1,9 +1,0 @@
-{
-  "name": "Security/CompoundHash",
-  "full_description": "When overwriting Object#hash to combine values, prefer delegating to Array#hash over writing a custom implementation.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": false,
-  "parameters": []
-}

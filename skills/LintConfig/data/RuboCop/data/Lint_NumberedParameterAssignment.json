@@ -1,9 +1,0 @@
-{
-  "name": "Lint/NumberedParameterAssignment",
-  "full_description": "Checks for uses of numbered parameter assignment.",
-  "introduction": "No further details provided.",
-  "default_enabled": "pending",
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

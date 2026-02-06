@@ -1,9 +1,0 @@
-{
-  "name": "Style/ParallelAssignment",
-  "full_description": "Check for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "#parallel-assignment",
-  "is_safe": true,
-  "parameters": []
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Lint/ShadowingOuterLocalVariable",
-  "full_description": "Do not use the same name as outer local variable for block arguments or block local variables.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

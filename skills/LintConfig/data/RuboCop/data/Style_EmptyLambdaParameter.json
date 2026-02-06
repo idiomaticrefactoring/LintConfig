@@ -1,9 +1,0 @@
-{
-  "name": "Style/EmptyLambdaParameter",
-  "full_description": "Omit parens for empty lambda parameters.",
-  "introduction": "No further details provided.",
-  "default_enabled": true,
-  "style_guide_url": "",
-  "is_safe": true,
-  "parameters": []
-}

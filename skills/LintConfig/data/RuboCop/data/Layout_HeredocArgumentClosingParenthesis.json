@@ -1,9 +1,0 @@
-{
-  "name": "Layout/HeredocArgumentClosingParenthesis",
-  "full_description": "Checks for the placement of the closing parenthesis in a method call that passes a HEREDOC string as an argument.",
-  "introduction": "No further details provided.",
-  "default_enabled": false,
-  "style_guide_url": "#heredoc-argument-closing-parentheses",
-  "is_safe": true,
-  "parameters": []
-}
