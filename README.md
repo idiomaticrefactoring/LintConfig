@@ -20,7 +20,7 @@ AI-assisted configuration tools, while powerful, can sometimes misinterpret codi
 1. **Compiling coding standards into structured, standardized coding rules**.  
 2. **Checking linter documentation to ensure valid configurations**.
 
-<img src="fig/example2.png" width="60%" />
+<img src="fig/example3.png" width="60%" />
 
 ## Installation
 
