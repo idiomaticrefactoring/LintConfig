@@ -1,6 +1,6 @@
 {
     "noUnknownAttribute": {
         "description": "Description\n\nDisallow unknown DOM properties.\nIn JSX, most DOM properties and attributes should be camelCased to be consistent with standard JavaScript style.\nThis can be a possible source of error if you are used to writing plain HTML.\nOnlydata-*andaria-*attributes are allowed to use hyphens and lowercase letters in JSX.",
-        "option": "ignoreSection titled “ignore”\nAn array of property and attribute names to ignore during validation.\n\n1{2  \"noUnknownAttribute\": {3    \"options\": {4      \"ignore\": [\"custom-attribute\", \"non-standard-prop\"]5    }6  }7}"
+        "option": "ignoreSection titled “ignore”\nAn array of property and attribute names to ignore during validation.\n{  \"noUnknownAttribute\": {    \"options\": {      \"ignore\": [\"custom-attribute\", \"non-standard-prop\"]    }  }}"
     }
 }

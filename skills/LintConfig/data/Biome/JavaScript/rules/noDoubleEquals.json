@@ -1,6 +1,6 @@
 {
     "noDoubleEquals": {
         "description": "Description\n\nRequire the use of===and!==.\nIt is generally bad practice to use==for comparison instead of===. Double operators will trigger implicittype coercionand are thus not preferred. Using strict equality operators is almost\nalways best practice.\nFor ergonomic reasons, this rule makes by default an exception for== nullfor\ncomparing to bothnullandundefined.",
-        "option": "The rule provides the option described below.\n\n1{2    \"//\":\"...\",3    \"options\": {4        \"ignoreNull\": true5    }6}\nignoreNullSection titled “ignoreNull”\nWhen this option is set totrue, an exception will be made for checking againstnull,\nas relying on the double equals operator to compare withnullis frequently used to check\nequality with eithernullorundefined.\nWhen the option is set tofalse, all double equal operators will be forbidden without\nexceptions.\nDefault:true"
+        "option": "The rule provides the option described below.\n{    \"//\":\"...\",    \"options\": {        \"ignoreNull\": true    }}\nignoreNullSection titled “ignoreNull”\nWhen this option is set totrue, an exception will be made for checking againstnull,\nas relying on the double equals operator to compare withnullis frequently used to check\nequality with eithernullorundefined.\nWhen the option is set tofalse, all double equal operators will be forbidden without\nexceptions.\nDefault:true"
     }
 }

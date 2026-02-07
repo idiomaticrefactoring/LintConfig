@@ -1,6 +1,6 @@
 {
     "noConfusingLabels": {
         "description": "Description\n\nDisallow labeled statements that are not loops.\nLabeled statements in JavaScript are used in conjunction withbreakandcontinueto control flow around multiple loops.\nTheir use for other statements is suspicious and unfamiliar.\nThe rule ignores reactive Svelte statements in Svelte components.",
-        "option": "Use the options to allow specific labels in your code.\nLabels can be used to mark code that should be removed under certain conditions,\nsuch as in production builds.\nSome bundlers, such asesbuildand Vite,\ncan be configured to remove labeled statements.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"suspicious\": {5        \"noConfusingLabels\": {6          \"options\": {7            \"allowedLabels\": [8              \"DEV\"9            ]10          }11        }12      }13    }14  }15}\n\n1DEV: assertSomeCondition();"
+        "option": "Use the options to allow specific labels in your code.\nLabels can be used to mark code that should be removed under certain conditions,\nsuch as in production builds.\nSome bundlers, such asesbuildand Vite,\ncan be configured to remove labeled statements.\n{  \"linter\": {    \"rules\": {      \"suspicious\": {        \"noConfusingLabels\": {          \"options\": {            \"allowedLabels\": [              \"DEV\"            ]          }        }      }    }  }}\n1DEV: assertSomeCondition();"
     }
 }
