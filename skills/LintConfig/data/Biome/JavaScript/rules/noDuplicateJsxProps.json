@@ -1,0 +1,6 @@
+{
+    "noDuplicateJsxProps": {
+        "description": "Description\n\nPrevents JSX properties to be assigned multiple times.",
+        "option": "This rule has no specific options."
+    }
+}

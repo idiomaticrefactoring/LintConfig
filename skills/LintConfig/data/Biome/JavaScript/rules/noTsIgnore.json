@@ -1,0 +1,6 @@
+{
+    "noTsIgnore": {
+        "description": "Description\n\nPrevents the use of the TypeScript directive@ts-ignore.\nThe directive@ts-ignoresuppresses all compilation errors, even ones that could be considered bugs\ncoming from an upstream library or the compiler itself. If you use@ts-ignore, it won’t be possible to know\nwhen and if the bug is fixed.\nThe rule promotes the use the directive@ts-expect-error, which is meant to raise an error if there aren’t any errors.\nThis means that once the bug is fixed, you can delete the directive, safely.",
+        "option": "This rule has no specific options."
+    }
+}

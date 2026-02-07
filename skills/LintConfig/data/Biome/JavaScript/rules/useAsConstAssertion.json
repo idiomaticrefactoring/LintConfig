@@ -1,0 +1,6 @@
+{
+    "useAsConstAssertion": {
+        "description": "Description\n\nEnforce the use ofas constover literal type and type annotation.\nIn TypeScript, there are three common ways to specify that a value is of a specific type such as2and not a general type such asnumber:\nas const: telling TypeScript to infer the literal type automaticallyas <literal>: explicitly telling the literal type to TypeScripttype annotation: explicitly telling the literal type to TypeScript when declare variables\nThe rule suggests to useas constwhen you’re usingaswith a literal type or type annotation, sinceas constis simpler and doesn’t require retyping the value.",
+        "option": "This rule has no specific options."
+    }
+}

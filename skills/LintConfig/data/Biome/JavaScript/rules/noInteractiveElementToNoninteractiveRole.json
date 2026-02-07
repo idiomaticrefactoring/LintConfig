@@ -1,0 +1,6 @@
+{
+    "noInteractiveElementToNoninteractiveRole": {
+        "description": "Description\n\nEnforce that non-interactive ARIA roles are not assigned to interactive HTML elements.\nInteractive HTML elements indicate controls in the user interface.\nInteractive elements include<a href>,<button>,<input>,<select>,<textarea>.\nNon-interactive HTML elements and non-interactive ARIA roles indicate content and containers in the user interface.\nNon-interactive elements include<main>,<area>,<h1>(,<h2>, etc),<img>,<li>,<ul>and<ol>.\nWAI-ARIA rolesshould not be used to convert an interactive element to a non-interactive element.\nNon-interactive ARIA roles includearticle,banner,complementary,img,listitem,main,regionandtooltip.",
+        "option": "This rule has no specific options."
+    }
+}

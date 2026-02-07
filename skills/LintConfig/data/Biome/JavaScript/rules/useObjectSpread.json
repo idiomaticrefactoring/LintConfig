@@ -1,0 +1,6 @@
+{
+    "useObjectSpread": {
+        "description": "Description\n\nPrefer object spread overObject.assign()when constructing new objects.\nObject spread syntax is more concise, more readable, and performs better\nthanObject.assign()when creating a new object from existing objects.\nIt also has better TypeScript integration.",
+        "option": "This rule has no specific options."
+    }
+}

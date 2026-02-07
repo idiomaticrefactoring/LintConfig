@@ -1,0 +1,6 @@
+{
+    "noUnusedFunctionParameters": {
+        "description": "Description\n\nDisallow unused function parameters.\nThere is an exception to this rule:\nparameters that starts with underscore, e.g.function foo(_a, _b) {}.",
+        "option": "The rule has the following options\nignoreRestSiblingsSection titled “ignoreRestSiblings”\nSincev2.1.0\nWhether to ignore unused variables from an object destructuring with a spread.\nExample:aandbinfunction({ a, b, ...rest }) { return rest;}should be ignored by this rule when set to false.\nDefaults totrue.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"correctness\": {5        \"noUnusedFunctionParameters\": {6          \"options\": {7            \"ignoreRestSiblings\": false8          }9        }10      }11    }12  }13}\n\n1function withObjectSpread({ b, ...rest }) {2       return rest;3}\ncode-block.js:1:29lint/correctness/noUnusedFunctionParameters━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⚠Thisparameteris unused.>1 │function withObjectSpread({ b, …rest }) {│^2 │return rest;3 │}ℹUnused parameters might be the result of an incomplete refactoring."
+    }
+}

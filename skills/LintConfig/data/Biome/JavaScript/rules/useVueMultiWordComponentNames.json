@@ -1,0 +1,6 @@
+{
+    "useVueMultiWordComponentNames": {
+        "description": "Description\n\nEnforce multi-word component names in Vue components.\nUsing a single-word component name (e.g.App,Header) can:\nConflict with native/custom HTML elements (present or future)\nReduce clarity/expressiveness\nThis rule requires component names to be “multi-word”.\nA name is considered multi-word when:\nKebab-case: contains at least one hyphen (my-component)\nPascalCase / CamelCase: contains at least two capital letters (MyComponent); single-cap names like App or Foo are rejected\nComponent names are extracted from thenameproperty in Options API components, or inferred from the file name if not explicitly set.",
+        "option": "ignoresSection titled “ignores”\nAdditional single-word component names to ignore (case-insensitive). The rule already ignores Vue built-in components andAppby default.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"nursery\": {5        \"useVueMultiWordComponentNames\": {6          \"options\": {7            \"ignores\": [8              \"Foo\"9            ]10          }11        }12      }13    }14  }15}\nValidSection titled “Valid”\n\n1<script>2export default {3  name: \"Foo\"4};5</script>"
+    }
+}

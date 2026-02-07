@@ -1,0 +1,6 @@
+{
+    "useThrowNewError": {
+        "description": "Description\n\nRequirenewwhen throwing an error.\nWhile it’s possible to instantiateErrorwithout using thenewkeyword, it’s better to be consistent: modern builtins requirenewto be instantiated.\nRule matches errors when their name ends with the word “Error” and the first character is uppercase.",
+        "option": "This rule has no specific options."
+    }
+}

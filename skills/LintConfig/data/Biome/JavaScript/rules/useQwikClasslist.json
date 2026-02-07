@@ -1,0 +1,6 @@
+{
+    "useQwikClasslist": {
+        "description": "Description\n\nPrefer using theclassprop as a classlist over theclassnameshelper.\nThis rule encourages the use ofclassprop which natively supports strings, objects, and arrays, enabling fine-grained reactivity and optimal performance. Using utilities likeclassnamescan interfere with Qwik’s reactivity model and prevent the framework from optimizing component updates. Prefer using the built-inclassprop for best results.\nFor more information, see:Qwik documentation on class bindings",
+        "option": "This rule has no specific options."
+    }
+}

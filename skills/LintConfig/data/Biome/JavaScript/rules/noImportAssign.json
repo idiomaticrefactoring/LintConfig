@@ -1,0 +1,6 @@
+{
+    "noImportAssign": {
+        "description": "Description\n\nDisallow assigning to imported bindings",
+        "option": "This rule has no specific options."
+    }
+}

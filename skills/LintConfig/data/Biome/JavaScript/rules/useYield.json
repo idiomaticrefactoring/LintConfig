@@ -1,0 +1,6 @@
+{
+    "useYield": {
+        "description": "Description\n\nRequire generator functions to containyield.\nThis rule generates warnings for generator functions that do not have theyieldkeyword.",
+        "option": "This rule has no specific options."
+    }
+}

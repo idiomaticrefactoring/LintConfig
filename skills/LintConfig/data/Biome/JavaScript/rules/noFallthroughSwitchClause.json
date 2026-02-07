@@ -1,0 +1,6 @@
+{
+    "noFallthroughSwitchClause": {
+        "description": "Description\n\nDisallow fallthrough ofswitchclauses.\nSwitch clauses inswitchstatements fall through by default.\nThis can lead to unexpected behavior when forgotten.\nThe rule doesn’t takeprocess.exit()in consideration.",
+        "option": "This rule has no specific options."
+    }
+}

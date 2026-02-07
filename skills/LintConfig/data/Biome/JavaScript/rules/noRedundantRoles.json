@@ -1,0 +1,6 @@
+{
+    "noRedundantRoles": {
+        "description": "Description\n\nEnforce explicitroleproperty is not the same as implicit/default role property on an element.",
+        "option": "This rule has no specific options."
+    }
+}

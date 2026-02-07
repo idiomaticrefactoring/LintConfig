@@ -1,0 +1,6 @@
+{
+    "noConstAssign": {
+        "description": "Description\n\nPrevents from havingconstvariables being re-assigned.\nTrying to assign a value to aconstwill cause anTypeErrorwhen the code is executed.",
+        "option": "This rule has no specific options."
+    }
+}

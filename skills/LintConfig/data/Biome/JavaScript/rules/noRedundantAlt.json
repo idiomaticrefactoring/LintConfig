@@ -1,0 +1,6 @@
+{
+    "noRedundantAlt": {
+        "description": "Description\n\nEnforceimgalt prop does not contain the word “image”, “picture”, or “photo”.\nThe rule will first check ifaria-hiddenis truthy to determine whether to enforce the rule. If the image is\nhidden, then the rule will always succeed.",
+        "option": "This rule has no specific options."
+    }
+}

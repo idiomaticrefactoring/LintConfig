@@ -1,0 +1,6 @@
+{
+    "noMultiAssign": {
+        "description": "Description\n\nDisallow use of chained assignment expressions\nChaining the assignment of variables can lead to unexpected results and\nbe difficult to read.",
+        "option": "This rule has no specific options."
+    }
+}

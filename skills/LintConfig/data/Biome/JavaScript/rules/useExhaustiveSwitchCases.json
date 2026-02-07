@@ -1,0 +1,6 @@
+{
+    "useExhaustiveSwitchCases": {
+        "description": "Description\n\nRequire switch-case statements to be exhaustive.\nWhen working with union types in TypeScript, it’s common to want to write a switch statement\nintended to contain a case for each possible variant.\nHowever, if the union type changes, it’s easy to forget to modify the cases to account for\nany new types.\nThis rule reports when a switch statement over a value typed as a union of literals lacks\na case for any of those literal types and does not have a default clause.",
+        "option": "This rule has no specific options."
+    }
+}

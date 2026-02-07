@@ -1,0 +1,6 @@
+{
+    "noVueOptionsApi": {
+        "description": "Description\n\nDisallow the use of Vue Options API.\nVue 3.6’s Vapor Mode does not support the Options API.\nComponents must use the Composition API (<script setup>ordefineComponentwith function signature) instead.\nThis rule helps prepare codebases for Vapor Mode by detecting Options API\npatterns that are incompatible with the new rendering mode.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noNegationElse": {
+        "description": "Description\n\nDisallow negation in the condition of anifstatement if it has anelseclause.",
+        "option": "This rule has no specific options."
+    }
+}

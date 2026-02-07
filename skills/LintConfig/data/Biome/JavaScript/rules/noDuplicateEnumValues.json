@@ -1,0 +1,6 @@
+{
+    "noDuplicateEnumValues": {
+        "description": "Description\n\nDisallow duplicate enum member values.\nAlthough TypeScript supports duplicate enum member values, people usually expect members to have unique values within the same enum.\nDuplicate values can lead to bugs that are hard to track down.",
+        "option": "This rule has no specific options."
+    }
+}

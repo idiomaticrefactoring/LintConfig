@@ -1,0 +1,6 @@
+{
+    "noShadowRestrictedNames": {
+        "description": "Description\n\nDisallow identifiers from shadowing restricted names.\nSee also:noShadow",
+        "option": "This rule has no specific options."
+    }
+}

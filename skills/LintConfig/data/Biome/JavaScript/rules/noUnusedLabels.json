@@ -1,0 +1,6 @@
+{
+    "noUnusedLabels": {
+        "description": "Description\n\nDisallow unused labels.\nLabels that are declared and never used are most likely an error due to incomplete refactoring.\nThe rule ignores reactive Svelte statements in Svelte components.",
+        "option": "This rule has no specific options."
+    }
+}

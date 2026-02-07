@@ -1,0 +1,6 @@
+{
+    "noDuplicateTestHooks": {
+        "description": "Description\n\nAdescribeblock should not contain duplicate hooks.",
+        "option": "This rule has no specific options."
+    }
+}

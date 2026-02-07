@@ -1,0 +1,6 @@
+{
+    "noUnsafeDeclarationMerging": {
+        "description": "Description\n\nDisallow unsafe declaration merging between interfaces and classes.\nTypeScript’sdeclaration mergingsupports merging separate declarations with the same name.\nDeclaration mergingbetween classes and interfaces is unsafe.\nTheTypeScript Compilerdoesn’t check whether properties defined in the interface are initialized in the class.\nThis can cause lead toTypeScriptnot detecting code that will cause runtime errors.",
+        "option": "This rule has no specific options."
+    }
+}

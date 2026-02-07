@@ -1,0 +1,6 @@
+{
+    "noNextAsyncClientComponent": {
+        "description": "Description\n\nPrevent client components from being async functions.\nThis rule prevents the use of async functions for client components in Next.js applications.\nClient components marked with “use client” directive should not be async as this can cause\nhydration mismatches, break component rendering lifecycle, and lead to unexpected behavior\nwith React’s concurrent features.",
+        "option": "This rule has no specific options."
+    }
+}

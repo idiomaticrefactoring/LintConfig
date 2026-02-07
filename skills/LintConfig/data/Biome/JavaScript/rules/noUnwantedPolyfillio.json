@@ -1,0 +1,6 @@
+{
+    "noUnwantedPolyfillio": {
+        "description": "Description\n\nPrevent duplicate polyfills from Polyfill.io.\nYou are using polyfills from Polyfill.io and including polyfills already shipped with Next.js.\nThis unnecessarily increases page weight which can affect loading performance.",
+        "option": "This rule has no specific options."
+    }
+}

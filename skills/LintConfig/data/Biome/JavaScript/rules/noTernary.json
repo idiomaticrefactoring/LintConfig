@@ -1,0 +1,6 @@
+{
+    "noTernary": {
+        "description": "Description\n\nDisallow ternary operators.\nThe ternary operator is used to conditionally assign a value to a variable.\nSome believe that the use of ternary operators leads to unclear code.",
+        "option": "This rule has no specific options."
+    }
+}

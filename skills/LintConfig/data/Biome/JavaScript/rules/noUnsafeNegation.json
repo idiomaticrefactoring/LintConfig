@@ -1,0 +1,6 @@
+{
+    "noUnsafeNegation": {
+        "description": "Description\n\nDisallow using unsafe negation.",
+        "option": "This rule has no specific options."
+    }
+}

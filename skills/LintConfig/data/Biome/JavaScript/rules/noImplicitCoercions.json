@@ -1,0 +1,6 @@
+{
+    "noImplicitCoercions": {
+        "description": "Description\n\nDisallow shorthand type conversions.\nJavaScript allows shorthand type conversions by using operators like!!,+,~, etc.\nThese shortcuts can make the code harder to read and understand, especially for developers\nwho are not familiar with these patterns. Using explicit type conversion functions likeBoolean(),Number(), andString()makes the intent clearer and more readable.\nThis rule reports when values are converted to:\nBoolean using double negation !!value\nNumber using unary plus +value, subtraction from zero value - 0, multiplication by one value * 1, division by one value / 1, or double negation with minus -(-value)\nString using concatenation with empty string value + \"\" or empty template literal value + “\nCheck index using bitwise NOT with indexOf ~value.indexOf(item) instead of comparing with -1",
+        "option": "This rule has no specific options."
+    }
+}

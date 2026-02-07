@@ -1,0 +1,6 @@
+{
+    "useIterableCallbackReturn": {
+        "description": "Description\n\nEnforce consistent return values in iterable callbacks.\nThis rule ensures that callbacks passed to certain iterable methods either always return a\nvalue or never return a value, depending on the method’s requirements.\nNote that async and generator callbacks are ignored as they always returnPromiseorGeneratorrespectively.",
+        "option": "This rule has no specific options."
+    }
+}

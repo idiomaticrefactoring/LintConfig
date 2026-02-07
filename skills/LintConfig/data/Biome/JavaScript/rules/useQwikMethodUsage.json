@@ -1,0 +1,6 @@
+{
+    "useQwikMethodUsage": {
+        "description": "Description\n\nDisallowuse*hooks outside ofcomponent$or otheruse*hooks in Qwik applications.\nEnsures Qwik’s lifecycle hooks are only used in valid reactive contexts.\nSeeQwik Component Lifecyclefor proper hook usage.",
+        "option": "This rule has no specific options."
+    }
+}

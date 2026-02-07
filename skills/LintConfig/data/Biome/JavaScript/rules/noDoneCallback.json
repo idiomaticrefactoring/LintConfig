@@ -1,0 +1,6 @@
+{
+    "noDoneCallback": {
+        "description": "Description\n\nDisallow using a callback in asynchronous tests and hooks.\nThis rule checks the function parameter of hooks and tests for use of thedoneargument, suggesting you return a promise instead.",
+        "option": "This rule has no specific options."
+    }
+}

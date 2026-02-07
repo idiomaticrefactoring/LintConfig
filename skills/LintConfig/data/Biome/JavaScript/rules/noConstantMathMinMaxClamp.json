@@ -1,0 +1,6 @@
+{
+    "noConstantMathMinMaxClamp": {
+        "description": "Description\n\nDisallow the use ofMath.minandMath.maxto clamp a value where the result itself is constant.",
+        "option": "This rule has no specific options."
+    }
+}

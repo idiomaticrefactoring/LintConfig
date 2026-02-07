@@ -1,0 +1,6 @@
+{
+    "noGlobalObjectCalls": {
+        "description": "Description\n\nDisallow calling global object properties as functions\nECMAScript provides several global objects that are intended to be used as-is.\nSome of these objects look as if they could be constructors due their capitalization (such as Math and JSON) but will throw an error if you try to execute them as functions.\nThe ECMAScript 5 specification makes it clear that both Math and JSON cannot be invoked:\nThe Math object does not have a [[Call]] internal property; it is not possible to invoke the Math object as a function.\nThe ECMAScript 2015 specification makes it clear that Reflect cannot be invoked:\nThe Reflect object also does not have a [[Call]] internal method; it is not possible to invoke the Reflect object as a function.\nThe ECMAScript 2017 specification makes it clear that Atomics cannot be invoked:\nThe Atomics object does not have a [[Call]] internal method; it is not possible to invoke the Atomics object as a function.\nAnd the ECMAScript Internationalization API Specification makes it clear that Intl cannot be invoked:\nThe Intl object does not have a [[Call]] internal method; it is not possible to invoke the Intl object as a function.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noUselessElse": {
+        "description": "Description\n\nDisallowelseblock when theifblock breaks early.\nIf anifblock breaks early using a breaking statement (return,break,continue, orthrow),\nthen theelseblock becomes useless.\nIts contents can be placed outside of the block.\nIf anifblock breaks early using a breaking statement (return,break,continue, orthrow),\nthen theelseblock becomes unnecessary.\nThis is because the content of theelseblock will never be executed in conjunction with theifblock,\nas the breaking statement ensures the control flow exits theifblock immediately.\nTherefore, theelseblock is redundant, and its content can be placed outside of the block,\nreducing the indentation level by one.",
+        "option": "This rule has no specific options."
+    }
+}

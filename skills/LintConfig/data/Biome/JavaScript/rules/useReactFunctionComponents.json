@@ -1,0 +1,6 @@
+{
+    "useReactFunctionComponents": {
+        "description": "Description\n\nEnforce that components are defined as functions and never as classes.\nReact in particular allows users to create components using functions or classes.\nHowever, using functions is generally preferred. This rule enforces the use of function components.\nThis rule makes an exception for class components that implementcomponentDidCatchbecause there is\ncurrently no hook alternative for React. This function is typically used for defining error boundaries.\nIt’s recommended to define your error boundary once and then reuse it across your application.\nIf you are using Preact, it has auseErrorBoundaryhook.",
+        "option": "This rule has no specific options."
+    }
+}

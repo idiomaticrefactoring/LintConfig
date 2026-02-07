@@ -1,0 +1,6 @@
+{
+    "noUselessEscapeInString": {
+        "description": "Description\n\nDisallow unnecessary escapes in string literals.\nEscaping non-special characters in string literals doesn’t have any effect.\nHence, they may confuse a reader.",
+        "option": "This rule has no specific options."
+    }
+}

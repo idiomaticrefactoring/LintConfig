@@ -1,0 +1,6 @@
+{
+    "useRegexpExec": {
+        "description": "Description\n\nEnforceRegExp#execoverString#matchif no global flag is provided.\nString#match is defined to work the same as RegExp#exec when the regular expression does not include the g flag.\nKeeping to consistently using one of the two can help improve code readability.\nRegExp#exec may also be slightly faster than String#match; this is the reason to choose it as the preferred usage.",
+        "option": "This rule has no specific options."
+    }
+}

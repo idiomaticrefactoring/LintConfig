@@ -1,0 +1,6 @@
+{
+    "noUnnecessaryConditions": {
+        "description": "Description\n\nDisallow unnecessary type-based conditions that can be statically determined as redundant.\nThis rule detects if expressions inside conditions are statically inferrable and yield\nfalsy or truthy values that don’t change during the life cycle of the program.",
+        "option": "This rule has no specific options."
+    }
+}

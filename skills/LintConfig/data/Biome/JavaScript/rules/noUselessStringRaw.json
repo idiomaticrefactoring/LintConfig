@@ -1,0 +1,6 @@
+{
+    "noUselessStringRaw": {
+        "description": "Description\n\nDisallow unnecessaryString.rawfunction in template string literals without any escape sequence.\nString.rawis useless when contains a raw string without any escape-like sequence.",
+        "option": "This rule has no specific options."
+    }
+}

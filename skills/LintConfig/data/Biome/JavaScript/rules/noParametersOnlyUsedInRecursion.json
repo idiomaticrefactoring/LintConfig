@@ -1,0 +1,6 @@
+{
+    "noParametersOnlyUsedInRecursion": {
+        "description": "Description\n\nDisallow function parameters that are only used in recursive calls.\nA parameter that is only passed to recursive calls is effectively unused\nand can be removed or replaced with a constant, simplifying the function.",
+        "option": "This rule has no specific options."
+    }
+}

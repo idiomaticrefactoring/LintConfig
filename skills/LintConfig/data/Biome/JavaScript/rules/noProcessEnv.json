@@ -1,0 +1,6 @@
+{
+    "noProcessEnv": {
+        "description": "Description\n\nDisallow the use ofprocess.env.\nTheprocess.envobject in Node.js stores configuration settings. Using it directly throughout a project can cause problems:\nIt’s harder to maintainIt can lead to conflicts in team developmentIt complicates deployment across multiple servers\nA better practice is to keep all settings in one configuration file and reference it throughout the project.",
+        "option": "This rule has no specific options."
+    }
+}

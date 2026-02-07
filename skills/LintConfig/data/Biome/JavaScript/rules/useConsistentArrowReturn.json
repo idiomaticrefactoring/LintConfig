@@ -1,0 +1,6 @@
+{
+    "useConsistentArrowReturn": {
+        "description": "Description\n\nEnforce consistent arrow function bodies.\nThis rule enforces the use of arrow functions with no body block when the function body consists of a single return statement.\nThis rule does not report when:\nthe function body contains directives (e.g. \"use strict\"), or\nthe body (or its descendants) contain comments, or\nthe single return has no argument (return;).\nThe fix wraps expressions in parentheses when required for correctness (e.g. object literals and sequence expressions).",
+        "option": "This rule has no specific options."
+    }
+}

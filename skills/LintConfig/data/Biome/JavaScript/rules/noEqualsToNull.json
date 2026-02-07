@@ -1,0 +1,6 @@
+{
+    "noEqualsToNull": {
+        "description": "Description\n\nRequire the use of===or!==for comparison withnull.\nComparing tonullwith==or!=may have unintended results as the\nexpression evaluates totruewhen comparingnulltoundefined.",
+        "option": "This rule has no specific options."
+    }
+}

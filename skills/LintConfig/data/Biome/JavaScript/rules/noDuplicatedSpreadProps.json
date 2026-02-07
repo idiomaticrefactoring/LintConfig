@@ -1,0 +1,6 @@
+{
+    "noDuplicatedSpreadProps": {
+        "description": "Description\n\nDisallow JSX prop spreading the same identifier multiple times.\nEnforces that any unique expression is only spread once.\nGenerally spreading the same expression twice is an indicator of a mistake since any attribute between the spreads may be overridden when the intent was not to.\nEven when that is not the case this will lead to unnecessary computations being performed.",
+        "option": "This rule has no specific options."
+    }
+}

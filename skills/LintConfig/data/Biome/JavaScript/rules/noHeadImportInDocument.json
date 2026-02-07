@@ -1,0 +1,6 @@
+{
+    "noHeadImportInDocument": {
+        "description": "Description\n\nPrevent using thenext/headmodule inpages/_document.json Next.js projects.\nImportingnext/headwithin the custompages/_document.jsfile can cause\nunexpected behavior in your application. Thenext/headcomponent is designed\nto be used at the page level, and when used in the custom document it can interfere\nwith the global document structure, which leads to issues with rendering and SEO.\nTo modify<head>elements across all pages, you should use the<Head />component from thenext/documentmodule.",
+        "option": "This rule has no specific options."
+    }
+}

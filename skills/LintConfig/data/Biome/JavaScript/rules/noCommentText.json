@@ -1,0 +1,6 @@
+{
+    "noCommentText": {
+        "description": "Description\n\nPrevent comments from being inserted as text nodes",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useLiteralKeys": {
+        "description": "Description\n\nEnforce the usage of a literal access to properties over computed property access.",
+        "option": "This rule has no specific options."
+    }
+}

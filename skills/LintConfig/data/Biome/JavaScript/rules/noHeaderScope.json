@@ -1,0 +1,6 @@
+{
+    "noHeaderScope": {
+        "description": "Description\n\nThe scope prop should be used only on<th>elements.",
+        "option": "This rule has no specific options."
+    }
+}

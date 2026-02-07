@@ -1,0 +1,6 @@
+{
+    "noExcessiveCognitiveComplexity": {
+        "description": "Description\n\nDisallow functions that exceed a given Cognitive Complexity score.\nThe more complexity a function contains, the harder it is to understand\nlater on.\nReducing complexity helps to make code more maintenable, both by making\nit easier to understand as well as by reducing chances of accidental\nside-effects when making changes.\nThis rule calculates a complexity score for every function and disallows\nthose that exceed a configured complexity threshold (default: 15).\nThe complexity score is calculated based on the Cognitive Complexity\nalgorithm:https://redirect.sonarsource.com/doc/cognitive-complexity.html",
+        "option": "Allows specifying the maximum allowed complexity.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"complexity\": {5        \"noExcessiveCognitiveComplexity\": {6          \"options\": {7            \"maxAllowedComplexity\": 158          }9        }10      }11    }12  }13}\nThe allowed values range from 1 through 254. The default is 15."
+    }
+}

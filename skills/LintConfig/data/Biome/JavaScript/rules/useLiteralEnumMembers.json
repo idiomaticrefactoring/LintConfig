@@ -1,0 +1,6 @@
+{
+    "useLiteralEnumMembers": {
+        "description": "Description\n\nRequire all enum members to be literal values.\nUsually, an enum member is initialized with a literal number or a literal string.\nHowever,TypeScriptallows the value of an enum member to be many different kinds of expressions.\nUsing a computed enum member is often error-prone and confusing.\nThis rule requires the initialization of enum members with constant expressions.\nIt allows numeric and bitwise expressions for supportingenum flags.\nIt also allows referencing previous enum members.",
+        "option": "This rule has no specific options."
+    }
+}

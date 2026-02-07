@@ -1,0 +1,6 @@
+{
+    "useValidAutocomplete": {
+        "description": "Description\n\nUse valid values for theautocompleteattribute oninputelements.\nThe HTML autocomplete attribute only accepts specific predefined values.\nThis allows for more detailed purpose definitions compared to thetypeattribute.\nUsing these predefined values, user agents and assistive technologies can present input purposes to users in different ways.",
+        "option": "biome.json\n1{2  \"linter\": {3    \"rules\": {4      \"a11y\": {5        \"useValidAutocomplete\": {6          \"options\": {7            \"inputComponents\": [8              \"MyInput\"9            ]10          }11        }12      }13    }14  }15}"
+    }
+}

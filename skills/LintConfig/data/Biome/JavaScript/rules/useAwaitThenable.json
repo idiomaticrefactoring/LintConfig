@@ -1,0 +1,6 @@
+{
+    "useAwaitThenable": {
+        "description": "Description\n\nEnforce thatawaitisonlyused onPromisevalues.\nCautionAt the moment, this rule only checks for instances of the globalPromiseclass. This is a major shortcoming compared to the ESLint\nrule if you are using customPromise-like implementations such asBluebirdor in-house solutions.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noEvolvingTypes": {
+        "description": "Description\n\nDisallow variables from evolving intoanytype through reassignments.\nIn TypeScript, variables without explicit type annotations can evolve their types based on subsequent assignments.\nWhen  TypeScript’snoImplicitAnyis disabled,\nvariables without explicit type annotations have implicitly the typeany.\nJust like theanytype, evolvedanytypes disable many type-checking rules and should be avoided to maintain strong type safety.\nThis rule prevents such cases by ensuring variables do not evolve intoanytype, encouraging explicit type annotations and controlled type evolutions.\nIf you enabled TypeScript’snoImplicitAnyand want to benefit of evolving types,\nthen we recommend to disable this rule.",
+        "option": "This rule has no specific options."
+    }
+}

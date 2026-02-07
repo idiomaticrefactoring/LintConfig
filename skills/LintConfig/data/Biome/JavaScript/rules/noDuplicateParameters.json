@@ -1,0 +1,6 @@
+{
+    "noDuplicateParameters": {
+        "description": "Description\n\nDisallow duplicate function parameter name.\nIf more than one parameter has the same name in a function definition,\nthe last occurrence overrides the preceding occurrences.\nA duplicated name might be a typing error.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noShoutyConstants": {
+        "description": "Description\n\nDisallow the use of constants which its value is the upper-case version of its name.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noDelete": {
+        "description": "Description\n\nDisallow the use of thedeleteoperator.\nThedeleteoperator enables the removal of a property from an object.\nThedeleteoperator should be avoided because itcan prevent some optimizations ofJavaScriptengines.\nMoreover, it can lead to unexpected results.\nFor instance, deleting an array elementdoes not change the length of the array.\nThe only legitimate use ofdeleteis on an object that behaves like amap.\nTo allow this pattern, this rule does not reportdeleteon computed properties that are not literal values.\nConsider usingMapinstead of an object.",
+        "option": "This rule has no specific options."
+    }
+}

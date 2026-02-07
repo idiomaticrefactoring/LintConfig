@@ -1,0 +1,6 @@
+{
+    "useGetterReturn": {
+        "description": "Description\n\nEnforcegetmethods to always return a value.",
+        "option": "This rule has no specific options."
+    }
+}

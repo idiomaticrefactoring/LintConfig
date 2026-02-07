@@ -1,0 +1,6 @@
+{
+    "noEmptyBlockStatements": {
+        "description": "Description\n\nDisallow empty block statements and static blocks.\nEmpty static blocks and block statements, while not technically errors, usually occur due to refactoring that wasn’t completed. They can cause confusion when reading code.\nThis rule disallows empty block statements and static blocks.\nThis rule ignores block statements or static blocks which contain a comment (for example, in an empty catch or finally block of a try statement to indicate that execution should continue regardless of errors).",
+        "option": "This rule has no specific options."
+    }
+}

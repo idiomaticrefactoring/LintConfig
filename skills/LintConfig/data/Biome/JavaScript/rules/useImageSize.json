@@ -1,0 +1,6 @@
+{
+    "useImageSize": {
+        "description": "Description\n\nEnforces that<img>elements have both width and height attributes.\nThis rule ensures that<img>elements havewidthandheightattributes.\nImages without specified width and height can cause layout shifts as the browser does not know how much space to reserve for them, leading to a poor user experience.\nIt’s recommended to always include these attributes to prevent such issues.",
+        "option": "This rule has no specific options."
+    }
+}

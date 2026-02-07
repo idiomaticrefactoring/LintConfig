@@ -1,0 +1,6 @@
+{
+    "useKeyWithClickEvents": {
+        "description": "Description\n\nEnforce onClick is accompanied by at least one of the following:onKeyUp,onKeyDown,onKeyPress.\nCoding for the keyboard is important for users with physical disabilities who cannot use a mouse, AT compatibility, and screenreader users.\nThis does not apply for interactive or hidden elements.",
+        "option": "This rule has no specific options."
+    }
+}

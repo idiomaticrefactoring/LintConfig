@@ -1,0 +1,6 @@
+{
+    "noVoidElementsWithChildren": {
+        "description": "Description\n\nThis rules prevents void elements (AKA self-closing elements) from having children.",
+        "option": "This rule has no specific options."
+    }
+}

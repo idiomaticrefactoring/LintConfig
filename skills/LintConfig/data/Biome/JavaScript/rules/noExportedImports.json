@@ -1,0 +1,6 @@
+{
+    "noExportedImports": {
+        "description": "Description\n\nDisallow exporting an imported variable.\nIn JavaScript, you can re-export a variable either by usingexport fromor\nby first importing the variable and then exporting it with a regularexport.\nYou may prefer to use the first approach, as it clearly communicates the intention\nto re-export an import, and can make static analysis easier.",
+        "option": "This rule has no specific options."
+    }
+}

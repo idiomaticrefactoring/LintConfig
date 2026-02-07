@@ -1,0 +1,6 @@
+{
+    "noUnassignedVariables": {
+        "description": "Description\n\nDisallowletorvarvariables that are read but never assigned.\nThis rule flags let or var declarations that are never assigned a value but are still read or used in the code.\nSince these variables will always be undefined, their usage is likely a programming mistake.",
+        "option": "This rule has no specific options."
+    }
+}

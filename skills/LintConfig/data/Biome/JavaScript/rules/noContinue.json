@@ -1,0 +1,6 @@
+{
+    "noContinue": {
+        "description": "Description\n\nDisallow continue statements.\nThe continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.\nWhen used incorrectly it makes code less testable, less readable and less maintainable.\nStructured control flow statements such as if should be used instead.",
+        "option": "This rule has no specific options."
+    }
+}

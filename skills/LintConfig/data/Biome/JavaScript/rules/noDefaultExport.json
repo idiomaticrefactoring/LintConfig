@@ -1,0 +1,6 @@
+{
+    "noDefaultExport": {
+        "description": "Description\n\nDisallow default exports.\nDefault exports cannot be easily discovered inside an editor:\nThey cannot be suggested by the editor when the user tries to import a name.\nAlso, default exports don’t encourage consistency over a code base:\nthe module that imports the default export must choose a name.\nIt is likely that different modules use different names.\nMoreover, default exports encourage exporting an object that acts as a namespace.\nThis is a legacy pattern used to mimic CommonJS modules.\nFor all these reasons, a team may want to disallow default exports.\nNote that this rule disallows only default exports in EcmaScript Module.\nIt ignores CommonJS default exports.",
+        "option": "This rule has no specific options."
+    }
+}

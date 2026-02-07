@@ -1,0 +1,6 @@
+{
+    "useDateNow": {
+        "description": "Description\n\nUseDate.now()to get the number of milliseconds since the Unix Epoch.\nDate.now()is more readable thannew Date().getTime()and its variants,\nit also avoids unnecessary instantiation ofDateobject.",
+        "option": "This rule has no specific options."
+    }
+}

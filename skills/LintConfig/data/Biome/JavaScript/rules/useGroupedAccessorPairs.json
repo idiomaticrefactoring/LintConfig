@@ -1,0 +1,6 @@
+{
+    "useGroupedAccessorPairs": {
+        "description": "Description\n\nEnforce that getters and setters for the same property are adjacent in class and object definitions.\nWhen defining a property in a class or object, it’s common to have both a getter and a setter.\nThis rule enforces that getter is defined right before the setter,\nmaking the code more maintainable and easier to read.",
+        "option": "This rule has no specific options."
+    }
+}

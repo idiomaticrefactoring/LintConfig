@@ -1,0 +1,6 @@
+{
+    "useAriaPropsForRole": {
+        "description": "Description\n\nEnforce that elements with ARIA roles must have all required ARIA attributes for that role.",
+        "option": "This rule has no specific options."
+    }
+}

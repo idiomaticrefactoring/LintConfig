@@ -1,0 +1,6 @@
+{
+    "noUselessRename": {
+        "description": "Description\n\nDisallow renaming import, export, and destructured assignments to the same name.\nES2015 allows for the renaming of references in import and export statements as well as destructuring assignments.\nThis gives programmers a concise syntax for performing these operations while renaming these references:\n\n1import { foo as bar } from \"baz\";2export { foo as bar };3let { foo: bar } = baz;\nWith this syntax, it is possible to rename a reference to the same name.\nThis is a completely redundant operation, as this is the same as not renaming at all.",
+        "option": "This rule has no specific options."
+    }
+}

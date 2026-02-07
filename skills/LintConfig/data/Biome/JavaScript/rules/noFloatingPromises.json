@@ -1,0 +1,6 @@
+{
+    "noFloatingPromises": {
+        "description": "Description\n\nRequire Promise-like statements to be handled appropriately.\nA “floating”Promiseis one that is created without any code set up to\nhandle any errors it might throw. Floating Promises can lead to several\nissues, including improperly sequenced operations, unhandled Promise\nrejections, and other unintended consequences.\nThis rule will report Promise-valued statements that are not treated in\none of the following ways:\nCalling its .then() method with two arguments\nCalling its .catch() method with one argument\nawait-ing it\nreturn-ing it\nvoid-ing it",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noReactSpecificProps": {
+        "description": "Description\n\nPrevents React-specific JSX properties from being used.\nThis rule is intended for use in JSX-based frameworks (such as Qwik, Solid, etc.) that do not use React-style prop names.",
+        "option": "This rule has no specific options."
+    }
+}

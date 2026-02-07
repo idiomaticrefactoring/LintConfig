@@ -1,0 +1,6 @@
+{
+    "useCollapsedIf": {
+        "description": "Description\n\nEnforce using singleifinstead of nestedifclauses.\nIf anif (b)statement is the only statement in anif (a)block, it is often clearer to use anif (a && b)form.",
+        "option": "This rule has no specific options."
+    }
+}

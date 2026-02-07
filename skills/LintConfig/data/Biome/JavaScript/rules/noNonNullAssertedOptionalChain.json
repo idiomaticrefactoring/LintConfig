@@ -1,0 +1,6 @@
+{
+    "noNonNullAssertedOptionalChain": {
+        "description": "Description\n\nDisallow non-null assertions after optional chaining expressions.\nOptional chaining (?.) is designed to returnundefinedif the object isnullorundefined.\nUsing a non-null assertion (!) immediately after optional chaining defeats the purpose\nof optional chaining and can lead to runtime errors.",
+        "option": "This rule has no specific options."
+    }
+}

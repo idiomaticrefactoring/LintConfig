@@ -1,0 +1,6 @@
+{
+    "useGoogleFontDisplay": {
+        "description": "Description\n\nEnforces the use of a recommendeddisplaystrategy with Google Fonts.\nThedisplayproperty controls how a font is displayed while it is loading. When using Google Fonts,\nit’s important to specify an appropriate value for this property to ensure good user experience and prevent layout shifts.\nThis rule flags the absence of thedisplayparameter, or the usage of less optimal values such asauto,block, orfallback.\nUsing&display=optionalis generally recommended as it minimizes the risk of invisible text or layout shifts.\nIn cases where swapping to the custom font after it has loaded is important, consider using&display=swap.",
+        "option": "This rule has no specific options."
+    }
+}

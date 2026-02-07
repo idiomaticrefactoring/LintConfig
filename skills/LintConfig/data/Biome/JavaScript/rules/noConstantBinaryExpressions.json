@@ -1,0 +1,6 @@
+{
+    "noConstantBinaryExpressions": {
+        "description": "Description\n\nDisallow expressions where the operation doesn’t affect the value\nComparisons which will always evaluate to true or false and logical expressions\n(||,&&,??) which either always short-circuit or never short-circuit are both likely\nindications of programmer error.",
+        "option": "This rule has no specific options."
+    }
+}

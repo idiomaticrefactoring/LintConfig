@@ -1,0 +1,6 @@
+{
+    "noUselessLabel": {
+        "description": "Description\n\nDisallow unnecessary labels.\nIf a loop contains no nested loops or switches, labeling the loop is unnecessary.",
+        "option": "This rule has no specific options."
+    }
+}

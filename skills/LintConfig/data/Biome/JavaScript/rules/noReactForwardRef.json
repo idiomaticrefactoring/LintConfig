@@ -1,0 +1,6 @@
+{
+    "noReactForwardRef": {
+        "description": "Description\n\nReplaces usages offorwardRefwith passingrefas a prop.\nIn React 19,forwardRefis no longer necessary. Passrefas a prop instead.\nThis rule detects the usage of theforwardRefAPI, and it suggests using the proprefinstead.\nSeethe official blog postfor details.\nThis rule should be disabled if you are working with React 18 or earlier.",
+        "option": "This rule has no specific options."
+    }
+}

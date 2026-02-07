@@ -1,0 +1,6 @@
+{
+    "useSemanticElements": {
+        "description": "Description\n\nIt detects the use ofroleattributes in JSX elements and suggests using semantic elements instead.\nTheroleattribute is used to define the purpose of an element, but it should be used as a last resort.\nUsing semantic elements like<button>,<nav>and others are more accessible and provide better semantics.",
+        "option": "This rule has no specific options."
+    }
+}

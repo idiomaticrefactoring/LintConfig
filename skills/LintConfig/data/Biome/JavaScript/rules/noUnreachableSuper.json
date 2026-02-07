@@ -1,0 +1,6 @@
+{
+    "noUnreachableSuper": {
+        "description": "Description\n\nEnsures thesuper()constructor is called exactly once on every code  path in a class constructor beforethisis accessed if the class has a superclass",
+        "option": "This rule has no specific options."
+    }
+}

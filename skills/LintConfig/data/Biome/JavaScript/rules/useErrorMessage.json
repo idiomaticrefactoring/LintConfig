@@ -1,0 +1,6 @@
+{
+    "useErrorMessage": {
+        "description": "Description\n\nEnforce passing a message value when creating a built-in error.\nThis rule enforces a message value to be passed in when creating an instance of a built-inErrorobject,\nwhich leads to more readable and debuggable code.",
+        "option": "This rule has no specific options."
+    }
+}

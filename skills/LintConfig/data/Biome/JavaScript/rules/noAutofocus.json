@@ -1,0 +1,6 @@
+{
+    "noAutofocus": {
+        "description": "Description\n\nEnforce that autoFocus prop is not used on elements.\nAutofocusing elements can cause usability issues for sighted and non-sighted users, alike.\nBut the autofocus attribute should be added to the element the user is expected to\ninteract with immediately upon opening a modal dialog or popover.",
+        "option": "This rule has no specific options."
+    }
+}

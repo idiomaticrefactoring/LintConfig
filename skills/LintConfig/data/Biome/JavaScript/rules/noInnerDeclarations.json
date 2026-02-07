@@ -1,0 +1,6 @@
+{
+    "noInnerDeclarations": {
+        "description": "Description\n\nDisallowfunctionandvardeclarations that are accessible outside their block.\nAvaris accessible in the whole body of the nearest root (function, module, script, static block).\nTo avoid confusion, they should be declared to the nearest root.\nPrior to ES2015,functiondeclarations were only allowed in the nearest root,\nthough parsers sometimes erroneously accept them elsewhere.\nIn ES2015, inside anES module, afunctiondeclaration is always block-scoped.\nNote thatconstandletdeclarations are block-scoped,\nand therefore they are not affected by this rule.\nMoreover,functiondeclarations in nested blocks are allowed insideES modules.",
+        "option": "This rule has no specific options."
+    }
+}

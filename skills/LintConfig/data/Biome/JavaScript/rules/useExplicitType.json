@@ -1,0 +1,6 @@
+{
+    "useExplicitType": {
+        "description": "Description\n\nEnforce types in functions, methods, variables, and parameters.\nFunctions in TypeScript often don’t need to be given an explicit return type annotation.\nLeaving off the return type is less code to read or write and allows the compiler to infer it from the contents of the function.\nHowever, explicit return types do make it visually clearer what type is returned by a function.\nThey can also speed up TypeScript type-checking performance in large codebases with many large functions.\nExplicit return types also reduce the chance of bugs by asserting the return type, and it avoids surprising “action at a distance,” where changing the body of one function may cause failures inside another function.\nAnnotating module-level variables serves a similar purpose. This rule only allows assignment of literals and some objects to untyped variables.\nObjects that are allowed must not contain spread syntax and values that aren’t literals.\nAdditionally,letandvarvariables withnullorundefinedas value require explicit annotation.\nThis rule enforces that functions do have an explicit return type annotation.",
+        "option": "This rule has no specific options."
+    }
+}

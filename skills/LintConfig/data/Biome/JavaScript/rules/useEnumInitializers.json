@@ -1,0 +1,6 @@
+{
+    "useEnumInitializers": {
+        "description": "Description\n\nRequire that each enum member value be explicitly initialized.\nTypeScriptenums are a practical way to organize semantically related constant values.\nMembers of enums that don’t have explicit values are by default given sequentially increasing numbers.\nWhen the value of enum members are important,\nallowing implicit values for enum members can cause bugs if enum declarations are modified over time.",
+        "option": "This rule has no specific options."
+    }
+}

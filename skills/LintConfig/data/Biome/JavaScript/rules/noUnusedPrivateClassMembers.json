@@ -1,0 +1,6 @@
+{
+    "noUnusedPrivateClassMembers": {
+        "description": "Description\n\nDisallow unused private class members\nPrivate class members that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring.\nSuch class members take up space in the code and can lead to confusion by readers.",
+        "option": "This rule has no specific options."
+    }
+}

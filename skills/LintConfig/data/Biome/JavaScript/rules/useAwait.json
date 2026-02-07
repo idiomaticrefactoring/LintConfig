@@ -1,0 +1,6 @@
+{
+    "useAwait": {
+        "description": "Description\n\nEnsureasyncfunctions utilizeawait.\nThis rule reportsasyncfunctions that lack anawaitexpression. Asasyncfunctions return a promise, the use ofawaitis often necessary to capture the\nresolved value and handle the asynchronous operation appropriately. Withoutawait,\nthe function operates synchronously and might not leverage the advantages of async\nfunctions.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noPositiveTabindex": {
+        "description": "Description\n\nPrevent the usage of positive integers ontabIndexproperty\nAvoid positivetabIndexproperty values to synchronize the flow of the page with keyboard tab order.",
+        "option": "This rule has no specific options."
+    }
+}

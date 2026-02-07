@@ -1,0 +1,6 @@
+{
+    "useGuardForIn": {
+        "description": "Description\n\nRequirefor-inloops to include anifstatement.\nLooping over objects with afor-inloop will include properties inherited through the prototype chain.\nThis behavior can lead to unexpected items in your for loop.\nFor codebases that do not support ES2022,Object.prototype.hasOwnProperty.call(foo, key)can be used as a check that the property is not inherited.\nFor codebases that do support ES2022,Object.hasOwn(foo, key)can be used as a shorter and more reliable alternative.",
+        "option": "This rule has no specific options."
+    }
+}

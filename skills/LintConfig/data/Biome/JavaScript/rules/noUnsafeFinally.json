@@ -1,0 +1,6 @@
+{
+    "noUnsafeFinally": {
+        "description": "Description\n\nDisallow control flow statements in finally blocks.\nJavaScript suspends the control flow statements oftryandcatchblocks until\nthe execution of finally block finishes. So, whenreturn,throw,breakorcontinueis used in finally, control flow statements insidetryandcatchare overwritten,\nwhich is considered as unexpected behavior.",
+        "option": "This rule has no specific options."
+    }
+}

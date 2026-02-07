@@ -1,0 +1,6 @@
+{
+    "noBeforeInteractiveScriptOutsideDocument": {
+        "description": "Description\n\nPrevent usage ofnext/script’sbeforeInteractivestrategy outside ofpages/_document.jsin a Next.js project.\nNext.js provides anext/scriptcomponent to optimize the loading of third-party scripts. Using thebeforeInteractivestrategy allows scripts to be preloaded before any first-party code.beforeInteractivescripts must be placed inpages/_document.js.\nThis rule checks for any usage of thebeforeInteractivescripts outside of these files.",
+        "option": "This rule has no specific options."
+    }
+}

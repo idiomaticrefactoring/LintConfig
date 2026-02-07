@@ -1,0 +1,6 @@
+{
+    "useTrimStartEnd": {
+        "description": "Description\n\nEnforce the use ofString.trimStart()andString.trimEnd()overString.trimLeft()andString.trimRight().\nWhileString.trimLeft()andString.trimRight()are aliases forString.trimStart()andString.trimEnd(),\nonly using the latter pair ensures consistency and is preferable for their direction-independent wording.\nNote thatString.trimStart()andString.trimEnd()methods do not take any parameters. Any arguments passed to these methods will be ignored.\nSee the MDN documentation for more details:\nString.prototype.trimStart()\nString.prototype.trimEnd()",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noNoninteractiveTabindex": {
+        "description": "Description\n\nEnforce thattabIndexis not assigned to non-interactive HTML elements.\nWhen using the tab key to navigate a webpage, limit it to interactive elements.\nYou don’t need to add tabindex to items in an unordered list as assistive technology can navigate through the HTML.\nKeep the tab ring small, which is the order of elements when tabbing, for a more efficient and accessible browsing experience.",
+        "option": "This rule has no specific options."
+    }
+}

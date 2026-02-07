@@ -1,0 +1,6 @@
+{
+    "useIsArray": {
+        "description": "Description\n\nUseArray.isArray()instead ofinstanceof Array.\nInJavaScriptsome array-like objects such asargumentsare not instances of theArrayclass.    ///\nMoreover, the globalArrayclass can be different between two execution contexts.\nFor instance, two frames in a web browser have a distinctArrayclass.\nPassing arrays across these contexts, results in arrays that are not instances of the contextual globalArrayclass.\nTo avoid these issues, useArray.isArray()instead ofinstanceof Array.\nSee theMDN docsfor more details.",
+        "option": "This rule has no specific options."
+    }
+}

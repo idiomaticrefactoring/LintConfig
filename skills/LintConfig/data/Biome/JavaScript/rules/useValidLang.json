@@ -1,0 +1,6 @@
+{
+    "useValidLang": {
+        "description": "Description\n\nEnsure that the attribute passed to thelangattribute is a correct ISO language and/or country.",
+        "option": "This rule has no specific options."
+    }
+}

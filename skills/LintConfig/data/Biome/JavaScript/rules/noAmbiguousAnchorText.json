@@ -1,0 +1,6 @@
+{
+    "noAmbiguousAnchorText": {
+        "description": "Description\n\nDisallow ambiguous anchor descriptions.\nEnforces<a>values are not exact matches for the phrases “click here”, “here”, “link”, “a link”, or “learn more”.\nScreen readers announce tags as links/interactive, but rely on values for context.\nAmbiguous anchor descriptions do not provide sufficient context for users.",
+        "option": "wordsSection titled “words”\nThe words option allows users to modify the strings that can be checked for in the anchor text. Useful for specifying other words in other languages.\nDefault[\"click here\", \"here\", \"link\", \"a link\", \"learn more\"]\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"nursery\": {5        \"noAmbiguousAnchorText\": {6          \"options\": {7            \"words\": [8              \"click this\"9            ]10          }11        }12      }13    }14  }15}\nInvalidSection titled “Invalid”\n\n1<a>click this</a>"
+    }
+}

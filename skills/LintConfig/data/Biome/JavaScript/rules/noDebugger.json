@@ -1,0 +1,6 @@
+{
+    "noDebugger": {
+        "description": "Description\n\nDisallow the use ofdebugger",
+        "option": "This rule has no specific options."
+    }
+}

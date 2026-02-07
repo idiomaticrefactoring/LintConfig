@@ -1,0 +1,6 @@
+{
+    "useSimplifiedLogicExpression": {
+        "description": "Description\n\nDiscard redundant terms from logical expressions.",
+        "option": "This rule has no specific options."
+    }
+}

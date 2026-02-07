@@ -1,0 +1,6 @@
+{
+    "noVueReservedKeys": {
+        "description": "Description\n\nDisallow reserved keys in Vue component data and computed properties.\nVue reserves certain keys for its internal use. Using these reserved keys\nin data properties, computed properties, methods, or other component options\ncan cause conflicts and unpredictable behavior in your Vue components.\nThis rule prevents the use of Vue reserved keys such as:\nKeys starting with $ (e.g., $el, $data, $props, $refs, etc.)\nKeys starting with _ in data properties (reserved for Vue internals)",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noMisleadingInstantiator": {
+        "description": "Description\n\nEnforce proper usage ofnewandconstructor.\nIn JavaScript, classes utilize theconstructormethod to initialize a new instance. On the other hand, TypeScript interfaces can describe a class type with anew()method signature, though this pattern is not commonly seen in real-world code. Developers, especially those new to JavaScript or TypeScript, might occasionally confuse the use ofconstructorwithnew.\nThis rule triggers warnings in the following scenarios:\nWhen a class has a method named new.\nWhen an interface defines a method named constructor or new that returns the interface type.\nWhen a type alias has a constructor method.\nYou should not use this rule if you intentionally want a class with anewmethod, and you’re confident nobody working in your code will mistake it with anconstructor.",
+        "option": "This rule has no specific options."
+    }
+}

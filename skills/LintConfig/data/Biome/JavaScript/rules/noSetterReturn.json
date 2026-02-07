@@ -1,0 +1,6 @@
+{
+    "noSetterReturn": {
+        "description": "Description\n\nDisallow returning a value from a setter\nWhile returning a value from a setter does not produce an error, the returned value is being ignored. Therefore, returning a value from a setter is either unnecessary or a possible error.\nOnly returning without a value is allowed, as it’s a control flow statement.",
+        "option": "This rule has no specific options."
+    }
+}

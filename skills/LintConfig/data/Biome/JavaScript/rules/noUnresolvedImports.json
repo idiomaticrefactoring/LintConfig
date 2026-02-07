@@ -1,0 +1,6 @@
+{
+    "noUnresolvedImports": {
+        "description": "Description\n\nWarn when importing non-existing exports.\nImporting a non-existing export is an error at runtime or build time.\nBiome can detect such incorrect imports and report errors for them.\nNote that if you use TypeScript, you probably don’t want to use this\nrule, since TypeScript already performs such checks for you.",
+        "option": "This rule has no specific options."
+    }
+}

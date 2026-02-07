@@ -1,0 +1,6 @@
+{
+    "noDangerouslySetInnerHtmlWithChildren": {
+        "description": "Description\n\nReport when a DOM element or a component uses bothchildrenanddangerouslySetInnerHTMLprop.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noPrivateImports": {
+        "description": "Description\n\nRestrict imports of private exports.\nIn JavaScript and TypeScript, as soon as youexporta symbol, such as\na type, function, or anything else that can be exported, it is\nconsidered public and can be imported from anywhere else. Unfortunately,\nthis makes it hard to enforce module boundaries, or to prevent importing\nthings that were only exported for test purposes, for instance.\nThis rule recognizes the JSDoc tags@public,@package, and@privateso that you are free to set the visibility of exports.\nExports without tag have a default visibility ofpublic, but this\ncan be configured.\nThe@accesstag is also supported if it’s used with one of the valuespublic,package, orprivate.",
+        "option": "This rule has no specific options."
+    }
+}

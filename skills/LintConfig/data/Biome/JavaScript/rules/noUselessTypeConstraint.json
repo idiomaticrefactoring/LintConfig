@@ -1,0 +1,6 @@
+{
+    "noUselessTypeConstraint": {
+        "description": "Description\n\nDisallow usinganyorunknownas type constraint.\nGeneric type parameters (<T>) in TypeScript may beconstrainedwithextends.\nA supplied type must then be a subtype of the supplied constraint.\nAll types are subtypes ofanyandunknown.\nIt is thus useless to extend fromanyorunknown.",
+        "option": "This rule has no specific options."
+    }
+}

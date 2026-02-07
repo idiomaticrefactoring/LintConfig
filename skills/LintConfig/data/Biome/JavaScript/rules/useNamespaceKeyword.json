@@ -1,0 +1,6 @@
+{
+    "useNamespaceKeyword": {
+        "description": "Description\n\nRequire using thenamespacekeyword over themodulekeyword to declare TypeScript namespaces.\nTypeScript historically allowed a code organization callednamespace.ECMAScript modulesare preferred(import/export).\nFor projects still usingnamespaces, it’s preferred to use thenamespacekeyword instead of themodulekeyword.\nThemodulekeyword is deprecated to avoid any confusion with theECMAScript moduleswhich are often calledmodules.\nNote that TypeScriptmoduledeclarations to describe external APIs (declare module \"foo\" {}) are still allowed.\nSee also:https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html",
+        "option": "This rule has no specific options."
+    }
+}

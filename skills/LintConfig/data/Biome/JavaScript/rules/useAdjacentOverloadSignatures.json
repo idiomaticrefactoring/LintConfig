@@ -1,0 +1,6 @@
+{
+    "useAdjacentOverloadSignatures": {
+        "description": "Description\n\nDisallow the use of overload signatures that are not next to each other.\nOverload signatures must be adjacent.\nIf a key is defined multiple times, only the last definition takes effect. Previous definitions are ignored.\nThis rule is useful for preventing accidental overloads that are not adjacent.\nIt is recommended to keep the overload signatures adjacent to make the code easier to read and maintain.",
+        "option": "This rule has no specific options."
+    }
+}

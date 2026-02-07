@@ -1,0 +1,6 @@
+{
+    "useHookAtTopLevel": {
+        "description": "Description\n\nEnforce that all React hooks are being called from the Top Level component functions.\nThis rule should be used only inReactprojects.\nTo understand why this required seehttps://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level",
+        "option": "This rule has no specific options."
+    }
+}

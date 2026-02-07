@@ -1,0 +1,6 @@
+{
+    "noSyncScripts": {
+        "description": "Description\n\nPrevent the usage of synchronous scripts.\nA synchronous script can impact your webpage performance, read more on how toEfficiently load third-party JavaScript.",
+        "option": "This rule has no specific options."
+    }
+}

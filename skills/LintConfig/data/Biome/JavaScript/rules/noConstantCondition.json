@@ -1,0 +1,6 @@
+{
+    "noConstantCondition": {
+        "description": "Description\n\nDisallow constant expressions in conditions",
+        "option": "This rule has no specific options."
+    }
+}

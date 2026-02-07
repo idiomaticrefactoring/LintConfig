@@ -1,0 +1,6 @@
+{
+    "noExplicitAny": {
+        "description": "Description\n\nDisallow theanytype usage.\nTheanytype in TypeScript is a dangerous “escape hatch” from the type system.\nUsinganydisables many type checking rules and is generally best used only as a last resort or when prototyping code.\nTypeScript’s--noImplicitAnycompiler option prevents an impliedany,\nbut doesn’t preventanyfrom being explicitly used the way this rule does.\nSometimes you can use the typeunknowninstead of the typeany.\nIt also accepts any value, however it requires to check that a property exists before calling it.",
+        "option": "This rule has no specific options."
+    }
+}

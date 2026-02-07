@@ -1,0 +1,6 @@
+{
+    "noFocusedTests": {
+        "description": "Description\n\nDisallow focused tests.\nDisabled test are useful when developing and debugging, because it forces the test suite to run only certain tests.\nHowever, in pull/merge request, you usually want to run all the test suite.",
+        "option": "This rule has no specific options."
+    }
+}

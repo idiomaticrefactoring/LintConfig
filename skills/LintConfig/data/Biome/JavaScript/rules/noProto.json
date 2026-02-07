@@ -1,0 +1,6 @@
+{
+    "noProto": {
+        "description": "Description\n\nDisallow the use of the deprecated__proto__object property.\nObject.prototype.__proto__is a special accessor used to get or set the prototype of an object. \\\nHowever, it has beendeprecatedsinceECMAScript 2009, being much slower and much less reliable than its\nmodern counterpartsObject.getPrototypeOf()andObject.setPrototypeOf().\nSince it is a regular property onObject.prototype,__proto__will not workonnull-prototype objects that do not extend fromObject.prototypenor ones having created their own__proto__properties viaObject.defineProperty.\nAs such, this rule encourages the use ofObject.getPrototypeOf()andObject.setPrototypeOf()in lieu of directly accessing__proto__.\nNote that this doesnotcheck for the use of__proto__inside object literal definitions\nto set a newly created object’s prototype,which is standard practice and well-optimized in modern browsers.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useExportType": {
+        "description": "Description\n\nPromotes the use ofexport typefor types.\nTypeScriptallows adding thetypekeyword on anexportto indicate that theexportdoesn’t exist at runtime.\nThis allows compilers to safely drop exports of types without looking for their definition.\nThe rule ensures that types are exported using a type-onlyexport.\nIt also groups inline type exports into a groupedexport type.",
+        "option": "This rule has no specific options."
+    }
+}

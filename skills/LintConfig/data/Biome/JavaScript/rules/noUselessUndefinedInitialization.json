@@ -1,0 +1,6 @@
+{
+    "noUselessUndefinedInitialization": {
+        "description": "Description\n\nDisallow initializing variables toundefined.\nA variable that is declared and not initialized to any value automatically gets the value ofundefined.\nIt’s considered a best practice to avoid initializing variables toundefined.\nPlease note that any inline comments attached to the initialization value or variable will be moved at the end of the variable declaration on auto-fix.\nPlease be also aware that this differs from Eslint’s behaviour.",
+        "option": "This rule has no specific options."
+    }
+}

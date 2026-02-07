@@ -1,0 +1,6 @@
+{
+    "noAriaUnsupportedElements": {
+        "description": "Description\n\nEnforce that elements that do not support ARIA roles, states, and properties do not have those attributes.",
+        "option": "This rule has no specific options."
+    }
+}

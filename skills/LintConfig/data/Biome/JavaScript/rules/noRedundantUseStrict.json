@@ -1,0 +1,6 @@
+{
+    "noRedundantUseStrict": {
+        "description": "Description\n\nPrevents from having redundant\"use strict\".\nThe directive\"use strict\"isn’tneeded in.mjsfiles, or in.jsfiles inside projects where thepackage.jsondefines library as module:\n\n1{2   \"type\": \"module\"3}\nInstead,.cjsfiles are considered “scripts” and the directive\"use strict\"is accepted and advised.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noStringCaseMismatch": {
+        "description": "Description\n\nDisallow comparison of expressions modifying the string case with non-compliant value.",
+        "option": "This rule has no specific options."
+    }
+}

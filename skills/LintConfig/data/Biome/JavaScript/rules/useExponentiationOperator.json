@@ -1,0 +1,6 @@
+{
+    "useExponentiationOperator": {
+        "description": "Description\n\nDisallow the use ofMath.powin favor of the**operator.\nIntroduced in ES2016, the infix exponentiation operator**is an alternative for the standardMath.powfunction.\nInfix notation is considered to be more readable and thus more preferable than the function notation.",
+        "option": "This rule has no specific options."
+    }
+}

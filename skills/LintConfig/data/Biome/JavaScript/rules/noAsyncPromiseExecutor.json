@@ -1,0 +1,6 @@
+{
+    "noAsyncPromiseExecutor": {
+        "description": "Description\n\nDisallows using an async function as a Promise executor.\nThe executor function can also be an async function. However, this is usually a mistake, for a few reasons:\nIf an async executor function throws an error, the error will be lost and won’t cause the newly-constructedPromiseto reject. This could make it difficult to debug and handle some errors.If a Promise executor function is usingawait, this is usually a sign that it is not actually necessary to use thenew Promiseconstructor, or the scope of thenew Promiseconstructor can be reduced.",
+        "option": "This rule has no specific options."
+    }
+}

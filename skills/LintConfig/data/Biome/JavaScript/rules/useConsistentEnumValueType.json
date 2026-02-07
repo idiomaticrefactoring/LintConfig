@@ -1,0 +1,6 @@
+{
+    "useConsistentEnumValueType": {
+        "description": "Description\n\nDisallow enums from having both number and string members.\nTypeScript enums are allowed to assign numeric or string values to their members.\nMost enums contain either all numbers or all strings, but in theory you can mix-and-match within the same enum.\nMixing enum member types is generally considered confusing and a bad practice.",
+        "option": "This rule has no specific options."
+    }
+}

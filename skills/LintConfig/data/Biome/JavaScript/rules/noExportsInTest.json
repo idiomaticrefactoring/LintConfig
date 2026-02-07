@@ -1,0 +1,6 @@
+{
+    "noExportsInTest": {
+        "description": "Description\n\nDisallow usingexportormodule.exportsin files containing tests\nThis rule aims to eliminate duplicate runs of tests by exporting things from test files.\nIf you import from a test file, then all the tests in that file will be run in each imported instance,\nso bottom line, don’t export from a test, but instead move helper functions into a separate file when they need to be shared across tests.",
+        "option": "This rule has no specific options."
+    }
+}

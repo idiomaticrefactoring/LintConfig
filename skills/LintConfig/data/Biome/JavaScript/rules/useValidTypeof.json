@@ -1,0 +1,6 @@
+{
+    "useValidTypeof": {
+        "description": "Description\n\nThis rule checks that the result of atypeofexpression is compared to a valid value.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noChildrenProp": {
+        "description": "Description\n\nPrevent passing ofchildrenas props.\nWhen using JSX, the children should be nested between the opening and closing tags.\nWhen not using JSX, the children should be passed as additional arguments toReact.createElement.",
+        "option": "This rule has no specific options."
+    }
+}

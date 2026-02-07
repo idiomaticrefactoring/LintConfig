@@ -1,0 +1,6 @@
+{
+    "noDistractingElements": {
+        "description": "Description\n\nEnforces that no distracting elements are used.\nElements that can be visually distracting can cause accessibility issues with visually impaired users.\nSuch elements are most likely deprecated, and should be avoided.\nBy default, the following elements are visually distracting:<marquee>and<blink>.",
+        "option": "This rule has no specific options."
+    }
+}

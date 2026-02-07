@@ -1,0 +1,6 @@
+{
+    "noStaticElementInteractions": {
+        "description": "Description\n\nEnforce that static, visible elements (such as<div>) that have click handlers use the valid role attribute.\nStatic HTML elements do not have semantic meaning. This is clear in the case of<div>and<span>. It is less so clear in the case of elements that seem semantic, but that do not have a semantic mapping in the accessibility layer. For example<a>without href attribute,<meta>,<script>,<picture>,<section>, and<colgroup>— to name a few — have no semantic layer mapping. They are as void of meaning as<div>.\nTheWAI-ARIA role attributeconfers a semantic mapping to an element. The semantic value can then be expressed to a user via assistive technology.\nIn order to add interactivity such as a mouse or key event listener to a static element, that element must be given a role value as well.\nSource:jsx-a11y/no-static-element-interactions",
+        "option": "This rule has no specific options."
+    }
+}

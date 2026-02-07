@@ -1,0 +1,6 @@
+{
+    "noCommaOperator": {
+        "description": "Description\n\nDisallow comma operator.\nThe comma operator includes multiple expressions where only one is expected.\nIt evaluates every operand from left to right and returns the value of the last operand.\nIt frequently obscures side effects, and its use is often an accident.\nThe use of the comma operator in the initialization and update parts of aforis still allowed.",
+        "option": "This rule has no specific options."
+    }
+}

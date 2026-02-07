@@ -1,0 +1,6 @@
+{
+    "noCatchAssign": {
+        "description": "Description\n\nDisallow reassigning exceptions in catch clauses.\nAssignment to acatchparameter can be misleading and confusing.\nIt is often unintended and indicative of a programmer error.",
+        "option": "This rule has no specific options."
+    }
+}

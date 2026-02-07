@@ -1,0 +1,6 @@
+{
+    "noNamespace": {
+        "description": "Description\n\nDisallow the use of TypeScript’snamespaces.\nNamespaces are an old way to organize your code in TypeScript.\nThey are not recommended anymore and should be replaced by ES6 modules\n(theimport/exportsyntax).",
+        "option": "This rule has no specific options."
+    }
+}

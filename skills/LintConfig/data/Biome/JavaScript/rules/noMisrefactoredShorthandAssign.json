@@ -1,0 +1,6 @@
+{
+    "noMisrefactoredShorthandAssign": {
+        "description": "Description\n\nDisallow shorthand assign when variable appears on both sides.\nThis rule helps to avoid potential bugs related to incorrect assignments or unintended\nside effects that may occur during refactoring.",
+        "option": "This rule has no specific options."
+    }
+}

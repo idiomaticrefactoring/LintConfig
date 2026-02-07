@@ -1,0 +1,6 @@
+{
+    "useUnifiedTypeSignatures": {
+        "description": "Description\n\nDisallow overload signatures that can be unified into a single signature.\nOverload signatures that can be merged into a single signature are redundant and should be avoided.\nThis rule helps simplify function signatures by combining overloads by making parameters optional\nand/or using type unions.",
+        "option": "This rule has no specific options."
+    }
+}

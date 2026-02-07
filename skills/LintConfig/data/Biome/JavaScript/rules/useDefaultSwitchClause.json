@@ -1,0 +1,6 @@
+{
+    "useDefaultSwitchClause": {
+        "description": "Description\n\nRequire the default clause in switch statements.\nSome code conventions require that all switch statements have a default clause. The thinking is that it’s better\nto always explicitly state what the default behavior should be so that it’s clear whether or not the developer\nforgot to include the default behavior by mistake.",
+        "option": "This rule has no specific options."
+    }
+}

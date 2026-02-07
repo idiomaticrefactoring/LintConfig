@@ -1,0 +1,6 @@
+{
+    "noAssignInExpressions": {
+        "description": "Description\n\nDisallow assignments in expressions.\nIn expressions, it is common to mistype a comparison operator (such as==) as an assignment operator (such as=).\nMoreover, the use of assignments in expressions is confusing.\nIndeed, expressions are often considered as side-effect free.",
+        "option": "This rule has no specific options."
+    }
+}

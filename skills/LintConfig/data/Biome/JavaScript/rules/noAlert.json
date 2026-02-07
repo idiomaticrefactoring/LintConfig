@@ -1,0 +1,6 @@
+{
+    "noAlert": {
+        "description": "Description\n\nDisallow the use ofalert,confirm, andprompt.\nJavaScript’salert,confirm, andpromptfunctions are widely considered to be obtrusive\nas UI elements and should be replaced by a more appropriate custom UI implementation.\nFurthermore,alertis often used while debugging code, which should be removed before\ndeployment to production.",
+        "option": "This rule has no specific options."
+    }
+}

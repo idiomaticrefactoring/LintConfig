@@ -1,0 +1,6 @@
+{
+    "noNoninteractiveElementToInteractiveRole": {
+        "description": "Description\n\nEnforce that interactive ARIA roles are not assigned to non-interactive HTML elements.\nNon-interactive HTML elements indicatecontentandcontainersin the user interface.\nNon-interactive elements include<main>,<area>,<h1>(,<h2>, etc),<img>,<li>,<ul>and<ol>.\nInteractive HTML elements indicatecontrolsin the user interface.\nInteractive elements include<a href>,<button>,<input>,<select>,<textarea>.\nWAI-ARIA rolesshould not be used to convert a non-interactive element to an interactive element.\nInteractive ARIA roles includebutton,link,checkbox,menuitem,menuitemcheckbox,menuitemradio,option,radio,searchbox,switchandtextbox.",
+        "option": "This rule has no specific options."
+    }
+}

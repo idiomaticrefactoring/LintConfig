@@ -1,0 +1,6 @@
+{
+    "noBitwiseOperators": {
+        "description": "Description\n\nDisallow bitwise operators.\nThe use of bitwise operators in JavaScript is very rare and often&or|is simply a mistyped&&or||,\nwhich will lead to unexpected behavior.",
+        "option": "The rule provides the options described below.\nallowSection titled “allow”\nAllows a list of bitwise operators to be used as exceptions.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"suspicious\": {5        \"noBitwiseOperators\": {6          \"options\": {7            \"allow\": [8              \"&\",9              \"|\",10              \"^\",11              \"~\",12              \"<<\",13              \">>\",14              \">>>\"15            ]16          }17        }18      }19    }20  }21}"
+    }
+}

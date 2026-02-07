@@ -1,0 +1,6 @@
+{
+    "noUselessEmptyExport": {
+        "description": "Description\n\nDisallow empty exports that don’t change anything in a module file.\nAn emptyexport {}is sometimes useful to turn a file that would otherwise be a script into a module.\nPer theTypeScript Handbook Modules page:\nIn TypeScript, just as in ECMAScript 2015,\nany file containing a top-level import or export is considered a module.\nConversely, a file without any top-level import or export declarations is treated as a script\nwhose contents are available in the global scope.\nHowever, anexport {}statement does nothing if there are any other top-level import or export in the file.",
+        "option": "This rule has no specific options."
+    }
+}

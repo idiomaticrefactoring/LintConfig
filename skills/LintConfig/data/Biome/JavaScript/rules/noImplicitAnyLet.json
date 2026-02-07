@@ -1,0 +1,6 @@
+{
+    "noImplicitAnyLet": {
+        "description": "Description\n\nDisallow use of implicitanytype on variable declarations.\nTypeScript variable declaration without any type annotation and initialization have theanytype.\nThe any type in TypeScript is a dangerous “escape hatch” from the type system.\nUsing any disables many type checking rules and is generally best used only as a last resort or when prototyping code.\nTypeScript’s--noImplicitAnycompiler optiondoesn’t report this case.",
+        "option": "This rule has no specific options."
+    }
+}

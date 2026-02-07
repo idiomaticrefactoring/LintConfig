@@ -1,0 +1,6 @@
+{
+    "noAdjacentSpacesInRegex": {
+        "description": "Description\n\nDisallow unclear usage of consecutive space characters in regular expression literals",
+        "option": "This rule has no specific options."
+    }
+}

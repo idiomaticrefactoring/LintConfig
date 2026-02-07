@@ -1,0 +1,6 @@
+{
+    "noUselessLoneBlockStatements": {
+        "description": "Description\n\nDisallow unnecessary nested block statements.\nIn JavaScript, prior to ES6, standalone code blocks delimited by curly braces do not create a new scope and have no use.\nIn ES6, code blocks may create a new scope if a block-level binding (let and const), a class declaration or a function declaration (in strict mode) are present. A block is not considered redundant in these cases.",
+        "option": "This rule has no specific options."
+    }
+}

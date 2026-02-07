@@ -1,0 +1,6 @@
+{
+    "noUselessSwitchCase": {
+        "description": "Description\n\nDisallow uselesscaseinswitchstatements.\nAswitchstatement can optionally have adefaultclause.\nThedefaultclause will be still executed only if there is no match in thecaseclauses.\nAn emptycaseclause that precedes thedefaultclause is thus useless.",
+        "option": "This rule has no specific options."
+    }
+}

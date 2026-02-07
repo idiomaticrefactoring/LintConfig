@@ -1,0 +1,6 @@
+{
+    "noAccumulatingSpread": {
+        "description": "Description\n\nDisallow the use of spread (...) syntax on accumulators.\nSpread syntax allows an iterable to be expanded into its individual elements.\nSpread syntax should be avoided on accumulators (like those in.reduce)\nbecause it causes a time complexity ofO(n^2)instead ofO(n).\nSource:https://prateeksurana.me/blog/why-using-object-spread-with-reduce-bad-idea/",
+        "option": "This rule has no specific options."
+    }
+}

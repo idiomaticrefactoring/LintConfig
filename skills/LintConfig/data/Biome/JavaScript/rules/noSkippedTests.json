@@ -1,0 +1,6 @@
+{
+    "noSkippedTests": {
+        "description": "Description\n\nDisallow disabled tests.\nDisabled test are useful when developing and debugging, although they should not be committed in production.",
+        "option": "This rule has no specific options."
+    }
+}

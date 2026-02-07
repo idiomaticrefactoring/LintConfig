@@ -1,0 +1,6 @@
+{
+    "useKeyWithMouseEvents": {
+        "description": "Description\n\nEnforceonMouseOver/onMouseOutare accompanied byonFocus/onBlur.\nCoding for the keyboard is important for users with physical disabilities who cannot use a mouse, AT compatibility, and screenreader users.",
+        "option": "This rule has no specific options."
+    }
+}

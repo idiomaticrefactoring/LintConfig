@@ -1,0 +1,6 @@
+{
+    "noNodejsModules": {
+        "description": "Description\n\nForbid the use of Node.js builtin modules.\nThis can be useful for client-side web projects that don’t have access to those modules.\nThe rule also isn’t triggered if there are dependencies declared in thepackage.jsonthat match\nthe name of a built-in Node.js module.\nType-only imports are ignored.",
+        "option": "This rule has no specific options."
+    }
+}

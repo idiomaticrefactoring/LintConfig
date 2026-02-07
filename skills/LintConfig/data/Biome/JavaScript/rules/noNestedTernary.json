@@ -1,0 +1,6 @@
+{
+    "noNestedTernary": {
+        "description": "Description\n\nDisallow nested ternary expressions.\nNesting ternary expressions can make code more difficult to understand.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useIsNan": {
+        "description": "Description\n\nRequire calls toisNaN()when checking forNaN.\nIn JavaScript,NaNis a special value of theNumbertype.\nIt’s used to represent any of the “not-a-number” values represented by the double-precision 64-bit format as specified by the IEEE Standard for Binary Floating-Point Arithmetic.\nBecauseNaNis unique in JavaScript by not being equal to anything, including itself, the results of comparisons toNaNare confusing:\nNaN === NaN or NaN == NaN evaluate to false\nNaN !== NaN or NaN != NaN evaluate to true\nTherefore, useNumber.isNaN()or globalisNaN()functions to test whether a value isNaN.\nNote thatNumber.isNaN()andisNaN()do not have the same behavior.\nWhen the argument toisNaN()is not a number, the value is first coerced to a number.Number.isNaN()does not perform this coercion.\nTherefore, it is a more reliable way to test whether a value isNaN.",
+        "option": "This rule has no specific options."
+    }
+}

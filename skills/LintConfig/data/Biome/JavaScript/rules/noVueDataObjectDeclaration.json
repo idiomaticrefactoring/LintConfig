@@ -1,0 +1,6 @@
+{
+    "noVueDataObjectDeclaration": {
+        "description": "Description\n\nEnforce that Vue componentdataoptions are declared as functions.\nIn Vue 3+, definingdataas an object is deprecated because it leads to shared mutable state across component instances.\nThis rule flags usages ofdata: { … }and offers an automatic fix to convert it into a function returning that object.\nSee also:\n– Vue Migration Guide – Data Option:https://v3-migration.vuejs.org/breaking-changes/data-option.html:contentReference[oaicite:0]{index=\"0\"}\n– ESLint Plugin Vue:no-deprecated-data-object-declaration:https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration:contentReference[oaicite:1]{index=\"1\"}",
+        "option": "This rule has no specific options."
+    }
+}

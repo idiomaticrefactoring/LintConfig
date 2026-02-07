@@ -1,0 +1,6 @@
+{
+    "noNoninteractiveElementInteractions": {
+        "description": "Description\n\nDisallow use event handlers on non-interactive elements.\nNon-interactive HTML elements indicatecontentandcontainersin the user interface.\nNon-interactive elements include<main>,<area>,<h1>(,<h2>, etc),<img>,<li>,<ul>and<ol>.\nA Non-interactive element does not support event handlers(mouse and key handlers).",
+        "option": "This rule has no specific options."
+    }
+}

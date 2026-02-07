@@ -1,0 +1,6 @@
+{
+    "noArrayIndexKey": {
+        "description": "Description\n\nDiscourage the usage of Array index in keys.\nWe don’t recommend using indexes for keys if the order of items may change.\nThis can negatively impact performance and may cause issues with component state.\nCheck out Robin Pokorny’s article for anin-depth explanation on the negative impacts of using an index as a key.\nIf you choose not to assign an explicit key to list items then React will default to using indexes as keys.\nSourceReact documentation",
+        "option": "This rule has no specific options."
+    }
+}

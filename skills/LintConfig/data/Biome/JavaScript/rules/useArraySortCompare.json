@@ -1,0 +1,6 @@
+{
+    "useArraySortCompare": {
+        "description": "Description\n\nRequire Array#sort and Array#toSorted calls to always provide a compareFunction.\nWhen called without a compare function, Array#sort() and Array#toSorted() converts all non-undefined array elements into strings and then compares said strings based off their UTF-16 code unitsECMA specification.\nThe result is that elements are sorted alphabetically, regardless of their type. For example, when sorting numbers, this results in a “10 before 2” order:\nexample.ts\n1[1, 2, 3, 10, 20, 30].sort(); //→ [1, 10, 2, 20, 3, 30]\nThis rule reports on any call to the sort methods that do not provide a compare argument.",
+        "option": "This rule has no specific options."
+    }
+}

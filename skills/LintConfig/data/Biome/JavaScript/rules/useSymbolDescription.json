@@ -1,0 +1,6 @@
+{
+    "useSymbolDescription": {
+        "description": "Description\n\nRequire a description parameter for theSymbol().\nSymbolcan have an optional description parameter which can be useful for\ndebugging and making the purpose of the symbol clearer.",
+        "option": "This rule has no specific options."
+    }
+}

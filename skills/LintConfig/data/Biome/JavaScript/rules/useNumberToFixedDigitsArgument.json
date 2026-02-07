@@ -1,0 +1,6 @@
+{
+    "useNumberToFixedDigitsArgument": {
+        "description": "Description\n\nEnforce using the digits argument withNumber#toFixed().\nWhen usingNumber#toFixed()explicitly specify the number of digits you want to appear after the decimal point,\nto avoid unexpected results, rather than relying on its default value of 0.",
+        "option": "This rule has no specific options."
+    }
+}

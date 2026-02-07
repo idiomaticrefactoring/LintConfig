@@ -1,0 +1,6 @@
+{
+    "noDocumentCookie": {
+        "description": "Description\n\nDisallow direct assignments todocument.cookie.\nIt’s not recommended to use document.cookie directly as it’s easy to get the string wrong.\nInstead, you should use theCookie Store API.",
+        "option": "This rule has no specific options."
+    }
+}

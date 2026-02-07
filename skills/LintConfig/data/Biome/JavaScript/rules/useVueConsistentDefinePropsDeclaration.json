@@ -1,0 +1,6 @@
+{
+    "useVueConsistentDefinePropsDeclaration": {
+        "description": "Description\n\nEnforce consistentdefinePropsdeclaration style.\nThis rule enforcesdefinePropstyping style which you should usetypeorruntimedeclaration.",
+        "option": "This rule has no specific options."
+    }
+}

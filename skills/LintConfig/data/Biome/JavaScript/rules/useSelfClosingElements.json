@@ -1,0 +1,6 @@
+{
+    "useSelfClosingElements": {
+        "description": "Description\n\nPrevent extra closing tags for components without children.\nJSX elements without children should be marked as self-closing. In JSX, it is valid for any element to be self-closing.",
+        "option": "ignoreHtmlElementsSection titled “ignoreHtmlElements”\nDefault:false\nThis option allows you to specify whether to ignore checking native HTML elements.\nIn the following example, when the option is set to “true”, it will not self close native HTML elements.\n\n1{2    \"//\":\"...\",3    \"options\": {4        \"ignoreHtmlElements\": true5    }6}\n\n1<div></div>"
+    }
+}

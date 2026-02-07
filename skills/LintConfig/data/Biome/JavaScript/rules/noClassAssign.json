@@ -1,0 +1,6 @@
+{
+    "noClassAssign": {
+        "description": "Description\n\nDisallow reassigning class members.\nA class declaration creates a variable that we can modify, however, the modification is a mistake in most cases.",
+        "option": "This rule has no specific options."
+    }
+}

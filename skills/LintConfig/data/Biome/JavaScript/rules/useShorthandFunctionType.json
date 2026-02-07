@@ -1,0 +1,6 @@
+{
+    "useShorthandFunctionType": {
+        "description": "Description\n\nEnforce using function types instead of object type with call signatures.\nTypeScript allows for two common ways to declare a type for a function:\nFunction type: () => string\nObject type with a signature: { (): string }\nThe function type form is generally preferred when possible for being more succinct.\nThis rule suggests using a function type instead of an interface or object type literal with a single call signature.",
+        "option": "This rule has no specific options."
+    }
+}

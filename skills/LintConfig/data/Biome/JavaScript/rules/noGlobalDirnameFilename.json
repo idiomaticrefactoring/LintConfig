@@ -1,0 +1,6 @@
+{
+    "noGlobalDirnameFilename": {
+        "description": "Description\n\nDisallow the use of__dirnameand__filenamein the global scope.\nThey arenot available in ES modules.\nStarting with Node.js 20.11,import.meta.dirnameandimport.meta.filenamehave been introduced in ES modules, providing identical functionality to__dirnameand__filenamein CommonJS (CJS).",
+        "option": "This rule has no specific options."
+    }
+}

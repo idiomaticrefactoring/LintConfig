@@ -1,0 +1,6 @@
+{
+    "useAnchorContent": {
+        "description": "Description\n\nEnforce that anchors have content and that the content is accessible to screen readers.\nAccessible means the content is not hidden using thearia-hiddenattribute.\nRefer to the references to learn about why this is important.",
+        "option": "This rule has no specific options."
+    }
+}

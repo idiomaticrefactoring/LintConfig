@@ -1,0 +1,6 @@
+{
+    "useJsonImportAttributes": {
+        "description": "Description\n\nEnforces the use ofwith { type: \"json\" }for JSON module imports.\nECMAScript modules can import JSON modules. However, the specific import assertionwith { type: \"json\" }is required to inform the JavaScript runtime that the imported file should be parsed as JSON.\nOmitting this assertion can lead to runtime errors or misinterpretation of the imported module.\nThis rule ensures that all imports of.jsonfiles include this assertion.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noOctalEscape": {
+        "description": "Description\n\nDisallow octal escape sequences in string literals\nAs of the ECMAScript 5 specification, octal escape sequences in string literals are deprecated and should not be used.\nUnicode escape sequences should be used instead.",
+        "option": "This rule has no specific options."
+    }
+}

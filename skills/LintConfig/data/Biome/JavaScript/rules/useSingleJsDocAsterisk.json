@@ -1,0 +1,6 @@
+{
+    "useSingleJsDocAsterisk": {
+        "description": "Description\n\nEnforce JSDoc comment lines to start with a single asterisk, except for the first one.\nThis rule ensures that every line in a JSDoc block, except the opening one, starts with exactly one asterisk (*).\nExtra asterisks are unnecessary in JSDoc comments and are often introduced by mistake.\nDouble asterisks (**) are still allowed, because they mark the start of bold text.",
+        "option": "This rule has no specific options."
+    }
+}

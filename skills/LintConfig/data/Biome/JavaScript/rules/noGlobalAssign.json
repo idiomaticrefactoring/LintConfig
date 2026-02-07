@@ -1,0 +1,6 @@
+{
+    "noGlobalAssign": {
+        "description": "Description\n\nDisallow assignments to native objects and read-only global variables.\nJavaScript’s environments contain numerous built-in global variables, such aswindowin browsers andprocessin Node.js.\nAssigning values to these global variables can be problematic as it can override essential functionality.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noDuplicateObjectKeys": {
+        "description": "Description\n\nDisallow two keys with the same name inside objects.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noLeakedRender": {
+        "description": "Description\n\nPrevent problematic leaked values from being rendered.\nThis rule prevents values that might cause unintentionally rendered values\nor rendering crashes in React JSX. When using conditional rendering with the\nlogical AND operator (&&), if the left-hand side evaluates to a falsy value like0,NaN, or any empty string, these values will be rendered instead of rendering nothing.",
+        "option": "This rule has no specific options."
+    }
+}

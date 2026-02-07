@@ -1,0 +1,6 @@
+{
+    "noGlobalIsNan": {
+        "description": "Description\n\nUseNumber.isNaNinstead of globalisNaN.\nNumber.isNaN()andisNaN()do not have the same behavior.\nWhen the argument toisNaN()is not a number, the value is first coerced to a number.Number.isNaN()does not perform this coercion.\nTherefore, it is a more reliable way to test whether a value isNaN.",
+        "option": "This rule has no specific options."
+    }
+}

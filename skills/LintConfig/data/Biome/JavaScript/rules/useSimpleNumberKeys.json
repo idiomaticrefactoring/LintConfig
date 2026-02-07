@@ -1,0 +1,6 @@
+{
+    "useSimpleNumberKeys": {
+        "description": "Description\n\nDisallow number literal object member names which are not base 10 or use underscore as separator.",
+        "option": "This rule has no specific options."
+    }
+}

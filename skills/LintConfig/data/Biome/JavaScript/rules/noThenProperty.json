@@ -1,0 +1,6 @@
+{
+    "noThenProperty": {
+        "description": "Description\n\nDisallowthenproperty.\nWhen combining objects with athenmethod (thenable objects) with await expressions or dynamic imports, caution is necessary.\nThese syntaxes interpret the object’s then method as intended for the resolution or rejection of a promise, which can lead to unexpected behavior or errors.",
+        "option": "This rule has no specific options."
+    }
+}

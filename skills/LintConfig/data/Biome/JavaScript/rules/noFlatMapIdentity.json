@@ -1,0 +1,6 @@
+{
+    "noFlatMapIdentity": {
+        "description": "Description\n\nDisallow to use unnecessary callback onflatMap.\nTo achieve the same result (flattening an array) more concisely and efficiently, you should useflatinstead.",
+        "option": "This rule has no specific options."
+    }
+}

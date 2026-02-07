@@ -1,0 +1,6 @@
+{
+    "noSolidDestructuredProps": {
+        "description": "Description\n\nDisallow destructuring props inside JSX components in Solid projects.\nIn Solid, props must be used with property accesses (props.foo) to preserve reactivity.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noGlobalEval": {
+        "description": "Description\n\nDisallow the use of globaleval().\nTheeval()function evaluates the passed string as aJavaScriptcode.\nThe executed code can access and mutate variables in the scope where the function is called.\nThe use ofeval()exposes tosecurity risks and performance issues.\nIf the executed code is somehow affected by a malicious party,\nthen you may end up executing malicious code with the privileges of the caller.\nMoreover, changing variables in the caller’s scope is expensive in modernJavaScriptinterpreters.",
+        "option": "This rule has no specific options."
+    }
+}

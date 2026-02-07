@@ -1,0 +1,6 @@
+{
+    "useStrictMode": {
+        "description": "Description\n\nEnforce the use of the directive\"use strict\"in script files.\nThe JavaScriptstrict modeprohibits some obsolete JavaScript syntaxes and makes some slight semantic changes to allow more optimizations by JavaScript engines.\nEcmaScript modules are always in strict mode, while JavaScript scripts are by default in non-strict mode, also known assloppy mode.\nA developer can add the\"use strict\"directive at the start of a script file to enable the strict mode in that file.\nBiome considers a CommonJS (.cjs) file as a script file.\nBy default, Biome recognizes a JavaScript file (.js) as a module file, except if\"type\": \"commonjs\"is specified inpackage.json.",
+        "option": "This rule has no specific options."
+    }
+}

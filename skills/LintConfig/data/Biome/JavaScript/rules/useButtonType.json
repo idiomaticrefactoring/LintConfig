@@ -1,0 +1,6 @@
+{
+    "useButtonType": {
+        "description": "Description\n\nEnforces the usage of the attributetypefor the elementbutton",
+        "option": "This rule has no specific options."
+    }
+}

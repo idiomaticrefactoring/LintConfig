@@ -1,0 +1,6 @@
+{
+    "noRedeclare": {
+        "description": "Description\n\nDisallow variable, function, class, and type redeclarations in the same scope.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noSelfAssign": {
+        "description": "Description\n\nDisallow assignments where both sides are exactly the same.\nSelf assignments have no effect, so probably those are an error due to incomplete refactoring.",
+        "option": "This rule has no specific options."
+    }
+}

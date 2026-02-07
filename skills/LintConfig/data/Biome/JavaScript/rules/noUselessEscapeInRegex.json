@@ -1,0 +1,6 @@
+{
+    "noUselessEscapeInRegex": {
+        "description": "Description\n\nDisallow unnecessary escape sequence in regular expression literals.\nEscaping non-special characters in regular expression literals doesn’t have any effect.\nHence, they may confuse a reader.",
+        "option": "This rule has no specific options."
+    }
+}

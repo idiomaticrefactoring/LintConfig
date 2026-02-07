@@ -1,0 +1,6 @@
+{
+    "useNumericLiterals": {
+        "description": "Description\n\nDisallowparseInt()andNumber.parseInt()in favor of binary, octal, and hexadecimal literals\nJavaScriptprovides literal forms for binary, octal, and hexadecimal numbers.\nFor example:0b11,0o77, and0xff.\nUsing the literal forms enable static code analysis and avoid unnecessary computations.",
+        "option": "This rule has no specific options."
+    }
+}

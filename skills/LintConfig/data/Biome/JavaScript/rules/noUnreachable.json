@@ -1,0 +1,6 @@
+{
+    "noUnreachable": {
+        "description": "Description\n\nDisallow unreachable code",
+        "option": "This rule has no specific options."
+    }
+}

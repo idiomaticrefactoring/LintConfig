@@ -1,0 +1,6 @@
+{
+    "noUselessContinue": {
+        "description": "Description\n\nAvoid using unnecessarycontinue.",
+        "option": "This rule has no specific options."
+    }
+}

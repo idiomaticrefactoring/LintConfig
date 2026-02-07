@@ -1,0 +1,6 @@
+{
+    "useHtmlLang": {
+        "description": "Description\n\nEnforce thathtmlelement haslangattribute.",
+        "option": "This rule has no specific options."
+    }
+}

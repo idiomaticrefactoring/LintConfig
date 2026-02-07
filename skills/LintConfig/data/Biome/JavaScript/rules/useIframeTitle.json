@@ -1,0 +1,6 @@
+{
+    "useIframeTitle": {
+        "description": "Description\n\nEnforces the usage of the attributetitlefor the elementiframe.",
+        "option": "This rule has no specific options."
+    }
+}

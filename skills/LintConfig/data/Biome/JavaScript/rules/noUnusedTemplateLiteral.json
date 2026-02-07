@@ -1,0 +1,6 @@
+{
+    "noUnusedTemplateLiteral": {
+        "description": "Description\n\nDisallow template literals if interpolation and special-character handling are not needed",
+        "option": "This rule has no specific options."
+    }
+}

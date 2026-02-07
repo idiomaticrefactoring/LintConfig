@@ -1,0 +1,6 @@
+{
+    "noControlCharactersInRegex": {
+        "description": "Description\n\nPrevents from having control characters and some escape sequences that match control characters in regular expression literals.\nControl characters are hidden special characters that are numbered from 0 to 31 in the ASCII system.\nThey’re not commonly used in JavaScript text. So, if you see them in a pattern (called a regular expression), it’s probably a mistake.\nThe following elements of regular expression patterns are considered possible errors in typing and are therefore disallowed by this rule:\nHexadecimal character escapes from \\x00 to \\x1F\nUnicode character escapes from \\u0000 to \\u001F\nUnicode code point escapes from \\u{0} to \\u{1F}\nUnescaped raw characters from U+0000 to U+001F\nControl escapes such as\\tand\\nare allowed by this rule.",
+        "option": "This rule has no specific options."
+    }
+}

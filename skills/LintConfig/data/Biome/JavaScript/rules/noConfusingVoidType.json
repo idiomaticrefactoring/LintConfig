@@ -1,0 +1,6 @@
+{
+    "noConfusingVoidType": {
+        "description": "Description\n\nDisallowvoidtype outside of generic or return types.\nvoidin TypeScript refers to a function return that is meant to be ignored.\nAttempting to use a void type outside of a return type or a type parameter is often a sign of programmer error.voidcan also be misleading for other developers even if used correctly.\nThevoidtype means cannot be mixed with any other types, other thannever, which accepts all types.\nIf you think you need this then you probably want theundefinedtype instead.\nThe code action suggests usingundefinedinstead ofvoid.\nIt is unsafe because a variable with thevoidtype cannot be assigned to a variable with theundefinedtype.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useFlatMap": {
+        "description": "Description\n\nPromotes the use of.flatMap()whenmap().flat()are used together.",
+        "option": "This rule has no specific options."
+    }
+}

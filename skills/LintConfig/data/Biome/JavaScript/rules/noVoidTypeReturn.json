@@ -1,0 +1,6 @@
+{
+    "noVoidTypeReturn": {
+        "description": "Description\n\nDisallow returning a value from a function with the return type ‘void’\n‘void’ signals the absence of value. The returned value is likely to be ignored by the caller.\nThus, returning a value when the return type of function is ‘void’, is undoubtedly an error.\nOnly returning without a value is allowed, as it’s a control flow statement.",
+        "option": "This rule has no specific options."
+    }
+}

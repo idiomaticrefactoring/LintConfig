@@ -1,0 +1,6 @@
+{
+    "noNonoctalDecimalEscape": {
+        "description": "Description\n\nDisallow\\8and\\9escape sequences in string literals.\nSince ECMAScript 2021, the escape sequences \\8 and \\9 have been defined as non-octal decimal escape sequences.\nHowever, most JavaScript engines consider them to be “useless” escapes. For example:\n\n1\"\\8\" === \"8\"; // true2\"\\9\" === \"9\"; // true\nAlthough this syntax is deprecated, it is still supported for compatibility reasons.\nIf the ECMAScript host is not a web browser, this syntax is optional.\nHowever, web browsers are still required to support it, but only in non-strict mode.\nRegardless of your targeted environment, it is recommended to avoid using these escape sequences in new code.",
+        "option": "This rule has no specific options."
+    }
+}

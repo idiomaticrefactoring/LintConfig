@@ -1,0 +1,6 @@
+{
+    "noUselessCatchBinding": {
+        "description": "Description\n\nDisallow unused catch bindings.\nThis rule disallows unnecessary catch bindings in accordance with ECMAScript 2019.\nSee also: the ECMAScript 2019 “optional catch binding” feature in the language specification.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noSparseArray": {
+        "description": "Description\n\nPrevents the use of sparse arrays (arrays with holes).\nSparse arrays may contain empty slots due to the use of multiple commas between two items, like the following:\n\n1const items = [a,,b];\nArrays with holes might yield incorrect information. For example, the previous snippet,itemshas a length of4, but did the user\nreally intended to have an array with four items? Or was it a typo.\nThis rule enforce the user to explicitly anundefinedin places where there’s a hole.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noCompareNegZero": {
+        "description": "Description\n\nDisallow comparing against-0",
+        "option": "This rule has no specific options."
+    }
+}

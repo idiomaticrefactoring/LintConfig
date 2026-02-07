@@ -1,0 +1,6 @@
+{
+    "useSolidForComponent": {
+        "description": "Description\n\nEnforce using Solid’s<For />component for mapping an array to JSX elements.\nIn Solid,<For />component for efficiently rendering lists. Array#map causes DOM elements to be recreated.\nFor details on<For />Component, see theSolid docs about Components.",
+        "option": "This rule has no specific options."
+    }
+}

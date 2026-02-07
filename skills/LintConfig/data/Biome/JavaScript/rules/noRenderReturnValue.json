@@ -1,0 +1,6 @@
+{
+    "noRenderReturnValue": {
+        "description": "Description\n\nPrevent the usage of the return value ofReact.render.\nReactDOM.render()currently returns a reference to the rootReactComponentinstance. However, using this return value is legacy\nand should be avoided because future versions of React may render components asynchronously in some cases.\nIf you need a reference to the rootReactComponentinstance, the preferred solution is to attach acallback refto the root element.\nSource:ReactDOM documentation",
+        "option": "This rule has no specific options."
+    }
+}

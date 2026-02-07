@@ -1,0 +1,6 @@
+{
+    "noThisInStatic": {
+        "description": "Description\n\nDisallowthisandsuperinstaticcontexts.\nIn JavaScript, thethiskeyword in static contexts refers to the class (the constructor) instance,\nnot an instance of the class. This can be confusing for developers coming from other languages wherethistypically refers to an instance of the class, not the class itself.\nSimilarly,superin static contexts refers to the parent class, not an instance of the class.\nThis can lead to unexpected behavior if not properly understood.\nThis rule enforces the use of the class name itself to access static methods,\nwhich can make the code clearer and less prone to errors. It helps to prevent\nmisunderstandings and bugs that can arise from the unique behavior ofthisandsuperin static contexts.",
+        "option": "This rule has no specific options."
+    }
+}

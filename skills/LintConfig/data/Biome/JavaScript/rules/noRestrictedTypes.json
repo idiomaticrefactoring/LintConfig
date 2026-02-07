@@ -1,0 +1,6 @@
+{
+    "noRestrictedTypes": {
+        "description": "Description\n\nDisallow user defined types.\nThis rule allows you to specify type names that you don’t want to use in your application.\nTo prevent use of commonly misleading types, you can refer tonoBannedTypes",
+        "option": "Use the options to specify additional types that you want to restrict in your\nsource code.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"style\": {5        \"noRestrictedTypes\": {6          \"options\": {7            \"types\": {8              \"Foo\": {9                \"message\": \"Only bar is allowed\",10                \"use\": \"bar\"11              },12              \"OldAPI\": \"Use NewAPI instead\"13            }14          }15        }16      }17    }18  }19}\nIn the example above, the rule will emit a diagnostics ifFooorOldAPIare used."
+    }
+}

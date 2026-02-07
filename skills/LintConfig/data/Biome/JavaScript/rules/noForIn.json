@@ -1,0 +1,6 @@
+{
+    "noForIn": {
+        "description": "Description\n\nDisallow iterating using a for-in loop.\nA for-in loop (for (const i in o)) iterates over the properties of an Object. While it is legal to use for-in loops with array values, it is not common. There are several potential bugs with this:\nIt iterates over all enumerable properties, including non-index ones and the entire prototype chain. For example,RegExp.prototype.execreturns an array with additional properties, andfor-inwill iterate over them. Some libraries or even your own code may add additional methods toArray.prototype(either as polyfill or as custom methods), and if not done properly, they may be iterated over as well.It skips holes in the array. While sparse arrays are rare and advised against, they are still possible and your code should be able to handle them.The “index” is returned as a string, not a number. This can be caught by TypeScript, but can still lead to subtle bugs.\nYou may have confused for-in with for-of, which iterates over the elements of the array. If you actually need the index, use a regularforloop or theforEachmethod.",
+        "option": "This rule has no specific options."
+    }
+}

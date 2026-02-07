@@ -1,0 +1,6 @@
+{
+    "useConsistentBuiltinInstantiation": {
+        "description": "Description\n\nEnforce the use ofnewfor all builtins, exceptString,NumberandBoolean.\nnew Builtin()andBuiltin()work the same, butnewshould be preferred for consistency with other constructors.\nEnforces the use of new for following builtins:\nAggregateError\nArray\nDate\nError\nEvalError\nObject\nPromise\nRangeError\nReferenceError\nRegExp\nSyntaxError\nTypeError\nURIError\nDisallows the use ofnewfor following builtins:\nBoolean\nNumber\nString\nThese should not usenewas that would create object wrappers for the primitive values, which is not what you want.\nHowever, withoutnewthey can be useful for coercing a value to that type.\nNote that, builtins that requirenewto be instantiated and\nbuiltins that require nonewto be instantiated (SymbolandBigInt) are covered by thenoInvalidBuiltinInstantiationrule.",
+        "option": "This rule has no specific options."
+    }
+}

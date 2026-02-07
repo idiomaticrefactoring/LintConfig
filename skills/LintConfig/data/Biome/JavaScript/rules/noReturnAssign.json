@@ -1,0 +1,6 @@
+{
+    "noReturnAssign": {
+        "description": "Description\n\nDisallow assignments in return statements.\nIn return statements, it is common to mistype a comparison operator (such as==) as an assignment operator (such as=).\nMoreover, the use of assignments in a return statement is confusing.\nReturn statements are often considered side-effect free.",
+        "option": "This rule has no specific options."
+    }
+}

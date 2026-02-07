@@ -1,0 +1,6 @@
+{
+    "useTemplate": {
+        "description": "Description\n\nPrefer template literals over string concatenation.",
+        "option": "This rule has no specific options."
+    }
+}

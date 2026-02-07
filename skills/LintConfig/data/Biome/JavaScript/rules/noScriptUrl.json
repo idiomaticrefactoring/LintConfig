@@ -1,0 +1,6 @@
+{
+    "noScriptUrl": {
+        "description": "Description\n\nDisallowjavascript:URLs in HTML.\nUsingjavascript:URLs is considered a form ofevaland can be a security risk.\nThese URLs can execute arbitrary JavaScript code, which can lead to cross-site scripting (XSS) vulnerabilities.",
+        "option": "This rule has no specific options."
+    }
+}

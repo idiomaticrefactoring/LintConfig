@@ -1,0 +1,6 @@
+{
+    "noUnsafeOptionalChaining": {
+        "description": "Description\n\nDisallow the use of optional chaining in contexts where the undefined value is not allowed.\nThe optional chaining (?.) expression can short-circuit with a return value of undefined.\nTherefore, treating an evaluated optional chaining expression as a function, object, number, etc., can cause TypeError or unexpected results.\nAlso, parentheses limit the scope of short-circuiting in chains.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noAccessKey": {
+        "description": "Description\n\nEnforce that theaccessKeyattribute is not used on any HTML element.\nTheaccessKeyassigns a keyboard shortcut to the current element. However, theaccessKeyvalue\ncan conflict with keyboard commands used by screen readers and keyboard-only users, which leads to\ninconsistent keyboard actions across applications. To avoid accessibility complications,\nthis rule suggests users remove theaccessKeyattribute on elements.",
+        "option": "This rule has no specific options."
+    }
+}

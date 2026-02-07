@@ -1,0 +1,6 @@
+{
+    "useArrayLiterals": {
+        "description": "Description\n\nDisallow Array constructors.\nUse of the Array constructor to construct a new array is generally discouraged in favor of array literal notation because of the single-argument pitfall and because the Array global may be redefined.\nThe exception is when the Array constructor intentionally creates sparse arrays of a specified size by giving the constructor a single numeric argument.",
+        "option": "This rule has no specific options."
+    }
+}

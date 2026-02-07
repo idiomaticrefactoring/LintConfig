@@ -1,0 +1,6 @@
+{
+    "noSvgWithoutTitle": {
+        "description": "Description\n\nEnforces the usage of thetitleelement for thesvgelement.\nIt is not possible to specify thealtattribute for thesvgas for theimg.\nTo make svg accessible, the following methods are available:\nprovide the title element as the first child to svg\nprovide role=\"img\" and aria-label or aria-labelledby to svg",
+        "option": "This rule has no specific options."
+    }
+}

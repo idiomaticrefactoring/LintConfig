@@ -1,0 +1,6 @@
+{
+    "noApproximativeNumericConstant": {
+        "description": "Description\n\nUse standard constants instead of approximated literals.\nUsually, the definition in the standard library is more precise than\nwhat people come up with or the used constant exceeds the maximum precision of the number type.",
+        "option": "This rule has no specific options."
+    }
+}

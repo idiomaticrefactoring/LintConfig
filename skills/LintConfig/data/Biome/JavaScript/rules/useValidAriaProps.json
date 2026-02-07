@@ -1,0 +1,6 @@
+{
+    "useValidAriaProps": {
+        "description": "Description\n\nEnsures that ARIA propertiesaria-*are all valid.",
+        "option": "This rule has no specific options."
+    }
+}

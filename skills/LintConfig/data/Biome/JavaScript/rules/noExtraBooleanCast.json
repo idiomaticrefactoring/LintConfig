@@ -1,0 +1,6 @@
+{
+    "noExtraBooleanCast": {
+        "description": "Description\n\nDisallow unnecessary boolean casts",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noSuspiciousSemicolonInJsx": {
+        "description": "Description\n\nIt detects possible “wrong” semicolons inside JSX elements.\nSemicolons that appear after a self-closing element or a closing element are usually the result of a typo of a refactor gone wrong.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noNonNullAssertion": {
+        "description": "Description\n\nDisallow non-null assertions using the!postfix operator.\nTypeScript’s!non-null assertion operator asserts to the type system that an expression is non-nullable, as\nin notnullorundefined. Using assertions to tell the type system new information is often a sign that\ncode is not fully type-safe. It’s generally better to structure program logic so that TypeScript understands\nwhen values may be nullable.",
+        "option": "This rule has no specific options."
+    }
+}

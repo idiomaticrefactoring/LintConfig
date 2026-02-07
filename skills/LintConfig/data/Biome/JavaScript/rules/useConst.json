@@ -1,0 +1,6 @@
+{
+    "useConst": {
+        "description": "Description\n\nRequireconstdeclarations for variables that are only assigned once.\nVariables that are initialized and never reassigned and\nvariables that are only assigned once can be declared asconst.",
+        "option": "This rule has no specific options."
+    }
+}

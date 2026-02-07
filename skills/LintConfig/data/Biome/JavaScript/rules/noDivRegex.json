@@ -1,0 +1,6 @@
+{
+    "noDivRegex": {
+        "description": "Description\n\nDisallow equal signs explicitly at the beginning of regular expressions.\nThis rule forbids equal signs (=) after the slash (/) at the beginning of a regular expression literal,\nbecause the characters/=can be confused with a division assignment operator.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useMediaCaption": {
+        "description": "Description\n\nEnforces thataudioandvideoelements must have atrackfor captions.",
+        "option": "This rule has no specific options."
+    }
+}

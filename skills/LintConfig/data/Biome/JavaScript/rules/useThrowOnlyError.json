@@ -1,0 +1,6 @@
+{
+    "useThrowOnlyError": {
+        "description": "Description\n\nDisallow throwing non-Errorvalues.\nIt is considered good practice only to throw theErrorobject itself or an object using theErrorobject\nas base objects for user-defined exceptions. The fundamental benefit ofErrorobjects is that they automatically\nkeep track of where they were built and originated.",
+        "option": "This rule has no specific options."
+    }
+}

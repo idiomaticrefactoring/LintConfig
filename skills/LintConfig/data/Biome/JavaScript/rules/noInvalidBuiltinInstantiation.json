@@ -1,0 +1,6 @@
+{
+    "noInvalidBuiltinInstantiation": {
+        "description": "Description\n\nEnsure that builtins are correctly instantiated.\nThe following builtins requirenewto be instantiate:\nArrayBuffer\nBigInt64Array\nBigUint64Array\nDataView\nFinalizationRegistry\nFloat32Array\nFloat64Array\nInt16Array\nInt32Array\nInt8Array\nMap\nPromise\nProxy\nSet\nSharedArrayBuffer\nUint16Array\nUint32Array\nUint8Array\nUint8ClampedArray\nWeakMap\nWeakRef\nWeakSet\nConversely, the following builtins cannot be instantiated withnew:\nBigInt\nSymbol",
+        "option": "This rule has no specific options."
+    }
+}

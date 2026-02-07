@@ -1,0 +1,6 @@
+{
+    "noShadow": {
+        "description": "Description\n\nDisallow variable declarations from shadowing variables declared in the outer scope.\nShadowing is the process by which a local variable shares the same name as a variable in its containing scope. This can cause confusion while reading the code and make it impossible to access the global variable.\nSee also:noShadowRestrictedNames",
+        "option": "This rule has no specific options."
+    }
+}

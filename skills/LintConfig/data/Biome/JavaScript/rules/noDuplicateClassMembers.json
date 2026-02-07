@@ -1,0 +1,6 @@
+{
+    "noDuplicateClassMembers": {
+        "description": "Description\n\nDisallow duplicate class members.\nIf there are declarations of the same name among class members,\nthe last declaration overwrites other declarations silently.\nIt can cause unexpected behaviours.",
+        "option": "This rule has no specific options."
+    }
+}

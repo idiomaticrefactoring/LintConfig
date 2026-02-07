@@ -1,0 +1,6 @@
+{
+    "noDangerouslySetInnerHtml": {
+        "description": "Description\n\nPrevent the usage of dangerous JSX props",
+        "option": "This rule has no specific options."
+    }
+}

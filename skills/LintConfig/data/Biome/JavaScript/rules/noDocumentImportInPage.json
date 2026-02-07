@@ -1,0 +1,6 @@
+{
+    "noDocumentImportInPage": {
+        "description": "Description\n\nPrevents importingnext/documentoutside ofpages/_document.jsxin Next.js projects.\nThenext/documentmodule is intended for customizing the document structure globally in Next.js.\nImporting it outside ofpages/_document.jscan cause unexpected behavior and break certain features of the framework.",
+        "option": "This rule has no specific options."
+    }
+}

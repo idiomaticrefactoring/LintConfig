@@ -1,0 +1,6 @@
+{
+    "noGlobalIsFinite": {
+        "description": "Description\n\nUseNumber.isFiniteinstead of globalisFinite.\nNumber.isFinite()andisFinite()do not have the same behavior.\nWhen the argument toisFinite()is not a number, the value is first coerced to a number.Number.isFinite()does not perform this coercion.\nTherefore, it is a more reliable way to test whether a number is finite.",
+        "option": "This rule has no specific options."
+    }
+}

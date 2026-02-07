@@ -1,0 +1,6 @@
+{
+    "useForOf": {
+        "description": "Description\n\nPrefer usingfor...ofloops over standardforloops where possible.\nThis rule recommends using afor...ofloop in place of aforloop\nwhen the loop index is solely used to read from the iterated array.\nExceptions for Index UsageSection titled “Exceptions for Index Usage”\nWhen the loop index is declared within the outer scope or used anywhere within the loop body,\nit is acceptable to use aforloop.\n(Array.entries()can be used to a similar effect.)",
+        "option": "This rule has no specific options."
+    }
+}

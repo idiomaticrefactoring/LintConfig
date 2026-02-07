@@ -1,0 +1,6 @@
+{
+    "useSingleVarDeclarator": {
+        "description": "Description\n\nDisallow multiple variable declarations in the same variable statement\nIn JavaScript, multiple variables can be declared within a singlevar,constorletdeclaration.\nIt is often considered a best practice to declare every variable separately.\nThat is what this rule enforces.",
+        "option": "This rule has no specific options."
+    }
+}

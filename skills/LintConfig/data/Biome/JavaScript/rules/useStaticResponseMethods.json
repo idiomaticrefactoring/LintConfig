@@ -1,0 +1,6 @@
+{
+    "useStaticResponseMethods": {
+        "description": "Description\n\nUse staticResponsemethods instead ofnew Response()constructor when possible.\nnew Response(JSON.stringify({ value: 1 }))can be simplified toResponse.json().new Response(null, { status: 301, headers: { location: 'https://example.com' } })can be simplified toResponse.redirect().\nThese methods are more concise and emphasize the intent of the code better,\nhowever they are not a direct replacement when additional options such as extra headers are needed.\nIn case ofResponse.redirect(), thelocationheader must also be a full URL, because server runtimes (Node, Deno, etc.) will throw an error for relative URLs.",
+        "option": "This rule has no specific options."
+    }
+}

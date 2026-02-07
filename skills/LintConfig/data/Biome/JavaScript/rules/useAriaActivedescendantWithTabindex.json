@@ -1,0 +1,6 @@
+{
+    "useAriaActivedescendantWithTabindex": {
+        "description": "Description\n\nEnforce thattabIndexis assigned to non-interactive HTML elements witharia-activedescendant.\naria-activedescendantis used to manage to focus within acomposite widget.\nThe element with the attributearia-activedescendantretains the active document focus.\nIt indicates which of its child elements has a secondary focus by assigning the ID of that\nelement to the value ofaria-activedescendant. This pattern is used to build a widget\nlike a search typeahead select list. The search input box retains document focus\nso that the user can type in the input. If the down arrow key is pressed and\na search suggestion is highlighted, the ID of the suggestion element will be applied\nas the value ofaria-activedescendanton the input element.\nBecause an element witharia-activedescendantmust be tabbable,\nit must either have an inherent tabIndex of zero or declare a tabIndex attribute.",
+        "option": "This rule has no specific options."
+    }
+}

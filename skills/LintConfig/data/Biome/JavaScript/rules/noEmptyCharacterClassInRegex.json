@@ -1,0 +1,6 @@
+{
+    "noEmptyCharacterClassInRegex": {
+        "description": "Description\n\nDisallow empty character classes in regular expression literals.\nEmpty character classes don’t match anything.\nIn contrast, negated empty classes match any character.\nThey are often the result of a typing mistake.",
+        "option": "This rule has no specific options."
+    }
+}

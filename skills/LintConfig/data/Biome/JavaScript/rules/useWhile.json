@@ -1,0 +1,6 @@
+{
+    "useWhile": {
+        "description": "Description\n\nEnforce the use ofwhileloops instead offorloops when the initializer and update expressions are not needed.",
+        "option": "This rule has no specific options."
+    }
+}

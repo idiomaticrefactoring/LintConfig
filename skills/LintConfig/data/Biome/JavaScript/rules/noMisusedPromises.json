@@ -1,0 +1,6 @@
+{
+    "noMisusedPromises": {
+        "description": "Description\n\nDisallow Promises to be used in places where they are almost certainly a\nmistake.\nIn most cases, if you assign aPromisesomewhere aPromiseis not\nallowed, the TypeScript compiler will be able to catch such a mistake.\nBut there are a few places where TypeScript allows them — they’re notnecessarilya mistake — even though they could be considered almost\ncertainly to be one.\nThis rule disallows using Promises in such places.",
+        "option": "This rule has no specific options."
+    }
+}

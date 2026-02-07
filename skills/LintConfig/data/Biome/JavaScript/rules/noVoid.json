@@ -1,0 +1,6 @@
+{
+    "noVoid": {
+        "description": "Description\n\nDisallow the use ofvoidoperators, which is not a familiar operator.\nThevoidoperator is often used merely to obtain the undefined primitive value,\nusually usingvoid(0)(which is equivalent tovoid 0). In these cases, the global variableundefinedcan be used.",
+        "option": "This rule has no specific options."
+    }
+}

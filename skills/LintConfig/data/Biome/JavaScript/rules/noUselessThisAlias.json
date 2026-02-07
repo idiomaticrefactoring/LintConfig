@@ -1,0 +1,6 @@
+{
+    "noUselessThisAlias": {
+        "description": "Description\n\nDisallow uselessthisaliasing.\nArrow functions inheritsthisfrom their enclosing scope;\nthis makesthisaliasing useless in this situation.",
+        "option": "This rule has no specific options."
+    }
+}

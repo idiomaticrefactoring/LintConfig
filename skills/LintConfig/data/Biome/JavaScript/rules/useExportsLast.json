@@ -1,0 +1,6 @@
+{
+    "useExportsLast": {
+        "description": "Description\n\nRequire that all exports are declared after all non-export statements.\nEnforces that export statements are placed at the end of the module, after all other statements.",
+        "option": "This rule has no specific options."
+    }
+}

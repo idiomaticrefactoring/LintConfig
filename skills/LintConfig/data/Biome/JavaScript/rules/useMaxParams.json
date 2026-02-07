@@ -1,0 +1,6 @@
+{
+    "useMaxParams": {
+        "description": "Description\n\nEnforce a maximum number of parameters in function definitions.\nFunctions that take numerous parameters can be difficult to read and write\nbecause it requires the memorization of what each parameter is, its type,\nand the order they should appear in.",
+        "option": "maxSection titled “max”\nThe maximum number of parameters allowed (default: 4)."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useDefaultSwitchClauseLast": {
+        "description": "Description\n\nEnforce default clauses in switch statements to be last\nA switch statement can optionally have a default clause.\nIf present, it’s usually the last clause, but it doesn’t need to be. It is also allowed to put the default clause before all case clauses, or anywhere between.\nThe behavior is mostly the same as if it was the last clause.\nThe default block will be still executed only if there is no match in the case clauses (including those defined after the default),\nbut there is also the ability to “fall through” from the default clause to the following clause in the list.\nHowever, such flow is not common and it would be confusing to the readers.\nEven if there is no “fall through” logic, it’s still unexpected to see the default clause before or between the case clauses. By convention, it is expected to be the last clause.",
+        "option": "This rule has no specific options."
+    }
+}

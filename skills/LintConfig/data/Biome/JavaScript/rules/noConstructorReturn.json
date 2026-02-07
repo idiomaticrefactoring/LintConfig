@@ -1,0 +1,6 @@
+{
+    "noConstructorReturn": {
+        "description": "Description\n\nDisallow returning a value from aconstructor.\nReturning a value from aconstructorof a class is a possible error.\nForbidding this pattern prevents errors resulting from unfamiliarity with JavaScript or a copy-paste error.\nOnly returning without a value is allowed, as it’s a control flow statement.",
+        "option": "This rule has no specific options."
+    }
+}

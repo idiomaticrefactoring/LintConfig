@@ -1,0 +1,6 @@
+{
+    "noUselessTernary": {
+        "description": "Description\n\nDisallow ternary operators when simpler alternatives exist.\nIt’s a common mistake in JavaScript to use a conditional expression to select between two\nboolean values instead of using the logical NOT (!) or double NOT (!!) to convert the test to a boolean.",
+        "option": "This rule has no specific options."
+    }
+}

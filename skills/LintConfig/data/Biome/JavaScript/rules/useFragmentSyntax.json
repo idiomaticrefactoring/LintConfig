@@ -1,0 +1,6 @@
+{
+    "useFragmentSyntax": {
+        "description": "Description\n\nThis rule enforces the use of<>...</>over<Fragment>...</Fragment>.\nThe shorthand fragment syntax saves keystrokes and is only inapplicable when keys are required.",
+        "option": "This rule has no specific options."
+    }
+}

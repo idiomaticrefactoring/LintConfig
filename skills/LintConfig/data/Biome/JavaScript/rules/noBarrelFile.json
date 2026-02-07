@@ -1,0 +1,6 @@
+{
+    "noBarrelFile": {
+        "description": "Description\n\nDisallow the use of barrel file.\nA barrel file is a file that re-exports all of the exports from other files in a directory.\nThis structure results in the unnecessary loading of many modules, significantly impacting performance in large-scale applications.\nAdditionally, it complicates the codebase, making it difficult to navigate and understand the project’s dependency graph.\nThis rule ignores .d.ts files and type-only exports.\nFor a more detailed explanation, check outhttps://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/",
+        "option": "This rule has no specific options."
+    }
+}

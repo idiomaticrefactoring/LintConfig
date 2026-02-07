@@ -1,0 +1,6 @@
+{
+    "useFocusableInteractive": {
+        "description": "Description\n\nElements with an interactive role and interaction handlers must be focusable.\nHTML elements with interactive roles must havetabIndexdefined to ensure they are\nfocusable. Without tabIndex, assistive technologies may not recognize these elements as\ninteractive.\nYou could also consider switching from an interactive role to its semantic HTML element\ninstead.",
+        "option": "This rule has no specific options."
+    }
+}

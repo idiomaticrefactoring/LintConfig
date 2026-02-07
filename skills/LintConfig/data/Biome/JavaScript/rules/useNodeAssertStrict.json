@@ -1,0 +1,6 @@
+{
+    "useNodeAssertStrict": {
+        "description": "Description\n\nPromotes the usage ofnode:assert/strictovernode:assert.\nIf you prefer stricter assertions when using the Node.js assertion module, the packagenode:assert/strictexposes a set of alias for stricter assertions.",
+        "option": "This rule has no specific options."
+    }
+}

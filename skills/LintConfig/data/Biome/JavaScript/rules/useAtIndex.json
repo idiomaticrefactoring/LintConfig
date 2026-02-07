@@ -1,0 +1,6 @@
+{
+    "useAtIndex": {
+        "description": "Description\n\nUseat()instead of integer index access.\nAccessing an element at the end of an array or a string is inconvenient because you have to subtract the length of the array or the string from the backward 1-based index of the element to access.\nFor example, to access the last element of an array or a string, you would have to writearray[array.length - 1].\nA more convenient way to achieve the same thing is to use theat()method with a negative index.\nTo access the last element of an array or a string just writearray.at(-1).\nThis rule enforces the usage ofat()over index access,charAt(), andslice()[0]whenat()is more convenient.",
+        "option": "This rule has no specific options."
+    }
+}

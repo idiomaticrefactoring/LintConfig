@@ -1,0 +1,6 @@
+{
+    "noExcessiveNestedTestSuites": {
+        "description": "Description\n\nThis rule enforces a maximum depth to nesteddescribe()in test files.\nTo improve code clarity in your tests, the rule limits nesteddescribeto 5.",
+        "option": "This rule has no specific options."
+    }
+}

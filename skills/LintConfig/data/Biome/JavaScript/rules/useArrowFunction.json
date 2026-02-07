@@ -1,0 +1,6 @@
+{
+    "useArrowFunction": {
+        "description": "Description\n\nUse arrow functions over function expressions.\nAn arrow function expression is a compact alternative to a regular function expression,\nwith an important distinction:thisis not bound to the arrow function. It inheritsthisfrom its parent scope.\nThis rule proposes turning all function expressions that are not generators (function*) and don’t usethisinto arrow functions.\nThis rule does not modify top-level function declarations (discuss here).",
+        "option": "This rule has no specific options."
+    }
+}

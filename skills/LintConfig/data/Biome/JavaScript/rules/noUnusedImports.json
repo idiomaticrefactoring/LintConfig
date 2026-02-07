@@ -1,0 +1,6 @@
+{
+    "noUnusedImports": {
+        "description": "Description\n\nDisallow unused imports.\nUnused imports might be the result of an incomplete refactoring.\nThe code fix can remove comments associated with animport.\nSee the last invalid example.\nNote that the leading trivia, e.g., comments or newlines preceding\nthe unused imports will also be removed. So that comment directives\nlike@ts-expect-errorwon’t be transferred to a wrong place.",
+        "option": "This rule respects thejsxRuntimesetting and will make an exception for React globals if it is set to\"reactClassic\"."
+    }
+}

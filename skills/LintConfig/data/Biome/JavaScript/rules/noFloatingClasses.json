@@ -1,0 +1,6 @@
+{
+    "noFloatingClasses": {
+        "description": "Description\n\nDisallownewoperators outside of assignments or comparisons.\nThe goal of usingnewwith a constructor is typically to create an object of a particular type and store that object in a variable, such as:\n\n1const person = new Person();\nIt’s less common to usenewand not store the result, such as:\n\n1new Person();\nIn this case, the created object is thrown away because its reference isn’t stored anywhere, and in many cases, this means that the constructor should be replaced with a function that doesn’t requirenewto be used.",
+        "option": "This rule has no specific options."
+    }
+}

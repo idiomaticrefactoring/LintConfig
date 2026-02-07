@@ -1,0 +1,6 @@
+{
+    "noProcessGlobal": {
+        "description": "Description\n\nDisallow the use ofprocessglobal.\nNode.js and Deno exposeprocessglobal but they are hard to statically analyze by tools,\nso code should not assume they are available. Instead,import process from \"node:process\".",
+        "option": "This rule has no specific options."
+    }
+}

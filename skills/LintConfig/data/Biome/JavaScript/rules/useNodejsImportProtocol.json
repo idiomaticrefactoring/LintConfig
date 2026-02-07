@@ -1,0 +1,6 @@
+{
+    "useNodejsImportProtocol": {
+        "description": "Description\n\nEnforces using thenode:protocol for Node.js builtin modules.\nThe rule marks traditional imports likeimport fs from \"fs\";as invalid,\nsuggesting the formatimport fs from \"node:fs\";instead.\nThe rule also isn’t triggered if there are dependencies declared in thepackage.jsonthat match\nthe name of a built-in Node.js module.\nCautionThe rule doesn’t support dependencies installed inside a monorepo.",
+        "option": "This rule has no specific options."
+    }
+}

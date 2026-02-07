@@ -1,0 +1,6 @@
+{
+    "noDynamicNamespaceImportAccess": {
+        "description": "Description\n\nDisallow accessing namespace imports dynamically.\nAccessing namespace imports dynamically can prevent efficient tree shaking and increase bundle size.\nThis happens because the bundler cannot determine which parts of the namespace are used at compile time,\nso it must include the entire namespace in the bundle.\nInstead, consider using named imports or if that is not possible\naccess the namespaced import properties statically.\nIf you want to completely disallow namespace imports, consider using thenoNamespaceImportrule.",
+        "option": "This rule has no specific options."
+    }
+}

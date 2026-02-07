@@ -1,0 +1,6 @@
+{
+    "useGoogleFontPreconnect": {
+        "description": "Description\n\nEnsure thepreconnectattribute is used when using Google Fonts.\nWhen using Google Fonts, adding therel=\"preconnect\"attribute to the<link>tag\nthat points tohttps://fonts.gstatic.comis recommended to initiate an early\nconnection to the font’s origin. This improves page load performance by reducing latency.\nFailing to usepreconnectmay result in slower font loading times, affecting user experience.\nNote: Next.js automatically adds this preconnect link starting from version 12.0.1, but in cases\nwhere it’s manually added, this rule ensures thepreconnectattribute is properly used.",
+        "option": "This rule has no specific options."
+    }
+}

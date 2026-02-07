@@ -1,0 +1,6 @@
+{
+    "noWith": {
+        "description": "Description\n\nDisallowwithstatements in non-strict contexts.\nThewithstatement is potentially problematic because it adds members of an object to the current\nscope, making it impossible to tell what a variable inside the block actually refers to.",
+        "option": "This rule has no specific options."
+    }
+}

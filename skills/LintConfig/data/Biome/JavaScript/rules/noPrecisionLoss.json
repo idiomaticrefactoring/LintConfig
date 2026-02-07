@@ -1,0 +1,6 @@
+{
+    "noPrecisionLoss": {
+        "description": "Description\n\nDisallow literal numbers that lose precision",
+        "option": "This rule has no specific options."
+    }
+}

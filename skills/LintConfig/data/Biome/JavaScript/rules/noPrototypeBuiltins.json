@@ -1,0 +1,6 @@
+{
+    "noPrototypeBuiltins": {
+        "description": "Description\n\nDisallow direct use ofObject.prototypebuiltins.\nECMAScript 5.1 addedObject.createwhich allows the creation of an object with a custom prototype.\nThis pattern is often used for objects used as Maps. However, this pattern can lead to errors\nif something else relies on prototype properties/methods.\nMoreover, the methods could be shadowed, this can lead to random bugs and denial of service\nvulnerabilities. For example, callinghasOwnPropertydirectly on parsed JSON like{\"hasOwnProperty\": 1}could lead to vulnerabilities.\nTo avoid subtle bugs like this, you should call these methods fromObject.prototype.\nFor example,foo.isPrototypeOf(bar)should be replaced withObject.prototype.isPrototypeOf.call(foo, \"bar\")As for thehasOwnmethod,foo.hasOwn(\"bar\")should be replaced withObject.hasOwn(foo, \"bar\").",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useNumberNamespace": {
+        "description": "Description\n\nUse theNumberproperties instead of global ones.\nES2015moved some globals into theNumberproperties for consistency.\nThe rule doesn’t report the globalsisFiniteandisNaNbecause they have a slightly different behavior to their correspondingNumber’s propertiesNumber.isFiniteandNumber.isNaN.\nYou can use the dedicated rulesnoGlobalIsFiniteandnoGlobalIsNanto enforce the use ofNumber.isFiniteandNumber.isNaN.",
+        "option": "This rule has no specific options."
+    }
+}

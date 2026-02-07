@@ -1,0 +1,6 @@
+{
+    "useRegexLiterals": {
+        "description": "Description\n\nEnforce the use of the regular expression literals instead of the RegExp constructor if possible.\nThere are two ways to create a regular expression:\nRegular expression literals, e.g., /abc/u.\nThe RegExp constructor function, e.g., new RegExp(\"abc\", \"u\") .\nThe constructor function is particularly useful when you want to dynamically generate the pattern,\nbecause it takes string arguments.\nUsing regular expression literals avoids some escaping required in a string literal,\nand are easier to analyze statically.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useCollapsedElseIf": {
+        "description": "Description\n\nEnforce usingelse ifinstead of nestedifinelseclauses.\nIf anifstatement is the only statement in theelseblock, it is often clearer to use anelse ifform.",
+        "option": "This rule has no specific options."
+    }
+}

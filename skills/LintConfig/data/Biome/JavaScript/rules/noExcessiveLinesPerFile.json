@@ -1,0 +1,6 @@
+{
+    "noExcessiveLinesPerFile": {
+        "description": "Description\n\nRestrict the number of lines in a file.\nLarge files tend to do many things and can make it hard to follow what’s going on.\nThis rule can help enforce a limit on the number of lines in a file.",
+        "option": "maxLinesSection titled “maxLines”\nThis option sets the maximum number of lines allowed in a file.\nIf the file exceeds this limit, a diagnostic will be reported.\nDefault:300\nskipBlankLinesSection titled “skipBlankLines”\nWhen this option is set totrue, blank lines are not counted towards the maximum line limit.\nDefault:false"
+    }
+}

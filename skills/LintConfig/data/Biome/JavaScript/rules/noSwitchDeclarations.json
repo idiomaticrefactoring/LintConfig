@@ -1,0 +1,6 @@
+{
+    "noSwitchDeclarations": {
+        "description": "Description\n\nDisallow lexical declarations inswitchclauses.\nLexical declarations inswitchclauses are accessible in the entireswitch.\nHowever, it only gets initialized when it is assigned, which will only happen if theswitchclause where it is defined is reached.\nTo ensure that the lexical declarations only apply to the currentswitchclause wrap your declarations in a block.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noUselessConstructor": {
+        "description": "Description\n\nDisallow unnecessary constructors.\nES2015provides a default class constructor if one is not specified.\nAs such, providing an empty constructor or one that delegates into its parent is unnecessary.\nThe rule ignores:\ndecorated classes;\nconstructors with at least one parameter property;\nprivate and protected constructors.",
+        "option": "This rule has no specific options."
+    }
+}

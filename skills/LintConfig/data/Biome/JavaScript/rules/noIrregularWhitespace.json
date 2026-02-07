@@ -1,0 +1,6 @@
+{
+    "noIrregularWhitespace": {
+        "description": "Description\n\nDisallows the use of irregular whitespace characters.\nInvalid or irregular whitespace causes issues with various parsers and also makes code harder to debug.",
+        "option": "This rule has no specific options."
+    }
+}

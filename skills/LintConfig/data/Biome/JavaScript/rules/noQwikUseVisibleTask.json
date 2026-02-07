@@ -1,0 +1,6 @@
+{
+    "noQwikUseVisibleTask": {
+        "description": "Description\n\nDisallowuseVisibleTask$()functions in Qwik components.\nPrevents hydration-blocking operations that hurt Qwik’s resumability.\nSeeQwik Tasks Documentationfor proper alternatives.",
+        "option": "This rule has no specific options."
+    }
+}

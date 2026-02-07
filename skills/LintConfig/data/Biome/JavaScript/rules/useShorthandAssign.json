@@ -1,0 +1,6 @@
+{
+    "useShorthandAssign": {
+        "description": "Description\n\nRequire assignment operator shorthand where possible.\nJavaScript provides shorthand operators combining a variable assignment and simple mathematical operation.",
+        "option": "This rule has no specific options."
+    }
+}

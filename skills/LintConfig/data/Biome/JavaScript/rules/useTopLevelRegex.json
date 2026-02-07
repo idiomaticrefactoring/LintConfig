@@ -1,0 +1,6 @@
+{
+    "useTopLevelRegex": {
+        "description": "Description\n\nRequire regex literals to be declared at the top level.\nThis rule is useful to avoid performance issues when using regex literals inside functions called many times (hot paths). Regex literals create a new RegExp object when they are evaluated. (Seehttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) By declaring them at the top level, this overhead can be avoided.\nIt’s important to note that this rule is not recommended for all cases. Placing regex literals at the top level can hurt startup times. In browser contexts, this can result in longer page loads.\nAdditionally, this rule ignores regular expressions with thegand/oryflags, as they maintain internal state and can causeside effectswhen callingtestandexecwith them.",
+        "option": "This rule has no specific options."
+    }
+}

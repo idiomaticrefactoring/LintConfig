@@ -1,0 +1,6 @@
+{
+    "noConstEnum": {
+        "description": "Description\n\nDisallow TypeScriptconst enum\nConst enums are enums that should be inlined at use sites.\nConst enums are not supported by bundlers and are incompatible with theisolatedModulesmode.\nTheir use can lead to import nonexistent values (because const enums are erased).\nThus, library authors and bundler users should not use const enums.",
+        "option": "This rule has no specific options."
+    }
+}

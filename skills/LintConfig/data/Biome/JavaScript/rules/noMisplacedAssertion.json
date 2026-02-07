@@ -1,0 +1,6 @@
+{
+    "noMisplacedAssertion": {
+        "description": "Description\n\nChecks that the assertion function, for exampleexpect, is placed inside anit()function call.\nPlacing (and using) theexpectassertion function can result in unexpected behaviors when executing your testing suite.\nThe rule will check for the following assertion calls:\nexpect\nassert\nassertEquals\nHowever, the rule will ignore the following assertion calls:\nexpect.any\nexpect.anything\nexpect.closeTo\nexpect.arrayContaining\nexpect.objectContaining\nexpect.stringContaining\nexpect.stringMatching\nexpect.extend\nexpect.addEqualityTesters\nexpect.addSnapshotSerializer\nIf the assertion function is imported, the rule will check if they are imported from:\n\"chai\"\n\"node:assert\"\n\"node:assert/strict\"\n\"bun:test\"\n\"vitest\"\nDeno assertion module URL\nCheck theoptionsif you need to change the defaults.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noMultiStr": {
+        "description": "Description\n\nDisallow creating multiline strings by escaping newlines.\nEscaping newlines to create multiline strings is discouraged because it\ncan lead to subtle errors caused by unexpected whitespace after the\nbackslash.",
+        "option": "This rule has no specific options."
+    }
+}

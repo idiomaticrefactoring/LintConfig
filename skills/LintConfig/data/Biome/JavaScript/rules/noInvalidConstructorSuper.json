@@ -1,0 +1,6 @@
+{
+    "noInvalidConstructorSuper": {
+        "description": "Description\n\nPrevents the incorrect use ofsuper()inside classes. It also checks whether a callsuper()is missing from classes that extends other constructors.",
+        "option": "This rule has no specific options."
+    }
+}

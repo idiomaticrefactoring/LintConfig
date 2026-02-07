@@ -1,0 +1,6 @@
+{
+    "noExtraNonNullAssertion": {
+        "description": "Description\n\nPrevents the wrong usage of the non-null assertion operator (!) in TypeScript files.\nThe!non-null assertion operator in TypeScript is used to assert that a value’s type does not includenullorundefined. Using the operator any more than once on a single value does nothing.",
+        "option": "This rule has no specific options."
+    }
+}

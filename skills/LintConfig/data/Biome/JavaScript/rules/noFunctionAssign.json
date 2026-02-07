@@ -1,0 +1,6 @@
+{
+    "noFunctionAssign": {
+        "description": "Description\n\nDisallow reassigning function declarations.",
+        "option": "This rule has no specific options."
+    }
+}

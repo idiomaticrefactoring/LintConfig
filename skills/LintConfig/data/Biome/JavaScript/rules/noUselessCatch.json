@@ -1,0 +1,6 @@
+{
+    "noUselessCatch": {
+        "description": "Description\n\nDisallow unnecessarycatchclauses.\nAcatchclause that only rethrows the original error is redundant,\nand has no effect on the runtime behavior of the program.\nThese redundant clauses can be a source of confusion and code bloat,\nso it’s better to disallow these unnecessarycatchclauses.",
+        "option": "This rule has no specific options."
+    }
+}

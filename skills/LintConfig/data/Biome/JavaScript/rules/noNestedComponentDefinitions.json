@@ -1,0 +1,6 @@
+{
+    "noNestedComponentDefinitions": {
+        "description": "Description\n\nDisallows defining React components inside other components.\nComponent definitions inside other components cause them to be recreated on every render,\nwhich can lead to performance issues and unexpected behavior.\nWhen a component is defined inside another component:\nIt gets recreated on every render of the parent component\nIt loses its internal state when the parent rerenders\nIt defeats props memoization and optimization techniques\nIt creates new function references on every render",
+        "option": "This rule has no specific options."
+    }
+}

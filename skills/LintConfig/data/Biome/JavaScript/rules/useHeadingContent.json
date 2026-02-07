@@ -1,0 +1,6 @@
+{
+    "useHeadingContent": {
+        "description": "Description\n\nEnforce that heading elements (h1, h2, etc.) have content and that the content is accessible to screen readers. Accessible means that it is not hidden using the aria-hidden prop.",
+        "option": "This rule has no specific options."
+    }
+}

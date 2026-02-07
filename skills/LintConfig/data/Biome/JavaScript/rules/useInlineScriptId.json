@@ -1,0 +1,6 @@
+{
+    "useInlineScriptId": {
+        "description": "Description\n\nEnforceidattribute onnext/scriptcomponents with inline content ordangerouslySetInnerHTML.\nUsing inline scripts ordangerouslySetInnerHTMLinnext/scriptcomponents requires anidattribute to ensure that Next.js can track and optimize them correctly.",
+        "option": "This rule has no specific options."
+    }
+}

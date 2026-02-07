@@ -1,0 +1,6 @@
+{
+    "noAwaitInLoops": {
+        "description": "Description\n\nDisallowawaitinside loops.\nUsingawaitin a loop makes your asynchronous operations run one after another instead of all at once. This can slow things down and might cause unhandled errors. Instead, create all the promises together and then wait for them simultaneously using methods likePromise.all().",
+        "option": "This rule has no specific options."
+    }
+}

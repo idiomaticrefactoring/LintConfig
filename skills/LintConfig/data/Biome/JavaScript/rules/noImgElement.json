@@ -1,0 +1,6 @@
+{
+    "noImgElement": {
+        "description": "Description\n\nPrevent usage of<img>element in a Next.js project.\nUsing the<img>element can result in slower Largest Contentful Paint (LCP)\nand higher bandwidth usage, as it lacks the optimizations provided by the<Image />component fromnext/image. Next.js’s<Image />automatically optimizes images\nby serving responsive sizes and using modern formats, improving performance and reducing bandwidth.\nIf your project is self-hosted, ensure that you have sufficient storage and have\ninstalled thesharppackage to support optimized images. When deploying to managed\nhosting providers, be aware of potential additional costs or usage.",
+        "option": "This rule has no specific options."
+    }
+}

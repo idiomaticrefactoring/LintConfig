@@ -1,0 +1,6 @@
+{
+    "noUnusedExpressions": {
+        "description": "Description\n\nDisallow expression statements that are neither a function call nor an\nassignment.\nWhen an expression is used as a statement, it should be explicitly clear\nwhat the intention behind the expression is. This is clear for function\ncalls and assignments, because the call or the assignment itself is the\nprimary intention behind the statement. For other expression kinds, the\nintention is much more ambiguous; it could be the expression contains\nside-effects that are not very explicit, but it could also be that it is\nan error where the author forgot to use the result of the expression,\nsuch as a forgottenreturnkeyword, or it could point to a function\nthat the author forgot to call.",
+        "option": "This rule has no specific options."
+    }
+}

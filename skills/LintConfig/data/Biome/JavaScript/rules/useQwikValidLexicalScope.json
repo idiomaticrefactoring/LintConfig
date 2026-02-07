@@ -1,0 +1,6 @@
+{
+    "useQwikValidLexicalScope": {
+        "description": "Description\n\nDisallow unserializable expressions in Qwik dollar ($) scopes.\nEnsures all captured values in Qwik components can be properly serialized for resumability.\nSeeQwik Optimizer: Lexical Scopefor proper usage patterns.",
+        "option": "This rule has no specific options."
+    }
+}

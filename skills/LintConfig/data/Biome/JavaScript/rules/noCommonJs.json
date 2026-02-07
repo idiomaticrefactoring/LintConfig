@@ -1,0 +1,6 @@
+{
+    "noCommonJs": {
+        "description": "Description\n\nDisallow use of CommonJs module system in favor of ESM style imports.\nESM-styleimports are modern alternative to CommonJSrequireimports. Supported by all modern browsers and Node.js versions.\nTooling can more easily statically analyze and tree-shake ESMimports compared to CommonJs.",
+        "option": "This rule has no specific options."
+    }
+}

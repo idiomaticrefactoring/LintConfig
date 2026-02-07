@@ -1,0 +1,6 @@
+{
+    "noImplicitBoolean": {
+        "description": "Description\n\nDisallow implicittruevalues on JSX boolean attributes",
+        "option": "This rule has no specific options."
+    }
+}

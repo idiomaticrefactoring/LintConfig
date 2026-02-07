@@ -1,0 +1,6 @@
+{
+    "noInvalidUseBeforeDeclaration": {
+        "description": "Description\n\nDisallow the use of variables, function parameters, classes, and enums before their declaration\nJavaScript doesn’t allow the use of block-scoped variables (let,const), function parameters, and classes before their declaration.\nSimilarly TypeScript doesn’t allow the use of enums before their declaration.\nAReferenceErrorwill be thrown with any attempt to access the variable or the parameter before its declaration.\nThe rule also reports the use of variables declared withvarbefore their declarations.",
+        "option": "This rule has no specific options."
+    }
+}

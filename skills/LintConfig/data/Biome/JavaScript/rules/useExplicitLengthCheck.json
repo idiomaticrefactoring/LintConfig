@@ -1,0 +1,6 @@
+{
+    "useExplicitLengthCheck": {
+        "description": "Description\n\nEnforce explicitly comparing thelength,size,byteLengthorbyteOffsetproperty of a value.\nThis rule enforces a specific style length comparisons to make them more clear.",
+        "option": "This rule has no specific options."
+    }
+}

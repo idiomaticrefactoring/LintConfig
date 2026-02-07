@@ -1,0 +1,6 @@
+{
+    "noMagicNumbers": {
+        "description": "Description\n\nReports usage of “magic numbers” — numbers used directly instead of being assigned to named constants.\nIts goal is to improve code maintainability and readability by encouraging developers to extract such numbers into named constants, making their purpose explicit.\nIt ignores:\nnon-magic values (like 0, 1, 2, 10, 24, 60, and their negative or bigint forms) found anywhere, including arithmetic expressions, fn calls etc.\nArray indices\nEnum values\nInitial values in variable or class property declarations\nDefault values in function parameters or destructuring patterns\nArguments to JSON.stringify and parseInt (e.g., JSON.stringify(22), parseInt(\"123\", 8))\nOperands in bitwise operations (e.g., a & 7, a | 7)\nValues in JSX expressions (e.g., <div>{1}</div>)\nObject property values (e.g., { tax: 0.25 })",
+        "option": "This rule has no specific options."
+    }
+}

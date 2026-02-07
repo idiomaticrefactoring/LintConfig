@@ -1,0 +1,6 @@
+{
+    "useConsistentCurlyBraces": {
+        "description": "Description\n\nThis rule enforces consistent use of curly braces inside JSX attributes and JSX children.\nFor situations where JSX expressions are unnecessary, please refer tothe React docandthis page about JSX gotchas.\nThis rule will check for and warn about unnecessary curly braces in both JSX props and children.",
+        "option": "This rule has no specific options."
+    }
+}

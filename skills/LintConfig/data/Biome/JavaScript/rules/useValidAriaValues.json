@@ -1,0 +1,6 @@
+{
+    "useValidAriaValues": {
+        "description": "Description\n\nEnforce that ARIA state and property values are valid.",
+        "option": "This rule has no specific options."
+    }
+}

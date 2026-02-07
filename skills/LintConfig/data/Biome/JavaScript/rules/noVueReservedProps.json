@@ -1,0 +1,6 @@
+{
+    "noVueReservedProps": {
+        "description": "Description\n\nDisallow reserved names to be used as props.\nVue reserves certain prop names for its internal use. Using these reserved names\nas prop names can cause conflicts and unexpected behavior in your Vue components.\nThis rule prevents the use of the following reserved prop names:\nkey - Used by Vue for list rendering and component identification\nref - Used by Vue for template refs",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noArguments": {
+        "description": "Description\n\nDisallow the use ofarguments.",
+        "option": "This rule has no specific options."
+    }
+}

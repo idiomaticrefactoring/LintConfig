@@ -1,0 +1,6 @@
+{
+    "noAriaHiddenOnFocusable": {
+        "description": "Description\n\nEnforce that aria-hidden=“true” is not set on focusable elements.\naria-hidden=\"true\"can be used to hide purely decorative content from screen reader users.\nA focusable element witharia-hidden=\"true\"can be reached by keyboard.\nThis can lead to confusion or unexpected behavior for screen reader users.",
+        "option": "This rule has no specific options."
+    }
+}

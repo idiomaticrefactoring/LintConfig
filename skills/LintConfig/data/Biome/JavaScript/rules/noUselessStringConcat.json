@@ -1,0 +1,6 @@
+{
+    "noUselessStringConcat": {
+        "description": "Description\n\nDisallow unnecessary concatenation of string or template literals.\nThis rule aims to flag concatenation of string or template literals when they could be combined into a single literal.\nNotably, this also includes concatenating a string with a number (unlike the derivative ESLint rule).\nConcatenation of multiple strings is allowed for multi-line strings (such as ones used to prevent exceeding the maximum line width).",
+        "option": "This rule has no specific options."
+    }
+}

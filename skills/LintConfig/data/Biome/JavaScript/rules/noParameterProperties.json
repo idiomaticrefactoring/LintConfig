@@ -1,0 +1,6 @@
+{
+    "noParameterProperties": {
+        "description": "Description\n\nDisallow the use of parameter properties in class constructors.\nTypeScript includes a “parameter properties” shorthand for declaring a class constructor parameter and class property in one location.\nParameter properties can confuse those new to TypeScript as they are less explicit than other ways of declaring and initializing class members.\nMoreover, private class properties, starting with#, cannot be turned into “parameter properties”.\nThis questions the future of this feature.",
+        "option": "This rule has no specific options."
+    }
+}

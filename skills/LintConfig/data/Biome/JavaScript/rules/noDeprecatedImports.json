@@ -1,0 +1,6 @@
+{
+    "noDeprecatedImports": {
+        "description": "Description\n\nRestrict imports of deprecated exports.\nThis rule flags any imports for symbols (such as types, functions, or\nanything else that can be imported), that are documented with a JSDoc\ncomment that contains an “@deprecated” annotation.",
+        "option": "This rule has no specific options."
+    }
+}

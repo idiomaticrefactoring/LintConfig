@@ -1,0 +1,6 @@
+{
+    "useDefaultParameterLast": {
+        "description": "Description\n\nEnforce default function parameters and optional function parameters to be last.\nDefault and optional parameters that precede a required parameter cannot be omitted at call site.",
+        "option": "This rule has no specific options."
+    }
+}

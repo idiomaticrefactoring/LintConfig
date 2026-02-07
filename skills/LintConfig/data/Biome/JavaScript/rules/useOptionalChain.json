@@ -1,0 +1,6 @@
+{
+    "useOptionalChain": {
+        "description": "Description\n\nEnforce using concise optional chain instead of chained logical expressions.\nTypeScript 3.7 introduced support for the optional chain operator, which was later standardized and included in the ECMAScript specification.\nThis operator allows you to safely access properties and methods on objects when they are potentiallynullorundefined.\nThe optional chain operator only chains when the property value isnullorundefined.\nIt is much safer than relying upon logical operator chaining; which chains on any truthy value.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "useConsistentArrayType": {
+        "description": "Description\n\nRequire consistently using eitherT[]orArray<T>\nTypeScriptprovides two equivalent ways to define an array type:T[]andArray<T>.\nThe two styles are functionally equivalent.\nUsing the same style consistently across your codebase makes it easier for developers to read and understand array types.",
+        "option": "Use the options to specify the syntax of array declarations to use.\nbiome.json\n1{2  \"linter\": {3    \"rules\": {4      \"style\": {5        \"useConsistentArrayType\": {6          \"options\": {7            \"syntax\": \"shorthand\"8          }9        }10      }11    }12  }13}\nsyntaxSection titled “syntax”\nThe syntax to use:\ngeneric: array declarations will be converted to Array<T> or ReadonlyArray<T>\nshorthand: array declarations will be converted to T[] or readonly T[]\nDefault:shorthand"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "noHeadElement": {
+        "description": "Description\n\nPrevent usage of<head>element in a Next.js project.\nNext.js provides a specialized<Head />component fromnext/headthat manages\nthe<head>tag for optimal server-side rendering, client-side navigation, and\nautomatic deduplication of tags such as<meta>and<title>.\nThis rule only checks files that are outside of theapp/directory, as it’s typically\nhandled differently in Next.js.",
+        "option": "This rule has no specific options."
+    }
+}

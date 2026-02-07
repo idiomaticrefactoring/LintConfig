@@ -1,0 +1,6 @@
+{
+    "useAriaPropsSupportedByRole": {
+        "description": "Description\n\nEnforce that ARIA properties are valid for the roles that are supported by the element.\nInvalid ARIA properties can make it difficult for users of assistive technologies to understand the purpose of the element.",
+        "option": "This rule has no specific options."
+    }
+}

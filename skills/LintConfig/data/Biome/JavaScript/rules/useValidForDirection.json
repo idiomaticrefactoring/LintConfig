@@ -1,0 +1,6 @@
+{
+    "useValidForDirection": {
+        "description": "Description\n\nEnforce “for” loop update clause moving the counter in the right direction.\nA for loop with a stop condition that can never be reached,\nsuch as one with a counter that moves in the wrong direction, will run infinitely.\nWhile there are occasions when an infinite loop is intended, the convention is to construct such loops as while loops.\nMore typically, an infinite for loop is a bug.",
+        "option": "This rule has no specific options."
+    }
+}
