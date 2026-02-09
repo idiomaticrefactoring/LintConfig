@@ -1,0 +1,6 @@
+{
+    "stlIfFind": {
+        "description": "Description\n\nSuspicious condition. The result of find() is an iterator, but it is not properly checked.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

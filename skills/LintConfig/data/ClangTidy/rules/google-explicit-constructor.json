@@ -1,0 +1,6 @@
+{
+    "google-explicit-constructor": {
+        "description": "Description\n\nChecks that constructors callable with a single argument and conversion\noperators are marked explicit to avoid the risk of unintentional implicit\nconversions.\n\nConsider this example:\n\nstruct\nS\n{\nint\nx\n;\noperator\nbool\n()\nconst\n{\nreturn\ntrue\n;\n}\n};\nbool\nf\n()\n{\nS\na\n{\n1\n};\nS\nb\n{\n2\n};\nreturn\na\n==\nb\n;\n}\n\nThe function will return\ntrue\n, since the objects are implicitly converted\nto\nbool\nbefore comparison, which is unlikely to be the intent.\n\nThe check will suggest inserting\nexplicit\nbefore the constructor or\nconversion operator declaration. However, copy and move constructors should not\nbe explicit, as well as constructors taking a single\ninitializer_list\nargument.\n\nThis code:\n\nstruct\nS\n{\nS\n(\nint\na\n);\nexplicit\nS\n(\nconst\nS\n&\n);\noperator\nbool\n()\nconst\n;\n...\n\nwill become\n\nstruct\nS\n{\nexplicit\nS\n(\nint\na\n);\nS\n(\nconst\nS\n&\n);\nexplicit\noperator\nbool\n()\nconst\n;\n...\n\nSee\nhttps://google.github.io/styleguide/cppguide.html#Explicit_Constructors",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

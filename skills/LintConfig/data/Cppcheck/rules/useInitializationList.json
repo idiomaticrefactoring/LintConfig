@@ -1,0 +1,6 @@
+{
+    "useInitializationList": {
+        "description": "Description\n\nWhen an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don't explicitly write them to the initialization list. You could avoid assigning 'variable' a value by passing the value to the constructor in the initialization list.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: false\nRelated Symbols: variable"
+    }
+}

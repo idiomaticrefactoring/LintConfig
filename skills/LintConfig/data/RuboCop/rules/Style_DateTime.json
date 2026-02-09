@@ -1,0 +1,6 @@
+{
+    "Style/DateTime": {
+        "description": "Description\n\nUse Time over DateTime.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowCoercion: False (type: bool)"
+    }
+}

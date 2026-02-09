@@ -1,0 +1,6 @@
+{
+    "no-var": {
+        "description": "Description\n\nThis rule is aimed at discouraging the use ofvarand encouraging the use ofconstorletinstead.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-var: \"error\"*/\n\nvar x = \"y\";\nvar CONFIG = {};\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-var: \"error\"*/\n\nlet x = \"y\";\nconst CONFIG = {};\n\nThis rule additionally supports TypeScript type syntax. There are multiple ways to declare global variables in TypeScript. Only usingvarworks for all cases. See thisTypeScript playgroundfor reference.\n\nExamples ofincorrectTypeScript code for this rule:\n\n/*eslint no-var: \"error\"*/\n\ndeclare var x: number\n\ndeclare namespace ns {\n\tvar x: number\n}\n\ndeclare module 'module' {\n\tvar x: number\n}\n\nExamples ofcorrectTypeScript code for this rule:\n\n/*eslint no-var: \"error\"*/\n\ndeclare global {\n    declare var x: number\n}",
+        "option": "This rule has no options."
+    }
+}

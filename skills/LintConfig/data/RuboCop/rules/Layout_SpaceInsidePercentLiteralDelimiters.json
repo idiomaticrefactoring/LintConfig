@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsidePercentLiteralDelimiters": {
+        "description": "Description\n\nNo unnecessary spaces inside delimiters of %i/%w/%x literals.",
+        "option": "This rule has no specific options."
+    }
+}

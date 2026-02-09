@@ -1,0 +1,6 @@
+{
+    "Lint/FloatOutOfRange": {
+        "description": "Description\n\nCatches floating-point literals too large or small for Ruby to represent.",
+        "option": "This rule has no specific options."
+    }
+}

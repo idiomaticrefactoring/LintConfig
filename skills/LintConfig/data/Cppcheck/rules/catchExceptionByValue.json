@@ -1,0 +1,6 @@
+{
+    "catchExceptionByValue": {
+        "description": "Description\n\nThe exception is caught by value. It could be caught as a (const) reference which is usually recommended in C++.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

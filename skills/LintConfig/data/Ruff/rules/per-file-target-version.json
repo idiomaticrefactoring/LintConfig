@@ -1,0 +1,6 @@
+{
+    "per-file-target-version": {
+        "description": "Description\n\nA list of mappings from glob-style file pattern to Python version to use when checking the\ncorresponding file(s).\n\nThis may be useful for overriding the global Python version settings in `target-version` or\n`requires-python` for a subset of files. For example, if you have a project with a minimum\nsupported Python version of 3.9 but a subdirectory of developer scripts that want to use a\nnewer feature like the `match` statement from Python 3.10, you can use\n`per-file-target-version` to specify `\"developer_scripts/*.py\" = \"py310\"`.\n\nThis setting is used by the linter to enforce any enabled version-specific lint rules, as\nwell as by the formatter for any version-specific formatting options, such as parenthesizing\ncontext managers on Python 3.10+.",
+        "option": "Type: object"
+    }
+}

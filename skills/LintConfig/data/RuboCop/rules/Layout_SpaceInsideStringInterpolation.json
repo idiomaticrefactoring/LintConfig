@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideStringInterpolation": {
+        "description": "Description\n\nChecks for padding/surrounding spaces inside string interpolation.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: no_space (type: str)\nSupportedStyles: ['space', 'no_space'] (type: list)"
+    }
+}

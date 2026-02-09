@@ -1,0 +1,6 @@
+{
+    "Style/RedundantSelfAssignmentBranch": {
+        "description": "Description\n\nChecks for places where conditional branch makes redundant self-assignment.",
+        "option": "This rule has no specific options."
+    }
+}

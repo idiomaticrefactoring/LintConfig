@@ -1,0 +1,6 @@
+{
+    "TypeShadowsBuiltInNamespace": {
+        "description": "Description\n\nThis rule finds Apex classes, enums, and interfaces that have the same name as a class, enum, or interface in theSystemorSchemanamespace.\nShadowing these namespaces in this way can lead to confusion and unexpected behavior.\nCode that intends to reference aSystemorSchemaclass, enum, or interface may inadvertently reference the locally defined type instead.\nThis can result in ambiguous code and unexpected runtime behavior.\nIt is best to avoid naming your types the same as those in theSystemorSchemanamespace to prevent these issues.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

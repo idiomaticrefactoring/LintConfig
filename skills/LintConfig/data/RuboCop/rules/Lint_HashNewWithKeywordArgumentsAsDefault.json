@@ -1,0 +1,6 @@
+{
+    "Lint/HashNewWithKeywordArgumentsAsDefault": {
+        "description": "Description\n\nChecks for the deprecated use of keyword arguments for hash default in `Hash.new`.",
+        "option": "This rule has no specific options."
+    }
+}

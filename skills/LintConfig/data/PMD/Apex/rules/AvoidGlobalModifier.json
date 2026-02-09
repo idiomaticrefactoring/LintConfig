@@ -1,0 +1,6 @@
+{
+    "AvoidGlobalModifier": {
+        "description": "Description\n\nGlobal classes should be avoided (especially in managed packages) as they can never be deleted or changed in signature. Always check twice if something needs to be global.\nMany interfaces (e.g. Batch) required global modifiers in the past but don’t require this anymore. Don’t lock yourself in.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

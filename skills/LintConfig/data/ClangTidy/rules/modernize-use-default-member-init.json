@@ -1,0 +1,6 @@
+{
+    "modernize-use-default-member-init": {
+        "description": "Description\n\nThis check converts constructors’ member initializers into the new\ndefault member initializers in C++11. Other member initializers that match the\ndefault member initializer are removed. This can reduce repeated code or allow\nuse of ‘= default’.\n\nstruct\nA\n{\nA\n()\n:\ni\n(\n5\n),\nj\n(\n10.0\n)\n{}\nA\n(\nint\ni\n)\n:\ni\n(\ni\n),\nj\n(\n10.0\n)\n{}\nint\ni\n;\ndouble\nj\n;\n};\n// becomes\nstruct\nA\n{\nA\n()\n{}\nA\n(\nint\ni\n)\n:\ni\n(\ni\n)\n{}\nint\ni\n{\n5\n};\ndouble\nj\n{\n10.0\n};\n};\n\nNote\nOnly converts member initializers for built-in types, enums, and pointers.\nThe\nreadability-redundant-member-init\ncheck will remove redundant member\ninitializers for classes.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nUseAssignment\nIf this option is set to\ntrue\n(default is\nfalse\n), the check will initialize\nmembers with an assignment. For example:\nstruct\nA\n{\nA\n()\n{}\nA\n(\nint\ni\n)\n:\ni\n(\ni\n)\n{}\nint\ni\n=\n5\n;\ndouble\nj\n=\n10.0\n;\n};\nIgnoreMacros\nIf this option is set to\ntrue\n(default is\ntrue\n), the check will not warn\nabout members declared inside macros."
+    }
+}

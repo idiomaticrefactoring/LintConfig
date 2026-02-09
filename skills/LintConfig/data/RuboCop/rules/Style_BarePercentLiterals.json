@@ -1,0 +1,6 @@
+{
+    "Style/BarePercentLiterals": {
+        "description": "Description\n\nChecks if usage of %() or %Q() matches configuration.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: bare_percent (type: str)\nSupportedStyles: ['percent_q', 'bare_percent'] (type: list)"
+    }
+}

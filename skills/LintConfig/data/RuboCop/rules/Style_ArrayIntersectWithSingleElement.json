@@ -1,0 +1,6 @@
+{
+    "Style/ArrayIntersectWithSingleElement": {
+        "description": "Description\n\nUse `include?(element)` instead of `intersect?([element])`.",
+        "option": "This rule has no specific options."
+    }
+}

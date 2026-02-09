@@ -1,0 +1,6 @@
+{
+    "Style/ModuleFunction": {
+        "description": "Description\n\nChecks for usage of `extend self` in modules.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: module_function (type: str)\nSupportedStyles: ['module_function', 'extend_self', 'forbidden'] (type: list)\nAutocorrect: False (type: bool)"
+    }
+}

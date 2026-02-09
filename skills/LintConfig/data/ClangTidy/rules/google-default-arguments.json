@@ -1,0 +1,6 @@
+{
+    "google-default-arguments": {
+        "description": "Description\n\nChecks that default arguments are not given for virtual methods.\n\nSee\nhttps://google.github.io/styleguide/cppguide.html#Default_Arguments",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

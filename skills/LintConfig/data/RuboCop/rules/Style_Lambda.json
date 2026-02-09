@@ -1,0 +1,6 @@
+{
+    "Style/Lambda": {
+        "description": "Description\n\nUse the new lambda literal syntax for single-line blocks.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: line_count_dependent (type: str)\nSupportedStyles: ['line_count_dependent', 'lambda', 'literal'] (type: list)"
+    }
+}

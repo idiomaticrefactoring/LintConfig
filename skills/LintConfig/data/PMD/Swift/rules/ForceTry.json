@@ -1,0 +1,6 @@
+{
+    "ForceTry": {
+        "description": "Description\n\nForce tries should be avoided. If the code being wrapped happens to raise and exception, our application will crash.\nConsider using a conditional try and handling the resulting optional, or wrapping the try statement in a do-catch block.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

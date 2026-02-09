@@ -1,0 +1,6 @@
+{
+    "Lint/AmbiguousOperatorPrecedence": {
+        "description": "Description\n\nChecks for expressions containing multiple binary operations with ambiguous precedence.",
+        "option": "This rule has no specific options."
+    }
+}

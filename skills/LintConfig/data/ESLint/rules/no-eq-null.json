@@ -1,0 +1,6 @@
+{
+    "no-eq-null": {
+        "description": "Description\n\nTheno-eq-nullrule aims reduce potential bug and unwanted behavior by ensuring that comparisons tonullonly matchnull, and not alsoundefined. As such it will flag comparisons tonullwhen using==and!=.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-eq-null: \"error\"*/\n\nif (foo == null) {\n  bar();\n}\n\nwhile (qux != null) {\n  baz();\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-eq-null: \"error\"*/\n\nif (foo === null) {\n  bar();\n}\n\nwhile (qux !== null) {\n  baz();\n}",
+        "option": "This rule has no options."
+    }
+}

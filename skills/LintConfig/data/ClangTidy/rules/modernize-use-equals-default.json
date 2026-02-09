@@ -1,0 +1,6 @@
+{
+    "modernize-use-equals-default": {
+        "description": "Description\n\nThis check replaces default bodies of special member functions with\n=\ndefault;\n. The explicitly defaulted function declarations enable more\nopportunities in optimization, because the compiler might treat explicitly\ndefaulted functions as trivial.\n\nstruct\nA\n{\nA\n()\n{}\n~\nA\n();\n};\nA\n::~\nA\n()\n{}\n// becomes\nstruct\nA\n{\nA\n()\n=\ndefault\n;\n~\nA\n();\n};\nA\n::~\nA\n()\n=\ndefault\n;\n\nNote\nMove-constructor and move-assignment operator are not supported yet.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros and will\nignore special members with bodies contain macros or preprocessor directives.\nDefault is\ntrue\n."
+    }
+}

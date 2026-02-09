@@ -1,0 +1,6 @@
+{
+    "AvoidLosingExceptionInformation": {
+        "description": "Description\n\nDeprecated\n\nStatements in a catch block that invoke accessors on the exception without using the information\nonly add to code size.  Either remove the invocation, or use the return result.\n\nDeprecated:This rule is deprecated since PMD 7.17.0 and will be removed with PMD 8.0.0.\nThis rule has been replaced byUselessPureMethodCall.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-empty-character-class": {
+        "description": "Description\n\nThis rule disallows empty character classes in regular expressions.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-empty-character-class: \"error\"*/\n\n/^abc[]/.test(\"abcdefg\"); // false\n\"abcdefg\".match(/^abc[]/); // null\n\n/^abc[[]]/v.test(\"abcdefg\"); // false\n\"abcdefg\".match(/^abc[[]]/v); // null\n\n/^abc[[]--[x]]/v.test(\"abcdefg\"); // false\n\"abcdefg\".match(/^abc[[]--[x]]/v); // null\n\n/^abc[[d]&&[]]/v.test(\"abcdefg\"); // false\n\"abcdefg\".match(/^abc[[d]&&[]]/v); // null\n\nconst regex = /^abc[d[]]/v;\nregex.test(\"abcdefg\"); // true, the nested `[]` has no effect\n\"abcdefg\".match(regex); // [\"abcd\"]\nregex.test(\"abcefg\"); // false, the nested `[]` has no effect\n\"abcefg\".match(regex); // null\nregex.test(\"abc\"); // false, the nested `[]` has no effect\n\"abc\".match(regex); // null\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-empty-character-class: \"error\"*/\n\n/^abc/.test(\"abcdefg\"); // true\n\"abcdefg\".match(/^abc/); // [\"abc\"]\n\n/^abc[a-z]/.test(\"abcdefg\"); // true\n\"abcdefg\".match(/^abc[a-z]/); // [\"abcd\"]\n\n/^abc[^]/.test(\"abcdefg\"); // true\n\"abcdefg\".match(/^abc[^]/); // [\"abcd\"]",
+        "option": "This rule has no options."
+    }
+}

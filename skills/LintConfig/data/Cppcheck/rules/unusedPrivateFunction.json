@@ -1,0 +1,6 @@
+{
+    "unusedPrivateFunction": {
+        "description": "Description\n\nUnused private function: 'classname::funcname'",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: classname::funcname"
+    }
+}

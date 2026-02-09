@@ -1,0 +1,6 @@
+{
+    "google-objc-global-variable-declaration": {
+        "description": "Description\n\nFinds global variable declarations in Objective-C files that do not follow the\npattern of variable names in Google’s Objective-C Style Guide.\n\nThe corresponding style guide rule:\nhttps://google.github.io/styleguide/objcguide.html#variable-names\n\nAll the global variables should follow the pattern of\ng[A-Z].*\n(variables)\nor\nk[A-Z].*\n(constants). The check will suggest a variable name that\nfollows the pattern if it can be inferred from the original name.\n\nFor code:\n\nstatic\nNSString\n*\nmyString\n=\n@\"hello\"\n;\n\nThe fix will be:\n\nstatic\nNSString\n*\ngMyString\n=\n@\"hello\"\n;\n\nAnother example of constant:\n\nstatic\nNSString\n*\nconst\nmyConstString\n=\n@\"hello\"\n;\n\nThe fix will be:\n\nstatic\nNSString\n*\nconst\nkMyConstString\n=\n@\"hello\"\n;\n\nHowever for code that prefixed with non-alphabetical characters like:\n\nstatic\nNSString\n*\n__anotherString\n=\n@\"world\"\n;\n\nThe check will give a warning message but will not be able to suggest\na fix. The user needs to fix it on their own.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

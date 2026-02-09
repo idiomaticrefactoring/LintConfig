@@ -1,0 +1,6 @@
+{
+    "Style/MinMaxComparison": {
+        "description": "Description\n\nEnforces the use of `max` or `min` instead of comparison for greater or less.",
+        "option": "This rule has no specific options."
+    }
+}

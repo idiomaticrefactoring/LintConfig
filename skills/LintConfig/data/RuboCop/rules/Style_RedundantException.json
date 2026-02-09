@@ -1,0 +1,6 @@
+{
+    "Style/RedundantException": {
+        "description": "Description\n\nChecks for an obsolete RuntimeException argument in raise/fail.",
+        "option": "This rule has no specific options."
+    }
+}

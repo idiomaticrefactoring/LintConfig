@@ -1,0 +1,6 @@
+{
+    "bugprone-inaccurate-erase": {
+        "description": "Description\n\nChecks for inaccurate use of the\nerase()\nmethod.\n\nAlgorithms like\nremove()\ndo not actually remove any element from the\ncontainer but return an iterator to the first redundant element at the end\nof the container. These redundant elements must be removed using the\nerase()\nmethod. This check warns when not all of the elements will be\nremoved due to using an inappropriate overload.\n\nFor example, the following code erases only one element:\n\nstd\n::\nvector\n<\nint\n>\nxs\n;\n...\nxs\n.\nerase\n(\nstd\n::\nremove\n(\nxs\n.\nbegin\n(),\nxs\n.\nend\n(),\n10\n));\n\nCall the two-argument overload of\nerase()\nto remove the subrange:\n\nstd\n::\nvector\n<\nint\n>\nxs\n;\n...\nxs\n.\nerase\n(\nstd\n::\nremove\n(\nxs\n.\nbegin\n(),\nxs\n.\nend\n(),\n10\n),\nxs\n.\nend\n());",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

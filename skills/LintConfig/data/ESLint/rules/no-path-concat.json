@@ -1,0 +1,6 @@
+{
+    "no-path-concat": {
+        "description": "Description\n\nThis rule aims to prevent string concatenation of directory paths in Node.js\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-path-concat: \"error\"*/\n\nvar fullPath = __dirname + \"/foo.js\";\n\nvar fullPath = __filename + \"/foo.js\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-path-concat: \"error\"*/\n\nvar fullPath = dirname + \"/foo.js\";",
+        "option": "This rule has no specific options."
+    }
+}

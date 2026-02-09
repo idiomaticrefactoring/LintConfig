@@ -1,0 +1,6 @@
+{
+    "pyupgrade": {
+        "description": "Description\n\nOptions for the `pyupgrade` plugin.",
+        "option": "Type: PyUpgradeOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - keep-runtime-typing: Whether to avoid [PEP 585](https://peps.python.org/pep-0585/) (`List[int]` -> `list[int]`) and [PEP 604](https://peps.python.org/pep-0604/)"
+    }
+}

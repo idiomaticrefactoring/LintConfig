@@ -1,0 +1,6 @@
+{
+    "Irresponsible Module": {
+        "description": "Description\n\nIntroduction\n\nClasses and modules are the units of reuse and release. It is therefore\nconsidered good practice to annotate every class and module with a brief\ncomment outlining its responsibilities.\n\nFor further guideline on how to write good documentation in Ruby, see these\nlinks:\n- Rails API documentation guidelines\n- Comments tell you why\n\nExample\n\nGiven\n\nruby\nclass Dummy\n  # Do things...\nend\n\nReek would emit the following warning:\n\ntest.rb -- 1 warning:\n  [1]:IrresponsibleModule: Dummy has no descriptive comment\n\nFixing this is simple - just an explaining comment:\n\n```ruby\n\nclass Dummy\n  # Do things...\nend\n```\n\nCurrent Support in Reek\n\nIrresponsible Module checks classes and modules, including those\ncreated through Struct.new and Class.new and directly assigned to a constant.",
+        "option": "Irresponsible Module supports only the Basic Smell Options."
+    }
+}

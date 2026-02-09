@@ -1,0 +1,6 @@
+{
+    "shadowFunction": {
+        "description": "Description\n\nLocal variable 'function' shadows outer function",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: function"
+    }
+}

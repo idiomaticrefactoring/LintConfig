@@ -1,0 +1,6 @@
+{
+    "Lint/AmbiguousRegexpLiteral": {
+        "description": "Description\n\nChecks for ambiguous regexp literals in the first argument of a method invocation without parentheses.",
+        "option": "This rule has no specific options."
+    }
+}

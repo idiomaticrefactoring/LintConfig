@@ -1,0 +1,6 @@
+{
+    "no-proto": {
+        "description": "Description\n\nWhen an object is created with thenewoperator,__proto__is set to the original “prototype” property of the object’s constructor function.Object.getPrototypeOfis the preferred method of getting the object’s prototype. To change an object’s prototype, useObject.setPrototypeOf.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-proto: \"error\"*/\n\nconst a = obj.__proto__;\n\nconst a1 = obj[\"__proto__\"];\n\nobj.__proto__ = b;\n\nobj[\"__proto__\"] = b;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-proto: \"error\"*/\n\nconst a = Object.getPrototypeOf(obj);\n\nObject.setPrototypeOf(obj, b);\n\nconst c = { __proto__: a };",
+        "option": "This rule has no options."
+    }
+}

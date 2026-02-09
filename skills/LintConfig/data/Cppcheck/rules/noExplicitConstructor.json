@@ -1,0 +1,6 @@
+{
+    "noExplicitConstructor": {
+        "description": "Description\n\nClass 'classname' has a constructor with 1 argument that is not explicit. Such, so called \"Converting constructors\", should in general be explicit for type safety reasons as that prevents unintended implicit conversions.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: classname"
+    }
+}

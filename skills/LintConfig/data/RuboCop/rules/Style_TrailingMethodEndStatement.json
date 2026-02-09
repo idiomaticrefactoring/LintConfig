@@ -1,0 +1,6 @@
+{
+    "Style/TrailingMethodEndStatement": {
+        "description": "Description\n\nChecks for trailing end statement on line of method body.",
+        "option": "This rule has no specific options."
+    }
+}

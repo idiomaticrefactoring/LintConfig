@@ -1,0 +1,6 @@
+{
+    "Style/TrailingBodyOnMethodDefinition": {
+        "description": "Description\n\nMethod body goes below definition.",
+        "option": "This rule has no specific options."
+    }
+}

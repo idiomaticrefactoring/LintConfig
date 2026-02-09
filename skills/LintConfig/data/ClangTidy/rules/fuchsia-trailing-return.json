@@ -1,0 +1,6 @@
+{
+    "fuchsia-trailing-return": {
+        "description": "Description\n\nFunctions that have trailing returns are disallowed, except for those using\ndecltype\nspecifiers and lambda with otherwise unutterable return types.\n\nFor example:\n\n// No warning\nint\nadd_one\n(\nconst\nint\narg\n)\n{\nreturn\narg\n;\n}\n// Warning\nauto\nget_add_one\n()\n->\nint\n(\n*\n)(\nconst\nint\n)\n{\nreturn\nadd_one\n;\n}\n\nExceptions are made for lambdas and\ndecltype\nspecifiers:\n\n// No warning\nauto\nlambda\n=\n[](\ndouble\nx\n,\ndouble\ny\n)\n->\ndouble\n{\nreturn\nx\n+\ny\n;};\n// No warning\ntemplate\n<\ntypename\nT1\n,\ntypename\nT2\n>\nauto\nfn\n(\nconst\nT1\n&\nlhs\n,\nconst\nT2\n&\nrhs\n)\n->\ndecltype\n(\nlhs\n+\nrhs\n)\n{\nreturn\nlhs\n+\nrhs\n;\n}\n\nSee the features disallowed in Fuchsia at\nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

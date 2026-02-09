@@ -1,0 +1,6 @@
+{
+    "misc-misleading-bidirectional": {
+        "description": "Description\n\nWarns about unterminated bidirectional unicode sequence, detecting potential attack\nas described in the\nTrojan Source\nattack.\n\nExample:\n\n#include\n<iostream>\nint\nmain\n()\n{\nbool\nisAdmin\n=\nfalse\n;\n/*‮ } ⁦if (isAdmin)⁩ ⁦ begin admins only */\nstd\n::\ncout\n<<\n\"You are an admin.\n\\n\n\"\n;\n/* end admins only ‮ { ⁦*/\nreturn\n0\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

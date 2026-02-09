@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideParens": {
+        "description": "Description\n\nNo spaces after ( or before ).",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: no_space (type: str)\nSupportedStyles: ['space', 'compact', 'no_space'] (type: list)"
+    }
+}

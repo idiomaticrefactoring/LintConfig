@@ -1,0 +1,6 @@
+{
+    "flake8-import-conventions": {
+        "description": "Description\n\nOptions for the `flake8-import-conventions` plugin.",
+        "option": "Type: Flake8ImportConventionsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - aliases: The conventional aliases for imports. These aliases can be extended by\n  - banned-aliases: A mapping from module to its banned import aliases.\n  - banned-from: A list of modules that should not be imported from using the\n  - extend-aliases: A mapping from module to conventional import alias. These aliases will"
+    }
+}

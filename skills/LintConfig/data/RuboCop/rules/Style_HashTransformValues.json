@@ -1,0 +1,6 @@
+{
+    "Style/HashTransformValues": {
+        "description": "Description\n\nPrefer `transform_values` over `each_with_object`, `map`, or `to_h`.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/AccessModifierIndentation": {
+        "description": "Description\n\nChecks indentation of private/protected visibility modifiers.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: indent (type: str)\nSupportedStyles: ['outdent', 'indent'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/AccessModifierDeclarations": {
+        "description": "Description\n\nChecks style of how access modifiers are used.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: group (type: str)\nSupportedStyles: ['inline', 'group'] (type: list)\nAllowModifiersOnSymbols: True (type: bool)\nAllowModifiersOnAttrs: True (type: bool)\nAllowModifiersOnAliasMethod: True (type: bool)"
+    }
+}

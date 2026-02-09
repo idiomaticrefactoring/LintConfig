@@ -1,0 +1,6 @@
+{
+    "Style/NumberedParametersLimit": {
+        "description": "Description\n\nAvoid excessive numbered params in a single block.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMax: 1 (type: int)"
+    }
+}

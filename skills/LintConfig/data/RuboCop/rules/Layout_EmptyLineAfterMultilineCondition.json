@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLineAfterMultilineCondition": {
+        "description": "Description\n\nEnforces empty line after multiline condition.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://github.com/airbnb/ruby#multiline-if-newline'] (type: list)"
+    }
+}

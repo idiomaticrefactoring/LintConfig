@@ -1,0 +1,6 @@
+{
+    "eol-last": {
+        "description": "Description\n\nThis rule enforces at least one newline (or absence thereof) at the end\nof non-empty files.\n\nPrior to v0.16.0 this rule also enforced that there was only a single line at\nthe end of the file. If you still want this behavior, consider enablingno-multiple-empty-lineswithmaxEOFand/orno-trailing-spaces.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint eol-last: [\"error\", \"always\"]*/\n\nfunction doSomething() {\n  var foo = 2;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint eol-last: [\"error\", \"always\"]*/\n\nfunction doSomething() {\n  var foo = 2;\n}",
+        "option": "This rule has a string option:\n\n- \"always\"(default) enforces that files end with a newline (LF)\n- \"never\"enforces that files do not end with a newline\n- \"unix\"(deprecated) is identical to “always”\n- \"windows\"(deprecated) is identical to “always”, but will use a CRLF character when autofixing\n\nDeprecated:The options\"unix\"and\"windows\"are deprecated. If you need to enforce a specific linebreak style, use this rule in conjunction withlinebreak-style."
+    }
+}

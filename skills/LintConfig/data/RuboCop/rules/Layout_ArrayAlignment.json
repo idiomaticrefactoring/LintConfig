@@ -1,0 +1,6 @@
+{
+    "Layout/ArrayAlignment": {
+        "description": "Description\n\nAlign the elements of an array literal if they span more than one line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: with_first_element (type: str)\nSupportedStyles: ['with_first_element', 'with_fixed_indentation'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

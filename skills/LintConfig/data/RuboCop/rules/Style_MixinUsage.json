@@ -1,0 +1,6 @@
+{
+    "Style/MixinUsage": {
+        "description": "Description\n\nChecks that `include`, `extend` and `prepend` exists at the top level.",
+        "option": "This rule has no specific options."
+    }
+}

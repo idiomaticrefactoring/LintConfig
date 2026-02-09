@@ -1,0 +1,6 @@
+{
+    "Style/WhenThen": {
+        "description": "Description\n\nUse when x then ... for one-line cases.",
+        "option": "This rule has no specific options."
+    }
+}

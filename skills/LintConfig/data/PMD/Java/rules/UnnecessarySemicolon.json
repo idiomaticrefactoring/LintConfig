@@ -1,0 +1,6 @@
+{
+    "UnnecessarySemicolon": {
+        "description": "Description\n\nReports unnecessary semicolons (so called \"empty statements\" and \"empty declarations\").\nThese can be removed without changing the program. The Java grammar\nallows them for historical reasons, but they should be avoided.\n\nThis rule will not report empty statements that are syntactically \nrequired, for instance, because they are the body of a control statement.\n\nThis rule replaces EmptyStatementNotInLoop.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

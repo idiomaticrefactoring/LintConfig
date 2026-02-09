@@ -1,0 +1,6 @@
+{
+    "MethodArgumentCouldBeFinal": {
+        "description": "Description\n\nReports method and constructor parameters that can be made final because they are never reassigned within the body of the method.\n\nThis rule ignores unused parameters so as not to overlap with the ruleUnusedFormalParameter.\nIt will also ignore the parameters of abstract methods.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

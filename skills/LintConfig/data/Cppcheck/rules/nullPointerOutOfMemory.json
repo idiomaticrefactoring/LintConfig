@@ -1,0 +1,6 @@
+{
+    "nullPointerOutOfMemory": {
+        "description": "Description\n\nThe product dereferences a pointer that it expects to be valid but is NULL.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 476\nInconclusive: false"
+    }
+}

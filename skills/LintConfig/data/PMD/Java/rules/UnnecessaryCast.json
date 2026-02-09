@@ -1,0 +1,6 @@
+{
+    "UnnecessaryCast": {
+        "description": "Description\n\nMinimum Language Version:Java 1.5\n\nDetects casts which could be removed as the operand of the cast is already suitable\nfor the context type. For instance, in the following:\n\nThe cast is unnecessary. This is becauseStringalready is a subtype of bothComparableandObject.\n\nThis will also flag casts that can be avoided because of the autoboxing feature of Java 5.\n\nThe literal would be autoboxed toIntegeranyway.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

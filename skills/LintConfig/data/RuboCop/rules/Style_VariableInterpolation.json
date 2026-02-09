@@ -1,0 +1,6 @@
+{
+    "Style/VariableInterpolation": {
+        "description": "Description\n\nDon't interpolate global, instance and class variables directly in strings.",
+        "option": "This rule has no specific options."
+    }
+}

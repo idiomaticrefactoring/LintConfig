@@ -1,0 +1,6 @@
+{
+    "Style/MultilineInPatternThen": {
+        "description": "Description\n\nDo not use `then` for multi-line `in` statement.",
+        "option": "This rule has no specific options."
+    }
+}

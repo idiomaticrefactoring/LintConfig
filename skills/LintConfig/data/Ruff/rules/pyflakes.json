@@ -1,0 +1,6 @@
+{
+    "pyflakes": {
+        "description": "Description\n\nOptions for the `pyflakes` plugin.",
+        "option": "Type: PyflakesOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allowed-unused-imports: A list of modules to ignore when considering unused imports.\n  - extend-generics: Additional functions or classes to consider generic, such that any"
+    }
+}

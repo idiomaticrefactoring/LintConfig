@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateRequire": {
+        "description": "Description\n\nChecks for duplicate `require`s and `require_relative`s.",
+        "option": "This rule has no specific options."
+    }
+}

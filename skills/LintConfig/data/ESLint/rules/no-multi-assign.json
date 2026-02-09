@@ -1,0 +1,6 @@
+{
+    "no-multi-assign": {
+        "description": "Description\n\nThis rule disallows using multiple assignments within a single statement.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-multi-assign: \"error\"*/\n\nlet a = b = c = 5;\n\nconst foo = bar = \"baz\";\n\nlet d =\n    e =\n    c;\n\nclass Foo {\n    a = b = 10;\n}\n\na = b = \"quux\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-multi-assign: \"error\"*/\n\nlet a = 5;\nlet b = 5;\nconst c = 5;\n\nconst foo = \"baz\";\nconst bar = \"baz\";\n\nlet d = c;\nlet e = c;\n\nclass Foo {\n    a = 10;\n    b = 10;\n}\n\na = \"quux\";\nb = \"quux\";",
+        "option": "This rule has an object option:\n\n- \"ignoreNonDeclaration\": When set totrue, the rule allows chains that don’t include initializing a variable in a declaration or initializing a class field. Default isfalse.\n\nignoreNonDeclaration\n\nExamples ofcorrectcode for the{ \"ignoreNonDeclaration\": true }option:\n\n/*eslint no-multi-assign: [\"error\", { \"ignoreNonDeclaration\": true }]*/\n\nlet a;\nlet b;\na = b = \"baz\";\n\nconst x = {};\nconst y = {};\nx.one = y.one = 1;\n\nExamples ofincorrectcode for the{ \"ignoreNonDeclaration\": true }option:\n\n/*eslint no-multi-assign: [\"error\", { \"ignoreNonDeclaration\": true }]*/\n\nlet a = b = \"baz\";\n\nconst foo = bar = 1;\n\nclass Foo {\n    a = b = 10;\n}"
+    }
+}

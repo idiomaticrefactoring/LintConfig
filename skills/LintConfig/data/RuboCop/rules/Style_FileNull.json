@@ -1,0 +1,6 @@
+{
+    "Style/FileNull": {
+        "description": "Description\n\nUse `File::NULL` instead of hardcoding \"dev/null\".",
+        "option": "This rule has no specific options."
+    }
+}

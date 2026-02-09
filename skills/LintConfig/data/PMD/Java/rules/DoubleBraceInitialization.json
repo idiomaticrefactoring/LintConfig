@@ -1,0 +1,6 @@
+{
+    "DoubleBraceInitialization": {
+        "description": "Description\n\nDouble brace initialisation is a pattern to initialise eg collections concisely. But it implicitly\ngenerates a new .class file, and the object holds a strong reference to the enclosing object. For those\nreasons, it is preferable to initialize the object normally, even though it’s verbose.\n\nThis rule counts any anonymous class which only has a single initializer as an instance of double-brace\ninitialization. There is currently no way to find out whether a method called in the initializer is not\naccessible from outside the anonymous class, and those legit cases should be suppressed for the time being.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

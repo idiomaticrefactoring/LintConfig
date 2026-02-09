@@ -1,0 +1,6 @@
+{
+    "Lint/FlipFlop": {
+        "description": "Description\n\nChecks for flip-flops.",
+        "option": "This rule has no specific options."
+    }
+}

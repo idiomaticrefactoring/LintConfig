@@ -1,0 +1,6 @@
+{
+    "Lint/SafeNavigationChain": {
+        "description": "Description\n\nDo not chain ordinary method call after safe navigation operator.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['present?', 'blank?', 'presence', 'try', 'try!', 'in?'] (type: list)"
+    }
+}

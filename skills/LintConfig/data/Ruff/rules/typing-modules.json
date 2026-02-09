@@ -1,0 +1,6 @@
+{
+    "typing-modules": {
+        "description": "Description\n\nA list of modules whose exports should be treated equivalently to\nmembers of the `typing` module.\n\nThis is useful for ensuring proper type annotation inference for\nprojects that re-export `typing` and `typing_extensions` members\nfrom a compatibility module. If omitted, any members imported from\nmodules apart from `typing` and `typing_extensions` will be treated\nas ordinary Python objects.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

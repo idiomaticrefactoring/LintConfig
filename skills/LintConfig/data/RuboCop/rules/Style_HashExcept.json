@@ -1,0 +1,6 @@
+{
+    "Style/HashExcept": {
+        "description": "Description\n\nChecks for usages of `Hash#reject`, `Hash#select`, and `Hash#filter` methods that can be replaced with `Hash#except` method.",
+        "option": "This rule has no specific options."
+    }
+}

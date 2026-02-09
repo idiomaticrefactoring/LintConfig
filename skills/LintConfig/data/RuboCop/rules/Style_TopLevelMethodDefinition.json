@@ -1,0 +1,6 @@
+{
+    "Style/TopLevelMethodDefinition": {
+        "description": "Description\n\nLooks for top-level method definitions.",
+        "option": "This rule has no specific options."
+    }
+}

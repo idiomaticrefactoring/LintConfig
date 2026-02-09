@@ -1,0 +1,6 @@
+{
+    "Lint/ImplicitStringConcatenation": {
+        "description": "Description\n\nChecks for adjacent string literals on the same line, which could better be represented as a single string literal.",
+        "option": "This rule has no specific options."
+    }
+}

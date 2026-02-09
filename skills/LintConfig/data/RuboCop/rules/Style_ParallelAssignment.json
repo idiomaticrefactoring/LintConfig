@@ -1,0 +1,6 @@
+{
+    "Style/ParallelAssignment": {
+        "description": "Description\n\nCheck for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "namespace-packages": {
+        "description": "Description\n\nMark the specified directories as namespace packages. For the purpose of\nmodule resolution, Ruff will treat those directories and all their subdirectories\nas if they contained an `__init__.py` file.",
+        "option": "Type: array"
+    }
+}

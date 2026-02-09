@@ -1,0 +1,6 @@
+{
+    "Naming/BinaryOperatorParameterName": {
+        "description": "Description\n\nWhen defining binary operators, name the argument other.",
+        "option": "This rule has no specific options."
+    }
+}

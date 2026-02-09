@@ -1,0 +1,6 @@
+{
+    "bugprone-posix-return": {
+        "description": "Description\n\nChecks if any calls to\npthread_*\nor\nposix_*\nfunctions\n(except\nposix_openpt\n) expect negative return values. These functions return\neither\n0\non success or an\nerrno\non failure, which is positive only.\n\nExample buggy usage looks like:\n\nif\n(\nposix_fadvise\n(...)\n<\n0\n)\n{\n\nThis will never happen as the return value is always non-negative.\nA simple fix could be:\n\nif\n(\nposix_fadvise\n(...)\n>\n0\n)\n{",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

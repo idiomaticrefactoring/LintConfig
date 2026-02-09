@@ -1,0 +1,6 @@
+{
+    "Lint/ScriptPermission": {
+        "description": "Description\n\nGrant script file execute permission.",
+        "option": "This rule has no specific options."
+    }
+}

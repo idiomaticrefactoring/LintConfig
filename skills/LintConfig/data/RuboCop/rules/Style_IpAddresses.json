@@ -1,0 +1,6 @@
+{
+    "Style/IpAddresses": {
+        "description": "Description\n\nDon't include literal IP addresses in code.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedAddresses: ['::'] (type: list)"
+    }
+}

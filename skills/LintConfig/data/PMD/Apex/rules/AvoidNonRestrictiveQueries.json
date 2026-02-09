@@ -1,0 +1,6 @@
+{
+    "AvoidNonRestrictiveQueries": {
+        "description": "Description\n\nWhen working with very large amounts of data, unfiltered SOQL or SOSL queries can quickly causegovernor limitexceptions.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

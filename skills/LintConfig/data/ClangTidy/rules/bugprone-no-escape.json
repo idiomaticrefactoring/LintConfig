@@ -1,0 +1,6 @@
+{
+    "bugprone-no-escape": {
+        "description": "Description\n\nFinds pointers with the\nnoescape\nattribute that are captured by an\nasynchronously-executed block. The block arguments in\ndispatch_async()\nand\ndispatch_after()\nare guaranteed to escape, so it is an error if a pointer\nwith the\nnoescape\nattribute is captured by one of these blocks.\n\nThe following is an example of an invalid use of the\nnoescape\nattribute.\n\nvoid\nfoo\n(\n__attribute__\n((\nnoescape\n))\nint\n*\np\n)\n{\ndispatch_async\n(\nqueue\n,\n^\n{\n*\np\n=\n123\n;\n});\n});",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

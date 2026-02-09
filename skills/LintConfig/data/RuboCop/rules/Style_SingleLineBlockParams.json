@@ -1,0 +1,6 @@
+{
+    "Style/SingleLineBlockParams": {
+        "description": "Description\n\nEnforces the names of some block params.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMethods: [{'reduce': ['acc', 'elem']}, {'inject': ['acc', 'elem']}] (type: list)"
+    }
+}

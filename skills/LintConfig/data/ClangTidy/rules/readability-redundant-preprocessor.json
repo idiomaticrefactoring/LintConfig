@@ -1,0 +1,6 @@
+{
+    "readability-redundant-preprocessor": {
+        "description": "Description\n\nFinds potentially redundant preprocessor directives. At the moment the\nfollowing cases are detected:\n\n#ifdef\n..\n#endif\npairs which are nested inside an outer pair with the\nsame condition. For example:\n\n#ifdef FOO\n#ifdef FOO\n// inner ifdef is considered redundant\nvoid\nf\n();\n#endif\n#endif\n\nSame for\n#ifndef\n..\n#endif\npairs. For example:\n\n#ifndef FOO\n#ifndef FOO\n// inner ifndef is considered redundant\nvoid\nf\n();\n#endif\n#endif\n\n#ifndef\ninside an\n#ifdef\nwith the same condition:\n\n#ifdef FOO\n#ifndef FOO\n// inner ifndef is considered redundant\nvoid\nf\n();\n#endif\n#endif\n\n#ifdef\ninside an\n#ifndef\nwith the same condition:\n\n#ifndef FOO\n#ifdef FOO\n// inner ifdef is considered redundant\nvoid\nf\n();\n#endif\n#endif\n\n#if\n..\n#endif\npairs which are nested inside an outer pair with the same\ncondition. For example:\n\n#define FOO 4\n#if FOO == 4\n#if FOO == 4\n// inner if is considered redundant\nvoid\nf\n();\n#endif\n#endif",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

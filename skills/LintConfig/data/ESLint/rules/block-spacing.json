@@ -1,0 +1,6 @@
+{
+    "block-spacing": {
+        "description": "Description\n\nThis rule enforces consistent spacing inside an open block token and the next token on the same line. This rule also enforces consistent spacing inside a close block token and previous token on the same line.",
+        "option": "This rule has a string option:\n\n- \"always\"(default) requires one or more spaces\n- \"never\"disallows spaces\n\nalways\n\nExamples ofincorrectcode for this rule with the default\"always\"option:\n\n/*eslint block-spacing: \"error\"*/\n\nfunction foo() {return true;}\nif (foo) { bar = 0;}\nfunction baz() {let i = 0;\n    return i;\n}\n\nclass C {\n    static {this.bar = 0;}\n}\n\nExamples ofcorrectcode for this rule with the default\"always\"option:\n\n/*eslint block-spacing: \"error\"*/\n\nfunction foo() { return true; }\nif (foo) { bar = 0; }\n\nclass C {\n    static { this.bar = 0; }\n}\n\nnever\n\nExamples ofincorrectcode for this rule with the\"never\"option:\n\n/*eslint block-spacing: [\"error\", \"never\"]*/\n\nfunction foo() { return true; }\nif (foo) { bar = 0;}\n\nclass C {\n    static { this.bar = 0; }\n}\n\nExamples ofcorrectcode for this rule with the\"never\"option:\n\n/*eslint block-spacing: [\"error\", \"never\"]*/\n\nfunction foo() {return true;}\nif (foo) {bar = 0;}\n\nclass C {\n    static {this.bar = 0;}\n}"
+    }
+}

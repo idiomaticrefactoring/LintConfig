@@ -1,0 +1,6 @@
+{
+    "readability-redundant-access-specifiers": {
+        "description": "Description\n\nFinds classes, structs, and unions containing redundant member (field and\nmethod) access specifiers.\n\nExample\nclass\nFoo\n{\npublic\n:\nint\nx\n;\nint\ny\n;\npublic\n:\nint\nz\n;\nprotected\n:\nint\na\n;\npublic\n:\nint\nc\n;\n}\nIn the example above, the second\npublic\ndeclaration can be removed without\nany changes of behavior.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nCheckFirstDeclaration\nIf set to\ntrue\n, the check will also diagnose if the first access\nspecifier declaration is redundant (e.g.\nprivate\ninside\nclass\n,\nor\npublic\ninside\nstruct\nor\nunion\n).\nDefault is\nfalse\n.\nExample\nstruct\nBar\n{\npublic\n:\nint\nx\n;\n}\nIf\nCheckFirstDeclaration\noption is enabled, a warning about redundant\naccess specifier will be emitted, because\npublic\nis the default member access\nfor structs."
+    }
+}

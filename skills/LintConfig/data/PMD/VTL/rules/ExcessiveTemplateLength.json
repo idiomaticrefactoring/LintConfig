@@ -1,0 +1,6 @@
+{
+    "ExcessiveTemplateLength": {
+        "description": "Description\n\nThe template is too long. It should be broken up into smaller pieces.\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nminimum\t1000\tThreshold at or above which a node is reported"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/EndAlignment": {
+        "description": "Description\n\nAlign ends correctly.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleAlignWith: keyword (type: str)\nSupportedStylesAlignWith: ['keyword', 'variable', 'start_of_line'] (type: list)\nSeverity: warning (type: str)"
+    }
+}

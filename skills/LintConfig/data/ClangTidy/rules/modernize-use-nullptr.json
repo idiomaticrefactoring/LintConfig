@@ -1,0 +1,6 @@
+{
+    "modernize-use-nullptr": {
+        "description": "Description\n\nThe check converts the usage of null pointer constants (e.g.\nNULL\n,\n0\n)\nto use the new C++11 and C23\nnullptr\nkeyword.\n\nExample\nvoid\nassignment\n()\n{\nchar\n*\na\n=\nNULL\n;\nchar\n*\nb\n=\n0\n;\nchar\nc\n=\n0\n;\n}\nint\n*\nret_ptr\n()\n{\nreturn\n0\n;\n}\ntransforms to:\nvoid\nassignment\n()\n{\nchar\n*\na\n=\nnullptr\n;\nchar\n*\nb\n=\nnullptr\n;\nchar\nc\n=\n0\n;\n}\nint\n*\nret_ptr\n()\n{\nreturn\nnullptr\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoredTypes\nSemicolon-separated list of regular expressions to match pointer types for\nwhich implicit casts will be ignored. Default value:\nstd::_CmpUnspecifiedParam::;^std::__cmp_cat::__unspec\n.\nNullMacros\nComma-separated list of macro names that will be transformed along with\nNULL\n. By default this check will only replace the\nNULL\nmacro and will\nskip any similar user-defined macros.\nExample\n#define MY_NULL (void*)0\nvoid\nassignment\n()\n{\nvoid\n*\np\n=\nMY_NULL\n;\n}\ntransforms to:\n#define MY_NULL NULL\nvoid\nassignment\n()\n{\nint\n*\np\n=\nnullptr\n;\n}\nif the\nNullMacros\noption is set to\nMY_NULL\n."
+    }
+}

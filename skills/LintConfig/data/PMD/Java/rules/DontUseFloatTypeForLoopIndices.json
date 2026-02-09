@@ -1,0 +1,6 @@
+{
+    "DontUseFloatTypeForLoopIndices": {
+        "description": "Description\n\nDon’t use floating point for loop indices. If you must use floating point, use double\nunless you’re certain that float provides enough precision and you have a compelling\nperformance need (space or time).\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

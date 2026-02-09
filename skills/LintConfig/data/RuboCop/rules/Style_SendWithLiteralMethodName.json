@@ -1,0 +1,6 @@
+{
+    "Style/SendWithLiteralMethodName": {
+        "description": "Description\n\nDetects the use of the `public_send` method with a static method name argument.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowSend: True (type: bool)"
+    }
+}

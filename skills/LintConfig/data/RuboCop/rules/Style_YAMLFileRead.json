@@ -1,0 +1,6 @@
+{
+    "Style/YAMLFileRead": {
+        "description": "Description\n\nChecks for the use of `YAML.load`, `YAML.safe_load`, and `YAML.parse` with `File.read` argument.",
+        "option": "This rule has no specific options."
+    }
+}

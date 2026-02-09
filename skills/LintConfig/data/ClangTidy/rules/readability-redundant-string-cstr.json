@@ -1,0 +1,6 @@
+{
+    "readability-redundant-string-cstr": {
+        "description": "Description\n\nFinds unnecessary calls to\nstd::string::c_str()\nand\nstd::string::data()\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStringParameterFunctions\nA semicolon-separated list of regular expressions matching the\n(fully qualified) names of function/method/operator, with the requirement\nthat any parameter currently accepting a\nconst\nchar*\ninput should also\nbe able to accept\nstd::string\ninputs, or proper overload candidates that\ncan do so should exist. This can be used to configure functions such as\nfmt::format\n,\nspdlog::logger::info\n, or wrappers around these and\nsimilar functions. The default value is the empty string."
+    }
+}

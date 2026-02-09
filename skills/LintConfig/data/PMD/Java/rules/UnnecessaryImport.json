@@ -1,0 +1,6 @@
+{
+    "UnnecessaryImport": {
+        "description": "Description\n\nReports import statements that can be removed. They are either unused,\nduplicated, or the members they import are already implicitly in scope,\nbecause they’re in java.lang, or the current package.\n\nIf some imports cannot be resolved, for instance because you run PMD with\nan incomplete auxiliary classpath, some imports may be conservatively marked\nas used even if they’re not to avoid false positives.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

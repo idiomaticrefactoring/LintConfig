@@ -1,0 +1,6 @@
+{
+    "UnnecessaryBooleanAssertion": {
+        "description": "Description\n\nA JUnit test assertion with a boolean literal is unnecessary since it always will evaluate to the same thing.\nConsider using flow control (in case ofassertTrue(false)or similar) or simply removing\nstatements likeassertTrue(true)andassertFalse(false). If you just want a test to halt after finding\nan error, use thefail()method and provide an indication message of why it did.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

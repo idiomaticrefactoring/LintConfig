@@ -1,0 +1,6 @@
+{
+    "Style/NonNilCheck": {
+        "description": "Description\n\nChecks for redundant nil checks.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIncludeSemanticChanges: False (type: bool)"
+    }
+}

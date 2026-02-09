@@ -1,0 +1,6 @@
+{
+    "AvoidStringBufferField": {
+        "description": "Description\n\nStringBuffers/StringBuilders can grow considerably, and so may become a source of memory leaks\nif held within objects with long lifetimes.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

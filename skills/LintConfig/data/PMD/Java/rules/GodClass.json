@@ -1,0 +1,6 @@
+{
+    "GodClass": {
+        "description": "Description\n\nThe God Class rule detects the God Class design flaw using metrics. God classes do too many things,\nare very big and overly complex. They should be split apart to be more object-oriented.\nThe rule uses the detection strategy described in \"Object-Oriented Metrics in Practice\".\nThe violations are reported against the entire class.\n\nThe rule uses metrics to implement its detection strategy. The violation message\ngives information about the values of these metrics:\n\nThe rule identifies a god class by looking for classes which have all of the following properties:\n\nSee also the reference:\n\nMichele Lanza and Radu Marinescu.Object-Oriented Metrics in Practice:\nUsing Software Metrics to Characterize, Evaluate, and Improve the Design\nof Object-Oriented Systems.Springer, Berlin, 1 edition, October 2006. Page 80.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

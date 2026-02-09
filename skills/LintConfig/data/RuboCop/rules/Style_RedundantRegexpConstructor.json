@@ -1,0 +1,6 @@
+{
+    "Style/RedundantRegexpConstructor": {
+        "description": "Description\n\nChecks for the instantiation of regexp using redundant `Regexp.new` or `Regexp.compile`.",
+        "option": "This rule has no specific options."
+    }
+}

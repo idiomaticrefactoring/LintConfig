@@ -1,0 +1,6 @@
+{
+    "AvoidReassigningLoopVariables": {
+        "description": "Description\n\nReassigning loop variables can lead to hard-to-find bugs. Prevent or limit how these variables can be changed.\n\nIn foreach-loops, configured by theforeachReassignproperty:\n\nIn for-loops, configured by theforReassignproperty:\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nforeachReassign\tdeny\thow/if foreach control variables may be reassignedOne of:allow,deny,firstOnly\nforReassign\tdeny\thow/if for control variables may be reassignedOne of:allow,deny,skip"
+    }
+}

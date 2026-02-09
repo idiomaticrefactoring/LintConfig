@@ -1,0 +1,6 @@
+{
+    "memsetClass": {
+        "description": "Description\n\nThe product attempts to return a memory resource to the system, but it calls a release function that is not compatible with the function that was originally used to allocate that resource.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 762\nInconclusive: false\nRelated Symbols: memfunc, classname"
+    }
+}

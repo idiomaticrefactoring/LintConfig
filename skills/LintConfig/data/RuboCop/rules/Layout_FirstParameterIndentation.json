@@ -1,0 +1,6 @@
+{
+    "Layout/FirstParameterIndentation": {
+        "description": "Description\n\nChecks the indentation of the first parameter in a method definition.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: consistent (type: str)\nSupportedStyles: ['consistent', 'align_parentheses'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "llvm-prefer-isa-or-dyn-cast-in-conditionals": {
+        "description": "Description\n\nLooks at conditionals and finds and replaces cases of\ncast<>\n,\nwhich will assert rather than return a null pointer, and\ndyn_cast<>\nwhere the return value is not captured. Additionally,\nfinds and replaces cases that match the pattern\nvar\n&&\nisa<X>(var)\n, where\nvar\nis evaluated twice.\n\n// Finds these:\nif\n(\nauto\nx\n=\ncast\n<\nX\n>\n(\ny\n))\n{}\n// is replaced by:\nif\n(\nauto\nx\n=\ndyn_cast\n<\nX\n>\n(\ny\n))\n{}\nif\n(\ncast\n<\nX\n>\n(\ny\n))\n{}\n// is replaced by:\nif\n(\nisa\n<\nX\n>\n(\ny\n))\n{}\nif\n(\ndyn_cast\n<\nX\n>\n(\ny\n))\n{}\n// is replaced by:\nif\n(\nisa\n<\nX\n>\n(\ny\n))\n{}\nif\n(\nvar\n&&\nisa\n<\nT\n>\n(\nvar\n))\n{}\n// is replaced by:\nif\n(\nisa_and_nonnull\n<\nT\n>\n(\nvar\n.\nfoo\n()))\n{}\n// Other cases are ignored, e.g.:\nif\n(\nauto\nf\n=\ncast\n<\nZ\n>\n(\ny\n)\n->\nfoo\n())\n{}\nif\n(\ncast\n<\nZ\n>\n(\ny\n)\n->\nfoo\n())\n{}\nif\n(\nX\n.\ncast\n(\ny\n))\n{}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

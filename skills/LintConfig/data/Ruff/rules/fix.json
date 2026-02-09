@@ -1,0 +1,6 @@
+{
+    "fix": {
+        "description": "Description\n\nEnable fix behavior by-default when running `ruff` (overridden\nby the `--fix` and `--no-fix` command-line flags).\nOnly includes automatic fixes unless `--unsafe-fixes` is provided.",
+        "option": "Type: boolean"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/TrailingEmptyLines": {
+        "description": "Description\n\nChecks trailing blank lines and final newline.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: final_newline (type: str)\nSupportedStyles: ['final_newline', 'final_blank_line'] (type: list)"
+    }
+}

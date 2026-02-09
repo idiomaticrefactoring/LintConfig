@@ -1,0 +1,6 @@
+{
+    "ImplicitFunctionalInterface": {
+        "description": "Description\n\nReports functional interfaces that were not explicitly declared as such with\nthe annotation@FunctionalInterface. If an interface is accidentally a functional\ninterface, then it should bear a@SuppressWarnings(\"PMD.ImplicitFunctionalInterface\")annotation to make this clear.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

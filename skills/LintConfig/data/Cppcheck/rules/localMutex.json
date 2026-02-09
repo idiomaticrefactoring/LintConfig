@@ -1,0 +1,6 @@
+{
+    "localMutex": {
+        "description": "Description\n\nThe product does not properly acquire or release a lock on a resource, leading to unexpected resource state changes and behaviors.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 667\nInconclusive: false"
+    }
+}

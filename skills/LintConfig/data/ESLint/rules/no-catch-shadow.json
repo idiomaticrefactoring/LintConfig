@@ -1,0 +1,6 @@
+{
+    "no-catch-shadow": {
+        "description": "Description\n\nThis rule is aimed at preventing unexpected behavior in your program that may arise from a bug in IE 8 and earlier, in which the catch clause parameter can leak into outer scopes. This rule will warn whenever it encounters a catch clause parameter that has the same name as a variable in an outer scope.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-catch-shadow: \"error\"*/\n\nvar err = \"x\";\n\ntry {\n    throw \"problem\";\n} catch (err) {\n\n}\n\nfunction error() {\n    // ...\n};\n\ntry {\n    throw \"problem\";\n} catch (error) {\n\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-catch-shadow: \"error\"*/\n\nvar err = \"x\";\n\ntry {\n    throw \"problem\";\n} catch (e) {\n\n}\n\nfunction error() {\n    // ...\n};\n\ntry {\n    throw \"problem\";\n} catch (e) {\n\n}",
+        "option": "This rule has no specific options."
+    }
+}

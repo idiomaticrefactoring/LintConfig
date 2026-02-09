@@ -1,0 +1,6 @@
+{
+    "Large Class": {
+        "description": "Description\n\nIntroduction\n\nA Large Class is a class or module that has a large number of instance\nvariables, methods or lines of code in any one piece of its specification.\n(That is, this smell relates to pieces of the class's specification, not to the\nsize of the corresponding instance of Class.)\n\nCurrent Support in Reek\n\nReek offers three checks in this category.\n\nToo Many Constants\nToo Many Instance Variables\nToo Many Methods",
+        "option": "This rule has no specific options."
+    }
+}

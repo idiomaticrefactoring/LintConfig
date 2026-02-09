@@ -1,0 +1,6 @@
+{
+    "Module Initialize": {
+        "description": "Description\n\nIntroduction\n\nA module is usually a mixin, so when an #initialize method is present it is\nhard to tell initialization order and parameters so having #initialize\nin a module is usually a bad idea.\n\nExample\n\nThe Foo module below contains a method initialize. Although class B inherits from A, the inclusion of Foo stops A#initialize from being called.\n\n```ruby\nclass A\n  def initialize(a)\n    @a = a\n  end\nend\n\nmodule Foo\n  def initialize(foo)\n    @foo = foo\n  end\nend\n\nclass B < A\n  include Foo\n\ndef initialize(b)\n    super('bar')\n    @b = b\n  end\nend\n```\n\nA simple solution is to rename Foo#initialize and call that method by name:\n\n```ruby\nmodule Foo\n  def setup_foo_module(foo)\n    @foo = foo\n  end\nend\n\nclass B < A\n  include Foo\n\ndef initialize(b)\n    super 'bar'\n    setup_foo_module('foo')\n    @b = b\n  end\nend\n```\n\nCurrent Support in Reek\n\nReek warns about module initialize when an instance method named initialize is present in a module.",
+        "option": "Module Initialize supports the Basic Smell Options."
+    }
+}

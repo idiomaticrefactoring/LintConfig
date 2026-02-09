@@ -1,0 +1,6 @@
+{
+    "overlappingWriteFunction": {
+        "description": "Description\n\nOverlapping read/write in funcname() is undefined behavior",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: N/A\nInconclusive: false"
+    }
+}

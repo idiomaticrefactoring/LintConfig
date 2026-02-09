@@ -1,0 +1,6 @@
+{
+    "Too Many Methods": {
+        "description": "Description\n\nIntroduction\n\nToo Many Methods is a case of Large Class.\n\nExample\n\nGiven this configuration\n\nyaml\nTooManyMethods:\n  max_methods: 3\n\nand this code:\n\nruby\nclass Smelly\n  def one; end\n  def two; end\n  def three; end\n  def four; end\nend\n\nReek would emit the following warning:\n\ntest.rb -- 1 warning:\n  [1]:TooManyMethods: Smelly has at least 4 methods\n\nCurrent Support in Reek\n\nReek counts all the methods it can find in a class — instance and class\nmethods. So given max_methods from above is 4, this:\n\n```ruby\nclass Smelly\n  class << self\n    def one; end\n    def two; end\n  end\n\ndef three; end\n  def four; end\nend\n```\n\nwould cause Reek to emit the same warning as in the example above.",
+        "option": "Reek's Too Many Methods detector offers the Basic Smell Options, plus:\n\n| Option        | Value   | Effect  |\n| --------------|---------|---------|\n| max_methods | integer | The maximum number of methods that are permitted. Defaults to 15 |"
+    }
+}

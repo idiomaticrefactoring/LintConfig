@@ -1,0 +1,6 @@
+{
+    "no-dupe-class-members": {
+        "description": "Description\n\nThis rule is aimed to flag the use of duplicate names in class members.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-dupe-class-members: \"error\"*/\n\nclass A {\n  bar() { }\n  bar() { }\n}\n\nclass B {\n  bar() { }\n  get bar() { }\n}\n\nclass C {\n  bar;\n  bar;\n}\n\nclass D {\n  bar;\n  bar() { }\n}\n\nclass E {\n  static bar() { }\n  static bar() { }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-dupe-class-members: \"error\"*/\n\nclass A {\n  bar() { }\n  qux() { }\n}\n\nclass B {\n  get bar() { }\n  set bar(value) { }\n}\n\nclass C {\n  bar;\n  qux;\n}\n\nclass D {\n  bar;\n  qux() { }\n}\n\nclass E {\n  static bar() { }\n  bar() { }\n}\n\nThis rule additionally supports TypeScript type syntax. It has support for TypeScript’s method overload definitions.\n\nExamples ofcorrectTypeScript code for this rule:\n\n/* eslint no-dupe-class-members: \"error\" */\n\nclass A {\n\tfoo(value: string): void;\n\tfoo(value: number): void;\n\tfoo(value: string | number) {} // ✅ This is the actual implementation.\n}",
+        "option": "This rule has no options."
+    }
+}

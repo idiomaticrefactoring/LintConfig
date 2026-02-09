@@ -1,0 +1,6 @@
+{
+    "selfInitialization": {
+        "description": "Description\n\nThe product does not initialize or incorrectly initializes a resource, which might leave the resource in an unexpected state when it is accessed or used.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 665\nInconclusive: false\nRelated Symbols: var"
+    }
+}

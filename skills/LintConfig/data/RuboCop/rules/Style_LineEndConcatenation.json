@@ -1,0 +1,6 @@
+{
+    "Style/LineEndConcatenation": {
+        "description": "Description\n\nUse \\ instead of + or << to concatenate two string literals at line end.",
+        "option": "This rule has no specific options."
+    }
+}

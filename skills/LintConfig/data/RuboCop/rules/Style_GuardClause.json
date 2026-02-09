@@ -1,0 +1,6 @@
+{
+    "Style/GuardClause": {
+        "description": "Description\n\nChecks for conditionals that can be replaced with guard clauses.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinBodyLength: 1 (type: int)\nAllowConsecutiveConditionals: False (type: bool)"
+    }
+}

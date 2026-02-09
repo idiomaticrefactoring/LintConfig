@@ -1,0 +1,6 @@
+{
+    "pycodestyle": {
+        "description": "Description\n\nOptions for the `pycodestyle` plugin.",
+        "option": "Type: PycodestyleOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - ignore-overlong-task-comments: Whether line-length violations (`E501`) should be triggered for\n  - max-doc-length: The maximum line length to allow for [`doc-line-too-long`](https://docs.astral.sh/ruff/rules/doc-line-too-long/) violations within\n  - max-line-length: The maximum line length to allow for [`line-too-long`](https://docs.astral.sh/ruff/rules/line-too-long/) violations. By default,"
+    }
+}

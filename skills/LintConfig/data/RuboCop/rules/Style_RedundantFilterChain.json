@@ -1,0 +1,6 @@
+{
+    "Style/RedundantFilterChain": {
+        "description": "Description\n\nIdentifies usages of `any?`, `empty?`, `none?` or `one?` predicate methods chained to `select`/`filter`/`find_all` and change them to use predicate method instead.",
+        "option": "This rule has no specific options."
+    }
+}

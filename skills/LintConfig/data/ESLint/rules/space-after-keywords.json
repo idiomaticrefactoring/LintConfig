@@ -1,0 +1,6 @@
+{
+    "space-after-keywords": {
+        "description": "Description\n\nThis rule will enforce consistency of spacing after the keywordsif,else,for,while,do,switch,try,catch,finally, andwith.\n\nThis rule takes one argument. If it is\"always\"then the keywords must be followed by at least one space. If\"never\"then there should be no spaces following. The default is\"always\".\n\nExamples ofincorrectcode for this rule:\n\n/*eslint space-after-keywords: \"error\"*/\n\nif(a) {}\n\nif (a) {} else{}\n\ndo{} while (a);\n\n/*eslint space-after-keywords: [\"error\", \"never\"]*/\n\nif (a) {}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint space-after-keywords: \"error\"*/\n\nif (a) {}\n\nif (a) {} else {}\n\n/*eslint space-after-keywords: [\"error\", \"never\"]*/\n\nif(a) {}",
+        "option": "This rule has no specific options."
+    }
+}

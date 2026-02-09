@@ -1,0 +1,6 @@
+{
+    "prefer-object-spread": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-object-spread: \"error\"*/\n\nObject.assign({}, foo);\n\nObject.assign({}, {foo: 'bar'});\n\nObject.assign({ foo: 'bar'}, baz);\n\nObject.assign({}, baz, { foo: 'bar' });\n\nObject.assign({}, { ...baz });\n\n// Object.assign with a single argument that is an object literal\nObject.assign({});\n\nObject.assign({ foo: bar });\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-object-spread: \"error\"*/\n\n({ ...foo });\n\n({ ...baz, foo: 'bar' });\n\n// Any Object.assign call without an object literal as the first argument\nObject.assign(foo, { bar: baz });\n\nObject.assign(foo, bar);\n\nObject.assign(foo, { bar, baz });\n\nObject.assign(foo, { ...baz });",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "modernize-use-using": {
+        "description": "Description\n\nThe check converts the usage of\ntypedef\nwith\nusing\nkeyword.\n\nBefore:\n\ntypedef\nint\nvariable\n;\nclass\nClass\n{};\ntypedef\nvoid\n(\nClass\n::*\nMyPtrType\n)()\nconst\n;\ntypedef\nstruct\n{\nint\na\n;\n}\nR_t\n,\n*\nR_p\n;\n\nAfter:\n\nusing\nvariable\n=\nint\n;\nclass\nClass\n{};\nusing\nMyPtrType\n=\nvoid\n(\nClass\n::*\n)()\nconst\n;\nusing\nR_t\n=\nstruct\n{\nint\na\n;\n};\nusing\nR_p\n=\nR_t\n*\n;\n\nThe checker ignores\ntypedef\nwithin\nextern “C” { … }\nblocks.\n\nextern\n\"C\"\n{\ntypedef\nint\nInExternC\n;\n// Left intact.\n}\n\nThis check requires using C++11 or higher to run.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros. Default\nis\ntrue\n.\nIgnoreExternC\nIf set to\ntrue\n, the check will not give warning inside\nextern\n\"C\"\nscope. Default is\nfalse"
+    }
+}

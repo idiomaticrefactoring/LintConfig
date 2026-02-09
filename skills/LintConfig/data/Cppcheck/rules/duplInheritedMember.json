@@ -1,0 +1,6 @@
+{
+    "duplInheritedMember": {
+        "description": "Description\n\nThe class 'class' defines member variable with name 'variable' also defined in its parent class 'class'.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: class, variable, class"
+    }
+}

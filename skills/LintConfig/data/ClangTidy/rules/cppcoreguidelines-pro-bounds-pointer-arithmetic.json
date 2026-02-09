@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-bounds-pointer-arithmetic": {
+        "description": "Description\n\nThis check flags all usage of pointer arithmetic, because it could lead to an\ninvalid pointer. Subtraction of two pointers is not flagged by this check.\n\nPointers should only refer to single objects, and pointer arithmetic is fragile\nand easy to get wrong.\nspan<T>\nis a bounds-checked, safe type for accessing\narrays of data.\n\nThis rule is part of the\nBounds safety (Bounds 1)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nAllowIncrementDecrementOperators\nWhen enabled, the check will allow using the prefix/postfix increment or\ndecrement operators on pointers. Default is\nfalse\n."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Manual Dispatch": {
+        "description": "Description\n\nIntroduction\n\nReek reports a Manual Dispatch smell if it finds source code that manually checks whether an object responds to a method before that method is called. Manual dispatch is a type of Simulated Polymorphism which leads to code that is harder to reason about, debug, and refactor.\n\nExample\n\n```ruby\nclass MyManualDispatcher\n  attr_reader :foo\n\ndef initialize(foo)\n    @foo = foo\n  end\n\ndef call\n    foo.bar if foo.respond_to?(:bar)\n  end\nend\n```\n\nReek would emit the following warning:\n\ntest.rb -- 1 warning:\n  [9]: MyManualDispatcher manually dispatches method call (ManualDispatch)",
+        "option": "Manual Dispatch offers the Basic Smell Options."
+    }
+}

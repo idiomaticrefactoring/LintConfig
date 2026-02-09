@@ -1,0 +1,10 @@
+{
+    "InvalidDependencyTypes": {
+        "description": "If you use an invalid dependency type in the dependency management section, Maven doesn’t fail. I…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_pom_errorprone.html#invaliddependencytypes"
+    },
+    "ProjectVersionAsDependencyVersion": {
+        "description": "Using that expression in dependency declarations seems like a shortcut, but it can go wrong. By f…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_pom_errorprone.html#projectversionasdependencyversion"
+    }
+}

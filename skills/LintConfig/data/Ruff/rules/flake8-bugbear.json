@@ -1,0 +1,6 @@
+{
+    "flake8-bugbear": {
+        "description": "Description\n\nOptions for the `flake8-bugbear` plugin.",
+        "option": "Type: Flake8BugbearOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - extend-immutable-calls: Additional callable functions to consider \"immutable\" when evaluating, e.g., the"
+    }
+}

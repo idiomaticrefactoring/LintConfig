@@ -1,0 +1,6 @@
+{
+    "nonStandardCharLiteral": {
+        "description": "Description\n\nNon-standard character literal. ",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: N/A\nInconclusive: false"
+    }
+}

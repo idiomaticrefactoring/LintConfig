@@ -1,0 +1,6 @@
+{
+    "Bundler/DuplicatedGem": {
+        "description": "Description\n\nChecks for duplicate gem entries in Gemfile.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)"
+    }
+}

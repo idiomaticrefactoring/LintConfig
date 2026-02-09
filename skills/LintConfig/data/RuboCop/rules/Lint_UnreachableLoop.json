@@ -1,0 +1,6 @@
+{
+    "Lint/UnreachableLoop": {
+        "description": "Description\n\nChecks for loops that will have at most one iteration.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedPatterns: ['/(exactly|at_least|at_most)\\\\(\\\\d+\\\\)\\\\.times/'] (type: list)"
+    }
+}

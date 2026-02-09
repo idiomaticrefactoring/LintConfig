@@ -1,0 +1,6 @@
+{
+    "identicalInnerCondition": {
+        "description": "Description\n\nIdentical inner 'if' condition is always true (outer condition is 'x' and inner condition is 'x').",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

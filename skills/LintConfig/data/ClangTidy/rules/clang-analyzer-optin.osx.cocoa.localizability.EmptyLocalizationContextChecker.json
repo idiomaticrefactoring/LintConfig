@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker": {
+        "description": "Description\n\nclang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker\nCheck that NSLocalizedString macros include a comment for context.\nThe\nclang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

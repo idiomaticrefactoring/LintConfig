@@ -1,0 +1,6 @@
+{
+    "zerodiv": {
+        "description": "Description\n\nThe product divides a value by zero.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 369\nInconclusive: false"
+    }
+}

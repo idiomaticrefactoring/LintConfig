@@ -1,0 +1,6 @@
+{
+    "funcArgOrderDifferent": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine, but the caller specifies the arguments in an incorrect order, leading to resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 683\nInconclusive: false\nRelated Symbols: function"
+    }
+}

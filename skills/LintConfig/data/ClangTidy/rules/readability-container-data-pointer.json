@@ -1,0 +1,6 @@
+{
+    "readability-container-data-pointer": {
+        "description": "Description\n\nFinds cases where code could use\ndata()\nrather than the address of the\nelement at index 0 in a container. This pattern is commonly used to materialize\na pointer to the backing data of a container.\nstd::vector\nand\nstd::string\nprovide a\ndata()\naccessor to retrieve the data pointer\nwhich should be preferred.\n\nThis also ensures that in the case that the container is empty, the data\npointer access does not perform an errant memory access.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoredContainers\nSemicolon-separated list of containers regexp for which this check won’t be\nenforced. Default is an empty string."
+    }
+}

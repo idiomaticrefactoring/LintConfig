@@ -1,0 +1,6 @@
+{
+    "Style/EmptyCaseCondition": {
+        "description": "Description\n\nAvoid empty condition in case statements.",
+        "option": "This rule has no specific options."
+    }
+}

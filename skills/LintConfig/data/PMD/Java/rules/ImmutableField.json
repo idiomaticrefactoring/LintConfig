@@ -1,0 +1,6 @@
+{
+    "ImmutableField": {
+        "description": "Description\n\nReports non-final fields whose value never changes once object initialization ends,\nand hence may be marked final.\n\nNote that this rule does not enforce that the field value be deeply immutable itself.\nAn object can still have mutable state, even if all its member fields are declared final.\nThis is referred to as shallow immutability. For more information on mutability,\nseeEffective Java, 3rd Edition, Item 17: Minimize mutability.\n\nLimitations: We can only check private fields for now.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

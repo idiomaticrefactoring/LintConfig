@@ -1,0 +1,6 @@
+{
+    "Layout/RedundantLineBreak": {
+        "description": "Description\n\nDo not break up an expression into multiple lines when it fits on a single line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nInspectBlocks: False (type: bool)"
+    }
+}

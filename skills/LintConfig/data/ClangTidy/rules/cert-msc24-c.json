@@ -1,0 +1,6 @@
+{
+    "cert-msc24-c": {
+        "description": "Description\n\nThe\ncert-msc24-c\ncheck is an alias, please see\nbugprone-unsafe-functions\nfor more\ninformation.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

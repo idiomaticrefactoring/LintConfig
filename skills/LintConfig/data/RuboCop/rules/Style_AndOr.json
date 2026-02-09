@@ -1,0 +1,6 @@
+{
+    "Style/AndOr": {
+        "description": "Description\n\nUse &&/|| instead of and/or.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: conditionals (type: str)\nSupportedStyles: ['always', 'conditionals'] (type: list)"
+    }
+}

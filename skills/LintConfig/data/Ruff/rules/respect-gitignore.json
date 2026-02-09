@@ -1,0 +1,6 @@
+{
+    "respect-gitignore": {
+        "description": "Description\n\nWhether to automatically exclude files that are ignored by `.ignore`,\n`.gitignore`, `.git/info/exclude`, and global `gitignore` files.\nEnabled by default.",
+        "option": "Type: boolean"
+    }
+}

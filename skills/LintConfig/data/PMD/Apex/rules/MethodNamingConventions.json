@@ -1,0 +1,6 @@
+{
+    "MethodNamingConventions": {
+        "description": "Description\n\nConfigurable naming conventions for method declarations. This rule reports\nmethod declarations which do not match the regex that applies to their\nspecific kind (e.g. static method, or test method). Each regex can be\nconfigured through properties.\n\nBy default this rule uses the standard Apex naming convention (Camel case).\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ntestPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to test method names\nstaticPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to static method names\ninstancePattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to instance method names"
+    }
+}

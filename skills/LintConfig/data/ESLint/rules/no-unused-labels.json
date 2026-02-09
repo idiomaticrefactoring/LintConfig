@@ -1,0 +1,6 @@
+{
+    "no-unused-labels": {
+        "description": "Description\n\nThis rule is aimed at eliminating unused labels.\n\nProblems reported by this rule can be fixed automatically, except when there are any comments between the label and the following statement, or when removing a label would cause the following statement to become a directive such as\"use strict\".\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-unused-labels: \"error\"*/\n\nA: var foo = 0;\n\nB: {\n    foo();\n}\n\nC:\nfor (let i = 0; i < 10; ++i) {\n    foo();\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-unused-labels: \"error\"*/\n\nA: {\n    if (foo()) {\n        break A;\n    }\n    bar();\n}\n\nB:\nfor (let i = 0; i < 10; ++i) {\n    if (foo()) {\n        break B;\n    }\n    bar();\n}",
+        "option": "This rule has no options."
+    }
+}

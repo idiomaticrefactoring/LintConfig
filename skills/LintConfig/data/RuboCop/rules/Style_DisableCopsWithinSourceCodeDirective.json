@@ -1,0 +1,6 @@
+{
+    "Style/DisableCopsWithinSourceCodeDirective": {
+        "description": "Description\n\nForbids disabling/enabling cops within source code.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedCops: [] (type: list)"
+    }
+}

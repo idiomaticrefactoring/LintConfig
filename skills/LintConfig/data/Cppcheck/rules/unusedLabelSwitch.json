@@ -1,0 +1,6 @@
+{
+    "unusedLabelSwitch": {
+        "description": "Description\n\nLabel '' is not used. Should this be a 'case' of the enclosing switch()?",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

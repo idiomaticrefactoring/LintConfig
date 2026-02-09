@@ -1,0 +1,6 @@
+{
+    "Layout/ParameterAlignment": {
+        "description": "Description\n\nAlign the parameters of a method definition if they span more than one line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: with_first_parameter (type: str)\nSupportedStyles: ['with_first_parameter', 'with_fixed_indentation'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

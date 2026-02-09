@@ -1,0 +1,6 @@
+{
+    "UseBaseWithParseInt": {
+        "description": "Description\n\nThis rule checks for usages of parseInt. While the second parameter is optional and usually defaults\nto 10 (base/radix is 10 for a decimal number), different implementations may behave differently.\nIt also improves readability, if the base is given.\n\nSee also:parseInt()\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

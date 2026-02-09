@@ -1,0 +1,6 @@
+{
+    "Style/StringLiteralsInInterpolation": {
+        "description": "Description\n\nChecks if uses of quotes inside expressions in interpolated strings match the configured preference.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: single_quotes (type: str)\nSupportedStyles: ['single_quotes', 'double_quotes'] (type: list)"
+    }
+}

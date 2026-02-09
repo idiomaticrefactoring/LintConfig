@@ -1,0 +1,6 @@
+{
+    "GenericsNaming": {
+        "description": "Description\n\nDeprecated\n\nNames for references to generic values should be limited to a single uppercase letter.\n\nDeprecated:This rule is deprecated since PMD 7.17.0 and will be removed with PMD 8.0.0. This rule has been replaced byTypeParameterNamingConventions, which provides more comprehensive and configurable naming conventions for type parameters.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

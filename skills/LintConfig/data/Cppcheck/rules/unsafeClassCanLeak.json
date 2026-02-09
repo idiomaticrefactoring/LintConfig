@@ -1,0 +1,6 @@
+{
+    "unsafeClassCanLeak": {
+        "description": "Description\n\nThe class 'class' is unsafe, wrong usage can cause memory/resource leaks for 'class::varname'. This can for instance be fixed by adding proper cleanup in the destructor.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: class, class::varname"
+    }
+}

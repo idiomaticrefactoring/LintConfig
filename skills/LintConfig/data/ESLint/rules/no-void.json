@@ -1,0 +1,6 @@
+{
+    "no-void": {
+        "description": "Description\n\nThis rule aims to eliminate use ofvoidoperator.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-void: \"error\"*/\n\nvoid foo\nvoid someFunction();\n\nconst foo = void bar();\nfunction baz() {\n    return void 0;\n}",
+        "option": "This rule has an object option:\n\n- allowAsStatementset totrueallows thevoidoperator to be used as a statement (Defaultfalse).\n\nallowAsStatement\n\nWhenallowAsStatementis set to true, the rule will not error on cases that thevoidoperator is used as a statement, i.e. when it’s not used in an expression position, like in a variable assignment or a function return.\n\nExamples ofincorrectcode for{ \"allowAsStatement\": true }:\n\n/*eslint no-void: [\"error\", { \"allowAsStatement\": true }]*/\n\nconst foo = void bar();\nfunction baz() {\n    return void 0;\n}\n\nExamples ofcorrectcode for{ \"allowAsStatement\": true }:\n\n/*eslint no-void: [\"error\", { \"allowAsStatement\": true }]*/\n\nvoid foo;\nvoid someFunction();"
+    }
+}

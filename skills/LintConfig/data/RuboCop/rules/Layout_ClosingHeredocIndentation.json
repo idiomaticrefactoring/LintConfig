@@ -1,0 +1,6 @@
+{
+    "Layout/ClosingHeredocIndentation": {
+        "description": "Description\n\nChecks the indentation of here document closings.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/RefinementImportMethods": {
+        "description": "Description\n\nUse `Refinement#import_methods` when using `include` or `prepend` in `refine` block.",
+        "option": "This rule has no specific options."
+    }
+}

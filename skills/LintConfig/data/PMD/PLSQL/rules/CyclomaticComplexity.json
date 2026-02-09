@@ -1,0 +1,6 @@
+{
+    "CyclomaticComplexity": {
+        "description": "Description\n\nComplexity directly affects maintenance costs is determined by the number of decision points in a method\nplus one for the method entry.  The decision points include ‘if’, ‘while’, ‘for’, and ‘case labels’ calls.\nGenerally, numbers ranging from 1-4 denote low complexity, 5-7 denote moderate complexity, 8-10 denote\nhigh complexity, and 11+ is very high complexity.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nreportLevel\t10\tCyclomatic Complexity reporting threshold\nshowClassesComplexity\ttrue\tAdd class average violations to the report\nshowMethodsComplexity\ttrue\tAdd method average violations to the report"
+    }
+}

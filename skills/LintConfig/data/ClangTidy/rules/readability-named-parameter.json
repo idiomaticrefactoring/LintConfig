@@ -1,0 +1,6 @@
+{
+    "readability-named-parameter": {
+        "description": "Description\n\nFind functions with unnamed arguments.\n\nThe check implements the following rule originating in the Google C++ Style\nGuide:\n\nhttps://google.github.io/styleguide/cppguide.html#Function_Declarations_and_Definitions\n\nAll parameters should have the same name in both the function declaration and\ndefinition. If a parameter is not utilized, its name can be commented out in a\nfunction definition.\n\nint\ndoingSomething\n(\nint\na\n,\nint\nb\n,\nint\nc\n);\nint\ndoingSomething\n(\nint\na\n,\nint\nb\n,\nint\n/*c*/\n)\n{\n// Ok: the third param is not used\nreturn\na\n+\nb\n;\n}\n\nCorresponding cpplint.py check name:\nreadability/function\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nInsertPlainNamesInForwardDecls\nIf set to\ntrue\n, the check will insert parameter names without comments for\nforward declarations only. Otherwise, the check will insert parameter names\nas comments (e.g.,\n/*param*/\n). Default is\nfalse\n."
+    }
+}

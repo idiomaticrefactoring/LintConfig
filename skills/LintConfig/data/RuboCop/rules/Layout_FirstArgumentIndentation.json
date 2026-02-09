@@ -1,0 +1,6 @@
+{
+    "Layout/FirstArgumentIndentation": {
+        "description": "Description\n\nChecks the indentation of the first argument in a method call.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: special_for_inner_method_call_in_parentheses (type: str)\nSupportedStyles: ['consistent', 'consistent_relative_to_receiver', 'special_for_inner_method_call', 'special_for_inner_method_call_in_parentheses'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

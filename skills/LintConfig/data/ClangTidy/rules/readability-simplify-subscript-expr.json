@@ -1,0 +1,6 @@
+{
+    "readability-simplify-subscript-expr": {
+        "description": "Description\n\nThis check simplifies subscript expressions. Currently this covers calling\n.data()\nand immediately doing an array subscript operation to obtain a\nsingle element, in which case simply calling\noperator[]\nsuffice.\n\nExamples:\n\nstd\n::\nstring\ns\n=\n...;\nchar\nc\n=\ns\n.\ndata\n()[\ni\n];\n// char c = s[i];",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nTypes\nThe list of type(s) that triggers this check. Default is\n::std::basic_string;::std::basic_string_view;::std::vector;::std::array;::std::span"
+    }
+}

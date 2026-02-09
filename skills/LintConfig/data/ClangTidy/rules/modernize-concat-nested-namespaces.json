@@ -1,0 +1,6 @@
+{
+    "modernize-concat-nested-namespaces": {
+        "description": "Description\n\nChecks for use of nested namespaces such as\nnamespace\na\n{\nnamespace\nb\n{\n...\n}\n}\nand suggests changing to the more concise syntax introduced\nin C++17:\nnamespace\na::b\n{\n...\n}\n.\nInline namespaces are not modified.\n\nFor example:\n\nnamespace\nn1\n{\nnamespace\nn2\n{\nvoid\nt\n();\n}\n}\nnamespace\nn3\n{\nnamespace\nn4\n{\nnamespace\nn5\n{\nvoid\nt\n();\n}\n}\nnamespace\nn6\n{\nnamespace\nn7\n{\nvoid\nt\n();\n}\n}\n}\n// in c++20\nnamespace\nn8\n{\ninline\nnamespace\nn9\n{\nvoid\nt\n();\n}\n}\n\nWill be modified to:\n\nnamespace\nn1\n::\nn2\n{\nvoid\nt\n();\n}\nnamespace\nn3\n{\nnamespace\nn4\n::\nn5\n{\nvoid\nt\n();\n}\nnamespace\nn6\n::\nn7\n{\nvoid\nt\n();\n}\n}\n// in c++20\nnamespace\nn8\n::\ninline\nn9\n{\nvoid\nt\n();\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

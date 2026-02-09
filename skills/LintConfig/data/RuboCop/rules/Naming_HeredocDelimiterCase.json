@@ -1,0 +1,6 @@
+{
+    "Naming/HeredocDelimiterCase": {
+        "description": "Description\n\nUse configured case for heredoc delimiters.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: uppercase (type: str)\nSupportedStyles: ['lowercase', 'uppercase'] (type: list)"
+    }
+}

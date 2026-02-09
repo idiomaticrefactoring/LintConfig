@@ -1,0 +1,6 @@
+{
+    "Lint/AmbiguousRange": {
+        "description": "Description\n\nChecks for ranges with ambiguous boundaries.",
+        "option": "This rule supports the following parameters in your configuration:\n\nRequireParenthesesForMethodChains: False (type: bool)"
+    }
+}

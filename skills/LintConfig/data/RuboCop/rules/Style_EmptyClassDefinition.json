@@ -1,0 +1,6 @@
+{
+    "Style/EmptyClassDefinition": {
+        "description": "Description\n\nEnforces consistent style for empty class definitions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: class_definition (type: str)\nSupportedStyles: ['class_definition', 'class_new'] (type: list)"
+    }
+}

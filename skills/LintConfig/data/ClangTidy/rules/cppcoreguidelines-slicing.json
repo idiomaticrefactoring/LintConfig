@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-slicing": {
+        "description": "Description\n\nFlags slicing of member variables or vtable. Slicing happens when copying a\nderived object into a base object: the members of the derived object (both\nmember variables and virtual member functions) will be discarded. This can be\nmisleading especially for member function slicing, for example:\n\nstruct\nB\n{\nint\na\n;\nvirtual\nint\nf\n();\n};\nstruct\nD\n:\nB\n{\nint\nb\n;\nint\nf\n()\noverride\n;\n};\nvoid\nuse\n(\nB\nb\n)\n{\n// Missing reference, intended?\nb\n.\nf\n();\n// Calls B::f.\n}\nD\nd\n;\nuse\n(\nd\n);\n// Slice.\n\nThis check implements\nES.63\nand\nC.145\nfrom the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

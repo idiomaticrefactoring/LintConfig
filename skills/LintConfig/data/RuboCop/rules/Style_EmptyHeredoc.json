@@ -1,0 +1,6 @@
+{
+    "Style/EmptyHeredoc": {
+        "description": "Description\n\nChecks for using empty heredoc to reduce redundancy.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)"
+    }
+}

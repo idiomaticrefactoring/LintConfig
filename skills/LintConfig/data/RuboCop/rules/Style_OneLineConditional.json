@@ -1,0 +1,6 @@
+{
+    "Style/OneLineConditional": {
+        "description": "Description\n\nFavor the ternary operator (?:) or multi-line constructs over single-line if/then/else/end constructs.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAlwaysCorrectToMultiline: False (type: bool)"
+    }
+}

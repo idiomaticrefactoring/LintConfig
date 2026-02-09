@@ -1,0 +1,6 @@
+{
+    "copyCtorPointerCopying": {
+        "description": "Description\n\nValue of pointer 'var', which points to allocated memory, is copied in copy constructor instead of allocating new memory.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: var"
+    }
+}

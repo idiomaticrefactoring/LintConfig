@@ -1,0 +1,78 @@
+{
+    "AvoidWithStatement": {
+        "description": "Avoid using with - it’s bad news",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_bestpractices.html#avoidwithstatement"
+    },
+    "ConsistentReturn": {
+        "description": "ECMAScript does provide for return types on functions, and therefore there is no solid rule as to…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_bestpractices.html#consistentreturn"
+    },
+    "GlobalVariable": {
+        "description": "This rule helps to avoid using accidentally global variables by simply missing the \"var\" declarat…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_bestpractices.html#globalvariable"
+    },
+    "ScopeForInVariable": {
+        "description": "A for-in loop in which the variable name is not explicitly scoped to the enclosing scope with the…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_bestpractices.html#scopeforinvariable"
+    },
+    "UseBaseWithParseInt": {
+        "description": "This rule checks for usages of parseInt. While the second parameter is optional and usually defau…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_bestpractices.html#usebasewithparseint"
+    },
+    "AssignmentInOperand": {
+        "description": "Avoid assignments in operands; this can make code more complicated and harder to read.  This is s…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#assignmentinoperand"
+    },
+    "ForLoopsMustUseBraces": {
+        "description": "Avoid using ‘for’ statements without using curly braces.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#forloopsmustusebraces"
+    },
+    "IfElseStmtsMustUseBraces": {
+        "description": "Avoid using if..else statements without using curly braces.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#ifelsestmtsmustusebraces"
+    },
+    "IfStmtsMustUseBraces": {
+        "description": "Avoid using if statements without using curly braces.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#ifstmtsmustusebraces"
+    },
+    "NoElseReturn": {
+        "description": "The else block in a if-else-construct is unnecessary if the ‘if’ block contains a return. Then th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#noelsereturn"
+    },
+    "UnnecessaryBlock": {
+        "description": "An unnecessary Block is present.  Such Blocks are often used in other languages to introduce a ne…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#unnecessaryblock"
+    },
+    "UnnecessaryParentheses": {
+        "description": "Unnecessary parentheses should be removed.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#unnecessaryparentheses"
+    },
+    "UnreachableCode": {
+        "description": "A ‘return’, ‘break’, ‘continue’, or ‘throw’ statement should be the last in a block. Statements a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#unreachablecode"
+    },
+    "WhileLoopsMustUseBraces": {
+        "description": "Avoid using ‘while’ statements without using curly braces.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_codestyle.html#whileloopsmustusebraces"
+    },
+    "AvoidTrailingComma": {
+        "description": "This rule helps improve code portability due to differences in browser treatment of trailing comm…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_errorprone.html#avoidtrailingcomma"
+    },
+    "EqualComparison": {
+        "description": "Using == in condition may lead to unexpected results, as the variables are automatically casted t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_errorprone.html#equalcomparison"
+    },
+    "InaccurateNumericLiteral": {
+        "description": "The numeric literal will have a different value at runtime, which can happen if you provide too m…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_errorprone.html#inaccuratenumericliteral"
+    },
+    "InnaccurateNumericLiteral": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadInaccurateNumericLiteral.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_errorprone.html#innaccuratenumericliteral"
+    },
+    "AvoidConsoleStatements": {
+        "description": "Using the console for logging in production might negatively impact performance. In addition, log…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_ecmascript_performance.html#avoidconsolestatements"
+    }
+}

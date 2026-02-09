@@ -1,0 +1,6 @@
+{
+    "unsafe-fixes": {
+        "description": "Description\n\nEnable application of unsafe fixes.\nIf excluded, a hint will be displayed when unsafe fixes are available.\nIf set to false, the hint will be hidden.",
+        "option": "Type: boolean"
+    }
+}

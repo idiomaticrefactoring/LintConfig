@@ -1,0 +1,6 @@
+{
+    "Lint/RaiseException": {
+        "description": "Description\n\nChecks for `raise` or `fail` statements which are raising `Exception` class.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedImplicitNamespaces: ['Gem'] (type: list)"
+    }
+}

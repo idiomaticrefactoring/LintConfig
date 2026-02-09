@@ -1,0 +1,6 @@
+{
+    "Layout/ElseAlignment": {
+        "description": "Description\n\nAlign elses and elsifs correctly.",
+        "option": "This rule has no specific options."
+    }
+}

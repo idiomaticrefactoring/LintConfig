@@ -1,0 +1,6 @@
+{
+    "indent-width": {
+        "description": "Description\n\nThe number of spaces per indentation level (tab).\n\nUsed by the formatter and when enforcing long-line violations (like `E501`) to determine the visual\nwidth of a tab.\n\nThis option changes the number of spaces the formatter inserts when\nusing soft-tabs (`indent-style = space`).\n\nPEP 8 recommends using 4 spaces per [indentation level](https://peps.python.org/pep-0008/#indentation).",
+        "option": "Type: IndentWidth/null"
+    }
+}

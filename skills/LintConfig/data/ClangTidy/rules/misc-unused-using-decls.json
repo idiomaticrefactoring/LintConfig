@@ -1,0 +1,6 @@
+{
+    "misc-unused-using-decls": {
+        "description": "Description\n\nFinds unused\nusing\ndeclarations.\n\nUnused\nusing\ndeclarations in header files will not be diagnosed\nsince these using declarations are part of the header’s public API.\nAllowed header file extensions can be configured via the global\noption\nHeaderFileExtensions\n.\n\nExample:\n\n// main.cpp\nnamespace\nn\n{\nclass\nC\n;\n}\nusing\nn\n::\nC\n;\n// Never actually used.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

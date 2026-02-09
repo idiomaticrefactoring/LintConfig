@@ -1,0 +1,6 @@
+{
+    "readability-static-accessed-through-instance": {
+        "description": "Description\n\nChecks for member expressions that access static members through instances, and\nreplaces them with uses of the appropriate qualified-id.\n\nExample:\n\nThe following code:\n\nstruct\nC\n{\nstatic\nvoid\nfoo\n();\nstatic\nint\nx\n;\nenum\n{\nE1\n};\nenum\nE\n{\nE2\n};\n};\nC\n*\nc1\n=\nnew\nC\n();\nc1\n->\nfoo\n();\nc1\n->\nx\n;\nc1\n->\nE1\n;\nc1\n->\nE2\n;\n\nis changed to:\n\nC\n*\nc1\n=\nnew\nC\n();\nC\n::\nfoo\n();\nC\n::\nx\n;\nC\n::\nE1\n;\nC\n::\nE2\n;\n\nThe\n–fix\ncommandline option provides default support for safe fixes, whereas\n–fix-notes\nenables fixes that may replace expressions with side effects,\npotentially altering the program’s behavior.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

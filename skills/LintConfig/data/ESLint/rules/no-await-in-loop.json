@@ -1,0 +1,6 @@
+{
+    "no-await-in-loop": {
+        "description": "Description\n\nThis rule disallows the use ofawaitwithin loop bodies.\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-await-in-loop: \"error\"*/\n\nasync function foo(things) {\n  const promises = [];\n  for (const thing of things) {\n    // Good: all asynchronous operations are immediately started.\n    promises.push(doAsyncWork(thing));\n  }\n  // Now that all the asynchronous operations are running, here we wait until they all complete.\n  const results = await Promise.all(promises);\n  return results;\n}\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-await-in-loop: \"error\"*/\n\nasync function foo(things) {\n  const results = [];\n  for (const thing of things) {\n    // Bad: each loop iteration is delayed until the entire asynchronous operation completes\n    results.push(await doAsyncWork(thing));\n  }\n  return results;\n}\n\nasync function bar(things) {\n  for (const thing of things) {\n    await using resource = getAsyncResource(thing);\n  }\n}",
+        "option": "This rule has no options."
+    }
+}

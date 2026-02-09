@@ -1,0 +1,6 @@
+{
+    "CouplingBetweenObjects": {
+        "description": "Description\n\nThis rule counts the number of unique attributes, local variables, and return types within an object.\nA number higher than the specified threshold can indicate a high degree of coupling.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nthreshold\t20\tUnique type reporting threshold"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/FirstArrayElementIndentation": {
+        "description": "Description\n\nChecks the indentation of the first element in an array literal.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: special_inside_parentheses (type: str)\nSupportedStyles: ['special_inside_parentheses', 'consistent', 'align_brackets'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

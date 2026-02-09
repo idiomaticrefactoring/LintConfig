@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-avoid-do-while": {
+        "description": "Description\n\nWarns when using\ndo-while\nloops. They are less readable than plain\nwhile\nloops, since the termination condition is at the end and the\ncondition is not checked prior to the first iteration.\nThis can lead to subtle bugs.\n\nThis check implements\nES.75\nfrom the C++ Core Guidelines.\n\nExamples:\n\nint\nx\n;\ndo\n{\nstd\n::\ncin\n>>\nx\n;\n// ...\n}\nwhile\n(\nx\n<\n0\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIgnore the check when analyzing macros. This is useful for safely defining function-like macros:\n#define FOO_BAR(x) \\\ndo { \\\nfoo(x); \\\nbar(x); \\\n} while(0)\nDefaults to\nfalse\n."
+    }
+}

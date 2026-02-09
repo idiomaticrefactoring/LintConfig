@@ -1,0 +1,6 @@
+{
+    "Style/RedundantConstantBase": {
+        "description": "Description\n\nAvoid redundant `::` prefix on constant.",
+        "option": "This rule has no specific options."
+    }
+}

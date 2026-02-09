@@ -1,0 +1,6 @@
+{
+    "AvoidEnumAsIdentifier": {
+        "description": "Description\n\nMaximum Language Version:Java 1.4\n\nUse of the termenumwill conflict with newer versions of Java since it is a reserved word.\n\nSince Java 1.5, the tokenenumbecame a reserved word and using it as an identifier will\nresult in a compilation failure for Java 1.5 and later. This rule is therefore only useful\nfor old Java code before Java 1.5. It can be used to identify problematic code prior to a Java update.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidUsingNativeCode": {
+        "description": "Description\n\nUnnecessary reliance on Java Native Interface (JNI) calls directly reduces application portability\nand increases the maintenance burden.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

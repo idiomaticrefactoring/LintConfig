@@ -1,0 +1,6 @@
+{
+    "redundantPointerOp": {
+        "description": "Description\n\nRedundant pointer operation on 'varname' - it's already a pointer.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

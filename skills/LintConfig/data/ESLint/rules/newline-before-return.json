@@ -1,0 +1,6 @@
+{
+    "newline-before-return": {
+        "description": "Description\n\nThis rule requires an empty line beforereturnstatements to increase code clarity, except when thereturnis alone inside a statement group (such as an if statement). In the latter case, thereturnstatement does not need to be delineated by virtue of it being alone. Comments are ignored and do not count as empty lines.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint newline-before-return: \"error\"*/\n\nfunction foo1(bar) {\n    if (!bar) {\n        return;\n    }\n    return bar;\n}\n\nfunction foo2(bar) {\n    if (!bar) {\n        return;\n    }\n    /* multi-line\n    comment */\n    return bar;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint newline-before-return: \"error\"*/\n\nfunction foo1() {\n    return;\n}\n\nfunction foo2() {\n\n    return;\n}\n\nfunction foo3(bar) {\n    if (!bar) return;\n}\n\nfunction foo4(bar) {\n    if (!bar) { return };\n}\n\nfunction foo5(bar) {\n    if (!bar) {\n        return;\n    }\n}\n\nfunction foo6(bar) {\n    if (!bar) {\n        return;\n    }\n\n    return bar;\n}\n\nfunction foo7(bar) {\n    if (!bar) {\n\n        return;\n    }\n}\n\nfunction foo8() {\n\n    // comment\n    return;\n}",
+        "option": "This rule has no specific options."
+    }
+}

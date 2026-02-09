@@ -1,0 +1,6 @@
+{
+    "missingOverride": {
+        "description": "Description\n\nThe function '' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

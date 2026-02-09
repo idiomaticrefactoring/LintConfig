@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideArrayPercentLiteral": {
+        "description": "Description\n\nNo unnecessary additional spaces between elements in %i/%w literals.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/Copyright": {
+        "description": "Description\n\nInclude a copyright notice in each file before any code.",
+        "option": "This rule supports the following parameters in your configuration:\n\nNotice: ^Copyright (\\(c\\) )?2[0-9]{3} .+ (type: str)\nAutocorrectNotice:  (type: str)"
+    }
+}

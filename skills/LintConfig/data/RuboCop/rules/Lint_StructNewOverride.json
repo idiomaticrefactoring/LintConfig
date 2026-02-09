@@ -1,0 +1,6 @@
+{
+    "Lint/StructNewOverride": {
+        "description": "Description\n\nDisallow overriding the `Struct` built-in methods via `Struct.new`.",
+        "option": "This rule has no specific options."
+    }
+}

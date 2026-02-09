@@ -1,0 +1,6 @@
+{
+    "knownArgumentHiddenVariableExpression": {
+        "description": "Description\n\nArgument 'x*0' to function 'func' is always 0. Constant literal calculation disable/hide variable expression 'x'.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

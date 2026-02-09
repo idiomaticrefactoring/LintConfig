@@ -1,0 +1,6 @@
+{
+    "Style/SafeNavigationChainLength": {
+        "description": "Description\n\nEnforces safe navigation chains length to not exceed the configured maximum.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMax: 2 (type: int)"
+    }
+}

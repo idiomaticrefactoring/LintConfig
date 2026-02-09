@@ -1,0 +1,6 @@
+{
+    "extend-safe-fixes": {
+        "description": "Description\n\nA list of rule codes or prefixes for which unsafe fixes should be considered\nsafe.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

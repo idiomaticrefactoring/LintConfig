@@ -1,0 +1,6 @@
+{
+    "flake8-annotations": {
+        "description": "Description\n\nOptions for the `flake8-annotations` plugin.",
+        "option": "Type: Flake8AnnotationsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allow-star-arg-any: Whether to suppress `ANN401` for dynamically typed `*args` and\n  - ignore-fully-untyped: Whether to suppress `ANN*` rules for any declaration\n  - mypy-init-return: Whether to allow the omission of a return type hint for `__init__` if at\n  - suppress-dummy-args: Whether to suppress `ANN000`-level violations for arguments matching the\n  - suppress-none-returning: Whether to suppress `ANN200`-level violations for functions that meet"
+    }
+}

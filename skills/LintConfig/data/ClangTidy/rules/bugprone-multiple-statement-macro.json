@@ -1,0 +1,6 @@
+{
+    "bugprone-multiple-statement-macro": {
+        "description": "Description\n\nDetect multiple statement macros that are used in unbraced conditionals. Only\nthe first statement of the macro will be inside the conditional and the other\nones will be executed unconditionally.\n\nExample:\n\n#define INCREMENT_TWO(x, y) (x)++; (y)++\nif\n(\ndo_increment\n)\nINCREMENT_TWO\n(\na\n,\nb\n);\n// (b)++ will be executed unconditionally.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

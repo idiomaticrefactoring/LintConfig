@@ -1,0 +1,6 @@
+{
+    "OverrideBothEqualsAndHashcode": {
+        "description": "Description\n\nOverride bothpublic boolean Object.equals(Object other)andpublic int Object.hashCode()or override neither.\nEven if you are inheriting ahashCode()from a parent class, consider implementinghashCode()and explicitly\ndelegating to your superclass.\n\nNot overriding both methods could violate the contract betweenequals()andhashCode(). Most importantly,\nif two instances are equal, then they must have the same hash code. Using such invalid instances in hash-based\ncollections likeHashSetorHashMapcould lead to duplicated or missing entries.\n\nThis rule does not consider types that implementComparable. There is a separate ruleOverrideBothEqualsAndHashCodeOnComparablefor this.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

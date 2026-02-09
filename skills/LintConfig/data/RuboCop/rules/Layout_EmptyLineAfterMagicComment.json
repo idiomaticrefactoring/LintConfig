@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLineAfterMagicComment": {
+        "description": "Description\n\nAdd an empty line after magic comments to separate them from code.",
+        "option": "This rule has no specific options."
+    }
+}

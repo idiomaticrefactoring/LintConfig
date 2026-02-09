@@ -1,0 +1,6 @@
+{
+    "bitwiseOnBoolean": {
+        "description": "Description\n\nBoolean expression 'expression' is used in bitwise operation. Did you mean '&&'?",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: true"
+    }
+}

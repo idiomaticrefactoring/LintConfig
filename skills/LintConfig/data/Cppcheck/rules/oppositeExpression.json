@@ -1,0 +1,6 @@
+{
+    "oppositeExpression": {
+        "description": "Description\n\nFinding the opposite expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

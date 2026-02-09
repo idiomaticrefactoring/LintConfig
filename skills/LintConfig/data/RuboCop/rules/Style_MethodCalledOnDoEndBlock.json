@@ -1,0 +1,6 @@
+{
+    "Style/MethodCalledOnDoEndBlock": {
+        "description": "Description\n\nAvoid chaining a method call on a do...end block.",
+        "option": "This rule has no specific options."
+    }
+}

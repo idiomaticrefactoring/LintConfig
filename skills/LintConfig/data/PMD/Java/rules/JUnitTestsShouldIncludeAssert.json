@@ -1,0 +1,6 @@
+{
+    "JUnitTestsShouldIncludeAssert": {
+        "description": "Description\n\nDeprecated\n\nThis rule has been renamed. Use instead:UnitTestShouldIncludeAssert\n\nDeprecated\n\nUnit tests should include at least one assertion. This makes the tests more robust, and using assert\nwith messages provide the developer a clearer idea of what the test does.\n\nThis rule checks for JUnit (3, 4 and 5) and TestNG Tests.\n\nNote: This rule was named JUnitTestsShouldIncludeAssert before PMD 7.7.0.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nextraAssertMethodNames\t\tExtra valid assertion methods names"
+    }
+}

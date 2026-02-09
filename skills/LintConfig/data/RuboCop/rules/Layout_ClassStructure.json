@@ -1,0 +1,6 @@
+{
+    "Layout/ClassStructure": {
+        "description": "Description\n\nEnforces a configured order of definitions within a class body.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCategories: {'module_inclusion': ['include', 'prepend', 'extend']} (type: dict)\nExpectedOrder: ['module_inclusion', 'constants', 'public_class_methods', 'initializer', 'public_methods', 'protected_methods', 'private_methods'] (type: list)"
+    }
+}

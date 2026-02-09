@@ -1,0 +1,6 @@
+{
+    "Style/StringConcatenation": {
+        "description": "Description\n\nChecks for places where string concatenation can be replaced with string interpolation.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMode: aggressive (type: str)"
+    }
+}

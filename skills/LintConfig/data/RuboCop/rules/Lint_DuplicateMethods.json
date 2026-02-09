@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateMethods": {
+        "description": "Description\n\nChecks for duplicate method definitions.",
+        "option": "This rule has no specific options."
+    }
+}

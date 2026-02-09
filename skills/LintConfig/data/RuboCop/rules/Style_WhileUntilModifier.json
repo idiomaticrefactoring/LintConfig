@@ -1,0 +1,6 @@
+{
+    "Style/WhileUntilModifier": {
+        "description": "Description\n\nFavor modifier while/until usage when you have a single-line body.",
+        "option": "This rule has no specific options."
+    }
+}

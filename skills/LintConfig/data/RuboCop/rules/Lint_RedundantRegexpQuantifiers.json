@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantRegexpQuantifiers": {
+        "description": "Description\n\nChecks for redundant quantifiers in Regexps.",
+        "option": "This rule has no specific options."
+    }
+}

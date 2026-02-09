@@ -1,0 +1,6 @@
+{
+    "CognitiveComplexity": {
+        "description": "Description\n\nMethods that are highly complex are difficult to read and more costly to maintain. If you include too much decisional\nlogic within a single method, you make its behavior hard to understand and more difficult to modify.\n\nCognitive complexity is a measure of how difficult it is for humans to read and understand a method. Code that contains\na break in the control flow is more complex, whereas the use of language shorthands doesn’t increase the level of\ncomplexity. Nested control flows can make a method more difficult to understand, with each additional nesting of the\ncontrol flow leading to an increase in cognitive complexity.\n\nInformation about Cognitive complexity can be found in the original paper here:https://www.sonarsource.com/docs/CognitiveComplexity.pdf\n\nBy default, this rule reports methods with a complexity of 15 or more. Reported methods should be broken down into less\ncomplex components.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nclassReportLevel\t50\tTotal class cognitive complexity reporting threshold\nmethodReportLevel\t15\tCognitive complexity reporting threshold"
+    }
+}

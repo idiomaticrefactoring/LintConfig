@@ -1,0 +1,6 @@
+{
+    "ImplicitSwitchFallThrough": {
+        "description": "Description\n\nSwitch statements without break or return statements for each case option\nmay indicate problematic behaviour. Empty cases are ignored as these indicate\nan intentional fall-through.\n\nYou can ignore a violation by commenting// fallthroughbefore the case label\nwhich is reached by fallthrough, or with@SuppressWarnings(\"fallthrough\").\n\nThis rule has been renamed from \"MissingBreakInSwitch\" in PMD 6.37.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

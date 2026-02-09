@@ -1,0 +1,6 @@
+{
+    "Style/SwapValues": {
+        "description": "Description\n\nEnforces the use of shorthand-style swapping of 2 variables.",
+        "option": "This rule has no specific options."
+    }
+}

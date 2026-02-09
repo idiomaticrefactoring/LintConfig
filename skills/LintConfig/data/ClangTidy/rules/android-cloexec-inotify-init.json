@@ -1,0 +1,6 @@
+{
+    "android-cloexec-inotify-init": {
+        "description": "Description\n\nThe usage of\ninotify_init()\nis not recommended, it’s better to use\ninotify_init1()\n.\n\nExamples:\n\ninotify_init\n();\n// becomes\ninotify_init1\n(\nIN_CLOEXEC\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

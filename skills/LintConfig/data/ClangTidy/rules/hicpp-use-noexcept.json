@@ -1,0 +1,6 @@
+{
+    "hicpp-use-noexcept": {
+        "description": "Description\n\nThe\nhicpp-use-noexcept\ncheck is an alias, please see\nmodernize-use-noexcept\nfor more information.\nIt enforces the\nrule 1.3.5\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

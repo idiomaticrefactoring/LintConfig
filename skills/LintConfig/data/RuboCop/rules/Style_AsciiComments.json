@@ -1,0 +1,6 @@
+{
+    "Style/AsciiComments": {
+        "description": "Description\n\nUse only ascii symbols in comments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedChars: ['©'] (type: list)"
+    }
+}

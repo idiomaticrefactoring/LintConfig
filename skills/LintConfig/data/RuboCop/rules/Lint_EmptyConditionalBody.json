@@ -1,0 +1,6 @@
+{
+    "Lint/EmptyConditionalBody": {
+        "description": "Description\n\nChecks for the presence of `if`, `elsif` and `unless` branches without a body.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nAllowComments: True (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "multiplySizeof": {
+        "description": "Description\n\nThe product performs a calculation that generates incorrect or unintended results that are later used in security-critical decisions or resource management.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 682\nInconclusive: true"
+    }
+}

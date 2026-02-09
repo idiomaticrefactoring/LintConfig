@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-osx.cocoa.NilArg": {
+        "description": "Description\n\nclang-analyzer-osx.cocoa.NilArg\nCheck for prohibited nil arguments to ObjC method calls.\nThe\nclang-analyzer-osx.cocoa.NilArg\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "varFuncNullUB": {
+        "description": "Description\n\nThe behavior of this function is undefined unless its control parameter is set to a specific value.",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: 475\nInconclusive: false"
+    }
+}

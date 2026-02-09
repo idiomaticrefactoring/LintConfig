@@ -1,0 +1,6 @@
+{
+    "Style/CaseLikeIf": {
+        "description": "Description\n\nIdentifies places where `if-elsif` constructions can be replaced with `case-when`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinBranchesCount: 3 (type: int)"
+    }
+}

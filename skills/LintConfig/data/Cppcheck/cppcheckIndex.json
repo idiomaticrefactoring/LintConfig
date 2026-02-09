@@ -1,0 +1,1290 @@
+{
+    "purgedConfiguration": {
+        "description": "The configuration '' was not checked because its code equals another one.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "toomanyconfigs": {
+        "description": "Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "AssignmentAddressToInteger": {
+        "description": "Assigning a pointer to an integer is not portable.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "AssignmentIntegerToAddress": {
+        "description": "Assigning an integer to a pointer is not portable.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "CastIntegerToAddressAtReturn": {
+        "description": "Returning an integer in a function with pointer return type is not portable.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "CastAddressToIntegerAtReturn": {
+        "description": "Returning an address value in a function with integer return type is not portable.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "assertWithSideEffect": {
+        "description": "Assert statement calls a function which may have desired side effects: 'function'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "assignmentInAssert": {
+        "description": "Assert statement modifies 'var'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "autoVariables": {
+        "description": "Address of local auto-variable assigned to a function parameter.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "returnReference": {
+        "description": "Reference to local variable returned.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "danglingReference": {
+        "description": "Non-local reference variable 'x' to local variable 'y'",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "returnTempReference": {
+        "description": "Reference to temporary returned.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "danglingTempReference": {
+        "description": "Using reference to dangling temporary.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "autovarInvalidDeallocation": {
+        "description": "Deallocation of an auto-variable results in undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/590.html"
+    },
+    "uselessAssignmentArg": {
+        "description": "Assignment of function parameter has no effect outside the function.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uselessAssignmentPtrArg": {
+        "description": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "returnDanglingLifetime": {
+        "description": "Returning object that will be invalid when returning.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "invalidLifetime": {
+        "description": "Using object that is out of scope.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "danglingLifetime": {
+        "description": "Non-local variable 'x' will use object.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "danglingTemporaryLifetime": {
+        "description": "Using object that is a temporary.",
+        "url": "https://cwe.mitre.org/data/definitions/562.html"
+    },
+    "assignBoolToPointer": {
+        "description": "Boolean value assigned to pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/587.html"
+    },
+    "assignBoolToFloat": {
+        "description": "Boolean value assigned to floating point variable.",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "comparisonOfFuncReturningBoolError": {
+        "description": "Comparison of a function returning boolean value using relational (<, >, <= or >=) operator.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "comparisonOfTwoFuncsReturningBoolError": {
+        "description": "Comparison of two functions returning boolean value using relational (<, >, <= or >=) operator.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "comparisonOfBoolWithBoolError": {
+        "description": "Comparison of a variable having boolean value using relational (<, >, <= or >=) operator.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "incrementboolean": {
+        "description": "Incrementing a variable of type 'bool' with postfix operator++ is deprecated by the C++ Standard. You should assign it the value 'true' instead.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "bitwiseOnBoolean": {
+        "description": "Boolean expression 'expression' is used in bitwise operation. Did you mean '&&'?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "compareBoolExpressionWithInt": {
+        "description": "Comparison of a boolean expression with an integer other than 0 or 1.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "pointerArithBool": {
+        "description": "Converting pointer arithmetic result to bool. The bool is always true unless there is undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "comparisonOfBoolWithInvalidComparator": {
+        "description": "Comparison of a boolean value using relational operator (<, >, <= or >=).",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "returnNonBoolInBooleanFunction": {
+        "description": "Non-boolean value returned from function returning bool",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "arrayIndexOutOfBounds": {
+        "description": "Array 'arr[16]' accessed at index 16, which is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "arrayIndexOutOfBoundsCond": {
+        "description": "Array 'arr[16]' accessed at index 16, which is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "pointerOutOfBounds": {
+        "description": "Pointer arithmetic overflow.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "pointerOutOfBoundsCond": {
+        "description": "Pointer arithmetic overflow.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "negativeIndex": {
+        "description": "Negative array index",
+        "url": "https://cwe.mitre.org/data/definitions/786.html"
+    },
+    "arrayIndexThenCheck": {
+        "description": "Array index 'i' is used before limits check.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "bufferAccessOutOfBounds": {
+        "description": "Buffer is accessed out of bounds: buf",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "objectIndex": {
+        "description": "The address of variable '' is accessed at non-zero index.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "argumentSize": {
+        "description": "Buffer 'buffer' is too small, the function 'function' expects a bigger buffer in 2nd argument",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "negativeMemoryAllocationSize": {
+        "description": "Memory allocation size is negative.",
+        "url": "https://cwe.mitre.org/data/definitions/131.html"
+    },
+    "negativeArraySize": {
+        "description": "Declaration of array '' with negative size is undefined behaviour",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "invalidFunctionArg": {
+        "description": "Invalid func_name() argument nr 1. The value is 0 or 1 (boolean) but the valid values are '1:4'.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "invalidFunctionArgBool": {
+        "description": "Invalid func_name() argument nr 1. A non-boolean value is required.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "invalidFunctionArgStr": {
+        "description": "Invalid func_name() argument nr 1. A nul-terminated string is required.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "ignoredReturnValue": {
+        "description": "Return value of function malloc() is not used.",
+        "url": "https://cwe.mitre.org/data/definitions/252.html"
+    },
+    "wrongmathcall": {
+        "description": "Passing value '#' to #() leads to implementation-defined result.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "unpreciseMathCall": {
+        "description": "Expression '1 - erf(x)' can be replaced by 'erfc(x)' to avoid loss of precision.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "memsetZeroBytes": {
+        "description": "memset() called to fill 0 bytes.",
+        "url": "https://cwe.mitre.org/data/definitions/687.html"
+    },
+    "memsetFloat": {
+        "description": "The 2nd memset() argument 'varname' is a float, its representation is implementation defined.",
+        "url": "https://cwe.mitre.org/data/definitions/688.html"
+    },
+    "memsetValueOutOfRange": {
+        "description": "The 2nd memset() argument 'varname' doesn't fit into an 'unsigned char'.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "missingReturn": {
+        "description": "Found an exit path from function with non-void return type that has missing return statement",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "returnStdMoveLocal": {
+        "description": "Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "useStandardLibrary": {
+        "description": "Consider using memcpy instead of loop.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "noConstructor": {
+        "description": "The class 'classname' does not declare a constructor although it has private member variables which likely require initialization.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "noExplicitConstructor": {
+        "description": "Class 'classname' has a constructor with 1 argument that is not explicit.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "copyCtorPointerCopying": {
+        "description": "Value of pointer 'var', which points to allocated memory, is copied in copy constructor instead of allocating new memory.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "noCopyConstructor": {
+        "description": "Class 'class' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "noOperatorEq": {
+        "description": "Class 'class' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s).",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "noDestructor": {
+        "description": "Class 'class' does not have a destructor which is recommended since it has dynamic memory/resource allocation(s).",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uninitMemberVar": {
+        "description": "Member variable 'classname::varname' is not initialized in the constructor.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uninitMemberVarPrivate": {
+        "description": "Member variable 'classname::varnamepriv' is not initialized in the constructor.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uninitDerivedMemberVar": {
+        "description": "Member variable 'classname::varname' is not initialized in the constructor. Maybe it should be initialized directly in the class classname?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uninitDerivedMemberVarPrivate": {
+        "description": "Member variable 'classname::varnamepriv' is not initialized in the constructor. Maybe it should be initialized directly in the class classname?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "missingMemberCopy": {
+        "description": "Member variable 'classname::varnamepriv' is not assigned in the move constructor. Should it be moved?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "operatorEqVarError": {
+        "description": "Member variable 'classname::' is not assigned a value in 'classname::operator='.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unusedPrivateFunction": {
+        "description": "Unused private function: 'classname::funcname'",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "memsetClass": {
+        "description": "Using 'memfunc' on class that contains a classname.",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "memsetClassReference": {
+        "description": "Using 'memfunc' on class that contains a reference.",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "memsetClassFloat": {
+        "description": "Using memset() on class which contains a floating point number.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "mallocOnClassWarning": {
+        "description": "Memory for class instance allocated with malloc(), but class provides constructors.",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "mallocOnClassError": {
+        "description": "Memory for class instance allocated with malloc(), but class contains a std::string.",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "virtualDestructor": {
+        "description": "Class 'Base' which is inherited by class 'Derived' does not have a virtual destructor.",
+        "url": "https://cwe.mitre.org/data/definitions/404.html"
+    },
+    "thisSubtraction": {
+        "description": "Suspicious pointer subtraction. Did you intend to write '->'?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "operatorEqRetRefThis": {
+        "description": "'operator=' should return reference to 'this' instance.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "operatorEqMissingReturnStatement": {
+        "description": "No 'return' statement in non-void function causes undefined behavior.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "operatorEqShouldBeLeftUnimplemented": {
+        "description": "'operator=' should either return reference to 'this' instance or be declared private and left unimplemented.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "operatorEqToSelf": {
+        "description": "'operator=' should check for assignment to self to avoid problems with dynamic memory.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "functionConst": {
+        "description": "Technically the member function 'class::function' can be const.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "functionStatic": {
+        "description": "Technically the member function 'class::function' can be static (but you may consider moving to unnamed namespace).",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "initializerList": {
+        "description": "Member variable 'class::variable' is in the wrong place in the initializer list.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "useInitializationList": {
+        "description": "Variable 'variable' is assigned in constructor body. Consider performing initialization in initialization list.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "selfInitialization": {
+        "description": "Member variable 'var' is initialized by itself.",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "duplInheritedMember": {
+        "description": "The class 'class' defines member variable with name 'variable' also defined in its parent class 'class'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "copyCtorAndEqOperator": {
+        "description": "The class 'class' has 'operator=' but lack of 'copy constructor'.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "missingOverride": {
+        "description": "The function '' overrides a function in a base class but is not marked with a 'override' specifier.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "uselessOverride": {
+        "description": "The function '' overrides a function in a base class but just delegates back to the base class.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "returnByReference": {
+        "description": "Function 'func()' should return member 'var' by const reference.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "pureVirtualCall": {
+        "description": "Call of pure virtual function 'f' in constructor.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "virtualCallInConstructor": {
+        "description": "Virtual function 'f' is called from constructor '' at line 1. Dynamic binding is not used.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "thisUseAfterFree": {
+        "description": "Using member 'x' when 'this' might be invalid",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "unsafeClassRefMember": {
+        "description": "Unsafe class: The const reference member 'UnsafeClass::var' is initialized by a const reference constructor argument. You need to be careful about lifetime issues.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "assignIfError": {
+        "description": "Mismatching assignment and comparison, comparison '' is always false.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "badBitmaskCheck": {
+        "description": "Result of operator '|' is always true if one operand is non-zero. Did you intend to use '&'?",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "comparisonError": {
+        "description": "Expression '(X & 0x6) == 0x1' is always false.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateCondition": {
+        "description": "The if condition is the same as the previous if condition",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "multiCondition": {
+        "description": "Expression is always false because 'else if' condition matches previous condition at line 1.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "mismatchingBitAnd": {
+        "description": "Mismatching bitmasks. Result is always 0 (X = Y & 0xf0; Z = X & 0x1; => Z=0).",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "oppositeInnerCondition": {
+        "description": "Opposite inner 'if' condition leads to a dead code block.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "identicalInnerCondition": {
+        "description": "Identical inner 'if' condition is always true.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "identicalConditionAfterEarlyExit": {
+        "description": "Identical condition 'x', second condition is always false",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "incorrectLogicOperator": {
+        "description": "Logical disjunction always evaluates to true: foo > 3 && foo < 4.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "redundantCondition": {
+        "description": "Redundant condition: If x > 11 the condition x > 10 is always true.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "moduloAlwaysTrueFalse": {
+        "description": "Comparison of modulo result is predetermined, because it is always less than 1.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "clarifyCondition": {
+        "description": "Suspicious condition (assignment + comparison); Clarify expression with parentheses.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "knownConditionTrueFalse": {
+        "description": "Condition 'x' is always false",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "invalidTestForOverflow": {
+        "description": "Invalid test for overflow 'x + c < x'; signed integer overflow is undefined behavior. Some mainstream compilers remove such overflow tests when optimising the code and assume it's always false.",
+        "url": "https://cwe.mitre.org/data/definitions/391.html"
+    },
+    "pointerAdditionResultNotNull": {
+        "description": "Comparison is wrong. Result of 'ptr+1' can't be 0 unless there is pointer overflow, and pointer overflow is undefined behaviour.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "duplicateConditionalAssign": {
+        "description": "Duplicate expression for the condition and assignment.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "assignmentInCondition": {
+        "description": "Suspicious assignment in condition. Condition 'x=y' is always true.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "compareValueOutOfTypeRangeError": {
+        "description": "Comparing expression of type 'unsigned char' against value 256. Condition is always true.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "exceptThrowInDestructor": {
+        "description": "Class Class is not safe, destructor throws exception",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "exceptDeallocThrow": {
+        "description": "Exception thrown in invalid state, 'p' points at deallocated memory.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "exceptRethrowCopy": {
+        "description": "Throwing a copy of the caught exception instead of rethrowing the original exception.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "catchExceptionByValue": {
+        "description": "Exception should be caught by reference.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "throwInNoexceptFunction": {
+        "description": "Exception thrown in function declared not to throw exceptions.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unhandledExceptionSpecification": {
+        "description": "Unhandled exception specification when calling function foo().",
+        "url": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "rethrowNoCurrentException": {
+        "description": "Rethrowing current exception with 'throw;', it seems there is no current exception to rethrow. If there is no current exception this calls std::terminate(). More: https://isocpp.org/wiki/faq/exceptions#throw-without-an-object",
+        "url": "https://cwe.mitre.org/data/definitions/480.html"
+    },
+    "coutCerrMisusage": {
+        "description": "Invalid usage of output stream: '<< std::cout'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "fflushOnInputStream": {
+        "description": "fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "IOWithoutPositioning": {
+        "description": "Read and write operations without a call to a positioning function (fseek, fsetpos or rewind) or fflush in between result in undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "readWriteOnlyFile": {
+        "description": "Read operation on a file that was opened only for writing.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "writeReadOnlyFile": {
+        "description": "Write operation on a file that was opened only for reading.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "useClosedFile": {
+        "description": "Used file that is not opened.",
+        "url": "https://cwe.mitre.org/data/definitions/910.html"
+    },
+    "seekOnAppendedFile": {
+        "description": "Repositioning operation performed on a file opened in append mode has no effect.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "incompatibleFileOpen": {
+        "description": "The file 'tmp' is opened for read and write access at the same time on different streams",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "invalidscanf": {
+        "description": "scanf() without field width limits can crash with huge input data.",
+        "url": "https://cwe.mitre.org/data/definitions/119.html"
+    },
+    "wrongPrintfScanfArgNum": {
+        "description": "printf format string requires 3 parameters but only 2 are given.",
+        "url": "https://cwe.mitre.org/data/definitions/685.html"
+    },
+    "invalidScanfArgType_s": {
+        "description": "%s in format string (no. 1) requires a 'char *' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidScanfArgType_int": {
+        "description": "%d in format string (no. 1) requires 'int *' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidScanfArgType_float": {
+        "description": "%f in format string (no. 1) requires 'float *' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_s": {
+        "description": "%s in format string (no. 1) requires 'char *' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_n": {
+        "description": "%n in format string (no. 1) requires 'int *' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_p": {
+        "description": "%p in format string (no. 1) requires an address but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_uint": {
+        "description": "%u in format string (no. 1) requires 'unsigned int' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_sint": {
+        "description": "%i in format string (no. 1) requires 'int' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidPrintfArgType_float": {
+        "description": "%f in format string (no. 1) requires 'double' but the argument type is Unknown.",
+        "url": "https://cwe.mitre.org/data/definitions/686.html"
+    },
+    "invalidLengthModifierError": {
+        "description": "'I' in format string (no. 1) is a length modifier and cannot be used without a conversion specifier.",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "invalidScanfFormatWidth": {
+        "description": "Width 5 given in format string (no. 10) is larger than destination buffer '[0]', use %-1s to prevent overflowing it.",
+        "url": "https://cwe.mitre.org/data/definitions/687.html"
+    },
+    "invalidScanfFormatWidth_smaller": {
+        "description": "Width -1 given in format string (no. 99) is smaller than destination buffer '[0]'.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "wrongPrintfScanfParameterPositionError": {
+        "description": "printf: referencing parameter 2 while 1 arguments given",
+        "url": "https://cwe.mitre.org/data/definitions/685.html"
+    },
+    "deallocret": {
+        "description": "Returning/dereferencing 'p' after it is deallocated / released",
+        "url": "https://cwe.mitre.org/data/definitions/672.html"
+    },
+    "doubleFree": {
+        "description": "Memory pointed to by 'varname' is freed twice.",
+        "url": "https://cwe.mitre.org/data/definitions/415.html"
+    },
+    "leakNoVarFunctionCall": {
+        "description": "Allocation with funcName, funcName doesn't release it.",
+        "url": "https://cwe.mitre.org/data/definitions/772.html"
+    },
+    "leakReturnValNotUsed": {
+        "description": "Return value of allocation function 'funcName' is not stored.",
+        "url": "https://cwe.mitre.org/data/definitions/771.html"
+    },
+    "leakUnsafeArgAlloc": {
+        "description": "Unsafe allocation. If funcName() throws, memory could be leaked. Use make_shared<int>() instead.",
+        "url": "https://cwe.mitre.org/data/definitions/401.html"
+    },
+    "publicAllocationError": {
+        "description": "Possible leak in public function. The pointer 'varname' is not deallocated before it is allocated.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unsafeClassCanLeak": {
+        "description": "Class 'class' is unsafe, 'class::varname' can leak by wrong usage.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "memleak": {
+        "description": "Memory leak: varname",
+        "url": "https://cwe.mitre.org/data/definitions/401.html"
+    },
+    "resourceLeak": {
+        "description": "Resource leak: varname",
+        "url": "https://cwe.mitre.org/data/definitions/775.html"
+    },
+    "deallocuse": {
+        "description": "Dereferencing 'varname' after it is deallocated / released",
+        "url": "https://cwe.mitre.org/data/definitions/416.html"
+    },
+    "mismatchAllocDealloc": {
+        "description": "Mismatching allocation and deallocation: varname",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "memleakOnRealloc": {
+        "description": "Common realloc mistake: 'varname' nulled but not freed upon failure",
+        "url": "https://cwe.mitre.org/data/definitions/401.html"
+    },
+    "nullPointer": {
+        "description": "Null pointer dereference",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "nullPointerDefaultArg": {
+        "description": "Possible null pointer dereference if the default parameter value is used: pointer",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "nullPointerRedundantCheck": {
+        "description": "Either the condition is redundant or there is possible null pointer dereference: pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "nullPointerOutOfMemory": {
+        "description": "Null pointer dereference",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "nullPointerOutOfResources": {
+        "description": "Null pointer dereference",
+        "url": "https://cwe.mitre.org/data/definitions/476.html"
+    },
+    "nullPointerArithmetic": {
+        "description": "Pointer arithmetic with NULL pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "nullPointerArithmeticRedundantCheck": {
+        "description": "Either the condition is redundant or there is pointer arithmetic with NULL pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "zerodiv": {
+        "description": "Division by zero.",
+        "url": "https://cwe.mitre.org/data/definitions/369.html"
+    },
+    "zerodivcond": {
+        "description": "Either the condition is redundant or there is division by zero.",
+        "url": "https://cwe.mitre.org/data/definitions/369.html"
+    },
+    "unusedScopedObject": {
+        "description": "Instance of 'varname' object is destroyed immediately.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "invalidPointerCast": {
+        "description": "Casting between float * and double * which have an incompatible binary data representation.",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "shiftNegativeLHS": {
+        "description": "Shifting a negative value is technically undefined behaviour",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "shiftNegative": {
+        "description": "Shifting by a negative value is undefined behaviour",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "raceAfterInterlockedDecrement": {
+        "description": "Race condition: non-interlocked access after InterlockedDecrement(). Use InterlockedDecrement() return value instead.",
+        "url": "https://cwe.mitre.org/data/definitions/362.html"
+    },
+    "invalidFree": {
+        "description": "Mismatching address is freed. The address you get from malloc() must be freed without offset.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "overlappingWriteUnion": {
+        "description": "Overlapping read/write of union is undefined behavior",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "overlappingWriteFunction": {
+        "description": "Overlapping read/write in funcname() is undefined behavior",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "redundantCopyLocalConst": {
+        "description": "Use const reference for 'varname' to avoid unnecessary data copying.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "redundantCopy": {
+        "description": "Buffer 'var' is being written before its old content has been used.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "comparisonFunctionIsAlwaysTrueOrFalse": {
+        "description": "Comparison of two identical variables with isless(varName,varName) always evaluates to false.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "checkCastIntToCharAndBack": {
+        "description": "Storing func_name() return value in char variable and then comparing with EOF.",
+        "url": "https://cwe.mitre.org/data/definitions/197.html"
+    },
+    "cstyleCast": {
+        "description": "C-style pointer casting",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "dangerousTypeCast": {
+        "description": "Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "intToPointerCast": {
+        "description": "Casting non-zero decimal integer literal to pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "suspiciousFloatingPointCast": {
+        "description": "Floating-point cast causes loss of precision.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "passedByValue": {
+        "description": "Function parameter '' should be passed by const reference.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "constParameter": {
+        "description": "Parameter 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constVariable": {
+        "description": "Variable 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constParameterReference": {
+        "description": "Parameter 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constVariableReference": {
+        "description": "Variable 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constParameterPointer": {
+        "description": "Parameter 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constVariablePointer": {
+        "description": "Variable 'x' can be declared with const",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constParameterCallback": {
+        "description": "Parameter 'x' can be declared with const, however it seems that 'f' is a callback function.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "constStatement": {
+        "description": "Redundant code: Found a statement that begins with type constant.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "signedCharArrayIndex": {
+        "description": "Signed 'char' type used as array index.",
+        "url": "https://cwe.mitre.org/data/definitions/128.html"
+    },
+    "unknownSignCharArrayIndex": {
+        "description": "'char' type used as array index.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "charBitOp": {
+        "description": "When using 'char' variables in bit operations, sign extension can generate unexpected results.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "variableScope": {
+        "description": "The scope of the variable 'varname' can be reduced.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "redundantAssignInSwitch": {
+        "description": "Variable 'var' is reassigned a value before the old one has been used. 'break;' missing?",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "suspiciousCase": {
+        "description": "Found suspicious case label in switch(). Operator '||' probably doesn't work as intended.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "selfAssignment": {
+        "description": "Redundant assignment of 'varname' to itself.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "clarifyCalculation": {
+        "description": "Clarify calculation precedence for '+' and '?'.",
+        "url": "https://cwe.mitre.org/data/definitions/783.html"
+    },
+    "clarifyStatement": {
+        "description": "In expression like '*A++' the result of '*' is unused. Did you intend to write '(*A)++;'?",
+        "url": "https://cwe.mitre.org/data/definitions/783.html"
+    },
+    "duplicateBranch": {
+        "description": "Found duplicate branches for 'if' and 'else'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateAssignExpression": {
+        "description": "Same expression used in consecutive assignments of 'x' and 'x'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "oppositeExpression": {
+        "description": "Opposite expression on both sides of '&&'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateExpression": {
+        "description": "Same expression on both sides of '&&'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateValueTernary": {
+        "description": "Same value in both branches of ternary operator.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateExpressionTernary": {
+        "description": "Same expression in both branches of ternary operator.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "duplicateBreak": {
+        "description": "Consecutive return, break, continue, goto or throw statements are unnecessary.",
+        "url": "https://cwe.mitre.org/data/definitions/561.html"
+    },
+    "unreachableCode": {
+        "description": "Statements following return, break, continue, goto or throw will never be executed.",
+        "url": "https://cwe.mitre.org/data/definitions/561.html"
+    },
+    "unsignedLessThanZero": {
+        "description": "Checking if unsigned expression 'varname' is less than zero.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "unsignedPositive": {
+        "description": "Unsigned expression 'varname' can't be negative so it is unnecessary to test it.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "pointerLessThanZero": {
+        "description": "A pointer can not be negative so it is either pointless or an error to check if it is.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "pointerPositive": {
+        "description": "A pointer can not be negative so it is either pointless or an error to check if it is not.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "suspiciousSemicolon": {
+        "description": "Suspicious use of ; at the end of '' statement.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "incompleteArrayFill": {
+        "description": "Array 'buffer' is filled incompletely. Did you forget to multiply the size given to 'memset()' with 'sizeof(*buffer)'?",
+        "url": "https://cwe.mitre.org/data/definitions/131.html"
+    },
+    "varFuncNullUB": {
+        "description": "Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/475.html"
+    },
+    "nanInArithmeticExpression": {
+        "description": "Using NaN/Inf in a computation.",
+        "url": "https://cwe.mitre.org/data/definitions/369.html"
+    },
+    "commaSeparatedReturn": {
+        "description": "Comma is used in return statement. The comma can easily be misread as a ';'.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "redundantPointerOp": {
+        "description": "Redundant pointer operation on 'varname' - it's already a pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unusedLabel": {
+        "description": "Label '' is not used.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unusedLabelConfiguration": {
+        "description": "Label '' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unusedLabelSwitch": {
+        "description": "Label '' is not used. Should this be a 'case' of the enclosing switch()?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unusedLabelSwitchConfiguration": {
+        "description": "Label '' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. Should this be a 'case' of the enclosing switch()?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "unknownEvaluationOrder": {
+        "description": "Expression 'x = x++;' depends on order of evaluation of side effects",
+        "url": "https://cwe.mitre.org/data/definitions/768.html"
+    },
+    "accessMoved": {
+        "description": "Access of moved variable 'v'.",
+        "url": "https://cwe.mitre.org/data/definitions/672.html"
+    },
+    "accessForwarded": {
+        "description": "Access of forwarded variable 'v'.",
+        "url": "https://cwe.mitre.org/data/definitions/672.html"
+    },
+    "funcArgNamesDifferent": {
+        "description": "Function 'function' argument 2 names different: declaration 'A' definition 'B'.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "redundantBitwiseOperationInSwitch": {
+        "description": "Redundant bitwise operation on 'varname' in 'switch' statement. 'break;' missing?",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "shadowVariable": {
+        "description": "Local variable 'variable' shadows outer variable",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "shadowFunction": {
+        "description": "Local variable 'function' shadows outer function",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "shadowArgument": {
+        "description": "Local variable 'argument' shadows outer argument",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "knownArgument": {
+        "description": "Argument 'x-x' to function 'func' is always 0. It does not matter what value 'x' has.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "knownArgumentHiddenVariableExpression": {
+        "description": "Argument 'x*0' to function 'func' is always 0. Constant literal calculation disable/hide variable expression 'x'.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "knownPointerToBool": {
+        "description": "Pointer expression 'p' converted to bool is always true.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "comparePointers": {
+        "description": "Comparing pointers that point to different objects",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "redundantAssignment": {
+        "description": "Variable 'var' is reassigned a value before the old one has been used.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "redundantInitialization": {
+        "description": "Redundant initialization for 'var'. The initialized value is overwritten before it is read.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "funcArgOrderDifferent": {
+        "description": "Function 'function' argument order different: declaration '' definition ''",
+        "url": "https://cwe.mitre.org/data/definitions/683.html"
+    },
+    "moduloofone": {
+        "description": "Modulo of one is always equal to zero",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "containerOutOfBounds": {
+        "description": "Out of bounds access in expression 'container[x]'",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "invalidIterator1": {
+        "description": "Invalid iterator: iterator",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "iterators1": {
+        "description": "Same iterator is used with different containers 'container1' and 'container2'.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "iterators2": {
+        "description": "Same iterator is used with different containers 'container0' and 'container1'.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "iterators3": {
+        "description": "Same iterator is used with containers 'container' that are temporaries or defined in different scopes.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "invalidContainerLoop": {
+        "description": "Calling 'erase' while iterating the container is invalid.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "invalidContainer": {
+        "description": "Using object that may be invalid.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "mismatchingContainerIterator": {
+        "description": "Iterator 'it' referring to container 'v2' is used with container 'v1'.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "mismatchingContainers": {
+        "description": "Iterators of different containers 'v1' and 'v2' are used together.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "mismatchingContainerExpression": {
+        "description": "Iterators to containers from different expressions 'v1' and 'v2' are used together.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "sameIteratorExpression": {
+        "description": "Same iterators expression are used for algorithm.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "eraseDereference": {
+        "description": "Invalid iterator 'iter' used.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "stlOutOfBounds": {
+        "description": "When i==foo.size(), foo[i] is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/788.html"
+    },
+    "negativeContainerIndex": {
+        "description": "Array index -1 is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/786.html"
+    },
+    "stlBoundaries": {
+        "description": "Dangerous comparison using operator< on iterator.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "stlIfFind": {
+        "description": "Suspicious condition. The result of find() is an iterator, but it is not properly checked.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "stlIfStrFind": {
+        "description": "Inefficient usage of string::find() in condition; string::starts_with() could be faster.",
+        "url": "https://cwe.mitre.org/data/definitions/597.html"
+    },
+    "stlFindInsert": {
+        "description": "Searching before insertion is not necessary.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "stlcstr": {
+        "description": "Dangerous usage of c_str(). The value returned by c_str() is invalid after this call.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "stlcstrReturn": {
+        "description": "Returning the result of c_str() in a function that returns std::string is slow and redundant.",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "stlcstrParam": {
+        "description": "Passing the result of c_str() to a function that takes std::string as argument no. 0 is slow and redundant.",
+        "url": "https://cwe.mitre.org/data/definitions/704.html"
+    },
+    "stlcstrthrow": {
+        "description": "Dangerous usage of c_str(). The value returned by c_str() is invalid after throwing exception.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "stlSize": {
+        "description": "Possible inefficient checking for 'list' emptiness.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "StlMissingComparison": {
+        "description": "Missing bounds check for extra iterator increment in loop.",
+        "url": "https://cwe.mitre.org/data/definitions/834.html"
+    },
+    "redundantIfRemove": {
+        "description": "Redundant checking of STL container element existence before removing it.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uselessCallsCompare": {
+        "description": "It is inefficient to call 'str.find(str)' as it always returns 0.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "uselessCallsSwap": {
+        "description": "It is inefficient to swap a object with itself by calling 'str.swap(str)'",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "uselessCallsSubstr": {
+        "description": "Ineffective call of function 'substr' because it returns a copy of the object. Use operator= instead.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uselessCallsEmpty": {
+        "description": "Ineffective call of function 'empty()'. Did you intend to call 'clear()' instead?",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "uselessCallsRemove": {
+        "description": "Return value of std::remove() ignored. Elements remain in container.",
+        "url": "https://cwe.mitre.org/data/definitions/762.html"
+    },
+    "derefInvalidIterator": {
+        "description": "Possible dereference of an invalid iterator: i",
+        "url": "https://cwe.mitre.org/data/definitions/825.html"
+    },
+    "eraseIteratorOutOfBounds": {
+        "description": "Calling function 'erase()' on the iterator 'iter' which is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "eraseIteratorOutOfBoundsCond": {
+        "description": "Either the condition 'x' is redundant or function 'erase()' is called on the iterator 'iter' which is out of bounds.",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "useStlAlgorithm": {
+        "description": "Consider using  algorithm instead of a raw loop.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "knownEmptyContainer": {
+        "description": "Iterating over container 'var' that is always empty.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "globalLockGuard": {
+        "description": "Lock guard is defined globally. Lock guards are intended to be local. A global lock guard could lead to a deadlock since it won't unlock until the end of the program.",
+        "url": "https://cwe.mitre.org/data/definitions/833.html"
+    },
+    "localMutex": {
+        "description": "The lock is ineffective because the mutex is locked at the same scope as the mutex itself.",
+        "url": "https://cwe.mitre.org/data/definitions/667.html"
+    },
+    "sizeofwithsilentarraypointer": {
+        "description": "Using 'sizeof' on array given as function argument returns size of a pointer.",
+        "url": "https://cwe.mitre.org/data/definitions/467.html"
+    },
+    "pointerSize": {
+        "description": "Size of pointer 'varname' used instead of size of its data.",
+        "url": "https://cwe.mitre.org/data/definitions/467.html"
+    },
+    "sizeofDivisionMemfunc": {
+        "description": "Division by result of sizeof(). memset() expects a size in bytes, did you intend to multiply instead?",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofwithnumericparameter": {
+        "description": "Suspicious usage of 'sizeof' with a numeric constant as parameter.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofsizeof": {
+        "description": "Calling 'sizeof' on 'sizeof'.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofCalculation": {
+        "description": "Found calculation inside sizeof().",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofFunctionCall": {
+        "description": "Found function call inside sizeof().",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "multiplySizeof": {
+        "description": "Multiplying sizeof() with sizeof() indicates a logic error.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "divideSizeof": {
+        "description": "Division of result of sizeof() on pointer type.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofVoid": {
+        "description": "Behaviour of 'sizeof(void)' is not covered by the ISO C standard.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "sizeofDereferencedVoidPointer": {
+        "description": "'*varname' is of type 'void', the behaviour of 'sizeof(void)' is not covered by the ISO C standard.",
+        "url": "https://cwe.mitre.org/data/definitions/682.html"
+    },
+    "arithOperationsOnVoidPointer": {
+        "description": "'varname' is of type 'vartype'. When using void pointers in calculations, the behaviour is undefined.",
+        "url": "https://cwe.mitre.org/data/definitions/467.html"
+    },
+    "stringLiteralWrite": {
+        "description": "Modifying string literal directly or indirectly is undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "sprintfOverlappingData": {
+        "description": "Undefined behavior: Variable 'varname' is used as parameter and destination in s[n]printf().",
+        "url": "https://cwe.mitre.org/data/definitions/628.html"
+    },
+    "strPlusChar": {
+        "description": "Unusual pointer arithmetic. A value of type 'char' is added to a string literal.",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "incorrectStringCompare": {
+        "description": "String literal \"Hello World\" doesn't match length argument for substr().",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "literalWithCharPtrCompare": {
+        "description": "String literal compared with variable 'foo'. Did you intend to use strcmp() instead?",
+        "url": "https://cwe.mitre.org/data/definitions/595.html"
+    },
+    "charLiteralWithCharPtrCompare": {
+        "description": "Char literal compared with pointer 'foo'. Did you intend to dereference it?",
+        "url": "https://cwe.mitre.org/data/definitions/595.html"
+    },
+    "incorrectStringBooleanError": {
+        "description": "Conversion of string literal \"Hello World\" to bool always evaluates to true.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "incorrectCharBooleanError": {
+        "description": "Conversion of char literal 'x' to bool always evaluates to true.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "staticStringCompare": {
+        "description": "Unnecessary comparison of static strings.",
+        "url": "https://cwe.mitre.org/data/definitions/570.html"
+    },
+    "stringCompare": {
+        "description": "Comparison of identical string variables.",
+        "url": "https://cwe.mitre.org/data/definitions/571.html"
+    },
+    "overlappingStrcmp": {
+        "description": "The expression 'strcmp(x,\"def\") != 0' is suspicious. It overlaps 'strcmp(x,\"abc\") == 0'.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "shiftTooManyBits": {
+        "description": "Shifting 32-bit value by 40 bits is undefined behaviour",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "shiftTooManyBitsSigned": {
+        "description": "Shifting signed 32-bit value by 31 bits is undefined behaviour",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "integerOverflow": {
+        "description": "Signed integer overflow for expression ''.",
+        "url": "https://cwe.mitre.org/data/definitions/190.html"
+    },
+    "signConversion": {
+        "description": "Expression 'var' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation.",
+        "url": "https://cwe.mitre.org/data/definitions/195.html"
+    },
+    "truncLongCastAssignment": {
+        "description": "int result is assigned to long variable. If the variable is long to avoid loss of information, then you have loss of information.",
+        "url": "https://cwe.mitre.org/data/definitions/197.html"
+    },
+    "truncLongCastReturn": {
+        "description": "int result is returned as long value. If the return value is long to avoid loss of information, then you have loss of information.",
+        "url": "https://cwe.mitre.org/data/definitions/197.html"
+    },
+    "floatConversionOverflow": {
+        "description": "Undefined behaviour: float (1e+100) to integer conversion overflow.",
+        "url": "https://cwe.mitre.org/data/definitions/190.html"
+    },
+    "uninitdata": {
+        "description": "Memory is allocated but not initialized: varname",
+        "url": "https://cwe.mitre.org/data/definitions/457.html"
+    },
+    "uninitStructMember": {
+        "description": "Uninitialized struct member: a.b",
+        "url": "https://cwe.mitre.org/data/definitions/457.html"
+    },
+    "unusedVariable": {
+        "description": "Unused variable: varname",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "unusedAllocatedMemory": {
+        "description": "Variable 'varname' is allocated memory that is never used.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "unreadVariable": {
+        "description": "Variable 'varname' is assigned a value that is never used.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "unassignedVariable": {
+        "description": "Variable 'varname' is not assigned a value.",
+        "url": "https://cwe.mitre.org/data/definitions/665.html"
+    },
+    "unusedStructMember": {
+        "description": "struct member 'structname::variable' is never used.",
+        "url": "https://cwe.mitre.org/data/definitions/563.html"
+    },
+    "postfixOperator": {
+        "description": "Prefer prefix ++/-- operators for non-primitive types.",
+        "url": "https://cwe.mitre.org/data/definitions/398.html"
+    },
+    "va_start_wrongParameter": {
+        "description": "'arg1' given to va_start() is not last named argument of the function. Did you intend to pass 'arg2'?",
+        "url": "https://cwe.mitre.org/data/definitions/688.html"
+    },
+    "va_start_referencePassed": {
+        "description": "Using reference 'arg1' as parameter for va_start() results in undefined behaviour.",
+        "url": "https://cwe.mitre.org/data/definitions/758.html"
+    },
+    "va_end_missing": {
+        "description": "va_list 'vl' was opened but not closed by va_end().",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "va_list_usedBeforeStarted": {
+        "description": "va_list 'vl' used before va_start() was called.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "va_start_subsequentCalls": {
+        "description": "va_start() or va_copy() called subsequently on 'vl' without va_end() in between.",
+        "url": "https://cwe.mitre.org/data/definitions/664.html"
+    },
+    "unusedFunction": {
+        "description": "The function 'funcName' is never used.",
+        "url": "https://cwe.mitre.org/data/definitions/561.html"
+    },
+    "missingInclude": {
+        "description": "Include file: \"\" not found.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "missingIncludeSystem": {
+        "description": "Include file: <> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "preprocessorErrorDirective": {
+        "description": "#error message",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "invalidConstFunctionType": {
+        "description": "It is unspecified behavior to const qualify a function type.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "class_X_Y": {
+        "description": "The code '   ' is not handled. You can use -I or --include to add handling of this code.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "macroWithSemicolon": {
+        "description": "Ensure that '' is defined either using -I, --include or -D.",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    },
+    "nonStandardCharLiteral": {
+        "description": "Non-standard character literal. ",
+        "url": "https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/"
+    }
+}

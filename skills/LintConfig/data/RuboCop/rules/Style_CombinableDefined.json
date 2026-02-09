@@ -1,0 +1,6 @@
+{
+    "Style/CombinableDefined": {
+        "description": "Description\n\nChecks successive `defined?` calls that can be combined into a single call.",
+        "option": "This rule has no specific options."
+    }
+}

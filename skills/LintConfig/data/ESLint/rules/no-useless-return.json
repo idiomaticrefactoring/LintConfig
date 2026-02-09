@@ -1,0 +1,6 @@
+{
+    "no-useless-return": {
+        "description": "Description\n\nThis rule aims to report redundantreturnstatements.\n\nExamples ofincorrectcode for this rule:\n\n/* eslint no-useless-return: \"error\" */\n\nconst foo = function() { return; }\n\nconst bar = function() {\n  doSomething();\n  return;\n}\n\nconst baz = function() {\n  if (condition) {\n    qux();\n    return;\n  } else {\n    quux();\n  }\n}\n\nconst item = function() {\n  switch (bar) {\n    case 1:\n      doSomething();\n    default:\n      doSomethingElse();\n      return;\n  }\n}\n\nExamples ofcorrectcode for this rule:\n\n/* eslint no-useless-return: \"error\" */\n\nconst foo = function() { return 5; }\n\nconst bar = function() {\n  return doSomething();\n}\n\nconst baz = function() {\n  if (condition) {\n    qux();\n    return;\n  } else {\n    quux();\n  }\n  qux();\n}\n\nconst item = function() {\n  switch (bar) {\n    case 1:\n      doSomething();\n      return;\n    default:\n      doSomethingElse();\n  }\n}\n\nconst func = function() {\n  for (const foo of bar) {\n    return;\n  }\n}",
+        "option": "This rule has no options."
+    }
+}

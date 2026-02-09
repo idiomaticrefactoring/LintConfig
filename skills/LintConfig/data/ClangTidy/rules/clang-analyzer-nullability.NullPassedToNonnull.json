@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-nullability.NullPassedToNonnull": {
+        "description": "Description\n\nclang-analyzer-nullability.NullPassedToNonnull\nWarns when a null pointer is passed to a pointer which has a _Nonnull type.\nThe\nclang-analyzer-nullability.NullPassedToNonnull\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

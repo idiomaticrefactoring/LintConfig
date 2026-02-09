@@ -1,0 +1,6 @@
+{
+    "no-alert": {
+        "description": "Description\n\nThis rule is aimed at catching debugging code that should be removed and popup UI elements that should be replaced with less obtrusive, custom UIs. As such, it will warn when it encountersalert,prompt, andconfirmfunction calls which are not shadowed.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-alert: \"error\"*/\n\nalert(\"here!\");\n\nconfirm(\"Are you sure?\");\n\nprompt(\"What's your name?\", \"John Doe\");\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-alert: \"error\"*/\n\ncustomAlert(\"Something happened!\");\n\ncustomConfirm(\"Are you sure?\");\n\ncustomPrompt(\"Who are you?\");\n\nfunction foo() {\n    const alert = myCustomLib.customAlert;\n    alert();\n}",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "fuchsia-statically-constructed-objects": {
+        "description": "Description\n\nWarns if global, non-trivial objects with static storage are constructed,\nunless the object is statically initialized with a\nconstexpr\nconstructor\nor has no explicit constructor.\n\nFor example:\n\nclass\nA\n{};\nclass\nB\n{\npublic\n:\nB\n(\nint\nVal\n)\n:\nVal\n(\nVal\n)\n{}\nprivate\n:\nint\nVal\n;\n};\nclass\nC\n{\npublic\n:\nconstexpr\nC\n(\nint\nVal\n)\n:\nVal\n(\nVal\n)\n{}\nC\n(\nint\nVal1\n,\nint\nVal2\n)\n:\nVal\n(\nVal1\n+\nVal2\n)\n{}\nprivate\n:\nint\nVal\n;\n};\nstatic\nA\na\n;\n// No warning, as there is no explicit constructor\nstatic\nC\nc\n(\n0\n);\n// No warning, as constructor is constexpr\nstatic\nB\nb\n(\n0\n);\n// Warning, as constructor is not constexpr\nstatic\nC\nc2\n(\n0\n,\n1\n);\n// Warning, as constructor is not constexpr\nstatic\nint\ni\n;\n// No warning, as it is trivial\nextern\nint\nget_i\n();\nstatic\nC\nc3\n(\nget_i\n());\n// Warning, as the constructor is dynamically initialized\n\nSee the features disallowed in Fuchsia at\nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineHashBraceLayout": {
+        "description": "Description\n\nChecks that the closing brace in a hash literal is either on the same line as the last hash element, or a new line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: symmetrical (type: str)\nSupportedStyles: ['symmetrical', 'new_line', 'same_line'] (type: list)"
+    }
+}

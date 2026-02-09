@@ -1,0 +1,6 @@
+{
+    "no-constructor-return": {
+        "description": "Description\n\nThis rule disallows return statements in the constructor of a class. Note that returning nothing is allowed.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-constructor-return: \"error\"*/\n\nclass A {\n    constructor(a) {\n        this.a = a;\n        return a;\n    }\n}\n\nclass B {\n    constructor(f) {\n        if (!f) {\n            return 'falsy';\n        }\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-constructor-return: \"error\"*/\n\nclass C {\n    constructor(c) {\n        this.c = c;\n    }\n}\n\nclass D {\n    constructor(f) {\n        if (!f) {\n            return;  // Flow control.\n        }\n\n        f();\n    }\n}\n\nclass E {\n    constructor() {\n        return;\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

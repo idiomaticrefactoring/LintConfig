@@ -1,0 +1,6 @@
+{
+    "Layout/LeadingCommentSpace": {
+        "description": "Description\n\nComments should start with a space.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowDoxygenCommentStyle: False (type: bool)\nAllowGemfileRubyComment: False (type: bool)\nAllowRBSInlineAnnotation: False (type: bool)\nAllowSteepAnnotation: False (type: bool)"
+    }
+}

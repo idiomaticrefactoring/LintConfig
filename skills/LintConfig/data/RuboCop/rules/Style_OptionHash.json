@@ -1,0 +1,6 @@
+{
+    "Style/OptionHash": {
+        "description": "Description\n\nDon't use option hashes when you can use keyword arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSuspiciousParamNames: ['options', 'opts', 'args', 'params', 'parameters'] (type: list)\nAllowlist: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Gemspec/AttributeAssignment": {
+        "description": "Description\n\nUse consistent style for Gemspec attributes assignment.",
+        "option": "This rule has no specific options."
+    }
+}

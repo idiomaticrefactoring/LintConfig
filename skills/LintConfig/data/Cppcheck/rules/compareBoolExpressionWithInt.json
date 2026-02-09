@@ -1,0 +1,6 @@
+{
+    "compareBoolExpressionWithInt": {
+        "description": "Description\n\nComparison of a boolean expression with an integer other than 0 or 1.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

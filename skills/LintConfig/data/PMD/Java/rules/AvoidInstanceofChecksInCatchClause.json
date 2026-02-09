@@ -1,0 +1,6 @@
+{
+    "AvoidInstanceofChecksInCatchClause": {
+        "description": "Description\n\nEach caught exception type should be handled in its own catch clause.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

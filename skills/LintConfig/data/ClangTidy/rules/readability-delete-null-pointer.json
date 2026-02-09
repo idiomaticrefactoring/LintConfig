@@ -1,0 +1,6 @@
+{
+    "readability-delete-null-pointer": {
+        "description": "Description\n\nChecks the\nif\nstatements where a pointer’s existence is checked and\nthen deletes the pointer.\nThe check is unnecessary as deleting a null pointer has no effect.\n\nint\n*\np\n;\nif\n(\np\n)\ndelete\np\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

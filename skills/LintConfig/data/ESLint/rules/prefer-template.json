@@ -1,0 +1,6 @@
+{
+    "prefer-template": {
+        "description": "Description\n\nThis rule is aimed to flag usage of+operators with strings.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-template: \"error\"*/\n\nconst str = \"Hello, \" + name + \"!\";\nconst str1 = \"Time: \" + (12 * 60 * 60 * 1000);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-template: \"error\"*/\n\nconst str = \"Hello World!\";\nconst str1 = `Hello, ${name}!`;\nconst str2 = `Time: ${12 * 60 * 60 * 1000}`;\n\n// This is reported by `no-useless-concat`.\nconst str4 = \"Hello, \" + \"World!\";",
+        "option": "This rule has no options."
+    }
+}

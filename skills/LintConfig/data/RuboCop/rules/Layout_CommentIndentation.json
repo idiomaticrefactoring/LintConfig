@@ -1,0 +1,6 @@
+{
+    "Layout/CommentIndentation": {
+        "description": "Description\n\nIndentation of comments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowForAlignment: False (type: bool)"
+    }
+}

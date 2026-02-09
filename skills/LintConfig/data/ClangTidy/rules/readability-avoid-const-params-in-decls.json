@@ -1,0 +1,6 @@
+{
+    "readability-avoid-const-params-in-decls": {
+        "description": "Description\n\nChecks whether a function declaration has parameters that are top level\nconst\n.\n\nconst\nvalues in declarations do not affect the signature of a function, so\nthey should not be put there.\n\nExamples:\n\nvoid\nf\n(\nconst\nstring\n);\n// Bad: const is top level.\nvoid\nf\n(\nconst\nstring\n&\n);\n// Good: const is not top level.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros. Default\nis\ntrue\n."
+    }
+}

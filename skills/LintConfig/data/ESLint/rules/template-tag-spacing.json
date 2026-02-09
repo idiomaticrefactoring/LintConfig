@@ -1,0 +1,6 @@
+{
+    "template-tag-spacing": {
+        "description": "Description\n\nThis rule aims to maintain consistency around the spacing between template tag functions and their template literals.",
+        "option": "{\n    \"template-tag-spacing\": [\"error\", \"never\"]\n}\n\nThis rule has one option whose value can be set to\"never\"or\"always\"\n\n- \"never\"(default) - Disallows spaces between a tag function and its template literal.\n- \"always\"- Requires one or more spaces between a tag function and its template literal.\n\nnever\n\nExamples ofincorrectcode for this rule with the default\"never\"option:\n\n/*eslint template-tag-spacing: \"error\"*/\n\nfunc `Hello world`;\n\nExamples ofcorrectcode for this rule with the default\"never\"option:\n\n/*eslint template-tag-spacing: \"error\"*/\n\nfunc`Hello world`;\n\nalways\n\nExamples ofincorrectcode for this rule with the\"always\"option:\n\n/*eslint template-tag-spacing: [\"error\", \"always\"]*/\n\nfunc`Hello world`;\n\nExamples ofcorrectcode for this rule with the\"always\"option:\n\n/*eslint template-tag-spacing: [\"error\", \"always\"]*/\n\nfunc `Hello world`;"
+    }
+}

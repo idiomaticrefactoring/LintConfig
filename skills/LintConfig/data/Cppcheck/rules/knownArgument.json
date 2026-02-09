@@ -1,0 +1,6 @@
+{
+    "knownArgument": {
+        "description": "Description\n\nArgument 'x-x' to function 'func' is always 0. It does not matter what value 'x' has.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

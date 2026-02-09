@@ -1,0 +1,6 @@
+{
+    "hicpp-no-malloc": {
+        "description": "Description\n\nThe\nhicpp-no-malloc\ncheck is an alias, please see\ncppcoreguidelines-no-malloc\nfor more information.\nIt enforces the\nrule 5.3.2\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

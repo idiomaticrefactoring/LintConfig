@@ -1,0 +1,6 @@
+{
+    "Gemspec/RubyVersionGlobalsUsage": {
+        "description": "Description\n\nChecks usage of RUBY_VERSION in gemspec.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)"
+    }
+}

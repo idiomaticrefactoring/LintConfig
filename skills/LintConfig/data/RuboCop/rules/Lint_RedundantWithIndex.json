@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantWithIndex": {
+        "description": "Description\n\nChecks for redundant `with_index`.",
+        "option": "This rule has no specific options."
+    }
+}

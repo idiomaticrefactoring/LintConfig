@@ -1,0 +1,6 @@
+{
+    "bugprone-forward-declaration-namespace": {
+        "description": "Description\n\nChecks if an unused forward declaration is in a wrong namespace.\n\nThe check inspects all unused forward declarations and checks if there is any\ndeclaration/definition with the same name existing, which could indicate that\nthe forward declaration is in a potentially wrong namespace.\n\nnamespace\nna\n{\nstruct\nA\n;\n}\nnamespace\nnb\n{\nstruct\nA\n{};\n}\nnb\n::\nA\na\n;\n// warning : no definition found for 'A', but a definition with the same name\n// 'A' found in another namespace 'nb::'\n\nThis check can only generate warnings, but it can’t suggest a fix at this\npoint.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

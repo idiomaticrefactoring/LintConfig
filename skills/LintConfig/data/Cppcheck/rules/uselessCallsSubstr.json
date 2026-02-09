@@ -1,0 +1,6 @@
+{
+    "uselessCallsSubstr": {
+        "description": "Description\n\nIneffective call of function 'substr' because it returns a copy of the object. Use operator= instead.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: false"
+    }
+}

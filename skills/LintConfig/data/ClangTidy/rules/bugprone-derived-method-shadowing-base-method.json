@@ -1,0 +1,6 @@
+{
+    "bugprone-derived-method-shadowing-base-method": {
+        "description": "Description\n\nFinds derived class methods that shadow a (non-virtual) base class method.\n\nIn order to be considered “shadowing”, methods must have the same signature\n(i.e. the same name, same number of parameters, same parameter types, etc).\nOnly checks public, non-templated methods.\n\nThe below example is bugprone because consumers of the\nDerived\nclass will\nexpect the\nreset\nmethod to do the work of\nBase::reset()\nin addition to\nextra work required to reset the\nDerived\nclass.  Common fixes include:\n\nMaking the\nreset\nmethod polymorphic\nRe-naming\nDerived::reset\nif it’s not meant to intersect with\nBase::reset\nUsing\nusing\nBase::reset\nto change the access specifier\n\nThis is also a violation of the Liskov Substitution Principle.\n\nstruct\nBase\n{\nvoid\nreset\n()\n{\n/* reset the base class */\n};\n};\nstruct\nDerived\n:\npublic\nBase\n{\nvoid\nreset\n()\n{\n/* reset the derived class, but not the base class */\n};\n};",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

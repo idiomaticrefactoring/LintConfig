@@ -1,0 +1,6 @@
+{
+    "Style/ObjectThen": {
+        "description": "Description\n\nEnforces the use of consistent method names `Object#yield_self` or `Object#then`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: then (type: str)\nSupportedStyles: ['then', 'yield_self'] (type: list)"
+    }
+}

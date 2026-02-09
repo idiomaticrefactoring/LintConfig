@@ -1,0 +1,6 @@
+{
+    "readability-const-return-type": {
+        "description": "Description\n\nChecks for functions with a\nconst\n-qualified return type and recommends\nremoval of the\nconst\nkeyword. Such use of\nconst\nis usually superfluous,\nand can prevent valuable compiler optimizations. Does not (yet) fix trailing\nreturn types.\n\nExamples:\n\nconst\nint\nfoo\n();\nconst\nClazz\nfoo\n();\nClazz\n*\nconst\nfoo\n();\n\nNote that this applies strictly to top-level qualification, which excludes\npointers or references to const values. For example, these are fine:\n\nconst\nint\n*\nfoo\n();\nconst\nint\n&\nfoo\n();\nconst\nClazz\n*\nfoo\n();",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros. Default\nis\ntrue\n."
+    }
+}

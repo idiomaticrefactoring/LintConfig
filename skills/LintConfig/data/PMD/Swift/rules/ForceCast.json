@@ -1,0 +1,6 @@
+{
+    "ForceCast": {
+        "description": "Description\n\nForce casts should be avoided. This may lead to a crash if it’s not used carefully.\nFor example assuming a JSON property has a given type, or your reused Cell has a certain contract.\nConsider using conditional casting and handling the resulting optional.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

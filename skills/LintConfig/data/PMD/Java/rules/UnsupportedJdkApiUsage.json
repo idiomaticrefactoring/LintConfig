@@ -1,0 +1,6 @@
+{
+    "UnsupportedJdkApiUsage": {
+        "description": "Description\n\nAvoid importing classes or using APIs from thesun.*orjdk.internal.*packages, includingsun.misc.Unsafeorjdk.internal.misc.Unsafe. These packages are neither portable nor stable and may change or be removed in future\nversions of the JDK. As the name implies, theUnsafeclass methods are particularly dangerous and have been\nsuperseded by safer alternatives, such as the VarHandle API (introduced in JDK 9) and the\nForeign Function & Memory API (introduced in JDK 22). Refer toJEP 471for safer alternatives with examples.\n\nIf you must depend on Sun APIs, confine their usage to a minimal, isolated scope, such as within a stable\nwrapper class. You may suppress this rule in the implementation of such a wrapper, but it’s strongly\nrecommended to migrate to official APIs wherever possible.\n\nThe use of such unsupported APIs will also be flagged by the Java compiler, as they are intended\nstrictly for internal purposes. This PMD rule has been added to facilitate independent code reviews\nand to catch instances where compiler warnings may have been overlooked.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

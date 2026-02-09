@@ -1,0 +1,6 @@
+{
+    "symbol-description": {
+        "description": "Description\n\nThis rules requires a description when creating symbols.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint symbol-description: \"error\"*/\n\nconst foo = Symbol();\n\nExamples ofcorrectcode for this rule:\n\n/*eslint symbol-description: \"error\"*/\n\nconst foo = Symbol(\"some description\");\n\nconst someString = \"some description\";\nconst bar = Symbol(someString);",
+        "option": "This rule has no options."
+    }
+}

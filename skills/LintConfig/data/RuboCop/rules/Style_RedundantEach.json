@@ -1,0 +1,6 @@
+{
+    "Style/RedundantEach": {
+        "description": "Description\n\nChecks for redundant `each`.",
+        "option": "This rule has no specific options."
+    }
+}

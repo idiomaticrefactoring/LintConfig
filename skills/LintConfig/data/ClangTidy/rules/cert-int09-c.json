@@ -1,0 +1,6 @@
+{
+    "cert-int09-c": {
+        "description": "Description\n\nThe\ncert-int09-c\ncheck is an alias, please see\nreadability-enum-initial-value\nfor\nmore information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

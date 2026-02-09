@@ -1,0 +1,6 @@
+{
+    "pureVirtualCall": {
+        "description": "Description\n\nCall of pure virtual function 'f' in constructor. The call will fail during runtime.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false\nRelated Symbols: f"
+    }
+}

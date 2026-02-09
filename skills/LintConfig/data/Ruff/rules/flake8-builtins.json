@@ -1,0 +1,6 @@
+{
+    "flake8-builtins": {
+        "description": "Description\n\nOptions for the `flake8-builtins` plugin.",
+        "option": "Type: Flake8BuiltinsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allowed-modules: List of builtin module names to allow.\n  - builtins-allowed-modules: DEPRECATED: This option has been renamed to `allowed-modules`. Use `allowed-modules` instead.\n  - builtins-ignorelist: DEPRECATED: This option has been renamed to `ignorelist`. Use `ignorelist` instead.\n  - builtins-strict-checking: DEPRECATED: This option has been renamed to `strict-checking`. Use `strict-checking` instead.\n  - ignorelist: Ignore list of builtins.\n  - strict-checking: Compare module names instead of full module paths."
+    }
+}

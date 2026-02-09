@@ -1,0 +1,6 @@
+{
+    "exceptRethrowCopy": {
+        "description": "Description\n\nRethrowing an exception with 'throw varname;' creates an unnecessary copy of 'varname'. To rethrow the caught exception without unnecessary copying or slicing, use a bare 'throw;'.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

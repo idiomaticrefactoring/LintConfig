@@ -1,0 +1,6 @@
+{
+    "Lint/MissingSuper": {
+        "description": "Description\n\nChecks for the presence of constructors and lifecycle callbacks without calls to `super`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedParentClasses: [] (type: list)"
+    }
+}

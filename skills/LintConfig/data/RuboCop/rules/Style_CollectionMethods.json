@@ -1,0 +1,6 @@
+{
+    "Style/CollectionMethods": {
+        "description": "Description\n\nPreferred collection methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nPreferredMethods: {'collect': 'map', 'collect!': 'map!', 'collect_concat': 'flat_map', 'inject': 'reduce', 'detect': 'find', 'find_all': 'select', 'member?': 'include?'} (type: dict)\nMethodsAcceptingSymbol: ['inject', 'reduce'] (type: list)"
+    }
+}

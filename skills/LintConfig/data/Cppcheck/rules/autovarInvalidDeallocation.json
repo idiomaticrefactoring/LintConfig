@@ -1,0 +1,6 @@
+{
+    "autovarInvalidDeallocation": {
+        "description": "Description\n\nThe product calls free() on a pointer to memory that was not allocated using associated heap allocation functions such as malloc(), calloc(), or realloc().",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 590\nInconclusive: false"
+    }
+}

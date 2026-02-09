@@ -1,0 +1,6 @@
+{
+    "no-div-regex": {
+        "description": "Description\n\nThis rule forbids equal signs (=) after the slash (/) at the beginning of a regular expression literal, because the characters/=can be confused with a division assignment operator.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-div-regex: \"error\"*/\n\nfunction bar() { return /=foo/; }\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-div-regex: \"error\"*/\n\nfunction bar() { return /[=]foo/; }",
+        "option": "This rule has no options."
+    }
+}

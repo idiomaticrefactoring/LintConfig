@@ -1,0 +1,6 @@
+{
+    "Style/RescueModifier": {
+        "description": "Description\n\nAvoid using rescue in its modifier form.",
+        "option": "This rule has no specific options."
+    }
+}

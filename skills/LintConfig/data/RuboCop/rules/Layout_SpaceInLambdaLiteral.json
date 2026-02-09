@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInLambdaLiteral": {
+        "description": "Description\n\nChecks for spaces in lambda literals.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: require_no_space (type: str)\nSupportedStyles: ['require_no_space', 'require_space'] (type: list)"
+    }
+}

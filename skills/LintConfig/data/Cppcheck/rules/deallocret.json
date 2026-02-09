@@ -1,0 +1,6 @@
+{
+    "deallocret": {
+        "description": "Description\n\nThe product uses, accesses, or otherwise operates on a resource after that resource has been expired, released, or revoked.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 672\nInconclusive: false\nRelated Symbols: p"
+    }
+}

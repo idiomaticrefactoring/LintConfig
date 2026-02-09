@@ -1,0 +1,6 @@
+{
+    "wrap-regex": {
+        "description": "Description\n\nThis is used to disambiguate the slash operator and facilitates more readable code.\n\nExample ofincorrectcode for this rule:\n\n/*eslint wrap-regex: \"error\"*/\n\nfunction a() {\n    return /foo/.test(\"bar\");\n}\n\nExample ofcorrectcode for this rule:\n\n/*eslint wrap-regex: \"error\"*/\n\nfunction a() {\n    return (/foo/).test(\"bar\");\n}",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "pep8-naming": {
+        "description": "Description\n\nOptions for the `pep8-naming` plugin.",
+        "option": "Type: Pep8NamingOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - classmethod-decorators: A list of decorators that, when applied to a method, indicate that the\n  - extend-ignore-names: Additional names (or patterns) to ignore when considering `pep8-naming` violations,\n  - ignore-names: A list of names (or patterns) to ignore when considering `pep8-naming` violations.\n  - staticmethod-decorators: A list of decorators that, when applied to a method, indicate that the"
+    }
+}

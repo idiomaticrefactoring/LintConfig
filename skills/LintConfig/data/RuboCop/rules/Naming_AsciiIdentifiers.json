@@ -1,0 +1,6 @@
+{
+    "Naming/AsciiIdentifiers": {
+        "description": "Description\n\nUse only ascii symbols in identifiers and constants.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAsciiConstants: True (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "compareValueOutOfTypeRangeError": {
+        "description": "Description\n\nComparing expression of type 'unsigned char' against value 256. Condition is always true.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

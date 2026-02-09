@@ -1,0 +1,6 @@
+{
+    "Gemspec/DevelopmentDependencies": {
+        "description": "Description\n\nChecks that development dependencies are specified in Gemfile rather than gemspec.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: Gemfile (type: str)\nSupportedStyles: ['Gemfile', 'gems.rb', 'gemspec'] (type: list)\nAllowedGems: [] (type: list)"
+    }
+}

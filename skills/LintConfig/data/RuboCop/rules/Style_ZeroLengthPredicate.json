@@ -1,0 +1,6 @@
+{
+    "Style/ZeroLengthPredicate": {
+        "description": "Description\n\nUse #empty? when testing for objects of length 0.",
+        "option": "This rule has no specific options."
+    }
+}

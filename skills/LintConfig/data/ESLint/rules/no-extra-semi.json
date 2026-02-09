@@ -1,0 +1,6 @@
+{
+    "no-extra-semi": {
+        "description": "Description\n\nThis rule disallows unnecessary semicolons.\n\nProblems reported by this rule can be fixed automatically, except when removing a semicolon would cause a following statement to become a directive such as\"use strict\".\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-extra-semi: \"error\"*/\n\nvar x = 5;;\n\nfunction foo() {\n    // code\n};\n\nclass C {\n    field;;\n\n    method() {\n        // code\n    };\n\n    static {\n        // code\n    };\n};\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-extra-semi: \"error\"*/\n\nvar x = 5;\n\nfunction foo() {\n    // code\n}\n\nvar bar = function() {\n    // code\n};\n\nclass C {\n    field;\n\n    method() {\n        // code\n    }\n\n    static {\n        // code\n    }\n}",
+        "option": "This rule has no specific options."
+    }
+}

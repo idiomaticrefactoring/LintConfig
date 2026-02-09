@@ -1,0 +1,6 @@
+{
+    "Style/ClassMethodsDefinitions": {
+        "description": "Description\n\nEnforces using `def self.method_name` or `class << self` to define class methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: def_self (type: str)\nSupportedStyles: ['def_self', 'self_class'] (type: list)"
+    }
+}

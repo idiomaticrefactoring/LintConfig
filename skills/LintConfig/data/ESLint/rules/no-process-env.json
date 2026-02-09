@@ -1,0 +1,6 @@
+{
+    "no-process-env": {
+        "description": "Description\n\nThis rule is aimed at discouraging use ofprocess.envto avoid global dependencies. As such, it will warn wheneverprocess.envis used.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-process-env: \"error\"*/\n\nif(process.env.NODE_ENV === \"development\") {\n    //...\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-process-env: \"error\"*/\n\nvar config = require(\"./config\");\n\nif(config.env === \"development\") {\n    //...\n}",
+        "option": "This rule has no specific options."
+    }
+}

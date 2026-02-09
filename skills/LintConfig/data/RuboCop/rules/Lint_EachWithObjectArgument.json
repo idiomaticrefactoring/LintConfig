@@ -1,0 +1,6 @@
+{
+    "Lint/EachWithObjectArgument": {
+        "description": "Description\n\nChecks for immutable argument given to each_with_object.",
+        "option": "This rule has no specific options."
+    }
+}

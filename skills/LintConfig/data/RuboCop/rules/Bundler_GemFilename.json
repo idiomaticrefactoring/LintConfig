@@ -1,0 +1,6 @@
+{
+    "Bundler/GemFilename": {
+        "description": "Description\n\nEnforces the filename for managing gems.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: Gemfile (type: str)\nSupportedStyles: ['Gemfile', 'gems.rb'] (type: list)"
+    }
+}

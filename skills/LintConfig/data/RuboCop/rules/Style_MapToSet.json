@@ -1,0 +1,6 @@
+{
+    "Style/MapToSet": {
+        "description": "Description\n\nPrefer `to_set` with a block over `map.to_set`.",
+        "option": "This rule has no specific options."
+    }
+}

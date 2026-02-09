@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideHashLiteralBraces": {
+        "description": "Description\n\nUse spaces inside hash literal braces - or don't.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: space (type: str)\nSupportedStyles: ['space', 'no_space', 'compact'] (type: list)\nEnforcedStyleForEmptyBraces: no_space (type: str)\nSupportedStylesForEmptyBraces: ['space', 'no_space'] (type: list)"
+    }
+}

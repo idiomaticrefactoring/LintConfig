@@ -1,0 +1,6 @@
+{
+    "MissingEncoding": {
+        "description": "Description\n\nWhen the character encoding is missing from the XML declaration,\nthe parser may produce garbled text.\n\nThis is completely dependent on how the parser is set up\nand the content of the XML file, so it may be hard to reproduce.\n\nProviding an explicit encoding ensures  accurate and consistent\nparsing.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

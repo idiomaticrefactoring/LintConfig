@@ -1,0 +1,6 @@
+{
+    "UnnecessaryConversionTemporary": {
+        "description": "Description\n\nAvoid the use temporary objects when converting primitives to Strings. Use the static conversion methods\non the wrapper classes instead.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

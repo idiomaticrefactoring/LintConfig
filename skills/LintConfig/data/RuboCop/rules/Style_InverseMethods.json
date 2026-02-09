@@ -1,0 +1,6 @@
+{
+    "Style/InverseMethods": {
+        "description": "Description\n\nUse the inverse method instead of `!.method` if an inverse method is defined.",
+        "option": "This rule supports the following parameters in your configuration:\n\nInverseMethods: {':any?': ':none?', ':even?': ':odd?', ':==': ':!=', ':=~': ':!~', ':<': ':>=', ':>': ':<='} (type: dict)\nInverseBlocks: {':select': ':reject', ':select!': ':reject!'} (type: dict)"
+    }
+}

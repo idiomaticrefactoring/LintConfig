@@ -1,0 +1,6 @@
+{
+    "Style/EvalWithLocation": {
+        "description": "Description\n\nPass `__FILE__` and `__LINE__` to `eval` method, as they are used by backtraces.",
+        "option": "This rule has no specific options."
+    }
+}

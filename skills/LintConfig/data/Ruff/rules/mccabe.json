@@ -1,0 +1,6 @@
+{
+    "mccabe": {
+        "description": "Description\n\nOptions for the `mccabe` plugin.",
+        "option": "Type: McCabeOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - max-complexity: The maximum McCabe complexity to allow before triggering `C901` errors."
+    }
+}

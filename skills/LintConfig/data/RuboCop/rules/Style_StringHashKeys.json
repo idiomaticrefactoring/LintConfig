@@ -1,0 +1,6 @@
+{
+    "Style/StringHashKeys": {
+        "description": "Description\n\nPrefer symbols instead of strings as hash keys.",
+        "option": "This rule has no specific options."
+    }
+}

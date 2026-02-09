@@ -1,0 +1,6 @@
+{
+    "no-floating-decimal": {
+        "description": "Description\n\nThis rule is aimed at eliminating floating decimal points and will warn whenever a numeric value has a decimal point but is missing a number either before or after it.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-floating-decimal: \"error\"*/\n\nvar num = .5;\nvar num = 2.;\nvar num = -.7;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-floating-decimal: \"error\"*/\n\nvar num = 0.5;\nvar num = 2.0;\nvar num = -0.7;",
+        "option": "This rule has no specific options."
+    }
+}

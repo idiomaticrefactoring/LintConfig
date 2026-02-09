@@ -1,0 +1,6 @@
+{
+    "Style/NilComparison": {
+        "description": "Description\n\nPrefer x.nil? to x == nil.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: predicate (type: str)\nSupportedStyles: ['predicate', 'comparison'] (type: list)"
+    }
+}

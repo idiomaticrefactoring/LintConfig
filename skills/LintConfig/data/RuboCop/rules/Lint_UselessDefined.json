@@ -1,0 +1,6 @@
+{
+    "Lint/UselessDefined": {
+        "description": "Description\n\nChecks for calls to `defined?` with strings and symbols. The result of such a call will always be truthy.",
+        "option": "This rule has no specific options."
+    }
+}

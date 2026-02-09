@@ -1,0 +1,6 @@
+{
+    "readability-braces-around-statements": {
+        "description": "Description\n\ngoogle-readability-braces-around-statements\nredirects here as an alias for\nthis check.\n\nChecks that bodies of\nif\nstatements and loops (\nfor\n,\ndo\nwhile\n, and\nwhile\n) are inside braces.\n\nBefore:\n\nif\n(\ncondition\n)\nstatement\n;\n\nAfter:\n\nif\n(\ncondition\n)\n{\nstatement\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nShortStatementLines\nDefines the minimal number of lines that the statement should have in order\nto trigger this check.\nThe number of lines is counted from the end of condition or initial keyword\n(\ndo\n/\nelse\n) until the last line of the inner statement. Default value\n0\nmeans that braces will be added to all statements (not having them\nalready)."
+    }
+}

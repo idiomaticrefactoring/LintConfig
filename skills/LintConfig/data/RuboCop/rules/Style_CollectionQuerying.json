@@ -1,0 +1,6 @@
+{
+    "Style/CollectionQuerying": {
+        "description": "Description\n\nPrefer `Enumerable` predicate methods over expressions with `count`.",
+        "option": "This rule has no specific options."
+    }
+}

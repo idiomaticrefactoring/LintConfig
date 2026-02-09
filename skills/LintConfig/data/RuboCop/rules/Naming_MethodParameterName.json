@@ -1,0 +1,6 @@
+{
+    "Naming/MethodParameterName": {
+        "description": "Description\n\nChecks for method parameter names that contain capital letters, end in numbers, or do not meet a minimal length.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinNameLength: 3 (type: int)\nAllowNamesEndingInNumbers: True (type: bool)\nAllowedNames: ['as', 'at', 'by', 'cc', 'db', 'id', 'if', 'in', 'io', 'ip', 'of', 'on', 'os', 'pp', 'to'] (type: list)\nForbiddenNames: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/UnescapedBracketInRegexp": {
+        "description": "Description\n\nChecks for unescaped literal `]` in Regexp.",
+        "option": "This rule has no specific options."
+    }
+}

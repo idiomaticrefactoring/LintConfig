@@ -1,0 +1,6 @@
+{
+    "ControlStatementBraces": {
+        "description": "Description\n\nEnforce a policy for braces on control statements. It is recommended to use braces on ‘if … else’\nstatements and loop statements, even if they are optional. This usually makes the code clearer, and\nhelps prepare the future when you need to add another statement. That said, this rule lets you control\nwhich statements are required to have braces via properties.\n\nFrom 6.2.0 on, this rule supersedes WhileLoopMustUseBraces, ForLoopMustUseBraces, IfStmtMustUseBraces,\nand IfElseStmtMustUseBraces.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ncheckIfElseStmt\ttrue\tRequire that ‘if … else’ statements use braces\ncheckSingleIfStmt\ttrue\tRequire that ‘if’ statements with a single branch use braces\ncheckWhileStmt\ttrue\tRequire that ‘while’ loops use braces\ncheckForStmt\ttrue\tRequire that ‘for’ loops should use braces\ncheckDoWhileStmt\ttrue\tRequire that ‘do … while’ loops use braces\ncheckCaseStmt\tfalse\tRequire that cases of a switch have braces\nallowEmptyLoop\tfalse\tAllow loops with an empty statement, e.g. ‘while(true);’"
+    }
+}

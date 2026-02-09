@@ -1,0 +1,6 @@
+{
+    "Lint/InheritException": {
+        "description": "Description\n\nAvoid inheriting from the `Exception` class.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: standard_error (type: str)\nSupportedStyles: ['standard_error', 'runtime_error'] (type: list)"
+    }
+}

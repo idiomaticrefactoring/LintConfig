@@ -1,0 +1,6 @@
+{
+    "Style/StabbyLambdaParentheses": {
+        "description": "Description\n\nChecks for the usage of parentheses around stabby lambda arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: require_parentheses (type: str)\nSupportedStyles: ['require_parentheses', 'require_no_parentheses'] (type: list)"
+    }
+}

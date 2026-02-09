@@ -1,0 +1,6 @@
+{
+    "Style/ArgumentsForwarding": {
+        "description": "Description\n\nUse arguments forwarding.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowOnlyRestArgument: True (type: bool)\nUseAnonymousForwarding: True (type: bool)\nRedundantRestArgumentNames: ['args', 'arguments'] (type: list)\nRedundantKeywordRestArgumentNames: ['kwargs', 'options', 'opts'] (type: list)\nRedundantBlockArgumentNames: ['blk', 'block', 'proc'] (type: list)"
+    }
+}

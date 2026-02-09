@@ -1,0 +1,6 @@
+{
+    "preprocessorErrorDirective": {
+        "description": "Description\n\n#error message",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: N/A\nInconclusive: false"
+    }
+}

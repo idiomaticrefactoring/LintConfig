@@ -1,0 +1,6 @@
+{
+    "Layout/CaseIndentation": {
+        "description": "Description\n\nIndentation of when in a case/(when|in)/[else/]end.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: case (type: str)\nSupportedStyles: ['case', 'end'] (type: list)\nIndentOneStep: False (type: bool)\nIndentationWidth: None (type: NoneType)"
+    }
+}

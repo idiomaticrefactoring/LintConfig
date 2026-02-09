@@ -1,0 +1,6 @@
+{
+    "AvoidTrailingComma": {
+        "description": "Description\n\nThis rule helps improve code portability due to differences in browser treatment of trailing commas in object or array literals.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nallowObjectLiteral\tfalse\tAllow a trailing comma within an object literal\nallowArrayLiteral\tfalse\tAllow a trailing comma within an array literal"
+    }
+}

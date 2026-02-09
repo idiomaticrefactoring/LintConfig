@@ -1,0 +1,6 @@
+{
+    "Lint/ShadowedArgument": {
+        "description": "Description\n\nAvoid reassigning arguments before they were used.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIgnoreImplicitReferences: False (type: bool)"
+    }
+}

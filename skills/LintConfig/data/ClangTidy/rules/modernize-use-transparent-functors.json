@@ -1,0 +1,6 @@
+{
+    "modernize-use-transparent-functors": {
+        "description": "Description\n\nPrefer transparent functors to non-transparent ones. When using transparent\nfunctors, the type does not need to be repeated. The code is easier to read,\nmaintain and less prone to errors. It is not possible to introduce unwanted\nconversions.\n\n// Non-transparent functor\nstd\n::\nmap\n<\nint\n,\nstd\n::\nstring\n,\nstd\n::\ngreater\n<\nint\n>>\ns\n;\n// Transparent functor.\nstd\n::\nmap\n<\nint\n,\nstd\n::\nstring\n,\nstd\n::\ngreater\n<>>\ns\n;\n// Non-transparent functor\nusing\nMyFunctor\n=\nstd\n::\nless\n<\nMyType\n>\n;\n\nIt is not always a safe transformation though. The following case will be\nuntouched to preserve the semantics.\n\n// Non-transparent functor\nstd\n::\nmap\n<\nconst\nchar\n*\n,\nstd\n::\nstring\n,\nstd\n::\ngreater\n<\nstd\n::\nstring\n>>\ns\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nSafeMode\nIf the option is set to\ntrue\n, the check will not diagnose cases where\nusing a transparent functor cannot be guaranteed to produce identical results\nas the original code. The default value for this option is\nfalse\n.\nThis check requires using C++14 or higher to run."
+    }
+}

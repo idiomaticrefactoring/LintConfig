@@ -1,0 +1,6 @@
+{
+    "Style/CombinableLoops": {
+        "description": "Description\n\nChecks for places where multiple consecutive loops over the same data can be combined into a single loop.",
+        "option": "This rule has no specific options."
+    }
+}

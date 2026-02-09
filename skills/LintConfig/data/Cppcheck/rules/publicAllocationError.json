@@ -1,0 +1,6 @@
+{
+    "publicAllocationError": {
+        "description": "Description\n\nPossible leak in public function. The pointer 'varname' is not deallocated before it is allocated.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

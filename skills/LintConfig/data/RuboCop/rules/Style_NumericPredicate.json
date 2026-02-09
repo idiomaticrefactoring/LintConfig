@@ -1,0 +1,6 @@
+{
+    "Style/NumericPredicate": {
+        "description": "Description\n\nChecks for the use of predicate- or comparison methods for numeric comparisons.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: predicate (type: str)\nSupportedStyles: ['predicate', 'comparison'] (type: list)\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

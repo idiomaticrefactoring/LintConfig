@@ -1,0 +1,6 @@
+{
+    "Security/YAMLLoad": {
+        "description": "Description\n\nPrefer usage of `YAML.safe_load` over `YAML.load` due to potential security issues. See reference for more information.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://ruby-doc.org/stdlib-2.7.0/libdoc/yaml/rdoc/YAML.html#module-YAML-label-Security'] (type: list)"
+    }
+}

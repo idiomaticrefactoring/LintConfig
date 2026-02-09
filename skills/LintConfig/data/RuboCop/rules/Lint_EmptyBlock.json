@@ -1,0 +1,6 @@
+{
+    "Lint/EmptyBlock": {
+        "description": "Description\n\nChecks for blocks without a body.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowComments: True (type: bool)\nAllowEmptyLambdas: True (type: bool)"
+    }
+}

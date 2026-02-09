@@ -1,0 +1,6 @@
+{
+    "Style/CommandLiteral": {
+        "description": "Description\n\nUse `` or %x around command literals.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: backticks (type: str)\nSupportedStyles: ['backticks', 'percent_x', 'mixed'] (type: list)\nAllowInnerBackticks: False (type: bool)"
+    }
+}

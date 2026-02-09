@@ -1,0 +1,6 @@
+{
+    "android-cloexec-accept": {
+        "description": "Description\n\nThe usage of\naccept()\nis not recommended, it’s better to use\naccept4()\n.\nWithout this flag, an opened sensitive file descriptor would remain open across\na fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\naccept\n(\nsockfd\n,\naddr\n,\naddrlen\n);\n// becomes\naccept4\n(\nsockfd\n,\naddr\n,\naddrlen\n,\nSOCK_CLOEXEC\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

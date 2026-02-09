@@ -1,0 +1,6 @@
+{
+    "Style/RedundantSortBy": {
+        "description": "Description\n\nUse `sort` instead of `sort_by { |x| x }`.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/RedundantStringEscape": {
+        "description": "Description\n\nChecks for redundant escapes in string literals.",
+        "option": "This rule has no specific options."
+    }
+}

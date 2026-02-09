@@ -1,0 +1,6 @@
+{
+    "Style/RedundantCondition": {
+        "description": "Description\n\nChecks for unnecessary conditional expressions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['infinite?', 'nonzero?'] (type: list)"
+    }
+}

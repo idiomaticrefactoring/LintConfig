@@ -1,0 +1,6 @@
+{
+    "Lint/UselessDefaultValueArgument": {
+        "description": "Description\n\nChecks for usage of `fetch` or `Array.new` with default value argument and block.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedReceivers: [] (type: list)"
+    }
+}

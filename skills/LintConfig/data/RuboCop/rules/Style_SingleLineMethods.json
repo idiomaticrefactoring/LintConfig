@@ -1,0 +1,6 @@
+{
+    "Style/SingleLineMethods": {
+        "description": "Description\n\nAvoid single-line methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowIfMethodIsEmpty: True (type: bool)"
+    }
+}

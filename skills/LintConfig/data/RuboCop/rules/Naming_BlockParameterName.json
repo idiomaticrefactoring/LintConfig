@@ -1,0 +1,6 @@
+{
+    "Naming/BlockParameterName": {
+        "description": "Description\n\nChecks for block parameter names that contain capital letters, end in numbers, or do not meet a minimal length.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinNameLength: 1 (type: int)\nAllowNamesEndingInNumbers: True (type: bool)\nAllowedNames: [] (type: list)\nForbiddenNames: [] (type: list)"
+    }
+}

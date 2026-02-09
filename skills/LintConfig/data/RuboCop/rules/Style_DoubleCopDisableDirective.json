@@ -1,0 +1,6 @@
+{
+    "Style/DoubleCopDisableDirective": {
+        "description": "Description\n\nChecks for double rubocop:disable comments on a single line.",
+        "option": "This rule has no specific options."
+    }
+}

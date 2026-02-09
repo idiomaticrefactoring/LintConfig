@@ -1,0 +1,6 @@
+{
+    "no-delete-var": {
+        "description": "Description\n\nThis rule disallows the use of thedeleteoperator on variables.\n\nIf ESLint parses code in strict mode, the parser (instead of this rule) reports the error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-delete-var: \"error\"*/\n\nlet x;\ndelete x;",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/IndentationWidth": {
+        "description": "Description\n\nUse 2 spaces for indentation.",
+        "option": "This rule supports the following parameters in your configuration:\n\nWidth: 2 (type: int)\nEnforcedStyleAlignWith: start_of_line (type: str)\nSupportedStylesAlignWith: ['start_of_line', 'relative_to_receiver'] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

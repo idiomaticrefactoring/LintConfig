@@ -1,0 +1,6 @@
+{
+    "Style/RedundantCapitalW": {
+        "description": "Description\n\nChecks for %W when interpolation is not needed.",
+        "option": "This rule has no specific options."
+    }
+}

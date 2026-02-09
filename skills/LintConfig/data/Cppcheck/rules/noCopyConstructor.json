@@ -1,0 +1,6 @@
+{
+    "noCopyConstructor": {
+        "description": "Description\n\nClass 'class' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: class"
+    }
+}

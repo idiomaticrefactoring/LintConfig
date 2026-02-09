@@ -1,0 +1,6 @@
+{
+    "no-new": {
+        "description": "Description\n\nThis rule is aimed at maintaining consistency and convention by disallowing constructor calls using thenewkeyword that do not assign the resulting object to a variable.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new: \"error\"*/\n\nnew Thing();\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new: \"error\"*/\n\nconst thing = new Thing();\n\nFoo();",
+        "option": "This rule has no options."
+    }
+}

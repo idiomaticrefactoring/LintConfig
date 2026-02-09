@@ -1,0 +1,6 @@
+{
+    "Lint/ToEnumArguments": {
+        "description": "Description\n\nEnsures that `to_enum`/`enum_for`, called for the current method, has correct arguments.",
+        "option": "This rule has no specific options."
+    }
+}

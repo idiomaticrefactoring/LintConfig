@@ -1,0 +1,6 @@
+{
+    "EmptyWhileStmt": {
+        "description": "Description\n\nEmpty While Statement finds all instances where a while statement does nothing.\nIf it is a timing loop, then you should use Thread.sleep() for it; if it is\na while loop that does a lot in the exit expression, rewrite it to make it clearer.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

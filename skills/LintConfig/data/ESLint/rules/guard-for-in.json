@@ -1,0 +1,6 @@
+{
+    "guard-for-in": {
+        "description": "Description\n\nThis rule is aimed at preventing unexpected behavior that could arise from using afor inloop without filtering the results in the loop. As such, it will warn whenfor inloops do not filter their results with anifstatement.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint guard-for-in: \"error\"*/\n\nfor (key in foo) {\n    doSomething(key);\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint guard-for-in: \"error\"*/\n\nfor (key in foo) {\n    if (Object.hasOwn(foo, key)) {\n        doSomething(key);\n    }\n}\n\nfor (key in foo) {\n    if (Object.prototype.hasOwnProperty.call(foo, key)) {\n        doSomething(key);\n    }\n}\n\nfor (key in foo) {\n    if ({}.hasOwnProperty.call(foo, key)) {\n        doSomething(key);\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/HashAlignment": {
+        "description": "Description\n\nAlign the elements of a hash literal if they span more than one line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultipleStyles: True (type: bool)\nEnforcedHashRocketStyle: key (type: str)\nSupportedHashRocketStyles: ['key', 'separator', 'table'] (type: list)\nEnforcedColonStyle: key (type: str)\nSupportedColonStyles: ['key', 'separator', 'table'] (type: list)\nEnforcedLastArgumentHashStyle: always_inspect (type: str)\nSupportedLastArgumentHashStyles: ['always_inspect', 'always_ignore', 'ignore_implicit', 'ignore_explicit'] (type: list)"
+    }
+}

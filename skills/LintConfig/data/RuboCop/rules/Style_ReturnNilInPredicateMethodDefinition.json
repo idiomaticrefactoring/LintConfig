@@ -1,0 +1,6 @@
+{
+    "Style/ReturnNilInPredicateMethodDefinition": {
+        "description": "Description\n\nChecks if uses of `return` or `return nil` in predicate method definition.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "invalidTestForOverflow": {
+        "description": "Description\n\n[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDERCWE-252,CWE-248, ORCWE-1069.] Ignoring exceptions and other error conditions may allow an attacker to induce unexpected behavior unnoticed.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 391\nInconclusive: false"
+    }
+}

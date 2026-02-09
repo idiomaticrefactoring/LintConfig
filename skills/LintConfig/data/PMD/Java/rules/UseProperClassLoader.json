@@ -1,0 +1,6 @@
+{
+    "UseProperClassLoader": {
+        "description": "Description\n\nIn J2EE, the getClassLoader() method might not work as expected. Use\nThread.currentThread().getContextClassLoader() instead.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "template-curly-spacing": {
+        "description": "Description\n\nThis rule aims to maintain consistency around the spacing inside of template literals.",
+        "option": "{\n    \"template-curly-spacing\": [\"error\", \"never\"]\n}\n\nThis rule has one option which has either\"never\"or\"always\"as value.\n\n- \"never\"(by default) - Disallows spaces inside of the curly brace pair.\n- \"always\"- Requires one or more spaces inside of the curly brace pair.\n\nnever\n\nExamples ofincorrectcode for this rule with the default\"never\"option:\n\n/*eslint template-curly-spacing: \"error\"*/\n\n`hello, ${ people.name}!`;\n`hello, ${people.name }!`;\n\n`hello, ${ people.name }!`;\n\nExamples ofcorrectcode for this rule with the default\"never\"option:\n\n/*eslint template-curly-spacing: \"error\"*/\n\n`hello, ${people.name}!`;\n\n`hello, ${\n    people.name\n}!`;\n\nalways\n\nExamples ofincorrectcode for this rule with the\"always\"option:\n\n/*eslint template-curly-spacing: [\"error\", \"always\"]*/\n\n`hello, ${ people.name}!`;\n`hello, ${people.name }!`;\n\n`hello, ${people.name}!`;\n\nExamples ofcorrectcode for this rule with the\"always\"option:\n\n/*eslint template-curly-spacing: [\"error\", \"always\"]*/\n\n`hello, ${ people.name }!`;\n\n`hello, ${\n    people.name\n}!`;"
+    }
+}

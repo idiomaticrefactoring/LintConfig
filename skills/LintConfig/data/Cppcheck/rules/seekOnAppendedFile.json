@@ -1,0 +1,6 @@
+{
+    "seekOnAppendedFile": {
+        "description": "Description\n\nRepositioning operation performed on a file opened in append mode has no effect.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

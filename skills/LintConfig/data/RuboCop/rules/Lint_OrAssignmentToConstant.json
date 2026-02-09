@@ -1,0 +1,6 @@
+{
+    "Lint/OrAssignmentToConstant": {
+        "description": "Description\n\nChecks unintended or-assignment to constant.",
+        "option": "This rule has no specific options."
+    }
+}

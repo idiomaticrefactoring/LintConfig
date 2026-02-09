@@ -1,0 +1,6 @@
+{
+    "Style/SelectByRegexp": {
+        "description": "Description\n\nPrefer grep/grep_v to select/reject with a regexp match.",
+        "option": "This rule has no specific options."
+    }
+}

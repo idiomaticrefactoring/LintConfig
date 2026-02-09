@@ -1,0 +1,6 @@
+{
+    "Style/KeywordParametersOrder": {
+        "description": "Description\n\nEnforces that optional keyword parameters are placed at the end of the parameters list.",
+        "option": "This rule has no specific options."
+    }
+}

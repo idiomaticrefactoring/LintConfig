@@ -1,0 +1,6 @@
+{
+    "no-octal": {
+        "description": "Description\n\nThe rule disallows octal literals.\n\nIf ESLint parses code in strict mode, the parser (instead of this rule) reports the error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-octal: \"error\"*/\n\nconst num = 071;\nconst result = 5 + 07;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-octal: \"error\"*/\n\nconst num  = \"071\";",
+        "option": "This rule has no options."
+    }
+}

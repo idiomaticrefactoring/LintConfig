@@ -1,0 +1,6 @@
+{
+    "invalidContainer": {
+        "description": "Description\n\nThe product does not maintain or incorrectly maintains control over a resource throughout its lifetime of creation, use, and release.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 664\nInconclusive: false"
+    }
+}

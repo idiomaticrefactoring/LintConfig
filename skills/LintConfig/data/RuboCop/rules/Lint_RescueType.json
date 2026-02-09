@@ -1,0 +1,6 @@
+{
+    "Lint/RescueType": {
+        "description": "Description\n\nAvoid rescuing from non constants that could result in a `TypeError`.",
+        "option": "This rule has no specific options."
+    }
+}

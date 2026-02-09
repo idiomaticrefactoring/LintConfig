@@ -1,0 +1,6 @@
+{
+    "globalLockGuard": {
+        "description": "Description\n\nThe product contains multiple threads or executable segments that are waiting for each other to release a necessary lock, resulting in deadlock.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 833\nInconclusive: false"
+    }
+}

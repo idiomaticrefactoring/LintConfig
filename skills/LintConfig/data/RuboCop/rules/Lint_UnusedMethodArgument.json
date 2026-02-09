@@ -1,0 +1,6 @@
+{
+    "Lint/UnusedMethodArgument": {
+        "description": "Description\n\nChecks for unused method arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nAllowUnusedKeywordArguments: False (type: bool)\nIgnoreEmptyMethods: True (type: bool)\nIgnoreNotImplementedMethods: True (type: bool)\nNotImplementedExceptions: ['NotImplementedError'] (type: list)"
+    }
+}

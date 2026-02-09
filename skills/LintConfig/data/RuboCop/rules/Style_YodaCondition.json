@@ -1,0 +1,6 @@
+{
+    "Style/YodaCondition": {
+        "description": "Description\n\nForbid or enforce yoda conditions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://en.wikipedia.org/wiki/Yoda_conditions'] (type: list)\nEnforcedStyle: forbid_for_all_comparison_operators (type: str)\nSupportedStyles: ['forbid_for_all_comparison_operators', 'forbid_for_equality_operators_only', 'require_for_all_comparison_operators', 'require_for_equality_operators_only'] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/RegexpLiteral": {
+        "description": "Description\n\nUse / or %r around regular expressions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: slashes (type: str)\nSupportedStyles: ['slashes', 'percent_r', 'mixed'] (type: list)\nAllowInnerSlashes: False (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-bounds-array-to-pointer-decay": {
+        "description": "Description\n\nThis check flags all array to pointer decays.\n\nPointers should not be used as arrays.\nspan<T>\nis a bounds-checked, safe\nalternative to using pointers to access arrays.\n\nThis rule is part of the\nBounds safety (Bounds 3)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

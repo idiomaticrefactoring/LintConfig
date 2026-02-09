@@ -1,0 +1,6 @@
+{
+    "Style/ArrayJoin": {
+        "description": "Description\n\nUse Array#join instead of Array#*.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-type-cstyle-cast": {
+        "description": "Description\n\nThis check flags all use of C-style casts that perform a\nstatic_cast\ndowncast,\nconst_cast\n, or\nreinterpret_cast\n.\n\nUse of these casts can violate type safety and cause the program to access a\nvariable that is actually of type X to be accessed as if it were of an\nunrelated type Z. Note that a C-style\n(T)expression\ncast means to perform\nthe first of the following that is possible: a\nconst_cast\n, a\nstatic_cast\n, a\nstatic_cast\nfollowed by a\nconst_cast\n, a\nreinterpret_cast\n, or a\nreinterpret_cast\nfollowed by a\nconst_cast\n.\nThis rule bans\n(T)expression\nonly when used to perform an unsafe cast.\n\nThis rule is part of the\nType safety (Type.4)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

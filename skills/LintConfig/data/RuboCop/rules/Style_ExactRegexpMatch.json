@@ -1,0 +1,6 @@
+{
+    "Style/ExactRegexpMatch": {
+        "description": "Description\n\nChecks for exact regexp match inside Regexp literals.",
+        "option": "This rule has no specific options."
+    }
+}

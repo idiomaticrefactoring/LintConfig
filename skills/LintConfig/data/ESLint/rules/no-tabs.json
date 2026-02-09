@@ -1,0 +1,6 @@
+{
+    "no-tabs": {
+        "description": "Description\n\nThis rule looks for tabs anywhere inside a file: code, comments or anything else.\n\nExamples ofincorrectcode for this rule:\n\n/* eslint no-tabs: \"error\" */\n\nvar a \t= 2;\n\n/**\n* \t\t it's a test function\n*/\nfunction test(){}\n\nvar x = 1; // \t test\n\nExamples ofcorrectcode for this rule:\n\n/* eslint no-tabs: \"error\" */\n\nvar a = 2;\n\n/**\n* it's a test function\n*/\nfunction test(){}\n\nvar x = 1; // test\n\nOptions\n\nThis rule has an optional object option with the following properties:\n\n- allowIndentationTabs(default: false): If this is set to true, then the rule will not report tabs used for indentation.\n\nallowIndentationTabs\n\nExamples ofcorrectcode for this rule with theallowIndentationTabs: trueoption:\n\n/* eslint no-tabs: [\"error\", { allowIndentationTabs: true }] */\n\nfunction test() {\n\tdoSomething();\n}\n\n\t// comment with leading indentation tab",
+        "option": "This rule has no specific options."
+    }
+}

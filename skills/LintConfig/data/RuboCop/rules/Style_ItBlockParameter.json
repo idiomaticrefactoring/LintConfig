@@ -1,0 +1,6 @@
+{
+    "Style/ItBlockParameter": {
+        "description": "Description\n\nChecks for blocks with one argument where `it` block parameter can be used.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: allow_single_line (type: str)\nSupportedStyles: ['allow_single_line', 'only_numbered_parameters', 'always', 'disallow'] (type: list)"
+    }
+}

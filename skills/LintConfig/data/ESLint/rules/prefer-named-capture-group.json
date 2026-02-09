@@ -1,0 +1,6 @@
+{
+    "prefer-named-capture-group": {
+        "description": "Description\n\nWith the landing of ECMAScript 2018, named capture groups can be used in regular expressions, which can improve their readability.\nThis rule is aimed at using named capture groups instead of numbered capture groups in regular expressions:\n\nconst regex = /(?<year>[0-9]{4})/;\n\nAlternatively, if your intention is not tocapturethe results, but only express the alternative, use a non-capturing group:\n\nconst regex = /(?:cauli|sun)flower/;\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-named-capture-group: \"error\"*/\n\nconst foo = /(ba[rz])/;\nconst bar = new RegExp('(ba[rz])');\nconst baz = RegExp('(ba[rz])');\n\nfoo.exec('bar')[1]; // Retrieve the group result.\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-named-capture-group: \"error\"*/\n\nconst foo = /(?<id>ba[rz])/;\nconst bar = new RegExp('(?<id>ba[rz])');\nconst baz = RegExp('(?<id>ba[rz])');\nconst xyz = /xyz(?:zy|abc)/;\n\nfoo.exec('bar').groups.id; // Retrieve the group result.",
+        "option": "This rule has no options."
+    }
+}

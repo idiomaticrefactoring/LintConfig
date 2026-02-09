@@ -1,0 +1,6 @@
+{
+    "Style/RedundantFormat": {
+        "description": "Description\n\nChecks for usages of `Kernel#format` or `Kernel#sprintf` with only a single argument.",
+        "option": "This rule has no specific options."
+    }
+}

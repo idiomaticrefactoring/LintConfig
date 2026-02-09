@@ -1,0 +1,6 @@
+{
+    "readability-redundant-control-flow": {
+        "description": "Description\n\nThis check looks for procedures (functions returning no value) with\nreturn\nstatements at the end of the function. Such\nreturn\nstatements are\nredundant.\n\nLoop statements (\nfor\n,\nwhile\n,\ndo\nwhile\n) are checked for redundant\ncontinue\nstatements at the end of the loop body.\n\nExamples:\n\nThe following function\nf\ncontains a redundant\nreturn\nstatement:\n\nextern\nvoid\ng\n();\nvoid\nf\n()\n{\ng\n();\nreturn\n;\n}\n\nbecomes\n\nextern\nvoid\ng\n();\nvoid\nf\n()\n{\ng\n();\n}\n\nThe following function\nk\ncontains a redundant\ncontinue\nstatement:\n\nvoid\nk\n()\n{\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n10\n;\n++\ni\n)\n{\ncontinue\n;\n}\n}\n\nbecomes\n\nvoid\nk\n()\n{\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n10\n;\n++\ni\n)\n{\n}\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

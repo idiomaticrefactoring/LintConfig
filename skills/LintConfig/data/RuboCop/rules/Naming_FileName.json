@@ -1,0 +1,6 @@
+{
+    "Naming/FileName": {
+        "description": "Description\n\nUse snake_case for source file names.",
+        "option": "This rule supports the following parameters in your configuration:\n\nExpectMatchingDefinition: False (type: bool)\nCheckDefinitionPathHierarchy: True (type: bool)\nCheckDefinitionPathHierarchyRoots: ['lib', 'spec', 'test', 'src'] (type: list)\nRegex: None (type: NoneType)\nIgnoreExecutableScripts: True (type: bool)\nAllowedAcronyms: ['CLI', 'DSL', 'ACL', 'API', 'ASCII', 'CPU', 'CSS', 'DNS', 'EOF', 'GUID', 'HTML', 'HTTP', 'HTTPS', 'ID', 'IP', 'JSON', 'LHS', 'QPS', 'RAM', 'RHS', 'RPC', 'SLA', 'SMTP', 'SQL', 'SSH', 'TCP', 'TLS', 'TTL', 'UDP', 'UI', 'UID', 'UUID', 'URI', 'URL', 'UTF8', 'VM', 'XML', 'XMPP', 'XSRF', 'XSS'] (type: list)"
+    }
+}

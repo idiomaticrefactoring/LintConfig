@@ -1,0 +1,6 @@
+{
+    "thisUseAfterFree": {
+        "description": "Description\n\nUsing member 'x' when 'this' might be invalid",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false\nRelated Symbols: ptr"
+    }
+}

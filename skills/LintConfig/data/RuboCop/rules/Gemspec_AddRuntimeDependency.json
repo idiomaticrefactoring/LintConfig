@@ -1,0 +1,6 @@
+{
+    "Gemspec/AddRuntimeDependency": {
+        "description": "Description\n\nPrefer `add_dependency` over `add_runtime_dependency`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://github.com/ruby/rubygems/issues/7799#issuecomment-2192720316'] (type: list)"
+    }
+}

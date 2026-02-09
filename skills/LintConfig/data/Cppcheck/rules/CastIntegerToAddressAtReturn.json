@@ -1,0 +1,6 @@
+{
+    "CastIntegerToAddressAtReturn": {
+        "description": "Description\n\nThe product uses an API function, data structure, or other entity in a way that relies on properties that are not always guaranteed to hold for that entity.",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: 758\nInconclusive: false"
+    }
+}

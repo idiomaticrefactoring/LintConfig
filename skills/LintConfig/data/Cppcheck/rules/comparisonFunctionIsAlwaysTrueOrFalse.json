@@ -1,0 +1,6 @@
+{
+    "comparisonFunctionIsAlwaysTrueOrFalse": {
+        "description": "Description\n\nThe product contains an expression that will always evaluate to false.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 570\nInconclusive: false\nRelated Symbols: isless"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Metrics/ClassLength": {
+        "description": "Description\n\nAvoid classes longer than 100 lines of code.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCountComments: False (type: bool)\nMax: 100 (type: int)\nCountAsOne: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/FormatString": {
+        "description": "Description\n\nEnforce the use of Kernel#sprintf, Kernel#format or String#%.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: format (type: str)\nSupportedStyles: ['format', 'sprintf', 'percent'] (type: list)"
+    }
+}

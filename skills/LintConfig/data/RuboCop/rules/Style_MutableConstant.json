@@ -1,0 +1,6 @@
+{
+    "Style/MutableConstant": {
+        "description": "Description\n\nDo not assign mutable objects to constants.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: literals (type: str)\nSupportedStyles: ['literals', 'strict'] (type: list)"
+    }
+}

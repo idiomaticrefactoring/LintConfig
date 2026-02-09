@@ -1,0 +1,6 @@
+{
+    "Lint/Void": {
+        "description": "Description\n\nPossible use of operator/literal/variable in void context.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nCheckForMethodsWithNoSideEffects: False (type: bool)"
+    }
+}

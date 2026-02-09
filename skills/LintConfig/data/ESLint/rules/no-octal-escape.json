@@ -1,0 +1,6 @@
+{
+    "no-octal-escape": {
+        "description": "Description\n\nThis rule disallows octal escape sequences in string literals.\n\nIf ESLint parses code in strict mode, the parser (instead of this rule) reports the error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-octal-escape: \"error\"*/\n\nconst foo = \"Copyright \\251\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-octal-escape: \"error\"*/\n\nconst foo = \"Copyright \\u00A9\";   // unicode\n\nconst buz = \"Copyright \\xA9\";     // hexadecimal",
+        "option": "This rule has no options."
+    }
+}

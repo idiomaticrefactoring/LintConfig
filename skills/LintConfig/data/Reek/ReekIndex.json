@@ -1,0 +1,134 @@
+{
+    "Attribute": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Attribute.md"
+    },
+    "Class Variable": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Class-Variable.md"
+    },
+    "Control Couple": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Control-Couple.md"
+    },
+    "Boolean Parameter": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Boolean-Parameter.md"
+    },
+    "Control Parameter": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md"
+    },
+    "Data Clump": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Data-Clump.md"
+    },
+    "Duplicate Method Call": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md"
+    },
+    "Instance Variable Assumption": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md"
+    },
+    "Irresponsible Module": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md"
+    },
+    "Large Class": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Large-Class.md"
+    },
+    "Too Many Constants": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Too-Many-Constants.md"
+    },
+    "Too Many Instance Variables": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md"
+    },
+    "Too Many Methods": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Too-Many-Methods.md"
+    },
+    "Long Parameter List": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md"
+    },
+    "Long Yield List": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Long-Yield-List.md"
+    },
+    "Feature Envy": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md"
+    },
+    "Utility Function": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Utility-Function.md"
+    },
+    "Module Initialize": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Module-Initialize.md"
+    },
+    "Nested Iterators": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md"
+    },
+    "Missing Safe Method": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Missing-Safe-Method.md"
+    },
+    "Simulated Polymorphism": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Simulated-Polymorphism.md"
+    },
+    "Manual Dispatch": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Manual-Dispatch.md"
+    },
+    "Nil Check": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Nil-Check.md"
+    },
+    "Repeated Conditional": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Repeated-Conditional.md"
+    },
+    "Subclassed From Core Class": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Subclassed-From-Core-Class.md"
+    },
+    "Too Many Statements": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md"
+    },
+    "Uncommunicative Name": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Name.md"
+    },
+    "Uncommunicative Method Name": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Method-Name.md"
+    },
+    "Uncommunicative Module Name": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Module-Name.md"
+    },
+    "Uncommunicative Parameter Name": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Parameter-Name.md"
+    },
+    "Uncommunicative Variable Name": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md"
+    },
+    "Unused Parameters": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Unused-Parameters.md"
+    },
+    "Unused Private Method": {
+        "description": "Introduction",
+        "url": "https://github.com/troessner/reek/blob/master/docs/Unused-Private-Method.md"
+    }
+}

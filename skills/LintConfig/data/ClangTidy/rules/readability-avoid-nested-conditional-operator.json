@@ -1,0 +1,6 @@
+{
+    "readability-avoid-nested-conditional-operator": {
+        "description": "Description\n\nIdentifies instances of nested conditional operators in the code.\n\nNested conditional operators, also known as ternary operators, can contribute\nto reduced code readability and comprehension. So they should be split as\nseveral statements and stored the intermediate results in temporary variable.\n\nExamples:\n\nint\nNestInConditional\n=\n(\ncondition1\n?\ntrue1\n:\nfalse1\n)\n?\ntrue2\n:\nfalse2\n;\nint\nNestInTrue\n=\ncondition1\n?\n(\ncondition2\n?\ntrue1\n:\nfalse1\n)\n:\nfalse2\n;\nint\nNestInFalse\n=\ncondition1\n?\ntrue1\n:\ncondition2\n?\ntrue2\n:\nfalse1\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/CaseEquality": {
+        "description": "Description\n\nAvoid explicit use of the case equality operator (`===`).",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://docs.rubocop.org/rubocop-performance/cops_performance.html#performanceregexpmatch'] (type: list)\nAllowOnConstant: False (type: bool)\nAllowOnSelfClass: False (type: bool)"
+    }
+}

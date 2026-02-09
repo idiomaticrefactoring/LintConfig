@@ -1,0 +1,6 @@
+{
+    "deallocuse": {
+        "description": "Description\n\nThe product reuses or references memory after it has been freed. At some point afterward, the memory may be allocated again and saved in another pointer, while the original pointer references a location somewhere within the new allocation. Any operations using the original pointer are no longer valid because the memory \"belongs\" to the code that operates on the new pointer.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 416\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

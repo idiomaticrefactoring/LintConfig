@@ -1,0 +1,6 @@
+{
+    "negativeMemoryAllocationSize": {
+        "description": "Description\n\nThe product does not correctly calculate the size to be used when allocating a buffer, which could lead to a buffer overflow.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 131\nInconclusive: false"
+    }
+}

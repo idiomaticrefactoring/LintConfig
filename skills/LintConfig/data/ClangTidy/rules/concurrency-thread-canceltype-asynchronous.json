@@ -1,0 +1,6 @@
+{
+    "concurrency-thread-canceltype-asynchronous": {
+        "description": "Description\n\nFinds\npthread_setcanceltype\nfunction calls where a thread’s cancellation\ntype is set to asynchronous. Asynchronous cancellation type\n(\nPTHREAD_CANCEL_ASYNCHRONOUS\n) is generally unsafe, use type\nPTHREAD_CANCEL_DEFERRED\ninstead which is the default. Even with deferred\ncancellation, a cancellation point in an asynchronous signal handler may still\nbe acted upon and the effect is as if it was an asynchronous cancellation.\n\npthread_setcanceltype\n(\nPTHREAD_CANCEL_ASYNCHRONOUS\n,\n&\noldtype\n);\n\nThis check corresponds to the CERT C Coding Standard rule\nPOS47-C. Do not use threads that can be canceled asynchronously\n.\n\ncert-pos47-c\nredirects here as an alias of this check.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/Documentation": {
+        "description": "Description\n\nDocument classes and non-namespace modules.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedConstants: [] (type: list)"
+    }
+}

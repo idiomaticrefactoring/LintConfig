@@ -1,0 +1,6 @@
+{
+    "Style/TernaryParentheses": {
+        "description": "Description\n\nChecks for use of parentheses around ternary conditions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: require_no_parentheses (type: str)\nSupportedStyles: ['require_parentheses', 'require_no_parentheses', 'require_parentheses_when_complex'] (type: list)\nAllowSafeAssignment: True (type: bool)"
+    }
+}

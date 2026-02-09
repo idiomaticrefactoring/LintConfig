@@ -1,0 +1,38 @@
+{
+    "AvoidReassigningParameters": {
+        "description": "Reassigning values to incoming parameters is not recommended.  Use temporary local variables inst…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_bestpractices.html#avoidreassigningparameters"
+    },
+    "UnusedMacroParameter": {
+        "description": "Avoid unused macro parameters. They should be deleted.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_bestpractices.html#unusedmacroparameter"
+    },
+    "AvoidDeeplyNestedIfStmts": {
+        "description": "Avoid creating deeply nested if-then statements since they are harder to read and error-prone to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_design.html#avoiddeeplynestedifstmts"
+    },
+    "CollapsibleIfStatements": {
+        "description": "Sometimes two consecutive ‘if’ statements can be consolidated by separating their conditions with…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_design.html#collapsibleifstatements"
+    },
+    "ExcessiveTemplateLength": {
+        "description": "The template is too long. It should be broken up into smaller pieces.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_design.html#excessivetemplatelength"
+    },
+    "NoInlineJavaScript": {
+        "description": "Avoid inline JavaScript. Import .js files instead.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_design.html#noinlinejavascript"
+    },
+    "NoInlineStyles": {
+        "description": "Avoid inline styles. Use css classes instead.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_design.html#noinlinestyles"
+    },
+    "EmptyForeachStmt": {
+        "description": "Empty foreach statements should be deleted.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_errorprone.html#emptyforeachstmt"
+    },
+    "EmptyIfStmt": {
+        "description": "Empty if statements should be deleted.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_velocity_errorprone.html#emptyifstmt"
+    }
+}

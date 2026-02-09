@@ -1,0 +1,6 @@
+{
+    "Layout/BlockAlignment": {
+        "description": "Description\n\nAlign block ends correctly.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleAlignWith: either (type: str)\nSupportedStylesAlignWith: ['either', 'start_of_block', 'start_of_line'] (type: list)"
+    }
+}

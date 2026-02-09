@@ -1,0 +1,6 @@
+{
+    "google-readability-todo": {
+        "description": "Description\n\nFinds TODO comments without a username or bug number.\n\nThe relevant style guide section is\nhttps://google.github.io/styleguide/cppguide.html#TODO_Comments\n.\n\nCorresponding cpplint.py check:\nreadability/todo",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStyle\nA string specifying the TODO style for fix-it hints. Accepted values are\nHyphen\nand\nParentheses\n. Default is\nHyphen\n.\nHyphen\nwill format the fix-it as:\n//\nTODO:\nusername\n-\ndetails\n.\nParentheses\nwill format the fix-it as:\n//\nTODO(username):\ndetails\n."
+    }
+}

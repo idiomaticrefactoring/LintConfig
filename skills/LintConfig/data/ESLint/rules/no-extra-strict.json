@@ -1,0 +1,6 @@
+{
+    "no-extra-strict": {
+        "description": "Description\n\nThis rule is aimed at preventing unnecessary\"use strict\";directives. As such, it will warn when it encounters a\"use strict\";directive when already in strict mode.\n\nExample ofincorrectcode for this rule:\n\n\"use strict\";\n\n(function () {\n    \"use strict\";\n    var foo = true;\n}());\n\nExamples ofcorrectcode for this rule:\n\n\"use strict\";\n\n(function () {\n    var foo = true;\n}());\n\n(function () {\n    \"use strict\";\n    var foo = true;\n}());",
+        "option": "This rule has no specific options."
+    }
+}

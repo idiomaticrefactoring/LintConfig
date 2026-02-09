@@ -1,0 +1,6 @@
+{
+    "Naming/PredicatePrefix": {
+        "description": "Description\n\nPredicate method names should not be prefixed and end with a `?`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nNamePrefix: ['is_', 'has_', 'have_', 'does_'] (type: list)\nForbiddenPrefixes: ['is_', 'has_', 'have_', 'does_'] (type: list)\nAllowedMethods: ['is_a?'] (type: list)\nMethodDefinitionMacros: ['define_method', 'define_singleton_method'] (type: list)\nUseSorbetSigs: False (type: bool)"
+    }
+}

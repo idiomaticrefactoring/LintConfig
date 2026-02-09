@@ -1,0 +1,6 @@
+{
+    "Bundler/InsecureProtocolSource": {
+        "description": "Description\n\nThe source `:gemcutter`, `:rubygems` and `:rubyforge` are deprecated because HTTP requests are insecure. Please change your source to 'https://rubygems.org' if possible, or 'http://rubygems.org' if not.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)\nAllowHttpProtocol: True (type: bool)"
+    }
+}

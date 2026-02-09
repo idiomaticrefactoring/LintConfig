@@ -1,0 +1,6 @@
+{
+    "mismatchingBitAnd": {
+        "description": "Description\n\nMismatching bitmasks. Result is always 0 (X = Y & 0xf0; Z = X & 0x1; => Z=0).",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

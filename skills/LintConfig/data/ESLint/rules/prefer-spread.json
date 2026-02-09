@@ -1,0 +1,6 @@
+{
+    "prefer-spread": {
+        "description": "Description\n\nThis rule is aimed to flag usage ofFunction.prototype.apply()in situations where spread syntax could be used instead.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-spread: \"error\"*/\n\nfoo.apply(undefined, args);\nfoo.apply(null, args);\nobj.foo.apply(obj, args);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-spread: \"error\"*/\n\n// Using spread syntax\nfoo(...args);\nobj.foo(...args);\n\n// The `this` binding is different.\nfoo.apply(obj, args);\nobj.foo.apply(null, args);\nobj.foo.apply(otherObj, args);\n\n// The argument list is not variadic.\n// Those are warned by the `no-useless-call` rule.\nfoo.apply(undefined, [1, 2, 3]);\nfoo.apply(null, [1, 2, 3]);\nobj.foo.apply(obj, [1, 2, 3]);",
+        "option": "This rule has no options."
+    }
+}

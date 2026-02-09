@@ -1,0 +1,6 @@
+{
+    "Style/RedundantFileExtensionInRequire": {
+        "description": "Description\n\nChecks for the presence of superfluous `.rb` extension in the filename provided to `require` and `require_relative`.",
+        "option": "This rule has no specific options."
+    }
+}

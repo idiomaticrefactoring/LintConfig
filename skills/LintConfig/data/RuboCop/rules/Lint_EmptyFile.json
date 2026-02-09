@@ -1,0 +1,6 @@
+{
+    "Lint/EmptyFile": {
+        "description": "Description\n\nEnforces that Ruby source files are not empty.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowComments: True (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "performance-noexcept-swap": {
+        "description": "Description\n\nThe check flags user-defined swap and iter_swap functions not marked with\nnoexcept\nor marked with\nnoexcept(expr)\nwhere\nexpr\nevaluates to\nfalse\n(but is not a\nfalse\nliteral itself).\n\nWhen a swap or iter_swap function is marked as\nnoexcept\n, it assures the\ncompiler that no exceptions will be thrown during the swapping of two objects,\nwhich allows the compiler to perform certain optimizations such as omitting\nexception handling code.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

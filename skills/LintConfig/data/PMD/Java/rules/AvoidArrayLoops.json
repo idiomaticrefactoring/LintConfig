@@ -1,0 +1,6 @@
+{
+    "AvoidArrayLoops": {
+        "description": "Description\n\nInstead of manually copying data between two arrays, use the more efficientArrays.copyOforSystem.arraycopymethod instead.\n\nTo copy only part of the array, useArrays.copyOfRangeorSystem.arraycopy.\n\nIf you want to copy/move elements inside thesamearray (e.g. shift the elements), useSystem.arraycopy.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

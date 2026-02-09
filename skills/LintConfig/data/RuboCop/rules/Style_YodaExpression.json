@@ -1,0 +1,6 @@
+{
+    "Style/YodaExpression": {
+        "description": "Description\n\nForbid the use of yoda expressions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSupportedOperators: ['*', '+', '&', '|', '^'] (type: list)"
+    }
+}

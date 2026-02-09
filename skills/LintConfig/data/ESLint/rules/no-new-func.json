@@ -1,0 +1,6 @@
+{
+    "no-new-func": {
+        "description": "Description\n\nThis error is raised to highlight the use of a bad practice. By passing a string to theFunctionconstructor, you are requiring the engine to parse that string much in the way it has to when you call theevalfunction.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-func: \"error\"*/\n\nconst a = new Function(\"a\", \"b\", \"return a + b\");\nconst b = Function(\"a\", \"b\", \"return a + b\");\nconst c = Function.call(null, \"a\", \"b\", \"return a + b\");\nconst d = Function.apply(null, [\"a\", \"b\", \"return a + b\"]);\nconst x = Function.bind(null, \"a\", \"b\", \"return a + b\")();\nconst y = Function.bind(null, \"a\", \"b\", \"return a + b\"); // assuming that the result of Function.bind(...) will be eventually called.\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-func: \"error\"*/\n\nconst x = function (a, b) {\n    return a + b;\n};",
+        "option": "This rule has no options."
+    }
+}

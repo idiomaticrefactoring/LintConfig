@@ -1,0 +1,6 @@
+{
+    "Lint/NoReturnInBeginEndBlocks": {
+        "description": "Description\n\nDo not `return` inside `begin..end` blocks in assignment contexts.",
+        "option": "This rule has no specific options."
+    }
+}

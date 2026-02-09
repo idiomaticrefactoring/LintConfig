@@ -1,0 +1,6 @@
+{
+    "UseCorrectExceptionLogging": {
+        "description": "Description\n\nTo make sure the full stacktrace is printed out, use the logging statement with two arguments: a String and a Throwable.\n\nThis rule only applies toApache Commons Logging.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

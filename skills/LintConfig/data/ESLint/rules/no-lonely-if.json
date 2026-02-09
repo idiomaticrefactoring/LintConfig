@@ -1,0 +1,6 @@
+{
+    "no-lonely-if": {
+        "description": "Description\n\nThis rule disallowsifstatements as the only statement inelseblocks.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-lonely-if: \"error\"*/\n\nif (condition) {\n    // ...\n} else {\n    if (anotherCondition) {\n        // ...\n    }\n}\n\nif (condition) {\n    // ...\n} else {\n    if (anotherCondition) {\n        // ...\n    } else {\n        // ...\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-lonely-if: \"error\"*/\n\nif (condition) {\n    // ...\n} else if (anotherCondition) {\n    // ...\n}\n\nif (condition) {\n    // ...\n} else if (anotherCondition) {\n    // ...\n} else {\n    // ...\n}\n\nif (condition) {\n    // ...\n} else {\n    if (anotherCondition) {\n        // ...\n    }\n    doSomething();\n}",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "objc-avoid-nserror-init": {
+        "description": "Description\n\nFinds improper initialization of\nNSError\nobjects.\n\nAccording to Apple developer document, we should always use factory method\nerrorWithDomain:code:userInfo:\nto create new NSError objects instead\nof\n[NSError\nalloc]\ninit]\n. Otherwise it will lead to a warning message\nduring runtime.\n\nThe corresponding information about\nNSError\ncreation:\nhttps://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/CreateCustomizeNSError/CreateCustomizeNSError.html",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

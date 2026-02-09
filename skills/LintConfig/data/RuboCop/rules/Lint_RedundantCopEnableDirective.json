@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantCopEnableDirective": {
+        "description": "Description\n\nChecks for rubocop:enable comments that can be removed.",
+        "option": "This rule has no specific options."
+    }
+}

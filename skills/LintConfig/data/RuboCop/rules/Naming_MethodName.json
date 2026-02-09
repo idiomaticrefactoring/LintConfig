@@ -1,0 +1,6 @@
+{
+    "Naming/MethodName": {
+        "description": "Description\n\nUse the configured style when naming methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: snake_case (type: str)\nSupportedStyles: ['snake_case', 'camelCase'] (type: list)\nAllowedPatterns: [] (type: list)\nForbiddenIdentifiers: ['__id__', '__send__'] (type: list)\nForbiddenPatterns: [] (type: list)"
+    }
+}

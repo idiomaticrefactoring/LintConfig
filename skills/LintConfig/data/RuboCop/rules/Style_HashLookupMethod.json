@@ -1,0 +1,6 @@
+{
+    "Style/HashLookupMethod": {
+        "description": "Description\n\nEnforces the use of either `Hash#[]` or `Hash#fetch` for hash lookup.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: brackets (type: str)\nSupportedStyles: ['brackets', 'fetch'] (type: list)"
+    }
+}

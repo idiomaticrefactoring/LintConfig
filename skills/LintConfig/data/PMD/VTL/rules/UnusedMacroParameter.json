@@ -1,0 +1,6 @@
+{
+    "UnusedMacroParameter": {
+        "description": "Description\n\nAvoid unused macro parameters. They should be deleted.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

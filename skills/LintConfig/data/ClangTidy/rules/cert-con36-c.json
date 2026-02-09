@@ -1,0 +1,6 @@
+{
+    "cert-con36-c": {
+        "description": "Description\n\nThe\ncert-con36-c\ncheck is an alias, please see\nbugprone-spuriously-wake-up-functions\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

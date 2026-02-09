@@ -1,0 +1,6 @@
+{
+    "llvm-namespace-comment": {
+        "description": "Description\n\ngoogle-readability-namespace-comments\nredirects here as an alias for this\ncheck.\n\nChecks that long namespaces have a closing comment.\n\nhttps://llvm.org/docs/CodingStandards.html#namespace-indentation\n\nhttps://google.github.io/styleguide/cppguide.html#Namespaces\n\nnamespace\nn1\n{\nvoid\nf\n();\n}\n// becomes\nnamespace\nn1\n{\nvoid\nf\n();\n}\n// namespace n1",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nShortNamespaceLines\nRequires the closing brace of the namespace definition to be followed by a\nclosing comment if the body of the namespace has more than\nShortNamespaceLines\nlines of code. The value is an unsigned integer that\ndefaults to\n1U\n.\nSpacesBeforeComments\nAn unsigned integer specifying the number of spaces before the comment\nclosing a namespace definition. Default is\n1U\n.\nAllowOmittingNamespaceComments\nWhen\ntrue\n, the check will accept if no namespace comment is present.\nThe check will only fail if the specified namespace comment is different\nthan expected. Default is\nfalse\n."
+    }
+}

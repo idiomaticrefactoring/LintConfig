@@ -1,0 +1,6 @@
+{
+    "Style/MethodDefParentheses": {
+        "description": "Description\n\nChecks if the method definitions have or don't have parentheses.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: require_parentheses (type: str)\nSupportedStyles: ['require_parentheses', 'require_no_parentheses', 'require_no_parentheses_except_multiline'] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "prefer-promise-reject-errors": {
+        "description": "Description\n\nThis rule aims to ensure that Promises are only rejected withErrorobjects.",
+        "option": "This rule takes one optional object argument:\n\n- allowEmptyReject: true(falseby default) allows calls toPromise.reject()with no arguments.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-promise-reject-errors: \"error\"*/\n\nPromise.reject(\"something bad happened\");\n\nPromise.reject(5);\n\nPromise.reject();\n\nnew Promise(function(resolve, reject) {\n  reject(\"something bad happened\");\n});\n\nnew Promise(function(resolve, reject) {\n  reject();\n});\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-promise-reject-errors: \"error\"*/\n\nPromise.reject(new Error(\"something bad happened\"));\n\nPromise.reject(new TypeError(\"something bad happened\"));\n\nnew Promise(function(resolve, reject) {\n  reject(new Error(\"something bad happened\"));\n});\n\nconst foo = getUnknownValue();\nPromise.reject(foo);\n\nExamples ofcorrectcode for this rule with theallowEmptyReject: trueoption:\n\n/*eslint prefer-promise-reject-errors: [\"error\", {\"allowEmptyReject\": true}]*/\n\nPromise.reject();\n\nnew Promise(function(resolve, reject) {\n  reject();\n});"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/HashLikeCase": {
+        "description": "Description\n\nChecks for places where `case-when` represents a simple 1:1 mapping and can be replaced with a hash lookup.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinBranchesCount: 3 (type: int)"
+    }
+}

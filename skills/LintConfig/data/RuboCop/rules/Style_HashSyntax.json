@@ -1,0 +1,6 @@
+{
+    "Style/HashSyntax": {
+        "description": "Description\n\nPrefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: ruby19 (type: str)\nSupportedStyles: ['ruby19', 'hash_rockets', 'no_mixed_keys', 'ruby19_no_mixed_keys'] (type: list)\nEnforcedShorthandSyntax: either (type: str)\nSupportedShorthandSyntax: ['always', 'never', 'either', 'consistent', 'either_consistent'] (type: list)\nUseHashRocketsWithSymbolValues: False (type: bool)\nPreferHashRocketsForNonAlnumEndingSymbols: False (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidReassigningCatchVariables": {
+        "description": "Description\n\nReassigning exception variables caught in a catch statement should be avoided because of:\n\n1) If it is needed, multi catch can be easily added and code will still compile.\n\n2) Following the principle of least surprise we want to make sure that a variable caught in a catch statement\nis always the one thrown in a try block.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/CircularArgumentReference": {
+        "description": "Description\n\nDefault values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument.",
+        "option": "This rule has no specific options."
+    }
+}

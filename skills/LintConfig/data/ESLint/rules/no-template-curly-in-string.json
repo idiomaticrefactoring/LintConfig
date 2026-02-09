@@ -1,0 +1,6 @@
+{
+    "no-template-curly-in-string": {
+        "description": "Description\n\nThis rule aims to warn when a regular string contains what looks like a template literal placeholder. It will warn when it finds a string containing the template literal placeholder (${something}) that uses either\"or'for the quotes.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-template-curly-in-string: \"error\"*/\n\"Hello ${name}!\";\n'Hello ${name}!';\n\"Time: ${12 * 60 * 60 * 1000}\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-template-curly-in-string: \"error\"*/\n`Hello ${name}!`;\n`Time: ${12 * 60 * 60 * 1000}`;\n\ntemplateFunction`Hello ${name}`;",
+        "option": "This rule has no options."
+    }
+}

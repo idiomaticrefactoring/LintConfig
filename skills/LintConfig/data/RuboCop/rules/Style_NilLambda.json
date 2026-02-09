@@ -1,0 +1,6 @@
+{
+    "Style/NilLambda": {
+        "description": "Description\n\nPrefer `-> {}` to `-> { nil }`.",
+        "option": "This rule has no specific options."
+    }
+}

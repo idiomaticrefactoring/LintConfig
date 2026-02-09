@@ -1,0 +1,6 @@
+{
+    "no-dupe-keys": {
+        "description": "Description\n\nThis rule disallows duplicate keys in object literals.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-dupe-keys: \"error\"*/\n\nconst foo = {\n    bar: \"baz\",\n    bar: \"qux\"\n};\n\nconst bar = {\n    \"bar\": \"baz\",\n    bar: \"qux\"\n};\n\nconst baz = {\n    0x1: \"baz\",\n    1: \"qux\"\n};\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-dupe-keys: \"error\"*/\n\nconst foo = {\n    bar: \"baz\",\n    quxx: \"qux\"\n};\n\nconst obj = {\n    \"__proto__\": baz, // defines object's prototype\n    [\"__proto__\"]: qux // defines a property named \"__proto__\"\n};",
+        "option": "This rule has no options."
+    }
+}

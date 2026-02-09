@@ -1,0 +1,6 @@
+{
+    "InaccessibleAuraEnabledGetter": {
+        "description": "Description\n\nIn the Summer ‘21 release, a mandatory security update enforces access modifiers on Apex properties in\nLightning component markup. The update prevents access to private or protected Apex getters from Aura\nand Lightning Web Components.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

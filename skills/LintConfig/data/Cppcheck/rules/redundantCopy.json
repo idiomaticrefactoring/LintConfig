@@ -1,0 +1,6 @@
+{
+    "redundantCopy": {
+        "description": "Description\n\nThe variable's value is assigned but never used, making it a dead store.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 563\nInconclusive: false\nRelated Symbols: var"
+    }
+}

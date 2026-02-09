@@ -1,0 +1,6 @@
+{
+    "Bundler/GemComment": {
+        "description": "Description\n\nAdd a comment describing each gem.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIgnoredGems: [] (type: list)\nOnlyFor: [] (type: list)"
+    }
+}

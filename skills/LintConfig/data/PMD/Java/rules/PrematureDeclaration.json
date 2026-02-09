@@ -1,0 +1,6 @@
+{
+    "PrematureDeclaration": {
+        "description": "Description\n\nChecks for variables that are defined before they might be used. A declaration is\ndeemed to be premature if there are some statements that may return or throw an\nexception between the time the variable is declared and the time it is first read.\n\nSome variables cannot be declared close to their first usage because of side-effects\noccurring before they’re first used. We try to avoid reporting those by considering\nmost method and constructor invocations to be impure. See the second example.\n\nNote that this rule is meant to improve code readability but is not an optimization.\nA smart JIT will not care whether the variable is declared prematurely or not, as it\ncan reorder code.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/SuppressedExceptionInNumberConversion": {
+        "description": "Description\n\nChecks for cases where exceptions unrelated to the numeric constructors may be unintentionally swallowed.",
+        "option": "This rule has no specific options."
+    }
+}

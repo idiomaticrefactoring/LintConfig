@@ -1,0 +1,6 @@
+{
+    "containerOutOfBounds": {
+        "description": "Description\n\nOut of bounds access in expression 'container[x]'",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 398\nInconclusive: false\nRelated Symbols: container"
+    }
+}

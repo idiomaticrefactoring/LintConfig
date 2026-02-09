@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAroundMethodCallOperator": {
+        "description": "Description\n\nChecks method call operators to not have spaces around them.",
+        "option": "This rule has no specific options."
+    }
+}

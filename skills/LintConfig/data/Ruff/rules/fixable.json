@@ -1,0 +1,6 @@
+{
+    "fixable": {
+        "description": "Description\n\nA list of rule codes or prefixes to consider fixable. By default,\nall rules are considered fixable.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

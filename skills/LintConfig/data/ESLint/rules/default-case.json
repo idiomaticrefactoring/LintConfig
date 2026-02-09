@@ -1,0 +1,6 @@
+{
+    "default-case": {
+        "description": "Description\n\nThis rule aims to requiredefaultcase inswitchstatements. You may optionally include a// no defaultafter the lastcaseif there is nodefaultcase. The comment may be in any desired case, such as// No Default.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint default-case: \"error\"*/\n\nswitch (a) {\n    case 1:\n        /* code */\n        break;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint default-case: \"error\"*/\n\nswitch (a) {\n    case 1:\n        /* code */\n        break;\n\n    default:\n        /* code */\n        break;\n}\n\nswitch (a) {\n    case 1:\n        /* code */\n        break;\n\n    // no default\n}\n\nswitch (a) {\n    case 1:\n        /* code */\n        break;\n\n    // No Default\n}",
+        "option": "This rule accepts a single options argument:\n\n- Set thecommentPatternoption to a regular expression string to change the default/^no default$/icomment test pattern.\n\ncommentPattern\n\nExamples ofcorrectcode for the{ \"commentPattern\": \"^skip\\\\sdefault\" }option:\n\n/*eslint default-case: [\"error\", { \"commentPattern\": \"^skip\\\\sdefault\" }]*/\n\nswitch(a) {\n    case 1:\n        /* code */\n        break;\n\n    // skip default\n}\n\nswitch(a) {\n    case 1:\n        /* code */\n        break;\n\n    // skip default case\n}"
+    }
+}

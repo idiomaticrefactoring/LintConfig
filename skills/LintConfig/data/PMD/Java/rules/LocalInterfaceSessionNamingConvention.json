@@ -1,0 +1,6 @@
+{
+    "LocalInterfaceSessionNamingConvention": {
+        "description": "Description\n\nThe Local Interface of a Session EJB should be suffixed by ‘Local’.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

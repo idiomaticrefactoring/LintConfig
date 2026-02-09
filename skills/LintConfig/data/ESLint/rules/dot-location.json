@@ -1,0 +1,6 @@
+{
+    "dot-location": {
+        "description": "Description\n\nThis rule aims to enforce newline consistency in member expressions. This rule prevents the use of mixed newlines around the dot in a member expression.",
+        "option": "The rule takes one option, a string:\n\n- If it is\"object\"(default), the dot in a member expression should be on the same line as the object portion.\n- If it is\"property\", the dot in a member expression should be on the same line as the property portion.\n\nobject\n\nThe default\"object\"option requires the dot to be on the same line as the object.\n\nExamples ofincorrectcode for the default\"object\"option:\n\n/*eslint dot-location: [\"error\", \"object\"]*/\n\nvar foo = object\n.property;\n\nExamples ofcorrectcode for the default\"object\"option:\n\n/*eslint dot-location: [\"error\", \"object\"]*/\n\nvar foo = object.\nproperty;\n\nvar bar = (\n    object\n).\nproperty;\n\nvar baz = object.property;\n\nproperty\n\nThe\"property\"option requires the dot to be on the same line as the property.\n\nExamples ofincorrectcode for the\"property\"option:\n\n/*eslint dot-location: [\"error\", \"property\"]*/\n\nvar foo = object.\nproperty;\n\nExamples ofcorrectcode for the\"property\"option:\n\n/*eslint dot-location: [\"error\", \"property\"]*/\n\nvar foo = object\n.property;\nvar bar = object.property;"
+    }
+}

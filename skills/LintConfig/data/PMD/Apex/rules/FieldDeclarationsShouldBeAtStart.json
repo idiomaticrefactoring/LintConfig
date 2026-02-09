@@ -1,0 +1,6 @@
+{
+    "FieldDeclarationsShouldBeAtStart": {
+        "description": "Description\n\nField declarations should appear before method declarations within a class.\n\nNote: Since PMD 7.21.0, properties are ignored. This means that fields can appear before\nor after properties (or fields and properties can be mixed) as long as all fields are placed\nbefore the first method declaration.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

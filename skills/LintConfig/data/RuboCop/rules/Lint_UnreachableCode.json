@@ -1,0 +1,6 @@
+{
+    "Lint/UnreachableCode": {
+        "description": "Description\n\nUnreachable code.",
+        "option": "This rule has no specific options."
+    }
+}

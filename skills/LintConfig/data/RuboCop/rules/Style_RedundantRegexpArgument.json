@@ -1,0 +1,6 @@
+{
+    "Style/RedundantRegexpArgument": {
+        "description": "Description\n\nIdentifies places where argument can be replaced from a deterministic regexp to a string.",
+        "option": "This rule has no specific options."
+    }
+}

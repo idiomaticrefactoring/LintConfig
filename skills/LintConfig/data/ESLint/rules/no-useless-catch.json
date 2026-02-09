@@ -1,0 +1,6 @@
+{
+    "no-useless-catch": {
+        "description": "Description\n\nThis rule reportscatchclauses that onlythrowthe caught error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-useless-catch: \"error\"*/\n\ntry {\n  doSomethingThatMightThrow();\n} catch (e) {\n  throw e;\n}\n\ntry {\n  doSomethingThatMightThrow();\n} catch (e) {\n  throw e;\n} finally {\n  cleanUp();\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-useless-catch: \"error\"*/\n\ntry {\n  doSomethingThatMightThrow();\n} catch (e) {\n  doSomethingBeforeRethrow();\n  throw e;\n}\n\ntry {\n  doSomethingThatMightThrow();\n} catch (e) {\n  handleError(e);\n}\n\ntry {\n  doSomethingThatMightThrow();\n} finally {\n  cleanUp();\n}",
+        "option": "This rule has no options."
+    }
+}

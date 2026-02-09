@@ -1,0 +1,6 @@
+{
+    "ClassNamingConventions": {
+        "description": "Description\n\nConfigurable naming conventions for type declarations. This rule reports\ntype declarations which do not match the regex that applies to their\nspecific kind (e.g. enum or interface). Each regex can be configured through\nproperties.\n\nBy default this rule uses the standard Apex naming convention (Pascal case).\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ntestClassPattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to test class names\ninnerClassPattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to inner class names\ninnerInterfacePattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to inner interface names\nabstractClassPattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to abstract class names\nclassPattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to class names\ninterfacePattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to interface names\nenumPattern\t[A-Z][a-zA-Z0-9_]*\tRegex which applies to enum names"
+    }
+}

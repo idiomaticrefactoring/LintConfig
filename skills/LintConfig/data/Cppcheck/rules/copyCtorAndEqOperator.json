@@ -1,0 +1,6 @@
+{
+    "copyCtorAndEqOperator": {
+        "description": "Description\n\nThe class 'class' has 'operator=' but lack of 'copy constructor'.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false\nRelated Symbols: class"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-new-require": {
+        "description": "Description\n\nThis rule aims to eliminate use of thenew requireexpression.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-require: \"error\"*/\n\nvar appHeader = new require('app-header');\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-require: \"error\"*/\n\nvar AppHeader = require('app-header');\nvar appHeader = new AppHeader();",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "InsufficientStringBufferDeclaration": {
+        "description": "Description\n\nFailing to pre-size a StringBuffer or StringBuilder properly could cause it to re-size many times\nduring runtime. This rule attempts to determine the total number the characters that are actually\npassed into StringBuffer.append(), but represents a best guess \"worst case\" scenario. An empty\nStringBuffer/StringBuilder constructor initializes the object to 16 characters. This default\nis assumed if the length of the constructor can not be determined.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

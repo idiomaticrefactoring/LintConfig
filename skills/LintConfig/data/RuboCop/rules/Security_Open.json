@@ -1,0 +1,6 @@
+{
+    "Security/Open": {
+        "description": "Description\n\nThe use of `Kernel#open` and `URI.open` represent a serious security risk.",
+        "option": "This rule has no specific options."
+    }
+}

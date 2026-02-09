@@ -1,0 +1,6 @@
+{
+    "android-cloexec-open": {
+        "description": "Description\n\nA common source of security bugs is code that opens a file without using the\nO_CLOEXEC\nflag. Without that flag, an opened sensitive file would remain\nopen across a fork+exec to a lower-privileged SELinux domain, leaking that\nsensitive data. Open-like functions including\nopen()\n,\nopenat()\n, and\nopen64()\nshould include\nO_CLOEXEC\nin their flags argument.\n\nExamples:\n\nopen\n(\n\"filename\"\n,\nO_RDWR\n);\nopen64\n(\n\"filename\"\n,\nO_RDWR\n);\nopenat\n(\n0\n,\n\"filename\"\n,\nO_RDWR\n);\n// becomes\nopen\n(\n\"filename\"\n,\nO_RDWR\n|\nO_CLOEXEC\n);\nopen64\n(\n\"filename\"\n,\nO_RDWR\n|\nO_CLOEXEC\n);\nopenat\n(\n0\n,\n\"filename\"\n,\nO_RDWR\n|\nO_CLOEXEC\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

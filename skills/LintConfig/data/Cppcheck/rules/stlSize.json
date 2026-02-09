@@ -1,0 +1,6 @@
+{
+    "stlSize": {
+        "description": "Description\n\nChecking for 'list' emptiness might be inefficient. Using list.empty() instead of list.size() can be faster. list.size() can take linear time but list.empty() is guaranteed to take constant time.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: false\nRelated Symbols: list"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/FormatParameterMismatch": {
+        "description": "Description\n\nThe number of parameters to format/sprint must match the fields.",
+        "option": "This rule has no specific options."
+    }
+}

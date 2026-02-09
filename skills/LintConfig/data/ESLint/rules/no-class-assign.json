@@ -1,0 +1,6 @@
+{
+    "no-class-assign": {
+        "description": "Description\n\nThis rule is aimed to flag modifying variables of class declarations.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-class-assign: \"error\"*/\n\nclass A { }\nA = 0;\n\n/*eslint no-class-assign: \"error\"*/\n\nA = 0;\nclass A { }\n\n/*eslint no-class-assign: \"error\"*/\n\nclass A {\n    b() {\n        A = 0;\n    }\n}\n\n/*eslint no-class-assign: \"error\"*/\n\nlet A = class A {\n    b() {\n        A = 0;\n        // `let A` is shadowed by the class name.\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-class-assign: \"error\"*/\n\nlet A = class A { }\nA = 0; // A is a variable.\n\n/*eslint no-class-assign: \"error\"*/\n\nlet A = class {\n    b() {\n        A = 0; // A is a variable.\n    }\n}\n\n/*eslint no-class-assign: 2*/\n\nclass A {\n    b(A) {\n        A = 0; // A is a parameter.\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

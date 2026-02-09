@@ -1,0 +1,6 @@
+{
+    "Style/Not": {
+        "description": "Description\n\nUse ! instead of not.",
+        "option": "This rule has no specific options."
+    }
+}

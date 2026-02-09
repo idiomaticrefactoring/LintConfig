@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-core.StackAddressEscape": {
+        "description": "Description\n\nclang-analyzer-core.StackAddressEscape\nCheck that addresses to stack memory do not escape the function.\nThe\nclang-analyzer-core.StackAddressEscape\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "AvoidInlineStyles": {
+        "description": "Don’t mix content and style. Use separate CSS-files for the style and introduce classes. This hel…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_html_bestpractices.html#avoidinlinestyles"
+    },
+    "UnnecessaryTypeAttribute": {
+        "description": "In HTML5 the explicit type attribute for link and script elements is not needed. Modern browsers …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_html_bestpractices.html#unnecessarytypeattribute"
+    },
+    "UseAltAttributeForImages": {
+        "description": "Always use an \"alt\" attribute for images. This provides an alternative text and is extensively us…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_html_bestpractices.html#usealtattributeforimages"
+    }
+}

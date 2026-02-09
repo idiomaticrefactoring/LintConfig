@@ -1,0 +1,6 @@
+{
+    "no-process-exit": {
+        "description": "Description\n\nThis rule aims to prevent the use ofprocess.exit()in Node.js JavaScript. As such, it warns wheneverprocess.exit()is found in code.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-process-exit: \"error\"*/\n\nprocess.exit(1);\nprocess.exit(0);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-process-exit: \"error\"*/\n\nProcess.exit();\nvar exit = process.exit;",
+        "option": "This rule has no specific options."
+    }
+}

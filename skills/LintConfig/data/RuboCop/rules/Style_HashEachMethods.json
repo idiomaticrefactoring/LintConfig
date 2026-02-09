@@ -1,0 +1,6 @@
+{
+    "Style/HashEachMethods": {
+        "description": "Description\n\nUse Hash#each_key and Hash#each_value.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedReceivers: ['Thread.current'] (type: list)"
+    }
+}

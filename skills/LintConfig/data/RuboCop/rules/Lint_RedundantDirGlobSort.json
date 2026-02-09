@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantDirGlobSort": {
+        "description": "Description\n\nChecks for redundant `sort` method to `Dir.glob` and `Dir[]`.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "stlOutOfBounds": {
+        "description": "Description\n\nThe product reads or writes to a buffer using an index or pointer that references a memory location after the end of the buffer.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 788\nInconclusive: false\nRelated Symbols: foo"
+    }
+}

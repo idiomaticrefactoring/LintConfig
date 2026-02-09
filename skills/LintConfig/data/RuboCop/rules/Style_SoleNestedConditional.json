@@ -1,0 +1,6 @@
+{
+    "Style/SoleNestedConditional": {
+        "description": "Description\n\nFinds sole nested conditional nodes which can be merged into outer conditional node.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowModifier: False (type: bool)"
+    }
+}

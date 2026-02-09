@@ -1,0 +1,6 @@
+{
+    "Style/OpenStructUse": {
+        "description": "Description\n\nAvoid using OpenStruct. As of Ruby 3.0, use is officially discouraged due to performance, version compatibility, and potential security issues.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://docs.ruby-lang.org/en/3.0/OpenStruct.html#class-OpenStruct-label-Caveats'] (type: list)"
+    }
+}

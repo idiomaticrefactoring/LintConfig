@@ -1,0 +1,6 @@
+{
+    "Style/AccessorGrouping": {
+        "description": "Description\n\nChecks for grouping of accessors in `class` and `module` bodies.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: grouped (type: str)\nSupportedStyles: ['separated', 'grouped'] (type: list)"
+    }
+}

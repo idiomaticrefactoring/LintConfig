@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAfterComma": {
+        "description": "Description\n\nUse spaces after commas.",
+        "option": "This rule has no specific options."
+    }
+}

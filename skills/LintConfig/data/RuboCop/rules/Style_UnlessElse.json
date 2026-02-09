@@ -1,0 +1,6 @@
+{
+    "Style/UnlessElse": {
+        "description": "Description\n\nDo not use unless with else. Rewrite these with the positive case first.",
+        "option": "This rule has no specific options."
+    }
+}

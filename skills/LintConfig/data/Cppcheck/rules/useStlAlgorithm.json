@@ -1,0 +1,6 @@
+{
+    "useStlAlgorithm": {
+        "description": "Description\n\nConsider using  algorithm instead of a raw loop.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

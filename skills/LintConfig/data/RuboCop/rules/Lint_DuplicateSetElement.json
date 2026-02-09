@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateSetElement": {
+        "description": "Description\n\nChecks for duplicate elements in Set.",
+        "option": "This rule has no specific options."
+    }
+}

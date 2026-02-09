@@ -1,0 +1,6 @@
+{
+    "abseil-time-comparison": {
+        "description": "Description\n\nPrefer comparisons in the\nabsl::Time\ndomain instead of the integer domain.\n\nN.B.: In cases where an\nabsl::Time\nis being converted to an integer,\nalignment may occur. If the comparison depends on this alignment, doing the\ncomparison in the\nabsl::Time\ndomain may yield a different result. In\npractice this is very rare, and still indicates a bug which should be fixed.\n\nExamples:\n\n// Original - Comparison in the integer domain\nint\nx\n;\nabsl\n::\nTime\nt\n;\nif\n(\nx\n<\nabsl\n::\nToUnixSeconds\n(\nt\n))\n...\n// Suggested - Compare in the absl::Time domain instead\nif\n(\nabsl\n::\nFromUnixSeconds\n(\nx\n)\n<\nt\n)\n...",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

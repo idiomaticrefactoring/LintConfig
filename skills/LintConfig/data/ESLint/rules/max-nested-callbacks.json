@@ -1,0 +1,6 @@
+{
+    "max-nested-callbacks": {
+        "description": "Description\n\nThis rule enforces a maximum depth that callbacks can be nested to increase code clarity.",
+        "option": "This rule has a number or object option:\n\n- \"max\"(default10) enforces a maximum depth that callbacks can be nested\n\nDeprecated:The object propertymaximumis deprecated; please use the object propertymaxinstead.\n\nmax\n\nExamples ofincorrectcode for this rule with the{ \"max\": 3 }option:\n\n/*eslint max-nested-callbacks: [\"error\", 3]*/\n\nfoo1(function() {\n    foo2(function() {\n        foo3(function() {\n            foo4(function() {\n                // Do something\n            });\n        });\n    });\n});\n\nExamples ofcorrectcode for this rule with the{ \"max\": 3 }option:\n\n/*eslint max-nested-callbacks: [\"error\", 3]*/\n\nfoo1(handleFoo1);\n\nfunction handleFoo1() {\n    foo2(handleFoo2);\n}\n\nfunction handleFoo2() {\n    foo3(handleFoo3);\n}\n\nfunction handleFoo3() {\n    foo4(handleFoo4);\n}\n\nfunction handleFoo4() {\n    foo5();\n}"
+    }
+}

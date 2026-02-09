@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-type-union-access": {
+        "description": "Description\n\nThis check flags all access to members of unions. Passing unions as a whole is\nnot flagged.\n\nReading from a union member assumes that member was the last one written, and\nwriting to a union member assumes another member with a nontrivial destructor\nhad its destructor called. This is fragile because it cannot generally be\nenforced to be safe in the language and so relies on programmer discipline to\nget it right.\n\nThis rule is part of the\nType safety (Type.7)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

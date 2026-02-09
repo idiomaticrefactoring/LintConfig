@@ -1,0 +1,6 @@
+{
+    "no-func-assign": {
+        "description": "Description\n\nThis rule disallows reassigningfunctiondeclarations.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-func-assign: \"error\"*/\n\nfunction foo() {}\nfoo = bar;\n\nfunction baz() {\n    baz = bar;\n}\n\nlet a = function hello() {\n  hello = 123;\n};\n\nExamples ofincorrectcode for this rule, unlike the corresponding rule in JSHint:\n\n/*eslint no-func-assign: \"error\"*/\n\nfoo = bar;\nfunction foo() {}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-func-assign: \"error\"*/\n\nlet foo = function () {}\nfoo = bar;\n\nfunction baz(baz) { // `baz` is shadowed.\n    baz = bar;\n}\n\nfunction qux() {\n    const qux = bar;  // `qux` is shadowed.\n}",
+        "option": "This rule has no options."
+    }
+}

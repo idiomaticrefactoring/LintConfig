@@ -1,0 +1,6 @@
+{
+    "openmp-exception-escape": {
+        "description": "Description\n\nAnalyzes OpenMP Structured Blocks and checks that no exception escapes\nout of the Structured Block it was thrown in.\n\nAs per the OpenMP specification, a structured block is an executable statement,\npossibly compound, with a single entry at the top and a single exit at the\nbottom. Which means,\nthrow\nmay not be used to ‘exit’ out of the\nstructured block. If an exception is not caught in the same structured block\nit was thrown in, the behavior is undefined.\n\nFIXME: this check does not model SEH,\nsetjmp\n/\nlongjmp\n.\n\nWARNING! This check may be expensive on large source files.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoredExceptions\nComma-separated list containing type names which are not counted as thrown\nexceptions in the check. Default value is an empty string."
+    }
+}

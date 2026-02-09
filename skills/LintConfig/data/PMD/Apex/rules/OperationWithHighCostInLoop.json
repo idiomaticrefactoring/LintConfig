@@ -1,0 +1,6 @@
+{
+    "OperationWithHighCostInLoop": {
+        "description": "Description\n\nThis rule finds method calls inside loops that are known to be likely a performance issue. These methods should be\ncalled only once before the loop.\n\nSchema class methods likeSchema.getGlobalDescribe()andSchema.describeSObjects()might be slow depending on the size of your organization. Calling these methods repeatedly inside a loop creates\na potential performance issue.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

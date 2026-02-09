@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceBeforeBrackets": {
+        "description": "Description\n\nChecks for receiver with a space before the opening brackets.",
+        "option": "This rule has no specific options."
+    }
+}

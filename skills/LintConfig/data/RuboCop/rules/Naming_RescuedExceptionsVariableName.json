@@ -1,0 +1,6 @@
+{
+    "Naming/RescuedExceptionsVariableName": {
+        "description": "Description\n\nUse consistent rescued exceptions variables naming.",
+        "option": "This rule supports the following parameters in your configuration:\n\nPreferredName: e (type: str)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "JUnit4TestShouldUseAfterAnnotation": {
+        "description": "Description\n\nDeprecated\n\nThis rule has been renamed. Use instead:UnitTestShouldUseAfterAnnotation\n\nDeprecated\n\nThis rule detects methods calledtearDown()that are not properly annotated as a cleanup method.\nThis is primarily intended to assist in upgrading from JUnit 3, where tear down methods were required to be calledtearDown().\nTo a lesser extent, this may help detect omissions even under newer JUnit versions or under TestNG,\nas long as you are following this convention to name the methods.\n\nNote: This rule was named JUnit4TestShouldUseAfterAnnotation before PMD 7.7.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

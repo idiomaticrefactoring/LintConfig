@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceBeforeComma": {
+        "description": "Description\n\nNo spaces before commas.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/ImplicitRuntimeError": {
+        "description": "Description\n\nUse `raise` or `fail` with an explicit exception class and message, rather than just a message.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/MultipleComparison": {
+        "description": "Description\n\nUse `&&` operator to compare multiple values.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "class_X_Y": {
+        "description": "Description\n\nThe code '   ' is not handled. You can use -I or --include to add handling of this code.",
+        "option": "Static analysis does not have options.\n\nSeverity: information\nCWE: N/A\nInconclusive: false"
+    }
+}

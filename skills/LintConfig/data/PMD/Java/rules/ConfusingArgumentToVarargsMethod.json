@@ -1,0 +1,6 @@
+{
+    "ConfusingArgumentToVarargsMethod": {
+        "description": "Description\n\nReports a confusing argument passed to a varargs method.\n\nThis can occur when an array is passed as a single varargs argument, when the array type is not exactly the\ntype of array that the varargs method expects. If, that array is a subtype of the component type of the expected\narray type, then it might not be clear what value the called varargs method will receive.\nFor instance if you have:\n\nand call it like so:\n\nit is not clear whether you intended the method to receive the valuenew Object[]{ new String[] {\"a\"} }or\njustnew String[] {\"a\"}(the latter happens). This confusion occurs becauseString[]is both a subtype\nofObject[]and ofObject. To clarify your intent in this case, use a cast or pass individual elements like so:\n\nAnother confusing case is when you passnullas the varargs argument. Here it is not clear whether you intended\nto pass an array with a single null element, or a null array (the latter happens). This can similarly be clarified\nwith a cast.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

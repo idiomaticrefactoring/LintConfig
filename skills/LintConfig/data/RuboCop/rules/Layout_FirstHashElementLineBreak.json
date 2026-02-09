@@ -1,0 +1,6 @@
+{
+    "Layout/FirstHashElementLineBreak": {
+        "description": "Description\n\nChecks for a line break before the first element in a multi-line hash.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultilineFinalElement: False (type: bool)"
+    }
+}

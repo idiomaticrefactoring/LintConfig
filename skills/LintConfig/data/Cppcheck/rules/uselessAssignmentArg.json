@@ -1,0 +1,6 @@
+{
+    "uselessAssignmentArg": {
+        "description": "Description\n\nAssignment of function parameter has no effect outside the function.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

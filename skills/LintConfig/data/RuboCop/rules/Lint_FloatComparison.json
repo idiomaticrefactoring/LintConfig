@@ -1,0 +1,6 @@
+{
+    "Lint/FloatComparison": {
+        "description": "Description\n\nChecks for the presence of precise comparison of floating point numbers.",
+        "option": "This rule has no specific options."
+    }
+}

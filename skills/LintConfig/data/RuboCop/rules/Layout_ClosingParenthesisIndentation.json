@@ -1,0 +1,6 @@
+{
+    "Layout/ClosingParenthesisIndentation": {
+        "description": "Description\n\nChecks the indentation of hanging closing parentheses.",
+        "option": "This rule has no specific options."
+    }
+}

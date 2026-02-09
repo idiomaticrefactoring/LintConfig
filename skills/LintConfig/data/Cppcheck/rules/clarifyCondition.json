@@ -1,0 +1,6 @@
+{
+    "clarifyCondition": {
+        "description": "Description\n\nSuspicious condition (assignment + comparison); Clarify expression with parentheses.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

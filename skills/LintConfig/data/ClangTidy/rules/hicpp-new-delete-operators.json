@@ -1,0 +1,6 @@
+{
+    "hicpp-new-delete-operators": {
+        "description": "Description\n\nThis check is an alias for\nmisc-new-delete-overloads\n.\nImplements\nrule 12.3.1\nto ensure\nthe\nnew\nand\ndelete\noperators have the correct signature.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

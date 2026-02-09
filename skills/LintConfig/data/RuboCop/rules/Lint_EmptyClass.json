@@ -1,0 +1,6 @@
+{
+    "Lint/EmptyClass": {
+        "description": "Description\n\nChecks for classes and metaclasses without a body.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowComments: False (type: bool)"
+    }
+}

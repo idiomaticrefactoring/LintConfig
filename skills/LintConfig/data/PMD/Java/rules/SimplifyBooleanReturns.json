@@ -1,0 +1,6 @@
+{
+    "SimplifyBooleanReturns": {
+        "description": "Description\n\nAvoid unnecessary if-then-else statements when returning a boolean. The result of\nthe conditional test can be returned instead.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "unreachableCode": {
+        "description": "Description\n\nThe product contains dead code, which can never be executed.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 561\nInconclusive: false"
+    }
+}

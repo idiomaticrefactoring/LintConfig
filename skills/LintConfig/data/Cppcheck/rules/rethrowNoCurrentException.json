@@ -1,0 +1,6 @@
+{
+    "rethrowNoCurrentException": {
+        "description": "Description\n\nThe product accidentally uses the wrong operator, which changes the logic in security-relevant ways.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 480\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-nested-ternary": {
+        "description": "Description\n\nTheno-nested-ternaryrule disallows nested ternary expressions.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-nested-ternary: \"error\"*/\n\nconst thing = foo ? bar : baz === qux ? quxx : foobar;\n\nfoo ? baz === qux ? quxx() : foobar() : bar();\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-nested-ternary: \"error\"*/\n\nconst thing = foo ? bar : foobar;\n\nlet otherThing;\n\nif (foo) {\n  otherThing = bar;\n} else if (baz === qux) {\n  otherThing = quxx;\n} else {\n  otherThing = foobar;\n}",
+        "option": "This rule has no options."
+    }
+}

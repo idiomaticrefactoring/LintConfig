@@ -1,0 +1,6 @@
+{
+    "performance-type-promotion-in-math-fn": {
+        "description": "Description\n\nFinds calls to C math library functions (from\nmath.h\nor, in C++,\ncmath\n)\nwith implicit\nfloat\nto\ndouble\npromotions.\n\nFor example, warns on\n::sin(0.f)\n, because this function’s parameter is a\ndouble. You probably meant to call\nstd::sin(0.f)\n(in C++), or\nsinf(0.f)\n(in C).\n\nfloat\na\n;\nasin\n(\na\n);\n// becomes\nfloat\na\n;\nstd\n::\nasin\n(\na\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

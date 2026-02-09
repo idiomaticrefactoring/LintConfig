@@ -1,0 +1,6 @@
+{
+    "Style/PercentQLiterals": {
+        "description": "Description\n\nChecks if uses of %Q/%q match the configured preference.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: lower_case_q (type: str)\nSupportedStyles: ['lower_case_q', 'upper_case_q'] (type: list)"
+    }
+}

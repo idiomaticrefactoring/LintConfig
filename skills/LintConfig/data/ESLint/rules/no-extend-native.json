@@ -1,0 +1,6 @@
+{
+    "no-extend-native": {
+        "description": "Description\n\nDisallows directly modifying the prototype of builtin objects.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-extend-native: \"error\"*/\n\nObject.prototype.a = \"a\";\nObject.defineProperty(Array.prototype, \"times\", { value: 999 });",
+        "option": "This rule accepts anexceptionsoption, which can be used to specify a list of builtins for which extensions will be allowed.\n\nexceptions\n\nExamples ofcorrectcode for the sample{ \"exceptions\": [\"Object\"] }option:\n\n/*eslint no-extend-native: [\"error\", { \"exceptions\": [\"Object\"] }]*/\n\nObject.prototype.a = \"a\";"
+    }
+}

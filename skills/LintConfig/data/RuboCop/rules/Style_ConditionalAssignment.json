@@ -1,0 +1,6 @@
+{
+    "Style/ConditionalAssignment": {
+        "description": "Description\n\nUse the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: assign_to_condition (type: str)\nSupportedStyles: ['assign_to_condition', 'assign_inside_condition'] (type: list)\nSingleLineConditionsOnly: True (type: bool)\nIncludeTernaryExpressions: True (type: bool)"
+    }
+}

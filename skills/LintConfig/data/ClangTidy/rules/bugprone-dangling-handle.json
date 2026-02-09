@@ -1,0 +1,6 @@
+{
+    "bugprone-dangling-handle": {
+        "description": "Description\n\nDetect dangling references in value handles like\nstd::string_view\n.\nThese dangling references can be a result of constructing handles from\ntemporary values, where the temporary is destroyed soon after the handle\nis created.\n\nExamples:\n\nstring_view\nView\n=\nstring\n();\n// View will dangle.\nstring\nA\n;\nView\n=\nA\n+\n\"A\"\n;\n// still dangle.\nvector\n<\nstring_view\n>\nV\n;\nV\n.\npush_back\n(\nstring\n());\n// V[0] is dangling.\nV\n.\nresize\n(\n3\n,\nstring\n());\n// V[1] and V[2] will also dangle.\nstring_view\nf\n()\n{\n// All these return values will dangle.\nreturn\nstring\n();\nstring\nS\n;\nreturn\nS\n;\nchar\nArray\n[\n10\n]{};\nreturn\nArray\n;\n}\nspan\n<\nint\n>\ng\n()\n{\narray\n<\nint\n,\n1\n>\nV\n;\nreturn\n{\nV\n};\nint\nArray\n[\n10\n]{};\nreturn\n{\nArray\n};\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nHandleClasses\nA semicolon-separated list of class names that should be treated as handles.\nBy default only\nstd::basic_string_view\n,\nstd::experimental::basic_string_view\nand\nstd::span\nare considered."
+    }
+}

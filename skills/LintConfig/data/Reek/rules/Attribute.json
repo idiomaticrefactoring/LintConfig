@@ -1,0 +1,6 @@
+{
+    "Attribute": {
+        "description": "Description\n\nIntroduction\n\nA class that publishes a setter for an instance variable invites\nclient classes to become too intimate with its inner workings, and in\nparticular with its representation of state.\n\nThe same holds to a lesser extent for getters, but Reek doesn't flag those.\n\nExample\n\nGiven:\n\nruby\nclass Klass\n  attr_accessor :dummy\nend\n\nReek would emit the following warning:\n\n```\nreek test.rb\n\ntest.rb -- 1 warning:\n  [2]:Attribute: Klass#dummy is a writable attribute\n```\n\nSupport in Reek\n\nThis detector raises a warning for every public attr_writer,\nattr_accessor, and attr with the writable flag set to true.\n\nReek does not raise warnings for read-only attributes.",
+        "option": "Attribute supports only the Basic Smell Options."
+    }
+}

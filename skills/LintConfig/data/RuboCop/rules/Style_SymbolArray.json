@@ -1,0 +1,6 @@
+{
+    "Style/SymbolArray": {
+        "description": "Description\n\nUse %i or %I for arrays of symbols.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: percent (type: str)\nMinSize: 2 (type: int)\nSupportedStyles: ['percent', 'brackets'] (type: list)"
+    }
+}

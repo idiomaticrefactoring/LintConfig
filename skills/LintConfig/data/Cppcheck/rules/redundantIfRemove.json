@@ -1,0 +1,6 @@
+{
+    "redundantIfRemove": {
+        "description": "Description\n\nRedundant checking of STL container element existence before removing it. It is safe to call the remove method on a non-existing element.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

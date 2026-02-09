@@ -1,0 +1,6 @@
+{
+    "NoInlineScript": {
+        "description": "Description\n\nAvoid inlining HTML script content.  Consider externalizing the HTML script using the ‘src’ attribute on the \"script\" element.\nExternalized script could be reused between pages.  Browsers can also cache the script, reducing overall download bandwidth.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

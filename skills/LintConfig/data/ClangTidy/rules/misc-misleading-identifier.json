@@ -1,0 +1,6 @@
+{
+    "misc-misleading-identifier": {
+        "description": "Description\n\nFinds identifiers that contain Unicode characters with right-to-left direction,\nwhich can be confusing as they may change the understanding of a whole\nstatement line, as described in\nTrojan Source\n.\n\nAn example of such misleading code follows:\n\n#include <stdio.h>\nshort int א = (short int)0;\nshort int ג = (short int)12345;\nint main() {\nint א = ג; // a local variable, set to zero?\nprintf(\"ג is %d\\n\", ג);\nprintf(\"א is %d\\n\", א);\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

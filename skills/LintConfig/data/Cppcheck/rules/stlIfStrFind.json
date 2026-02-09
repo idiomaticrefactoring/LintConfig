@@ -1,0 +1,6 @@
+{
+    "stlIfStrFind": {
+        "description": "Description\n\nThe product uses the wrong operator when comparing a string, such as using \"==\" when the .equals() method should be used instead.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 597\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cert-dcl54-cpp": {
+        "description": "Description\n\nThe\ncert-dcl54-cpp\ncheck is an alias, please see\nmisc-new-delete-overloads\nfor more\ninformation.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

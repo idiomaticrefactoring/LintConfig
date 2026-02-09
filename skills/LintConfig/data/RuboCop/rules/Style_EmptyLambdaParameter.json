@@ -1,0 +1,6 @@
+{
+    "Style/EmptyLambdaParameter": {
+        "description": "Description\n\nOmit parens for empty lambda parameters.",
+        "option": "This rule has no specific options."
+    }
+}

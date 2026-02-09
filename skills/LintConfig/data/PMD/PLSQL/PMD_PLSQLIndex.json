@@ -1,0 +1,90 @@
+{
+    "TomKytesDespair": {
+        "description": "\"WHEN OTHERS THEN NULL\" hides all errors - (Re)RAISE an exception or call RAISE_APPLICATION_ERROR",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_bestpractices.html#tomkytesdespair"
+    },
+    "AvoidTabCharacter": {
+        "description": "This rule checks, that there are no tab characters (‘\\t’) in the source file. It reports only the…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_codestyle.html#avoidtabcharacter"
+    },
+    "CodeFormat": {
+        "description": "This rule verifies that the PLSQL code is properly formatted. The following checks are executed: …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_codestyle.html#codeformat"
+    },
+    "ForLoopNaming": {
+        "description": "In case you have loops please name the loop variables more meaningful.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_codestyle.html#forloopnaming"
+    },
+    "LineLength": {
+        "description": "This rule checks for long lines. Please note that comments are not ignored. This rule is the PMD …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_codestyle.html#linelength"
+    },
+    "MisplacedPragma": {
+        "description": "Oracle states that the PRAQMA AUTONOMOUS_TRANSACTION must be in the declaration block,           …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_codestyle.html#misplacedpragma"
+    },
+    "CyclomaticComplexity": {
+        "description": "Complexity directly affects maintenance costs is determined by the number of decision points in a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#cyclomaticcomplexity"
+    },
+    "ExcessiveMethodLength": {
+        "description": "DeprecatedWhen methods are excessively long this usually indicates that the method is doing more than its n…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessivemethodlength"
+    },
+    "ExcessiveObjectLength": {
+        "description": "DeprecatedExcessive object line lengths are usually indications that the object may be burdened with excess…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessiveobjectlength"
+    },
+    "ExcessivePackageBodyLength": {
+        "description": "DeprecatedExcessive class file lengths are usually indications that the class may be burdened with excessiv…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessivepackagebodylength"
+    },
+    "ExcessivePackageSpecificationLength": {
+        "description": "DeprecatedExcessive class file lengths are usually indications that the class may be burdened with excessiv…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessivepackagespecificationlength"
+    },
+    "ExcessiveParameterList": {
+        "description": "Methods with numerous parameters are a challenge to maintain, especially if most of them share th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessiveparameterlist"
+    },
+    "ExcessiveTypeLength": {
+        "description": "DeprecatedExcessive class file lengths are usually indications that the class may be burdened with excessiv…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#excessivetypelength"
+    },
+    "NcssCount": {
+        "description": "This rule uses the NCSS (Non-Commenting Source Statements) metric to determine the number of line…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#ncsscount"
+    },
+    "NcssMethodCount": {
+        "description": "DeprecatedThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of l…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#ncssmethodcount"
+    },
+    "NcssObjectCount": {
+        "description": "DeprecatedThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of l…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#ncssobjectcount"
+    },
+    "NPathComplexity": {
+        "description": "The NPath complexity of a method is the number of acyclic execution paths through that method. A …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#npathcomplexity"
+    },
+    "TooManyFields": {
+        "description": "Classes that have too many fields can become unwieldy and could be redesigned to have fewer field…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#toomanyfields"
+    },
+    "TooManyMethods": {
+        "description": "A package or type with too many methods is probably a good suspect for refactoring, in order to r…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_design.html#toomanymethods"
+    },
+    "TO_DATE_TO_CHAR": {
+        "description": "TO_DATE(TO_CHAR(date-variable)) used to remove time component - use TRUNC(date-variable)",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_errorprone.html#to_date_to_char"
+    },
+    "TO_DATEWithoutDateFormat": {
+        "description": "TO_DATE without date format- use TO_DATE(expression, date-format)",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_errorprone.html#to_datewithoutdateformat"
+    },
+    "TO_TIMESTAMPWithoutDateFormat": {
+        "description": "TO_TIMESTAMP without date format- use TO_TIMESTAMP(expression, date-format)",
+        "url": "https://pmd.github.io/pmd/pmd_rules_plsql_errorprone.html#to_timestampwithoutdateformat"
+    }
+}

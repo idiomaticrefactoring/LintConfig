@@ -1,0 +1,6 @@
+{
+    "Style/SelfAssignment": {
+        "description": "Description\n\nChecks for places where self-assignment shorthand should have been used.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Gemspec/RequiredRubyVersion": {
+        "description": "Description\n\nChecks that `required_ruby_version` of gemspec is specified and equal to `TargetRubyVersion` of .rubocop.yml.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)"
+    }
+}

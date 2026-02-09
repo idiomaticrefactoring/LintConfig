@@ -1,0 +1,6 @@
+{
+    "Style/EachWithObject": {
+        "description": "Description\n\nPrefer `each_with_object` over `inject` or `reduce`.",
+        "option": "This rule has no specific options."
+    }
+}

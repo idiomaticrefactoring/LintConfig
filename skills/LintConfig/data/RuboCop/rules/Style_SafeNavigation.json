@@ -1,0 +1,6 @@
+{
+    "Style/SafeNavigation": {
+        "description": "Description\n\nTransforms usages of a method call safeguarded by a check for the existence of the object to safe navigation (`&.`). Autocorrection is unsafe as it assumes the object will be `nil` or truthy, but never `false`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nConvertCodeThatCanStartToReturnNil: False (type: bool)\nAllowedMethods: ['present?', 'blank?', 'presence', 'try', 'try!'] (type: list)\nMaxChainLength: 2 (type: int)"
+    }
+}

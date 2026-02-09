@@ -1,0 +1,6 @@
+{
+    "required-version": {
+        "description": "Description\n\nEnforce a requirement on the version of Ruff, to enforce at runtime.\nIf the version of Ruff does not meet the requirement, Ruff will exit\nwith an error.\n\nUseful for unifying results across many environments, e.g., with a\n`pyproject.toml` file.\n\nAccepts a [PEP 440](https://peps.python.org/pep-0440/) specifier, like `==0.3.1` or `>=0.3.1`.",
+        "option": "Type: RequiredVersion/null"
+    }
+}

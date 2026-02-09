@@ -1,0 +1,6 @@
+{
+    "llvm-twine-local": {
+        "description": "Description\n\nLooks for local\nTwine\nvariables which are prone to use after frees and\nshould be generally avoided.\n\nstatic\nTwine\nMoo\n=\nTwine\n(\n\"bark\"\n)\n+\n\"bah\"\n;\n// becomes\nstatic\nstd\n::\nstring\nMoo\n=\n(\nTwine\n(\n\"bark\"\n)\n+\n\"bah\"\n).\nstr\n();\n\nThe\nTwine\ndoes not own the memory of its contents, so it is not\nrecommended to use\nTwine\ncreated from temporary strings or string literals.\n\nstatic\nTwine\ngetModuleIdentifier\n(\nStringRef\nmoduleName\n)\n{\nreturn\nmoduleName\n+\n\"_module\"\n;\n}\nvoid\nfoo\n()\n{\nTwine\nresult\n=\ngetModuleIdentifier\n(\nstd\n::\nstring\n{\n\"abc\"\n}\n+\n\"def\"\n);\n// temporary std::string is destroyed here, result is dangling\n}\n\nAfter applying this fix-it hints, the code will use\nstd::string\ninstead of\nTwine\nfor local variables. However,\nTwine\nhas lots of methods that\nare incompatible with\nstd::string\n, so the user may need to adjust the code\nmanually after applying the fix-it hints.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

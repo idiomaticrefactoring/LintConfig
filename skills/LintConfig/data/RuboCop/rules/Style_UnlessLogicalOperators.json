@@ -1,0 +1,6 @@
+{
+    "Style/UnlessLogicalOperators": {
+        "description": "Description\n\nChecks for use of logical operators in an unless condition.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: forbid_mixed_logical_operators (type: str)\nSupportedStyles: ['forbid_mixed_logical_operators', 'forbid_logical_operators'] (type: list)"
+    }
+}

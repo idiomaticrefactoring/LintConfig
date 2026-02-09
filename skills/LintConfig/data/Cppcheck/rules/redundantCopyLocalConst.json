@@ -1,0 +1,6 @@
+{
+    "redundantCopyLocalConst": {
+        "description": "Description\n\nThe const variable 'varname' is assigned a copy of the data. You can avoid the unnecessary data copying by converting 'varname' to const reference.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: true\nRelated Symbols: varname"
+    }
+}

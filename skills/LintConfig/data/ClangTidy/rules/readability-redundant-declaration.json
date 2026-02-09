@@ -1,0 +1,6 @@
+{
+    "readability-redundant-declaration": {
+        "description": "Description\n\nFinds redundant variable and function declarations.\n\nextern\nint\nX\n;\nextern\nint\nX\n;\n\nbecomes\n\nextern\nint\nX\n;\n\nSuch redundant declarations can be removed without changing program behavior.\nThey can for instance be unintentional left overs from previous refactorings\nwhen code has been moved around. Having redundant declarations could in worst\ncase mean that there are typos in the code that cause bugs.\n\nNormally the code can be automatically fixed,\nclang-tidy\ncan remove\nthe second declaration. However there are 2 cases when you need to fix the code\nmanually:\n\nWhen the declarations are in different header files;\nWhen multiple variables are declared together.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros. Default\nis\ntrue\n."
+    }
+}

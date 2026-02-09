@@ -1,0 +1,6 @@
+{
+    "memsetZeroBytes": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine, but the caller specifies an argument that contains the wrong value, which may lead to resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 687\nInconclusive: false"
+    }
+}

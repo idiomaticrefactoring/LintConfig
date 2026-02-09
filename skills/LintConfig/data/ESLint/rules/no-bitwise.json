@@ -1,0 +1,6 @@
+{
+    "no-bitwise": {
+        "description": "Description\n\nThis rule disallows bitwise operators.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-bitwise: \"error\"*/\n\nlet x = y | z;\n\nconst x1 = y & z;\n\nconst x2 = y ^ z;\n\nconst x3 = ~ z;\n\nconst x4 = y << z;\n\nconst x5 = y >> z;\n\nconst x6 = y >>> z;\n\nx |= y;\n\nx &= y;\n\nx ^= y;\n\nx <<= y;\n\nx >>= y;\n\nx >>>= y;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-bitwise: \"error\"*/\n\nlet x = y || z;\n\nconst x1 = y && z;\n\nconst x2 = y > z;\n\nconst x3 = y < z;\n\nx += y;",
+        "option": "This rule has an object option:\n\n- \"allow\": Allows a list of bitwise operators to be used as exceptions.\n- \"int32Hint\": Allows the use of bitwise OR in|0pattern for type casting.\n\nallow\n\nExamples ofcorrectcode for this rule with the{ \"allow\": [\"~\"] }option:\n\n/*eslint no-bitwise: [\"error\", { \"allow\": [\"~\"] }] */\n\n~[1,2,3].indexOf(1) === -1;\n\nint32Hint\n\nExamples ofcorrectcode for this rule with the{ \"int32Hint\": true }option:\n\n/*eslint no-bitwise: [\"error\", { \"int32Hint\": true }] */\n\nconst b = a|0;"
+    }
+}

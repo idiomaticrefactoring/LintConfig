@@ -1,0 +1,6 @@
+{
+    "misc-uniqueptr-reset-release": {
+        "description": "Description\n\nFind and replace\nunique_ptr::reset(release())\nwith\nstd::move()\n.\n\nExample:\n\nstd\n::\nunique_ptr\n<\nFoo\n>\nx\n,\ny\n;\nx\n.\nreset\n(\ny\n.\nrelease\n());\n->\nx\n=\nstd\n::\nmove\n(\ny\n);\n\nIf\ny\nis already rvalue,\nstd::move()\nis not added.\nx\nand\ny\ncan\nalso be\nstd::unique_ptr<Foo>*\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIncludeStyle\nA string specifying which include-style is used,\nllvm\nor\ngoogle\n. Default\nis\nllvm\n."
+    }
+}

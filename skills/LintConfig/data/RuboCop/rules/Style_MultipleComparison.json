@@ -1,0 +1,6 @@
+{
+    "Style/MultipleComparison": {
+        "description": "Description\n\nAvoid comparing a variable with multiple items in a conditional, use Array#include? instead.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMethodComparison: True (type: bool)\nComparisonsThreshold: 2 (type: int)"
+    }
+}

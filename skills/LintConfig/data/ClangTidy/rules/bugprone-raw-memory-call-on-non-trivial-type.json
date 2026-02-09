@@ -1,0 +1,6 @@
+{
+    "bugprone-raw-memory-call-on-non-trivial-type": {
+        "description": "Description\n\nFlags use of the C standard library functions\nmemset\n,\nmemcpy\nand\nmemcmp\nand similar derivatives on non-trivial types.\n\nThe check will detect the following functions:\nmemset\n,\nstd::memset\n,\nstd::memcpy\n,\nmemcpy\n,\nstd::memmove\n,\nmemmove\n,\nstd::strcpy\n,\nstrcpy\n,\nmemccpy\n,\nstpncpy\n,\nstrncpy\n,\nstd::memcmp\n,\nmemcmp\n,\nstd::strcmp\n,\nstrcmp\n,\nstrncmp\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nMemSetNames\nSpecify extra functions to flag that act similarly to\nmemset\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\nMemCpyNames\nSpecify extra functions to flag that act similarly to\nmemcpy\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\nMemCmpNames\nSpecify extra functions to flag that act similarly to\nmemcmp\n. Specify\nnames in a semicolon-delimited list. Default is an empty string.\nThis check corresponds to the CERT C++ Coding Standard rule\nOOP57-CPP. Prefer special member functions and overloaded operators to C\nStandard Library functions\n."
+    }
+}

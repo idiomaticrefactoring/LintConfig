@@ -1,0 +1,6 @@
+{
+    "Metrics/BlockNesting": {
+        "description": "Description\n\nAvoid excessive block nesting.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCountBlocks: False (type: bool)\nCountModifierForms: False (type: bool)\nMax: 3 (type: int)"
+    }
+}

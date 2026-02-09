@@ -1,0 +1,6 @@
+{
+    "no-case-declarations": {
+        "description": "Description\n\nThis rule aims to prevent access to uninitialized lexical bindings as well as accessing hoisted functions acrosscaseclauses.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-case-declarations: \"error\"*/\n\nswitch (foo) {\n    case 1:\n        let x = 1;\n        break;\n    case 2:\n        const y = 2;\n        break;\n    case 3:\n        function f() {}\n        break;\n    default:\n        class C {}\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-case-declarations: \"error\"*/\n\n// Declarations outside switch-statements are valid\nconst a = 0;\n\nswitch (foo) {\n    // The following case clauses are wrapped into blocks using brackets\n    case 1: {\n        let x = 1;\n        break;\n    }\n    case 2: {\n        const y = 2;\n        break;\n    }\n    case 3: {\n        function f() {}\n        break;\n    }\n    case 4:\n        // Declarations using var without brackets are valid due to function-scope hoisting\n        var z = 4;\n        break;\n    default: {\n        class C {}\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

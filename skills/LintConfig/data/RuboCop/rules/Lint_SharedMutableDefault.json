@@ -1,0 +1,6 @@
+{
+    "Lint/SharedMutableDefault": {
+        "description": "Description\n\nChecks for mutable literals used as default arguments during Hash initialization.",
+        "option": "This rule has no specific options."
+    }
+}

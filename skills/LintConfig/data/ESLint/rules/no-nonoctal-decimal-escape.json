@@ -1,0 +1,6 @@
+{
+    "no-nonoctal-decimal-escape": {
+        "description": "Description\n\nThis rule disallows\\8and\\9escape sequences in string literals.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-nonoctal-decimal-escape: \"error\"*/\n\n\"\\8\";\n\n\"\\9\";\n\nconst foo = \"w\\8less\";\n\nconst bar = \"December 1\\9\";\n\nconst baz = \"Don't use \\8 and \\9 escapes.\";\n\nconst quux = \"\\0\\8\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-nonoctal-decimal-escape: \"error\"*/\n\n\"8\";\n\n\"9\";\n\nconst foo = \"w8less\";\n\nconst bar = \"December 19\";\n\nconst baz = \"Don't use \\\\8 and \\\\9 escapes.\";\n\nconst quux = \"\\0\\u0038\";",
+        "option": "This rule has no options."
+    }
+}

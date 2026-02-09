@@ -1,0 +1,6 @@
+{
+    "exceptDeallocThrow": {
+        "description": "Description\n\nException thrown in invalid state, 'p' points at deallocated memory.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

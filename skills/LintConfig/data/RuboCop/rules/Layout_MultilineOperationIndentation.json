@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineOperationIndentation": {
+        "description": "Description\n\nChecks indentation of binary operations that span more than one line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: aligned (type: str)\nSupportedStyles: ['aligned', 'indented'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

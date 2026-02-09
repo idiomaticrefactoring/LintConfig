@@ -1,0 +1,6 @@
+{
+    "Style/FormatStringToken": {
+        "description": "Description\n\nUse a consistent style for format string tokens.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: annotated (type: str)\nSupportedStyles: ['annotated', 'template', 'unannotated'] (type: list)\nMaxUnannotatedPlaceholdersAllowed: 1 (type: int)\nMode: aggressive (type: str)\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

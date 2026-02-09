@@ -1,0 +1,6 @@
+{
+    "flake8-quotes": {
+        "description": "Description\n\nOptions for the `flake8-quotes` plugin.",
+        "option": "Type: Flake8QuotesOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - avoid-escape: Whether to avoid using single quotes if a string contains single quotes,\n  - docstring-quotes: Quote style to prefer for docstrings (either \"single\" or \"double\").\n  - inline-quotes: Quote style to prefer for inline strings (either \"single\" or\n  - multiline-quotes: Quote style to prefer for multiline strings (either \"single\" or"
+    }
+}

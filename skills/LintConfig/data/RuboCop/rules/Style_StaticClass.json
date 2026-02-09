@@ -1,0 +1,6 @@
+{
+    "Style/StaticClass": {
+        "description": "Description\n\nPrefer modules to classes with only class methods.",
+        "option": "This rule has no specific options."
+    }
+}

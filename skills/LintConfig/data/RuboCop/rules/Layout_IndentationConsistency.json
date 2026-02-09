@@ -1,0 +1,6 @@
+{
+    "Layout/IndentationConsistency": {
+        "description": "Description\n\nKeep indentation straight.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: normal (type: str)\nSupportedStyles: ['normal', 'indented_internal_methods'] (type: list)\nReferences: ['https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions'] (type: list)"
+    }
+}

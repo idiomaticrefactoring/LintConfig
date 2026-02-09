@@ -1,0 +1,6 @@
+{
+    "duplicateAssignExpression": {
+        "description": "Description\n\nFinding variables 'x' and 'x' that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: true"
+    }
+}

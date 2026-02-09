@@ -1,0 +1,6 @@
+{
+    "llvmlibc-callee-namespace": {
+        "description": "Description\n\nChecks all calls resolve to functions within correct namespace.\n\n// Implementation inside the LIBC_NAMESPACE namespace.\n// Correct if:\n// - LIBC_NAMESPACE is a macro\n// - LIBC_NAMESPACE expansion starts with `__llvm_libc`\nnamespace\nLIBC_NAMESPACE\n{\n// Allow calls with the fully qualified name.\nLIBC_NAMESPACE\n::\nstrlen\n(\n\"hello\"\n);\n// Allow calls to compiler provided functions.\n(\nvoid\n)\n__builtin_abs\n(\n-1\n);\n// Bare calls are allowed as long as they resolve to the correct namespace.\nstrlen\n(\n\"world\"\n);\n// Disallow calling into functions in the global namespace.\n::\nstrlen\n(\n\"!\"\n);\n}\n// namespace LIBC_NAMESPACE",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

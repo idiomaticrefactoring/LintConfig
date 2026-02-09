@@ -1,0 +1,6 @@
+{
+    "identicalConditionAfterEarlyExit": {
+        "description": "Description\n\nIdentical condition 'x', second condition is always false",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

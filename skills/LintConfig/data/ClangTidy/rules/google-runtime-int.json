@@ -1,0 +1,6 @@
+{
+    "google-runtime-int": {
+        "description": "Description\n\nFinds uses of\nshort\n,\nlong\nand\nlong\nlong\nand suggest replacing them\nwith\nu?intXX(_t)?\n.\n\nThe corresponding style guide rule:\nhttps://google.github.io/styleguide/cppguide.html#Integer_Types\n.\n\nCorresponding cpplint.py check:\nruntime/int\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nUnsignedTypePrefix\nA string specifying the unsigned type prefix. Default is\nuint\n.\nSignedTypePrefix\nA string specifying the signed type prefix. Default is\nint\n.\nTypeSuffix\nA string specifying the type suffix. Default is an empty string."
+    }
+}

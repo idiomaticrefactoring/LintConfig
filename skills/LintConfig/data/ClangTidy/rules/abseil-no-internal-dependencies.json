@@ -1,0 +1,6 @@
+{
+    "abseil-no-internal-dependencies": {
+        "description": "Description\n\nWarns if code using Abseil depends on internal details. If something is in a\nnamespace that includes the word “internal”, code is not allowed to depend upon\nit because it’s an implementation detail. They cannot friend it, include it,\nyou mention it or refer to it in any way. Doing so violates Abseil’s\ncompatibility guidelines and may result in breakage. See\nhttps://abseil.io/about/compatibility\nfor more information.\n\nThe following cases will result in warnings:\n\nabsl\n::\nstrings_internal\n::\nfoo\n();\n// warning triggered on this line\nclass\nfoo\n{\nfriend\nstruct\nabsl\n::\ncontainer_internal\n::\nfaa\n;\n// warning triggered on this line\n};\nabsl\n::\nmemory_internal\n::\nMakeUniqueResult\n();\n// warning triggered on this line",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

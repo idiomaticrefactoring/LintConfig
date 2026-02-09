@@ -1,0 +1,6 @@
+{
+    "NonSerializableClass": {
+        "description": "Description\n\nIf a class is marked asSerializable, then all fields need to be serializable as well. In order to exclude\na field, it can be marked as transient. Static fields are not considered.\n\nThis rule reports all fields, that are not serializable.\n\nIf a class implements the methods to perform manual serialization (writeObject,readObject) or uses\na replacement object (writeReplace,readResolve) then this class is ignored.\n\nNote: This rule has been revamped with PMD 6.52.0. It was previously called \"BeanMembersShouldSerialize\".\nThe propertyprefixhas been deprecated, since in a serializable class all fields have to be\nserializable regardless of the name.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ncheckAbstractTypes\tfalse\tEnable to verify fields with abstract types like abstract classes, interfaces, generic types or java.lang.Object. Enabling this might lead to more false positives, since the concrete runtime type can actually be serializable."
+    }
+}

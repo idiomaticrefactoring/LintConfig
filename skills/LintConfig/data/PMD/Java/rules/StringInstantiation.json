@@ -1,0 +1,6 @@
+{
+    "StringInstantiation": {
+        "description": "Description\n\nAvoid instantiating String objects; this is usually unnecessary since they are immutable and can be safely shared.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

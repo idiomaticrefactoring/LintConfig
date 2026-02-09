@@ -1,0 +1,6 @@
+{
+    "Metrics/CyclomaticComplexity": {
+        "description": "Description\n\nA complexity metric that is strongly correlated to the number of test cases needed to validate a method.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)\nMax: 7 (type: int)"
+    }
+}

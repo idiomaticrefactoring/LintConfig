@@ -1,0 +1,6 @@
+{
+    "Style/MultilineIfModifier": {
+        "description": "Description\n\nOnly use if/unless modifiers on single line statements.",
+        "option": "This rule has no specific options."
+    }
+}

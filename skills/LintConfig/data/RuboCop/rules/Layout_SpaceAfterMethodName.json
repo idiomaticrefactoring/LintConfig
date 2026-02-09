@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAfterMethodName": {
+        "description": "Description\n\nDo not put a space between a method name and the opening parenthesis in a method definition.",
+        "option": "This rule has no specific options."
+    }
+}

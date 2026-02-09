@@ -1,0 +1,6 @@
+{
+    "FormalParameterNamingConventions": {
+        "description": "Description\n\nConfigurable naming conventions for formal parameters of methods and lambdas.\nThis rule reports formal parameters which do not match the regex that applies to their\nspecific kind (e.g. lambda parameter, or final formal parameter). Each regex can be\nconfigured through properties.\n\nBy default this rule uses the standard Java naming convention (Camel case).\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nmethodParameterPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to formal parameter names\nfinalMethodParameterPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to final formal parameter names\nlambdaParameterPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to inferred-type lambda parameter names\nexplicitLambdaParameterPattern\t[a-z][a-zA-Z0-9]*\tRegex which applies to explicitly-typed lambda parameter names"
+    }
+}

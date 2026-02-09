@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideArrayLiteralBrackets": {
+        "description": "Description\n\nChecks the spacing inside array literal brackets.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: no_space (type: str)\nSupportedStyles: ['space', 'no_space', 'compact'] (type: list)\nEnforcedStyleForEmptyBrackets: no_space (type: str)\nSupportedStylesForEmptyBrackets: ['space', 'no_space'] (type: list)"
+    }
+}

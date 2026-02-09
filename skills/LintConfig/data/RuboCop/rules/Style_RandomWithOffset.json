@@ -1,0 +1,6 @@
+{
+    "Style/RandomWithOffset": {
+        "description": "Description\n\nPrefer to use ranges when generating random numbers instead of integers with offsets.",
+        "option": "This rule has no specific options."
+    }
+}

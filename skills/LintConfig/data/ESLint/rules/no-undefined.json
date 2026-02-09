@@ -1,0 +1,6 @@
+{
+    "no-undefined": {
+        "description": "Description\n\nThis rule aims to eliminate the use ofundefined, and as such, generates a warning whenever it is used.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-undefined: \"error\"*/\n\nconst foo = undefined;\n\nconst undefined = \"foo\";\n\nif (foo === undefined) {\n    // ...\n}\n\nfunction baz(undefined) {\n    // ...\n}\n\nbar(undefined, \"lorem\");\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-undefined: \"error\"*/\n\nconst foo = void 0;\n\nconst Undefined = \"foo\";\n\nif (typeof foo === \"undefined\") {\n    // ...\n}\n\nglobal.undefined = \"foo\";\n\nbar(void 0, \"lorem\");",
+        "option": "This rule has no options."
+    }
+}

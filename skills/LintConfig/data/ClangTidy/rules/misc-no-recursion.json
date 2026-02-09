@@ -1,0 +1,6 @@
+{
+    "misc-no-recursion": {
+        "description": "Description\n\nFinds strongly connected functions (by analyzing the call graph for\nSCC’s (Strongly Connected Components) that are loops),\ndiagnoses each function in the cycle,\nand displays one example of a possible call graph loop (recursion).\n\nReferences:\n\nCERT C++ Coding Standard rule\nDCL56-CPP. Avoid cycles during initialization of static objects\n.\nJPL Institutional Coding Standard for the C Programming Language\n(JPL DOCID D-60411) rule\n2.4 Do not use direct or indirect recursion\n.\nOpenCL Specification, Version 1.2 rule\n6.9 Restrictions: i. Recursion is not supported.\n.\n\nLimitations\nThe check does not handle calls done through function pointers\nThe check does not handle C++ destructors",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "leakNoVarFunctionCall": {
+        "description": "Description\n\nThe product does not release a resource after its effective lifetime has ended, i.e., after the resource is no longer needed.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 772\nInconclusive: false"
+    }
+}

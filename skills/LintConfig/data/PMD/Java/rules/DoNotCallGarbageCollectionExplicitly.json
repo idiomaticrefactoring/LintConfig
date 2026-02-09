@@ -1,0 +1,6 @@
+{
+    "DoNotCallGarbageCollectionExplicitly": {
+        "description": "Description\n\nCalls toSystem.gc(),Runtime.getRuntime().gc(), andSystem.runFinalization()are not advised.\nCode should have the same behavior whether the garbage collection is disabled using the option-Xdisableexplicitgcor not.\n\nMoreover, \"modern\" JVMs do a very good job handling garbage collections. If memory usage issues unrelated to memory\nleaks develop within an application, it should be dealt with JVM options rather than within the code itself.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

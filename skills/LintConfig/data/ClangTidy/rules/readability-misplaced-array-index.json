@@ -1,0 +1,6 @@
+{
+    "readability-misplaced-array-index": {
+        "description": "Description\n\nThis check warns for unusual array index syntax.\n\nThe following code has unusual array index syntax:\n\nvoid\nf\n(\nint\n*\nX\n,\nint\nY\n)\n{\nY\n[\nX\n]\n=\n0\n;\n}\n\nbecomes\n\nvoid\nf\n(\nint\n*\nX\n,\nint\nY\n)\n{\nX\n[\nY\n]\n=\n0\n;\n}\n\nThe check warns about such unusual syntax for readability reasons:\nThere are programmers that are not familiar with this unusual syntax.\nIt is possible that variables are mixed up.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

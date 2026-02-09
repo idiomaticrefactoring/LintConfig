@@ -1,0 +1,6 @@
+{
+    "Style/LambdaCall": {
+        "description": "Description\n\nUse lambda.call(...) instead of lambda.(...).",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nEnforcedStyle: call (type: str)\nSupportedStyles: ['call', 'braces'] (type: list)"
+    }
+}

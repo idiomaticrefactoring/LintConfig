@@ -1,0 +1,6 @@
+{
+    "Style/ClassEqualityComparison": {
+        "description": "Description\n\nEnforces the use of `Object#instance_of?` instead of class comparison for equality.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['==', 'equal?', 'eql?'] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

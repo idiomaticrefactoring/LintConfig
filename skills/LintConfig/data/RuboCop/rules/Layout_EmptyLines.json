@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLines": {
+        "description": "Description\n\nDon't use several empty lines in a row.",
+        "option": "This rule has no specific options."
+    }
+}

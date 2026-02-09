@@ -1,0 +1,6 @@
+{
+    "unusedLabelConfiguration": {
+        "description": "Description\n\nLabel '' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

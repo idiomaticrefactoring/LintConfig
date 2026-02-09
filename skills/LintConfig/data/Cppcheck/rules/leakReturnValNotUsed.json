@@ -1,0 +1,6 @@
+{
+    "leakReturnValNotUsed": {
+        "description": "Description\n\nThe product does not properly maintain a reference to a resource that has been allocated, which prevents the resource from being reclaimed.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 771\nInconclusive: false\nRelated Symbols: funcName"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-new-native-nonconstructor": {
+        "description": "Description\n\nThis rule is aimed at preventing the accidental calling of native JavaScript global functions with thenewoperator. These functions are:\n\n- Symbol\n- BigInt\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-native-nonconstructor: \"error\"*/\n\nconst foo = new Symbol('foo');\nconst bar = new BigInt(9007199254740991);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-native-nonconstructor: \"error\"*/\n\nconst foo = Symbol('foo');\nconst bar = BigInt(9007199254740991);\n\n// Ignores shadowed Symbol.\nfunction baz(Symbol) {\n    const qux = new Symbol(\"baz\");\n}\nfunction quux(BigInt) {\n    const corge = new BigInt(9007199254740991);\n}",
+        "option": "This rule has no options."
+    }
+}

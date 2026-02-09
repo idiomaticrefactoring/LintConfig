@@ -1,0 +1,6 @@
+{
+    "explicit-preview-rules": {
+        "description": "Description\n\nWhether to require exact codes to select preview rules. When enabled,\npreview rules will not be selected by prefixes — the full code of each\npreview rule will be required to enable the rule.",
+        "option": "Type: boolean\nStatus: DEPRECATED"
+    }
+}

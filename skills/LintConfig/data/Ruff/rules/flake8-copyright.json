@@ -1,0 +1,6 @@
+{
+    "flake8-copyright": {
+        "description": "Description\n\nOptions for the `flake8-copyright` plugin.",
+        "option": "Type: Flake8CopyrightOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - author: Author to enforce within the copyright notice. If provided, the\n  - min-file-size: A minimum file size (in bytes) required for a copyright notice to\n  - notice-rgx: The regular expression used to match the copyright notice, compiled"
+    }
+}

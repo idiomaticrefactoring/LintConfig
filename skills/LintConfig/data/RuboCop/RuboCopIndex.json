@@ -1,0 +1,2374 @@
+{
+    "Bundler/DuplicatedGem": {
+        "description": "Checks for duplicate gem entries in Gemfile.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlerduplicatedgem"
+    },
+    "Bundler/DuplicatedGroup": {
+        "description": "Checks for duplicate group entries in Gemfile.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlerduplicatedgroup"
+    },
+    "Bundler/GemComment": {
+        "description": "Add a comment describing each gem.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlergemcomment"
+    },
+    "Bundler/GemFilename": {
+        "description": "Enforces the filename for managing gems.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlergemfilename"
+    },
+    "Bundler/GemVersion": {
+        "description": "Requires or forbids specifying gem versions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlergemversion"
+    },
+    "Bundler/InsecureProtocolSource": {
+        "description": "The source `:gemcutter`, `:rubygems` and `:rubyforge` are deprecated because HTTP requests are insecure. Please change your source to 'https://rubygems.org' if possible, or 'http://rubygems.org' if not.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlerinsecureprotocolsource"
+    },
+    "Bundler/OrderedGems": {
+        "description": "Gems within groups in the Gemfile should be alphabetically sorted.",
+        "url": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlerorderedgems"
+    },
+    "Gemspec/AddRuntimeDependency": {
+        "description": "Prefer `add_dependency` over `add_runtime_dependency`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecaddruntimedependency"
+    },
+    "Gemspec/AttributeAssignment": {
+        "description": "Use consistent style for Gemspec attributes assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecattributeassignment"
+    },
+    "Gemspec/DependencyVersion": {
+        "description": "Requires or forbids specifying gem dependency versions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecdependencyversion"
+    },
+    "Gemspec/DeprecatedAttributeAssignment": {
+        "description": "Checks that deprecated attribute assignments are not set in a gemspec file.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecdeprecatedattributeassignment"
+    },
+    "Gemspec/DevelopmentDependencies": {
+        "description": "Checks that development dependencies are specified in Gemfile rather than gemspec.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecdevelopmentdependencies"
+    },
+    "Gemspec/DuplicatedAssignment": {
+        "description": "An attribute assignment method calls should be listed only once in a gemspec.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecduplicatedassignment"
+    },
+    "Gemspec/OrderedDependencies": {
+        "description": "Dependencies in the gemspec should be alphabetically sorted.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecordereddependencies"
+    },
+    "Gemspec/RequireMFA": {
+        "description": "Checks that the gemspec has metadata to require Multi-Factor Authentication from RubyGems.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecrequiremfa"
+    },
+    "Gemspec/RequiredRubyVersion": {
+        "description": "Checks that `required_ruby_version` of gemspec is specified and equal to `TargetRubyVersion` of .rubocop.yml.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecrequiredrubyversion"
+    },
+    "Gemspec/RubyVersionGlobalsUsage": {
+        "description": "Checks usage of RUBY_VERSION in gemspec.",
+        "url": "https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspecrubyversionglobalsusage"
+    },
+    "Layout/AccessModifierIndentation": {
+        "description": "Checks indentation of private/protected visibility modifiers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutaccessmodifierindentation"
+    },
+    "Layout/ArgumentAlignment": {
+        "description": "Align the arguments of a method call if they span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutargumentalignment"
+    },
+    "Layout/ArrayAlignment": {
+        "description": "Align the elements of an array literal if they span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutarrayalignment"
+    },
+    "Layout/AssignmentIndentation": {
+        "description": "Checks the indentation of the first line of the right-hand-side of a multi-line assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutassignmentindentation"
+    },
+    "Layout/BeginEndAlignment": {
+        "description": "Align ends corresponding to begins correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutbeginendalignment"
+    },
+    "Layout/BlockAlignment": {
+        "description": "Align block ends correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutblockalignment"
+    },
+    "Layout/BlockEndNewline": {
+        "description": "Put end statement of multiline block on its own line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutblockendnewline"
+    },
+    "Layout/CaseIndentation": {
+        "description": "Indentation of when in a case/(when|in)/[else/]end.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutcaseindentation"
+    },
+    "Layout/ClassStructure": {
+        "description": "Enforces a configured order of definitions within a class body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutclassstructure"
+    },
+    "Layout/ClosingHeredocIndentation": {
+        "description": "Checks the indentation of here document closings.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutclosingheredocindentation"
+    },
+    "Layout/ClosingParenthesisIndentation": {
+        "description": "Checks the indentation of hanging closing parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutclosingparenthesisindentation"
+    },
+    "Layout/CommentIndentation": {
+        "description": "Indentation of comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutcommentindentation"
+    },
+    "Layout/ConditionPosition": {
+        "description": "Checks for condition placed in a confusing position relative to the keyword.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutconditionposition"
+    },
+    "Layout/DefEndAlignment": {
+        "description": "Align ends corresponding to defs correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutdefendalignment"
+    },
+    "Layout/DotPosition": {
+        "description": "Checks the position of the dot in multi-line method calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutdotposition"
+    },
+    "Layout/ElseAlignment": {
+        "description": "Align elses and elsifs correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutelsealignment"
+    },
+    "Layout/EmptyComment": {
+        "description": "Checks empty comment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptycomment"
+    },
+    "Layout/EmptyLineAfterGuardClause": {
+        "description": "Add empty line after guard clause.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylineafterguardclause"
+    },
+    "Layout/EmptyLineAfterMagicComment": {
+        "description": "Add an empty line after magic comments to separate them from code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylineaftermagiccomment"
+    },
+    "Layout/EmptyLineAfterMultilineCondition": {
+        "description": "Enforces empty line after multiline condition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylineaftermultilinecondition"
+    },
+    "Layout/EmptyLineBetweenDefs": {
+        "description": "Use empty lines between class/module/method defs.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinebetweendefs"
+    },
+    "Layout/EmptyLines": {
+        "description": "Don't use several empty lines in a row.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylines"
+    },
+    "Layout/EmptyLinesAfterModuleInclusion": {
+        "description": "Keeps track of empty lines after module inclusion methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaftermoduleinclusion"
+    },
+    "Layout/EmptyLinesAroundAccessModifier": {
+        "description": "Keep blank lines around access modifiers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundaccessmodifier"
+    },
+    "Layout/EmptyLinesAroundArguments": {
+        "description": "Keeps track of empty lines around method arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundarguments"
+    },
+    "Layout/EmptyLinesAroundAttributeAccessor": {
+        "description": "Keep blank lines around attribute accessors.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundattributeaccessor"
+    },
+    "Layout/EmptyLinesAroundBeginBody": {
+        "description": "Keeps track of empty lines around begin-end bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundbeginbody"
+    },
+    "Layout/EmptyLinesAroundBlockBody": {
+        "description": "Keeps track of empty lines around block bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundblockbody"
+    },
+    "Layout/EmptyLinesAroundClassBody": {
+        "description": "Keeps track of empty lines around class bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundclassbody"
+    },
+    "Layout/EmptyLinesAroundExceptionHandlingKeywords": {
+        "description": "Keeps track of empty lines around exception handling keywords.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundexceptionhandlingkeywords"
+    },
+    "Layout/EmptyLinesAroundMethodBody": {
+        "description": "Keeps track of empty lines around method bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundmethodbody"
+    },
+    "Layout/EmptyLinesAroundModuleBody": {
+        "description": "Keeps track of empty lines around module bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundmodulebody"
+    },
+    "Layout/EndAlignment": {
+        "description": "Align ends correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutendalignment"
+    },
+    "Layout/EndOfLine": {
+        "description": "Use Unix-style line endings.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutendofline"
+    },
+    "Layout/ExtraSpacing": {
+        "description": "Do not use unnecessary spacing.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutextraspacing"
+    },
+    "Layout/FirstArgumentIndentation": {
+        "description": "Checks the indentation of the first argument in a method call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstargumentindentation"
+    },
+    "Layout/FirstArrayElementIndentation": {
+        "description": "Checks the indentation of the first element in an array literal.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstarrayelementindentation"
+    },
+    "Layout/FirstArrayElementLineBreak": {
+        "description": "Checks for a line break before the first element in a multi-line array.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstarrayelementlinebreak"
+    },
+    "Layout/FirstHashElementIndentation": {
+        "description": "Checks the indentation of the first key in a hash literal.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirsthashelementindentation"
+    },
+    "Layout/FirstHashElementLineBreak": {
+        "description": "Checks for a line break before the first element in a multi-line hash.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirsthashelementlinebreak"
+    },
+    "Layout/FirstMethodArgumentLineBreak": {
+        "description": "Checks for a line break before the first argument in a multi-line method call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstmethodargumentlinebreak"
+    },
+    "Layout/FirstMethodParameterLineBreak": {
+        "description": "Checks for a line break before the first parameter in a multi-line method parameter definition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstmethodparameterlinebreak"
+    },
+    "Layout/FirstParameterIndentation": {
+        "description": "Checks the indentation of the first parameter in a method definition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstparameterindentation"
+    },
+    "Layout/HashAlignment": {
+        "description": "Align the elements of a hash literal if they span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layouthashalignment"
+    },
+    "Layout/HeredocArgumentClosingParenthesis": {
+        "description": "Checks for the placement of the closing parenthesis in a method call that passes a HEREDOC string as an argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutheredocargumentclosingparenthesis"
+    },
+    "Layout/HeredocIndentation": {
+        "description": "Checks the indentation of the here document bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutheredocindentation"
+    },
+    "Layout/IndentationConsistency": {
+        "description": "Keep indentation straight.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationconsistency"
+    },
+    "Layout/IndentationStyle": {
+        "description": "Consistent indentation either with tabs only or spaces only.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationstyle"
+    },
+    "Layout/IndentationWidth": {
+        "description": "Use 2 spaces for indentation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationwidth"
+    },
+    "Layout/InitialIndentation": {
+        "description": "Checks the indentation of the first non-blank non-comment line in a file.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutinitialindentation"
+    },
+    "Layout/LeadingCommentSpace": {
+        "description": "Comments should start with a space.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutleadingcommentspace"
+    },
+    "Layout/LeadingEmptyLines": {
+        "description": "Checks for unnecessary blank lines at the beginning of a file.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutleadingemptylines"
+    },
+    "Layout/LineContinuationLeadingSpace": {
+        "description": "Use trailing spaces instead of leading spaces in strings broken over multiple lines (by a backslash).",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinecontinuationleadingspace"
+    },
+    "Layout/LineContinuationSpacing": {
+        "description": "Checks the spacing in front of backslash in line continuations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinecontinuationspacing"
+    },
+    "Layout/LineEndStringConcatenationIndentation": {
+        "description": "Checks the indentation of the next line after a line that ends with a string literal and a backslash.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutlineendstringconcatenationindentation"
+    },
+    "Layout/LineLength": {
+        "description": "Checks that line length does not exceed the configured limit.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinelength"
+    },
+    "Layout/MultilineArrayBraceLayout": {
+        "description": "Checks that the closing brace in an array literal is either on the same line as the last array element, or a new line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinearraybracelayout"
+    },
+    "Layout/MultilineArrayLineBreaks": {
+        "description": "Checks that each item in a multi-line array literal starts on a separate line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinearraylinebreaks"
+    },
+    "Layout/MultilineAssignmentLayout": {
+        "description": "Checks for a newline after the assignment operator in multi-line assignments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilineassignmentlayout"
+    },
+    "Layout/MultilineBlockLayout": {
+        "description": "Ensures newlines after multiline block do statements.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilineblocklayout"
+    },
+    "Layout/MultilineHashBraceLayout": {
+        "description": "Checks that the closing brace in a hash literal is either on the same line as the last hash element, or a new line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinehashbracelayout"
+    },
+    "Layout/MultilineHashKeyLineBreaks": {
+        "description": "Checks that each item in a multi-line hash literal starts on a separate line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinehashkeylinebreaks"
+    },
+    "Layout/MultilineMethodArgumentLineBreaks": {
+        "description": "Checks that each argument in a multi-line method call starts on a separate line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodargumentlinebreaks"
+    },
+    "Layout/MultilineMethodCallBraceLayout": {
+        "description": "Checks that the closing brace in a method call is either on the same line as the last method argument, or a new line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodcallbracelayout"
+    },
+    "Layout/MultilineMethodCallIndentation": {
+        "description": "Checks indentation of method calls with the dot operator that span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodcallindentation"
+    },
+    "Layout/MultilineMethodDefinitionBraceLayout": {
+        "description": "Checks that the closing brace in a method definition is either on the same line as the last method parameter, or a new line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethoddefinitionbracelayout"
+    },
+    "Layout/MultilineMethodParameterLineBreaks": {
+        "description": "Checks that each parameter in a multi-line method definition starts on a separate line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodparameterlinebreaks"
+    },
+    "Layout/MultilineOperationIndentation": {
+        "description": "Checks indentation of binary operations that span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilineoperationindentation"
+    },
+    "Layout/ParameterAlignment": {
+        "description": "Align the parameters of a method definition if they span more than one line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutparameteralignment"
+    },
+    "Layout/RedundantLineBreak": {
+        "description": "Do not break up an expression into multiple lines when it fits on a single line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutredundantlinebreak"
+    },
+    "Layout/RescueEnsureAlignment": {
+        "description": "Align rescues and ensures correctly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutrescueensurealignment"
+    },
+    "Layout/SingleLineBlockChain": {
+        "description": "Put method call on a separate line if chained to a single line block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutsinglelineblockchain"
+    },
+    "Layout/SpaceAfterColon": {
+        "description": "Use spaces after colons.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceaftercolon"
+    },
+    "Layout/SpaceAfterComma": {
+        "description": "Use spaces after commas.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceaftercomma"
+    },
+    "Layout/SpaceAfterMethodName": {
+        "description": "Do not put a space between a method name and the opening parenthesis in a method definition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceaftermethodname"
+    },
+    "Layout/SpaceAfterNot": {
+        "description": "Tracks redundant space after the ! operator.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceafternot"
+    },
+    "Layout/SpaceAfterSemicolon": {
+        "description": "Use spaces after semicolons.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceaftersemicolon"
+    },
+    "Layout/SpaceAroundBlockParameters": {
+        "description": "Checks the spacing inside and after block parameters pipes.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundblockparameters"
+    },
+    "Layout/SpaceAroundEqualsInParameterDefault": {
+        "description": "Checks that the equals signs in parameter default assignments have or don't have surrounding space depending on configuration.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundequalsinparameterdefault"
+    },
+    "Layout/SpaceAroundKeyword": {
+        "description": "Use a space around keywords if appropriate.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundkeyword"
+    },
+    "Layout/SpaceAroundMethodCallOperator": {
+        "description": "Checks method call operators to not have spaces around them.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundmethodcalloperator"
+    },
+    "Layout/SpaceAroundOperators": {
+        "description": "Use a single space around operators.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundoperators"
+    },
+    "Layout/SpaceBeforeBlockBraces": {
+        "description": "Checks that the left block brace has or doesn't have space before it.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforeblockbraces"
+    },
+    "Layout/SpaceBeforeBrackets": {
+        "description": "Checks for receiver with a space before the opening brackets.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforebrackets"
+    },
+    "Layout/SpaceBeforeComma": {
+        "description": "No spaces before commas.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforecomma"
+    },
+    "Layout/SpaceBeforeComment": {
+        "description": "Checks for missing space between code and a comment on the same line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforecomment"
+    },
+    "Layout/SpaceBeforeFirstArg": {
+        "description": "Checks that exactly one space is used between a method name and the first argument for method calls without parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforefirstarg"
+    },
+    "Layout/SpaceBeforeSemicolon": {
+        "description": "No spaces before semicolons.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforesemicolon"
+    },
+    "Layout/SpaceInLambdaLiteral": {
+        "description": "Checks for spaces in lambda literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinlambdaliteral"
+    },
+    "Layout/SpaceInsideArrayLiteralBrackets": {
+        "description": "Checks the spacing inside array literal brackets.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidearrayliteralbrackets"
+    },
+    "Layout/SpaceInsideArrayPercentLiteral": {
+        "description": "No unnecessary additional spaces between elements in %i/%w literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidearraypercentliteral"
+    },
+    "Layout/SpaceInsideBlockBraces": {
+        "description": "Checks that block braces have or don't have surrounding space. For blocks taking parameters, checks that the left brace has or doesn't have trailing space.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsideblockbraces"
+    },
+    "Layout/SpaceInsideHashLiteralBraces": {
+        "description": "Use spaces inside hash literal braces - or don't.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidehashliteralbraces"
+    },
+    "Layout/SpaceInsideParens": {
+        "description": "No spaces after ( or before ).",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsideparens"
+    },
+    "Layout/SpaceInsidePercentLiteralDelimiters": {
+        "description": "No unnecessary spaces inside delimiters of %i/%w/%x literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidepercentliteraldelimiters"
+    },
+    "Layout/SpaceInsideRangeLiteral": {
+        "description": "No spaces inside range literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsiderangeliteral"
+    },
+    "Layout/SpaceInsideReferenceBrackets": {
+        "description": "Checks the spacing inside referential brackets.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidereferencebrackets"
+    },
+    "Layout/SpaceInsideStringInterpolation": {
+        "description": "Checks for padding/surrounding spaces inside string interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidestringinterpolation"
+    },
+    "Layout/TrailingEmptyLines": {
+        "description": "Checks trailing blank lines and final newline.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layouttrailingemptylines"
+    },
+    "Layout/TrailingWhitespace": {
+        "description": "Avoid trailing whitespace.",
+        "url": "https://docs.rubocop.org/rubocop/cops_layout.html#layouttrailingwhitespace"
+    },
+    "Lint/AmbiguousAssignment": {
+        "description": "Checks for mistyped shorthand assignments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousassignment"
+    },
+    "Lint/AmbiguousBlockAssociation": {
+        "description": "Checks for ambiguous block association with method when param passed without parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousblockassociation"
+    },
+    "Lint/AmbiguousOperator": {
+        "description": "Checks for ambiguous operators in the first argument of a method invocation without parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousoperator"
+    },
+    "Lint/AmbiguousOperatorPrecedence": {
+        "description": "Checks for expressions containing multiple binary operations with ambiguous precedence.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousoperatorprecedence"
+    },
+    "Lint/AmbiguousRange": {
+        "description": "Checks for ranges with ambiguous boundaries.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousrange"
+    },
+    "Lint/AmbiguousRegexpLiteral": {
+        "description": "Checks for ambiguous regexp literals in the first argument of a method invocation without parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousregexpliteral"
+    },
+    "Lint/ArrayLiteralInRegexp": {
+        "description": "Checks for an array literal interpolated inside a regexp.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintarrayliteralinregexp"
+    },
+    "Lint/AssignmentInCondition": {
+        "description": "Don't use assignment in conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintassignmentincondition"
+    },
+    "Lint/BigDecimalNew": {
+        "description": "`BigDecimal.new()` is deprecated. Use `BigDecimal()` instead.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintbigdecimalnew"
+    },
+    "Lint/BinaryOperatorWithIdenticalOperands": {
+        "description": "Checks for places where binary operator has identical operands.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintbinaryoperatorwithidenticaloperands"
+    },
+    "Lint/BooleanSymbol": {
+        "description": "Checks for `:true` and `:false` symbols.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintbooleansymbol"
+    },
+    "Lint/CircularArgumentReference": {
+        "description": "Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintcircularargumentreference"
+    },
+    "Lint/ConstantDefinitionInBlock": {
+        "description": "Do not define constants within a block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantdefinitioninblock"
+    },
+    "Lint/ConstantOverwrittenInRescue": {
+        "description": "Checks for overwriting an exception with an exception result by use `rescue =>`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantoverwritteninrescue"
+    },
+    "Lint/ConstantReassignment": {
+        "description": "Checks for constant reassignments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantreassignment"
+    },
+    "Lint/ConstantResolution": {
+        "description": "Checks that constants are fully qualified with `::`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantresolution"
+    },
+    "Lint/CopDirectiveSyntax": {
+        "description": "Checks that `# rubocop:` directives are strictly formatted.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintcopdirectivesyntax"
+    },
+    "Lint/Debugger": {
+        "description": "Checks for debugger calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdebugger"
+    },
+    "Lint/DeprecatedClassMethods": {
+        "description": "Checks for deprecated class method calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdeprecatedclassmethods"
+    },
+    "Lint/DeprecatedConstants": {
+        "description": "Checks for deprecated constants.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdeprecatedconstants"
+    },
+    "Lint/DeprecatedOpenSSLConstant": {
+        "description": "Don't use algorithm constants for `OpenSSL::Cipher` and `OpenSSL::Digest`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdeprecatedopensslconstant"
+    },
+    "Lint/DisjunctiveAssignmentInConstructor": {
+        "description": "In constructor, plain assignment is preferred over disjunctive.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdisjunctiveassignmentinconstructor"
+    },
+    "Lint/DuplicateBranch": {
+        "description": "Checks that there are no repeated bodies within `if/unless`, `case-when` and `rescue` constructs.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatebranch"
+    },
+    "Lint/DuplicateCaseCondition": {
+        "description": "Do not repeat values in case conditionals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatecasecondition"
+    },
+    "Lint/DuplicateElsifCondition": {
+        "description": "Do not repeat conditions used in if `elsif`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicateelsifcondition"
+    },
+    "Lint/DuplicateHashKey": {
+        "description": "Checks for duplicate keys in hash literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatehashkey"
+    },
+    "Lint/DuplicateMagicComment": {
+        "description": "Checks for duplicated magic comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatemagiccomment"
+    },
+    "Lint/DuplicateMatchPattern": {
+        "description": "Do not repeat patterns in `in` keywords.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatematchpattern"
+    },
+    "Lint/DuplicateMethods": {
+        "description": "Checks for duplicate method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatemethods"
+    },
+    "Lint/DuplicateRegexpCharacterClassElement": {
+        "description": "Checks for duplicate elements in Regexp character classes.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicateregexpcharacterclasselement"
+    },
+    "Lint/DuplicateRequire": {
+        "description": "Checks for duplicate `require`s and `require_relative`s.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicaterequire"
+    },
+    "Lint/DuplicateRescueException": {
+        "description": "Checks that there are no repeated exceptions used in `rescue` expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicaterescueexception"
+    },
+    "Lint/DuplicateSetElement": {
+        "description": "Checks for duplicate elements in Set.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatesetelement"
+    },
+    "Lint/EachWithObjectArgument": {
+        "description": "Checks for immutable argument given to each_with_object.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linteachwithobjectargument"
+    },
+    "Lint/ElseLayout": {
+        "description": "Checks for odd code arrangement in an else block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintelselayout"
+    },
+    "Lint/EmptyBlock": {
+        "description": "Checks for blocks without a body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyblock"
+    },
+    "Lint/EmptyClass": {
+        "description": "Checks for classes and metaclasses without a body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyclass"
+    },
+    "Lint/EmptyConditionalBody": {
+        "description": "Checks for the presence of `if`, `elsif` and `unless` branches without a body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyconditionalbody"
+    },
+    "Lint/EmptyEnsure": {
+        "description": "Checks for empty ensure block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyensure"
+    },
+    "Lint/EmptyExpression": {
+        "description": "Checks for empty expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyexpression"
+    },
+    "Lint/EmptyFile": {
+        "description": "Enforces that Ruby source files are not empty.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyfile"
+    },
+    "Lint/EmptyInPattern": {
+        "description": "Checks for the presence of `in` pattern branches without a body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyinpattern"
+    },
+    "Lint/EmptyInterpolation": {
+        "description": "Checks for empty string interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyinterpolation"
+    },
+    "Lint/EmptyWhen": {
+        "description": "Checks for `when` branches with empty bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptywhen"
+    },
+    "Lint/EnsureReturn": {
+        "description": "Do not use return in an ensure block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintensurereturn"
+    },
+    "Lint/ErbNewArguments": {
+        "description": "Use `:trim_mode` and `:eoutvar` keyword arguments to `ERB.new`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linterbnewarguments"
+    },
+    "Lint/FlipFlop": {
+        "description": "Checks for flip-flops.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintflipflop"
+    },
+    "Lint/FloatComparison": {
+        "description": "Checks for the presence of precise comparison of floating point numbers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintfloatcomparison"
+    },
+    "Lint/FloatOutOfRange": {
+        "description": "Catches floating-point literals too large or small for Ruby to represent.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintfloatoutofrange"
+    },
+    "Lint/FormatParameterMismatch": {
+        "description": "The number of parameters to format/sprint must match the fields.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintformatparametermismatch"
+    },
+    "Lint/HashCompareByIdentity": {
+        "description": "Prefer using `Hash#compare_by_identity` than using `object_id` for keys.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linthashcomparebyidentity"
+    },
+    "Lint/HashNewWithKeywordArgumentsAsDefault": {
+        "description": "Checks for the deprecated use of keyword arguments for hash default in `Hash.new`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linthashnewwithkeywordargumentsasdefault"
+    },
+    "Lint/HeredocMethodCallPosition": {
+        "description": "Checks for the ordering of a method call where the receiver of the call is a HEREDOC.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintheredocmethodcallposition"
+    },
+    "Lint/IdentityComparison": {
+        "description": "Prefer `equal?` over `==` when comparing `object_id`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintidentitycomparison"
+    },
+    "Lint/ImplicitStringConcatenation": {
+        "description": "Checks for adjacent string literals on the same line, which could better be represented as a single string literal.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintimplicitstringconcatenation"
+    },
+    "Lint/IncompatibleIoSelectWithFiberScheduler": {
+        "description": "Checks for `IO.select` that is incompatible with Fiber Scheduler.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintincompatibleioselectwithfiberscheduler"
+    },
+    "Lint/IneffectiveAccessModifier": {
+        "description": "Checks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintineffectiveaccessmodifier"
+    },
+    "Lint/InheritException": {
+        "description": "Avoid inheriting from the `Exception` class.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintinheritexception"
+    },
+    "Lint/InterpolationCheck": {
+        "description": "Checks for interpolation in a single quoted string.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintinterpolationcheck"
+    },
+    "Lint/ItWithoutArgumentsInBlock": {
+        "description": "Checks uses of `it` calls without arguments in block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintitwithoutargumentsinblock"
+    },
+    "Lint/LambdaWithoutLiteralBlock": {
+        "description": "Checks uses of lambda without a literal block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintlambdawithoutliteralblock"
+    },
+    "Lint/LiteralAsCondition": {
+        "description": "Checks of literals used in conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintliteralascondition"
+    },
+    "Lint/LiteralAssignmentInCondition": {
+        "description": "Checks for literal assignments in the conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintliteralassignmentincondition"
+    },
+    "Lint/LiteralInInterpolation": {
+        "description": "Checks for literals used in interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintliteralininterpolation"
+    },
+    "Lint/Loop": {
+        "description": "Use Kernel#loop with break rather than begin/end/until or begin/end/while for post-loop tests.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintloop"
+    },
+    "Lint/MissingCopEnableDirective": {
+        "description": "Checks for a `# rubocop:enable` after `# rubocop:disable`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmissingcopenabledirective"
+    },
+    "Lint/MissingSuper": {
+        "description": "Checks for the presence of constructors and lifecycle callbacks without calls to `super`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmissingsuper"
+    },
+    "Lint/MixedCaseRange": {
+        "description": "Checks for mixed-case character ranges since they include likely unintended characters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmixedcaserange"
+    },
+    "Lint/MixedRegexpCaptureTypes": {
+        "description": "Do not mix named captures and numbered captures in a Regexp literal.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmixedregexpcapturetypes"
+    },
+    "Lint/MultipleComparison": {
+        "description": "Use `&&` operator to compare multiple values.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmultiplecomparison"
+    },
+    "Lint/NestedMethodDefinition": {
+        "description": "Do not use nested method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnestedmethoddefinition"
+    },
+    "Lint/NestedPercentLiteral": {
+        "description": "Checks for nested percent literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnestedpercentliteral"
+    },
+    "Lint/NextWithoutAccumulator": {
+        "description": "Do not omit the accumulator when calling `next` in a `reduce`/`inject` block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnextwithoutaccumulator"
+    },
+    "Lint/NoReturnInBeginEndBlocks": {
+        "description": "Do not `return` inside `begin..end` blocks in assignment contexts.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnoreturninbeginendblocks"
+    },
+    "Lint/NonAtomicFileOperation": {
+        "description": "Checks for non-atomic file operations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnonatomicfileoperation"
+    },
+    "Lint/NonDeterministicRequireOrder": {
+        "description": "Always sort arrays returned by Dir.glob when requiring files.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnondeterministicrequireorder"
+    },
+    "Lint/NonLocalExitFromIterator": {
+        "description": "Do not use return in iterator to cause non-local exit.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnonlocalexitfromiterator"
+    },
+    "Lint/NumberConversion": {
+        "description": "Checks unsafe usage of number conversion methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnumberconversion"
+    },
+    "Lint/NumberedParameterAssignment": {
+        "description": "Checks for uses of numbered parameter assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnumberedparameterassignment"
+    },
+    "Lint/NumericOperationWithConstantResult": {
+        "description": "Checks for numeric operations with constant results.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnumericoperationwithconstantresult"
+    },
+    "Lint/OrAssignmentToConstant": {
+        "description": "Checks unintended or-assignment to constant.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintorassignmenttoconstant"
+    },
+    "Lint/OrderedMagicComments": {
+        "description": "Checks the proper ordering of magic comments and whether a magic comment is not placed before a shebang.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintorderedmagiccomments"
+    },
+    "Lint/OutOfRangeRegexpRef": {
+        "description": "Checks for out of range reference for Regexp because it always returns nil.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintoutofrangeregexpref"
+    },
+    "Lint/ParenthesesAsGroupedExpression": {
+        "description": "Checks for method calls with a space before the opening parenthesis.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintparenthesesasgroupedexpression"
+    },
+    "Lint/PercentStringArray": {
+        "description": "Checks for unwanted commas and quotes in %w/%W literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintpercentstringarray"
+    },
+    "Lint/PercentSymbolArray": {
+        "description": "Checks for unwanted commas and colons in %i/%I literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintpercentsymbolarray"
+    },
+    "Lint/RaiseException": {
+        "description": "Checks for `raise` or `fail` statements which are raising `Exception` class.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintraiseexception"
+    },
+    "Lint/RandOne": {
+        "description": "Checks for `rand(1)` calls. Such calls always return `0` and most likely a mistake.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrandone"
+    },
+    "Lint/RedundantCopDisableDirective": {
+        "description": "Checks for rubocop:disable comments that can be removed. Note: this cop is not disabled when disabling all cops. It must be explicitly disabled.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantcopdisabledirective"
+    },
+    "Lint/RedundantCopEnableDirective": {
+        "description": "Checks for rubocop:enable comments that can be removed.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantcopenabledirective"
+    },
+    "Lint/RedundantDirGlobSort": {
+        "description": "Checks for redundant `sort` method to `Dir.glob` and `Dir[]`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantdirglobsort"
+    },
+    "Lint/RedundantRegexpQuantifiers": {
+        "description": "Checks for redundant quantifiers in Regexps.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantregexpquantifiers"
+    },
+    "Lint/RedundantRequireStatement": {
+        "description": "Checks for unnecessary `require` statement.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantrequirestatement"
+    },
+    "Lint/RedundantSafeNavigation": {
+        "description": "Checks for redundant safe navigation calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantsafenavigation"
+    },
+    "Lint/RedundantSplatExpansion": {
+        "description": "Checks for splat unnecessarily being called on literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantsplatexpansion"
+    },
+    "Lint/RedundantStringCoercion": {
+        "description": "Checks for Object#to_s usage in string interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantstringcoercion"
+    },
+    "Lint/RedundantTypeConversion": {
+        "description": "Checks for redundantly converting a literal to the same type.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundanttypeconversion"
+    },
+    "Lint/RedundantWithIndex": {
+        "description": "Checks for redundant `with_index`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantwithindex"
+    },
+    "Lint/RedundantWithObject": {
+        "description": "Checks for redundant `with_object`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantwithobject"
+    },
+    "Lint/RefinementImportMethods": {
+        "description": "Use `Refinement#import_methods` when using `include` or `prepend` in `refine` block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrefinementimportmethods"
+    },
+    "Lint/RegexpAsCondition": {
+        "description": "Do not use regexp literal as a condition. The regexp literal matches `$_` implicitly.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintregexpascondition"
+    },
+    "Lint/RequireParentheses": {
+        "description": "Use parentheses in the method call to avoid confusion about precedence.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrequireparentheses"
+    },
+    "Lint/RequireRangeParentheses": {
+        "description": "Checks that a range literal is enclosed in parentheses when the end of the range is at a line break.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrequirerangeparentheses"
+    },
+    "Lint/RequireRelativeSelfPath": {
+        "description": "Checks for uses a file requiring itself with `require_relative`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrequirerelativeselfpath"
+    },
+    "Lint/RescueException": {
+        "description": "Avoid rescuing the Exception class.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrescueexception"
+    },
+    "Lint/RescueType": {
+        "description": "Avoid rescuing from non constants that could result in a `TypeError`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintrescuetype"
+    },
+    "Lint/ReturnInVoidContext": {
+        "description": "Checks for return in void context.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintreturninvoidcontext"
+    },
+    "Lint/SafeNavigationChain": {
+        "description": "Do not chain ordinary method call after safe navigation operator.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsafenavigationchain"
+    },
+    "Lint/SafeNavigationConsistency": {
+        "description": "Check to make sure that if safe navigation is used in an `&&` or `||` condition, consistent and appropriate safe navigation, without excess or deficiency, is used for all method calls on the same object.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsafenavigationconsistency"
+    },
+    "Lint/SafeNavigationWithEmpty": {
+        "description": "Avoid `foo&.empty?` in conditionals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsafenavigationwithempty"
+    },
+    "Lint/ScriptPermission": {
+        "description": "Grant script file execute permission.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintscriptpermission"
+    },
+    "Lint/SelfAssignment": {
+        "description": "Checks for self-assignments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintselfassignment"
+    },
+    "Lint/SendWithMixinArgument": {
+        "description": "Checks for `send` method when using mixin.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsendwithmixinargument"
+    },
+    "Lint/ShadowedArgument": {
+        "description": "Avoid reassigning arguments before they were used.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintshadowedargument"
+    },
+    "Lint/ShadowedException": {
+        "description": "Avoid rescuing a higher level exception before a lower level exception.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintshadowedexception"
+    },
+    "Lint/ShadowingOuterLocalVariable": {
+        "description": "Do not use the same name as outer local variable for block arguments or block local variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintshadowingouterlocalvariable"
+    },
+    "Lint/SharedMutableDefault": {
+        "description": "Checks for mutable literals used as default arguments during Hash initialization.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsharedmutabledefault"
+    },
+    "Lint/StructNewOverride": {
+        "description": "Disallow overriding the `Struct` built-in methods via `Struct.new`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintstructnewoverride"
+    },
+    "Lint/SuppressedException": {
+        "description": "Don't suppress exceptions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsuppressedexception"
+    },
+    "Lint/SuppressedExceptionInNumberConversion": {
+        "description": "Checks for cases where exceptions unrelated to the numeric constructors may be unintentionally swallowed.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsuppressedexceptioninnumberconversion"
+    },
+    "Lint/SymbolConversion": {
+        "description": "Checks for unnecessary symbol conversions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsymbolconversion"
+    },
+    "Lint/Syntax": {
+        "description": "Checks for syntax errors.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsyntax"
+    },
+    "Lint/ToEnumArguments": {
+        "description": "Ensures that `to_enum`/`enum_for`, called for the current method, has correct arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linttoenumarguments"
+    },
+    "Lint/ToJSON": {
+        "description": "Ensure #to_json includes an optional argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linttojson"
+    },
+    "Lint/TopLevelReturnWithArgument": {
+        "description": "Detects top level return statements with argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linttoplevelreturnwithargument"
+    },
+    "Lint/TrailingCommaInAttributeDeclaration": {
+        "description": "Checks for trailing commas in attribute declarations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linttrailingcommainattributedeclaration"
+    },
+    "Lint/TripleQuotes": {
+        "description": "Checks for useless triple quote constructs.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linttriplequotes"
+    },
+    "Lint/UnderscorePrefixedVariableName": {
+        "description": "Do not use prefix `_` for a variable that is used.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunderscoreprefixedvariablename"
+    },
+    "Lint/UnescapedBracketInRegexp": {
+        "description": "Checks for unescaped literal `]` in Regexp.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunescapedbracketinregexp"
+    },
+    "Lint/UnexpectedBlockArity": {
+        "description": "Looks for blocks that have fewer arguments that the calling method expects.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunexpectedblockarity"
+    },
+    "Lint/UnifiedInteger": {
+        "description": "Use Integer instead of Fixnum or Bignum.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunifiedinteger"
+    },
+    "Lint/UnmodifiedReduceAccumulator": {
+        "description": "Checks for `reduce` or `inject` blocks that do not update the accumulator each iteration.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunmodifiedreduceaccumulator"
+    },
+    "Lint/UnreachableCode": {
+        "description": "Unreachable code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunreachablecode"
+    },
+    "Lint/UnreachableLoop": {
+        "description": "Checks for loops that will have at most one iteration.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunreachableloop"
+    },
+    "Lint/UnusedBlockArgument": {
+        "description": "Checks for unused block arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunusedblockargument"
+    },
+    "Lint/UnusedMethodArgument": {
+        "description": "Checks for unused method arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunusedmethodargument"
+    },
+    "Lint/UriEscapeUnescape": {
+        "description": "`URI.escape` method is obsolete and should not be used. Instead, use `CGI.escape`, `URI.encode_www_form` or `URI.encode_www_form_component` depending on your specific use case. Also `URI.unescape` method is obsolete and should not be used. Instead, use `CGI.unescape`, `URI.decode_www_form` or `URI.decode_www_form_component` depending on your specific use case.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linturiescapeunescape"
+    },
+    "Lint/UriRegexp": {
+        "description": "Use `URI::DEFAULT_PARSER.make_regexp` instead of `URI.regexp`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#linturiregexp"
+    },
+    "Lint/UselessAccessModifier": {
+        "description": "Checks for useless access modifiers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessaccessmodifier"
+    },
+    "Lint/UselessAssignment": {
+        "description": "Checks for useless assignment to a local variable.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessassignment"
+    },
+    "Lint/UselessConstantScoping": {
+        "description": "Checks for useless constant scoping.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessconstantscoping"
+    },
+    "Lint/UselessDefaultValueArgument": {
+        "description": "Checks for usage of `fetch` or `Array.new` with default value argument and block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessdefaultvalueargument"
+    },
+    "Lint/UselessDefined": {
+        "description": "Checks for calls to `defined?` with strings and symbols. The result of such a call will always be truthy.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessdefined"
+    },
+    "Lint/UselessElseWithoutRescue": {
+        "description": "Checks for useless `else` in `begin..end` without `rescue`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselesselsewithoutrescue"
+    },
+    "Lint/UselessMethodDefinition": {
+        "description": "Checks for useless method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessmethoddefinition"
+    },
+    "Lint/UselessNumericOperation": {
+        "description": "Checks for useless numeric operations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessnumericoperation"
+    },
+    "Lint/UselessOr": {
+        "description": "Checks for useless OR expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessor"
+    },
+    "Lint/UselessRescue": {
+        "description": "Checks for useless `rescue`s.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessrescue"
+    },
+    "Lint/UselessRuby2Keywords": {
+        "description": "Finds unnecessary uses of `ruby2_keywords`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessruby2keywords"
+    },
+    "Lint/UselessSetterCall": {
+        "description": "Checks for useless setter call to a local variable.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselesssettercall"
+    },
+    "Lint/UselessTimes": {
+        "description": "Checks for useless `Integer#times` calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselesstimes"
+    },
+    "Lint/Void": {
+        "description": "Possible use of operator/literal/variable in void context.",
+        "url": "https://docs.rubocop.org/rubocop/cops_lint.html#lintvoid"
+    },
+    "Metrics/AbcSize": {
+        "description": "A calculated magnitude based on number of assignments, branches, and conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsabcsize"
+    },
+    "Metrics/BlockLength": {
+        "description": "Avoid long blocks with many lines.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocklength"
+    },
+    "Metrics/BlockNesting": {
+        "description": "Avoid excessive block nesting.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocknesting"
+    },
+    "Metrics/ClassLength": {
+        "description": "Avoid classes longer than 100 lines of code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsclasslength"
+    },
+    "Metrics/CollectionLiteralLength": {
+        "description": "Checks for `Array` or `Hash` literals with many entries.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricscollectionliterallength"
+    },
+    "Metrics/CyclomaticComplexity": {
+        "description": "A complexity metric that is strongly correlated to the number of test cases needed to validate a method.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricscyclomaticcomplexity"
+    },
+    "Metrics/MethodLength": {
+        "description": "Avoid methods longer than 10 lines of code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsmethodlength"
+    },
+    "Metrics/ModuleLength": {
+        "description": "Avoid modules longer than 100 lines of code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsmodulelength"
+    },
+    "Metrics/ParameterLists": {
+        "description": "Avoid parameter lists longer than three or four parameters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsparameterlists"
+    },
+    "Metrics/PerceivedComplexity": {
+        "description": "A complexity metric geared towards measuring complexity for a human reader.",
+        "url": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsperceivedcomplexity"
+    },
+    "Migration/DepartmentName": {
+        "description": "Check that cop names in rubocop:disable (etc) comments are given with department name.",
+        "url": "https://docs.rubocop.org/rubocop/cops_migration.html#migrationdepartmentname"
+    },
+    "Naming/AccessorMethodName": {
+        "description": "Checks the naming of accessor methods for get_/set_.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingaccessormethodname"
+    },
+    "Naming/AsciiIdentifiers": {
+        "description": "Use only ascii symbols in identifiers and constants.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingasciiidentifiers"
+    },
+    "Naming/BinaryOperatorParameterName": {
+        "description": "When defining binary operators, name the argument other.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingbinaryoperatorparametername"
+    },
+    "Naming/BlockForwarding": {
+        "description": "Use anonymous block forwarding.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingblockforwarding"
+    },
+    "Naming/BlockParameterName": {
+        "description": "Checks for block parameter names that contain capital letters, end in numbers, or do not meet a minimal length.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingblockparametername"
+    },
+    "Naming/ClassAndModuleCamelCase": {
+        "description": "Use CamelCase for classes and modules.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingclassandmodulecamelcase"
+    },
+    "Naming/ConstantName": {
+        "description": "Constants should use SCREAMING_SNAKE_CASE.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingconstantname"
+    },
+    "Naming/FileName": {
+        "description": "Use snake_case for source file names.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingfilename"
+    },
+    "Naming/HeredocDelimiterCase": {
+        "description": "Use configured case for heredoc delimiters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingheredocdelimitercase"
+    },
+    "Naming/HeredocDelimiterNaming": {
+        "description": "Use descriptive heredoc delimiters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingheredocdelimiternaming"
+    },
+    "Naming/InclusiveLanguage": {
+        "description": "Recommend the use of inclusive language instead of problematic terms.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#naminginclusivelanguage"
+    },
+    "Naming/MemoizedInstanceVariableName": {
+        "description": "Memoized method name should match memo instance variable name.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmemoizedinstancevariablename"
+    },
+    "Naming/MethodName": {
+        "description": "Use the configured style when naming methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmethodname"
+    },
+    "Naming/MethodParameterName": {
+        "description": "Checks for method parameter names that contain capital letters, end in numbers, or do not meet a minimal length.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmethodparametername"
+    },
+    "Naming/PredicateMethod": {
+        "description": "Checks that predicate methods end with `?` and non-predicate methods do not.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingpredicatemethod"
+    },
+    "Naming/PredicatePrefix": {
+        "description": "Predicate method names should not be prefixed and end with a `?`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingpredicateprefix"
+    },
+    "Naming/RescuedExceptionsVariableName": {
+        "description": "Use consistent rescued exceptions variables naming.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingrescuedexceptionsvariablename"
+    },
+    "Naming/VariableName": {
+        "description": "Use the configured style when naming variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingvariablename"
+    },
+    "Naming/VariableNumber": {
+        "description": "Use the configured style when numbering symbols, methods and variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_naming.html#namingvariablenumber"
+    },
+    "Security/CompoundHash": {
+        "description": "When overwriting Object#hash to combine values, prefer delegating to Array#hash over writing a custom implementation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securitycompoundhash"
+    },
+    "Security/Eval": {
+        "description": "The use of eval represents a serious security risk.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securityeval"
+    },
+    "Security/IoMethods": {
+        "description": "Checks for the first argument to `IO.read`, `IO.binread`, `IO.write`, `IO.binwrite`, `IO.foreach`, and `IO.readlines`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securityiomethods"
+    },
+    "Security/JSONLoad": {
+        "description": "Prefer usage of `JSON.parse` over `JSON.load` due to potential security issues. See reference for more information.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securityjsonload"
+    },
+    "Security/MarshalLoad": {
+        "description": "Avoid using of `Marshal.load` or `Marshal.restore` due to potential security issues. See reference for more information.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securitymarshalload"
+    },
+    "Security/Open": {
+        "description": "The use of `Kernel#open` and `URI.open` represent a serious security risk.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securityopen"
+    },
+    "Security/YAMLLoad": {
+        "description": "Prefer usage of `YAML.safe_load` over `YAML.load` due to potential security issues. See reference for more information.",
+        "url": "https://docs.rubocop.org/rubocop/cops_security.html#securityyamlload"
+    },
+    "Style/AccessModifierDeclarations": {
+        "description": "Checks style of how access modifiers are used.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleaccessmodifierdeclarations"
+    },
+    "Style/AccessorGrouping": {
+        "description": "Checks for grouping of accessors in `class` and `module` bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleaccessorgrouping"
+    },
+    "Style/Alias": {
+        "description": "Use alias instead of alias_method.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylealias"
+    },
+    "Style/AmbiguousEndlessMethodDefinition": {
+        "description": "Checks for endless methods inside operators of lower precedence.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleambiguousendlessmethoddefinition"
+    },
+    "Style/AndOr": {
+        "description": "Use &&/|| instead of and/or.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleandor"
+    },
+    "Style/ArgumentsForwarding": {
+        "description": "Use arguments forwarding.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleargumentsforwarding"
+    },
+    "Style/ArrayCoercion": {
+        "description": "Use Array() instead of explicit Array check or [*var], when dealing with a variable you want to treat as an Array, but you're not certain it's an array.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylearraycoercion"
+    },
+    "Style/ArrayFirstLast": {
+        "description": "Use `arr.first` and `arr.last` instead of `arr[0]` and `arr[-1]`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylearrayfirstlast"
+    },
+    "Style/ArrayIntersect": {
+        "description": "Use `array1.intersect?(array2)` instead of `(array1 & array2).any?`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylearrayintersect"
+    },
+    "Style/ArrayIntersectWithSingleElement": {
+        "description": "Use `include?(element)` instead of `intersect?([element])`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylearrayintersectwithsingleelement"
+    },
+    "Style/ArrayJoin": {
+        "description": "Use Array#join instead of Array#*.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylearrayjoin"
+    },
+    "Style/AsciiComments": {
+        "description": "Use only ascii symbols in comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleasciicomments"
+    },
+    "Style/Attr": {
+        "description": "Checks for uses of Module#attr.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleattr"
+    },
+    "Style/AutoResourceCleanup": {
+        "description": "Suggests the usage of an auto resource cleanup version of a method (if available).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleautoresourcecleanup"
+    },
+    "Style/BarePercentLiterals": {
+        "description": "Checks if usage of %() or %Q() matches configuration.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylebarepercentliterals"
+    },
+    "Style/BeginBlock": {
+        "description": "Avoid the use of BEGIN blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylebeginblock"
+    },
+    "Style/BisectedAttrAccessor": {
+        "description": "Checks for places where `attr_reader` and `attr_writer` for the same method can be combined into single `attr_accessor`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylebisectedattraccessor"
+    },
+    "Style/BitwisePredicate": {
+        "description": "Prefer bitwise predicate methods over direct comparison operations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylebitwisepredicate"
+    },
+    "Style/BlockComments": {
+        "description": "Do not use block comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleblockcomments"
+    },
+    "Style/BlockDelimiters": {
+        "description": "Avoid using {...} for multi-line blocks (multiline chaining is always ugly). Prefer {...} over do...end for single-line blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleblockdelimiters"
+    },
+    "Style/CaseEquality": {
+        "description": "Avoid explicit use of the case equality operator (`===`).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecaseequality"
+    },
+    "Style/CaseLikeIf": {
+        "description": "Identifies places where `if-elsif` constructions can be replaced with `case-when`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecaselikeif"
+    },
+    "Style/CharacterLiteral": {
+        "description": "Checks for uses of character literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecharacterliteral"
+    },
+    "Style/ClassAndModuleChildren": {
+        "description": "Checks style of children classes and modules.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassandmodulechildren"
+    },
+    "Style/ClassCheck": {
+        "description": "Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclasscheck"
+    },
+    "Style/ClassEqualityComparison": {
+        "description": "Enforces the use of `Object#instance_of?` instead of class comparison for equality.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassequalitycomparison"
+    },
+    "Style/ClassMethods": {
+        "description": "Use self when defining module/class methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassmethods"
+    },
+    "Style/ClassMethodsDefinitions": {
+        "description": "Enforces using `def self.method_name` or `class << self` to define class methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassmethodsdefinitions"
+    },
+    "Style/ClassVars": {
+        "description": "Avoid the use of class variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassvars"
+    },
+    "Style/CollectionCompact": {
+        "description": "Use `{Array,Hash}#{compact,compact!}` instead of custom logic to reject nils.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecollectioncompact"
+    },
+    "Style/CollectionMethods": {
+        "description": "Preferred collection methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecollectionmethods"
+    },
+    "Style/CollectionQuerying": {
+        "description": "Prefer `Enumerable` predicate methods over expressions with `count`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecollectionquerying"
+    },
+    "Style/ColonMethodCall": {
+        "description": "Do not use :: for method call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecolonmethodcall"
+    },
+    "Style/ColonMethodDefinition": {
+        "description": "Do not use :: for defining class methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecolonmethoddefinition"
+    },
+    "Style/CombinableDefined": {
+        "description": "Checks successive `defined?` calls that can be combined into a single call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecombinabledefined"
+    },
+    "Style/CombinableLoops": {
+        "description": "Checks for places where multiple consecutive loops over the same data can be combined into a single loop.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecombinableloops"
+    },
+    "Style/CommandLiteral": {
+        "description": "Use `` or %x around command literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecommandliteral"
+    },
+    "Style/CommentAnnotation": {
+        "description": "Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecommentannotation"
+    },
+    "Style/CommentedKeyword": {
+        "description": "Do not place comments on the same line as certain keywords.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecommentedkeyword"
+    },
+    "Style/ComparableBetween": {
+        "description": "Enforces the use of `Comparable#between?` instead of logical comparison.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecomparablebetween"
+    },
+    "Style/ComparableClamp": {
+        "description": "Enforces the use of `Comparable#clamp` instead of comparison by minimum and maximum.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecomparableclamp"
+    },
+    "Style/ConcatArrayLiterals": {
+        "description": "Enforces the use of `Array#push(item)` instead of `Array#concat([item])` to avoid redundant array literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleconcatarrayliterals"
+    },
+    "Style/ConditionalAssignment": {
+        "description": "Use the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleconditionalassignment"
+    },
+    "Style/ConstantVisibility": {
+        "description": "Check that class- and module constants have visibility declarations.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleconstantvisibility"
+    },
+    "Style/Copyright": {
+        "description": "Include a copyright notice in each file before any code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylecopyright"
+    },
+    "Style/DataInheritance": {
+        "description": "Checks for inheritance from Data.define.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledatainheritance"
+    },
+    "Style/DateTime": {
+        "description": "Use Time over DateTime.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledatetime"
+    },
+    "Style/DefWithParentheses": {
+        "description": "Use def with parentheses when there are arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledefwithparentheses"
+    },
+    "Style/DigChain": {
+        "description": "Use `dig` with multiple parameters instead of chaining multiple calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledigchain"
+    },
+    "Style/Dir": {
+        "description": "Use the `__dir__` method to retrieve the canonicalized absolute path to the current file.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledir"
+    },
+    "Style/DirEmpty": {
+        "description": "Prefer to use `Dir.empty?('path/to/dir')` when checking if a directory is empty.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledirempty"
+    },
+    "Style/DisableCopsWithinSourceCodeDirective": {
+        "description": "Forbids disabling/enabling cops within source code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledisablecopswithinsourcecodedirective"
+    },
+    "Style/DocumentDynamicEvalDefinition": {
+        "description": "When using `class_eval` (or other `eval`) with string interpolation, add a comment block showing its appearance if interpolated.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledocumentdynamicevaldefinition"
+    },
+    "Style/Documentation": {
+        "description": "Document classes and non-namespace modules.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation"
+    },
+    "Style/DocumentationMethod": {
+        "description": "Checks for missing documentation comment for public methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledocumentationmethod"
+    },
+    "Style/DoubleCopDisableDirective": {
+        "description": "Checks for double rubocop:disable comments on a single line.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledoublecopdisabledirective"
+    },
+    "Style/DoubleNegation": {
+        "description": "Checks for uses of double negation (!!).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styledoublenegation"
+    },
+    "Style/EachForSimpleLoop": {
+        "description": "Use `Integer#times` for a simple loop which iterates a fixed number of times.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleeachforsimpleloop"
+    },
+    "Style/EachWithObject": {
+        "description": "Prefer `each_with_object` over `inject` or `reduce`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleeachwithobject"
+    },
+    "Style/EmptyBlockParameter": {
+        "description": "Omit pipes for empty block parameters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyblockparameter"
+    },
+    "Style/EmptyCaseCondition": {
+        "description": "Avoid empty condition in case statements.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptycasecondition"
+    },
+    "Style/EmptyClassDefinition": {
+        "description": "Enforces consistent style for empty class definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyclassdefinition"
+    },
+    "Style/EmptyElse": {
+        "description": "Avoid empty else-clauses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyelse"
+    },
+    "Style/EmptyHeredoc": {
+        "description": "Checks for using empty heredoc to reduce redundancy.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyheredoc"
+    },
+    "Style/EmptyLambdaParameter": {
+        "description": "Omit parens for empty lambda parameters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptylambdaparameter"
+    },
+    "Style/EmptyLiteral": {
+        "description": "Prefer literals to Array.new/Hash.new/String.new.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyliteral"
+    },
+    "Style/EmptyMethod": {
+        "description": "Checks the formatting of empty method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptymethod"
+    },
+    "Style/EmptyStringInsideInterpolation": {
+        "description": "Checks for empty strings being assigned inside string interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptystringinsideinterpolation"
+    },
+    "Style/Encoding": {
+        "description": "Use UTF-8 as the source file encoding.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleencoding"
+    },
+    "Style/EndBlock": {
+        "description": "Avoid the use of END blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleendblock"
+    },
+    "Style/EndlessMethod": {
+        "description": "Avoid the use of multi-lined endless method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleendlessmethod"
+    },
+    "Style/EnvHome": {
+        "description": "Checks for consistent usage of `ENV['HOME']`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleenvhome"
+    },
+    "Style/EvalWithLocation": {
+        "description": "Pass `__FILE__` and `__LINE__` to `eval` method, as they are used by backtraces.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleevalwithlocation"
+    },
+    "Style/EvenOdd": {
+        "description": "Favor the use of `Integer#even?` && `Integer#odd?`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleevenodd"
+    },
+    "Style/ExactRegexpMatch": {
+        "description": "Checks for exact regexp match inside Regexp literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleexactregexpmatch"
+    },
+    "Style/ExpandPathArguments": {
+        "description": "Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleexpandpatharguments"
+    },
+    "Style/ExplicitBlockArgument": {
+        "description": "Consider using explicit block argument to avoid writing block literal that just passes its arguments to another block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleexplicitblockargument"
+    },
+    "Style/ExponentialNotation": {
+        "description": "When using exponential notation, favor a mantissa between 1 (inclusive) and 10 (exclusive).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleexponentialnotation"
+    },
+    "Style/FetchEnvVar": {
+        "description": "Suggests `ENV.fetch` for the replacement of `ENV[]`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefetchenvvar"
+    },
+    "Style/FileEmpty": {
+        "description": "Prefer to use `File.empty?('path/to/file')` when checking if a file is empty.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefileempty"
+    },
+    "Style/FileNull": {
+        "description": "Use `File::NULL` instead of hardcoding \"dev/null\".",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefilenull"
+    },
+    "Style/FileRead": {
+        "description": "Favor `File.(bin)read` convenience methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefileread"
+    },
+    "Style/FileTouch": {
+        "description": "Favor `FileUtils.touch` for touching files.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefiletouch"
+    },
+    "Style/FileWrite": {
+        "description": "Favor `File.(bin)write` convenience methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefilewrite"
+    },
+    "Style/FloatDivision": {
+        "description": "For performing float division, coerce one side only.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefloatdivision"
+    },
+    "Style/For": {
+        "description": "Checks use of for or each in multiline loops.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefor"
+    },
+    "Style/FormatString": {
+        "description": "Enforce the use of Kernel#sprintf, Kernel#format or String#%.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleformatstring"
+    },
+    "Style/FormatStringToken": {
+        "description": "Use a consistent style for format string tokens.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleformatstringtoken"
+    },
+    "Style/FrozenStringLiteralComment": {
+        "description": "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylefrozenstringliteralcomment"
+    },
+    "Style/GlobalStdStream": {
+        "description": "Enforces the use of `$stdout/$stderr/$stdin` instead of `STDOUT/STDERR/STDIN`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleglobalstdstream"
+    },
+    "Style/GlobalVars": {
+        "description": "Do not introduce global variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleglobalvars"
+    },
+    "Style/GuardClause": {
+        "description": "Checks for conditionals that can be replaced with guard clauses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleguardclause"
+    },
+    "Style/HashAsLastArrayItem": {
+        "description": "Checks for presence or absence of braces around hash literal as a last array item depending on configuration.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashaslastarrayitem"
+    },
+    "Style/HashConversion": {
+        "description": "Avoid Hash[] in favor of ary.to_h or literal hashes.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashconversion"
+    },
+    "Style/HashEachMethods": {
+        "description": "Use Hash#each_key and Hash#each_value.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehasheachmethods"
+    },
+    "Style/HashExcept": {
+        "description": "Checks for usages of `Hash#reject`, `Hash#select`, and `Hash#filter` methods that can be replaced with `Hash#except` method.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashexcept"
+    },
+    "Style/HashFetchChain": {
+        "description": "Use `Hash#dig` instead of chained `fetch` calls.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashfetchchain"
+    },
+    "Style/HashLikeCase": {
+        "description": "Checks for places where `case-when` represents a simple 1:1 mapping and can be replaced with a hash lookup.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashlikecase"
+    },
+    "Style/HashLookupMethod": {
+        "description": "Enforces the use of either `Hash#[]` or `Hash#fetch` for hash lookup.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashlookupmethod"
+    },
+    "Style/HashSlice": {
+        "description": "Checks for usages of `Hash#reject`, `Hash#select`, and `Hash#filter` methods that can be replaced with `Hash#slice` method.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashslice"
+    },
+    "Style/HashSyntax": {
+        "description": "Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashsyntax"
+    },
+    "Style/HashTransformKeys": {
+        "description": "Prefer `transform_keys` over `each_with_object`, `map`, or `to_h`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashtransformkeys"
+    },
+    "Style/HashTransformValues": {
+        "description": "Prefer `transform_values` over `each_with_object`, `map`, or `to_h`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashtransformvalues"
+    },
+    "Style/IdenticalConditionalBranches": {
+        "description": "Checks that conditional statements do not have an identical line at the end of each branch, which can validly be moved out of the conditional.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleidenticalconditionalbranches"
+    },
+    "Style/IfInsideElse": {
+        "description": "Finds if nodes inside else, which can be converted to elsif.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleifinsideelse"
+    },
+    "Style/IfUnlessModifier": {
+        "description": "Favor modifier if/unless usage when you have a single-line body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleifunlessmodifier"
+    },
+    "Style/IfUnlessModifierOfIfUnless": {
+        "description": "Avoid modifier if/unless usage on conditionals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleifunlessmodifierofifunless"
+    },
+    "Style/IfWithBooleanLiteralBranches": {
+        "description": "Checks for redundant `if` with boolean literal branches.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleifwithbooleanliteralbranches"
+    },
+    "Style/IfWithSemicolon": {
+        "description": "Do not use if x; .... Use the ternary operator instead.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleifwithsemicolon"
+    },
+    "Style/ImplicitRuntimeError": {
+        "description": "Use `raise` or `fail` with an explicit exception class and message, rather than just a message.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleimplicitruntimeerror"
+    },
+    "Style/InPatternThen": {
+        "description": "Checks for `in;` uses in `case` expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleinpatternthen"
+    },
+    "Style/InfiniteLoop": {
+        "description": "Use Kernel#loop for infinite loops. This cop is unsafe if the body may raise a `StopIteration` exception.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleinfiniteloop"
+    },
+    "Style/InlineComment": {
+        "description": "Avoid trailing inline comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleinlinecomment"
+    },
+    "Style/InverseMethods": {
+        "description": "Use the inverse method instead of `!.method` if an inverse method is defined.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleinversemethods"
+    },
+    "Style/InvertibleUnlessCondition": {
+        "description": "Favor `if` with inverted condition over `unless`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleinvertibleunlesscondition"
+    },
+    "Style/IpAddresses": {
+        "description": "Don't include literal IP addresses in code.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleipaddresses"
+    },
+    "Style/ItAssignment": {
+        "description": "Checks for local variables and method parameters named `it`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleitassignment"
+    },
+    "Style/ItBlockParameter": {
+        "description": "Checks for blocks with one argument where `it` block parameter can be used.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleitblockparameter"
+    },
+    "Style/KeywordArgumentsMerging": {
+        "description": "When passing an existing hash as keyword arguments, provide additional arguments directly rather than using `merge`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylekeywordargumentsmerging"
+    },
+    "Style/KeywordParametersOrder": {
+        "description": "Enforces that optional keyword parameters are placed at the end of the parameters list.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylekeywordparametersorder"
+    },
+    "Style/Lambda": {
+        "description": "Use the new lambda literal syntax for single-line blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylelambda"
+    },
+    "Style/LambdaCall": {
+        "description": "Use lambda.call(...) instead of lambda.(...).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylelambdacall"
+    },
+    "Style/LineEndConcatenation": {
+        "description": "Use \\ instead of + or << to concatenate two string literals at line end.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylelineendconcatenation"
+    },
+    "Style/MagicCommentFormat": {
+        "description": "Use a consistent style for magic comments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemagiccommentformat"
+    },
+    "Style/MapCompactWithConditionalBlock": {
+        "description": "Prefer `select` or `reject` over `map { ... }.compact`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemapcompactwithconditionalblock"
+    },
+    "Style/MapIntoArray": {
+        "description": "Checks for usages of `each` with `<<`, `push`, or `append` which can be replaced by `map`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemapintoarray"
+    },
+    "Style/MapToHash": {
+        "description": "Prefer `to_h` with a block over `map.to_h`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemaptohash"
+    },
+    "Style/MapToSet": {
+        "description": "Prefer `to_set` with a block over `map.to_set`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemaptoset"
+    },
+    "Style/MethodCallWithArgsParentheses": {
+        "description": "Use parentheses for method calls with arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethodcallwithargsparentheses"
+    },
+    "Style/MethodCallWithoutArgsParentheses": {
+        "description": "Do not use parentheses for method calls with no arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethodcallwithoutargsparentheses"
+    },
+    "Style/MethodCalledOnDoEndBlock": {
+        "description": "Avoid chaining a method call on a do...end block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethodcalledondoendblock"
+    },
+    "Style/MethodDefParentheses": {
+        "description": "Checks if the method definitions have or don't have parentheses.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethoddefparentheses"
+    },
+    "Style/MinMax": {
+        "description": "Use `Enumerable#minmax` instead of `Enumerable#min` and `Enumerable#max` in conjunction.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleminmax"
+    },
+    "Style/MinMaxComparison": {
+        "description": "Enforces the use of `max` or `min` instead of comparison for greater or less.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleminmaxcomparison"
+    },
+    "Style/MissingElse": {
+        "description": "Require if/case expressions to have an else branches. If enabled, it is recommended that Style/UnlessElse and Style/EmptyElse be enabled. This will conflict with Style/EmptyElse if Style/EmptyElse is configured to style \"both\".",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemissingelse"
+    },
+    "Style/MissingRespondToMissing": {
+        "description": "Checks if `method_missing` is implemented without implementing `respond_to_missing`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemissingrespondtomissing"
+    },
+    "Style/MixinGrouping": {
+        "description": "Checks for grouping of mixins in `class` and `module` bodies.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemixingrouping"
+    },
+    "Style/MixinUsage": {
+        "description": "Checks that `include`, `extend` and `prepend` exists at the top level.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemixinusage"
+    },
+    "Style/ModuleFunction": {
+        "description": "Checks for usage of `extend self` in modules.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemodulefunction"
+    },
+    "Style/ModuleMemberExistenceCheck": {
+        "description": "Checks for usage of `Module` methods returning arrays that can be replaced with equivalent predicates.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemodulememberexistencecheck"
+    },
+    "Style/MultilineBlockChain": {
+        "description": "Avoid multi-line chains of blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilineblockchain"
+    },
+    "Style/MultilineIfModifier": {
+        "description": "Only use if/unless modifiers on single line statements.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilineifmodifier"
+    },
+    "Style/MultilineIfThen": {
+        "description": "Do not use then for multi-line if/unless.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilineifthen"
+    },
+    "Style/MultilineInPatternThen": {
+        "description": "Do not use `then` for multi-line `in` statement.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilineinpatternthen"
+    },
+    "Style/MultilineMemoization": {
+        "description": "Wrap multiline memoizations in a `begin` and `end` block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilinememoization"
+    },
+    "Style/MultilineMethodSignature": {
+        "description": "Avoid multi-line method signatures.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilinemethodsignature"
+    },
+    "Style/MultilineTernaryOperator": {
+        "description": "Avoid multi-line ?: (the ternary operator); use if/unless instead.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilineternaryoperator"
+    },
+    "Style/MultilineWhenThen": {
+        "description": "Do not use then for multi-line when statement.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilinewhenthen"
+    },
+    "Style/MultipleComparison": {
+        "description": "Avoid comparing a variable with multiple items in a conditional, use Array#include? instead.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultiplecomparison"
+    },
+    "Style/MutableConstant": {
+        "description": "Do not assign mutable objects to constants.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylemutableconstant"
+    },
+    "Style/NegatedIf": {
+        "description": "Favor unless over if for negative conditions (or control flow or).",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedif"
+    },
+    "Style/NegatedIfElseCondition": {
+        "description": "Checks for uses of `if-else` and ternary operators with a negated condition which can be simplified by inverting condition and swapping branches.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedifelsecondition"
+    },
+    "Style/NegatedUnless": {
+        "description": "Favor if over unless for negative conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedunless"
+    },
+    "Style/NegatedWhile": {
+        "description": "Favor until over while for negative conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedwhile"
+    },
+    "Style/NegativeArrayIndex": {
+        "description": "Use negative array indices instead of calculating array length minus a value. Also handles range patterns with length calculations. Recognizes preserving methods and their combinations, allowing safe replacement when the receiver matches.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegativearrayindex"
+    },
+    "Style/NestedFileDirname": {
+        "description": "Checks for nested `File.dirname`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenestedfiledirname"
+    },
+    "Style/NestedModifier": {
+        "description": "Avoid using nested modifiers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenestedmodifier"
+    },
+    "Style/NestedParenthesizedCalls": {
+        "description": "Parenthesize method calls which are nested inside the argument list of another parenthesized method call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenestedparenthesizedcalls"
+    },
+    "Style/NestedTernaryOperator": {
+        "description": "Use one expression per branch in a ternary operator.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenestedternaryoperator"
+    },
+    "Style/Next": {
+        "description": "Use `next` to skip iteration instead of a condition at the end.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenext"
+    },
+    "Style/NilComparison": {
+        "description": "Prefer x.nil? to x == nil.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenilcomparison"
+    },
+    "Style/NilLambda": {
+        "description": "Prefer `-> {}` to `-> { nil }`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenillambda"
+    },
+    "Style/NonNilCheck": {
+        "description": "Checks for redundant nil checks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenonnilcheck"
+    },
+    "Style/Not": {
+        "description": "Use ! instead of not.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenot"
+    },
+    "Style/NumberedParameters": {
+        "description": "Restrict the usage of numbered parameters.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumberedparameters"
+    },
+    "Style/NumberedParametersLimit": {
+        "description": "Avoid excessive numbered params in a single block.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumberedparameterslimit"
+    },
+    "Style/NumericLiteralPrefix": {
+        "description": "Use smallcase prefixes for numeric literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericliteralprefix"
+    },
+    "Style/NumericLiterals": {
+        "description": "Add underscores to large numeric literals to improve their readability.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericliterals"
+    },
+    "Style/NumericPredicate": {
+        "description": "Checks for the use of predicate- or comparison methods for numeric comparisons.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericpredicate"
+    },
+    "Style/ObjectThen": {
+        "description": "Enforces the use of consistent method names `Object#yield_self` or `Object#then`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleobjectthen"
+    },
+    "Style/OneLineConditional": {
+        "description": "Favor the ternary operator (?:) or multi-line constructs over single-line if/then/else/end constructs.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleonelineconditional"
+    },
+    "Style/OpenStructUse": {
+        "description": "Avoid using OpenStruct. As of Ruby 3.0, use is officially discouraged due to performance, version compatibility, and potential security issues.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleopenstructuse"
+    },
+    "Style/OperatorMethodCall": {
+        "description": "Checks for redundant dot before operator method call.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleoperatormethodcall"
+    },
+    "Style/OptionHash": {
+        "description": "Don't use option hashes when you can use keyword arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleoptionhash"
+    },
+    "Style/OptionalArguments": {
+        "description": "Checks for optional arguments that do not appear at the end of the argument list.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleoptionalarguments"
+    },
+    "Style/OptionalBooleanParameter": {
+        "description": "Use keyword arguments when defining method with boolean argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleoptionalbooleanparameter"
+    },
+    "Style/OrAssignment": {
+        "description": "Recommend usage of double pipe equals (||=) where applicable.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleorassignment"
+    },
+    "Style/ParallelAssignment": {
+        "description": "Check for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleparallelassignment"
+    },
+    "Style/ParenthesesAroundCondition": {
+        "description": "Don't use parentheses around the condition of an if/unless/while.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleparenthesesaroundcondition"
+    },
+    "Style/PercentLiteralDelimiters": {
+        "description": "Use `%`-literal delimiters consistently.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylepercentliteraldelimiters"
+    },
+    "Style/PercentQLiterals": {
+        "description": "Checks if uses of %Q/%q match the configured preference.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylepercentqliterals"
+    },
+    "Style/PerlBackrefs": {
+        "description": "Avoid Perl-style regex back references.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleperlbackrefs"
+    },
+    "Style/PreferredHashMethods": {
+        "description": "Checks use of `has_key?` and `has_value?` Hash methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylepreferredhashmethods"
+    },
+    "Style/Proc": {
+        "description": "Use proc instead of Proc.new.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleproc"
+    },
+    "Style/QuotedSymbols": {
+        "description": "Use a consistent style for quoted symbols.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylequotedsymbols"
+    },
+    "Style/RaiseArgs": {
+        "description": "Checks the arguments passed to raise/fail.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleraiseargs"
+    },
+    "Style/RandomWithOffset": {
+        "description": "Prefer to use ranges when generating random numbers instead of integers with offsets.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylerandomwithoffset"
+    },
+    "Style/RedundantArgument": {
+        "description": "Checks for a redundant argument passed to certain methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantargument"
+    },
+    "Style/RedundantArrayConstructor": {
+        "description": "Checks for the instantiation of array using redundant `Array` constructor.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantarrayconstructor"
+    },
+    "Style/RedundantArrayFlatten": {
+        "description": "Checks for redundant calls of `Array#flatten`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantarrayflatten"
+    },
+    "Style/RedundantAssignment": {
+        "description": "Checks for redundant assignment before returning.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantassignment"
+    },
+    "Style/RedundantBegin": {
+        "description": "Don't use begin blocks when they are not needed.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantbegin"
+    },
+    "Style/RedundantCapitalW": {
+        "description": "Checks for %W when interpolation is not needed.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantcapitalw"
+    },
+    "Style/RedundantCondition": {
+        "description": "Checks for unnecessary conditional expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantcondition"
+    },
+    "Style/RedundantConditional": {
+        "description": "Don't return true/false from a conditional.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantconditional"
+    },
+    "Style/RedundantConstantBase": {
+        "description": "Avoid redundant `::` prefix on constant.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantconstantbase"
+    },
+    "Style/RedundantCurrentDirectoryInPath": {
+        "description": "Checks for a redundant current directory in a path given to `require_relative`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantcurrentdirectoryinpath"
+    },
+    "Style/RedundantDoubleSplatHashBraces": {
+        "description": "Checks for redundant uses of double splat hash braces.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantdoublesplathashbraces"
+    },
+    "Style/RedundantEach": {
+        "description": "Checks for redundant `each`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundanteach"
+    },
+    "Style/RedundantException": {
+        "description": "Checks for an obsolete RuntimeException argument in raise/fail.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantexception"
+    },
+    "Style/RedundantFetchBlock": {
+        "description": "Use `fetch(key, value)` instead of `fetch(key) { value }` when value has Numeric, Rational, Complex, Symbol or String type, `false`, `true`, `nil` or is a constant.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantfetchblock"
+    },
+    "Style/RedundantFileExtensionInRequire": {
+        "description": "Checks for the presence of superfluous `.rb` extension in the filename provided to `require` and `require_relative`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantfileextensioninrequire"
+    },
+    "Style/RedundantFilterChain": {
+        "description": "Identifies usages of `any?`, `empty?`, `none?` or `one?` predicate methods chained to `select`/`filter`/`find_all` and change them to use predicate method instead.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantfilterchain"
+    },
+    "Style/RedundantFormat": {
+        "description": "Checks for usages of `Kernel#format` or `Kernel#sprintf` with only a single argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantformat"
+    },
+    "Style/RedundantFreeze": {
+        "description": "Checks usages of Object#freeze on immutable objects.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantfreeze"
+    },
+    "Style/RedundantHeredocDelimiterQuotes": {
+        "description": "Checks for redundant heredoc delimiter quotes.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantheredocdelimiterquotes"
+    },
+    "Style/RedundantInitialize": {
+        "description": "Checks for redundant `initialize` methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantinitialize"
+    },
+    "Style/RedundantInterpolation": {
+        "description": "Checks for strings that are just an interpolated expression.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantinterpolation"
+    },
+    "Style/RedundantInterpolationUnfreeze": {
+        "description": "Checks for redundant unfreezing of interpolated strings.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantinterpolationunfreeze"
+    },
+    "Style/RedundantLineContinuation": {
+        "description": "Checks for redundant line continuation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantlinecontinuation"
+    },
+    "Style/RedundantParentheses": {
+        "description": "Checks for parentheses that seem not to serve any purpose.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantparentheses"
+    },
+    "Style/RedundantPercentQ": {
+        "description": "Checks for %q/%Q when single quotes or double quotes would do.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantpercentq"
+    },
+    "Style/RedundantRegexpArgument": {
+        "description": "Identifies places where argument can be replaced from a deterministic regexp to a string.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantregexpargument"
+    },
+    "Style/RedundantRegexpCharacterClass": {
+        "description": "Checks for unnecessary single-element Regexp character classes.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantregexpcharacterclass"
+    },
+    "Style/RedundantRegexpConstructor": {
+        "description": "Checks for the instantiation of regexp using redundant `Regexp.new` or `Regexp.compile`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantregexpconstructor"
+    },
+    "Style/RedundantRegexpEscape": {
+        "description": "Checks for redundant escapes in Regexps.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantregexpescape"
+    },
+    "Style/RedundantReturn": {
+        "description": "Don't use return where it's not required.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantreturn"
+    },
+    "Style/RedundantSelf": {
+        "description": "Don't use self where it's not needed.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantself"
+    },
+    "Style/RedundantSelfAssignment": {
+        "description": "Checks for places where redundant assignments are made for in place modification methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantselfassignment"
+    },
+    "Style/RedundantSelfAssignmentBranch": {
+        "description": "Checks for places where conditional branch makes redundant self-assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantselfassignmentbranch"
+    },
+    "Style/RedundantSort": {
+        "description": "Use `min` instead of `sort.first`, `max_by` instead of `sort_by...last`, etc.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantsort"
+    },
+    "Style/RedundantSortBy": {
+        "description": "Use `sort` instead of `sort_by { |x| x }`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantsortby"
+    },
+    "Style/RedundantStringEscape": {
+        "description": "Checks for redundant escapes in string literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantstringescape"
+    },
+    "Style/RegexpLiteral": {
+        "description": "Use / or %r around regular expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleregexpliteral"
+    },
+    "Style/RequireOrder": {
+        "description": "Sort `require` and `require_relative` in alphabetical order.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylerequireorder"
+    },
+    "Style/RescueModifier": {
+        "description": "Avoid using rescue in its modifier form.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylerescuemodifier"
+    },
+    "Style/RescueStandardError": {
+        "description": "Avoid rescuing without specifying an error class.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylerescuestandarderror"
+    },
+    "Style/ReturnNil": {
+        "description": "Use return instead of return nil.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylereturnnil"
+    },
+    "Style/ReturnNilInPredicateMethodDefinition": {
+        "description": "Checks if uses of `return` or `return nil` in predicate method definition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylereturnnilinpredicatemethoddefinition"
+    },
+    "Style/ReverseFind": {
+        "description": "Use `array.rfind` instead of `array.reverse.find`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylereversefind"
+    },
+    "Style/SafeNavigation": {
+        "description": "Transforms usages of a method call safeguarded by a check for the existence of the object to safe navigation (`&.`). Autocorrection is unsafe as it assumes the object will be `nil` or truthy, but never `false`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesafenavigation"
+    },
+    "Style/SafeNavigationChainLength": {
+        "description": "Enforces safe navigation chains length to not exceed the configured maximum.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesafenavigationchainlength"
+    },
+    "Style/Sample": {
+        "description": "Use `sample` instead of `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesample"
+    },
+    "Style/SelectByRegexp": {
+        "description": "Prefer grep/grep_v to select/reject with a regexp match.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleselectbyregexp"
+    },
+    "Style/SelfAssignment": {
+        "description": "Checks for places where self-assignment shorthand should have been used.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleselfassignment"
+    },
+    "Style/Semicolon": {
+        "description": "Don't use semicolons to terminate expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesemicolon"
+    },
+    "Style/Send": {
+        "description": "Prefer `Object#__send__` or `Object#public_send` to `send`, as `send` may overlap with existing methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesend"
+    },
+    "Style/SendWithLiteralMethodName": {
+        "description": "Detects the use of the `public_send` method with a static method name argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesendwithliteralmethodname"
+    },
+    "Style/SignalException": {
+        "description": "Checks for proper usage of fail and raise.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesignalexception"
+    },
+    "Style/SingleArgumentDig": {
+        "description": "Avoid using single argument dig method.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesingleargumentdig"
+    },
+    "Style/SingleLineBlockParams": {
+        "description": "Enforces the names of some block params.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesinglelineblockparams"
+    },
+    "Style/SingleLineDoEndBlock": {
+        "description": "Checks for single-line `do`...`end` blocks.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesinglelinedoendblock"
+    },
+    "Style/SingleLineMethods": {
+        "description": "Avoid single-line methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesinglelinemethods"
+    },
+    "Style/SlicingWithRange": {
+        "description": "Checks array slicing is done with redundant, endless, and beginless ranges when suitable.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleslicingwithrange"
+    },
+    "Style/SoleNestedConditional": {
+        "description": "Finds sole nested conditional nodes which can be merged into outer conditional node.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesolenestedconditional"
+    },
+    "Style/SpecialGlobalVars": {
+        "description": "Avoid Perl-style global variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylespecialglobalvars"
+    },
+    "Style/StabbyLambdaParentheses": {
+        "description": "Checks for the usage of parentheses around stabby lambda arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestabbylambdaparentheses"
+    },
+    "Style/StaticClass": {
+        "description": "Prefer modules to classes with only class methods.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestaticclass"
+    },
+    "Style/StderrPuts": {
+        "description": "Use `warn` instead of `$stderr.puts`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestderrputs"
+    },
+    "Style/StringChars": {
+        "description": "Checks for uses of `String#split` with empty string or regexp literal argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringchars"
+    },
+    "Style/StringConcatenation": {
+        "description": "Checks for places where string concatenation can be replaced with string interpolation.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringconcatenation"
+    },
+    "Style/StringHashKeys": {
+        "description": "Prefer symbols instead of strings as hash keys.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringhashkeys"
+    },
+    "Style/StringLiterals": {
+        "description": "Checks if uses of quotes match the configured preference.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals"
+    },
+    "Style/StringLiteralsInInterpolation": {
+        "description": "Checks if uses of quotes inside expressions in interpolated strings match the configured preference.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliteralsininterpolation"
+    },
+    "Style/StringMethods": {
+        "description": "Checks if configured preferred methods are used over non-preferred.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringmethods"
+    },
+    "Style/Strip": {
+        "description": "Use `strip` instead of `lstrip.rstrip`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestrip"
+    },
+    "Style/StructInheritance": {
+        "description": "Checks for inheritance from Struct.new.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylestructinheritance"
+    },
+    "Style/SuperArguments": {
+        "description": "Call `super` without arguments and parentheses when the signature is identical.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesuperarguments"
+    },
+    "Style/SuperWithArgsParentheses": {
+        "description": "Use parentheses for `super` with arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesuperwithargsparentheses"
+    },
+    "Style/SwapValues": {
+        "description": "Enforces the use of shorthand-style swapping of 2 variables.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleswapvalues"
+    },
+    "Style/SymbolArray": {
+        "description": "Use %i or %I for arrays of symbols.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolarray"
+    },
+    "Style/SymbolLiteral": {
+        "description": "Use plain symbols instead of string symbols when possible.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolliteral"
+    },
+    "Style/SymbolProc": {
+        "description": "Use symbols as procs instead of blocks when possible.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolproc"
+    },
+    "Style/TernaryParentheses": {
+        "description": "Checks for use of parentheses around ternary conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleternaryparentheses"
+    },
+    "Style/TopLevelMethodDefinition": {
+        "description": "Looks for top-level method definitions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletoplevelmethoddefinition"
+    },
+    "Style/TrailingBodyOnClass": {
+        "description": "Class body goes below class statement.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingbodyonclass"
+    },
+    "Style/TrailingBodyOnMethodDefinition": {
+        "description": "Method body goes below definition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingbodyonmethoddefinition"
+    },
+    "Style/TrailingBodyOnModule": {
+        "description": "Module body goes below module statement.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingbodyonmodule"
+    },
+    "Style/TrailingCommaInArguments": {
+        "description": "Checks for trailing comma in argument lists.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainarguments"
+    },
+    "Style/TrailingCommaInArrayLiteral": {
+        "description": "Checks for trailing comma in array literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainarrayliteral"
+    },
+    "Style/TrailingCommaInBlockArgs": {
+        "description": "Checks for useless trailing commas in block arguments.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainblockargs"
+    },
+    "Style/TrailingCommaInHashLiteral": {
+        "description": "Checks for trailing comma in hash literals.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainhashliteral"
+    },
+    "Style/TrailingMethodEndStatement": {
+        "description": "Checks for trailing end statement on line of method body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingmethodendstatement"
+    },
+    "Style/TrailingUnderscoreVariable": {
+        "description": "Checks for the usage of unneeded trailing underscores at the end of parallel variable assignment.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingunderscorevariable"
+    },
+    "Style/TrivialAccessors": {
+        "description": "Prefer attr_* methods to trivial readers/writers.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styletrivialaccessors"
+    },
+    "Style/UnlessElse": {
+        "description": "Do not use unless with else. Rewrite these with the positive case first.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleunlesselse"
+    },
+    "Style/UnlessLogicalOperators": {
+        "description": "Checks for use of logical operators in an unless condition.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleunlesslogicaloperators"
+    },
+    "Style/UnpackFirst": {
+        "description": "Checks for accessing the first element of `String#unpack` instead of using `unpack1`.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleunpackfirst"
+    },
+    "Style/VariableInterpolation": {
+        "description": "Don't interpolate global, instance and class variables directly in strings.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylevariableinterpolation"
+    },
+    "Style/WhenThen": {
+        "description": "Use when x then ... for one-line cases.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylewhenthen"
+    },
+    "Style/WhileUntilDo": {
+        "description": "Checks for redundant do after while or until.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylewhileuntildo"
+    },
+    "Style/WhileUntilModifier": {
+        "description": "Favor modifier while/until usage when you have a single-line body.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylewhileuntilmodifier"
+    },
+    "Style/WordArray": {
+        "description": "Use %w or %W for arrays of words.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylewordarray"
+    },
+    "Style/YAMLFileRead": {
+        "description": "Checks for the use of `YAML.load`, `YAML.safe_load`, and `YAML.parse` with `File.read` argument.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleyamlfileread"
+    },
+    "Style/YodaCondition": {
+        "description": "Forbid or enforce yoda conditions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleyodacondition"
+    },
+    "Style/YodaExpression": {
+        "description": "Forbid the use of yoda expressions.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#styleyodaexpression"
+    },
+    "Style/ZeroLengthPredicate": {
+        "description": "Use #empty? when testing for objects of length 0.",
+        "url": "https://docs.rubocop.org/rubocop/cops_style.html#stylezerolengthpredicate"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/GlobalStdStream": {
+        "description": "Description\n\nEnforces the use of `$stdout/$stderr/$stdin` instead of `STDOUT/STDERR/STDIN`.",
+        "option": "This rule has no specific options."
+    }
+}

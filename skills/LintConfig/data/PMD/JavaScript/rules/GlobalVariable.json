@@ -1,0 +1,6 @@
+{
+    "GlobalVariable": {
+        "description": "Description\n\nThis rule helps to avoid using accidentally global variables by simply missing the \"var\" declaration.\nGlobal variables can lead to side-effects that are hard to debug.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

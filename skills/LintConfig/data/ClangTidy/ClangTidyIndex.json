@@ -1,0 +1,2318 @@
+{
+    "abseil-cleanup-ctad": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/cleanup-ctad.html"
+    },
+    "abseil-duration-addition": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-addition.html"
+    },
+    "abseil-duration-comparison": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-comparison.html"
+    },
+    "abseil-duration-conversion-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-conversion-cast.html"
+    },
+    "abseil-duration-division": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-division.html"
+    },
+    "abseil-duration-factory-float": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-factory-float.html"
+    },
+    "abseil-duration-factory-scale": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-factory-scale.html"
+    },
+    "abseil-duration-subtraction": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-subtraction.html"
+    },
+    "abseil-duration-unnecessary-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/duration-unnecessary-conversion.html"
+    },
+    "abseil-faster-strsplit-delimiter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/faster-strsplit-delimiter.html"
+    },
+    "abseil-no-internal-dependencies": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/no-internal-dependencies.html"
+    },
+    "abseil-no-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/no-namespace.html"
+    },
+    "abseil-redundant-strcat-calls": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/redundant-strcat-calls.html"
+    },
+    "abseil-str-cat-append": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/str-cat-append.html"
+    },
+    "abseil-string-find-startswith": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/string-find-startswith.html"
+    },
+    "abseil-string-find-str-contains": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/string-find-str-contains.html"
+    },
+    "abseil-time-comparison": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/time-comparison.html"
+    },
+    "abseil-time-subtraction": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/time-subtraction.html"
+    },
+    "abseil-unchecked-statusor-access": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/unchecked-statusor-access.html"
+    },
+    "abseil-upgrade-duration-conversions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/abseil/upgrade-duration-conversions.html"
+    },
+    "altera-id-dependent-backward-branch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/id-dependent-backward-branch.html"
+    },
+    "altera-kernel-name-restriction": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/kernel-name-restriction.html"
+    },
+    "altera-single-work-item-barrier": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/single-work-item-barrier.html"
+    },
+    "altera-struct-pack-align": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/struct-pack-align.html"
+    },
+    "altera-unroll-loops": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/altera/unroll-loops.html"
+    },
+    "android-cloexec-accept": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-accept.html"
+    },
+    "android-cloexec-accept4": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-accept4.html"
+    },
+    "android-cloexec-creat": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-creat.html"
+    },
+    "android-cloexec-dup": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-dup.html"
+    },
+    "android-cloexec-epoll-create": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-epoll-create.html"
+    },
+    "android-cloexec-epoll-create1": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-epoll-create1.html"
+    },
+    "android-cloexec-fopen": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-fopen.html"
+    },
+    "android-cloexec-inotify-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-inotify-init.html"
+    },
+    "android-cloexec-inotify-init1": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-inotify-init1.html"
+    },
+    "android-cloexec-memfd-create": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-memfd-create.html"
+    },
+    "android-cloexec-open": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-open.html"
+    },
+    "android-cloexec-pipe": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-pipe.html"
+    },
+    "android-cloexec-pipe2": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-pipe2.html"
+    },
+    "android-cloexec-socket": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/cloexec-socket.html"
+    },
+    "android-comparison-in-temp-failure-retry": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/android/comparison-in-temp-failure-retry.html"
+    },
+    "boost-use-ranges": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/boost/use-ranges.html"
+    },
+    "boost-use-to-string": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/boost/use-to-string.html"
+    },
+    "bugprone-argument-comment": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/argument-comment.html"
+    },
+    "bugprone-assert-side-effect": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/assert-side-effect.html"
+    },
+    "bugprone-assignment-in-if-condition": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/assignment-in-if-condition.html"
+    },
+    "bugprone-bad-signal-to-kill-thread": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/bad-signal-to-kill-thread.html"
+    },
+    "bugprone-bitwise-pointer-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/bitwise-pointer-cast.html"
+    },
+    "bugprone-bool-pointer-implicit-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/bool-pointer-implicit-conversion.html"
+    },
+    "bugprone-branch-clone": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/branch-clone.html"
+    },
+    "bugprone-capturing-this-in-member-variable": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/capturing-this-in-member-variable.html"
+    },
+    "bugprone-casting-through-void": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/casting-through-void.html"
+    },
+    "bugprone-chained-comparison": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/chained-comparison.html"
+    },
+    "bugprone-command-processor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/command-processor.html"
+    },
+    "bugprone-compare-pointer-to-member-virtual-function": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/compare-pointer-to-member-virtual-function.html"
+    },
+    "bugprone-copy-constructor-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/copy-constructor-init.html"
+    },
+    "bugprone-copy-constructor-mutates-argument": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/copy-constructor-mutates-argument.html"
+    },
+    "bugprone-crtp-constructor-accessibility": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/crtp-constructor-accessibility.html"
+    },
+    "bugprone-dangling-handle": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/dangling-handle.html"
+    },
+    "bugprone-default-operator-new-on-overaligned-type": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/default-operator-new-on-overaligned-type.html"
+    },
+    "bugprone-derived-method-shadowing-base-method": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/derived-method-shadowing-base-method.html"
+    },
+    "bugprone-dynamic-static-initializers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/dynamic-static-initializers.html"
+    },
+    "bugprone-easily-swappable-parameters": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/easily-swappable-parameters.html"
+    },
+    "bugprone-empty-catch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/empty-catch.html"
+    },
+    "bugprone-exception-copy-constructor-throws": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/exception-copy-constructor-throws.html"
+    },
+    "bugprone-exception-escape": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/exception-escape.html"
+    },
+    "bugprone-float-loop-counter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/float-loop-counter.html"
+    },
+    "bugprone-fold-init-type": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/fold-init-type.html"
+    },
+    "bugprone-forward-declaration-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/forward-declaration-namespace.html"
+    },
+    "bugprone-forwarding-reference-overload": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/forwarding-reference-overload.html"
+    },
+    "bugprone-implicit-widening-of-multiplication-result": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/implicit-widening-of-multiplication-result.html"
+    },
+    "bugprone-inaccurate-erase": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/inaccurate-erase.html"
+    },
+    "bugprone-inc-dec-in-conditions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/inc-dec-in-conditions.html"
+    },
+    "bugprone-incorrect-enable-if": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/incorrect-enable-if.html"
+    },
+    "bugprone-incorrect-enable-shared-from-this": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/incorrect-enable-shared-from-this.html"
+    },
+    "bugprone-incorrect-roundings": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/incorrect-roundings.html"
+    },
+    "bugprone-infinite-loop": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/infinite-loop.html"
+    },
+    "bugprone-integer-division": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/integer-division.html"
+    },
+    "bugprone-invalid-enum-default-initialization": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/invalid-enum-default-initialization.html"
+    },
+    "bugprone-lambda-function-name": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/lambda-function-name.html"
+    },
+    "bugprone-macro-parentheses": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/macro-parentheses.html"
+    },
+    "bugprone-macro-repeated-side-effects": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/macro-repeated-side-effects.html"
+    },
+    "bugprone-misleading-setter-of-reference": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misleading-setter-of-reference.html"
+    },
+    "bugprone-misplaced-operator-in-strlen-in-alloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-operator-in-strlen-in-alloc.html"
+    },
+    "bugprone-misplaced-pointer-arithmetic-in-alloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-pointer-arithmetic-in-alloc.html"
+    },
+    "bugprone-misplaced-widening-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/misplaced-widening-cast.html"
+    },
+    "bugprone-move-forwarding-reference": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/move-forwarding-reference.html"
+    },
+    "bugprone-multi-level-implicit-pointer-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/multi-level-implicit-pointer-conversion.html"
+    },
+    "bugprone-multiple-new-in-one-expression": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/multiple-new-in-one-expression.html"
+    },
+    "bugprone-multiple-statement-macro": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/multiple-statement-macro.html"
+    },
+    "bugprone-narrowing-conversions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/narrowing-conversions.html"
+    },
+    "bugprone-no-escape": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/no-escape.html"
+    },
+    "bugprone-non-zero-enum-to-bool-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/non-zero-enum-to-bool-conversion.html"
+    },
+    "bugprone-nondeterministic-pointer-iteration-order": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/nondeterministic-pointer-iteration-order.html"
+    },
+    "bugprone-not-null-terminated-result": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/not-null-terminated-result.html"
+    },
+    "bugprone-optional-value-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/optional-value-conversion.html"
+    },
+    "bugprone-parent-virtual-call": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/parent-virtual-call.html"
+    },
+    "bugprone-pointer-arithmetic-on-polymorphic-object": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/pointer-arithmetic-on-polymorphic-object.html"
+    },
+    "bugprone-posix-return": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/posix-return.html"
+    },
+    "bugprone-random-generator-seed": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/random-generator-seed.html"
+    },
+    "bugprone-raw-memory-call-on-non-trivial-type": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-non-trivial-type.html"
+    },
+    "bugprone-redundant-branch-condition": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/redundant-branch-condition.html"
+    },
+    "bugprone-reserved-identifier": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/reserved-identifier.html"
+    },
+    "bugprone-return-const-ref-from-parameter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/return-const-ref-from-parameter.html"
+    },
+    "bugprone-shared-ptr-array-mismatch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/shared-ptr-array-mismatch.html"
+    },
+    "bugprone-signal-handler": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/signal-handler.html"
+    },
+    "bugprone-signed-char-misuse": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/signed-char-misuse.html"
+    },
+    "bugprone-sizeof-container": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/sizeof-container.html"
+    },
+    "bugprone-sizeof-expression": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/sizeof-expression.html"
+    },
+    "bugprone-spuriously-wake-up-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/spuriously-wake-up-functions.html"
+    },
+    "bugprone-standalone-empty": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/standalone-empty.html"
+    },
+    "bugprone-std-namespace-modification": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/std-namespace-modification.html"
+    },
+    "bugprone-string-constructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/string-constructor.html"
+    },
+    "bugprone-string-integer-assignment": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/string-integer-assignment.html"
+    },
+    "bugprone-string-literal-with-embedded-nul": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/string-literal-with-embedded-nul.html"
+    },
+    "bugprone-stringview-nullptr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/stringview-nullptr.html"
+    },
+    "bugprone-suspicious-enum-usage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-enum-usage.html"
+    },
+    "bugprone-suspicious-include": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-include.html"
+    },
+    "bugprone-suspicious-memory-comparison": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-memory-comparison.html"
+    },
+    "bugprone-suspicious-memset-usage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-memset-usage.html"
+    },
+    "bugprone-suspicious-missing-comma": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-missing-comma.html"
+    },
+    "bugprone-suspicious-realloc-usage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-realloc-usage.html"
+    },
+    "bugprone-suspicious-semicolon": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-semicolon.html"
+    },
+    "bugprone-suspicious-string-compare": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-string-compare.html"
+    },
+    "bugprone-suspicious-stringview-data-usage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/suspicious-stringview-data-usage.html"
+    },
+    "bugprone-swapped-arguments": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/swapped-arguments.html"
+    },
+    "bugprone-switch-missing-default-case": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/switch-missing-default-case.html"
+    },
+    "bugprone-tagged-union-member-count": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/tagged-union-member-count.html"
+    },
+    "bugprone-terminating-continue": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/terminating-continue.html"
+    },
+    "bugprone-throw-keyword-missing": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/throw-keyword-missing.html"
+    },
+    "bugprone-throwing-static-initialization": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/throwing-static-initialization.html"
+    },
+    "bugprone-too-small-loop-variable": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/too-small-loop-variable.html"
+    },
+    "bugprone-unchecked-optional-access": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unchecked-optional-access.html"
+    },
+    "bugprone-unchecked-string-to-number-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unchecked-string-to-number-conversion.html"
+    },
+    "bugprone-undefined-memory-manipulation": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/undefined-memory-manipulation.html"
+    },
+    "bugprone-undelegated-constructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/undelegated-constructor.html"
+    },
+    "bugprone-unhandled-exception-at-new": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unhandled-exception-at-new.html"
+    },
+    "bugprone-unhandled-self-assignment": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unhandled-self-assignment.html"
+    },
+    "bugprone-unintended-char-ostream-output": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unintended-char-ostream-output.html"
+    },
+    "bugprone-unique-ptr-array-mismatch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unique-ptr-array-mismatch.html"
+    },
+    "bugprone-unsafe-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unsafe-functions.html"
+    },
+    "bugprone-unused-local-non-trivial-variable": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unused-local-non-trivial-variable.html"
+    },
+    "bugprone-unused-raii": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unused-raii.html"
+    },
+    "bugprone-unused-return-value": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/unused-return-value.html"
+    },
+    "bugprone-use-after-move": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/use-after-move.html"
+    },
+    "bugprone-virtual-near-miss": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/bugprone/virtual-near-miss.html"
+    },
+    "cert-err33-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err33-c.html"
+    },
+    "cert-err60-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err60-cpp.html"
+    },
+    "cert-flp30-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/flp30-c.html"
+    },
+    "cert-msc50-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc50-cpp.html"
+    },
+    "cert-oop58-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/oop58-cpp.html"
+    },
+    "concurrency-mt-unsafe": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/concurrency/mt-unsafe.html"
+    },
+    "concurrency-thread-canceltype-asynchronous": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/concurrency/thread-canceltype-asynchronous.html"
+    },
+    "cppcoreguidelines-avoid-capturing-lambda-coroutines": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-capturing-lambda-coroutines.html"
+    },
+    "cppcoreguidelines-avoid-const-or-ref-data-members": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-const-or-ref-data-members.html"
+    },
+    "cppcoreguidelines-avoid-do-while": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-do-while.html"
+    },
+    "cppcoreguidelines-avoid-goto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-goto.html"
+    },
+    "cppcoreguidelines-avoid-non-const-global-variables": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-non-const-global-variables.html"
+    },
+    "cppcoreguidelines-avoid-reference-coroutine-parameters": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-reference-coroutine-parameters.html"
+    },
+    "cppcoreguidelines-init-variables": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/init-variables.html"
+    },
+    "cppcoreguidelines-interfaces-global-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/interfaces-global-init.html"
+    },
+    "cppcoreguidelines-macro-usage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/macro-usage.html"
+    },
+    "cppcoreguidelines-misleading-capture-default-by-value": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/misleading-capture-default-by-value.html"
+    },
+    "cppcoreguidelines-missing-std-forward": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/missing-std-forward.html"
+    },
+    "cppcoreguidelines-no-malloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/no-malloc.html"
+    },
+    "cppcoreguidelines-no-suspend-with-lock": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/no-suspend-with-lock.html"
+    },
+    "cppcoreguidelines-owning-memory": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/owning-memory.html"
+    },
+    "cppcoreguidelines-prefer-member-initializer": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/prefer-member-initializer.html"
+    },
+    "cppcoreguidelines-pro-bounds-array-to-pointer-decay": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-array-to-pointer-decay.html"
+    },
+    "cppcoreguidelines-pro-bounds-avoid-unchecked-container-access": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-avoid-unchecked-container-access.html"
+    },
+    "cppcoreguidelines-pro-bounds-constant-array-index": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-constant-array-index.html"
+    },
+    "cppcoreguidelines-pro-bounds-pointer-arithmetic": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-bounds-pointer-arithmetic.html"
+    },
+    "cppcoreguidelines-pro-type-const-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-const-cast.html"
+    },
+    "cppcoreguidelines-pro-type-cstyle-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-cstyle-cast.html"
+    },
+    "cppcoreguidelines-pro-type-member-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-member-init.html"
+    },
+    "cppcoreguidelines-pro-type-reinterpret-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-reinterpret-cast.html"
+    },
+    "cppcoreguidelines-pro-type-static-cast-downcast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-static-cast-downcast.html"
+    },
+    "cppcoreguidelines-pro-type-union-access": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-union-access.html"
+    },
+    "cppcoreguidelines-pro-type-vararg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/pro-type-vararg.html"
+    },
+    "cppcoreguidelines-rvalue-reference-param-not-moved": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/rvalue-reference-param-not-moved.html"
+    },
+    "cppcoreguidelines-slicing": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/slicing.html"
+    },
+    "cppcoreguidelines-special-member-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/special-member-functions.html"
+    },
+    "cppcoreguidelines-use-enum-class": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/use-enum-class.html"
+    },
+    "cppcoreguidelines-virtual-class-destructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/virtual-class-destructor.html"
+    },
+    "darwin-avoid-spinlock": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/darwin/avoid-spinlock.html"
+    },
+    "darwin-dispatch-once-nonstatic": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/darwin/dispatch-once-nonstatic.html"
+    },
+    "fuchsia-default-arguments-calls": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/default-arguments-calls.html"
+    },
+    "fuchsia-default-arguments-declarations": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/default-arguments-declarations.html"
+    },
+    "fuchsia-overloaded-operator": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/overloaded-operator.html"
+    },
+    "fuchsia-statically-constructed-objects": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/statically-constructed-objects.html"
+    },
+    "fuchsia-temporary-objects": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/temporary-objects.html"
+    },
+    "fuchsia-trailing-return": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/trailing-return.html"
+    },
+    "fuchsia-virtual-inheritance": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/virtual-inheritance.html"
+    },
+    "google-build-explicit-make-pair": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/build-explicit-make-pair.html"
+    },
+    "google-build-using-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/build-using-namespace.html"
+    },
+    "google-default-arguments": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/default-arguments.html"
+    },
+    "google-explicit-constructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/explicit-constructor.html"
+    },
+    "google-global-names-in-headers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/global-names-in-headers.html"
+    },
+    "google-objc-avoid-nsobject-new": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-avoid-nsobject-new.html"
+    },
+    "google-objc-avoid-throwing-exception": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-avoid-throwing-exception.html"
+    },
+    "google-objc-function-naming": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-function-naming.html"
+    },
+    "google-objc-global-variable-declaration": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/objc-global-variable-declaration.html"
+    },
+    "google-readability-avoid-underscore-in-googletest-name": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-avoid-underscore-in-googletest-name.html"
+    },
+    "google-readability-todo": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-todo.html"
+    },
+    "google-runtime-float": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/runtime-float.html"
+    },
+    "google-runtime-int": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/runtime-int.html"
+    },
+    "google-runtime-operator": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/runtime-operator.html"
+    },
+    "google-upgrade-googletest-case": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/upgrade-googletest-case.html"
+    },
+    "hicpp-exception-baseclass": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/exception-baseclass.html"
+    },
+    "hicpp-ignored-remove-result": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/ignored-remove-result.html"
+    },
+    "hicpp-multiway-paths-covered": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/multiway-paths-covered.html"
+    },
+    "hicpp-no-assembler": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/no-assembler.html"
+    },
+    "hicpp-signed-bitwise": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/signed-bitwise.html"
+    },
+    "linuxkernel-must-check-errs": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/linuxkernel/must-check-errs.html"
+    },
+    "llvm-header-guard": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/header-guard.html"
+    },
+    "llvm-include-order": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/include-order.html"
+    },
+    "llvm-namespace-comment": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/namespace-comment.html"
+    },
+    "llvm-prefer-isa-or-dyn-cast-in-conditionals": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/prefer-isa-or-dyn-cast-in-conditionals.html"
+    },
+    "llvm-prefer-register-over-unsigned": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/prefer-register-over-unsigned.html"
+    },
+    "llvm-prefer-static-over-anonymous-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/prefer-static-over-anonymous-namespace.html"
+    },
+    "llvm-twine-local": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/twine-local.html"
+    },
+    "llvm-type-switch-case-types": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/type-switch-case-types.html"
+    },
+    "llvm-use-new-mlir-op-builder": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/use-new-mlir-op-builder.html"
+    },
+    "llvm-use-ranges": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/use-ranges.html"
+    },
+    "llvm-use-vector-utils": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/use-vector-utils.html"
+    },
+    "llvmlibc-callee-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvmlibc/callee-namespace.html"
+    },
+    "llvmlibc-implementation-in-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvmlibc/implementation-in-namespace.html"
+    },
+    "llvmlibc-inline-function-decl": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvmlibc/inline-function-decl.html"
+    },
+    "llvmlibc-restrict-system-libc-headers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvmlibc/restrict-system-libc-headers.html"
+    },
+    "misc-anonymous-namespace-in-header": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/anonymous-namespace-in-header.html"
+    },
+    "misc-confusable-identifiers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/confusable-identifiers.html"
+    },
+    "misc-const-correctness": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/const-correctness.html"
+    },
+    "misc-coroutine-hostile-raii": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/coroutine-hostile-raii.html"
+    },
+    "misc-definitions-in-headers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/definitions-in-headers.html"
+    },
+    "misc-header-include-cycle": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/header-include-cycle.html"
+    },
+    "misc-include-cleaner": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/include-cleaner.html"
+    },
+    "misc-misleading-bidirectional": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misleading-bidirectional.html"
+    },
+    "misc-misleading-identifier": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misleading-identifier.html"
+    },
+    "misc-misplaced-const": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/misplaced-const.html"
+    },
+    "misc-multiple-inheritance": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/multiple-inheritance.html"
+    },
+    "misc-new-delete-overloads": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/new-delete-overloads.html"
+    },
+    "misc-no-recursion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/no-recursion.html"
+    },
+    "misc-non-copyable-objects": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/non-copyable-objects.html"
+    },
+    "misc-non-private-member-variables-in-classes": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/non-private-member-variables-in-classes.html"
+    },
+    "misc-override-with-different-visibility": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/override-with-different-visibility.html"
+    },
+    "misc-predictable-rand": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/predictable-rand.html"
+    },
+    "misc-redundant-expression": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/redundant-expression.html"
+    },
+    "misc-static-assert": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/static-assert.html"
+    },
+    "misc-throw-by-value-catch-by-reference": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/throw-by-value-catch-by-reference.html"
+    },
+    "misc-unconventional-assign-operator": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/unconventional-assign-operator.html"
+    },
+    "misc-uniqueptr-reset-release": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/uniqueptr-reset-release.html"
+    },
+    "misc-unused-alias-decls": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/unused-alias-decls.html"
+    },
+    "misc-unused-parameters": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/unused-parameters.html"
+    },
+    "misc-unused-using-decls": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/unused-using-decls.html"
+    },
+    "misc-use-anonymous-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/use-anonymous-namespace.html"
+    },
+    "misc-use-internal-linkage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/misc/use-internal-linkage.html"
+    },
+    "modernize-avoid-bind": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/avoid-bind.html"
+    },
+    "modernize-avoid-c-arrays": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/avoid-c-arrays.html"
+    },
+    "modernize-avoid-c-style-cast": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/avoid-c-style-cast.html"
+    },
+    "modernize-avoid-setjmp-longjmp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/avoid-setjmp-longjmp.html"
+    },
+    "modernize-avoid-variadic-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/avoid-variadic-functions.html"
+    },
+    "modernize-concat-nested-namespaces": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/concat-nested-namespaces.html"
+    },
+    "modernize-deprecated-headers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/deprecated-headers.html"
+    },
+    "modernize-deprecated-ios-base-aliases": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/deprecated-ios-base-aliases.html"
+    },
+    "modernize-loop-convert": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/loop-convert.html"
+    },
+    "modernize-macro-to-enum": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/macro-to-enum.html"
+    },
+    "modernize-make-shared": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/make-shared.html"
+    },
+    "modernize-make-unique": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/make-unique.html"
+    },
+    "modernize-min-max-use-initializer-list": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/min-max-use-initializer-list.html"
+    },
+    "modernize-pass-by-value": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/pass-by-value.html"
+    },
+    "modernize-raw-string-literal": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/raw-string-literal.html"
+    },
+    "modernize-redundant-void-arg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/redundant-void-arg.html"
+    },
+    "modernize-replace-auto-ptr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/replace-auto-ptr.html"
+    },
+    "modernize-replace-disallow-copy-and-assign-macro": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/replace-disallow-copy-and-assign-macro.html"
+    },
+    "modernize-replace-random-shuffle": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/replace-random-shuffle.html"
+    },
+    "modernize-return-braced-init-list": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/return-braced-init-list.html"
+    },
+    "modernize-shrink-to-fit": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/shrink-to-fit.html"
+    },
+    "modernize-type-traits": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/type-traits.html"
+    },
+    "modernize-unary-static-assert": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/unary-static-assert.html"
+    },
+    "modernize-use-auto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-auto.html"
+    },
+    "modernize-use-bool-literals": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-bool-literals.html"
+    },
+    "modernize-use-constraints": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-constraints.html"
+    },
+    "modernize-use-default-member-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-default-member-init.html"
+    },
+    "modernize-use-designated-initializers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-designated-initializers.html"
+    },
+    "modernize-use-emplace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-emplace.html"
+    },
+    "modernize-use-equals-default": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-equals-default.html"
+    },
+    "modernize-use-equals-delete": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-equals-delete.html"
+    },
+    "modernize-use-integer-sign-comparison": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-integer-sign-comparison.html"
+    },
+    "modernize-use-nodiscard": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-nodiscard.html"
+    },
+    "modernize-use-noexcept": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-noexcept.html"
+    },
+    "modernize-use-nullptr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-nullptr.html"
+    },
+    "modernize-use-override": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-override.html"
+    },
+    "modernize-use-ranges": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-ranges.html"
+    },
+    "modernize-use-scoped-lock": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-scoped-lock.html"
+    },
+    "modernize-use-starts-ends-with": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-starts-ends-with.html"
+    },
+    "modernize-use-std-format": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-std-format.html"
+    },
+    "modernize-use-std-numbers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-std-numbers.html"
+    },
+    "modernize-use-std-print": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-std-print.html"
+    },
+    "modernize-use-string-view": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-string-view.html"
+    },
+    "modernize-use-structured-binding": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-structured-binding.html"
+    },
+    "modernize-use-trailing-return-type": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-trailing-return-type.html"
+    },
+    "modernize-use-transparent-functors": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-transparent-functors.html"
+    },
+    "modernize-use-uncaught-exceptions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-uncaught-exceptions.html"
+    },
+    "modernize-use-using": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/modernize/use-using.html"
+    },
+    "mpi-buffer-deref": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/mpi/buffer-deref.html"
+    },
+    "mpi-type-mismatch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/mpi/type-mismatch.html"
+    },
+    "objc-assert-equals": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/assert-equals.html"
+    },
+    "objc-avoid-nserror-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/avoid-nserror-init.html"
+    },
+    "objc-dealloc-in-category": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/dealloc-in-category.html"
+    },
+    "objc-forbidden-subclassing": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/forbidden-subclassing.html"
+    },
+    "objc-missing-hash": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/missing-hash.html"
+    },
+    "objc-nsdate-formatter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/nsdate-formatter.html"
+    },
+    "objc-nsinvocation-argument-lifetime": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/nsinvocation-argument-lifetime.html"
+    },
+    "objc-property-declaration": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/property-declaration.html"
+    },
+    "objc-super-self": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/objc/super-self.html"
+    },
+    "openmp-exception-escape": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/openmp/exception-escape.html"
+    },
+    "openmp-use-default-none": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/openmp/use-default-none.html"
+    },
+    "performance-avoid-endl": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/avoid-endl.html"
+    },
+    "performance-enum-size": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/enum-size.html"
+    },
+    "performance-faster-string-find": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/faster-string-find.html"
+    },
+    "performance-for-range-copy": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/for-range-copy.html"
+    },
+    "performance-implicit-conversion-in-loop": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/implicit-conversion-in-loop.html"
+    },
+    "performance-inefficient-algorithm": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/inefficient-algorithm.html"
+    },
+    "performance-inefficient-string-concatenation": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/inefficient-string-concatenation.html"
+    },
+    "performance-inefficient-vector-operation": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/inefficient-vector-operation.html"
+    },
+    "performance-move-const-arg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/move-const-arg.html"
+    },
+    "performance-move-constructor-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/move-constructor-init.html"
+    },
+    "performance-no-automatic-move": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/no-automatic-move.html"
+    },
+    "performance-no-int-to-ptr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/no-int-to-ptr.html"
+    },
+    "performance-noexcept-destructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/noexcept-destructor.html"
+    },
+    "performance-noexcept-move-constructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/noexcept-move-constructor.html"
+    },
+    "performance-noexcept-swap": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/noexcept-swap.html"
+    },
+    "performance-string-view-conversions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/string-view-conversions.html"
+    },
+    "performance-trivially-destructible": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/trivially-destructible.html"
+    },
+    "performance-type-promotion-in-math-fn": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/type-promotion-in-math-fn.html"
+    },
+    "performance-unnecessary-copy-initialization": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/unnecessary-copy-initialization.html"
+    },
+    "performance-unnecessary-value-param": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/performance/unnecessary-value-param.html"
+    },
+    "portability-avoid-pragma-once": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/avoid-pragma-once.html"
+    },
+    "portability-restrict-system-includes": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/restrict-system-includes.html"
+    },
+    "portability-simd-intrinsics": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/simd-intrinsics.html"
+    },
+    "portability-std-allocator-const": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/std-allocator-const.html"
+    },
+    "portability-template-virtual-member-function": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/portability/template-virtual-member-function.html"
+    },
+    "readability-ambiguous-smartptr-reset-call": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/ambiguous-smartptr-reset-call.html"
+    },
+    "readability-avoid-const-params-in-decls": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-const-params-in-decls.html"
+    },
+    "readability-avoid-nested-conditional-operator": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-nested-conditional-operator.html"
+    },
+    "readability-avoid-return-with-void-value": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-return-with-void-value.html"
+    },
+    "readability-avoid-unconditional-preprocessor-if": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/avoid-unconditional-preprocessor-if.html"
+    },
+    "readability-braces-around-statements": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/braces-around-statements.html"
+    },
+    "readability-const-return-type": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/const-return-type.html"
+    },
+    "readability-container-contains": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/container-contains.html"
+    },
+    "readability-container-data-pointer": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/container-data-pointer.html"
+    },
+    "readability-container-size-empty": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/container-size-empty.html"
+    },
+    "readability-convert-member-functions-to-static": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/convert-member-functions-to-static.html"
+    },
+    "readability-delete-null-pointer": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/delete-null-pointer.html"
+    },
+    "readability-duplicate-include": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/duplicate-include.html"
+    },
+    "readability-else-after-return": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/else-after-return.html"
+    },
+    "readability-enum-initial-value": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/enum-initial-value.html"
+    },
+    "readability-function-cognitive-complexity": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/function-cognitive-complexity.html"
+    },
+    "readability-function-size": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/function-size.html"
+    },
+    "readability-identifier-length": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/identifier-length.html"
+    },
+    "readability-identifier-naming": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/identifier-naming.html"
+    },
+    "readability-implicit-bool-conversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/implicit-bool-conversion.html"
+    },
+    "readability-inconsistent-declaration-parameter-name": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/inconsistent-declaration-parameter-name.html"
+    },
+    "readability-inconsistent-ifelse-braces": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/inconsistent-ifelse-braces.html"
+    },
+    "readability-isolate-declaration": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/isolate-declaration.html"
+    },
+    "readability-magic-numbers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/magic-numbers.html"
+    },
+    "readability-make-member-function-const": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/make-member-function-const.html"
+    },
+    "readability-math-missing-parentheses": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/math-missing-parentheses.html"
+    },
+    "readability-misleading-indentation": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/misleading-indentation.html"
+    },
+    "readability-misplaced-array-index": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/misplaced-array-index.html"
+    },
+    "readability-named-parameter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/named-parameter.html"
+    },
+    "readability-non-const-parameter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/non-const-parameter.html"
+    },
+    "readability-operators-representation": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/operators-representation.html"
+    },
+    "readability-qualified-auto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/qualified-auto.html"
+    },
+    "readability-redundant-access-specifiers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-access-specifiers.html"
+    },
+    "readability-redundant-casting": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-casting.html"
+    },
+    "readability-redundant-control-flow": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-control-flow.html"
+    },
+    "readability-redundant-declaration": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-declaration.html"
+    },
+    "readability-redundant-function-ptr-dereference": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-function-ptr-dereference.html"
+    },
+    "readability-redundant-inline-specifier": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-inline-specifier.html"
+    },
+    "readability-redundant-member-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-member-init.html"
+    },
+    "readability-redundant-parentheses": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-parentheses.html"
+    },
+    "readability-redundant-preprocessor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-preprocessor.html"
+    },
+    "readability-redundant-smartptr-get": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-smartptr-get.html"
+    },
+    "readability-redundant-string-cstr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-string-cstr.html"
+    },
+    "readability-redundant-string-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-string-init.html"
+    },
+    "readability-redundant-typename": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/redundant-typename.html"
+    },
+    "readability-reference-to-constructed-temporary": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/reference-to-constructed-temporary.html"
+    },
+    "readability-simplify-boolean-expr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/simplify-boolean-expr.html"
+    },
+    "readability-simplify-subscript-expr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/simplify-subscript-expr.html"
+    },
+    "readability-static-accessed-through-instance": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/static-accessed-through-instance.html"
+    },
+    "readability-static-definition-in-anonymous-namespace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/static-definition-in-anonymous-namespace.html"
+    },
+    "readability-string-compare": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/string-compare.html"
+    },
+    "readability-suspicious-call-argument": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/suspicious-call-argument.html"
+    },
+    "readability-trailing-comma": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/trailing-comma.html"
+    },
+    "readability-uniqueptr-delete-release": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/uniqueptr-delete-release.html"
+    },
+    "readability-uppercase-literal-suffix": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/uppercase-literal-suffix.html"
+    },
+    "readability-use-anyofallof": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/use-anyofallof.html"
+    },
+    "readability-use-concise-preprocessor-directives": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/use-concise-preprocessor-directives.html"
+    },
+    "readability-use-std-min-max": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/readability/use-std-min-max.html"
+    },
+    "zircon-temporary-objects": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/zircon/temporary-objects.html"
+    },
+    "cert-arr39-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/arr39-c.html"
+    },
+    "cert-con36-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/con36-c.html"
+    },
+    "cert-con54-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/con54-cpp.html"
+    },
+    "cert-ctr56-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/ctr56-cpp.html"
+    },
+    "cert-dcl03-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl03-c.html"
+    },
+    "cert-dcl16-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl16-c.html"
+    },
+    "cert-dcl37-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl37-c.html"
+    },
+    "cert-dcl50-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl50-cpp.html"
+    },
+    "cert-dcl51-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl51-cpp.html"
+    },
+    "cert-dcl54-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl54-cpp.html"
+    },
+    "cert-dcl58-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl58-cpp.html"
+    },
+    "cert-dcl59-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/dcl59-cpp.html"
+    },
+    "cert-env33-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/env33-c.html"
+    },
+    "cert-err09-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err09-cpp.html"
+    },
+    "cert-err34-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err34-c.html"
+    },
+    "cert-err52-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err52-cpp.html"
+    },
+    "cert-err58-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err58-cpp.html"
+    },
+    "cert-err61-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/err61-cpp.html"
+    },
+    "cert-exp42-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/exp42-c.html"
+    },
+    "cert-fio38-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/fio38-c.html"
+    },
+    "cert-flp37-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/flp37-c.html"
+    },
+    "cert-int09-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/int09-c.html"
+    },
+    "cert-mem57-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/mem57-cpp.html"
+    },
+    "cert-msc24-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc24-c.html"
+    },
+    "cert-msc30-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc30-c.html"
+    },
+    "cert-msc32-c": {
+        "description": "Failed to fetch description.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc32-c.html"
+    },
+    "cert-msc33-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc33-c.html"
+    },
+    "cert-msc51-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc51-cpp.html"
+    },
+    "cert-msc54-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/msc54-cpp.html"
+    },
+    "cert-oop11-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/oop11-cpp.html"
+    },
+    "cert-oop54-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/oop54-cpp.html"
+    },
+    "cert-oop57-cpp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/oop57-cpp.html"
+    },
+    "cert-pos44-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/pos44-c.html"
+    },
+    "cert-pos47-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/pos47-c.html"
+    },
+    "cert-sig30-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/sig30-c.html"
+    },
+    "cert-str34-c": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cert/str34-c.html"
+    },
+    "clang-analyzer-core.BitwiseShift": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.BitwiseShift.html"
+    },
+    "clang-analyzer-core.CallAndMessage": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.CallAndMessage.html"
+    },
+    "clang-analyzer-core.DivideZero": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.DivideZero.html"
+    },
+    "clang-analyzer-core.NonNullParamChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.NonNullParamChecker.html"
+    },
+    "clang-analyzer-core.NullDereference": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.NullDereference.html"
+    },
+    "clang-analyzer-core.StackAddressEscape": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.StackAddressEscape.html"
+    },
+    "clang-analyzer-core.UndefinedBinaryOperatorResult": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.UndefinedBinaryOperatorResult.html"
+    },
+    "clang-analyzer-core.VLASize": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.VLASize.html"
+    },
+    "clang-analyzer-core.uninitialized.ArraySubscript": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.ArraySubscript.html"
+    },
+    "clang-analyzer-core.uninitialized.Assign": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.Assign.html"
+    },
+    "clang-analyzer-core.uninitialized.Branch": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.Branch.html"
+    },
+    "clang-analyzer-core.uninitialized.CapturedBlockVariable": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.CapturedBlockVariable.html"
+    },
+    "clang-analyzer-core.uninitialized.NewArraySize": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.NewArraySize.html"
+    },
+    "clang-analyzer-core.uninitialized.UndefReturn": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/core.uninitialized.UndefReturn.html"
+    },
+    "clang-analyzer-cplusplus.ArrayDelete": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.ArrayDelete.html"
+    },
+    "clang-analyzer-cplusplus.InnerPointer": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.InnerPointer.html"
+    },
+    "clang-analyzer-cplusplus.Move": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.Move.html"
+    },
+    "clang-analyzer-cplusplus.NewDelete": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.NewDelete.html"
+    },
+    "clang-analyzer-cplusplus.NewDeleteLeaks": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.NewDeleteLeaks.html"
+    },
+    "clang-analyzer-cplusplus.PlacementNew": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.PlacementNew.html"
+    },
+    "clang-analyzer-cplusplus.SelfAssignment": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.SelfAssignment.html"
+    },
+    "clang-analyzer-cplusplus.StringChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/cplusplus.StringChecker.html"
+    },
+    "clang-analyzer-deadcode.DeadStores": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/deadcode.DeadStores.html"
+    },
+    "clang-analyzer-fuchsia.HandleChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/fuchsia.HandleChecker.html"
+    },
+    "clang-analyzer-nullability.NullPassedToNonnull": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/nullability.NullPassedToNonnull.html"
+    },
+    "clang-analyzer-nullability.NullReturnedFromNonnull": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/nullability.NullReturnedFromNonnull.html"
+    },
+    "clang-analyzer-nullability.NullableDereferenced": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/nullability.NullableDereferenced.html"
+    },
+    "clang-analyzer-nullability.NullablePassedToNonnull": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/nullability.NullablePassedToNonnull.html"
+    },
+    "clang-analyzer-nullability.NullableReturnedFromNonnull": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/nullability.NullableReturnedFromNonnull.html"
+    },
+    "clang-analyzer-optin.core.EnumCastOutOfRange": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.core.EnumCastOutOfRange.html"
+    },
+    "clang-analyzer-optin.cplusplus.UninitializedObject": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.cplusplus.UninitializedObject.html"
+    },
+    "clang-analyzer-optin.cplusplus.VirtualCall": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.cplusplus.VirtualCall.html"
+    },
+    "clang-analyzer-optin.mpi.MPI-Checker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.mpi.MPI-Checker.html"
+    },
+    "clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.osx.cocoa.localizability.EmptyLocalizationContextChecker.html"
+    },
+    "clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.osx.cocoa.localizability.NonLocalizedStringChecker.html"
+    },
+    "clang-analyzer-optin.performance.GCDAntipattern": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.performance.GCDAntipattern.html"
+    },
+    "clang-analyzer-optin.performance.Padding": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.performance.Padding.html"
+    },
+    "clang-analyzer-optin.portability.UnixAPI": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.portability.UnixAPI.html"
+    },
+    "clang-analyzer-optin.taint.TaintedAlloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/optin.taint.TaintedAlloc.html"
+    },
+    "clang-analyzer-osx.API": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.API.html"
+    },
+    "clang-analyzer-osx.NumberObjectConversion": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.NumberObjectConversion.html"
+    },
+    "clang-analyzer-osx.ObjCProperty": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.ObjCProperty.html"
+    },
+    "clang-analyzer-osx.SecKeychainAPI": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.SecKeychainAPI.html"
+    },
+    "clang-analyzer-osx.cocoa.AtSync": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.AtSync.html"
+    },
+    "clang-analyzer-osx.cocoa.AutoreleaseWrite": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.AutoreleaseWrite.html"
+    },
+    "clang-analyzer-osx.cocoa.ClassRelease": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.ClassRelease.html"
+    },
+    "clang-analyzer-osx.cocoa.Dealloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.Dealloc.html"
+    },
+    "clang-analyzer-osx.cocoa.IncompatibleMethodTypes": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.IncompatibleMethodTypes.html"
+    },
+    "clang-analyzer-osx.cocoa.Loops": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.Loops.html"
+    },
+    "clang-analyzer-osx.cocoa.MissingSuperCall": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.MissingSuperCall.html"
+    },
+    "clang-analyzer-osx.cocoa.NSAutoreleasePool": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.NSAutoreleasePool.html"
+    },
+    "clang-analyzer-osx.cocoa.NSError": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.NSError.html"
+    },
+    "clang-analyzer-osx.cocoa.NilArg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.NilArg.html"
+    },
+    "clang-analyzer-osx.cocoa.NonNilReturnValue": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.NonNilReturnValue.html"
+    },
+    "clang-analyzer-osx.cocoa.ObjCGenerics": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.ObjCGenerics.html"
+    },
+    "clang-analyzer-osx.cocoa.RetainCount": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.RetainCount.html"
+    },
+    "clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.RunLoopAutoreleaseLeak.html"
+    },
+    "clang-analyzer-osx.cocoa.SelfInit": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.SelfInit.html"
+    },
+    "clang-analyzer-osx.cocoa.SuperDealloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.SuperDealloc.html"
+    },
+    "clang-analyzer-osx.cocoa.UnusedIvars": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.UnusedIvars.html"
+    },
+    "clang-analyzer-osx.cocoa.VariadicMethodTypes": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.cocoa.VariadicMethodTypes.html"
+    },
+    "clang-analyzer-osx.coreFoundation.CFError": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.coreFoundation.CFError.html"
+    },
+    "clang-analyzer-osx.coreFoundation.CFNumber": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.coreFoundation.CFNumber.html"
+    },
+    "clang-analyzer-osx.coreFoundation.CFRetainRelease": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.coreFoundation.CFRetainRelease.html"
+    },
+    "clang-analyzer-osx.coreFoundation.containers.OutOfBounds": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.coreFoundation.containers.OutOfBounds.html"
+    },
+    "clang-analyzer-osx.coreFoundation.containers.PointerSizedValues": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/osx.coreFoundation.containers.PointerSizedValues.html"
+    },
+    "clang-analyzer-security.FloatLoopCounter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.FloatLoopCounter.html"
+    },
+    "clang-analyzer-security.PutenvStackArray": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.PutenvStackArray.html"
+    },
+    "clang-analyzer-security.SetgidSetuidOrder": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.SetgidSetuidOrder.html"
+    },
+    "clang-analyzer-security.cert.env.InvalidPtr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.cert.env.InvalidPtr.html"
+    },
+    "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.DeprecatedOrUnsafeBufferHandling.html"
+    },
+    "clang-analyzer-security.insecureAPI.UncheckedReturn": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.UncheckedReturn.html"
+    },
+    "clang-analyzer-security.insecureAPI.bcmp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.bcmp.html"
+    },
+    "clang-analyzer-security.insecureAPI.bcopy": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.bcopy.html"
+    },
+    "clang-analyzer-security.insecureAPI.bzero": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.bzero.html"
+    },
+    "clang-analyzer-security.insecureAPI.decodeValueOfObjCType": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.decodeValueOfObjCType.html"
+    },
+    "clang-analyzer-security.insecureAPI.getpw": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.getpw.html"
+    },
+    "clang-analyzer-security.insecureAPI.gets": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.gets.html"
+    },
+    "clang-analyzer-security.insecureAPI.mkstemp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.mkstemp.html"
+    },
+    "clang-analyzer-security.insecureAPI.mktemp": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.mktemp.html"
+    },
+    "clang-analyzer-security.insecureAPI.rand": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.rand.html"
+    },
+    "clang-analyzer-security.insecureAPI.strcpy": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.strcpy.html"
+    },
+    "clang-analyzer-security.insecureAPI.vfork": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/security.insecureAPI.vfork.html"
+    },
+    "clang-analyzer-unix.API": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.API.html"
+    },
+    "clang-analyzer-unix.BlockInCriticalSection": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.BlockInCriticalSection.html"
+    },
+    "clang-analyzer-unix.Errno": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.Errno.html"
+    },
+    "clang-analyzer-unix.Malloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.Malloc.html"
+    },
+    "clang-analyzer-unix.MallocSizeof": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.MallocSizeof.html"
+    },
+    "clang-analyzer-unix.MismatchedDeallocator": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.MismatchedDeallocator.html"
+    },
+    "clang-analyzer-unix.StdCLibraryFunctions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.StdCLibraryFunctions.html"
+    },
+    "clang-analyzer-unix.Stream": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.Stream.html"
+    },
+    "clang-analyzer-unix.Vfork": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.Vfork.html"
+    },
+    "clang-analyzer-unix.cstring.BadSizeArg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.cstring.BadSizeArg.html"
+    },
+    "clang-analyzer-unix.cstring.NullArg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/unix.cstring.NullArg.html"
+    },
+    "clang-analyzer-webkit.NoUncountedMemberChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/webkit.NoUncountedMemberChecker.html"
+    },
+    "clang-analyzer-webkit.RefCntblBaseVirtualDtor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/webkit.RefCntblBaseVirtualDtor.html"
+    },
+    "clang-analyzer-webkit.UncountedLambdaCapturesChecker": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/clang-analyzer/webkit.UncountedLambdaCapturesChecker.html"
+    },
+    "cppcoreguidelines-avoid-c-arrays": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-c-arrays.html"
+    },
+    "cppcoreguidelines-avoid-magic-numbers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/avoid-magic-numbers.html"
+    },
+    "cppcoreguidelines-c-copy-assignment-signature": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/c-copy-assignment-signature.html"
+    },
+    "cppcoreguidelines-explicit-virtual-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/explicit-virtual-functions.html"
+    },
+    "cppcoreguidelines-macro-to-enum": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/macro-to-enum.html"
+    },
+    "cppcoreguidelines-narrowing-conversions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/narrowing-conversions.html"
+    },
+    "cppcoreguidelines-noexcept-destructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/noexcept-destructor.html"
+    },
+    "cppcoreguidelines-noexcept-move-operations": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/noexcept-move-operations.html"
+    },
+    "cppcoreguidelines-noexcept-swap": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/noexcept-swap.html"
+    },
+    "cppcoreguidelines-non-private-member-variables-in-classes": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/non-private-member-variables-in-classes.html"
+    },
+    "cppcoreguidelines-use-default-member-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines/use-default-member-init.html"
+    },
+    "fuchsia-header-anon-namespaces": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/header-anon-namespaces.html"
+    },
+    "fuchsia-multiple-inheritance": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/fuchsia/multiple-inheritance.html"
+    },
+    "google-build-namespaces": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/build-namespaces.html"
+    },
+    "google-readability-braces-around-statements": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-braces-around-statements.html"
+    },
+    "google-readability-casting": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-casting.html"
+    },
+    "google-readability-function-size": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-function-size.html"
+    },
+    "google-readability-namespace-comments": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/google/readability-namespace-comments.html"
+    },
+    "hicpp-avoid-c-arrays": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/avoid-c-arrays.html"
+    },
+    "hicpp-avoid-goto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/avoid-goto.html"
+    },
+    "hicpp-braces-around-statements": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/braces-around-statements.html"
+    },
+    "hicpp-deprecated-headers": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/deprecated-headers.html"
+    },
+    "hicpp-explicit-conversions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/explicit-conversions.html"
+    },
+    "hicpp-function-size": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/function-size.html"
+    },
+    "hicpp-invalid-access-moved": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/invalid-access-moved.html"
+    },
+    "hicpp-member-init": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/member-init.html"
+    },
+    "hicpp-move-const-arg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/move-const-arg.html"
+    },
+    "hicpp-named-parameter": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/named-parameter.html"
+    },
+    "hicpp-new-delete-operators": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/new-delete-operators.html"
+    },
+    "hicpp-no-array-decay": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/no-array-decay.html"
+    },
+    "hicpp-no-malloc": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/no-malloc.html"
+    },
+    "hicpp-noexcept-move": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/noexcept-move.html"
+    },
+    "hicpp-special-member-functions": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/special-member-functions.html"
+    },
+    "hicpp-static-assert": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/static-assert.html"
+    },
+    "hicpp-undelegated-constructor": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/undelegated-constructor.html"
+    },
+    "hicpp-uppercase-literal-suffix": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/uppercase-literal-suffix.html"
+    },
+    "hicpp-use-auto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-auto.html"
+    },
+    "hicpp-use-emplace": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-emplace.html"
+    },
+    "hicpp-use-equals-default": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-equals-default.html"
+    },
+    "hicpp-use-equals-delete": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-equals-delete.html"
+    },
+    "hicpp-use-noexcept": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-noexcept.html"
+    },
+    "hicpp-use-nullptr": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-nullptr.html"
+    },
+    "hicpp-use-override": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/use-override.html"
+    },
+    "hicpp-vararg": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/hicpp/vararg.html"
+    },
+    "llvm-else-after-return": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/else-after-return.html"
+    },
+    "llvm-qualified-auto": {
+        "description": "No description available.",
+        "url": "https://clang.llvm.org/extra/clang-tidy/checks/llvm/qualified-auto.html"
+    }
+}

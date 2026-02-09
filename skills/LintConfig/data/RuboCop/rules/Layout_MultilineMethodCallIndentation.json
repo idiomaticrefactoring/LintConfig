@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineMethodCallIndentation": {
+        "description": "Description\n\nChecks indentation of method calls with the dot operator that span more than one line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: aligned (type: str)\nSupportedStyles: ['aligned', 'indented', 'indented_relative_to_receiver'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

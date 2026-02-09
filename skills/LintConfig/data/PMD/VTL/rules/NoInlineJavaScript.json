@@ -1,0 +1,6 @@
+{
+    "NoInlineJavaScript": {
+        "description": "Description\n\nAvoid inline JavaScript. Import .js files instead.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

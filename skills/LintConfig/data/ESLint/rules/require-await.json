@@ -1,0 +1,6 @@
+{
+    "require-await": {
+        "description": "Description\n\nThis rule warns async functions which have noawaitexpression.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint require-await: \"error\"*/\n\nasync function foo() {\n    doSomething();\n}\n\nbar(async () => {\n    doSomething();\n});\n\nExamples ofcorrectcode for this rule:\n\n/*eslint require-await: \"error\"*/\n\nasync function foo() {\n    await doSomething();\n}\n\nbar(async () => {\n    await doSomething();\n});\n\nfunction baz() {\n    doSomething();\n}\n\nbar(() => {\n    doSomething();\n});\n\nasync function resourceManagement() {\n    await using resource = getAsyncResource();\n    resource.use();\n}\n\n// Allow empty functions.\nasync function noop() {}",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidReassigningParameters": {
+        "description": "Description\n\nReassigning values to incoming parameters is not recommended.  Use temporary local variables instead.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

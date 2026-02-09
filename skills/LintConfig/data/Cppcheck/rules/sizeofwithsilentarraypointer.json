@@ -1,0 +1,6 @@
+{
+    "sizeofwithsilentarraypointer": {
+        "description": "Description\n\nThe code calls sizeof() on a pointer type, which can be an incorrect calculation if the programmer intended to determine the size of the data that is being pointed to.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 467\nInconclusive: false"
+    }
+}

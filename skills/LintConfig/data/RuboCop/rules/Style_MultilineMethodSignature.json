@@ -1,0 +1,6 @@
+{
+    "Style/MultilineMethodSignature": {
+        "description": "Description\n\nAvoid multi-line method signatures.",
+        "option": "This rule has no specific options."
+    }
+}

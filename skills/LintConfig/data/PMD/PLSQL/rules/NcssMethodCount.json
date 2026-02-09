@@ -1,0 +1,6 @@
+{
+    "NcssMethodCount": {
+        "description": "Description\n\nDeprecated\n\nThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of lines\nof code for a given method. NCSS ignores comments, and counts actual statements. Using this algorithm,\nlines of code that are split are counted as one.\n\nDeprecated:This rule is deprecated since PMD 7.19.0 and will be removed with PMD 8.0.0. UseNcssCountinstead.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nminimum\t100\tThreshold at or above which a node is reported"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/SlicingWithRange": {
+        "description": "Description\n\nChecks array slicing is done with redundant, endless, and beginless ranges when suitable.",
+        "option": "This rule has no specific options."
+    }
+}

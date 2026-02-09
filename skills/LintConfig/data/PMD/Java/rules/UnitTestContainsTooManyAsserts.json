@@ -1,0 +1,6 @@
+{
+    "UnitTestContainsTooManyAsserts": {
+        "description": "Description\n\nUnit tests should not contain too many asserts. Many asserts are indicative of a complex test, for which\nit is harder to verify correctness.  Consider breaking the test scenario into multiple, shorter test scenarios.\nCustomize the maximum number of assertions used by this Rule to suit your needs.\n\nThis rule checks for JUnit (3, 4 and 5) and TestNG Tests.\n\nNote: This rule was named JUnitTestContainsTooManyAsserts before PMD 7.7.0.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nmaximumAsserts\t1\tMaximum number of assert calls in a test method\nextraAssertMethodNames\t\tExtra valid assertion methods names"
+    }
+}

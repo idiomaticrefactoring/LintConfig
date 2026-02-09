@@ -1,0 +1,6 @@
+{
+    "Style/Proc": {
+        "description": "Description\n\nUse proc instead of Proc.new.",
+        "option": "This rule has no specific options."
+    }
+}

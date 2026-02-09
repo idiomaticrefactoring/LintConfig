@@ -1,0 +1,6 @@
+{
+    "coutCerrMisusage": {
+        "description": "Description\n\nInvalid usage of output stream: '<< std::cout'.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 398\nInconclusive: false"
+    }
+}

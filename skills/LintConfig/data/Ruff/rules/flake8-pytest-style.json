@@ -1,0 +1,6 @@
+{
+    "flake8-pytest-style": {
+        "description": "Description\n\nOptions for the `flake8-pytest-style` plugin.",
+        "option": "Type: Flake8PytestStyleOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - fixture-parentheses: Boolean flag specifying whether `@pytest.fixture()` without parameters\n  - mark-parentheses: Boolean flag specifying whether `@pytest.mark.foo()` without parameters\n  - parametrize-names-type: Expected type for multiple argument names in `@pytest.mark.parametrize`.\n  - parametrize-values-row-type: Expected type for each row of values in `@pytest.mark.parametrize` in\n  - parametrize-values-type: Expected type for the list of values rows in `@pytest.mark.parametrize`.\n  - raises-extend-require-match-for: List of additional exception names that require a match= parameter in a\n  - raises-require-match-for: List of exception names that require a match= parameter in a\n  - warns-extend-require-match-for: List of additional warning names that require a match= parameter in a\n  - warns-require-match-for: List of warning names that require a match= parameter in a"
+    }
+}

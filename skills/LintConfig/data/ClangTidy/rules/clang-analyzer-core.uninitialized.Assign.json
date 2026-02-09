@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-core.uninitialized.Assign": {
+        "description": "Description\n\nclang-analyzer-core.uninitialized.Assign\nCheck for assigning uninitialized values.\nThe\nclang-analyzer-core.uninitialized.Assign\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

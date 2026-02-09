@@ -1,0 +1,6 @@
+{
+    "Style/ComparableClamp": {
+        "description": "Description\n\nEnforces the use of `Comparable#clamp` instead of comparison by minimum and maximum.",
+        "option": "This rule has no specific options."
+    }
+}

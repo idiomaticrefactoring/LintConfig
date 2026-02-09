@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-type-static-cast-downcast": {
+        "description": "Description\n\nThis check flags all usages of\nstatic_cast\n, where a base class is casted to\na derived class. In those cases, a fix-it is provided to convert the cast to a\ndynamic_cast\n.\n\nUse of these casts can violate type safety and cause the program to access a\nvariable that is actually of type\nX\nto be accessed as if it were of an\nunrelated type\nZ\n.\n\nThis rule is part of the\nType safety (Type.2)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStrictMode\nWhen set to\nfalse\n, no warnings are emitted for casts on non-polymorphic\ntypes. Default is\ntrue\n."
+    }
+}

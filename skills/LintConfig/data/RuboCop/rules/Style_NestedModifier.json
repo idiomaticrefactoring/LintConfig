@@ -1,0 +1,6 @@
+{
+    "Style/NestedModifier": {
+        "description": "Description\n\nAvoid using nested modifiers.",
+        "option": "This rule has no specific options."
+    }
+}

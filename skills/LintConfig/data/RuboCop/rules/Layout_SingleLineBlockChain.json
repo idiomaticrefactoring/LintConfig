@@ -1,0 +1,6 @@
+{
+    "Layout/SingleLineBlockChain": {
+        "description": "Description\n\nPut method call on a separate line if chained to a single line block.",
+        "option": "This rule has no specific options."
+    }
+}

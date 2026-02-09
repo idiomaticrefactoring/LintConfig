@@ -1,0 +1,6 @@
+{
+    "generator-star": {
+        "description": "Description\n\nThis rule enforces that the*is either placed next to thefunctionkeyword or the name of the function. The single\noption for this rule is a string specifying the placement of the asterisk. For this option you may pass\"start\",\"middle\"or\"end\". The default is\"end\".\n\nYou can set the style in configuration like this:\n\n\"generator-star\": [\"error\", \"start\"]\n\nWhen using\"start\"this placement will be enforced:\n\nfunction* generator() {\n}\n\nWhen using\"middle\"this placement will be enforced:\n\nfunction * generator() {\n}\n\nWhen using\"end\"this placement will be enforced:\n\nfunction *generator() {\n}\n\nWhen using the expression syntax\"start\"will be enforced here:\n\nvar generator = function* () {\n}\n\nWhen using the expression syntax\"middle\"will be enforced here:\n\nvar generator = function * () {\n}\n\nWhen using the expression syntax\"end\"will be enforced here:\n\nvar generator = function *() {\n}\n\nWhen using the expression syntax this is valid for both\"start\"and\"end\":\n\nvar generator = function*() {\n}\n\nThe shortened object literal syntax for generators is not affected by this rule.",
+        "option": "This rule has no specific options."
+    }
+}

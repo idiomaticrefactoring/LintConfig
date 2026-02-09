@@ -1,0 +1,6 @@
+{
+    "no-undef-init": {
+        "description": "Description\n\nThis rule aims to eliminatevarandletvariable declarations that initialize toundefined.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-undef-init: \"error\"*/\n\nvar foo = undefined;\nlet bar = undefined;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-undef-init: \"error\"*/\n\nvar foo;\nlet bar;\n\nPlease note that this rule does not checkconstdeclarations,usingdeclarations,await usingdeclarations, destructuring patterns, function parameters, and class fields.\n\nExamples of additionalcorrectcode for this rule:\n\n/*eslint no-undef-init: \"error\"*/\n\nconst foo = undefined;\n\nusing foo1 = undefined;\n\nawait using foo2 = undefined;\n\nlet { bar = undefined } = baz;\n\n[quux = undefined] = quuux;\n\n(foo = undefined) => {};\n\nclass Foo {\n    bar = undefined;\n}",
+        "option": "This rule has no options."
+    }
+}

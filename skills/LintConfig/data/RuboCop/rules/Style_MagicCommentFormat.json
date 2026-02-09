@@ -1,0 +1,6 @@
+{
+    "Style/MagicCommentFormat": {
+        "description": "Description\n\nUse a consistent style for magic comments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: snake_case (type: str)\nSupportedStyles: ['snake_case', 'kebab_case'] (type: list)\nDirectiveCapitalization: lowercase (type: str)\nValueCapitalization: None (type: NoneType)\nSupportedCapitalizations: ['lowercase', 'uppercase'] (type: list)"
+    }
+}

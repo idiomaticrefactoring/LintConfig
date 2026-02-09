@@ -1,0 +1,6 @@
+{
+    "memleak": {
+        "description": "Description\n\nThe product does not sufficiently track and release allocated memory after it has been used, making the memory unavailable for reallocation and reuse.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 401\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

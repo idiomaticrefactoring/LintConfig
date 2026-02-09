@@ -1,0 +1,1230 @@
+{
+    "AbstractClassWithoutAbstractMethod": {
+        "description": "The abstract class does not contain any abstract methods. An abstract class suggests an incomplet…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#abstractclasswithoutabstractmethod"
+    },
+    "AccessorClassGeneration": {
+        "description": "Instantiation by way of private constructors from outside the constructor’s class often causes th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessorclassgeneration"
+    },
+    "AccessorMethodGeneration": {
+        "description": "When accessing private fields / methods from another class, the Java compiler will generate acces…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#accessormethodgeneration"
+    },
+    "ArrayIsStoredDirectly": {
+        "description": "Constructors and methods receiving arrays should clone objects and store the copy. This prevents …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#arrayisstoreddirectly"
+    },
+    "AvoidMessageDigestField": {
+        "description": "Declaring a MessageDigest instance as a field make this instance directly available to multiple t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidmessagedigestfield"
+    },
+    "AvoidPrintStackTrace": {
+        "description": "Avoid printStackTrace(); use a logger call instead.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidprintstacktrace"
+    },
+    "AvoidReassigningCatchVariables": {
+        "description": "Reassigning exception variables caught in a catch statement should be avoided because of: 1) If i…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidreassigningcatchvariables"
+    },
+    "AvoidReassigningLoopVariables": {
+        "description": "Reassigning loop variables can lead to hard-to-find bugs. Prevent or limit how these variables ca…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidreassigningloopvariables"
+    },
+    "AvoidReassigningParameters": {
+        "description": "Reassigning values to incoming parameters of a method or constructor is not recommended, as this …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidreassigningparameters"
+    },
+    "AvoidStringBufferField": {
+        "description": "StringBuffers/StringBuilders can grow considerably, and so may become a source of memory leaks if…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidstringbufferfield"
+    },
+    "AvoidUsingHardCodedIP": {
+        "description": "Application with hard-coded IP addresses can become impossible to deploy in some cases. Externali…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#avoidusinghardcodedip"
+    },
+    "CheckResultSet": {
+        "description": "Always check the return values of navigation methods (next, previous, first, last) of a ResultSet…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#checkresultset"
+    },
+    "ConstantsInInterface": {
+        "description": "Using constants in interfaces is a bad practice. Interfaces define types, constants are implement…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#constantsininterface"
+    },
+    "DefaultLabelNotLastInSwitch": {
+        "description": "By convention, the default label should be the last label in a switch statement or switch express…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#defaultlabelnotlastinswitch"
+    },
+    "DefaultLabelNotLastInSwitchStmt": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadDefaultLabelNotLastInSwitch.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#defaultlabelnotlastinswitchstmt"
+    },
+    "DoubleBraceInitialization": {
+        "description": "Double brace initialisation is a pattern to initialise eg collections concisely. But it implicitl…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#doublebraceinitialization"
+    },
+    "EnumComparison": {
+        "description": "When comparing enums, ‘equals()’ should be avoided and ‘==’ should be preferred. Using ‘==’ has s…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#enumcomparison"
+    },
+    "ExhaustiveSwitchHasDefault": {
+        "description": "When switching over an enum or sealed class, the compiler will ensure that all possible cases are…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#exhaustiveswitchhasdefault"
+    },
+    "ForLoopCanBeForeach": {
+        "description": "Reports loops that can be safely replaced with the foreach syntax. The rule considers loops over …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#forloopcanbeforeach"
+    },
+    "ForLoopVariableCount": {
+        "description": "Having a lot of control variables in a ‘for’ loop makes it harder to see what range of values the…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#forloopvariablecount"
+    },
+    "GuardLogStatement": {
+        "description": "Whenever using a log level, one should check if it is actually enabled, or otherwise skip the ass…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#guardlogstatement"
+    },
+    "ImplicitFunctionalInterface": {
+        "description": "Reports functional interfaces that were not explicitly declared as such with             the anno…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#implicitfunctionalinterface"
+    },
+    "JUnit4SuitesShouldUseSuiteAnnotation": {
+        "description": "In JUnit 3, test suites are indicated by the suite() method. In JUnit 4, suites are indicated thr…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junit4suitesshouldusesuiteannotation"
+    },
+    "JUnit4TestShouldUseAfterAnnotation": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestShouldUseAfterAnnotation.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junit4testshoulduseafterannotation"
+    },
+    "JUnit4TestShouldUseBeforeAnnotation": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestShouldUseBeforeAnnotation.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junit4testshouldusebeforeannotation"
+    },
+    "JUnit4TestShouldUseTestAnnotation": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestShouldUseTestAnnotation.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junit4testshouldusetestannotation"
+    },
+    "JUnit5TestShouldBePackagePrivate": {
+        "description": "Reports JUnit 5 test classes and methods that are not package-private. Contrary to JUnit 4 tests,…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junit5testshouldbepackageprivate"
+    },
+    "JUnitAssertionsShouldIncludeMessage": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestAssertionsShouldIncludeMessage.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junitassertionsshouldincludemessage"
+    },
+    "JUnitTestContainsTooManyAsserts": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestContainsTooManyAsserts.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junittestcontainstoomanyasserts"
+    },
+    "JUnitTestsShouldIncludeAssert": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadUnitTestShouldIncludeAssert.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junittestsshouldincludeassert"
+    },
+    "JUnitUseExpected": {
+        "description": "In JUnit4, use the @Test(expected) annotation to denote tests that should throw exceptions.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#junituseexpected"
+    },
+    "LabeledStatement": {
+        "description": "This rule detects the use of labeled statements. By default, it allows labeled loops so that you …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#labeledstatement"
+    },
+    "LiteralsFirstInComparisons": {
+        "description": "Position literals first in all String comparisons, if the second argument is null then NullPointe…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#literalsfirstincomparisons"
+    },
+    "LooseCoupling": {
+        "description": "Excessive coupling to implementation types (e.g., ‘HashSet’) limits your ability to use alternate…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#loosecoupling"
+    },
+    "MethodReturnsInternalArray": {
+        "description": "Exposing internal arrays to the caller violates object encapsulation since elements can be remove…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#methodreturnsinternalarray"
+    },
+    "MissingOverride": {
+        "description": "Annotating overridden methods with @Override ensures at compile time that             the method …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#missingoverride"
+    },
+    "NonExhaustiveSwitch": {
+        "description": "Switch statements should be exhaustive, to make their control flow             easier to follow. …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#nonexhaustiveswitch"
+    },
+    "OneDeclarationPerLine": {
+        "description": "Java allows the use of several variables declaration of the same type on one line. However, it ca…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#onedeclarationperline"
+    },
+    "PreserveStackTrace": {
+        "description": "Reports exceptions that are thrown from within a catch block, yet don’t refer to the exception pa…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#preservestacktrace"
+    },
+    "PrimitiveWrapperInstantiation": {
+        "description": "Reports usages of primitive wrapper constructors. They are deprecated             since Java 9 an…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#primitivewrapperinstantiation"
+    },
+    "RelianceOnDefaultCharset": {
+        "description": "Be sure to specify a character set for APIs that use the JVM’s default character set to ensure st…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#relianceondefaultcharset"
+    },
+    "ReplaceEnumerationWithIterator": {
+        "description": "Consider replacing Enumeration usages with the newer java.util.Iterator",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#replaceenumerationwithiterator"
+    },
+    "ReplaceHashtableWithMap": {
+        "description": "Consider replacing Hashtable usage with the newer java.util.Map if thread safety is not required.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#replacehashtablewithmap"
+    },
+    "ReplaceVectorWithList": {
+        "description": "Consider replacing Vector usages with the newer java.util.ArrayList if expensive thread-safe oper…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#replacevectorwithlist"
+    },
+    "SimplifiableTestAssertion": {
+        "description": "Reports test assertions that may be simplified using a more specific             assertion method…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#simplifiabletestassertion"
+    },
+    "SwitchStmtsShouldHaveDefault": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadNonExhaustiveSwitch.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#switchstmtsshouldhavedefault"
+    },
+    "SystemPrintln": {
+        "description": "References to System.(out|err).print are usually intended for debugging purposes and can remain …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#systemprintln"
+    },
+    "UnitTestAssertionsShouldIncludeMessage": {
+        "description": "Unit assertions should include an informative message - i.e., use the three-argument version of ‘…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestassertionsshouldincludemessage"
+    },
+    "UnitTestContainsTooManyAsserts": {
+        "description": "Unit tests should not contain too many asserts. Many asserts are indicative of a complex test, fo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestcontainstoomanyasserts"
+    },
+    "UnitTestShouldIncludeAssert": {
+        "description": "Unit tests should include at least one assertion. This makes the tests more robust, and using ass…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestshouldincludeassert"
+    },
+    "UnitTestShouldUseAfterAnnotation": {
+        "description": "This rule detects methods called ‘tearDown()’ that are not properly annotated as a cleanup method…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestshoulduseafterannotation"
+    },
+    "UnitTestShouldUseBeforeAnnotation": {
+        "description": "This rule detects methods called ‘setUp()’ that are not properly annotated as a setup method. Thi…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestshouldusebeforeannotation"
+    },
+    "UnitTestShouldUseTestAnnotation": {
+        "description": "The rule will detect any test method starting with \"test\" that is not properly annotated, and wil…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unittestshouldusetestannotation"
+    },
+    "UnnecessaryVarargsArrayCreation": {
+        "description": "Reports explicit array creation when a varargs is expected.             For instance:            …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unnecessaryvarargsarraycreation"
+    },
+    "UnnecessaryWarningSuppression": {
+        "description": "This rule reports suppression comments and annotations that did not suppress any PMD violation.  …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unnecessarywarningsuppression"
+    },
+    "UnusedAssignment": {
+        "description": "Reports assignments to variables that are never used before the variable is overwritten,         …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedassignment"
+    },
+    "UnusedFormalParameter": {
+        "description": "Reports parameters of methods and constructors that are not referenced them in the method body. P…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedformalparameter"
+    },
+    "UnusedLabel": {
+        "description": "Unused labeled are unnecessary and may be confusing as you might be wondering what this label is …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedlabel"
+    },
+    "UnusedLocalVariable": {
+        "description": "Detects when a local variable is declared and/or assigned, but not used. Variables whose name sta…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedlocalvariable"
+    },
+    "UnusedPrivateField": {
+        "description": "Detects when a private field is declared and/or assigned a value, but not used. Since PMD 6.50.0 …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedprivatefield"
+    },
+    "UnusedPrivateMethod": {
+        "description": "Unused Private Method detects when a private method is declared but is unused.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#unusedprivatemethod"
+    },
+    "UseCollectionIsEmpty": {
+        "description": "The isEmpty() method on java.util.Collection is provided to determine if a collection has any ele…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#usecollectionisempty"
+    },
+    "UseEnumCollections": {
+        "description": "Wherever possible, use ‘EnumSet’ or ‘EnumMap’ instead of ‘HashSet’ and ‘HashMap’ when the keys   …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#useenumcollections"
+    },
+    "UseStandardCharsets": {
+        "description": "Starting with Java 7, StandardCharsets provides constants for common Charset objects, such as UTF…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#usestandardcharsets"
+    },
+    "UseTryWithResources": {
+        "description": "Java 7 introduced the try-with-resources statement. This statement ensures that each resource is …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#usetrywithresources"
+    },
+    "UseVarargs": {
+        "description": "Java 5 introduced the varargs parameter declaration for methods and constructors. This syntactic …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#usevarargs"
+    },
+    "WhileLoopWithLiteralBoolean": {
+        "description": "‘do {} while (true);’ requires reading the end of the statement before it is apparent that it loo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_bestpractices.html#whileloopwithliteralboolean"
+    },
+    "AtLeastOneConstructor": {
+        "description": "Each non-static class should declare at least one constructor. Classes with solely static members…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#atleastoneconstructor"
+    },
+    "AvoidDollarSigns": {
+        "description": "Avoid using dollar signs in variable/method/class/interface names.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoiddollarsigns"
+    },
+    "AvoidProtectedFieldInFinalClass": {
+        "description": "Do not use protected fields in final classes since they cannot be subclassed. Clarify your intent…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidprotectedfieldinfinalclass"
+    },
+    "AvoidProtectedMethodInFinalClassNotExtending": {
+        "description": "Do not use protected methods in most final classes since they cannot be subclassed. This should o…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidprotectedmethodinfinalclassnotextending"
+    },
+    "AvoidUsingNativeCode": {
+        "description": "Unnecessary reliance on Java Native Interface (JNI) calls directly reduces application portabilit…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#avoidusingnativecode"
+    },
+    "BooleanGetMethodName": {
+        "description": "Methods that return boolean or Boolean results should be named as predicate statements to denote …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#booleangetmethodname"
+    },
+    "CallSuperInConstructor": {
+        "description": "It is a good practice to call super() in a constructor. If super() is not called but another cons…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#callsuperinconstructor"
+    },
+    "ClassNamingConventions": {
+        "description": "Configurable naming conventions for type declarations. This rule reports             type declara…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#classnamingconventions"
+    },
+    "CommentDefaultAccessModifier": {
+        "description": "To avoid mistakes if we want that an Annotation, Class, Enum, Method, Constructor or Field have a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier"
+    },
+    "ConfusingTernary": {
+        "description": "Avoid negation within an \"if\" expression with an \"else\" clause.  For example, rephrase: ‘if (x !=…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#confusingternary"
+    },
+    "ControlStatementBraces": {
+        "description": "Enforce a policy for braces on control statements. It is recommended to use braces on ‘if … els…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#controlstatementbraces"
+    },
+    "EmptyControlStatement": {
+        "description": "Reports control statements whose body is empty, as well as empty initializers.             The ch…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#emptycontrolstatement"
+    },
+    "EmptyMethodInAbstractClassShouldBeAbstract": {
+        "description": "Empty or auto-generated methods in an abstract class should be tagged as abstract. This helps to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#emptymethodinabstractclassshouldbeabstract"
+    },
+    "ExtendsObject": {
+        "description": "No need to explicitly extend Object.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#extendsobject"
+    },
+    "FieldDeclarationsShouldBeAtStartOfClass": {
+        "description": "Fields should be declared at the top of the class, before any method declarations, constructors, …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass"
+    },
+    "FieldNamingConventions": {
+        "description": "Configurable naming conventions for field declarations. This rule reports variable declarations  …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#fieldnamingconventions"
+    },
+    "FinalParameterInAbstractMethod": {
+        "description": "Declaring a method parameter as final for an interface method is useless because the implementati…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#finalparameterinabstractmethod"
+    },
+    "ForLoopShouldBeWhileLoop": {
+        "description": "Some for loops can be simplified to while loops, this makes them more concise.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#forloopshouldbewhileloop"
+    },
+    "FormalParameterNamingConventions": {
+        "description": "Configurable naming conventions for formal parameters of methods and lambdas.             This ru…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#formalparameternamingconventions"
+    },
+    "GenericsNaming": {
+        "description": "DeprecatedNames for references to generic values should be limited to a single uppercase letter. Deprecated…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#genericsnaming"
+    },
+    "IdenticalCatchBranches": {
+        "description": "Identical ‘catch’ branches use up vertical space and increase the complexity of code without     …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#identicalcatchbranches"
+    },
+    "LambdaCanBeMethodReference": {
+        "description": "This rule reports lambda expressions that can be written more succinctly as a method reference. T…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#lambdacanbemethodreference"
+    },
+    "LinguisticNaming": {
+        "description": "This rule finds Linguistic Naming Antipatterns. It checks for fields, that are named, as if they …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#linguisticnaming"
+    },
+    "LocalHomeNamingConvention": {
+        "description": "The Local Home interface of a Session EJB should be suffixed by ‘LocalHome’.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localhomenamingconvention"
+    },
+    "LocalInterfaceSessionNamingConvention": {
+        "description": "The Local Interface of a Session EJB should be suffixed by ‘Local’.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localinterfacesessionnamingconvention"
+    },
+    "LocalVariableCouldBeFinal": {
+        "description": "A local variable assigned only once can be declared final.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablecouldbefinal"
+    },
+    "LocalVariableNamingConventions": {
+        "description": "Configurable naming conventions for local variable declarations and other locally-scoped         …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#localvariablenamingconventions"
+    },
+    "LongVariable": {
+        "description": "Fields, formal arguments, or local variable names that are too long can make the code difficult t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#longvariable"
+    },
+    "MDBAndSessionBeanNamingConvention": {
+        "description": "The EJB Specification states that any MessageDrivenBean or SessionBean should be suffixed by ‘Bean’.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#mdbandsessionbeannamingconvention"
+    },
+    "MethodArgumentCouldBeFinal": {
+        "description": "Reports method and constructor parameters that can be made final because they are never reassigne…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodargumentcouldbefinal"
+    },
+    "MethodNamingConventions": {
+        "description": "Configurable naming conventions for method declarations. This rule reports             method dec…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#methodnamingconventions"
+    },
+    "ModifierOrder": {
+        "description": "Enforces the modifier order recommended by the JLS. Apart from sorting modifiers,             thi…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#modifierorder"
+    },
+    "NoPackage": {
+        "description": "Detects when a class, interface, enum or annotation does not have a package definition.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#nopackage"
+    },
+    "OnlyOneReturn": {
+        "description": "A method should have only one exit point, and that should be the last statement in the method.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#onlyonereturn"
+    },
+    "PackageCase": {
+        "description": "Detects when a package definition contains uppercase characters.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#packagecase"
+    },
+    "PrematureDeclaration": {
+        "description": "Checks for variables that are defined before they might be used. A declaration is deemed to be pr…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#prematuredeclaration"
+    },
+    "RemoteInterfaceNamingConvention": {
+        "description": "Remote Interface of a Session EJB should not have a suffix.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#remoteinterfacenamingconvention"
+    },
+    "RemoteSessionInterfaceNamingConvention": {
+        "description": "A Remote Home interface type of a Session EJB should be suffixed by ‘Home’.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#remotesessioninterfacenamingconvention"
+    },
+    "ShortClassName": {
+        "description": "Short Classnames with fewer than e.g. five characters are not recommended.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortclassname"
+    },
+    "ShortMethodName": {
+        "description": "Method names that are very short are not helpful to the reader.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortmethodname"
+    },
+    "ShortVariable": {
+        "description": "Fields, local variables, enum constant names or parameter names that are very short are not helpf…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable"
+    },
+    "TooManyStaticImports": {
+        "description": "If you overuse the static import feature, it can make your program unreadable and unmaintainable,…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#toomanystaticimports"
+    },
+    "TypeParameterNamingConventions": {
+        "description": "Configurable naming conventions for type parameters in generic types and methods.             Thi…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#typeparameternamingconventions"
+    },
+    "UnnecessaryAnnotationValueElement": {
+        "description": "Avoid the use of value in annotations when it’s the only element.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryannotationvalueelement"
+    },
+    "UnnecessaryBoxing": {
+        "description": "Reports explicit boxing and unboxing conversions that may safely be removed,             either b…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryboxing"
+    },
+    "UnnecessaryCast": {
+        "description": "Detects casts which could be removed as the operand of the cast is already suitable for the conte…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessarycast"
+    },
+    "UnnecessaryConstructor": {
+        "description": "This rule detects when a constructor is not necessary; i.e., when there is only one constructor a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryconstructor"
+    },
+    "UnnecessaryFullyQualifiedName": {
+        "description": "Import statements allow the use of non-fully qualified names.  The use of a fully qualified name …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname"
+    },
+    "UnnecessaryImport": {
+        "description": "Reports import statements that can be removed. They are either unused,             duplicated, or…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryimport"
+    },
+    "UnnecessaryLocalBeforeReturn": {
+        "description": "DeprecatedAvoid the creation of unnecessary local variables. This rule has been deprecated since 7.17.0. Us…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn"
+    },
+    "UnnecessaryModifier": {
+        "description": "Fields in interfaces and annotations are automatically ‘public static final’, and methods are ‘pu…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessarymodifier"
+    },
+    "UnnecessaryReturn": {
+        "description": "Avoid the use of unnecessary return statements. A return is unnecessary when no instructions foll…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessaryreturn"
+    },
+    "UnnecessarySemicolon": {
+        "description": "Reports unnecessary semicolons (so called \"empty statements\" and \"empty declarations\").          …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#unnecessarysemicolon"
+    },
+    "UseDiamondOperator": {
+        "description": "In some cases, explicit type arguments in a constructor call for a generic type may be replaced b…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#usediamondoperator"
+    },
+    "UseExplicitTypes": {
+        "description": "Java 10 introduced the ‘var’ keyword. This reduces the amount of code written because java can in…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#useexplicittypes"
+    },
+    "UselessParentheses": {
+        "description": "Parenthesized expressions are used to override the default operator precedence             rules….",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#uselessparentheses"
+    },
+    "UselessQualifiedThis": {
+        "description": "Reports qualified this usages in the same class.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#uselessqualifiedthis"
+    },
+    "UseShortArrayInitializer": {
+        "description": "When declaring and initializing array fields or variables, it is not necessary to explicitly crea…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#useshortarrayinitializer"
+    },
+    "UseUnderscoresInNumericLiterals": {
+        "description": "Since Java 1.7, numeric literals can use underscores to separate digits. This rule enforces that …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#useunderscoresinnumericliterals"
+    },
+    "VariableCanBeInlined": {
+        "description": "Local variables should not be declared and then immediately returned or thrown. Such             …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#variablecanbeinlined"
+    },
+    "AbstractClassWithoutAnyMethod": {
+        "description": "Quickstart configuration of PMD. Includes the rules that are most likely to apply everywhere.It contains the following rules:AbstractClassWithoutAnyMethod,AssignmentInOperand,AssignmentToNonFinalStatic,AvoidAccessibilityAlteration,AvoidBranchingStatementAsLastInLoop,AvoidCatchingGenericException,AvoidDecimalLiteralsInBigDecimalConstructor,AvoidDollarSigns,AvoidInstanceofChecksInCatchClause,AvoidMessageDigestField,AvoidMultipleUnaryOperators,AvoidProtectedFieldInFinalClass,AvoidProtectedMethodInFinalClassNotExtending,AvoidStringBufferField,AvoidThreadGroup,AvoidUsingHardCodedIP,AvoidUsingOctalValues,AvoidUsingVolatile,BigIntegerInstantiation,BrokenNullCheck,CheckResultSet,CheckSkipResult,ClassCastExceptionWithToArray,ClassNamingConventions,ClassWithOnlyPrivateConstructorsShouldBeFinal,CloneMethodMustBePublic,CloneMethodMustImplementCloneable,CloneMethodReturnTypeMustMatchClassName,CloseResource,CollectionTypeMismatch,CompareObjectsWithEquals,ComparisonWithNaN,ConstantsInInterface,ControlStatementBraces,DanglingJavadoc,DefaultLabelNotLastInSwitch,DoNotCallGarbageCollectionExplicitly,DoNotExtendJavaLangError,DoNotExtendJavaLangThrowable,DontCallThreadRun,DontUseFloatTypeForLoopIndices,DoubleBraceInitialization,DoubleCheckedLocking,EmptyCatchBlock,EmptyControlStatement,EmptyFinalizer,EqualsNull,ExtendsObject,FinalFieldCouldBeStatic,FinalParameterInAbstractMethod,ForLoopCanBeForeach,ForLoopShouldBeWhileLoop,FormalParameterNamingConventions,GuardLogStatement,IdempotentOperations,IdenticalCatchBranches,ImplicitSwitchFallThrough,InstantiationToGetClass,JumbledIncrementer,LambdaCanBeMethodReference,LiteralsFirstInComparisons,LocalVariableNamingConventions,LogicInversion,LooseCoupling,MethodNamingConventions,MisplacedNullCheck,MissingOverride,MissingStaticMethodInNonInstantiatableClass,NonCaseLabelInSwitch,NonExhaustiveSwitch,NonStaticInitializer,NonThreadSafeSingleton,NoPackage,OneDeclarationPerLine,OptimizableToArrayCall,OverrideBothEqualsAndHashcode,OverrideBothEqualsAndHashCodeOnComparable,PackageCase,PreserveStackTrace,PrimitiveWrapperInstantiation,ProperCloneImplementation,ProperLogger,ReturnEmptyCollectionRatherThanNull,ReturnFromFinallyBlock,SimplifiableTestAssertion,SimplifiedTernary,SimplifyBooleanReturns,SimplifyConditional,SingleMethodSingleton,SingletonClassReturningNewInstance,SingularField,SuspiciousEqualsMethodName,SuspiciousHashcodeMethodName,SuspiciousOctalEscape,TypeParameterNamingConventions,UncommentedEmptyConstructor,UncommentedEmptyMethodBody,UnconditionalIfStatement,UnnecessaryAnnotationValueElement,UnnecessaryConstructor,UnnecessaryConversionTemporary,UnnecessaryFullyQualifiedName,UnnecessaryImport,UnnecessaryModifier,UnnecessaryReturn,UnnecessarySemicolon,UnsynchronizedStaticFormatter,UnusedFormalParameter,UnusedLabel,UnusedLocalVariable,UnusedNullCheckInEquals,UnusedPrivateField,UnusedPrivateMethod,UseCollectionIsEmpty,UseEqualsToCompareStrings,UselessOverridingMethod,UselessParentheses,UselessPureMethodCall,UselessQualifiedThis,UseLocaleWithCaseConversions,UseNotifyAllInsteadOfNotify,UseStandardCharsets,UseUtilityClass,VariableCanBeInlined",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#abstractclasswithoutanymethod"
+    },
+    "AvoidCatchingGenericException": {
+        "description": "Avoid catching generic exceptions in try-catch blocks. Catching overly broad exception types make…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidcatchinggenericexception"
+    },
+    "AvoidDeeplyNestedIfStmts": {
+        "description": "Avoid creating deeply nested if-then statements since they are harder to read and error-prone to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoiddeeplynestedifstmts"
+    },
+    "AvoidRethrowingException": {
+        "description": "Catch blocks that merely rethrow a caught exception only add to code size and runtime complexity.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoidrethrowingexception"
+    },
+    "AvoidThrowingNewInstanceOfSameException": {
+        "description": "Catch blocks that merely rethrow a caught exception wrapped inside a new instance of the same typ…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoidthrowingnewinstanceofsameexception"
+    },
+    "AvoidThrowingNullPointerException": {
+        "description": "Avoid throwing NullPointerExceptions manually. These are confusing because most people will assum…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoidthrowingnullpointerexception"
+    },
+    "AvoidThrowingRawExceptionTypes": {
+        "description": "Avoid throwing certain exception types. Rather than throw a raw RuntimeException, Throwable, Exce…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoidthrowingrawexceptiontypes"
+    },
+    "AvoidUncheckedExceptionsInSignatures": {
+        "description": "Reports unchecked exceptions in the ‘throws’ clause of a method or constructor. Java doesn’t forc…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures"
+    },
+    "ClassWithOnlyPrivateConstructorsShouldBeFinal": {
+        "description": "Reports classes that may be made final because they cannot be extended from outside their compila…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#classwithonlyprivateconstructorsshouldbefinal"
+    },
+    "CognitiveComplexity": {
+        "description": "Methods that are highly complex are difficult to read and more costly to maintain. If you include…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#cognitivecomplexity"
+    },
+    "CollapsibleIfStatements": {
+        "description": "Reports nested ‘if’ statements that can be merged together by joining their conditions with a boo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#collapsibleifstatements"
+    },
+    "CouplingBetweenObjects": {
+        "description": "This rule counts the number of unique attributes, local variables, and return types within an obj…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#couplingbetweenobjects"
+    },
+    "CyclomaticComplexity": {
+        "description": "The complexity of methods directly affects maintenance costs and readability. Concentrating too m…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#cyclomaticcomplexity"
+    },
+    "DataClass": {
+        "description": "Data Classes are simple data holders, which reveal most of their state, and without complex funct…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#dataclass"
+    },
+    "DoNotExtendJavaLangError": {
+        "description": "Errors are system exceptions. Do not extend them.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#donotextendjavalangerror"
+    },
+    "ExceptionAsFlowControl": {
+        "description": "This rule reports exceptions thrown and caught in an enclosing try statement. This use of excepti…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#exceptionasflowcontrol"
+    },
+    "ExcessiveImports": {
+        "description": "A high number of imports can indicate a high degree of coupling within an object. This rule count…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#excessiveimports"
+    },
+    "ExcessiveParameterList": {
+        "description": "Methods with numerous parameters are a challenge to maintain, especially if most of them share th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#excessiveparameterlist"
+    },
+    "ExcessivePublicCount": {
+        "description": "Classes with large numbers of public methods and attributes require disproportionate testing effo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#excessivepubliccount"
+    },
+    "FinalFieldCouldBeStatic": {
+        "description": "If a final field is assigned to a compile-time constant, it could be made static, thus saving ove…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#finalfieldcouldbestatic"
+    },
+    "GodClass": {
+        "description": "The God Class rule detects the God Class design flaw using metrics. God classes do too many thing…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#godclass"
+    },
+    "ImmutableField": {
+        "description": "Reports non-final fields whose value never changes once object initialization ends, and hence may…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#immutablefield"
+    },
+    "InvalidJavaBean": {
+        "description": "Identifies beans, that don’t follow the [JavaBeans API specification](https://download.oracle.com…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#invalidjavabean"
+    },
+    "LawOfDemeter": {
+        "description": "The law of Demeter is a simple rule that says \"only talk to friends\". It forbids fetching data fr…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#lawofdemeter"
+    },
+    "LogicInversion": {
+        "description": "Use opposite operator instead of negating the whole expression with a logic complement operator.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#logicinversion"
+    },
+    "LoosePackageCoupling": {
+        "description": "Avoid using classes from the configured package hierarchy outside of the package hierarchy, excep…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#loosepackagecoupling"
+    },
+    "MutableStaticState": {
+        "description": "Non-private static fields should be made constants (or immutable references) by             decla…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#mutablestaticstate"
+    },
+    "NcssCount": {
+        "description": "This rule uses the NCSS (Non-Commenting Source Statements) metric to determine the number of line…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#ncsscount"
+    },
+    "NPathComplexity": {
+        "description": "The NPath complexity of a method is the number of acyclic execution paths through that method. Wh…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#npathcomplexity"
+    },
+    "PublicMemberInNonPublicType": {
+        "description": "A non-public type should not declare its own members as public, as their visibility is effectivel…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#publicmemberinnonpublictype"
+    },
+    "SignatureDeclareThrowsException": {
+        "description": "A method/constructor shouldn’t explicitly throw the generic java.lang.Exception, since it is uncl…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#signaturedeclarethrowsexception"
+    },
+    "SimplifiedTernary": {
+        "description": "Reports ternary expression with the form ‘condition ? literalBoolean : foo’ or ‘condition ? foo :…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#simplifiedternary"
+    },
+    "SimplifyBooleanExpressions": {
+        "description": "Avoid unnecessary comparisons in boolean expressions, they serve no purpose and impacts readability.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#simplifybooleanexpressions"
+    },
+    "SimplifyBooleanReturns": {
+        "description": "Avoid unnecessary if-then-else statements when returning a boolean. The result of the conditional…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#simplifybooleanreturns"
+    },
+    "SimplifyConditional": {
+        "description": "No need to check for null before an instanceof; the instanceof keyword returns false when given a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#simplifyconditional"
+    },
+    "SingularField": {
+        "description": "Reports fields which may be converted to a local variable. This is so because in every method whe…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#singularfield"
+    },
+    "SwitchDensity": {
+        "description": "A high ratio of statements to labels in a switch statement implies that the switch statement is o…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#switchdensity"
+    },
+    "TooManyFields": {
+        "description": "Classes that have too many fields can become unwieldy and could be redesigned to have fewer field…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#toomanyfields"
+    },
+    "TooManyMethods": {
+        "description": "A class with too many methods is probably a good suspect for refactoring, in order to reduce its …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#toomanymethods"
+    },
+    "UselessOverridingMethod": {
+        "description": "The overriding method merely calls the same method defined in a superclass.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#uselessoverridingmethod"
+    },
+    "UseObjectForClearerAPI": {
+        "description": "When you write a public method, you should be thinking in terms of an API. If your method is publ…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#useobjectforclearerapi"
+    },
+    "UseUtilityClass": {
+        "description": "For classes that only have static methods, consider making them utility classes. Note that this d…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_design.html#useutilityclass"
+    },
+    "CommentContent": {
+        "description": "A rule for the politically correct… we don’t want to offend anyone.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentcontent"
+    },
+    "CommentRequired": {
+        "description": "Denotes whether javadoc (formal) comments are required (or unwanted) for specific language elements.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentrequired"
+    },
+    "CommentSize": {
+        "description": "Determines whether the dimensions of non-header comments found are within the specified limits.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#commentsize"
+    },
+    "DanglingJavadoc": {
+        "description": "Javadoc comments that do not belong to a class, method or field are ignored by the JavaDoc tool a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#danglingjavadoc"
+    },
+    "UncommentedEmptyConstructor": {
+        "description": "Uncommented Empty Constructor finds instances where a constructor does not contain statements, bu…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#uncommentedemptyconstructor"
+    },
+    "UncommentedEmptyMethodBody": {
+        "description": "Uncommented Empty Method Body finds instances where a method body does not contain statements, bu…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_documentation.html#uncommentedemptymethodbody"
+    },
+    "AssignmentInOperand": {
+        "description": "Avoid assignments in operands; this can make code more complicated and harder to read.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#assignmentinoperand"
+    },
+    "AssignmentToNonFinalStatic": {
+        "description": "Identifies a possible unsafe usage of a static field.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#assignmenttononfinalstatic"
+    },
+    "AvoidAccessibilityAlteration": {
+        "description": "Methods such as ‘getDeclaredConstructors()’, ‘getDeclaredMethods()’, and ‘getDeclaredFields()’ al…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidaccessibilityalteration"
+    },
+    "AvoidAssertAsIdentifier": {
+        "description": "Use of the term ‘assert’ will conflict with newer versions of Java since it is a reserved word. S…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidassertasidentifier"
+    },
+    "AvoidBranchingStatementAsLastInLoop": {
+        "description": "Using a branching statement as the last part of a loop may be a bug, and/or is confusing. Ensure …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop"
+    },
+    "AvoidCallingFinalize": {
+        "description": "The method Object.finalize() is called by the garbage collector on an object when garbage collect…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidcallingfinalize"
+    },
+    "AvoidCatchingNPE": {
+        "description": "DeprecatedCode should never throw NullPointerExceptions under normal circumstances.  A catch block may hide…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidcatchingnpe"
+    },
+    "AvoidCatchingThrowable": {
+        "description": "DeprecatedCatching Throwable errors is not recommended since its scope is very broad. It includes runtime i…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidcatchingthrowable"
+    },
+    "AvoidDecimalLiteralsInBigDecimalConstructor": {
+        "description": "One might assume that the result of \"new BigDecimal(0.1)\" is exactly equal to 0.1, but it is actu…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoiddecimalliteralsinbigdecimalconstructor"
+    },
+    "AvoidDuplicateLiterals": {
+        "description": "Code containing duplicate String literals can usually be improved by declaring the String as a co…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidduplicateliterals"
+    },
+    "AvoidEnumAsIdentifier": {
+        "description": "Use of the term ‘enum’ will conflict with newer versions of Java since it is a reserved word. Sin…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidenumasidentifier"
+    },
+    "AvoidFieldNameMatchingMethodName": {
+        "description": "It can be confusing to have a field name with the same name as a method. While this is permitted,…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidfieldnamematchingmethodname"
+    },
+    "AvoidFieldNameMatchingTypeName": {
+        "description": "It is somewhat confusing to have a field name matching the declaring type name. This probably mea…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidfieldnamematchingtypename"
+    },
+    "AvoidInstanceofChecksInCatchClause": {
+        "description": "Each caught exception type should be handled in its own catch clause.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidinstanceofchecksincatchclause"
+    },
+    "AvoidLiteralsInIfCondition": {
+        "description": "Avoid using hard-coded literals in conditional statements. By declaring them as static variables …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidliteralsinifcondition"
+    },
+    "AvoidLosingExceptionInformation": {
+        "description": "DeprecatedStatements in a catch block that invoke accessors on the exception without using the information …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidlosingexceptioninformation"
+    },
+    "AvoidMultipleUnaryOperators": {
+        "description": "The use of multiple unary operators may be problematic, and/or confusing. Ensure that the intende…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidmultipleunaryoperators"
+    },
+    "AvoidUsingOctalValues": {
+        "description": "Integer literals that start with zero are interpreted as octal (base-8) values in Java, which can…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#avoidusingoctalvalues"
+    },
+    "BrokenNullCheck": {
+        "description": "The null check is broken since it will throw a NullPointerException itself. It is likely that you…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#brokennullcheck"
+    },
+    "CallSuperFirst": {
+        "description": "Super should be called at the start of the method",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#callsuperfirst"
+    },
+    "CallSuperLast": {
+        "description": "Super should be called at the end of the method",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#callsuperlast"
+    },
+    "CheckSkipResult": {
+        "description": "The skip() method may skip a smaller number of bytes than requested. Check the returned value to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#checkskipresult"
+    },
+    "ClassCastExceptionWithToArray": {
+        "description": "When deriving an array of a specific class from your Collection, one should provide an array of t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#classcastexceptionwithtoarray"
+    },
+    "CloneMethodMustBePublic": {
+        "description": "The java manual says \"By convention, classes that implement this interface should override Object…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#clonemethodmustbepublic"
+    },
+    "CloneMethodMustImplementCloneable": {
+        "description": "The method clone() should only be implemented if the class implements the Cloneable interface wit…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#clonemethodmustimplementcloneable"
+    },
+    "CloneMethodReturnTypeMustMatchClassName": {
+        "description": "If a class implements ‘Cloneable’ the return type of the method ‘clone()’ must be the class name….",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#clonemethodreturntypemustmatchclassname"
+    },
+    "CloseResource": {
+        "description": "Ensure that resources (like ‘java.sql.Connection’, ‘java.sql.Statement’, and ‘java.sql.ResultSet’…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#closeresource"
+    },
+    "CollectionTypeMismatch": {
+        "description": "Detects method calls on collections where the passed object cannot possibly be in the collection …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#collectiontypemismatch"
+    },
+    "CompareObjectsWithEquals": {
+        "description": "Use ‘equals()’ to compare object references; avoid comparing them with ‘==’. Since comparing obje…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#compareobjectswithequals"
+    },
+    "ComparisonWithNaN": {
+        "description": "Reports comparisons with double and float ‘NaN’ (Not-a-Number) values.             These are [spe…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#comparisonwithnan"
+    },
+    "ConfusingArgumentToVarargsMethod": {
+        "description": "Reports a confusing argument passed to a varargs method.             This can occur when an array…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#confusingargumenttovarargsmethod"
+    },
+    "ConstructorCallsOverridableMethod": {
+        "description": "Reports calls to overridable methods on ‘this’ during object initialization. These are invoked on…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod"
+    },
+    "DetachedTestCase": {
+        "description": "The method appears to be a test case since it has public or default visibility, non-static access…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#detachedtestcase"
+    },
+    "DoNotCallGarbageCollectionExplicitly": {
+        "description": "Calls to ‘System.gc()’, ‘Runtime.getRuntime().gc()’, and ‘System.runFinalization()’ are not advis…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#donotcallgarbagecollectionexplicitly"
+    },
+    "DoNotExtendJavaLangThrowable": {
+        "description": "Extend Exception or RuntimeException instead of Throwable.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#donotextendjavalangthrowable"
+    },
+    "DoNotHardCodeSDCard": {
+        "description": "Use Environment.getExternalStorageDirectory() instead of \"/sdcard\"",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#donothardcodesdcard"
+    },
+    "DoNotTerminateVM": {
+        "description": "Web applications should not call ‘System.exit()’, since only the web container or the application…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#donotterminatevm"
+    },
+    "DoNotThrowExceptionInFinally": {
+        "description": "Throwing exceptions within a ‘finally’ block is confusing since they may mask other exceptions or…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#donotthrowexceptioninfinally"
+    },
+    "DontImportSun": {
+        "description": "DeprecatedAvoid importing anything from the ‘sun.’ packages. These packages are not portable and are likely…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dontimportsun"
+    },
+    "DontUseFloatTypeForLoopIndices": {
+        "description": "Don’t use floating point for loop indices. If you must use floating point, use double unless you’…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#dontusefloattypeforloopindices"
+    },
+    "EmptyCatchBlock": {
+        "description": "Empty Catch Block finds instances where an exception is caught, but nothing is done. In most circ…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#emptycatchblock"
+    },
+    "EmptyFinalizer": {
+        "description": "Empty finalize methods serve no purpose and should be removed. Note that Oracle has declared Obje…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#emptyfinalizer"
+    },
+    "EqualsNull": {
+        "description": "Tests for null should not use the equals() method. The ‘==’ operator should be used instead.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#equalsnull"
+    },
+    "FinalizeDoesNotCallSuperFinalize": {
+        "description": "If the finalize() is implemented, its last action should be to call super.finalize. Note that Ora…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#finalizedoesnotcallsuperfinalize"
+    },
+    "FinalizeOnlyCallsSuperFinalize": {
+        "description": "If the finalize() is implemented, it should do something besides just calling super.finalize(). N…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#finalizeonlycallssuperfinalize"
+    },
+    "FinalizeOverloaded": {
+        "description": "Methods named finalize() should not have parameters.  It is confusing and most likely an attempt …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#finalizeoverloaded"
+    },
+    "FinalizeShouldBeProtected": {
+        "description": "When overriding the finalize(), the new method should be set as protected.  If made public, other…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#finalizeshouldbeprotected"
+    },
+    "IdempotentOperations": {
+        "description": "Avoid idempotent operations - they have no effect.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#idempotentoperations"
+    },
+    "IdenticalConditionalBranches": {
+        "description": "Conditional statement that does the same thing when the condition is true and false             i…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#identicalconditionalbranches"
+    },
+    "ImplicitSwitchFallThrough": {
+        "description": "Switch statements without break or return statements for each case option may indicate problemati…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#implicitswitchfallthrough"
+    },
+    "InstantiationToGetClass": {
+        "description": "Avoid instantiating an object just to call getClass() on it; use the .class public member instead.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#instantiationtogetclass"
+    },
+    "InvalidLogMessageFormat": {
+        "description": "Check for messages in slf4j and log4j2 (since 6.19.0) loggers with non matching number of argumen…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#invalidlogmessageformat"
+    },
+    "JumbledIncrementer": {
+        "description": "Avoid jumbled loop incrementers - it’s usually a mistake, and is confusing even if intentional.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#jumbledincrementer"
+    },
+    "JUnitSpelling": {
+        "description": "In JUnit 3, the setUp method is used to set up all data entities required in running tests.      …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#junitspelling"
+    },
+    "JUnitStaticSuite": {
+        "description": "The suite() method in a JUnit test needs to be both public and static.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#junitstaticsuite"
+    },
+    "MethodWithSameNameAsEnclosingClass": {
+        "description": "A method should not have the same name as its containing class. This would be confusing as it wou…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#methodwithsamenameasenclosingclass"
+    },
+    "MisplacedNullCheck": {
+        "description": "The null check here is misplaced. If the variable is null a ‘NullPointerException’ will be thrown…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#misplacednullcheck"
+    },
+    "MissingSerialVersionUID": {
+        "description": "Serializable classes should provide a serialVersionUID field. The serialVersionUID field is also …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#missingserialversionuid"
+    },
+    "MissingStaticMethodInNonInstantiatableClass": {
+        "description": "A class that has private constructors and does not have any static methods or fields cannot be us…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#missingstaticmethodinnoninstantiatableclass"
+    },
+    "MoreThanOneLogger": {
+        "description": "Normally only one logger is used in each class. This rule supports slf4j, log4j, Java Util Loggin…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#morethanonelogger"
+    },
+    "NonCaseLabelInSwitch": {
+        "description": "A non-case label (e.g. a named break/continue label) was present in a switch statement or switch …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#noncaselabelinswitch"
+    },
+    "NonCaseLabelInSwitchStatement": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadNonCaseLabelInSwitch.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#noncaselabelinswitchstatement"
+    },
+    "NonSerializableClass": {
+        "description": "If a class is marked as ‘Serializable’, then all fields need to be serializable as well. In order…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#nonserializableclass"
+    },
+    "NonStaticInitializer": {
+        "description": "A non-static initializer block will be called any time a constructor is invoked (just prior to in…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#nonstaticinitializer"
+    },
+    "NullAssignment": {
+        "description": "Assigning a \"null\" to a variable (outside of its declaration) is usually bad form.  Sometimes, th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#nullassignment"
+    },
+    "OverrideBothEqualsAndHashcode": {
+        "description": "Override both ‘public boolean Object.equals(Object other)’ and ‘public int Object.hashCode()’ or …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#overridebothequalsandhashcode"
+    },
+    "OverrideBothEqualsAndHashCodeOnComparable": {
+        "description": "Classes that implement ‘Comparable’ should override both ‘equals()’ and             ‘hashCode()’ …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#overridebothequalsandhashcodeoncomparable"
+    },
+    "ProperCloneImplementation": {
+        "description": "Object clone() should be implemented with super.clone().",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#propercloneimplementation"
+    },
+    "ProperLogger": {
+        "description": "A logger should normally be defined private static final and be associated with the correct class…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#properlogger"
+    },
+    "ReplaceJavaUtilCalendar": {
+        "description": "The legacy ‘java.util.Calendar’ API is error-prone, mutable, and not thread-safe. It has confusin…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#replacejavautilcalendar"
+    },
+    "ReplaceJavaUtilDate": {
+        "description": "The legacy ‘java.util.Date’ class is mutable, not thread-safe, and has a confusing API. Many of i…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#replacejavautildate"
+    },
+    "ReturnEmptyCollectionRatherThanNull": {
+        "description": "For any method that returns an collection (such as an array, Collection or Map), it is better to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#returnemptycollectionratherthannull"
+    },
+    "ReturnFromFinallyBlock": {
+        "description": "Avoid returning from a finally block, this can discard exceptions.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#returnfromfinallyblock"
+    },
+    "SimpleDateFormatNeedsLocale": {
+        "description": "Be sure to specify a Locale when creating SimpleDateFormat instances to ensure that locale-approp…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#simpledateformatneedslocale"
+    },
+    "SingleMethodSingleton": {
+        "description": "Some classes contain overloaded getInstance. The problem with overloaded getInstance methods is t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#singlemethodsingleton"
+    },
+    "SingletonClassReturningNewInstance": {
+        "description": "A singleton class should only ever have one instance. Failure to check             whether an ins…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#singletonclassreturningnewinstance"
+    },
+    "StaticEJBFieldShouldBeFinal": {
+        "description": "According to the J2EE specification, an EJB should not have any static fields with write access. …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#staticejbfieldshouldbefinal"
+    },
+    "StringBufferInstantiationWithChar": {
+        "description": "Individual character values provided as initialization arguments will be converted into integers….",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#stringbufferinstantiationwithchar"
+    },
+    "SuspiciousEqualsMethodName": {
+        "description": "The method name and parameter number are suspiciously close to ‘Object.equals’, which can denote …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#suspiciousequalsmethodname"
+    },
+    "SuspiciousHashcodeMethodName": {
+        "description": "The method name and return type are suspiciously close to hashCode(), which may denote an intenti…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#suspicioushashcodemethodname"
+    },
+    "SuspiciousOctalEscape": {
+        "description": "A suspicious octal escape sequence was found inside a String literal. The Java language specifica…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#suspiciousoctalescape"
+    },
+    "TestClassWithoutTestCases": {
+        "description": "Test classes typically start or end with the affix \"Test\", \"Tests\" or \"TestCase\". Having a non-te…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#testclasswithouttestcases"
+    },
+    "UnconditionalIfStatement": {
+        "description": "Do not use \"if\" statements whose conditionals are always true or always false.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unconditionalifstatement"
+    },
+    "UnnecessaryBooleanAssertion": {
+        "description": "A JUnit test assertion with a boolean literal is unnecessary since it always will evaluate to the…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unnecessarybooleanassertion"
+    },
+    "UnnecessaryCaseChange": {
+        "description": "Using equalsIgnoreCase() is faster than using toUpperCase/toLowerCase().equals()",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unnecessarycasechange"
+    },
+    "UnnecessaryConversionTemporary": {
+        "description": "Avoid the use temporary objects when converting primitives to Strings. Use the static conversion …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unnecessaryconversiontemporary"
+    },
+    "UnsupportedJdkApiUsage": {
+        "description": "Avoid importing classes or using APIs from the ‘sun.’ or ‘jdk.internal.’ packages, including ‘sun…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unsupportedjdkapiusage"
+    },
+    "UnusedNullCheckInEquals": {
+        "description": "After checking an object reference for null, you should invoke equals() on that object rather tha…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#unusednullcheckinequals"
+    },
+    "UseCorrectExceptionLogging": {
+        "description": "To make sure the full stacktrace is printed out, use the logging statement with two arguments: a …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#usecorrectexceptionlogging"
+    },
+    "UseEqualsToCompareStrings": {
+        "description": "Using ‘==’ or ‘!=’ to compare strings is only reliable if the interned string (‘String#intern()’)…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#useequalstocomparestrings"
+    },
+    "UselessOperationOnImmutable": {
+        "description": "DeprecatedAn operation on an immutable object will not change the object itself since the result of the ope…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#uselessoperationonimmutable"
+    },
+    "UselessPureMethodCall": {
+        "description": "This rule detects method calls of pure methods whose result is unused. A pure method is a method …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#uselesspuremethodcall"
+    },
+    "UseLocaleWithCaseConversions": {
+        "description": "When doing ‘String::toLowerCase()/toUpperCase()’ conversions, use an explicit locale argument to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#uselocalewithcaseconversions"
+    },
+    "UseProperClassLoader": {
+        "description": "In J2EE, the getClassLoader() method might not work as expected. Use Thread.currentThread().getCo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_errorprone.html#useproperclassloader"
+    },
+    "AvoidSynchronizedAtMethodLevel": {
+        "description": "Method-level synchronization will pin virtual threads and can cause performance problems. Additio…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#avoidsynchronizedatmethodlevel"
+    },
+    "AvoidSynchronizedStatement": {
+        "description": "Synchronization will pin virtual threads and can cause performance problems.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#avoidsynchronizedstatement"
+    },
+    "AvoidThreadGroup": {
+        "description": "Avoid using java.lang.ThreadGroup; although it is intended to be used in a threaded environment i…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#avoidthreadgroup"
+    },
+    "AvoidUsingVolatile": {
+        "description": "Use of the keyword ‘volatile’ is generally used to fine tune a Java application, and therefore, r…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#avoidusingvolatile"
+    },
+    "DoNotUseThreads": {
+        "description": "The J2EE specification explicitly forbids the use of threads. Threads are resources, that should …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#donotusethreads"
+    },
+    "DontCallThreadRun": {
+        "description": "Explicitly calling Thread.run() method will execute in the caller’s thread of control.  Instead, …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#dontcallthreadrun"
+    },
+    "DoubleCheckedLocking": {
+        "description": "Partially created objects can be returned by the Double Checked Locking pattern when used in Java…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#doublecheckedlocking"
+    },
+    "NonThreadSafeSingleton": {
+        "description": "Non-thread safe singletons can result in bad state changes. Eliminate static singletons if possib…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#nonthreadsafesingleton"
+    },
+    "UnsynchronizedStaticFormatter": {
+        "description": "Instances of ‘java.text.Format’ are generally not synchronized. Sun recommends using separate for…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#unsynchronizedstaticformatter"
+    },
+    "UseConcurrentHashMap": {
+        "description": "Since Java5 brought a new implementation of the Map designed for multi-threaded access, you can p…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#useconcurrenthashmap"
+    },
+    "UseNotifyAllInsteadOfNotify": {
+        "description": "Thread.notify() awakens a thread monitoring the object. If more than one thread is monitoring, th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_multithreading.html#usenotifyallinsteadofnotify"
+    },
+    "AddEmptyString": {
+        "description": "The conversion of literals to strings by concatenating them with empty strings is inefficient. It…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#addemptystring"
+    },
+    "AppendCharacterWithChar": {
+        "description": "Avoid concatenating characters as strings in StringBuffer/StringBuilder.append methods.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#appendcharacterwithchar"
+    },
+    "AvoidArrayLoops": {
+        "description": "Instead of manually copying data between two arrays, use the more efficient ‘Arrays.copyOf’ or ‘S…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#avoidarrayloops"
+    },
+    "AvoidCalendarDateCreation": {
+        "description": "Problem: ‘java.util.Calendar’ is a heavyweight object and expensive to create. It should only be …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#avoidcalendardatecreation"
+    },
+    "AvoidFileStream": {
+        "description": "The FileInputStream and FileOutputStream classes contains a finalizer method which will cause gar…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#avoidfilestream"
+    },
+    "AvoidInstantiatingObjectsInLoops": {
+        "description": "New objects created within loops should be checked to see if they can created outside them and re…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops"
+    },
+    "BigIntegerInstantiation": {
+        "description": "Don’t create instances of already existing BigInteger (‘BigInteger.ZERO’, ‘BigInteger.ONE’), for …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#bigintegerinstantiation"
+    },
+    "ConsecutiveAppendsShouldReuse": {
+        "description": "Consecutive calls to StringBuffer/StringBuilder .append should be chained, reusing the target obj…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#consecutiveappendsshouldreuse"
+    },
+    "ConsecutiveLiteralAppends": {
+        "description": "Consecutively calling StringBuffer/StringBuilder.append(…) with literals should be avoided. Sin…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#consecutiveliteralappends"
+    },
+    "InefficientEmptyStringCheck": {
+        "description": "Checking the length of ‘string.trim()’ or ‘string.strip()’ is an inefficient way to decide if a s…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#inefficientemptystringcheck"
+    },
+    "InefficientStringBuffering": {
+        "description": "Avoid concatenating non-literals in a StringBuffer constructor or append() since intermediate buf…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#inefficientstringbuffering"
+    },
+    "InsufficientStringBufferDeclaration": {
+        "description": "Failing to pre-size a StringBuffer or StringBuilder properly could cause it to re-size many times…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#insufficientstringbufferdeclaration"
+    },
+    "OptimizableToArrayCall": {
+        "description": "Calls to a collection’s ‘toArray(E[])’ method should specify a target array of zero size. This al…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#optimizabletoarraycall"
+    },
+    "RedundantFieldInitializer": {
+        "description": "Java will initialize fields with known default values so any explicit initialization of those sam…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#redundantfieldinitializer"
+    },
+    "StringInstantiation": {
+        "description": "Avoid instantiating String objects; this is usually unnecessary since they are immutable and can …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#stringinstantiation"
+    },
+    "StringToString": {
+        "description": "Avoid calling toString() on objects already known to be string instances; this is unnecessary.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#stringtostring"
+    },
+    "TooFewBranchesForASwitchStatement": {
+        "description": "DeprecatedThe rule has been renamed. Use insteadTooFewBranchesForSwitch.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#toofewbranchesforaswitchstatement"
+    },
+    "TooFewBranchesForSwitch": {
+        "description": "Switch statements are intended to be used to support complex branching behaviour. Using a switch …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#toofewbranchesforswitch"
+    },
+    "UseArrayListInsteadOfVector": {
+        "description": "ArrayList is a much better Collection implementation than Vector if thread-safe operation is not …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#usearraylistinsteadofvector"
+    },
+    "UseArraysAsList": {
+        "description": "The ‘java.util.Arrays’ class has a ‘asList()’ method that should be used when you want to create …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#usearraysaslist"
+    },
+    "UseIndexOfChar": {
+        "description": "Use String.indexOf(char) when checking for the index of a single character; it executes faster.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#useindexofchar"
+    },
+    "UseIOStreamsWithApacheCommonsFileItem": {
+        "description": "Problem: Use of [FileItem.get()](https://javadoc.io/static/commons-fileupload/commons-fileupload/…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#useiostreamswithapachecommonsfileitem"
+    },
+    "UselessStringValueOf": {
+        "description": "No need to call String.valueOf to append to a string; just use the valueOf() argument directly.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#uselessstringvalueof"
+    },
+    "UseStringBufferForStringAppends": {
+        "description": "The use of the ‘+=’ operator for appending strings causes the JVM to create and use an internal S…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#usestringbufferforstringappends"
+    },
+    "UseStringBufferLength": {
+        "description": "Use StringBuffer.length() to determine StringBuffer length rather than using StringBuffer.toStrin…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_performance.html#usestringbufferlength"
+    },
+    "HardCodedCryptoKey": {
+        "description": "Do not use hard coded values for cryptographic operations. Please store keys outside of source code.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_security.html#hardcodedcryptokey"
+    },
+    "InsecureCryptoIv": {
+        "description": "Do not use hard coded initialization vector in cryptographic operations. Please use a randomly ge…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_java_security.html#insecurecryptoiv"
+    }
+}

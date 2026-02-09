@@ -1,0 +1,6 @@
+{
+    "no-ternary": {
+        "description": "Description\n\nThis rule disallows ternary operators.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-ternary: \"error\"*/\n\nconst foo = isBar ? baz : qux;\n\nfunction quux() {\n  return foo ? bar() : baz();\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-ternary: \"error\"*/\n\nlet foo;\n\nif (isBar) {\n    foo = baz;\n} else {\n    foo = qux;\n}\n\nfunction quux() {\n    if (foo) {\n        return bar();\n    } else {\n        return baz();\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-return-await": {
+        "description": "Description\n\nThis rule warns on any usage ofreturn awaitexcept intryblocks.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-return-await: \"error\"*/\n\nasync function foo() {\n    return await bar();\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-return-await: \"error\"*/\n\nasync function foo1() {\n    return bar();\n}\n\nasync function foo2() {\n    await bar();\n    return;\n}\n\n// This is essentially the same as `return await bar();`, but the rule checks only `await` in `return` statements\nasync function foo3() {\n    const x = await bar();\n    return x;\n}\n\n// In this example the `await` is necessary to be able to catch errors thrown from `bar()`\nasync function foo4() {\n    try {\n        return await bar();\n    } catch (error) {}\n}",
+        "option": "This rule has no specific options."
+    }
+}

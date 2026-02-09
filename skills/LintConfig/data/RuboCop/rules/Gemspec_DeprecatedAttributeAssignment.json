@@ -1,0 +1,6 @@
+{
+    "Gemspec/DeprecatedAttributeAssignment": {
+        "description": "Description\n\nChecks that deprecated attribute assignments are not set in a gemspec file.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)"
+    }
+}

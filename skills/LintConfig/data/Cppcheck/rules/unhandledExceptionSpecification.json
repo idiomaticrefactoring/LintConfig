@@ -1,0 +1,6 @@
+{
+    "unhandledExceptionSpecification": {
+        "description": "Description\n\nThe product does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the product.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 703\nInconclusive: true"
+    }
+}

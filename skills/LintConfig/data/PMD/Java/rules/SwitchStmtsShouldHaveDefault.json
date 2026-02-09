@@ -1,0 +1,6 @@
+{
+    "SwitchStmtsShouldHaveDefault": {
+        "description": "Description\n\nDeprecated\n\nThis rule has been renamed. Use instead:NonExhaustiveSwitch\n\nDeprecated\n\nSwitch statements should be exhaustive, to make their control flow\neasier to follow. This can be achieved by adding adefaultcase, or,\nif the switch is on an enum type, by ensuring there is one switch branch\nfor each enum constant.\n\nThis rule doesn’t consider Switch Statements, that use Pattern Matching, since for these the\ncompiler already ensures that all cases are covered. The same is true for Switch Expressions,\nwhich are also not considered by this rule.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

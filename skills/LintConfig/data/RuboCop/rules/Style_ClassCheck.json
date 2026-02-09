@@ -1,0 +1,6 @@
+{
+    "Style/ClassCheck": {
+        "description": "Description\n\nEnforces consistent use of `Object#is_a?` or `Object#kind_of?`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: is_a? (type: str)\nSupportedStyles: ['is_a?', 'kind_of?'] (type: list)"
+    }
+}

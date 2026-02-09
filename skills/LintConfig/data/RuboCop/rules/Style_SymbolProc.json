@@ -1,0 +1,6 @@
+{
+    "Style/SymbolProc": {
+        "description": "Description\n\nUse symbols as procs instead of blocks when possible.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMethodsWithArguments: False (type: bool)\nAllowedMethods: ['define_method'] (type: list)\nAllowedPatterns: [] (type: list)\nAllowComments: False (type: bool)"
+    }
+}

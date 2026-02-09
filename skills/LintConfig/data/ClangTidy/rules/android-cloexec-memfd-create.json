@@ -1,0 +1,6 @@
+{
+    "android-cloexec-memfd-create": {
+        "description": "Description\n\nmemfd_create()\nshould include\nMFD_CLOEXEC\nin its type argument to avoid\nthe file descriptor leakage. Without this flag, an opened sensitive file would\nremain open across a fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\nmemfd_create\n(\nname\n,\nMFD_ALLOW_SEALING\n);\n// becomes\nmemfd_create\n(\nname\n,\nMFD_ALLOW_SEALING\n|\nMFD_CLOEXEC\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

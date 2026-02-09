@@ -1,0 +1,6 @@
+{
+    "prefer-rest-params": {
+        "description": "Description\n\nThis rule is aimed to flag usage ofargumentsvariables.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-rest-params: \"error\"*/\n\nfunction foo() {\n    console.log(arguments);\n}\n\nfunction foo(action) {\n    const args = Array.prototype.slice.call(arguments, 1);\n    action.apply(null, args);\n}\n\nfunction foo(action) {\n    const args = [].slice.call(arguments, 1);\n    action.apply(null, args);\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-rest-params: \"error\"*/\n\nfunction foo(...args) {\n    console.log(args);\n}\n\nfunction foo(action, ...args) {\n    action.apply(null, args); // or `action(...args)`, related to the `prefer-spread` rule.\n}\n\n// Note: the implicit arguments can be overwritten.\nfunction foo(arguments) {\n    console.log(arguments); // This is the first argument.\n}\nfunction foo() {\n    const arguments = 0;\n    console.log(arguments); // This is a local variable.\n}",
+        "option": "This rule has no options."
+    }
+}

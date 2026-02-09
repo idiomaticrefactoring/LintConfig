@@ -1,0 +1,6 @@
+{
+    "MissingStaticMethodInNonInstantiatableClass": {
+        "description": "Description\n\nA class that has private constructors and does not have any static methods or fields cannot be used.\n\nWhen one of the private constructors is annotated with one of the annotations, then the class is not considered\nnon-instantiatable anymore and no violation will be reported.\nSee the propertyannotations.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nannotations\torg.springframework.beans.factory.annotation.Autowired , javax.inject.Inject , com.google.inject.Inject , lombok.Builder\tIf a constructor is annotated with one of these annotations, then the class is ignored."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "modernize-use-bool-literals": {
+        "description": "Description\n\nFinds integer literals which are cast to\nbool\n.\n\nbool\np\n=\n1\n;\nbool\nf\n=\nstatic_cast\n<\nbool\n>\n(\n1\n);\nstd\n::\nios_base\n::\nsync_with_stdio\n(\n0\n);\nbool\nx\n=\np\n?\n1\n:\n0\n;\n// transforms to\nbool\np\n=\ntrue\n;\nbool\nf\n=\ntrue\n;\nstd\n::\nios_base\n::\nsync_with_stdio\n(\nfalse\n);\nbool\nx\n=\np\n?\ntrue\n:\nfalse\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf set to\ntrue\n, the check will not give warnings inside macros. Default\nis\ntrue\n."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/ConditionPosition": {
+        "description": "Description\n\nChecks for condition placed in a confusing position relative to the keyword.",
+        "option": "This rule has no specific options."
+    }
+}

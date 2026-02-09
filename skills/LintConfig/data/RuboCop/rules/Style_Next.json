@@ -1,0 +1,6 @@
+{
+    "Style/Next": {
+        "description": "Description\n\nUse `next` to skip iteration instead of a condition at the end.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: skip_modifier_ifs (type: str)\nMinBodyLength: 3 (type: int)\nAllowConsecutiveConditionals: False (type: bool)\nSupportedStyles: ['skip_modifier_ifs', 'always'] (type: list)"
+    }
+}

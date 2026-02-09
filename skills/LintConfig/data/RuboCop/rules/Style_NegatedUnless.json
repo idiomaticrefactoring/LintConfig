@@ -1,0 +1,6 @@
+{
+    "Style/NegatedUnless": {
+        "description": "Description\n\nFavor if over unless for negative conditions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: both (type: str)\nSupportedStyles: ['both', 'prefix', 'postfix'] (type: list)"
+    }
+}

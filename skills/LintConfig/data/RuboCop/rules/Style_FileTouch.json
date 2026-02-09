@@ -1,0 +1,6 @@
+{
+    "Style/FileTouch": {
+        "description": "Description\n\nFavor `FileUtils.touch` for touching files.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/CommentAnnotation": {
+        "description": "Description\n\nChecks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE).",
+        "option": "This rule supports the following parameters in your configuration:\n\nKeywords: ['TODO', 'FIXME', 'OPTIMIZE', 'HACK', 'REVIEW', 'NOTE'] (type: list)\nRequireColon: True (type: bool)"
+    }
+}

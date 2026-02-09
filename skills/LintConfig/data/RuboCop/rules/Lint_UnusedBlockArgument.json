@@ -1,0 +1,6 @@
+{
+    "Lint/UnusedBlockArgument": {
+        "description": "Description\n\nChecks for unused block arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nIgnoreEmptyBlocks: True (type: bool)\nAllowUnusedKeywordArguments: False (type: bool)"
+    }
+}

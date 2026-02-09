@@ -1,0 +1,6 @@
+{
+    "Style/CharacterLiteral": {
+        "description": "Description\n\nChecks for uses of character literals.",
+        "option": "This rule has no specific options."
+    }
+}

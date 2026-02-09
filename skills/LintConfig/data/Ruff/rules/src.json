@@ -1,0 +1,6 @@
+{
+    "src": {
+        "description": "Description\n\nThe directories to consider when resolving first- vs. third-party\nimports.\n\nWhen omitted, the `src` directory will typically default to including both:\n\n1. The directory containing the nearest `pyproject.toml`, `ruff.toml`, or `.ruff.toml` file (the \"project root\").\n2. The `\"src\"` subdirectory of the project root.\n\nThese defaults ensure that Ruff supports both flat layouts and `src` layouts out-of-the-box.\n(If a configuration file is explicitly provided (e.g., via the `--config` command-line\nflag), the current working directory will be considered the project root.)\n\nAs an example, consider an alternative project structure, like:\n\n```text\nmy_project\n├── pyproject.toml\n└── lib\n    └── my_package\n        ├── __init__.py\n        ├── foo.py\n        └── bar.py\n```\n\nIn this case, the `./lib` directory should be included in the `src` option\n(e.g., `src = [\"lib\"]`), such that when resolving imports, `my_package.foo`\nis considered first-party.\n\nThis field supports globs. For example, if you have a series of Python\npackages in a `python_modules` directory, `src = [\"python_modules/*\"]`\nwould expand to incorporate all packages in that directory. User home\ndirectory and environment variables will also be expanded.",
+        "option": "Type: array"
+    }
+}

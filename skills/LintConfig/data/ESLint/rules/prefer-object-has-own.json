@@ -1,0 +1,6 @@
+{
+    "prefer-object-has-own": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-object-has-own: \"error\"*/\n\nObject.prototype.hasOwnProperty.call(obj, \"a\");\n\nObject.hasOwnProperty.call(obj, \"a\");\n\n({}).hasOwnProperty.call(obj, \"a\");\n\nconst hasProperty = Object.prototype.hasOwnProperty.call(object, property);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-object-has-own: \"error\"*/\n\nObject.hasOwn(obj, \"a\");\n\nconst hasProperty = Object.hasOwn(object, property);",
+        "option": "This rule has no options."
+    }
+}

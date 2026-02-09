@@ -1,0 +1,6 @@
+{
+    "Lint/SafeNavigationConsistency": {
+        "description": "Description\n\nCheck to make sure that if safe navigation is used in an `&&` or `||` condition, consistent and appropriate safe navigation, without excess or deficiency, is used for all method calls on the same object.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['present?', 'blank?', 'presence', 'try', 'try!'] (type: list)"
+    }
+}

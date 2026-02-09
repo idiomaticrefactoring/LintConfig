@@ -1,0 +1,6 @@
+{
+    "Style/AmbiguousEndlessMethodDefinition": {
+        "description": "Description\n\nChecks for endless methods inside operators of lower precedence.",
+        "option": "This rule has no specific options."
+    }
+}

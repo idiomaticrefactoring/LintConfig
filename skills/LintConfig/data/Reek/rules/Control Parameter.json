@@ -1,0 +1,6 @@
+{
+    "Control Parameter": {
+        "description": "Description\n\nIntroduction\n\nControl Parameter is a case of Control Couple.\n\nExample\n\nA simple example would be the quoted parameter in the following method:\n\nruby\ndef write(quoted)\n  if quoted\n    write_quoted @value\n  else\n    write_unquoted @value\n  end\nend\n\nFixing those problems is out of the scope of this document but an easy solution\ncould be to remove the write method altogether and to move the calls to\nwrite_quoted and write_unquoted to the caller of write.\n\nCurrent Support in Reek\n\nReek warns about Control Parameter when a method parameter or block parameter is\nthe tested value in a conditional statement.",
+        "option": "Control Parameter supports the Basic Smell Options."
+    }
+}

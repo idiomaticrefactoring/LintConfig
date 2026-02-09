@@ -1,0 +1,6 @@
+{
+    "flake8-tidy-imports": {
+        "description": "Description\n\nOptions for the `flake8-tidy-imports` plugin.",
+        "option": "Type: Flake8TidyImportsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - ban-relative-imports: Whether to ban all relative imports (`\"all\"`), or only those imports\n  - banned-api: Specific modules or module members that may not be imported or accessed.\n  - banned-module-level-imports: List of specific modules that may not be imported at module level, and should instead be"
+    }
+}

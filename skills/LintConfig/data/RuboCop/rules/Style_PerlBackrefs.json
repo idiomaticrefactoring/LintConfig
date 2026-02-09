@@ -1,0 +1,6 @@
+{
+    "Style/PerlBackrefs": {
+        "description": "Description\n\nAvoid Perl-style regex back references.",
+        "option": "This rule has no specific options."
+    }
+}

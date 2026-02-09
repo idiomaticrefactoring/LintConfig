@@ -1,0 +1,6 @@
+{
+    "Style/NegatedIfElseCondition": {
+        "description": "Description\n\nChecks for uses of `if-else` and ternary operators with a negated condition which can be simplified by inverting condition and swapping branches.",
+        "option": "This rule has no specific options."
+    }
+}

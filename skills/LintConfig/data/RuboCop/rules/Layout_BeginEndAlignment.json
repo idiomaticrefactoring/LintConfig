@@ -1,0 +1,6 @@
+{
+    "Layout/BeginEndAlignment": {
+        "description": "Description\n\nAlign ends corresponding to begins correctly.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleAlignWith: start_of_line (type: str)\nSupportedStylesAlignWith: ['start_of_line', 'begin'] (type: list)\nSeverity: warning (type: str)"
+    }
+}

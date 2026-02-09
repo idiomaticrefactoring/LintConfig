@@ -1,0 +1,6 @@
+{
+    "Style/BlockDelimiters": {
+        "description": "Description\n\nAvoid using {...} for multi-line blocks (multiline chaining is always ugly). Prefer {...} over do...end for single-line blocks.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: line_count_based (type: str)\nSupportedStyles: ['line_count_based', 'semantic', 'braces_for_chaining', 'always_braces'] (type: list)\nProceduralMethods: ['benchmark', 'bm', 'bmbm', 'create', 'each_with_object', 'measure', 'new', 'realtime', 'tap', 'with_object'] (type: list)\nFunctionalMethods: ['let', 'let!', 'subject', 'watch'] (type: list)\nAllowedMethods: ['lambda', 'proc', 'it'] (type: list)\nAllowedPatterns: [] (type: list)\nAllowBracesOnProceduralOneLiners: False (type: bool)\nBracesRequiredMethods: [] (type: list)"
+    }
+}

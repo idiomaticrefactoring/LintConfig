@@ -1,0 +1,6 @@
+{
+    "pointerAdditionResultNotNull": {
+        "description": "Description\n\nComparison is wrong. Result of 'ptr+1' can't be 0 unless there is pointer overflow, and pointer overflow is undefined behaviour.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false"
+    }
+}

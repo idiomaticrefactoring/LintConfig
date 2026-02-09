@@ -1,0 +1,6 @@
+{
+    "no-lone-blocks": {
+        "description": "Description\n\nThis rule aims to eliminate unnecessary and potentially confusing blocks at the top level of a script or within other blocks.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-lone-blocks: \"error\"*/\n\n{}\n\nif (foo) {\n    bar();\n    {\n        baz();\n    }\n}\n\nfunction bar() {\n    {\n        baz();\n    }\n}\n\n{\n    function foo() {}\n}\n\n{\n    aLabel: {\n    }\n}\n\nclass C {\n    static {\n        {\n            foo();\n        }\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-lone-blocks: \"error\"*/\n\nwhile (foo) {\n    bar();\n}\n\nif (foo) {\n    if (bar) {\n        baz();\n    }\n}\n\nfunction bar() {\n    baz();\n}\n\n{\n    let x = 1;\n}\n\n{\n    const y = 1;\n}\n\n{\n    class Foo {}\n}\n\naLabel: {\n}\n\nclass C {\n    static {\n        lbl: {\n            if (something) {\n                break lbl;\n            }\n\n            foo();\n        }\n    }\n}\n\nExamples ofcorrectcode for this rule with ES6 environment and strict mode via\"languageOptions\": { \"sourceType\": \"module\" }in the ESLint configuration or\"use strict\"directive in the code:\n\n/*eslint no-lone-blocks: \"error\"*/\n\n\"use strict\";\n\n{\n    function foo() {}\n}",
+        "option": "This rule has no options."
+    }
+}

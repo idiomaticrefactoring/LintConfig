@@ -1,0 +1,6 @@
+{
+    "resourceLeak": {
+        "description": "Description\n\nThe product does not release a file descriptor or handle after its effective lifetime has ended, i.e., after the file descriptor/handle is no longer needed.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 775\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-whitespace-before-property": {
+        "description": "Description\n\nThis rule disallows whitespace around the dot or before the opening bracket before properties of objects if they are on the same line. This rule allows whitespace when the object and property are on separate lines, as it is common to add newlines to longer chains of properties:\n\nfoo\n  .bar()\n  .baz()\n  .qux()\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-whitespace-before-property: \"error\"*/\n\nfoo [bar]\n\nfoo. bar\n\nfoo .bar\n\nfoo. bar. baz\n\nfoo. bar()\n  .baz()\n\nfoo\n  .bar(). baz()\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-whitespace-before-property: \"error\"*/\n\nfoo.bar\n\nfoo[bar]\n\nfoo[ bar ]\n\nfoo.bar.baz\n\nfoo\n  .bar().baz()\n\nfoo\n  .bar()\n  .baz()\n\nfoo.\n  bar().\n  baz()",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "overlappingWriteUnion": {
+        "description": "Description\n\nOverlapping read/write of union is undefined behavior",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: N/A\nInconclusive: false"
+    }
+}

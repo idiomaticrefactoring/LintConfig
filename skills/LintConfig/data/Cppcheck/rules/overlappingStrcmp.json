@@ -1,0 +1,6 @@
+{
+    "overlappingStrcmp": {
+        "description": "Description\n\nThe expression 'strcmp(x,\"def\") != 0' is suspicious. It overlaps 'strcmp(x,\"abc\") == 0'.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "unsignedPositive": {
+        "description": "Description\n\nThe product contains an expression that will always evaluate to false.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 570\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Naming/AccessorMethodName": {
+        "description": "Description\n\nChecks the naming of accessor methods for get_/set_.",
+        "option": "This rule has no specific options."
+    }
+}

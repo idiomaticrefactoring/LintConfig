@@ -1,0 +1,6 @@
+{
+    "Style/RedundantBegin": {
+        "description": "Description\n\nDon't use begin blocks when they are not needed.",
+        "option": "This rule has no specific options."
+    }
+}

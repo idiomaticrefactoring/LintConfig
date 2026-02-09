@@ -1,0 +1,6 @@
+{
+    "Naming/HeredocDelimiterNaming": {
+        "description": "Description\n\nUse descriptive heredoc delimiters.",
+        "option": "This rule supports the following parameters in your configuration:\n\nForbiddenDelimiters: ['/(^|\\\\s)(EO[A-Z]{1}|END)(\\\\s|$)/i'] (type: list)"
+    }
+}

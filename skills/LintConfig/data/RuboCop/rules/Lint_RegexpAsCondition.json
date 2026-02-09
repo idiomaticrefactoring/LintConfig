@@ -1,0 +1,6 @@
+{
+    "Lint/RegexpAsCondition": {
+        "description": "Description\n\nDo not use regexp literal as a condition. The regexp literal matches `$_` implicitly.",
+        "option": "This rule has no specific options."
+    }
+}

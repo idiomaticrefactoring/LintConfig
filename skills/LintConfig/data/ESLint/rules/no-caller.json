@@ -1,0 +1,6 @@
+{
+    "no-caller": {
+        "description": "Description\n\nThis rule is aimed at discouraging the use of deprecated and sub-optimal code by disallowing the use ofarguments.callerandarguments.callee. As such, it will warn whenarguments.callerandarguments.calleeare used.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-caller: \"error\"*/\n\nfunction foo(n) {\n    if (n <= 0) {\n        return;\n    }\n\n    arguments.callee(n - 1);\n}\n\n[1,2,3,4,5].map(function(n) {\n    return !(n > 1) ? 1 : arguments.callee(n - 1) * n;\n});\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-caller: \"error\"*/\n\nfunction foo(n) {\n    if (n <= 0) {\n        return;\n    }\n\n    foo(n - 1);\n}\n\n[1,2,3,4,5].map(function factorial(n) {\n    return !(n > 1) ? 1 : factorial(n - 1) * n;\n});",
+        "option": "This rule has no options."
+    }
+}

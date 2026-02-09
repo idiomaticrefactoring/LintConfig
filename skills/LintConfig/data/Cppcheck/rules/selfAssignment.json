@@ -1,0 +1,6 @@
+{
+    "selfAssignment": {
+        "description": "Description\n\nRedundant assignment of 'varname' to itself.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "constStatement": {
+        "description": "Description\n\nRedundant code: Found a statement that begins with type constant.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

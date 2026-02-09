@@ -1,0 +1,6 @@
+{
+    "Style/Dir": {
+        "description": "Description\n\nUse the `__dir__` method to retrieve the canonicalized absolute path to the current file.",
+        "option": "This rule has no specific options."
+    }
+}

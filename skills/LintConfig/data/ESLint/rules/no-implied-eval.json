@@ -1,0 +1,6 @@
+{
+    "no-implied-eval": {
+        "description": "Description\n\nThis rule aims to eliminate impliedeval()through the use ofsetTimeout(),setInterval()orexecScript(). As such, it will warn when either function is used with a string as the first argument.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-implied-eval: \"error\"*/\n/*global window, setTimeout, setInterval, execScript*/\n\nsetTimeout(\"alert('Hi!');\", 100);\n\nsetInterval(\"alert('Hi!');\", 100);\n\nexecScript(\"alert('Hi!')\");\n\nwindow.setTimeout(\"count = 5\", 10);\n\nwindow.setInterval(\"foo = bar\", 10);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-implied-eval: \"error\"*/\n/*global setTimeout, setInterval*/\n\nsetTimeout(function() {\n    alert(\"Hi!\");\n}, 100);\n\nsetInterval(function() {\n    alert(\"Hi!\");\n}, 100);",
+        "option": "This rule has no options."
+    }
+}

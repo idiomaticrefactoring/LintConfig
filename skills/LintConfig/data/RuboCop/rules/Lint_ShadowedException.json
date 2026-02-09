@@ -1,0 +1,6 @@
+{
+    "Lint/ShadowedException": {
+        "description": "Description\n\nAvoid rescuing a higher level exception before a lower level exception.",
+        "option": "This rule has no specific options."
+    }
+}

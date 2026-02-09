@@ -1,0 +1,6 @@
+{
+    "readability-container-size-empty": {
+        "description": "Description\n\nChecks whether a call to the\nsize()\n/\nlength()\nmethod can be replaced\nwith a call to\nempty()\n.\n\nThe emptiness of a container should be checked using the\nempty()\nmethod\ninstead of the\nsize()\n/\nlength()\nmethod. It shows clearer intent to use\nempty()\n. Furthermore some containers (for example, a\nstd::forward_list\n)\nmay implement the\nempty()\nmethod but not implement the\nsize()\nor\nlength()\nmethod. Using\nempty()\nwhenever possible makes it easier to\nswitch to another container in the future.\n\nThe check issues warning if a container has\nempty()\nand\nsize()\nor\nlength()\nmethods matching following signatures:\n\nsize_type\nsize\n()\nconst\n;\nsize_type\nlength\n()\nconst\n;\nbool\nempty\n()\nconst\n;\n\nsize_type\ncan be any kind of integer type.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nExcludedComparisonTypes\nA semicolon-separated list of regular expressions matching class names for\nwhich the check will ignore comparisons of objects with default-constructed\nobjects of the same type. If a class is listed here, the check will not\nsuggest using\nempty()\ninstead of such comparisons for objects of that\nclass. Default value is:\n::std::array\n."
+    }
+}

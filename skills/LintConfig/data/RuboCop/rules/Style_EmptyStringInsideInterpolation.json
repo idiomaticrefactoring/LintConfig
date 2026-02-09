@@ -1,0 +1,6 @@
+{
+    "Style/EmptyStringInsideInterpolation": {
+        "description": "Description\n\nChecks for empty strings being assigned inside string interpolation.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: trailing_conditional (type: str)\nSupportedStyles: ['trailing_conditional', 'ternary'] (type: list)"
+    }
+}

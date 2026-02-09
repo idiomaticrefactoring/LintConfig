@@ -1,0 +1,6 @@
+{
+    "Lint/NumberConversion": {
+        "description": "Description\n\nChecks unsafe usage of number conversion methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)\nIgnoredClasses: ['Time', 'DateTime'] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/KeywordArgumentsMerging": {
+        "description": "Description\n\nWhen passing an existing hash as keyword arguments, provide additional arguments directly rather than using `merge`.",
+        "option": "This rule has no specific options."
+    }
+}

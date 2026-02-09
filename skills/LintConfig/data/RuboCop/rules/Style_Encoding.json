@@ -1,0 +1,6 @@
+{
+    "Style/Encoding": {
+        "description": "Description\n\nUse UTF-8 as the source file encoding.",
+        "option": "This rule has no specific options."
+    }
+}

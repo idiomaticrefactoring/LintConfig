@@ -1,0 +1,6 @@
+{
+    "Style/MinMax": {
+        "description": "Description\n\nUse `Enumerable#minmax` instead of `Enumerable#min` and `Enumerable#max` in conjunction.",
+        "option": "This rule has no specific options."
+    }
+}

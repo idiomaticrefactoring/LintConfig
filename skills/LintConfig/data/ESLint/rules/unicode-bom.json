@@ -1,0 +1,6 @@
+{
+    "unicode-bom": {
+        "description": "Description\n\nIf the\"always\"option is used, this rule requires that files always begin\nwith the Unicode BOM character U+FEFF. If\"never\"is used, files must never\nbegin with U+FEFF.",
+        "option": "This rule has a string option:\n\n- \"always\"files must begin with the Unicode BOM\n- \"never\"(default) files must not begin with the Unicode BOM\n\nalways\n\nExample ofcorrectcode for this rule with the\"always\"option:\n\n﻿// U+FEFF at the beginning\n\n/*eslint unicode-bom: [\"error\", \"always\"]*/\n\nlet abc;\n\nExample ofincorrectcode for this rule with the\"always\"option:\n\n/*eslint unicode-bom: [\"error\", \"always\"]*/\n\nlet abc;\n\nnever\n\nExample ofcorrectcode for this rule with the default\"never\"option:\n\n/*eslint unicode-bom: [\"error\", \"never\"]*/\n\nlet abc;\n\nExample ofincorrectcode for this rule with the\"never\"option:\n\n﻿// U+FEFF at the beginning\n\n/*eslint unicode-bom: [\"error\", \"never\"]*/\n\nlet abc;"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "VfCsrf": {
+        "description": "Avoid calling VF action upon page load as the action becomes vulnerable to CSRF.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_visualforce_security.html#vfcsrf"
+    },
+    "VfHtmlStyleTagXss": {
+        "description": "Checks for the correct encoding in ‘<style/>’ tags in Visualforce pages. The rule is based on Sal…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_visualforce_security.html#vfhtmlstyletagxss"
+    },
+    "VfUnescapeEl": {
+        "description": "Avoid unescaped user controlled content in EL as it results in XSS.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_visualforce_security.html#vfunescapeel"
+    }
+}

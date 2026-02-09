@@ -1,0 +1,6 @@
+{
+    "Style/RedundantSelfAssignment": {
+        "description": "Description\n\nChecks for places where redundant assignments are made for in place modification methods.",
+        "option": "This rule has no specific options."
+    }
+}

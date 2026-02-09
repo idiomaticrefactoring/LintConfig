@@ -1,0 +1,6 @@
+{
+    "extend-ignore": {
+        "description": "Description\n\nA list of rule codes or prefixes to ignore, in addition to those\nspecified by `ignore`.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "one-var-declaration-per-line": {
+        "description": "Description\n\nThis rule enforces a consistent newlines around variable declarations. This rule ignores variable declarations insideforloop conditionals.",
+        "option": "This rule has a single string option:\n\n- \"initializations\"(default) enforces a newline around variable initializations\n- \"always\"enforces a newline around variable declarations\n\ninitializations\n\nExamples ofincorrectcode for this rule with the default\"initializations\"option:\n\n/*eslint one-var-declaration-per-line: [\"error\", \"initializations\"]*/\n\nvar a, b, c = 0;\n\nlet d,\n    e = 0, f;\n\nExamples ofcorrectcode for this rule with the default\"initializations\"option:\n\n/*eslint one-var-declaration-per-line: [\"error\", \"initializations\"]*/\n\nvar a, b;\n\nlet c,\n    d;\n\nlet e,\n    f = 0;\n\nalways\n\nExamples ofincorrectcode for this rule with the\"always\"option:\n\n/*eslint one-var-declaration-per-line: [\"error\", \"always\"]*/\n\nvar a, b;\n\nlet c, d = 0;\n\nconst e = 0, f = 0;\n\nExamples ofcorrectcode for this rule with the\"always\"option:\n\n/*eslint one-var-declaration-per-line: [\"error\", \"always\"]*/\n\nvar a,\n    b;\n\nlet c,\n    d = 0;"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideBlockBraces": {
+        "description": "Description\n\nChecks that block braces have or don't have surrounding space. For blocks taking parameters, checks that the left brace has or doesn't have trailing space.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: space (type: str)\nSupportedStyles: ['space', 'no_space'] (type: list)\nEnforcedStyleForEmptyBraces: no_space (type: str)\nSupportedStylesForEmptyBraces: ['space', 'no_space'] (type: list)\nSpaceBeforeBlockParameters: True (type: bool)"
+    }
+}

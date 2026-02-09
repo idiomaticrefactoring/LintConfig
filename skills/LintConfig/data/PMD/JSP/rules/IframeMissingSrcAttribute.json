@@ -1,0 +1,6 @@
+{
+    "IframeMissingSrcAttribute": {
+        "description": "Description\n\nIFrames which are missing a src element can cause security information popups in IE if you are accessing the page\nthrough SSL. See http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q261188\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

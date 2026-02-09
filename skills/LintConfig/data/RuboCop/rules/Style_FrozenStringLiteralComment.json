@@ -1,0 +1,6 @@
+{
+    "Style/FrozenStringLiteralComment": {
+        "description": "Description\n\nAdd the frozen_string_literal comment to the top of files to help transition to frozen string literals by default.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: always (type: str)\nSupportedStyles: ['always', 'always_true', 'never'] (type: list)"
+    }
+}

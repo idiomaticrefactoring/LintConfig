@@ -1,0 +1,6 @@
+{
+    "invalidFree": {
+        "description": "Description\n\nMismatching address is freed. The address you get from malloc() must be freed without offset.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: N/A\nInconclusive: false"
+    }
+}

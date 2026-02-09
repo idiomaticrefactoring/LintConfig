@@ -1,0 +1,6 @@
+{
+    "Layout/HeredocIndentation": {
+        "description": "Description\n\nChecks the indentation of the here document bodies.",
+        "option": "This rule has no specific options."
+    }
+}

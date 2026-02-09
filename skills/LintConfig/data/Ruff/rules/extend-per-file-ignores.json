@@ -1,0 +1,6 @@
+{
+    "extend-per-file-ignores": {
+        "description": "Description\n\nA list of mappings from file pattern to rule codes or prefixes to\nexclude, in addition to any rules excluded by [`per-file-ignores`](#lint_per-file-ignores).",
+        "option": "Type: object\nStatus: DEPRECATED"
+    }
+}

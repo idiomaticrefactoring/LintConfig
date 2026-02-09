@@ -1,0 +1,6 @@
+{
+    "Lint/ShadowingOuterLocalVariable": {
+        "description": "Description\n\nDo not use the same name as outer local variable for block arguments or block local variables.",
+        "option": "This rule has no specific options."
+    }
+}

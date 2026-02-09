@@ -1,0 +1,6 @@
+{
+    "Style/RedundantPercentQ": {
+        "description": "Description\n\nChecks for %q/%Q when single quotes or double quotes would do.",
+        "option": "This rule has no specific options."
+    }
+}

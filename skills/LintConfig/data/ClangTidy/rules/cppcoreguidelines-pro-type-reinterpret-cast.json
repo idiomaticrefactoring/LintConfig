@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-pro-type-reinterpret-cast": {
+        "description": "Description\n\nThis check flags all uses of\nreinterpret_cast\nin C++ code.\n\nUse of these casts can violate type safety and cause the program to access a\nvariable that is actually of type\nX\nto be accessed as if it were of an\nunrelated type\nZ\n.\n\nThis rule is part of the\nType safety (Type.1.1)\nprofile from the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

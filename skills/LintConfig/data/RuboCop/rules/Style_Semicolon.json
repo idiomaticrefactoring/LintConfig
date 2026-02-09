@@ -1,0 +1,6 @@
+{
+    "Style/Semicolon": {
+        "description": "Description\n\nDon't use semicolons to terminate expressions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowAsExpressionSeparator: False (type: bool)"
+    }
+}

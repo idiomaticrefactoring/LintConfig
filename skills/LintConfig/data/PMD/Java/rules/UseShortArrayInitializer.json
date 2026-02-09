@@ -1,0 +1,6 @@
+{
+    "UseShortArrayInitializer": {
+        "description": "Description\n\nWhen declaring and initializing array fields or variables, it is not necessary to explicitly create a new array\nusingnew. Instead one can simply define the initial content of the array as a expression in curly braces.\n\nE.g.int[] x = new int[] { 1, 2, 3 };can be written asint[] x = { 1, 2, 3 };.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "doubleFree": {
+        "description": "Description\n\nThe product calls free() twice on the same memory address.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 415\nInconclusive: false\nRelated Symbols: varname"
+    }
+}

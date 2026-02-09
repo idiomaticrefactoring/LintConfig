@@ -1,0 +1,6 @@
+{
+    "misc-multiple-inheritance": {
+        "description": "Description\n\nWarns if a class inherits from multiple classes that are not pure virtual.\n\nFor example, declaring a class that inherits from multiple concrete classes is\ndisallowed:\n\nclass\nBase_A\n{\npublic\n:\nvirtual\nint\nfoo\n()\n{\nreturn\n0\n;\n}\n};\nclass\nBase_B\n{\npublic\n:\nvirtual\nint\nbar\n()\n{\nreturn\n0\n;\n}\n};\n// Warning\nclass\nBad_Child1\n:\npublic\nBase_A\n,\nBase_B\n{};\n\nA class that inherits from a pure virtual is allowed:\n\nclass\nInterface_A\n{\npublic\n:\nvirtual\nint\nfoo\n()\n=\n0\n;\n};\nclass\nInterface_B\n{\npublic\n:\nvirtual\nint\nbar\n()\n=\n0\n;\n};\n// No warning\nclass\nGood_Child1\n:\npublic\nInterface_A\n,\nInterface_B\n{\nvirtual\nint\nfoo\n()\noverride\n{\nreturn\n0\n;\n}\nvirtual\nint\nbar\n()\noverride\n{\nreturn\n0\n;\n}\n};\n\nReferences\nSee the features disallowed in Fuchsia at\nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

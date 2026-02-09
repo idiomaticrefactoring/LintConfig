@@ -1,0 +1,6 @@
+{
+    "Style/QuotedSymbols": {
+        "description": "Description\n\nUse a consistent style for quoted symbols.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: same_as_string_literals (type: str)\nSupportedStyles: ['same_as_string_literals', 'single_quotes', 'double_quotes'] (type: list)"
+    }
+}

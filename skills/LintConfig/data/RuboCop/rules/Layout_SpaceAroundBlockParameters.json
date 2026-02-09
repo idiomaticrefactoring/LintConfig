@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAroundBlockParameters": {
+        "description": "Description\n\nChecks the spacing inside and after block parameters pipes.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleInsidePipes: no_space (type: str)\nSupportedStylesInsidePipes: ['space', 'no_space'] (type: list)"
+    }
+}

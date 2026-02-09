@@ -1,0 +1,6 @@
+{
+    "extend-unfixable": {
+        "description": "Description\n\nA list of rule codes or prefixes to consider non-auto-fixable, in addition to those\nspecified by [`unfixable`](#lint_unfixable).",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

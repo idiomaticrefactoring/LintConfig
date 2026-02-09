@@ -1,0 +1,6 @@
+{
+    "UnreachableCode": {
+        "description": "Description\n\nA ‘return’, ‘break’, ‘continue’, or ‘throw’ statement should be the last in a block. Statements after these\nwill never execute.  This is a bug, or extremely poor style.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

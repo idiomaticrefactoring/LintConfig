@@ -1,0 +1,6 @@
+{
+    "AvoidCatchingThrowable": {
+        "description": "Description\n\nDeprecated\n\nCatching Throwable errors is not recommended since its scope is very broad. It includes runtime issues such as\nOutOfMemoryError that should be exposed and managed separately.\n\nDeprecated:This rule is deprecated since PMD 7.18.0 and will be removed with PMD 8.0.0.\nThis rule has been subsumed byAvoidCatchingGenericException,\nwhich is now configurable as to which exceptions cause a violation.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/NumericOperationWithConstantResult": {
+        "description": "Description\n\nChecks for numeric operations with constant results.",
+        "option": "This rule has no specific options."
+    }
+}

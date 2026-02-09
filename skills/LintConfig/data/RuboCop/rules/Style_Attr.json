@@ -1,0 +1,6 @@
+{
+    "Style/Attr": {
+        "description": "Description\n\nChecks for uses of Module#attr.",
+        "option": "This rule has no specific options."
+    }
+}

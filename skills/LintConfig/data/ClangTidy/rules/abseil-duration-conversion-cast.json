@@ -1,0 +1,6 @@
+{
+    "abseil-duration-conversion-cast": {
+        "description": "Description\n\nChecks for casts of\nabsl::Duration\nconversion functions, and recommends\nthe right conversion function instead.\n\nExamples:\n\n// Original - Cast from a double to an integer\nabsl\n::\nDuration\nd\n;\nint\ni\n=\nstatic_cast\n<\nint\n>\n(\nabsl\n::\nToDoubleSeconds\n(\nd\n));\n// Suggested - Use the integer conversion function directly.\nint\ni\n=\nabsl\n::\nToInt64Seconds\n(\nd\n);\n// Original - Cast from a double to an integer\nabsl\n::\nDuration\nd\n;\ndouble\nx\n=\nstatic_cast\n<\ndouble\n>\n(\nabsl\n::\nToInt64Seconds\n(\nd\n));\n// Suggested - Use the integer conversion function directly.\ndouble\nx\n=\nabsl\n::\nToDoubleSeconds\n(\nd\n);\n\nNote: In the second example, the suggested fix could yield a different result,\nas the conversion to integer could truncate. In practice, this is very rare,\nand you should use\nabsl::Trunc\nto perform this operation explicitly instead.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

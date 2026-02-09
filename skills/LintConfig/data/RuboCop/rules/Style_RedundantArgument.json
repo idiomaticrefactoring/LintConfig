@@ -1,0 +1,6 @@
+{
+    "Style/RedundantArgument": {
+        "description": "Description\n\nChecks for a redundant argument passed to certain methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMethods: {'join': '', 'sum': 0, 'exit': True, 'exit!': False, 'to_i': 10, 'split': ' ', 'chomp': '\\n', 'chomp!': '\\n'} (type: dict)"
+    }
+}

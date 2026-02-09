@@ -1,0 +1,6 @@
+{
+    "Style/EndBlock": {
+        "description": "Description\n\nAvoid the use of END blocks.",
+        "option": "This rule has no specific options."
+    }
+}

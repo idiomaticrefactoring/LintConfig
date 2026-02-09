@@ -1,0 +1,6 @@
+{
+    "no-multi-str": {
+        "description": "Description\n\nThis rule is aimed at preventing the use of multiline strings.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-multi-str: \"error\"*/\n\nconst x = \"some very \\\nlong text\";\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-multi-str: \"error\"*/\n\nconst x = \"some very long text\";\n\nconst y = \"some very \" +\n        \"long text\";",
+        "option": "This rule has no options."
+    }
+}

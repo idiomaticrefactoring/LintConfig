@@ -1,0 +1,6 @@
+{
+    "ApexDoc": {
+        "description": "Description\n\nThis rule validates that:\n\nMethod overrides and tests are both exempted from having ApexDoc.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nreportPrivate\tfalse\tReport private classes, methods and properties\nreportProtected\tfalse\tReport protected classes, methods and properties\nreportMissingDescription\ttrue\tReport missing main description\nreportProperty\ttrue\tReport properties without comments"
+    }
+}

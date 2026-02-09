@@ -1,0 +1,6 @@
+{
+    "useStandardLibrary": {
+        "description": "Description\n\nConsider using memcpy instead of loop.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

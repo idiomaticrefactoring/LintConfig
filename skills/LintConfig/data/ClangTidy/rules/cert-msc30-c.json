@@ -1,0 +1,6 @@
+{
+    "cert-msc30-c": {
+        "description": "Description\n\nThe\ncert-msc30-c\ncheck is an alias, please see\nmisc-predictable-rand\nfor more information.\n\nThis check corresponds to the CERT C Coding Standard rule\nMSC30-C. Do not use the rand() function for generating pseudorandom numbers\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

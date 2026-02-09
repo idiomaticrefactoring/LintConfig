@@ -1,0 +1,6 @@
+{
+    "Style/MethodCallWithArgsParentheses": {
+        "description": "Description\n\nUse parentheses for method calls with arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIgnoreMacros: True (type: bool)\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)\nIncludedMacros: [] (type: list)\nIncludedMacroPatterns: [] (type: list)\nAllowParenthesesInMultilineCall: False (type: bool)\nAllowParenthesesInChaining: False (type: bool)\nAllowParenthesesInCamelCaseMethod: False (type: bool)\nAllowParenthesesInStringInterpolation: False (type: bool)\nEnforcedStyle: require_parentheses (type: str)\nSupportedStyles: ['require_parentheses', 'omit_parentheses'] (type: list)"
+    }
+}

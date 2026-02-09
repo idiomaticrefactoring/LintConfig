@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-nullability.NullReturnedFromNonnull": {
+        "description": "Description\n\nclang-analyzer-nullability.NullReturnedFromNonnull\nWarns when a null pointer is returned from a function that has _Nonnull return\ntype.\nThe\nclang-analyzer-nullability.NullReturnedFromNonnull\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

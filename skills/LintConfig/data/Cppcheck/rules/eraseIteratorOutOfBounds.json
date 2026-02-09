@@ -1,0 +1,6 @@
+{
+    "eraseIteratorOutOfBounds": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine with arguments that are not correctly specified, leading to always-incorrect behavior and resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 628\nInconclusive: false"
+    }
+}

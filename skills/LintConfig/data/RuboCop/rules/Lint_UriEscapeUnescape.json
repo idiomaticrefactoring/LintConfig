@@ -1,0 +1,6 @@
+{
+    "Lint/UriEscapeUnescape": {
+        "description": "Description\n\n`URI.escape` method is obsolete and should not be used. Instead, use `CGI.escape`, `URI.encode_www_form` or `URI.encode_www_form_component` depending on your specific use case. Also `URI.unescape` method is obsolete and should not be used. Instead, use `CGI.unescape`, `URI.decode_www_form` or `URI.decode_www_form_component` depending on your specific use case.",
+        "option": "This rule has no specific options."
+    }
+}

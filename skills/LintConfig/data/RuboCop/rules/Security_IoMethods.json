@@ -1,0 +1,6 @@
+{
+    "Security/IoMethods": {
+        "description": "Description\n\nChecks for the first argument to `IO.read`, `IO.binread`, `IO.write`, `IO.binwrite`, `IO.foreach`, and `IO.readlines`.",
+        "option": "This rule has no specific options."
+    }
+}

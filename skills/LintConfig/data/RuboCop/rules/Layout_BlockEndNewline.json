@@ -1,0 +1,6 @@
+{
+    "Layout/BlockEndNewline": {
+        "description": "Description\n\nPut end statement of multiline block on its own line.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "purgedConfiguration": {
+        "description": "Description\n\nThe configuration '' was not checked because its code equals another one.",
+        "option": "Static analysis does not have options.\n\nSeverity: information\nCWE: N/A\nInconclusive: false"
+    }
+}

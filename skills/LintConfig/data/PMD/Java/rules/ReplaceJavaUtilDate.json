@@ -1,0 +1,6 @@
+{
+    "ReplaceJavaUtilDate": {
+        "description": "Description\n\nMinimum Language Version:Java 1.8\n\nThe legacyjava.util.Dateclass is mutable, not thread-safe, and has a confusing API. Many of its methods\nare deprecated, it doesn’t handle timezones properly, and it represents both date and time even when only\none is needed. The constructor parameters are particularly error-prone: year is \"years since 1900\" and\nmonth is 0-based (January = 0). The modern java.time API (introduced in Java 8) provides better type safety,\nimmutability, and clearer semantics.\n\nUseLocalDate(date only),LocalTime(time only),LocalDateTime(date and time),Instant(timestamp),\norZonedDateTime(date-time with timezone) fromjava.timepackage instead.\n\nNote: This includes subtypes such asjava.sql.Date,java.sql.Timeandjava.sql.Timestamp.\nSince JPA 3.2 (Jakarta Persistence) usage ofjava.util.Dateandjava.util.Calendarand others is\ndeprecated there as well in favour ofjava.timeAPI.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

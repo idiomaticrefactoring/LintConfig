@@ -1,0 +1,6 @@
+{
+    "constructor-super": {
+        "description": "Description\n\nThis rule is aimed to flag invalid/missingsuper()calls.\n\nThis is a syntax error because there is noextendsclause in the class:\n\nclass A {\n    constructor() {\n        super();\n    }\n}\n\nExamples ofincorrectcode for this rule:\n\n/*eslint constructor-super: \"error\"*/\n\nclass A extends B {\n    constructor() { }  // Would throw a ReferenceError.\n}\n\n// Classes which inherits from a non constructor are always problems.\nclass C extends null {\n    constructor() {\n        super();  // Would throw a TypeError.\n    }\n}\n\nclass D extends null {\n    constructor() { }  // Would throw a ReferenceError.\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint constructor-super: \"error\"*/\n\nclass A {\n    constructor() { }\n}\n\nclass B extends C {\n    constructor() {\n        super();\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

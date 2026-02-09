@@ -1,0 +1,6 @@
+{
+    "space-unary-word-ops": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\ntypeof!a\n\nvoid{a:0}\n\nnew[a][0]\n\ndelete(a.b)\n\nExamples ofcorrectcode for this rule:\n\ndelete a.b\n\nnew C\n\nvoid 0",
+        "option": "This rule has no specific options."
+    }
+}

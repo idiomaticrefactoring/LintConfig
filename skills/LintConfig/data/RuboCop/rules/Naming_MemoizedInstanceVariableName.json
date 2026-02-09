@@ -1,0 +1,6 @@
+{
+    "Naming/MemoizedInstanceVariableName": {
+        "description": "Description\n\nMemoized method name should match memo instance variable name.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleForLeadingUnderscores: disallowed (type: str)\nSupportedStylesForLeadingUnderscores: ['disallowed', 'required', 'optional'] (type: list)"
+    }
+}

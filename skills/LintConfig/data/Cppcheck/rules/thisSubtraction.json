@@ -1,0 +1,6 @@
+{
+    "thisSubtraction": {
+        "description": "Description\n\nSuspicious pointer subtraction. Did you intend to write '->'?",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

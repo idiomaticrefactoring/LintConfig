@@ -1,0 +1,6 @@
+{
+    "Style/FetchEnvVar": {
+        "description": "Description\n\nSuggests `ENV.fetch` for the replacement of `ENV[]`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://rubystyle.guide/#hash-fetch-defaults'] (type: list)\nAllowedVars: [] (type: list)\nDefaultToNil: True (type: bool)"
+    }
+}

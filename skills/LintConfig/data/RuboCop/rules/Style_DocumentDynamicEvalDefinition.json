@@ -1,0 +1,6 @@
+{
+    "Style/DocumentDynamicEvalDefinition": {
+        "description": "Description\n\nWhen using `class_eval` (or other `eval`) with string interpolation, add a comment block showing its appearance if interpolated.",
+        "option": "This rule has no specific options."
+    }
+}

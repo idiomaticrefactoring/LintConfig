@@ -1,0 +1,6 @@
+{
+    "Style/MapCompactWithConditionalBlock": {
+        "description": "Description\n\nPrefer `select` or `reject` over `map { ... }.compact`.",
+        "option": "This rule has no specific options."
+    }
+}

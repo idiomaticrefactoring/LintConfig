@@ -1,0 +1,6 @@
+{
+    "CallSuperInConstructor": {
+        "description": "Description\n\nIt is a good practice to call super() in a constructor. If super() is not called but\nanother constructor (such as an overloaded constructor) is called, this rule will not report it.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

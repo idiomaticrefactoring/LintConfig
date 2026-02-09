@@ -1,0 +1,6 @@
+{
+    "Lint/NextWithoutAccumulator": {
+        "description": "Description\n\nDo not omit the accumulator when calling `next` in a `reduce`/`inject` block.",
+        "option": "This rule has no specific options."
+    }
+}

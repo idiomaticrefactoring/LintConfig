@@ -1,0 +1,6 @@
+{
+    "AvoidThrowingRawExceptionTypes": {
+        "description": "Description\n\nAvoid throwing certain exception types. Rather than throw a raw RuntimeException, Throwable,\nException, or Error, use a subclassed exception or error instead.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

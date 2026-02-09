@@ -1,0 +1,6 @@
+{
+    "Lint/HeredocMethodCallPosition": {
+        "description": "Description\n\nChecks for the ordering of a method call where the receiver of the call is a HEREDOC.",
+        "option": "This rule has no specific options."
+    }
+}

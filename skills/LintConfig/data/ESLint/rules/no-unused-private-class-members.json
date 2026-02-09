@@ -1,0 +1,6 @@
+{
+    "no-unused-private-class-members": {
+        "description": "Description\n\nThis rule reports unused private class members.\n\n- A private field or method is considered to be unused if its value is never read.\n- A private accessor is considered to be unused if it is never accessed (read or write).\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-unused-private-class-members: \"error\"*/\n\nclass A {\n    #unusedMember = 5;\n}\n\nclass B {\n    #usedOnlyInWrite = 5;\n    method() {\n        this.#usedOnlyInWrite = 42;\n    }\n}\n\nclass C {\n    #usedOnlyToUpdateItself = 5;\n    method() {\n        this.#usedOnlyToUpdateItself++;\n    }\n}\n\nclass D {\n    #unusedMethod() {}\n}\n\nclass E {\n    get #unusedAccessor() {}\n    set #unusedAccessor(value) {}\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-unused-private-class-members: \"error\"*/\n\nclass A {\n    #usedMember = 42;\n    method() {\n        return this.#usedMember;\n    }\n}\n\nclass B {\n    #usedMethod() {\n        return 42;\n    }\n    anotherMethod() {\n        return this.#usedMethod();\n    }\n}\n\nclass C {\n    get #usedAccessor() {}\n    set #usedAccessor(value) {}\n    \n    method() {\n        this.#usedAccessor = 42;\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

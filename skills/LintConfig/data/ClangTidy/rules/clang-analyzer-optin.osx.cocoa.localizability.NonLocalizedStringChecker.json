@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker": {
+        "description": "Description\n\nclang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker\nWarns about uses of non-localized NSStrings passed to UI methods expecting\nlocalized NSStrings.\nThe\nclang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

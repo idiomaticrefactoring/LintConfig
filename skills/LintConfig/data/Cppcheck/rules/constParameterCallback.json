@@ -1,0 +1,6 @@
+{
+    "constParameterCallback": {
+        "description": "Description\n\nParameter 'x' can be declared with const, however it seems that 'f' is a callback function.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

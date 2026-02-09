@@ -1,0 +1,6 @@
+{
+    "flake8-errmsg": {
+        "description": "Description\n\nOptions for the `flake8-errmsg` plugin.",
+        "option": "Type: Flake8ErrMsgOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - max-string-length: Maximum string length for string literals in exception messages."
+    }
+}

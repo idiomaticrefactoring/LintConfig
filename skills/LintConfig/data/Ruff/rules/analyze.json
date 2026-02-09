@@ -1,0 +1,6 @@
+{
+    "analyze": {
+        "description": "Description\n\nOptions to configure import map generation.",
+        "option": "Type: AnalyzeOptions/null\n\nAvailable Sub-options:\n  - detect-string-imports: Whether to detect imports from string literals. When enabled, Ruff will search for string\n  - direction: Whether to generate a map from file to files that it depends on (dependencies) or files that\n  - exclude: A list of file patterns to exclude from analysis in addition to the files excluded globally (see [`exclude`](#exclude), and [`extend-exclude`](#extend-exclude)).\n  - include-dependencies: A map from file path to the list of Python or non-Python file paths or globs that should be\n  - preview: Whether to enable preview mode. When preview mode is enabled, Ruff will expose unstable\n  - string-imports-min-dots: The minimum number of dots in a string to consider it a valid import.\n  - type-checking-imports: Whether to include imports that are only used for type checking (i.e., imports within `if TYPE_CHECKING:` blocks)."
+    }
+}

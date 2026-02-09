@@ -1,0 +1,6 @@
+{
+    "duplicateCondition": {
+        "description": "Description\n\nThe if condition is the same as the previous if condition",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

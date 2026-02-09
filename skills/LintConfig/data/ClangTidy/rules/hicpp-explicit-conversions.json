@@ -1,0 +1,6 @@
+{
+    "hicpp-explicit-conversions": {
+        "description": "Description\n\nThis check is an alias for\ngoogle-explicit-constructor\n.\n\nUsed to enforce parts of\nrule 5.4.1\n.\nThis check will enforce that constructors and conversion operators are\nmarked\nexplicit\n. Other forms of casting checks are implemented in\nother places. The following checks can be used to check for more forms\nof casting:\n\ncppcoreguidelines-pro-type-static-cast-downcast\ncppcoreguidelines-pro-type-reinterpret-cast\ncppcoreguidelines-pro-type-const-cast\ncppcoreguidelines-pro-type-cstyle-cast",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

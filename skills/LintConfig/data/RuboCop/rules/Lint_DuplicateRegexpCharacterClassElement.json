@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateRegexpCharacterClassElement": {
+        "description": "Description\n\nChecks for duplicate elements in Regexp character classes.",
+        "option": "This rule has no specific options."
+    }
+}

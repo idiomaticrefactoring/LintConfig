@@ -1,0 +1,6 @@
+{
+    "Metrics/BlockLength": {
+        "description": "Description\n\nAvoid long blocks with many lines.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCountComments: False (type: bool)\nMax: 25 (type: int)\nCountAsOne: [] (type: list)\nAllowedMethods: ['refine'] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

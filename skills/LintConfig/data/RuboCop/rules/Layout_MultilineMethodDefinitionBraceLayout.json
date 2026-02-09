@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineMethodDefinitionBraceLayout": {
+        "description": "Description\n\nChecks that the closing brace in a method definition is either on the same line as the last method parameter, or a new line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: symmetrical (type: str)\nSupportedStyles: ['symmetrical', 'new_line', 'same_line'] (type: list)"
+    }
+}

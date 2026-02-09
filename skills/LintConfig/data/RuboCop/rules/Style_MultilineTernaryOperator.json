@@ -1,0 +1,6 @@
+{
+    "Style/MultilineTernaryOperator": {
+        "description": "Description\n\nAvoid multi-line ?: (the ternary operator); use if/unless instead.",
+        "option": "This rule has no specific options."
+    }
+}

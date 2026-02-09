@@ -1,0 +1,6 @@
+{
+    "Style/ExplicitBlockArgument": {
+        "description": "Description\n\nConsider using explicit block argument to avoid writing block literal that just passes its arguments to another block.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "comparisonOfBoolWithBoolError": {
+        "description": "Description\n\nThe variable 'var_name' is of type 'bool' and comparing 'bool' value using relational (<, >, <= or >=) operator could cause unexpected results.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-arrow-condition": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-arrow-condition: \"error\"*/\n\nif (a => 1) {}\nwhile (a => 1) {}\nfor (var a = 1; a => 10; a++) {}\na => 1 ? 2 : 3\n(a => 1) ? 2 : 3\nvar x = a => 1 ? 2 : 3\nvar x = (a) => 1 ? 2 : 3",
+        "option": "This rule has no specific options."
+    }
+}

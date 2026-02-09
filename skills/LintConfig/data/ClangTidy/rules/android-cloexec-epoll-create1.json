@@ -1,0 +1,6 @@
+{
+    "android-cloexec-epoll-create1": {
+        "description": "Description\n\nepoll_create1()\nshould include\nEPOLL_CLOEXEC\nin its type argument to\navoid the file descriptor leakage. Without this flag, an opened sensitive file\nwould remain open across a fork+exec to a lower-privileged SELinux domain.\n\nExamples:\n\nepoll_create1\n(\n0\n);\n// becomes\nepoll_create1\n(\nEPOLL_CLOEXEC\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

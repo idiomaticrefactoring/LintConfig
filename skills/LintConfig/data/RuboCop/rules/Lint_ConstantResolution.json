@@ -1,0 +1,6 @@
+{
+    "Lint/ConstantResolution": {
+        "description": "Description\n\nChecks that constants are fully qualified with `::`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nOnly: [] (type: list)\nIgnore: [] (type: list)"
+    }
+}

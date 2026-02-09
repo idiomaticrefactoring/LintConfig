@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLinesAroundBeginBody": {
+        "description": "Description\n\nKeeps track of empty lines around begin-end bodies.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/EmptyElse": {
+        "description": "Description\n\nAvoid empty else-clauses.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nEnforcedStyle: both (type: str)\nSupportedStyles: ['empty', 'nil', 'both'] (type: list)\nAllowComments: False (type: bool)"
+    }
+}

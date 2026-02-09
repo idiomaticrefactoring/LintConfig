@@ -1,0 +1,6 @@
+{
+    "objc-dealloc-in-category": {
+        "description": "Description\n\nFinds implementations of\n-dealloc\nin Objective-C categories. The category\nimplementation will override any\n-dealloc\nin the class implementation,\npotentially causing issues.\n\nClasses implement\n-dealloc\nto perform important actions to deallocate\nan object. If a category on the class implements\n-dealloc\n, it will\noverride the class’s implementation and unexpected deallocation behavior\nmay occur.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

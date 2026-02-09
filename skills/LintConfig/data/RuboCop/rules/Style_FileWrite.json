@@ -1,0 +1,6 @@
+{
+    "Style/FileWrite": {
+        "description": "Description\n\nFavor `File.(bin)write` convenience methods.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "LoosePackageCoupling": {
+        "description": "Description\n\nAvoid using classes from the configured package hierarchy outside of the package hierarchy,\nexcept when using one of the configured allowed classes.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\npackages\t\tRestricted packages\nclasses\t\tAllowed classes"
+    }
+}

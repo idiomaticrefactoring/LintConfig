@@ -1,0 +1,6 @@
+{
+    "readability-inconsistent-ifelse-braces": {
+        "description": "Description\n\nDetects\nif\n/\nelse\nstatements where one branch uses braces and the other\ndoes not.\n\nBefore:\n\nif\n(\ncondition\n)\n{\nstatement\n;\n}\nelse\nstatement\n;\nif\n(\ncondition\n)\nstatement\n;\nif\n(\ncondition\n)\nstatement\n;\nelse\nstatement\n;\n\nAfter:\n\nif\n(\ncondition\n)\n{\nstatement\n;\n}\nelse\n{\nstatement\n;\n}\nif\n(\ncondition\n)\nstatement\n;\nif\n(\ncondition\n)\nstatement\n;\nelse\nstatement\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/InvertibleUnlessCondition": {
+        "description": "Description\n\nFavor `if` with inverted condition over `unless`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nInverseMethods: {':!=': ':==', ':>': ':<=', ':<=': ':>', ':<': ':>=', ':>=': ':<', ':!~': ':=~', ':zero?': ':nonzero?', ':nonzero?': ':zero?', ':any?': ':none?', ':none?': ':any?', ':even?': ':odd?', ':odd?': ':even?'} (type: dict)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-no-suspend-with-lock": {
+        "description": "Description\n\nFlags coroutines that suspend while a lock guard is in scope at the\nsuspension point.\n\nWhen a coroutine suspends, any mutexes held by the coroutine will remain\nlocked until the coroutine resumes and eventually destructs the lock guard.\nThis can lead to long periods with a mutex held and runs the risk of deadlock.\n\nInstead, locks should be released before suspending a coroutine.\n\nThis check only checks suspending coroutines while a lock_guard is in scope;\nit does not consider manual locking or unlocking of mutexes, e.g., through\ncalls to\nstd::mutex::lock()\n.\n\nExamples:\n\nfuture\nbad_coro\n()\n{\nstd\n::\nlock_guard\nlock\n{\nmtx\n};\n++\nsome_counter\n;\nco_await\nsomething\n();\n// Suspending while holding a mutex\n}\nfuture\ngood_coro\n()\n{\n{\nstd\n::\nlock_guard\nlock\n{\nmtx\n};\n++\nsome_counter\n;\n}\n// Destroy the lock_guard to release the mutex before suspending the coroutine\nco_await\nsomething\n();\n// Suspending while holding a mutex\n}\n\nThis check implements\nCP.52\nfrom the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

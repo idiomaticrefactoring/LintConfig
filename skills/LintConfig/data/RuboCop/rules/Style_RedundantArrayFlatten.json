@@ -1,0 +1,6 @@
+{
+    "Style/RedundantArrayFlatten": {
+        "description": "Description\n\nChecks for redundant calls of `Array#flatten`.",
+        "option": "This rule has no specific options."
+    }
+}

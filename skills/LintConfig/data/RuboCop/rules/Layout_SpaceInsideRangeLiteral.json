@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceInsideRangeLiteral": {
+        "description": "Description\n\nNo spaces inside range literals.",
+        "option": "This rule has no specific options."
+    }
+}

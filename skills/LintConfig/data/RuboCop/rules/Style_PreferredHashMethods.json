@@ -1,0 +1,6 @@
+{
+    "Style/PreferredHashMethods": {
+        "description": "Description\n\nChecks use of `has_key?` and `has_value?` Hash methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: short (type: str)\nSupportedStyles: ['short', 'verbose'] (type: list)"
+    }
+}

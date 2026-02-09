@@ -1,0 +1,6 @@
+{
+    "Layout/HeredocArgumentClosingParenthesis": {
+        "description": "Description\n\nChecks for the placement of the closing parenthesis in a method call that passes a HEREDOC string as an argument.",
+        "option": "This rule has no specific options."
+    }
+}

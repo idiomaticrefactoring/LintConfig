@@ -1,0 +1,6 @@
+{
+    "bugprone-standalone-empty": {
+        "description": "Description\n\nWarns when\nempty()\nis used on a range and the result is ignored. Suggests\nclear()\nif it is an existing member function.\n\nThe\nempty()\nmethod on several common ranges returns a Boolean indicating\nwhether or not the range is empty, but is often mistakenly interpreted as\na way to clear the contents of a range. Some ranges offer a\nclear()\nmethod for this purpose. This check warns when a call to empty returns a\nresult that is ignored, and suggests replacing it with a call to\nclear()\nif it is available as a member function of the range.\n\nFor example, the following code could be used to indicate whether a range\nis empty or not, but the result is ignored:\n\nstd\n::\nvector\n<\nint\n>\nv\n;\n...\nv\n.\nempty\n();\n\nA call to\nclear()\nwould appropriately clear the contents of the range:\n\nstd\n::\nvector\n<\nint\n>\nv\n;\n...\nv\n.\nclear\n();\n\nLimitations\nDoesn’t warn if\nempty()\nis defined and used with the ignore result in the\nclass template definition (for example in the library implementation). These\nerror cases can be caught with\n[[nodiscard]]\nattribute.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

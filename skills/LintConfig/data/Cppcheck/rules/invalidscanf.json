@@ -1,0 +1,6 @@
+{
+    "invalidscanf": {
+        "description": "Description\n\nThe product performs operations on a memory buffer, but it reads from or writes to a memory location outside the buffer's intended boundary. This may result in read or write operations on unexpected memory locations that could be linked to other variables, data structures, or internal program data.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 119\nInconclusive: false"
+    }
+}

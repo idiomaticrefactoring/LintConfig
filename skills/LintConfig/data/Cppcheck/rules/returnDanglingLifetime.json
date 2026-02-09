@@ -1,0 +1,6 @@
+{
+    "returnDanglingLifetime": {
+        "description": "Description\n\nA function returns the address of a stack variable, which will cause unintended program behavior, typically in the form of a crash.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 562\nInconclusive: false"
+    }
+}

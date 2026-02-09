@@ -1,0 +1,6 @@
+{
+    "space-after-function-name": {
+        "description": "Description\n\nThis rule aims to enforce a consistent spacing after function names. It takes one argument. If it is\"always\"then all function names must be followed by at least one space. If\"never\"then there should be no spaces between the name and the parameter list. The default is\"never\".\n\nExamples ofincorrectcode for this rule:\n\nfunction foo (x) {\n    // ...\n}\n\nvar x = function named (x) {};\n\n// When [\"error\", \"always\"]\nfunction bar(x) {\n    // ...\n}\n\nExamples ofcorrectcode for this rule:\n\nfunction foo(x) {\n    // ...\n}\n\nvar x = function named(x) {};\n\n// When [\"error\", \"always\"]\nfunction bar (x) {\n    // ...\n}",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "prefer-exponentiation-operator": {
+        "description": "Description\n\nThis rule disallows calls toMath.powand suggests using the**operator instead.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-exponentiation-operator: \"error\"*/\n\nconst foo = Math.pow(2, 8);\n\nconst bar = Math.pow(a, b);\n\nlet baz = Math.pow(a + b, c + d);\n\nlet quux = Math.pow(-1, n);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-exponentiation-operator: \"error\"*/\n\nconst foo = 2 ** 8;\n\nconst bar = a ** b;\n\nlet baz = (a + b) ** (c + d);\n\nlet quux = (-1) ** n;",
+        "option": "This rule has no options."
+    }
+}

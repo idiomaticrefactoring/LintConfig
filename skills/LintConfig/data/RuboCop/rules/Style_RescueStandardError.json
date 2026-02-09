@@ -1,0 +1,6 @@
+{
+    "Style/RescueStandardError": {
+        "description": "Description\n\nAvoid rescuing without specifying an error class.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: explicit (type: str)\nSupportedStyles: ['implicit', 'explicit'] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/EndOfLine": {
+        "description": "Description\n\nUse Unix-style line endings.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: native (type: str)\nSupportedStyles: ['native', 'lf', 'crlf'] (type: list)"
+    }
+}

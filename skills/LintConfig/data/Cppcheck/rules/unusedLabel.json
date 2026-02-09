@@ -1,0 +1,6 @@
+{
+    "unusedLabel": {
+        "description": "Description\n\nLabel '' is not used.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

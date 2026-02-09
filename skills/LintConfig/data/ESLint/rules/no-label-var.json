@@ -1,0 +1,6 @@
+{
+    "no-label-var": {
+        "description": "Description\n\nThis rule aims to create clearer code by disallowing the bad practice of creating a label that shares a name with a variable that is in scope.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-label-var: \"error\"*/\n\nvar x = foo;\nfunction bar() {\nx:\n  for (;;) {\n    break x;\n  }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-label-var: \"error\"*/\n\n// The variable that has the same name as the label is not in scope.\n\nfunction foo() {\n  var q = t;\n}\n\nfunction bar() {\nq:\n  for(;;) {\n    break q;\n  }\n}",
+        "option": "This rule has no options."
+    }
+}

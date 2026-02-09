@@ -1,0 +1,6 @@
+{
+    "no-mixed-spaces-and-tabs": {
+        "description": "Description\n\nThis rule disallows mixed spaces and tabs for indentation.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-mixed-spaces-and-tabs: \"error\"*/\n\nfunction add(x, y) {\n\t  return x + y;\n}\n\nfunction main() {\n\tvar x = 5,\n\t    y = 7;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-mixed-spaces-and-tabs: \"error\"*/\n\nfunction add(x, y) {\n\treturn x + y;\n}",
+        "option": "This rule has a string option.\n\n- \"smart-tabs\"allows mixed tabs and spaces when the spaces are used for alignment.\n\nsmart-tabs\n\nExamples ofcorrectcode for this rule with the\"smart-tabs\"option:\n\n/*eslint no-mixed-spaces-and-tabs: [\"error\", \"smart-tabs\"]*/\n\nfunction main() {\n\tvar x = 5,\n\t    y = 7;\n}"
+    }
+}

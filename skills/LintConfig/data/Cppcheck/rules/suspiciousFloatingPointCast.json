@@ -1,0 +1,6 @@
+{
+    "suspiciousFloatingPointCast": {
+        "description": "Description\n\nIf this cast is not intentional, remove it to avoid loss of precision",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

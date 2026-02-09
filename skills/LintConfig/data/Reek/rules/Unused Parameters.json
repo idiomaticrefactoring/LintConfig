@@ -1,0 +1,6 @@
+{
+    "Unused Parameters": {
+        "description": "Description\n\nIntroduction\n\nUnused Parameter refers to methods with parameters that are unused in scope of the method.\n\nHaving unused parameters in a method is code smell because leaving dead code in\na method can never improve the method and it makes the code confusing to read.\n\nExample\n\nGiven:\n\nruby\nclass Klass\n  def unused_parameters(x,y,z)\n    puts x,y # but not z\n  end\nend\n\nReek would emit the following warning:\n\n[2]:UnusedParameters: Klass#unused_parameters has unused parameter 'z'",
+        "option": "Unused Parameter offers the Basic Smell Options."
+    }
+}

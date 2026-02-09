@@ -1,0 +1,6 @@
+{
+    "abseil-redundant-strcat-calls": {
+        "description": "Description\n\nSuggests removal of unnecessary calls to\nabsl::StrCat\nwhen the result is\nbeing passed to another call to\nabsl::StrCat\nor\nabsl::StrAppend\n.\n\nThe extra calls cause unnecessary temporary strings to be constructed. Removing\nthem makes the code smaller and faster.\n\nExamples:\n\nstd\n::\nstring\ns\n=\nabsl\n::\nStrCat\n(\n\"A\"\n,\nabsl\n::\nStrCat\n(\n\"B\"\n,\nabsl\n::\nStrCat\n(\n\"C\"\n,\n\"D\"\n)));\n//before\nstd\n::\nstring\ns\n=\nabsl\n::\nStrCat\n(\n\"A\"\n,\n\"B\"\n,\n\"C\"\n,\n\"D\"\n);\n//after\nabsl\n::\nStrAppend\n(\n&\ns\n,\nabsl\n::\nStrCat\n(\n\"E\"\n,\n\"F\"\n,\n\"G\"\n));\n//before\nabsl\n::\nStrAppend\n(\n&\ns\n,\n\"E\"\n,\n\"F\"\n,\n\"G\"\n);\n//after",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

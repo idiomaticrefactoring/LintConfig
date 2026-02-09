@@ -1,0 +1,6 @@
+{
+    "missingIncludeSystem": {
+        "description": "Description\n\nInclude file: <> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "option": "Static analysis does not have options.\n\nSeverity: information\nCWE: N/A\nInconclusive: false"
+    }
+}

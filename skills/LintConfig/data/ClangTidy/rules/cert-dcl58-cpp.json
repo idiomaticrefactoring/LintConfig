@@ -1,0 +1,6 @@
+{
+    "cert-dcl58-cpp": {
+        "description": "Description\n\nThe\ncert-dcl58-cpp\nis an alias, please see\nbugprone-std-namespace-modification\nfor more information.\n\nThis check corresponds to the CERT C++ Coding Standard rule\nDCL58-CPP. Do not modify the standard namespaces\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-buffer-constructor": {
+        "description": "Description\n\nThis rule disallows calling and constructing theBuffer()constructor.\n\nExamples ofincorrectcode for this rule:\n\n/* eslint no-buffer-constructor: error */\n\nnew Buffer(5);\nnew Buffer([1, 2, 3]);\n\nBuffer(5);\nBuffer([1, 2, 3]);\n\nnew Buffer(res.body.amount);\nnew Buffer(res.body.values);\n\nExamples ofcorrectcode for this rule:\n\n/* eslint no-buffer-constructor: error */\n\nBuffer.alloc(5);\nBuffer.allocUnsafe(5);\nBuffer.from([1, 2, 3]);\n\nBuffer.alloc(res.body.amount);\nBuffer.from(res.body.values);",
+        "option": "This rule has no specific options."
+    }
+}

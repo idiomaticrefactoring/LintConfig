@@ -1,0 +1,6 @@
+{
+    "no-regex-spaces": {
+        "description": "Description\n\nThis rule disallows multiple spaces in regular expression literals.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-regex-spaces: \"error\"*/\n\nconst re = /foo   bar/;\nconst re1 = new RegExp(\"foo   bar\");\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-regex-spaces: \"error\"*/\n\nconst re = /foo {3}bar/;\nconst re1 = new RegExp(\"foo {3}bar\");",
+        "option": "This rule has no options."
+    }
+}

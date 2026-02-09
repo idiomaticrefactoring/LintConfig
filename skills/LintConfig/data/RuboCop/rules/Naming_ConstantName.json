@@ -1,0 +1,6 @@
+{
+    "Naming/ConstantName": {
+        "description": "Description\n\nConstants should use SCREAMING_SNAKE_CASE.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/ErbNewArguments": {
+        "description": "Description\n\nUse `:trim_mode` and `:eoutvar` keyword arguments to `ERB.new`.",
+        "option": "This rule has no specific options."
+    }
+}

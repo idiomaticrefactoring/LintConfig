@@ -1,0 +1,6 @@
+{
+    "readability-duplicate-include": {
+        "description": "Description\n\nLooks for duplicate includes and removes them.  The check maintains a list of\nincluded files and looks for duplicates.  If a macro is defined or undefined\nthen the list of included files is cleared.\n\nExamples:\n\n#include\n<memory>\n#include\n<vector>\n#include\n<memory>\n\nbecomes\n\n#include\n<memory>\n#include\n<vector>\n\nBecause of the intervening macro definitions, this code remains unchanged:\n\n#undef NDEBUG\n#include\n\"assertion.h\"\n// ...code with assertions enabled\n#define NDEBUG\n#include\n\"assertion.h\"\n// ...code with assertions disabled",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoredFilesList\nA semicolon-separated list of regular expressions or filenames that are\nallowed to be included multiple times without diagnostics. Matching is\nperformed against the textual include name. Default is an empty string."
+    }
+}

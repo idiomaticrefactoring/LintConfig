@@ -1,0 +1,6 @@
+{
+    "Style/TrailingBodyOnModule": {
+        "description": "Description\n\nModule body goes below module statement.",
+        "option": "This rule has no specific options."
+    }
+}

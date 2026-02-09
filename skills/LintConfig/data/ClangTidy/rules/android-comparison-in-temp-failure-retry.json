@@ -1,0 +1,6 @@
+{
+    "android-comparison-in-temp-failure-retry": {
+        "description": "Description\n\nDiagnoses comparisons that appear to be incorrectly placed in the argument to\nthe\nTEMP_FAILURE_RETRY\nmacro. Having such a use is incorrect in the vast\nmajority of cases, and will often silently defeat the purpose of the\nTEMP_FAILURE_RETRY\nmacro.\n\nFor context,\nTEMP_FAILURE_RETRY\nis\na convenience macro\nprovided by both glibc and Bionic. Its purpose is to repeatedly run a syscall\nuntil it either succeeds, or fails for reasons other than being interrupted.\n\nExample buggy usage looks like:\n\nchar\ncs\n[\n1\n];\nwhile\n(\nTEMP_FAILURE_RETRY\n(\nread\n(\nSTDIN_FILENO\n,\ncs\n,\nsizeof\n(\ncs\n))\n!=\n0\n))\n{\n// Do something with cs.\n}\n\nBecause\nTEMP_FAILURE_RETRY\nwill check for whether the result\nof the comparison\nis\n-1\n, and retry if so.\n\nIf you encounter this, the fix is simple: lift the comparison out of the\nTEMP_FAILURE_RETRY\nargument, like so:\n\nchar\ncs\n[\n1\n];\nwhile\n(\nTEMP_FAILURE_RETRY\n(\nread\n(\nSTDIN_FILENO\n,\ncs\n,\nsizeof\n(\ncs\n)))\n!=\n0\n)\n{\n// Do something with cs.\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nRetryMacros\nA comma-separated list of the names of retry macros to be checked.\nDefault is\nTEMP_FAILURE_RETRY\n."
+    }
+}

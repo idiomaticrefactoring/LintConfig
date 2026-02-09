@@ -1,0 +1,6 @@
+{
+    "Security/CompoundHash": {
+        "description": "Description\n\nWhen overwriting Object#hash to combine values, prefer delegating to Array#hash over writing a custom implementation.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "CheckResultSet": {
+        "description": "Description\n\nAlways check the return values of navigation methods (next, previous, first, last) of a ResultSet.\nIf the value return is ‘false’, it should be handled properly.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

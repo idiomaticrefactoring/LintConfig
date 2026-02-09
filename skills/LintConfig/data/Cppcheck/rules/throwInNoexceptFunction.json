@@ -1,0 +1,6 @@
+{
+    "throwInNoexceptFunction": {
+        "description": "Description\n\nException thrown in function declared not to throw exceptions.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 398\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "checkCastIntToCharAndBack": {
+        "description": "Description\n\nTruncation errors occur when a primitive is cast to a primitive of a smaller size and data is lost in the conversion.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 197\nInconclusive: false\nRelated Symbols: func_name"
+    }
+}

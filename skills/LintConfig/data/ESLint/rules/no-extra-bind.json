@@ -1,0 +1,6 @@
+{
+    "no-extra-bind": {
+        "description": "Description\n\nThis rule is aimed at avoiding the unnecessary use ofbind()and as such will warn whenever an immediately-invoked function expression (IIFE) is usingbind()and doesn’t have an appropriatethisvalue. This rule won’t flag usage ofbind()that includes function argument binding.\n\nNote:Arrow functions can never have theirthisvalue set usingbind(). This rule flags all uses ofbind()with arrow functions as a problem\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-extra-bind: \"error\"*/\n\nconst x = function () {\n    foo();\n}.bind(bar);\n\nconst y = (() => {\n    foo();\n}).bind(bar);\n\nconst z = (() => {\n    this.foo();\n}).bind(bar);\n\nconst a = function () {\n    (function () {\n      this.foo();\n    }());\n}.bind(bar);\n\nconst b = function () {\n    function foo() {\n      this.bar();\n    }\n}.bind(baz);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-extra-bind: \"error\"*/\n\nconst x = function () {\n    this.foo();\n}.bind(bar);\n\nconst y = function (a) {\n    return a + 1;\n}.bind(foo, bar);",
+        "option": "This rule has no options."
+    }
+}

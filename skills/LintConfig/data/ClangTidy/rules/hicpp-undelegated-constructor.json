@@ -1,0 +1,6 @@
+{
+    "hicpp-undelegated-constructor": {
+        "description": "Description\n\nThis check is an alias for\nbugprone-undelegated-constructor\n.\nPartially implements\nrule 12.4.5\nto find misplaced constructor calls inside a constructor.\n\nstruct\nCtor\n{\nCtor\n();\nCtor\n(\nint\n);\nCtor\n(\nint\n,\nint\n);\nCtor\n(\nCtor\n*\ni\n)\n{\n// All Ctor() calls result in a temporary object\nCtor\n();\n// did you intend to call a delegated constructor?\nCtor\n(\n0\n);\n// did you intend to call a delegated constructor?\nCtor\n(\n1\n,\n2\n);\n// did you intend to call a delegated constructor?\nfoo\n();\n}\n};",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

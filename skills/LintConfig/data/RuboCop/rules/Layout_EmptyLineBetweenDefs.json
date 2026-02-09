@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLineBetweenDefs": {
+        "description": "Description\n\nUse empty lines between class/module/method defs.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEmptyLineBetweenMethodDefs: True (type: bool)\nEmptyLineBetweenClassDefs: True (type: bool)\nEmptyLineBetweenModuleDefs: True (type: bool)\nDefLikeMacros: [] (type: list)\nAllowAdjacentOneLineDefs: True (type: bool)\nNumberOfEmptyLines: 1 (type: int)"
+    }
+}

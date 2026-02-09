@@ -1,0 +1,6 @@
+{
+    "Naming/InclusiveLanguage": {
+        "description": "Description\n\nRecommend the use of inclusive language instead of problematic terms.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCheckIdentifiers: True (type: bool)\nCheckConstants: True (type: bool)\nCheckVariables: True (type: bool)\nCheckStrings: False (type: bool)\nCheckSymbols: True (type: bool)\nCheckComments: True (type: bool)\nCheckFilepaths: True (type: bool)\nFlaggedTerms: {'whitelist': {'Regex': '/white[-_\\\\s]?list/', 'Suggestions': ['allowlist', 'permit']}, 'blacklist': {'Regex': '/black[-_\\\\s]?list/', 'Suggestions': ['denylist', 'block']}, 'slave': {'WholeWord': True, 'Suggestions': ['replica', 'secondary', 'follower']}} (type: dict)"
+    }
+}

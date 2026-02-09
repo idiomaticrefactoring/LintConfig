@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAroundOperators": {
+        "description": "Description\n\nUse a single space around operators.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowForAlignment: True (type: bool)\nEnforcedStyleForExponentOperator: no_space (type: str)\nSupportedStylesForExponentOperator: ['space', 'no_space'] (type: list)\nEnforcedStyleForRationalLiterals: no_space (type: str)\nSupportedStylesForRationalLiterals: ['space', 'no_space'] (type: list)"
+    }
+}

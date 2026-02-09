@@ -1,0 +1,6 @@
+{
+    "pylint": {
+        "description": "Description\n\nOptions for the `pylint` plugin.",
+        "option": "Type: PylintOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allow-dunder-method-names: Dunder methods name to allow, in addition to the default set from the\n  - allow-magic-value-types: Constant types to ignore when used as \"magic values\" (see `PLR2004`).\n  - max-args: Maximum number of arguments allowed for a function or method definition\n  - max-bool-expr: Maximum number of Boolean expressions allowed within a single `if` statement\n  - max-branches: Maximum number of branches allowed for a function or method body (see `PLR0912`).\n  - max-locals: Maximum number of local variables allowed for a function or method body (see `PLR0914`).\n  - max-nested-blocks: Maximum number of nested blocks allowed within a function or method body\n  - max-positional-args: Maximum number of positional arguments allowed for a function or method definition\n  - max-public-methods: Maximum number of public methods allowed for a class (see `PLR0904`).\n  - max-returns: Maximum number of return statements allowed for a function or method\n  - max-statements: Maximum number of statements allowed for a function or method body (see `PLR0915`)."
+    }
+}

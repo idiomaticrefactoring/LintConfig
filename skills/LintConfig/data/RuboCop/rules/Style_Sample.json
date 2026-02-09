@@ -1,0 +1,6 @@
+{
+    "Style/Sample": {
+        "description": "Description\n\nUse `sample` instead of `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://github.com/fastruby/fast-ruby#arrayshufflefirst-vs-arraysample-code'] (type: list)"
+    }
+}

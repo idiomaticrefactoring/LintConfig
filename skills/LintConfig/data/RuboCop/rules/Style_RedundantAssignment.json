@@ -1,0 +1,6 @@
+{
+    "Style/RedundantAssignment": {
+        "description": "Description\n\nChecks for redundant assignment before returning.",
+        "option": "This rule has no specific options."
+    }
+}

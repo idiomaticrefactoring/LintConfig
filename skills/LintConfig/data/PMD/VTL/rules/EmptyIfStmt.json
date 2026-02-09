@@ -1,0 +1,6 @@
+{
+    "EmptyIfStmt": {
+        "description": "Description\n\nEmpty if statements should be deleted.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

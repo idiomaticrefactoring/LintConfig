@@ -1,0 +1,18 @@
+{
+    "ProhibitedInterfaceBuilder": {
+        "description": "Creating views using Interface Builder should be avoided.             Defining views by code allo…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_swift_bestpractices.html#prohibitedinterfacebuilder"
+    },
+    "UnavailableFunction": {
+        "description": "Due to Objective-C and Swift interoperability some functions are often required to be implemented…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_swift_bestpractices.html#unavailablefunction"
+    },
+    "ForceCast": {
+        "description": "Force casts should be avoided. This may lead to a crash if it’s not used carefully.             F…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_swift_errorprone.html#forcecast"
+    },
+    "ForceTry": {
+        "description": "Force tries should be avoided. If the code being wrapped happens to raise and exception, our appl…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_swift_errorprone.html#forcetry"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "default-param-last": {
+        "description": "Description\n\nThis rule enforces default parameters to be the last of parameters.\n\nExamples ofincorrectcode for this rule:\n\n/* eslint default-param-last: [\"error\"] */\n\nfunction f(a = 0, b) {}\n\nfunction g(a, b = 0, c) {}\n\nExamples ofcorrectcode for this rule:\n\n/* eslint default-param-last: [\"error\"] */\n\nfunction f(a, b = 0) {}\n\nfunction g(a, b = 0, c = 0) {}\n\nThis rule additionally supports TypeScript type syntax.\n\nExamples ofincorrectTypeScript code for this rule:\n\n/* eslint default-param-last: [\"error\"] */\n\nfunction h(a = 0, b: number) {}\n\nExamples ofcorrectTypeScript code for this rule:\n\n/* eslint default-param-last: [\"error\"] */\n\nfunction h(a = 0, b?: number) {}",
+        "option": "This rule has no options."
+    }
+}

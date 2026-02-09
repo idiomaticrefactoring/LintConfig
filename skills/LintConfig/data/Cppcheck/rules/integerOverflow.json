@@ -1,0 +1,6 @@
+{
+    "integerOverflow": {
+        "description": "Description\n\nThe product performs a calculation that can\n         produce an integer overflow or wraparound when the logic\n         assumes that the resulting value will always be larger than\n         the original value. This occurs when an integer value is\n         incremented to a value that is too large to store in the\n         associated representation. When this occurs, the value may\n         become a very small or negative number.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 190\nInconclusive: false"
+    }
+}

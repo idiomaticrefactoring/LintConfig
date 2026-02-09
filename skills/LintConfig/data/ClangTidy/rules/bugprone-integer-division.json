@@ -1,0 +1,6 @@
+{
+    "bugprone-integer-division": {
+        "description": "Description\n\nFinds cases where integer division in a floating point context is likely to\ncause unintended loss of precision.\n\nNo reports are made if divisions are part of the following expressions:\n\noperands of operators expecting integral or bool types,\ncall expressions of integral or bool types, and\nexplicit cast expressions to integral or bool types,\n\nas these are interpreted as signs of deliberateness from the programmer.\n\nExamples:\n\nfloat\nfloatFunc\n(\nfloat\n);\nint\nintFunc\n(\nint\n);\ndouble\nd\n;\nint\ni\n=\n42\n;\n// Warn, floating-point values expected.\nd\n=\n32\n*\n8\n/\n(\n2\n+\ni\n);\nd\n=\n8\n*\nfloatFunc\n(\n1\n+\n7\n/\n2\n);\nd\n=\ni\n/\n(\n1\n<<\n4\n);\n// OK, no integer division.\nd\n=\n32\n*\n8.0\n/\n(\n2\n+\ni\n);\nd\n=\n8\n*\nfloatFunc\n(\n1\n+\n7.0\n/\n2\n);\nd\n=\n(\ndouble\n)\ni\n/\n(\n1\n<<\n4\n);\n// OK, there are signs of deliberateness.\nd\n=\n1\n<<\n(\ni\n/\n2\n);\nd\n=\n9\n+\nintFunc\n(\n6\n*\ni\n/\n32\n);\nd\n=\n(\nint\n)(\ni\n/\n32\n)\n-\n8\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

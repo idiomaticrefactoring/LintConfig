@@ -1,0 +1,6 @@
+{
+    "DoNotTerminateVM": {
+        "description": "Description\n\nWeb applications should not callSystem.exit(), since only the web container or the\napplication server should stop the JVM. Otherwise a web application would terminate all other applications\nrunning on the same application server.\n\nThis rule also checks for the equivalent callsRuntime.getRuntime().exit()andRuntime.getRuntime().halt().\n\nThis rule has been renamed from \"DoNotCallSystemExit\" in PMD 6.29.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

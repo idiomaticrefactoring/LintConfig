@@ -1,0 +1,6 @@
+{
+    "UselessOperationOnImmutable": {
+        "description": "Description\n\nDeprecated\n\nAn operation on an immutable object will not change the object itself since the result of the operation is a new object.\nTherefore, ignoring the result of such an operation is likely a mistake. The operation can probably be removed.\n\nThis rule recognizes the typesString,BigDecimal,BigIntegeror any type fromjava.time.*as immutable.\n\nDeprecated:This rule is deprecated since PMD 7.17.0 and will be removed with PMD 8.0.0.\nThis rule has been replaced byUselessPureMethodCall.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

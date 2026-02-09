@@ -1,0 +1,6 @@
+{
+    "no-space-before-semi": {
+        "description": "Description\n\nThis rule prevents the use of spaces before a semicolon in expressions.\n\nExamples ofincorrectcode for this rule:\n\nvar foo = \"bar\" ;\n\nvar foo = function() {} ;\n\nvar foo = function() {\n} ;\n\nvar foo = 1 + 2 ;\n\nExamples ofcorrectcode for this rule:\n\n;(function(){}());\n\nvar foo = \"bar\";",
+        "option": "This rule has no specific options."
+    }
+}

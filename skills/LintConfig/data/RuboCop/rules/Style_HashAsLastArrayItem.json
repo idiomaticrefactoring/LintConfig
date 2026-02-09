@@ -1,0 +1,6 @@
+{
+    "Style/HashAsLastArrayItem": {
+        "description": "Description\n\nChecks for presence or absence of braces around hash literal as a last array item depending on configuration.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: braces (type: str)\nSupportedStyles: ['braces', 'no_braces'] (type: list)"
+    }
+}

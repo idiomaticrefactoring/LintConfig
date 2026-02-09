@@ -1,0 +1,6 @@
+{
+    "no-useless-constructor": {
+        "description": "Description\n\nThis rule flags class constructors that can be safely removed without changing how the class works.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-useless-constructor: \"error\"*/\n\nclass A {\n    constructor () {\n    }\n}\n\nclass B extends A {\n    constructor (...args) {\n      super(...args);\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-useless-constructor: \"error\"*/\n\nclass A { }\n\nclass B {\n    constructor () {\n        doSomething();\n    }\n}\n\nclass C extends A {\n    constructor() {\n        super('foo');\n    }\n}\n\nclass D extends A {\n    constructor() {\n        super();\n        doSomething();\n    }\n}\n\nThis rule additionally supports TypeScript type syntax.\n\nExamples ofincorrectTypeScript code for this rule:\n\n/* eslint no-useless-constructor: \"error\" */\n\nclass A {\n    public constructor() {}\n}\n\nExamples ofcorrectTypeScript code for this rule:\n\n/* eslint no-useless-constructor: \"error\" */\n\nclass A {\n    protected constructor() {}\n}\n\nclass B extends A {\n    public constructor() {\n        super();\n    }\n}\n\nclass C {\n    constructor(@decorated param) {}\n}",
+        "option": "This rule has no options."
+    }
+}

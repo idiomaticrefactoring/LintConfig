@@ -1,0 +1,6 @@
+{
+    "Style/ModuleMemberExistenceCheck": {
+        "description": "Description\n\nChecks for usage of `Module` methods returning arrays that can be replaced with equivalent predicates.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)"
+    }
+}

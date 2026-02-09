@@ -1,0 +1,6 @@
+{
+    "space-return-throw-case": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\n/*eslint space-return-throw-case: \"error\"*/\n\nthrow{a:0}\n\nfunction f(){ return-a; }\n\nswitch(a){ case'a': break; }\n\nExamples ofcorrectcode for this rule:\n\n/*eslint space-return-throw-case: \"error\"*/\n\nthrow {a: 0};\n\nfunction f(){ return -a; }\n\nswitch(a){ case 'a': break; }",
+        "option": "This rule has no specific options."
+    }
+}

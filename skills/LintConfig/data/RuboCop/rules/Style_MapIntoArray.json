@@ -1,0 +1,6 @@
+{
+    "Style/MapIntoArray": {
+        "description": "Description\n\nChecks for usages of `each` with `<<`, `push`, or `append` which can be replaced by `map`.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLineAfterGuardClause": {
+        "description": "Description\n\nAdd empty line after guard clause.",
+        "option": "This rule has no specific options."
+    }
+}

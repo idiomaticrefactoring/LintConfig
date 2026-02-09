@@ -1,0 +1,6 @@
+{
+    "exceptThrowInDestructor": {
+        "description": "Description\n\nThe class Class is not safe because its destructor throws an exception. If Class is used and an exception is thrown that is caught in an outer scope the program will terminate.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

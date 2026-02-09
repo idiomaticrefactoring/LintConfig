@@ -1,0 +1,6 @@
+{
+    "flake8-self": {
+        "description": "Description\n\nOptions for the `flake8_self` plugin.",
+        "option": "Type: Flake8SelfOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - extend-ignore-names: Additional names to ignore when considering `flake8-self` violations,\n  - ignore-names: A list of names to ignore when considering `flake8-self` violations."
+    }
+}

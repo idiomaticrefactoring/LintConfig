@@ -1,0 +1,6 @@
+{
+    "Style/RedundantConditional": {
+        "description": "Description\n\nDon't return true/false from a conditional.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-avoid-const-or-ref-data-members": {
+        "description": "Description\n\nThis check warns when structs or classes that are copyable or movable, and have\nconst-qualified or reference (lvalue or rvalue) data members. Having such\nmembers is rarely useful, and makes the class only copy-constructible but not\ncopy-assignable.\n\nExamples:\n\n// Bad, const-qualified member\nstruct\nConst\n{\nconst\nint\nx\n;\n}\n// Good:\nclass\nFoo\n{\npublic\n:\nint\nget\n()\nconst\n{\nreturn\nx\n;\n}\nprivate\n:\nint\nx\n;\n};\n// Bad, lvalue reference member\nstruct\nRef\n{\nint\n&\nx\n;\n};\n// Good:\nstruct\nFoo\n{\nint\n*\nx\n;\nstd\n::\nunique_ptr\n<\nint\n>\nx\n;\nstd\n::\nshared_ptr\n<\nint\n>\nx\n;\ngsl\n::\nnot_null\n<\nint\n*>\nx\n;\n};\n// Bad, rvalue reference member\nstruct\nRefRef\n{\nint\n&&\nx\n;\n};\n\nThis check implements\nC.12\nfrom the C++ Core Guidelines.\n\nFurther reading:\nData members: Never const\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

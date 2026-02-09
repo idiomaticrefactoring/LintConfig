@@ -1,0 +1,6 @@
+{
+    "Lint/DeprecatedClassMethods": {
+        "description": "Description\n\nChecks for deprecated class method calls.",
+        "option": "This rule has no specific options."
+    }
+}

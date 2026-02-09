@@ -1,0 +1,6 @@
+{
+    "no-new-wrappers": {
+        "description": "Description\n\nThis rule aims to eliminate the use ofString,Number, andBooleanwith thenewoperator. As such, it warns whenever it seesnew String,new Number, ornew Boolean.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-wrappers: \"error\"*/\n\nconst stringObject = new String(\"Hello world\");\nconst numberObject = new Number(33);\nconst booleanObject = new Boolean(false);\n\nconst stringObject2 = new String;\nconst numberObject2 = new Number;\nconst booleanObject2 = new Boolean;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-wrappers: \"error\"*/\n\nconst text = String(someValue);\nconst num = Number(someValue);\n\nconst object = new MyString();",
+        "option": "This rule has no options."
+    }
+}

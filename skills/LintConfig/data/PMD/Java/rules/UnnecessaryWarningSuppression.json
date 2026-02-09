@@ -1,0 +1,6 @@
+{
+    "UnnecessaryWarningSuppression": {
+        "description": "Description\n\nThis rule reports suppression comments and annotations that did not suppress any PMD violation.\nNote that violations of this rule cannot be suppressed.\n\nPlease note:\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

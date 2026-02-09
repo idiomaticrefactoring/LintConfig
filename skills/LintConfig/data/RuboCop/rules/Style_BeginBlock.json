@@ -1,0 +1,6 @@
+{
+    "Style/BeginBlock": {
+        "description": "Description\n\nAvoid the use of BEGIN blocks.",
+        "option": "This rule has no specific options."
+    }
+}

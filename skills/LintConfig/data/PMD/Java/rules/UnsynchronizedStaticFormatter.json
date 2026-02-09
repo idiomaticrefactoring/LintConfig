@@ -1,0 +1,6 @@
+{
+    "UnsynchronizedStaticFormatter": {
+        "description": "Description\n\nInstances ofjava.text.Formatare generally not synchronized.\nSun recommends using separate format instances for each thread.\nIf multiple threads must access a static formatter, the formatter must be\nsynchronized on block level.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nallowMethodLevelSynchronization\tfalse\tIf true, method level synchronization is allowed as well as synchronized block. Otherwise only synchronized blocks are allowed."
+    }
+}

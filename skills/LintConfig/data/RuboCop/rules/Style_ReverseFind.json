@@ -1,0 +1,6 @@
+{
+    "Style/ReverseFind": {
+        "description": "Description\n\nUse `array.rfind` instead of `array.reverse.find`.",
+        "option": "This rule has no specific options."
+    }
+}

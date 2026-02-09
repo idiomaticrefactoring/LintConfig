@@ -1,0 +1,6 @@
+{
+    "no-throw-literal": {
+        "description": "Description\n\nThis rule is aimed at maintaining consistency when throwing exception by disallowing to throw literals and other expressions which cannot possibly be anErrorobject.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-throw-literal: \"error\"*/\n\nthrow \"error\";\n\nthrow 0;\n\nthrow undefined;\n\nthrow null;\n\nconst err = new Error();\nthrow \"an \" + err;\n// err is recast to a string literal\n\nconst er2 = new Error();\nthrow `${err2}`\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-throw-literal: \"error\"*/\n\nthrow new Error();\n\nthrow new Error(\"error\");\n\nconst e = new Error(\"error\");\nthrow e;\n\ntry {\n    throw new Error(\"error\");\n} catch (e) {\n    throw e;\n}",
+        "option": "This rule has no options."
+    }
+}

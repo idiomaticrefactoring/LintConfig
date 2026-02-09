@@ -1,0 +1,6 @@
+{
+    "ignore-init-module-imports": {
+        "description": "Description\n\nAvoid automatically removing unused imports in `__init__.py` files. Such\nimports will still be flagged, but with a dedicated message suggesting\nthat the import is either added to the module's `__all__` symbol, or\nre-exported with a redundant alias (e.g., `import os as os`).\n\nThis option is enabled by default, but you can opt-in to removal of imports\nvia an unsafe fix.",
+        "option": "Type: boolean\nStatus: DEPRECATED"
+    }
+}

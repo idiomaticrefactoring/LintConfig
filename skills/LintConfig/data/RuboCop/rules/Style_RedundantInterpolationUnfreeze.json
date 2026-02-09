@@ -1,0 +1,6 @@
+{
+    "Style/RedundantInterpolationUnfreeze": {
+        "description": "Description\n\nChecks for redundant unfreezing of interpolated strings.",
+        "option": "This rule has no specific options."
+    }
+}

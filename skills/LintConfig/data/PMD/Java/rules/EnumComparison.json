@@ -1,0 +1,6 @@
+{
+    "EnumComparison": {
+        "description": "Description\n\nWhen comparing enums,equals()should be avoided and==should be preferred.\n\nUsing==has some advantages:\n\nThis rule implements SonarSource ruleS4551.\n\nNote, that only primitive types and enums should be compared using==. To compare other\nobjects,equals()is the correct way. SeeCompareObjectsWithEqualsandUseEqualsToCompareStrings.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

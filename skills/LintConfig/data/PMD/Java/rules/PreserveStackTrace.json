@@ -1,0 +1,6 @@
+{
+    "PreserveStackTrace": {
+        "description": "Description\n\nReports exceptions that are thrown from within a catch block, yet don’t refer to the\nexception parameter declared by that catch block. The stack trace of the original\nexception could be lost, which makes the thrown exception less informative.\n\nTo preserve the stack trace, the original exception may be used as the cause of\nthe new exception, usingThrowable#initCause, or passed as a constructor argument\nto the new exception. It may also be preserved usingThrowable#addSuppressed.\nThe rule actually assumes that any method or constructor that takes the original\nexception as argument preserves the original stack trace.\n\nThe rule allowsInvocationTargetExceptionandPrivilegedActionExceptionto be\nreplaced by their cause exception. The discarded part of the stack trace is in those\ncases only JDK-internal code, which is not very useful. The rule also ignores exceptions\nwhose name starts withignored.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

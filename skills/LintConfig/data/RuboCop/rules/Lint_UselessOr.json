@@ -1,0 +1,6 @@
+{
+    "Lint/UselessOr": {
+        "description": "Description\n\nChecks for useless OR expressions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "JUnit5TestShouldBePackagePrivate": {
+        "description": "Description\n\nReports JUnit 5 test classes and methods that are not package-private.\nContrary to JUnit 4 tests, which required public visibility to be run by the engine,\nJUnit 5 tests can also be run if they’re package-private. Marking them as such\nis a good practice to limit their visibility.\n\nTest methods are identified as those which use@Test,@RepeatedTest,@TestFactory,@TestTemplateor@ParameterizedTest.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

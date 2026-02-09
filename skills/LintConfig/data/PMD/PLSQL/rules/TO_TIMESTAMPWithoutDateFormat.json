@@ -1,0 +1,6 @@
+{
+    "TO_TIMESTAMPWithoutDateFormat": {
+        "description": "Description\n\nTO_TIMESTAMP without date format- use TO_TIMESTAMP(expression, date-format)\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/EndlessMethod": {
+        "description": "Description\n\nAvoid the use of multi-lined endless method definitions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: allow_single_line (type: str)\nSupportedStyles: ['allow_single_line', 'allow_always', 'disallow', 'require_single_line', 'require_always'] (type: list)"
+    }
+}

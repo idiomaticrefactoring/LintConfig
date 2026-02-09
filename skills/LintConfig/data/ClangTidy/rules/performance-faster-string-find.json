@@ -1,0 +1,6 @@
+{
+    "performance-faster-string-find": {
+        "description": "Description\n\nOptimize calls to\nstd::string::find()\nand friends when the needle passed is\na single character string literal. The character literal overload is more\nefficient.\n\nExamples:\n\nstr\n.\nfind\n(\n\"A\"\n);\n// becomes\nstr\n.\nfind\n(\n'A'\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStringLikeClasses\nSemicolon-separated list of names of string-like classes. By default only\n::std::basic_string\nand\n::std::basic_string_view\nare considered.\nThe check will only consider member functions named\nfind\n,\nrfind\n,\nfind_first_of\n,\nfind_first_not_of\n,\nfind_last_of\n, or\nfind_last_not_of\nwithin these classes."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/FloatDivision": {
+        "description": "Description\n\nFor performing float division, coerce one side only.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://blog.rubystyle.guide/ruby/2019/06/21/float-division.html'] (type: list)\nEnforcedStyle: single_coerce (type: str)\nSupportedStyles: ['left_coerce', 'right_coerce', 'single_coerce', 'fdiv'] (type: list)"
+    }
+}

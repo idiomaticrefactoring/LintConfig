@@ -1,0 +1,6 @@
+{
+    "no-extra-label": {
+        "description": "Description\n\nThis rule is aimed at eliminating unnecessary labels.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-extra-label: \"error\"*/\n\nA: while (a) {\n    break A;\n}\n\nB: for (let i = 0; i < 10; ++i) {\n    break B;\n}\n\nC: switch (a) {\n    case 0:\n        break C;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-extra-label: \"error\"*/\n\nwhile (a) {\n    break;\n}\n\nfor (let i = 0; i < 10; ++i) {\n    break;\n}\n\nswitch (a) {\n    case 0:\n        break;\n}\n\nA: {\n    break A;\n}\n\nB: while (a) {\n    while (b) {\n        break B;\n    }\n}\n\nC: switch (a) {\n    case 0:\n        while (b) {\n            break C;\n        }\n        break;\n}",
+        "option": "This rule has no options."
+    }
+}

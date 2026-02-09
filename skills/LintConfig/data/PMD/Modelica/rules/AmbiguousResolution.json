@@ -1,0 +1,6 @@
+{
+    "AmbiguousResolution": {
+        "description": "Description\n\nThere is multiple candidates for this type resolution. While generally this is not an error,\nthis may indicate a bug.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

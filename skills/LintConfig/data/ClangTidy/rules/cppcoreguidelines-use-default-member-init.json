@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-use-default-member-init": {
+        "description": "Description\n\nThis check implements\nC.48\nfrom the C++ Core Guidelines.\n\nThe\ncppcoreguidelines-use-default-member-init\ncheck is an alias, please see\nmodernize-use-default-member-init\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

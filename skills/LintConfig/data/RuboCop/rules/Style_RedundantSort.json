@@ -1,0 +1,6 @@
+{
+    "Style/RedundantSort": {
+        "description": "Description\n\nUse `min` instead of `sort.first`, `max_by` instead of `sort_by...last`, etc.",
+        "option": "This rule has no specific options."
+    }
+}

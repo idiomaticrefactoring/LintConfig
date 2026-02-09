@@ -1,0 +1,6 @@
+{
+    "missingMemberCopy": {
+        "description": "Description\n\nMember variable 'classname::varnamepriv' is not assigned in the move constructor. Should it be moved?",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: true\nRelated Symbols: classname::varnamepriv"
+    }
+}

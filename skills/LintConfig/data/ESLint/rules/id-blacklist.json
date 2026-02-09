@@ -1,0 +1,6 @@
+{
+    "id-blacklist": {
+        "description": "Description\n\nReplaced byid-denylist",
+        "option": "This rule has no specific options."
+    }
+}

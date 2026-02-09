@@ -1,0 +1,6 @@
+{
+    "operatorEqToSelf": {
+        "description": "Description\n\n'operator=' should check for assignment to self to ensure that each block of dynamically allocated memory is owned and managed by only one instance of the class.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

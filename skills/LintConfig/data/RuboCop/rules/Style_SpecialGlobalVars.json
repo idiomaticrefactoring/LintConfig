@@ -1,0 +1,6 @@
+{
+    "Style/SpecialGlobalVars": {
+        "description": "Description\n\nAvoid Perl-style global variables.",
+        "option": "This rule supports the following parameters in your configuration:\n\nRequireEnglish: True (type: bool)\nEnforcedStyle: use_english_names (type: str)\nSupportedStyles: ['use_perl_names', 'use_english_names', 'use_builtin_english_names'] (type: list)"
+    }
+}

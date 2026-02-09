@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-security.insecureAPI.mktemp": {
+        "description": "Description\n\nclang-analyzer-security.insecureAPI.mktemp\nWarn on uses of the ‘mktemp’ function.\nThe\nclang-analyzer-security.insecureAPI.mktemp\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-async-promise-executor": {
+        "description": "Description\n\nThis rule aims to disallow async Promise executor functions.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-async-promise-executor: \"error\"*/\n\nconst foo = new Promise(async (resolve, reject) => {\n  readFile('foo.txt', function(err, result) {\n    if (err) {\n      reject(err);\n    } else {\n      resolve(result);\n    }\n  });\n});\n\nconst result = new Promise(async (resolve, reject) => {\n  resolve(await foo);\n});\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-async-promise-executor: \"error\"*/\n\nconst foo = new Promise((resolve, reject) => {\n  readFile('foo.txt', function(err, result) {\n    if (err) {\n      reject(err);\n    } else {\n      resolve(result);\n    }\n  });\n});\n\nconst result = Promise.resolve(foo);",
+        "option": "This rule has no options."
+    }
+}

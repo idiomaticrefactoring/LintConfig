@@ -1,0 +1,6 @@
+{
+    "Lint/AmbiguousOperator": {
+        "description": "Description\n\nChecks for ambiguous operators in the first argument of a method invocation without parentheses.",
+        "option": "This rule has no specific options."
+    }
+}

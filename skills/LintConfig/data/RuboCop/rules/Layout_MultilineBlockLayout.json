@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineBlockLayout": {
+        "description": "Description\n\nEnsures newlines after multiline block do statements.",
+        "option": "This rule has no specific options."
+    }
+}

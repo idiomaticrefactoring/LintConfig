@@ -1,0 +1,6 @@
+{
+    "NonCaseLabelInSwitchStatement": {
+        "description": "Description\n\nDeprecated\n\nThis rule has been renamed. Use instead:NonCaseLabelInSwitch\n\nDeprecated\n\nA non-case label (e.g. a named break/continue label) was present in a switch statement or switch expression.\nThis is legal, but confusing. It is easy to mix up the case labels and the non-case labels.\n\nNote: This rule was renamed fromNonCaseLabelInSwitchStatementwith PMD 7.7.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

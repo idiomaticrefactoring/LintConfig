@@ -1,0 +1,6 @@
+{
+    "Metrics/MethodLength": {
+        "description": "Description\n\nAvoid methods longer than 10 lines of code.",
+        "option": "This rule supports the following parameters in your configuration:\n\nCountComments: False (type: bool)\nMax: 10 (type: int)\nCountAsOne: [] (type: list)\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

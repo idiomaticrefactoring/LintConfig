@@ -1,0 +1,6 @@
+{
+    "flake8-implicit-str-concat": {
+        "description": "Description\n\nOptions for the `flake8-implicit-str-concat` plugin.",
+        "option": "Type: Flake8ImplicitStrConcatOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allow-multiline: Whether to allow implicit string concatenations for multiline strings."
+    }
+}

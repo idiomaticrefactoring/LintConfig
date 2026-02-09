@@ -1,0 +1,6 @@
+{
+    "no-with": {
+        "description": "Description\n\nThis rule disallowswithstatements.\n\nIf ESLint parses code in strict mode, the parser (instead of this rule) reports the error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-with: \"error\"*/\n\nwith (point) {\n    r = Math.sqrt(x * x + y * y); // is r a member of point?\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-with: \"error\"*/\n\nconst r = ({x, y}) => Math.sqrt(x * x + y * y);",
+        "option": "This rule has no options."
+    }
+}

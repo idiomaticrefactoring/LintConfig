@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantSplatExpansion": {
+        "description": "Description\n\nChecks for splat unnecessarily being called on literals.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowPercentLiteralArrayArgument: True (type: bool)"
+    }
+}

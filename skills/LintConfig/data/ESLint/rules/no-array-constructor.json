@@ -1,0 +1,6 @@
+{
+    "no-array-constructor": {
+        "description": "Description\n\nThis rule disallowsArrayconstructors.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-array-constructor: \"error\"*/\n\nArray();\n\nArray(0, 1, 2);\n\nnew Array(0, 1, 2);\n\nArray(...args);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-array-constructor: \"error\"*/\n\nArray(500);\n\nnew Array(someOtherArray.length);\n\n[0, 1, 2];\n\nconst createArray = Array => new Array();\n\nThis rule additionally supports TypeScript type syntax.\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-array-constructor: \"error\"*/\n\nnew Array<number>(1, 2, 3);\n\nnew Array<Foo>();\n\nArray<number>(1, 2, 3);\n\nArray<Foo>();\n\nArray?.foo();\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-array-constructor: \"error\"*/\n\nnew Array();\n\nnew Array(0, 1, 2);\n\nArray?.(x, y);\n\nArray?.(0, 1, 2);",
+        "option": "This rule has no options."
+    }
+}

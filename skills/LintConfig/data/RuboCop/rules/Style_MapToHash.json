@@ -1,0 +1,6 @@
+{
+    "Style/MapToHash": {
+        "description": "Description\n\nPrefer `to_h` with a block over `map.to_h`.",
+        "option": "This rule has no specific options."
+    }
+}

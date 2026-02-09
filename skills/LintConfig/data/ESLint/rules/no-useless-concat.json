@@ -1,0 +1,6 @@
+{
+    "no-useless-concat": {
+        "description": "Description\n\nThis rule aims to flag the concatenation of 2 literals when they could be combined into a single literal. Literals can be strings or template literals.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-useless-concat: \"error\"*/\n\nconst a = `some` + `string`;\n\n// these are the same as \"10\"\nconst b = '1' + '0';\nconst c = '1' + `0`;\nconst d = `1` + '0';\nconst e = `1` + `0`;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-useless-concat: \"error\"*/\n\n// when a non string is included\nconst a = a + b;\nconst b = '1' + a;\nconst c = 1 + '1';\nconst d = 1 - 2;\n// when the string concatenation is multiline\nconst e = \"foo\" +\n    \"bar\";",
+        "option": "This rule has no options."
+    }
+}

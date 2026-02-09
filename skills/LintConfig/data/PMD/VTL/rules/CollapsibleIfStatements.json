@@ -1,0 +1,6 @@
+{
+    "CollapsibleIfStatements": {
+        "description": "Description\n\nSometimes two consecutive ‘if’ statements can be consolidated by separating their conditions with a boolean short-circuit operator.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

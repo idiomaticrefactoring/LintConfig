@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAfterColon": {
+        "description": "Description\n\nUse spaces after colons.",
+        "option": "This rule has no specific options."
+    }
+}

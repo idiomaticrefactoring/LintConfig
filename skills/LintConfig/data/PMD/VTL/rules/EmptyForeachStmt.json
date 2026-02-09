@@ -1,0 +1,6 @@
+{
+    "EmptyForeachStmt": {
+        "description": "Description\n\nEmpty foreach statements should be deleted.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/RedundantLineContinuation": {
+        "description": "Description\n\nChecks for redundant line continuation.",
+        "option": "This rule has no specific options."
+    }
+}

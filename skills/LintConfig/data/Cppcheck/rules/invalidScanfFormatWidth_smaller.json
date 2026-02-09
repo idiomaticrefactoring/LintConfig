@@ -1,0 +1,6 @@
+{
+    "invalidScanfFormatWidth_smaller": {
+        "description": "Description\n\nWidth -1 given in format string (no. 99) is smaller than destination buffer '[0]'.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: true"
+    }
+}

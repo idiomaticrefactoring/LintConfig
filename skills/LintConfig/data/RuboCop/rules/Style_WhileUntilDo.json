@@ -1,0 +1,6 @@
+{
+    "Style/WhileUntilDo": {
+        "description": "Description\n\nChecks for redundant do after while or until.",
+        "option": "This rule has no specific options."
+    }
+}

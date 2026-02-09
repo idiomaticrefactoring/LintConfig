@@ -1,0 +1,6 @@
+{
+    "JspEncoding": {
+        "description": "Description\n\nA missing ‘meta’ tag or page directive will trigger this rule, as well as a non-UTF-8 charset.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

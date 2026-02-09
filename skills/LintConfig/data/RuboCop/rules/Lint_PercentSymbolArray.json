@@ -1,0 +1,6 @@
+{
+    "Lint/PercentSymbolArray": {
+        "description": "Description\n\nChecks for unwanted commas and colons in %i/%I literals.",
+        "option": "This rule has no specific options."
+    }
+}

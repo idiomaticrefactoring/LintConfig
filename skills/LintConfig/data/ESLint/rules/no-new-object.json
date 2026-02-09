@@ -1,0 +1,6 @@
+{
+    "no-new-object": {
+        "description": "Description\n\nThis rule disallows calling theObjectconstructor withnew.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-object: \"error\"*/\n\nvar myObject = new Object();\n\nnew Object();\n\nvar foo = new Object(\"foo\");\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-object: \"error\"*/\n\nvar myObject = new CustomObject();\n\nvar myObject = {};\n\nvar Object = function Object() {};\nnew Object();\n\nvar foo = Object(\"foo\");",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "select": {
+        "description": "Description\n\nA list of rule codes or prefixes to enable. Prefixes can specify exact\nrules (like `F841`), entire categories (like `F`), or anything in\nbetween.\n\nWhen breaking ties between enabled and disabled rules (via `select` and\n`ignore`, respectively), more specific prefixes override less\nspecific prefixes. `ignore` takes precedence over `select` if the\nsame prefix appears in both.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

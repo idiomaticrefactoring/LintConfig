@@ -1,0 +1,6 @@
+{
+    "Layout/FirstMethodArgumentLineBreak": {
+        "description": "Description\n\nChecks for a line break before the first argument in a multi-line method call.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultilineFinalElement: False (type: bool)\nAllowedMethods: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-console": {
+        "description": "Description\n\nThis rule disallows calls or assignments to methods of theconsoleobject.\n\nExamples ofincorrectcode for this rule:\n\n/* eslint no-console: \"error\" */\n\nconsole.log(\"Log a debug level message.\");\nconsole.warn(\"Log a warn level message.\");\nconsole.error(\"Log an error level message.\");\nconsole.log = foo();\n\nExamples ofcorrectcode for this rule:\n\n/* eslint no-console: \"error\" */\n\n// custom console\nConsole.log(\"Hello world!\");",
+        "option": "This rule has an object option for exceptions:\n\n- \"allow\"has an array of strings which are allowed methods of theconsoleobject\n\nExamples of additionalcorrectcode for this rule with a sample{ \"allow\": [\"warn\", \"error\"] }option:\n\n/* eslint no-console: [\"error\", { allow: [\"warn\", \"error\"] }] */\n\nconsole.warn(\"Log a warn level message.\");\nconsole.error(\"Log an error level message.\");"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "fflushOnInputStream": {
+        "description": "Description\n\nfflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems.",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: 398\nInconclusive: false"
+    }
+}

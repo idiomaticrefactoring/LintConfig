@@ -1,0 +1,6 @@
+{
+    "Lint/NonLocalExitFromIterator": {
+        "description": "Description\n\nDo not use return in iterator to cause non-local exit.",
+        "option": "This rule has no specific options."
+    }
+}

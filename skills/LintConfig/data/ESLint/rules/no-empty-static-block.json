@@ -1,0 +1,6 @@
+{
+    "no-empty-static-block": {
+        "description": "Description\n\nThis rule disallows empty static blocks. This rule ignores static blocks which contain a comment.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-empty-static-block: \"error\"*/\n\nclass Foo {\n    static {}\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-empty-static-block: \"error\"*/\n\nclass Foo {\n    static {\n        bar();\n    }\n}\n\nclass Bar {\n    static {\n        // comment\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

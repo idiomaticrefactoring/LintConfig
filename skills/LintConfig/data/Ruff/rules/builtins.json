@@ -1,0 +1,6 @@
+{
+    "builtins": {
+        "description": "Description\n\nA list of builtins to treat as defined references, in addition to the\nsystem builtins.",
+        "option": "Type: array"
+    }
+}

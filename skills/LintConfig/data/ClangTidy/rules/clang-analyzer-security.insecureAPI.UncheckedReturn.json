@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-security.insecureAPI.UncheckedReturn": {
+        "description": "Description\n\nclang-analyzer-security.insecureAPI.UncheckedReturn\nWarn on uses of functions whose return values must be always checked.\nThe\nclang-analyzer-security.insecureAPI.UncheckedReturn\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

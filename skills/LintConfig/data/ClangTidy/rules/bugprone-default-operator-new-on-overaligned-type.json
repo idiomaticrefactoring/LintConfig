@@ -1,0 +1,6 @@
+{
+    "bugprone-default-operator-new-on-overaligned-type": {
+        "description": "Description\n\nFlags uses of default\noperator\nnew\nwhere the type has extended\nalignment (an alignment greater than the fundamental alignment).\n\nThe default\noperator\nnew\nis guaranteed to provide the correct alignment\nif the requested alignment is less or equal to the fundamental alignment.\nOnly cases are detected (by design) where the\noperator\nnew\nis not\nuser-defined and is not a placement new (the reason is that in these cases we\nassume that the user provided the correct memory allocation).\n\nReferences\nThis check corresponds to the CERT C++ Coding Standard rule\nMEM57-CPP. Avoid using default operator new for over-aligned types\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

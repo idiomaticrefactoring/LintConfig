@@ -1,0 +1,6 @@
+{
+    "NoInlineStyles": {
+        "description": "Description\n\nAvoid inline styles. Use css classes instead.\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

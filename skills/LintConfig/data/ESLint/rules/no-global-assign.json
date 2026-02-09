@@ -1,0 +1,6 @@
+{
+    "no-global-assign": {
+        "description": "Description\n\nThis rule disallows modifications to read-only global variables.\n\nESLint has the capability to configure global variables as read-only.\n\nSee also:Specify Globals\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-global-assign: \"error\"*/\n\nObject = null\nundefined = 1\n\n/*eslint no-global-assign: \"error\"*/\n/*global window:readonly*/\n\nwindow = {}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-global-assign: \"error\"*/\n\na = 1\nlet b = 1\nb = 2\n\n/*eslint no-global-assign: \"error\"*/\n/*global onload:writable*/\n\nonload = function() {}",
+        "option": "This rule accepts anexceptionsoption, which can be used to specify a list of builtins for which reassignments will be allowed:\n\n{\n    \"rules\": {\n        \"no-global-assign\": [\"error\", {\"exceptions\": [\"Object\"]}]\n    }\n}"
+    }
+}

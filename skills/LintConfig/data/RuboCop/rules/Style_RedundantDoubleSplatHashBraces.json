@@ -1,0 +1,6 @@
+{
+    "Style/RedundantDoubleSplatHashBraces": {
+        "description": "Description\n\nChecks for redundant uses of double splat hash braces.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "global-strict": {
+        "description": "Description\n\nThis rule requires or disallows global strict mode invoked by a\"use strict\"pragma in the global scope.\n\nThe following pattern is under strict mode globally and is considered valid with the\"always\"option and a warning with the\"never\"option.\n\n\"use strict\";\n\nfunction foo() {\n    return true;\n}\n\nThe following patterns apply strict mode only to functions so are valid with the\"never\"option but are problems with the\"always\"option.\n\nfunction foo() {\n    \"use strict\";\n\n    return true;\n}\n\n(function() {\n    \"use strict\";\n\n    // other code\n}());",
+        "option": "\"global-strict\": [\"error\", \"always\"]\n\nRequires that every file have a top-level\"use strict\"statement.\n\n\"global-strict\": [\"error\", \"never\"]\n\nWarns whenever\"use strict\"is used in the global scope such that it could contaminate concatenated files."
+    }
+}

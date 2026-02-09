@@ -1,0 +1,6 @@
+{
+    "bugprone-parent-virtual-call": {
+        "description": "Description\n\nDetects and fixes calls to grand-…parent virtual methods instead of calls\nto overridden parent’s virtual methods.\n\nstruct\nA\n{\nint\nvirtual\nfoo\n()\n{...}\n};\nstruct\nB\n:\npublic\nA\n{\nint\nfoo\n()\noverride\n{...}\n};\nstruct\nC\n:\npublic\nB\n{\nint\nfoo\n()\noverride\n{\nA\n::\nfoo\n();\n}\n//                     ^^^^^^^^\n// warning: qualified name A::foo refers to a member overridden in subclass; did you mean 'B'?  [bugprone-parent-virtual-call]\n};",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

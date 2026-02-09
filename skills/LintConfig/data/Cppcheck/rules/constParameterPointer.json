@@ -1,0 +1,6 @@
+{
+    "constParameterPointer": {
+        "description": "Description\n\nParameter 'x' can be declared with const",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidHardcodingId": {
+        "description": "Description\n\nWhen deploying Apex code between sandbox and production environments, or installing Force.com AppExchange packages,\nit is essential to avoid hardcoding IDs in the Apex code. By doing so, if the record IDs change between environments,\nthe logic can dynamically identify the proper data to operate against and not fail.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "uninitMemberVarPrivate": {
+        "description": "Description\n\nMember variable 'classname::varnamepriv' is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: classname::varnamepriv"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/WordArray": {
+        "description": "Description\n\nUse %w or %W for arrays of words.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: percent (type: str)\nSupportedStyles: ['percent', 'brackets'] (type: list)\nMinSize: 2 (type: int)\nWordRegex: /\\A(?:\\p{Word}|\\p{Word}-\\p{Word}|\\n|\\t)+\\z/ (type: str)"
+    }
+}

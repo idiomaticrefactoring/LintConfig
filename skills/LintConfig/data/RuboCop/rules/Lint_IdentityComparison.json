@@ -1,0 +1,6 @@
+{
+    "Lint/IdentityComparison": {
+        "description": "Description\n\nPrefer `equal?` over `==` when comparing `object_id`.",
+        "option": "This rule has no specific options."
+    }
+}

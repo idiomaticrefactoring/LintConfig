@@ -1,0 +1,6 @@
+{
+    "Lint/UselessAccessModifier": {
+        "description": "Description\n\nChecks for useless access modifiers.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nContextCreatingMethods: [] (type: list)\nMethodCreatingMethods: [] (type: list)"
+    }
+}

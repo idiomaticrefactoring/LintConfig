@@ -1,0 +1,6 @@
+{
+    "no-sync": {
+        "description": "Description\n\nThis rule is aimed at preventing synchronous methods from being called in Node.js. It looks specifically for the method suffix “Sync” (as is the convention with Node.js operations).",
+        "option": "This rule has an optional object option{ allowAtRootLevel: <boolean> }, which determines whether synchronous methods should be allowed at the top level of a file, outside of any functions. This option defaults tofalse.\n\nExamples ofincorrectcode for this rule with the default{ allowAtRootLevel: false }option:\n\n/*eslint no-sync: \"error\"*/\n\nfs.existsSync(somePath);\n\nfunction foo() {\n  var contents = fs.readFileSync(somePath).toString();\n}\n\nExamples ofcorrectcode for this rule with the default{ allowAtRootLevel: false }option:\n\n/*eslint no-sync: \"error\"*/\n\nobj.sync();\n\nasync(function() {\n    // ...\n});\n\nExamples ofincorrectcode for this rule with the{ allowAtRootLevel: true }option\n\n/*eslint no-sync: [\"error\", { allowAtRootLevel: true }]*/\n\nfunction foo() {\n  var contents = fs.readFileSync(somePath).toString();\n}\n\nvar bar = baz => fs.readFileSync(qux);\n\nExamples ofcorrectcode for this rule with the{ allowAtRootLevel: true }option\n\n/*eslint no-sync: [\"error\", { allowAtRootLevel: true }]*/\n\nfs.readFileSync(somePath).toString();"
+    }
+}

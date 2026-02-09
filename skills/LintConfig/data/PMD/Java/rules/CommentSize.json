@@ -1,0 +1,6 @@
+{
+    "CommentSize": {
+        "description": "Description\n\nDetermines whether the dimensions of non-header comments found are within the specified limits.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nmaxLines\t6\tMaximum lines\nmaxLineLength\t80\tMaximum line length"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/IfWithBooleanLiteralBranches": {
+        "description": "Description\n\nChecks for redundant `if` with boolean literal branches.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['infinite?', 'nonzero?'] (type: list)"
+    }
+}

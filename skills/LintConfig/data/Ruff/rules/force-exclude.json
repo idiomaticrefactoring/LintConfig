@@ -1,0 +1,6 @@
+{
+    "force-exclude": {
+        "description": "Description\n\nWhether to enforce [`exclude`](#exclude) and [`extend-exclude`](#extend-exclude) patterns,\neven for paths that are passed to Ruff explicitly. Typically, Ruff will lint\nany paths passed in directly, even if they would typically be\nexcluded. Setting `force-exclude = true` will cause Ruff to\nrespect these exclusions unequivocally.\n\nThis is useful for [`pre-commit`](https://pre-commit.com/), which explicitly passes all\nchanged files to the [`ruff-pre-commit`](https://github.com/astral-sh/ruff-pre-commit)\nplugin, regardless of whether they're marked as excluded by Ruff's own\nsettings.",
+        "option": "Type: boolean"
+    }
+}

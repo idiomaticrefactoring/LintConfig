@@ -1,0 +1,6 @@
+{
+    "no-loss-of-precision": {
+        "description": "Description\n\nIn JS,Numbers are stored as double-precision floating-point numbers according to theIEEE 754 standard. Because of this, numbers can only retain accuracy up to a certain amount of digits. If the programmer enters additional digits, those digits will be lost in the conversion to theNumbertype and will result in unexpected behavior.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-loss-of-precision: \"error\"*/\n\nconst a = 9007199254740993\nconst b = 5123000000000000000000000000001\nconst c = 1230000000000000000000000.0\nconst d = .1230000000000000000000000\nconst e = 0X20000000000001\nconst f = 0X2_000000000_0001;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-loss-of-precision: \"error\"*/\n\nconst a = 12345\nconst b = 123.456\nconst c = 123e34\nconst d = 12300000000000000000000000\nconst e = 0x1FFFFFFFFFFFFF\nconst f = 9007199254740991\nconst g = 9007_1992547409_91",
+        "option": "This rule has no options."
+    }
+}

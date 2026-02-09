@@ -1,0 +1,6 @@
+{
+    "readability-math-missing-parentheses": {
+        "description": "Description\n\nCheck for missing parentheses in mathematical expressions that involve\noperators of different priorities.\n\nParentheses in mathematical expressions clarify the order\nof operations, especially with different-priority operators. Lengthy or\nmultiline expressions can obscure this order, leading to coding errors.\nIDEs can aid clarity by highlighting parentheses. Explicitly using parentheses\nalso clarifies what the developer had in mind when writing the expression.\nEnsuring their presence reduces ambiguity and errors, promoting clearer and\nmore maintainable code.\n\nBefore:\n\nint\nx\n=\n1\n+\n2\n*\n3\n-\n4\n/\n5\n;\n\nAfter:\n\nint\nx\n=\n1\n+\n(\n2\n*\n3\n)\n-\n(\n4\n/\n5\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

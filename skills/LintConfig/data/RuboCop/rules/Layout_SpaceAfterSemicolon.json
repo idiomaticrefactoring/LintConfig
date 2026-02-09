@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAfterSemicolon": {
+        "description": "Description\n\nUse spaces after semicolons.",
+        "option": "This rule has no specific options."
+    }
+}

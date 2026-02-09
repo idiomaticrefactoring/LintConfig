@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-avoid-reference-coroutine-parameters": {
+        "description": "Description\n\nWarns when a coroutine accepts reference parameters. After a coroutine suspend\npoint, references could be dangling and no longer valid. Instead, pass\nparameters as values.\n\nExamples:\n\nstd\n::\nfuture\n<\nint\n>\nsomeCoroutine\n(\nint\n&\nval\n)\n{\nco_await\n...;\n// When the coroutine is resumed, 'val' might no longer be valid.\nif\n(\nval\n)\n...\n}\n\nThis check implements\nCP.53\nfrom the C++ Core Guidelines.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

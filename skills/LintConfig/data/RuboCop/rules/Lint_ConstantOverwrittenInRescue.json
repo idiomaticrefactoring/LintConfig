@@ -1,0 +1,6 @@
+{
+    "Lint/ConstantOverwrittenInRescue": {
+        "description": "Description\n\nChecks for overwriting an exception with an exception result by use `rescue =>`.",
+        "option": "This rule has no specific options."
+    }
+}

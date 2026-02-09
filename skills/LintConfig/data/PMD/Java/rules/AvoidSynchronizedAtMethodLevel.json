@@ -1,0 +1,6 @@
+{
+    "AvoidSynchronizedAtMethodLevel": {
+        "description": "Description\n\nMethod-level synchronization will pin virtual threads and can cause performance problems. Additionally, it can cause\nproblems when new code is added to the method.  Block-level ReentrantLock helps to ensure that only the code that\nneeds mutual exclusion will be locked.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

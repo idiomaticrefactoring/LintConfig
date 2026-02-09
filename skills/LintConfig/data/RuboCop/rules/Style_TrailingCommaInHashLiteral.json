@@ -1,0 +1,6 @@
+{
+    "Style/TrailingCommaInHashLiteral": {
+        "description": "Description\n\nChecks for trailing comma in hash literals.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyleForMultiline: no_comma (type: str)\nSupportedStylesForMultiline: ['comma', 'consistent_comma', 'diff_comma', 'no_comma'] (type: list)"
+    }
+}

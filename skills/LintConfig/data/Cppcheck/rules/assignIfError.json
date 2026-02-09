@@ -1,0 +1,6 @@
+{
+    "assignIfError": {
+        "description": "Description\n\nMismatching assignment and comparison, comparison '' is always false.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

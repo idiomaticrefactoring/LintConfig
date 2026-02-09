@@ -1,0 +1,6 @@
+{
+    "UnusedMethod": {
+        "description": "Description\n\nAvoid having unused methods since they make understanding and maintaining code harder.\n\nFor an accurate analysis it is important that thePMD_APEX_ROOT_DIRECTORYcontains a complete set of metadata that\nmay be referenced from the Apex source code, such as Custom Objects, Visualforce Pages, Flows and Labels. ThePMD_APEX_ROOT_DIRECTORYdirectory must contain asfdx-project.json, but metadata may be either in theSFDX Source formator the older MDAPI format. ThepackageDirectoriesentries insfdx-project.jsonare used to determine which\ndirectories to search for metadata, if a.forceignorefile is present it will be respected.\n\nIf the Apex code references external packages via namespace(s) you should declare these in yoursfdx-project.jsonfile using the ‘plugins’ syntax shown in the example below to avoid errors. Here’s an example of a\nwell-formedsfdx-project.json:\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

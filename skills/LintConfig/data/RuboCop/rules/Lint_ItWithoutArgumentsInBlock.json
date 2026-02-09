@@ -1,0 +1,6 @@
+{
+    "Lint/ItWithoutArgumentsInBlock": {
+        "description": "Description\n\nChecks uses of `it` calls without arguments in block.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://bugs.ruby-lang.org/issues/18980'] (type: list)"
+    }
+}

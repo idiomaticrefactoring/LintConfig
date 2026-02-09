@@ -1,0 +1,6 @@
+{
+    "Layout/FirstMethodParameterLineBreak": {
+        "description": "Description\n\nChecks for a line break before the first parameter in a multi-line method parameter definition.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultilineFinalElement: False (type: bool)"
+    }
+}

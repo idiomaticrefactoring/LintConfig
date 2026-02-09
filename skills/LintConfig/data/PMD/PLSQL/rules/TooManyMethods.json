@@ -1,0 +1,6 @@
+{
+    "TooManyMethods": {
+        "description": "Description\n\nA package or type with too many methods is probably a good suspect for refactoring, in order to reduce its complexity and find a way to\nhave more fine grained objects.\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nmaxmethods\t1\tThe method count reporting threshold"
+    }
+}

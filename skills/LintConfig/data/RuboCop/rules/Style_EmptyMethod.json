@@ -1,0 +1,6 @@
+{
+    "Style/EmptyMethod": {
+        "description": "Description\n\nChecks the formatting of empty method definitions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nEnforcedStyle: compact (type: str)\nSupportedStyles: ['compact', 'expanded'] (type: list)"
+    }
+}

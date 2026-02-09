@@ -1,0 +1,6 @@
+{
+    "misc-static-assert": {
+        "description": "Description\n\ncert-dcl03-c\nredirects here as an alias for this check.\n\nReplaces\nassert()\nwith\nstatic_assert()\nif the condition is evaluable\nat compile time.\n\nThe condition of\nstatic_assert()\nis evaluated at compile time which is\nsafer and more efficient.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

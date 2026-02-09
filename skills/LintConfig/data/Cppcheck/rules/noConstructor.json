@@ -1,0 +1,6 @@
+{
+    "noConstructor": {
+        "description": "Description\n\nThe class 'classname' does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: classname"
+    }
+}

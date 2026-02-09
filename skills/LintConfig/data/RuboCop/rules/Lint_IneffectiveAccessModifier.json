@@ -1,0 +1,6 @@
+{
+    "Lint/IneffectiveAccessModifier": {
+        "description": "Description\n\nChecks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work.",
+        "option": "This rule has no specific options."
+    }
+}

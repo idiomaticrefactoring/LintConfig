@@ -1,0 +1,6 @@
+{
+    "Style/EmptyLiteral": {
+        "description": "Description\n\nPrefer literals to Array.new/Hash.new/String.new.",
+        "option": "This rule has no specific options."
+    }
+}

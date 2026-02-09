@@ -1,0 +1,6 @@
+{
+    "Style/EnvHome": {
+        "description": "Description\n\nChecks for consistent usage of `ENV['HOME']`.",
+        "option": "This rule has no specific options."
+    }
+}

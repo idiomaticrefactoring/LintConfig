@@ -1,0 +1,6 @@
+{
+    "no-control-regex": {
+        "description": "Description\n\nThis rule disallows control characters and some escape sequences that match control characters in regular expressions.\n\nThe following elements of regular expression patterns are considered possible errors in typing and are therefore disallowed by this rule:\n\n- Hexadecimal character escapes from\\x00to\\x1F.\n- Unicode character escapes from\\u0000to\\u001F.\n- Unicode code point escapes from\\u{0}to\\u{1F}.\n- Unescaped raw characters from U+0000 to U+001F.\n\nControl escapes such as\\tand\\nare allowed by this rule.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-control-regex: \"error\"*/\n\nconst pattern1 = /\\x00/;\nconst pattern2 = /\\x0C/;\nconst pattern3 = /\\x1F/;\nconst pattern4 = /\\u000C/;\nconst pattern5 = /\\u{C}/u;\nconst pattern6 = new RegExp(\"\\x0C\"); // raw U+000C character in the pattern\nconst pattern7 = new RegExp(\"\\\\x0C\"); // \\x0C pattern\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-control-regex: \"error\"*/\n\nconst pattern1 = /\\x20/;\nconst pattern2 = /\\u0020/;\nconst pattern3 = /\\u{20}/u;\nconst pattern4 = /\\t/;\nconst pattern5 = /\\n/;\nconst pattern6 = new RegExp(\"\\x20\");\nconst pattern7 = new RegExp(\"\\\\t\");\nconst pattern8 = new RegExp(\"\\\\n\");",
+        "option": "This rule has no options."
+    }
+}

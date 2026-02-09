@@ -1,0 +1,6 @@
+{
+    "extend-include": {
+        "description": "Description\n\nA list of file patterns to include when linting, in addition to those\nspecified by [`include`](#include).\n\nInclusion are based on globs, and should be single-path patterns, like\n`*.pyw`, to include any file with the `.pyw` extension.\n\nFor more information on the glob syntax, refer to the [`globset` documentation](https://docs.rs/globset/latest/globset/#syntax).",
+        "option": "Type: array"
+    }
+}

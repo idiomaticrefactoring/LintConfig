@@ -1,0 +1,6 @@
+{
+    "Lint/RequireRelativeSelfPath": {
+        "description": "Description\n\nChecks for uses a file requiring itself with `require_relative`.",
+        "option": "This rule has no specific options."
+    }
+}

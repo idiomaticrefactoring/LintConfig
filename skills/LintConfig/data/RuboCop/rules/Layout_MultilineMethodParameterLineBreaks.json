@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineMethodParameterLineBreaks": {
+        "description": "Description\n\nChecks that each parameter in a multi-line method definition starts on a separate line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultilineFinalElement: False (type: bool)"
+    }
+}

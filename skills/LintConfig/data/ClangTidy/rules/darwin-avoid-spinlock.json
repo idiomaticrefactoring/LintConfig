@@ -1,0 +1,6 @@
+{
+    "darwin-avoid-spinlock": {
+        "description": "Description\n\nFinds usages of\nOSSpinlock\n, which is deprecated due to potential livelock\nproblems.\n\nThis check will detect following function invocations:\n\nOSSpinlockLock\nOSSpinlockTry\nOSSpinlockUnlock\n\nThe corresponding information about the problem of\nOSSpinlock\n:\nhttps://blog.postmates.com/why-spinlocks-are-bad-on-ios-b69fc5221058",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

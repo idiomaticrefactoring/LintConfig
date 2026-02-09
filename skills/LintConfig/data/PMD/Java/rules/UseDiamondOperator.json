@@ -1,0 +1,6 @@
+{
+    "UseDiamondOperator": {
+        "description": "Description\n\nMinimum Language Version:Java 1.7\n\nIn some cases, explicit type arguments in a constructor call for a generic type\nmay be replaced by diamond type arguments (<>), and be inferred by the compiler.\nThis rule recommends that you use diamond type arguments anywhere possible, since\nit avoids duplication of the type arguments, and makes the code more concise and readable.\n\nThis rule is useful when upgrading a codebase to Java 1.7, Java 1.8, or Java 9.\nThe diamond syntax was first introduced in Java 1.7. In Java 8, improvements in Java’s\ntype inference made more type arguments redundant. In Java 9, type arguments inference\nwas made possible for anonymous class constructors.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

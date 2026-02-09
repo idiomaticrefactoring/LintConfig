@@ -1,0 +1,6 @@
+{
+    "Lint/UselessMethodDefinition": {
+        "description": "Description\n\nChecks for useless method definitions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)"
+    }
+}

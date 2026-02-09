@@ -1,0 +1,6 @@
+{
+    "DontImportSun": {
+        "description": "Description\n\nDeprecated\n\nAvoid importing anything from the ‘sun.*’ packages. These packages are not portable\nand are likely to change.\n\nIf you find yourself having to depend on Sun APIs, confine this dependency to as\nsmall a scope as possible, for instance by writing a stable wrapper class around\nthe unstable API. You can then suppress this rule in the implementation of the wrapper.\n\nDeprecated:This rule is deprecated since PMD 7.21.0 and will be removed with PMD 8.0.0.\nThis rule has been replaced byUnsupportedJdkApiUsage.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

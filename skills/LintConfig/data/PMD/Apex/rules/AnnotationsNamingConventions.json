@@ -1,0 +1,6 @@
+{
+    "AnnotationsNamingConventions": {
+        "description": "Description\n\nApex, while case-insensitive, benefits from a consistent code style to improve readability and maintainability.\nEnforcing PascalCase for annotations aligns with the established conventions and reduces ambiguity - promoting a unified coding standard.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "FinalParameterInAbstractMethod": {
+        "description": "Description\n\nDeclaring a method parameter as final for an interface method is useless because the implementation may choose to not respect it.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

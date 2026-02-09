@@ -1,0 +1,6 @@
+{
+    "Style/ExponentialNotation": {
+        "description": "Description\n\nWhen using exponential notation, favor a mantissa between 1 (inclusive) and 10 (exclusive).",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: scientific (type: str)\nSupportedStyles: ['scientific', 'engineering', 'integral'] (type: list)"
+    }
+}

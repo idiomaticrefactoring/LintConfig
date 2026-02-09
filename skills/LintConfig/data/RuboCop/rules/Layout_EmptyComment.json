@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyComment": {
+        "description": "Description\n\nChecks empty comment.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nAllowBorderComment: True (type: bool)\nAllowMarginComment: True (type: bool)"
+    }
+}

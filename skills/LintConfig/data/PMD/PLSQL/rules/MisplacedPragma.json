@@ -1,0 +1,6 @@
+{
+    "MisplacedPragma": {
+        "description": "Description\n\nOracle states that the PRAQMA AUTONOMOUS_TRANSACTION must be in the declaration block,\nbut the code does not complain, when being compiled on the 11g DB.\nhttps://docs.oracle.com/cd/B28359_01/appdev.111/b28370/static.htm#BABIIHBJ\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

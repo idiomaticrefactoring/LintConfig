@@ -1,0 +1,6 @@
+{
+    "Style/MultilineMemoization": {
+        "description": "Description\n\nWrap multiline memoizations in a `begin` and `end` block.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: keyword (type: str)\nSupportedStyles: ['keyword', 'braces'] (type: list)"
+    }
+}

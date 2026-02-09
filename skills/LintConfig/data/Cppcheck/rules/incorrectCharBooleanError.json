@@ -1,0 +1,6 @@
+{
+    "incorrectCharBooleanError": {
+        "description": "Description\n\nThe product contains an expression that will always evaluate to true.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 571\nInconclusive: false"
+    }
+}

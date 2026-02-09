@@ -1,0 +1,6 @@
+{
+    "no-self-compare": {
+        "description": "Description\n\nThis error is raised to highlight a potentially confusing and potentially pointless piece of code. There are almost no situations in which you would need to compare something to itself.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-self-compare: \"error\"*/\n\nlet x = 10;\nif (x === x) {\n    x = 20;\n}",
+        "option": "This rule has no options."
+    }
+}

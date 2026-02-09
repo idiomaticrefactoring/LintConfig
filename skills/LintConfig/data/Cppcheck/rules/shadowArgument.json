@@ -1,0 +1,6 @@
+{
+    "shadowArgument": {
+        "description": "Description\n\nLocal variable 'argument' shadows outer argument",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false\nRelated Symbols: argument"
+    }
+}

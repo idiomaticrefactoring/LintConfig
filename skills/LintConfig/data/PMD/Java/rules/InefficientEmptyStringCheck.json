@@ -1,0 +1,6 @@
+{
+    "InefficientEmptyStringCheck": {
+        "description": "Description\n\nChecking the length ofstring.trim()orstring.strip()is an inefficient way\nto decide if a string is really blank, as it creates a newStringobject just to check its size.\nAs of Java 11 you can usestring.isBlank()to decide if a string consists only of whitespace,\nthat check is equivalent tostring.strip().isEmpty(). To get the semantic ofstring.trim().isEmpty(), you can loop through the characters and compare them to 0x20:\n\nYou can also consider using library functions that include a null check\n(e.g. Apache’sStringUtils#isBlankin commons-lang,\nSpring’sStringUtils#hasTextin the Spring framework) or use a different definition of whitespace\n(e.g. Google’sCharMatcher#whitespacein Guava).\n\nCallingstring.strip().isBlank()is also redundant and should be simplified tostring.isBlank().\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

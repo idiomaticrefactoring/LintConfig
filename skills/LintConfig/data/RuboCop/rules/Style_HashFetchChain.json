@@ -1,0 +1,6 @@
+{
+    "Style/HashFetchChain": {
+        "description": "Description\n\nUse `Hash#dig` instead of chained `fetch` calls.",
+        "option": "This rule has no specific options."
+    }
+}

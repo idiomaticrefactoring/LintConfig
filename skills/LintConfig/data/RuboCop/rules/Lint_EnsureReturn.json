@@ -1,0 +1,6 @@
+{
+    "Lint/EnsureReturn": {
+        "description": "Description\n\nDo not use return in an ensure block.",
+        "option": "This rule has no specific options."
+    }
+}

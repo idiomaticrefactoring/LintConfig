@@ -1,0 +1,6 @@
+{
+    "Lint/SafeNavigationWithEmpty": {
+        "description": "Description\n\nAvoid `foo&.empty?` in conditionals.",
+        "option": "This rule has no specific options."
+    }
+}

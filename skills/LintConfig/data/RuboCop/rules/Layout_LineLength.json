@@ -1,0 +1,6 @@
+{
+    "Layout/LineLength": {
+        "description": "Description\n\nChecks that line length does not exceed the configured limit.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMax: 120 (type: int)\nAllowHeredoc: True (type: bool)\nAllowURI: True (type: bool)\nAllowQualifiedName: True (type: bool)\nURISchemes: ['http', 'https'] (type: list)\nAllowRBSInlineAnnotation: False (type: bool)\nAllowCopDirectives: True (type: bool)\nAllowedPatterns: [] (type: list)\nSplitStrings: False (type: bool)"
+    }
+}

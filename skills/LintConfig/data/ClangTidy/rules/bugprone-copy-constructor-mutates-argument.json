@@ -1,0 +1,6 @@
+{
+    "bugprone-copy-constructor-mutates-argument": {
+        "description": "Description\n\nFinds assignments to the copied object and its direct or indirect members\nin copy constructors and copy assignment operators.\n\nThis check corresponds to the CERT C Coding Standard rule\nOOP58-CPP. Copy operations must not mutate the source object\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "ProjectVersionAsDependencyVersion": {
+        "description": "Description\n\nUsing that expression in dependency declarations seems like a shortcut, but it can go wrong.\nBy far the most common problem is the use of ${project.version} in a BOM or parent POM.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

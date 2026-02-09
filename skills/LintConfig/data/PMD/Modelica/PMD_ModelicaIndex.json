@@ -1,0 +1,14 @@
+{
+    "AmbiguousResolution": {
+        "description": "There is multiple candidates for this type resolution. While generally this is not an error,     …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_modelica_bestpractices.html#ambiguousresolution"
+    },
+    "ClassStartNameEqualsEndName": {
+        "description": "Having a class starting with some name and some different             name in its end clause is a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_modelica_bestpractices.html#classstartnameequalsendname"
+    },
+    "ConnectUsingNonConnector": {
+        "description": "Modelica specification requires passing connectors to the ‘connect’ clause,             while som…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_modelica_bestpractices.html#connectusingnonconnector"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "show-fixes": {
+        "description": "Description\n\nWhether to show an enumeration of all fixed lint violations\n(overridden by the `--show-fixes` command-line flag).",
+        "option": "Type: boolean"
+    }
+}

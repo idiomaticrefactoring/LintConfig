@@ -1,0 +1,6 @@
+{
+    "Style/ClassMethods": {
+        "description": "Description\n\nUse self when defining module/class methods.",
+        "option": "This rule has no specific options."
+    }
+}

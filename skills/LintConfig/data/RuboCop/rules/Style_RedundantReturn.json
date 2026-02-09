@@ -1,0 +1,6 @@
+{
+    "Style/RedundantReturn": {
+        "description": "Description\n\nDon't use return where it's not required.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultipleReturnValues: False (type: bool)"
+    }
+}

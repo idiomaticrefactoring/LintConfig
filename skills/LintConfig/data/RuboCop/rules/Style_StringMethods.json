@@ -1,0 +1,6 @@
+{
+    "Style/StringMethods": {
+        "description": "Description\n\nChecks if configured preferred methods are used over non-preferred.",
+        "option": "This rule supports the following parameters in your configuration:\n\nPreferredMethods: {'intern': 'to_sym'} (type: dict)"
+    }
+}

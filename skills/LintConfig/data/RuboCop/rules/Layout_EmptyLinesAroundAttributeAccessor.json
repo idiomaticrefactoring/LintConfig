@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLinesAroundAttributeAccessor": {
+        "description": "Description\n\nKeep blank lines around attribute accessors.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowAliasSyntax: True (type: bool)\nAllowedMethods: ['alias_method', 'public', 'protected', 'private'] (type: list)"
+    }
+}

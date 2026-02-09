@@ -1,0 +1,6 @@
+{
+    "flake8-type-checking": {
+        "description": "Description\n\nOptions for the `flake8-type-checking` plugin.",
+        "option": "Type: Flake8TypeCheckingOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - exempt-modules: Exempt certain modules from needing to be moved into type-checking\n  - quote-annotations: Whether to add quotes around type annotations, if doing so would allow\n  - runtime-evaluated-base-classes: Exempt classes that list any of the enumerated classes as a base class\n  - runtime-evaluated-decorators: Exempt classes and functions decorated with any of the enumerated\n  - strict: Enforce `TC001`, `TC002`, and `TC003` rules even when valid runtime imports"
+    }
+}

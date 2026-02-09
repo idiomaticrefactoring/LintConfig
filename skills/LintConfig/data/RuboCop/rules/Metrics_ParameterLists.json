@@ -1,0 +1,6 @@
+{
+    "Metrics/ParameterLists": {
+        "description": "Description\n\nAvoid parameter lists longer than three or four parameters.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMax: 5 (type: int)\nCountKeywordArgs: True (type: bool)\nMaxOptionalParameters: 3 (type: int)"
+    }
+}

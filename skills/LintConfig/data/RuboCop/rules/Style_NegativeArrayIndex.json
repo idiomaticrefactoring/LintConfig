@@ -1,0 +1,6 @@
+{
+    "Style/NegativeArrayIndex": {
+        "description": "Description\n\nUse negative array indices instead of calculating array length minus a value. Also handles range patterns with length calculations. Recognizes preserving methods and their combinations, allowing safe replacement when the receiver matches.",
+        "option": "This rule has no specific options."
+    }
+}

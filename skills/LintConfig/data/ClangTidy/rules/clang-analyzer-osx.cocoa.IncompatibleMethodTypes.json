@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-osx.cocoa.IncompatibleMethodTypes": {
+        "description": "Description\n\nclang-analyzer-osx.cocoa.IncompatibleMethodTypes\nWarn about Objective-C method signatures with type incompatibilities.\nThe\nclang-analyzer-osx.cocoa.IncompatibleMethodTypes\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

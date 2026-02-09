@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineAssignmentLayout": {
+        "description": "Description\n\nChecks for a newline after the assignment operator in multi-line assignments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSupportedTypes: ['block', 'case', 'class', 'if', 'kwbegin', 'module'] (type: list)\nEnforcedStyle: new_line (type: str)\nSupportedStyles: ['same_line', 'new_line'] (type: list)"
+    }
+}

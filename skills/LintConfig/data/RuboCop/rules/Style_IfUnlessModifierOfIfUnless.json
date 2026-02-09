@@ -1,0 +1,6 @@
+{
+    "Style/IfUnlessModifierOfIfUnless": {
+        "description": "Description\n\nAvoid modifier if/unless usage on conditionals.",
+        "option": "This rule has no specific options."
+    }
+}

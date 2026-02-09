@@ -1,0 +1,6 @@
+{
+    "AvoidMessageDigestField": {
+        "description": "Description\n\nDeclaring a MessageDigest instance as a field make this instance directly available to multiple threads.\nSuch sharing of MessageDigest instances should be avoided if possible since it leads to wrong results\nif the access is not synchronized correctly.\nJust create a new instance and use it locally, where you need it.\nCreating a new instance is easier than synchronizing access to a shared instance.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

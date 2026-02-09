@@ -1,0 +1,6 @@
+{
+    "derefInvalidIterator": {
+        "description": "Description\n\nThe product dereferences a pointer that contains a location for memory that was previously valid, but is no longer valid.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 825\nInconclusive: false\nRelated Symbols: i"
+    }
+}

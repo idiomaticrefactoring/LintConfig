@@ -1,0 +1,6 @@
+{
+    "Style/SymbolLiteral": {
+        "description": "Description\n\nUse plain symbols instead of string symbols when possible.",
+        "option": "This rule has no specific options."
+    }
+}

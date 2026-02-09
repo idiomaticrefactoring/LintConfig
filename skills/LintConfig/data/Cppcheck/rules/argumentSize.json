@@ -1,0 +1,6 @@
+{
+    "argumentSize": {
+        "description": "Description\n\nBuffer 'buffer' is too small, the function 'function' expects a bigger buffer in 2nd argument",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: function"
+    }
+}

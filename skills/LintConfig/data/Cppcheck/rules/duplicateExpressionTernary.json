@@ -1,0 +1,6 @@
+{
+    "duplicateExpressionTernary": {
+        "description": "Description\n\nFinding the same expression in both branches of ternary operator is suspicious as the same code is executed regardless of the condition.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

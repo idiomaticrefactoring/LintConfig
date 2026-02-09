@@ -1,0 +1,6 @@
+{
+    "no-negated-condition": {
+        "description": "Description\n\nThis rule disallows negated conditions in either of the following:\n\n- ifstatements which have anelsebranch\n- ternary expressions\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-negated-condition: \"error\"*/\n\nif (!a) {\n    doSomething();\n} else {\n    doSomethingElse();\n}\n\nif (a != b) {\n    doSomething();\n} else {\n    doSomethingElse();\n}\n\nif (a !== b) {\n    doSomething();\n} else {\n    doSomethingElse();\n}\n\n!a ? c : b\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-negated-condition: \"error\"*/\n\nif (!a) {\n    doSomething();\n}\n\nif (!a) {\n    doSomething();\n} else if (b) {\n    doSomething();\n}\n\nif (a != b) {\n    doSomething();\n}\n\na ? b : c",
+        "option": "This rule has no options."
+    }
+}

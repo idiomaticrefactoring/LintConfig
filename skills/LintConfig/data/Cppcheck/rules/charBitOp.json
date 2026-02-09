@@ -1,0 +1,6 @@
+{
+    "charBitOp": {
+        "description": "Description\n\nWhen using 'char' variables in bit operations, sign extension can generate unexpected results. For example:\\012    char c = 0x80;\\012    int i = 0 | c;\\012    if (i & 0x8000)\\012        printf(\"not expected\");\\012The \"not expected\" will be printed on the screen.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

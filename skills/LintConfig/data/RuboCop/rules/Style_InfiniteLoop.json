@@ -1,0 +1,6 @@
+{
+    "Style/InfiniteLoop": {
+        "description": "Description\n\nUse Kernel#loop for infinite loops. This cop is unsafe if the body may raise a `StopIteration` exception.",
+        "option": "This rule has no specific options."
+    }
+}

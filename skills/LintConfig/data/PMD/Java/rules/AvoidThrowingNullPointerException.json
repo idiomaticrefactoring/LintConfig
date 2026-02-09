@@ -1,0 +1,6 @@
+{
+    "AvoidThrowingNullPointerException": {
+        "description": "Description\n\nAvoid throwing NullPointerExceptions manually. These are confusing because most people will assume that the\nvirtual machine threw it.  To avoid a method being called with a null parameter, you may consider\nusing an IllegalArgumentException instead, making it clearly seen as a programmer-initiated exception.\nHowever, there are better ways to handle this:\n\nTo implement that, you are encouraged to usejava.util.Objects.requireNonNull()(introduced in Java 1.7). This method is designed primarily for doing parameter\nvalidation in methods and constructors with multiple parameters.\n\nYour parameter validation could thus look like the following:\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

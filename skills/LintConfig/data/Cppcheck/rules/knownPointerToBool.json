@@ -1,0 +1,6 @@
+{
+    "knownPointerToBool": {
+        "description": "Description\n\nPointer expression 'p' converted to bool is always true.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "CloneMethodMustBePublic": {
+        "description": "Description\n\nThe java manual says \"By convention, classes that implement this interface should override\nObject.clone (which is protected) with a public method.\"\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

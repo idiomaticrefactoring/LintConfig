@@ -1,0 +1,6 @@
+{
+    "no-dupe-args": {
+        "description": "Description\n\nThis rule disallows duplicate parameter names in function declarations or expressions. It does not apply to arrow functions or class methods, because the parser reports the error.\n\nIf ESLint parses code in strict mode, the parser (instead of this rule) reports the error.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-dupe-args: \"error\"*/\n\nfunction foo(a, b, a) {\n    console.log(\"value of the second a:\", a);\n}\n\nconst bar = function (a, b, a) {\n    console.log(\"value of the second a:\", a);\n};\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-dupe-args: \"error\"*/\n\nfunction foo(a, b, c) {\n    console.log(a, b, c);\n}\n\nconst bar = function (a, b, c) {\n    console.log(a, b, c);\n};",
+        "option": "This rule has no options."
+    }
+}

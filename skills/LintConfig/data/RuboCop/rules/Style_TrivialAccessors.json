@@ -1,0 +1,6 @@
+{
+    "Style/TrivialAccessors": {
+        "description": "Description\n\nPrefer attr_* methods to trivial readers/writers.",
+        "option": "This rule supports the following parameters in your configuration:\n\nExactNameMatch: True (type: bool)\nAllowPredicates: True (type: bool)\nAllowDSLWriters: True (type: bool)\nIgnoreClassMethods: False (type: bool)\nAllowedMethods: ['to_ary', 'to_a', 'to_c', 'to_enum', 'to_h', 'to_hash', 'to_i', 'to_int', 'to_io', 'to_open', 'to_path', 'to_proc', 'to_r', 'to_regexp', 'to_str', 'to_s', 'to_sym'] (type: list)"
+    }
+}

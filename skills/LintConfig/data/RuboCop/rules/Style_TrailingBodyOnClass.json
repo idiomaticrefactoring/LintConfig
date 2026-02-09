@@ -1,0 +1,6 @@
+{
+    "Style/TrailingBodyOnClass": {
+        "description": "Description\n\nClass body goes below class statement.",
+        "option": "This rule has no specific options."
+    }
+}

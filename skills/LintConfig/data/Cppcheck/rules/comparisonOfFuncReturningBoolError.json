@@ -1,0 +1,6 @@
+{
+    "comparisonOfFuncReturningBoolError": {
+        "description": "Description\n\nThe return type of function 'func_name' is 'bool' and result is of type 'bool'. Comparing 'bool' value using relational (<, >, <= or >=) operator could cause unexpected results.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

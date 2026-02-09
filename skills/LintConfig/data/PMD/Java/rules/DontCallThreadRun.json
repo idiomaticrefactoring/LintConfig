@@ -1,0 +1,6 @@
+{
+    "DontCallThreadRun": {
+        "description": "Description\n\nExplicitly calling Thread.run() method will execute in the caller’s thread of control.  Instead, call Thread.start() for the intended behavior.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

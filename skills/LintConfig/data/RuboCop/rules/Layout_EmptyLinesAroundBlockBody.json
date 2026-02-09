@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLinesAroundBlockBody": {
+        "description": "Description\n\nKeeps track of empty lines around block bodies.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: no_empty_lines (type: str)\nSupportedStyles: ['empty_lines', 'no_empty_lines'] (type: list)"
+    }
+}

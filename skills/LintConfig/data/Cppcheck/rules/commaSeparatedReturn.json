@@ -1,0 +1,6 @@
+{
+    "commaSeparatedReturn": {
+        "description": "Description\n\nComma is used in return statement. When comma is used in a return statement it can easily be misread as a semicolon. For example in the code below the value of 'b' is returned if the condition is true, but it is easy to think that 'a+1' is returned:\\012    if (x)\\012        return a + 1,\\012    b++;\\012However it can be useful to use comma in macros. Cppcheck does not warn when such a macro is then used in a return statement, it is less likely such code is misunderstood.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

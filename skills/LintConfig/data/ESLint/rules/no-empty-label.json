@@ -1,0 +1,6 @@
+{
+    "no-empty-label": {
+        "description": "Description\n\nThis error occurs when a label is used to mark a statement that is not an iteration or switch\n\nExample ofincorrectcode for this rule:\n\n/*eslint no-empty-label: \"error\"*/\n\nlabeled:\nvar x = 10;\n\nExample ofcorrectcode for this rule:\n\n/*eslint no-empty-label: \"error\"*/\n\nlabeled:\nfor (var i=10; i; i--) {\n    // ...\n}",
+        "option": "This rule has no specific options."
+    }
+}

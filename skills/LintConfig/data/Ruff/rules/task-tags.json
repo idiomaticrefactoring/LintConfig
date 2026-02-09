@@ -1,0 +1,6 @@
+{
+    "task-tags": {
+        "description": "Description\n\nA list of task tags to recognize (e.g., \"TODO\", \"FIXME\", \"XXX\").\n\nComments starting with these tags will be ignored by commented-out code\ndetection (`ERA`), and skipped by line-length rules (`E501`) if\n[`ignore-overlong-task-comments`](#lint_pycodestyle_ignore-overlong-task-comments) is set to `true`.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

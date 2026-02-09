@@ -1,0 +1,6 @@
+{
+    "no-script-url": {
+        "description": "Description\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-script-url: \"error\"*/\n\nlocation.href = \"javascript:void(0)\";\n\nlocation.href = `javascript:void(0)`;",
+        "option": "This rule has no options."
+    }
+}

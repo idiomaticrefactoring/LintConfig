@@ -1,0 +1,6 @@
+{
+    "stlFindInsert": {
+        "description": "Description\n\nSearching before insertion is not necessary.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "CompareObjectsWithEquals": {
+        "description": "Description\n\nUseequals()to compare object references; avoid comparing them with==.\n\nSince comparing objects with named constants is useful in some cases (eg, when\ndefining constants for sentinel values), the rule ignores comparisons against\nfields with all-caps name (egthis == SENTINEL), which is a common naming\nconvention for constant fields.\n\nYou may allow some types to be compared by reference by listing the exceptions\nin thetypesThatCompareByReferenceproperty.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ntypesThatCompareByReference\tjava.lang.Enum , java.lang.Class\tList of canonical type names for which reference comparison is allowed."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "readability-use-std-min-max": {
+        "description": "Description\n\nReplaces certain conditional statements with equivalent calls to\nstd::min\nor\nstd::max\n.\nNote: This may impact performance in critical code due to potential\nadditional stores compared to the original if statement.\n\nBefore:\n\nvoid\nfoo\n()\n{\nint\na\n=\n2\n,\nb\n=\n3\n;\nif\n(\na\n<\nb\n)\na\n=\nb\n;\n}\n\nAfter:\n\nvoid\nfoo\n()\n{\nint\na\n=\n2\n,\nb\n=\n3\n;\na\n=\nstd\n::\nmax\n(\na\n,\nb\n);\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

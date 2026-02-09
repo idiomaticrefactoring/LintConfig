@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-security.PutenvStackArray": {
+        "description": "Description\n\nclang-analyzer-security.PutenvStackArray\nFinds calls to the putenv function which pass a pointer to a stack-allocated\n(automatic) array as the argument. Function putenv does not copy the passed\nstring, only a pointer to the data is stored and this data can be read even by\nother threads. Content of a stack-allocated array is likely to be overwritten\nafter exiting from the function.\nThe\nclang-analyzer-security.PutenvStackArray\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

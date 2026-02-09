@@ -1,0 +1,6 @@
+{
+    "invalidPointerCast": {
+        "description": "Description\n\nThe product does not correctly convert an object, resource, or structure from one type to a different type.",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: 704\nInconclusive: false"
+    }
+}

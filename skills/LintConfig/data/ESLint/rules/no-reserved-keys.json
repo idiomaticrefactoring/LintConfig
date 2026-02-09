@@ -1,0 +1,6 @@
+{
+    "no-reserved-keys": {
+        "description": "Description\n\nThis rule is aimed at eliminating the use of ECMAScript 3 keywords and reserved words as object literal keys. As such, it warns whenever an object key would throw an error in an ECMAScript 3 environment.\n\nExamples ofincorrectcode for this rule:\n\nvar superman = {\n    class: \"Superhero\",\n    private: \"Clark Kent\"\n};\n\nvar values = {\n    enum: [\"red\", \"blue\", \"green\"]\n};\n\nExamples ofcorrectcode for this rule:\n\nvar superman = {\n    \"class\": \"Superhero\",\n    \"private\": \"Clark Kent\"\n};\n\nvar values = {\n    \"enum\": [\"red\", \"blue\", \"green\"]\n};",
+        "option": "This rule has no specific options."
+    }
+}

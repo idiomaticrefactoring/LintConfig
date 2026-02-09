@@ -1,0 +1,6 @@
+{
+    "cert-dcl50-cpp": {
+        "description": "Description\n\nThe\ncert-dcl50-cpp\ncheck is an alias, please see\nmodernize-avoid-variadic-functions\nfor more information.\n\nThis check corresponds to the CERT C++ Coding Standard rule\nDCL50-CPP. Do not define a C-style variadic function\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

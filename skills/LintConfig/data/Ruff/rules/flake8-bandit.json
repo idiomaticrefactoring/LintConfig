@@ -1,0 +1,6 @@
+{
+    "flake8-bandit": {
+        "description": "Description\n\nOptions for the `flake8-bandit` plugin.",
+        "option": "Type: Flake8BanditOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allowed-markup-calls: A list of callable names, whose result may be safely passed into\n  - check-typed-exception: Whether to disallow `try`-`except`-`pass` (`S110`) for specific\n  - extend-markup-names: A list of additional callable names that behave like\n  - hardcoded-tmp-directory: A list of directories to consider temporary (see `S108`).\n  - hardcoded-tmp-directory-extend: A list of directories to consider temporary, in addition to those"
+    }
+}

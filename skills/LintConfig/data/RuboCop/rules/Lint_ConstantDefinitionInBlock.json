@@ -1,0 +1,6 @@
+{
+    "Lint/ConstantDefinitionInBlock": {
+        "description": "Description\n\nDo not define constants within a block.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['enums'] (type: list)"
+    }
+}

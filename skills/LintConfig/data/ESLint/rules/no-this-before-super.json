@@ -1,0 +1,6 @@
+{
+    "no-this-before-super": {
+        "description": "Description\n\nThis rule is aimed to flagthis/superkeywords beforesuper()callings.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-this-before-super: \"error\"*/\n\nclass A1 extends B {\n    constructor() {\n        this.a = 0;\n        super();\n    }\n}\n\nclass A2 extends B {\n    constructor() {\n        this.foo();\n        super();\n    }\n}\n\nclass A3 extends B {\n    constructor() {\n        super.foo();\n        super();\n    }\n}\n\nclass A4 extends B {\n    constructor() {\n        super(this.foo());\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-this-before-super: \"error\"*/\n\nclass A1 {\n    constructor() {\n        this.a = 0; // OK, this class doesn't have an `extends` clause.\n    }\n}\n\nclass A2 extends B {\n    constructor() {\n        super();\n        this.a = 0; // OK, this is after `super()`.\n    }\n}\n\nclass A3 extends B {\n    foo() {\n        this.a = 0; // OK. this is not in a constructor.\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

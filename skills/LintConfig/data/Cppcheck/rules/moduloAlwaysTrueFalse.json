@@ -1,0 +1,6 @@
+{
+    "moduloAlwaysTrueFalse": {
+        "description": "Description\n\nComparison of modulo result is predetermined, because it is always less than 1.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

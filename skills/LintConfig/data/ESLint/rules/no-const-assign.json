@@ -1,0 +1,6 @@
+{
+    "no-const-assign": {
+        "description": "Description\n\nThis rule is aimed to flag modifying variables that are declared usingconst,using, orawait usingkeywords.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-const-assign: \"error\"*/\n\nconst a = 0;\na = 1;\n\n/*eslint no-const-assign: \"error\"*/\n\nconst a = 0;\na += 1;\n\n/*eslint no-const-assign: \"error\"*/\n\nconst a = 0;\n++a;\n\n/*eslint no-const-assign: \"error\"*/\n\nif (foo) {\n\tusing a = getSomething();\n\ta = somethingElse;\n}\n\nif (bar) {\n\tawait using a = getSomething();\n\ta = somethingElse;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-const-assign: \"error\"*/\n\nconst a = 0;\nconsole.log(a);\n\n/*eslint no-const-assign: \"error\"*/\n\nif (foo) {\n\tusing a = getSomething();\n\ta.execute();\n}\n\nif (bar) {\n\tawait using a = getSomething();\n\ta.execute();\n}\n\n/*eslint no-const-assign: \"error\"*/\n\nfor (const a in [1, 2, 3]) { // `a` is re-defined (not modified) on each loop step.\n    console.log(a);\n}\n\n/*eslint no-const-assign: \"error\"*/\n\nfor (const a of [1, 2, 3]) { // `a` is re-defined (not modified) on each loop step.\n    console.log(a);\n}",
+        "option": "This rule has no options."
+    }
+}

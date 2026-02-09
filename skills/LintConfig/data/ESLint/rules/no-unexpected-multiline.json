@@ -1,0 +1,6 @@
+{
+    "no-unexpected-multiline": {
+        "description": "Description\n\nThis rule disallows confusing multiline expressions where a newline looks like it is ending a statement, but is not.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-unexpected-multiline: \"error\"*/\n\nconst foo = bar\n(1 || 2).baz();\n\nconst hello = 'world'\n[1, 2, 3].forEach(addNumber);\n\nconst x = function() {}\n`hello`\n\nconst y = function() {}\ny\n`hello`\n\nconst z = foo\n/regex/g.test(bar)\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-unexpected-multiline: \"error\"*/\n\nconst foo = bar;\n(1 || 2).baz();\n\nconst baz = bar\n;(1 || 2).baz()\n\nconst hello = 'world';\n[1, 2, 3].forEach(addNumber);\n\nconst hi = 'world'\nvoid [1, 2, 3].forEach(addNumber);\n\nconst x = function() {};\n`hello`\n\nconst tag = function() {}\ntag `hello`",
+        "option": "This rule has no options."
+    }
+}

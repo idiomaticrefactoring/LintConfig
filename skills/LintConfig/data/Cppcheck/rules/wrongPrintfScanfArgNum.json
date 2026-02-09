@@ -1,0 +1,6 @@
+{
+    "wrongPrintfScanfArgNum": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine, but the caller specifies too many arguments, or too few arguments, which may lead to undefined behavior and resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 685\nInconclusive: false"
+    }
+}

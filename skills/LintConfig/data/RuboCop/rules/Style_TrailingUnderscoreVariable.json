@@ -1,0 +1,6 @@
+{
+    "Style/TrailingUnderscoreVariable": {
+        "description": "Description\n\nChecks for the usage of unneeded trailing underscores at the end of parallel variable assignment.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowNamedUnderscoreVariables: True (type: bool)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/EmptyLinesAroundAccessModifier": {
+        "description": "Description\n\nKeep blank lines around access modifiers.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: around (type: str)\nSupportedStyles: ['around', 'only_before'] (type: list)\nReferences: ['https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions'] (type: list)"
+    }
+}

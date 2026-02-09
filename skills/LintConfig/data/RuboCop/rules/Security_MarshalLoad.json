@@ -1,0 +1,6 @@
+{
+    "Security/MarshalLoad": {
+        "description": "Description\n\nAvoid using of `Marshal.load` or `Marshal.restore` due to potential security issues. See reference for more information.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://ruby-doc.org/core-2.7.0/Marshal.html#module-Marshal-label-Security+considerations'] (type: list)"
+    }
+}

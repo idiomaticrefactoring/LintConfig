@@ -1,0 +1,6 @@
+{
+    "Style/AutoResourceCleanup": {
+        "description": "Description\n\nSuggests the usage of an auto resource cleanup version of a method (if available).",
+        "option": "This rule has no specific options."
+    }
+}

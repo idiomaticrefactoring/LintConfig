@@ -1,0 +1,278 @@
+{
+    "ApexAssertionsShouldIncludeMessage": {
+        "description": "The second parameter of System.assert/third parameter of System.assertEquals/System.assertNotEqua…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#apexassertionsshouldincludemessage"
+    },
+    "ApexUnitTestClassShouldHaveAsserts": {
+        "description": "Apex unit tests should include at least one assertion.  This makes the tests more robust, and usi…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#apexunittestclassshouldhaveasserts"
+    },
+    "ApexUnitTestClassShouldHaveRunAs": {
+        "description": "Apex unit tests should include at least one runAs method.  This makes the tests more robust, and …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#apexunittestclassshouldhaverunas"
+    },
+    "ApexUnitTestMethodShouldHaveIsTestAnnotation": {
+        "description": "Apex test methods should have ‘@isTest’ annotation instead of the ‘testMethod’ keyword, as ‘testM…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#apexunittestmethodshouldhaveistestannotation"
+    },
+    "ApexUnitTestShouldNotUseSeeAllDataTrue": {
+        "description": "Apex unit tests should not use @isTest(seeAllData=true) because it opens up the existing database…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#apexunittestshouldnotuseseealldatatrue"
+    },
+    "AvoidFutureAnnotation": {
+        "description": "Usage of the ‘@Future’ annotation should be limited. The ‘@Future’ annotation is a legacy way to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#avoidfutureannotation"
+    },
+    "AvoidGlobalModifier": {
+        "description": "Global classes should be avoided (especially in managed packages) as they can never be deleted or…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#avoidglobalmodifier"
+    },
+    "AvoidLogicInTrigger": {
+        "description": "As triggers do not allow methods like regular classes they are less flexible and suited to apply …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#avoidlogicintrigger"
+    },
+    "DebugsShouldUseLoggingLevel": {
+        "description": "The first parameter of System.debug, when using the signature with two parameters, is a LoggingLe…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#debugsshoulduselogginglevel"
+    },
+    "QueueableWithoutFinalizer": {
+        "description": "Detects when the Queueable interface is used but a Finalizer is not attached.             It is b…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#queueablewithoutfinalizer"
+    },
+    "UnusedLocalVariable": {
+        "description": "Detects when a local variable is declared and/or assigned but not used.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_bestpractices.html#unusedlocalvariable"
+    },
+    "AnnotationsNamingConventions": {
+        "description": "Quickstart configuration of PMD for Salesforce.com Apex. Includes the rules that are most likely to apply everywhere.It contains the following rules:AnnotationsNamingConventions,ApexBadCrypto,ApexCRUDViolation,ApexCSRF,ApexDangerousMethods,ApexDoc,ApexInsecureEndpoint,ApexOpenRedirect,ApexSharingViolations,ApexSOQLInjection,ApexSuggestUsingNamedCred,ApexUnitTestClassShouldHaveAsserts,ApexUnitTestClassShouldHaveRunAs,ApexUnitTestShouldNotUseSeeAllDataTrue,ApexXSSFromEscapeFalse,ApexXSSFromURLParam,AvoidDeeplyNestedIfStmts,AvoidDirectAccessTriggerMap,AvoidGlobalModifier,AvoidHardcodingId,AvoidLogicInTrigger,AvoidNonExistentAnnotations,ClassNamingConventions,CyclomaticComplexity,DebugsShouldUseLoggingLevel,EmptyCatchBlock,EmptyIfStmt,EmptyStatementBlock,EmptyTryOrFinallyBlock,EmptyWhileStmt,ExcessiveParameterList,ExcessivePublicCount,FieldNamingConventions,ForLoopsMustUseBraces,FormalParameterNamingConventions,IfElseStmtsMustUseBraces,IfStmtsMustUseBraces,LocalVariableNamingConventions,MethodNamingConventions,MethodWithSameNameAsEnclosingClass,NcssCount,OneDeclarationPerLine,OperationWithHighCostInLoop,OperationWithLimitsInLoop,PropertyNamingConventions,StdCyclomaticComplexity,TooManyFields,WhileLoopsMustUseBraces",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#annotationsnamingconventions"
+    },
+    "ClassNamingConventions": {
+        "description": "Configurable naming conventions for type declarations. This rule reports             type declara…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#classnamingconventions"
+    },
+    "FieldDeclarationsShouldBeAtStart": {
+        "description": "Field declarations should appear before method declarations within a class. Note: Since PMD 7.21….",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#fielddeclarationsshouldbeatstart"
+    },
+    "FieldNamingConventions": {
+        "description": "Configurable naming conventions for field declarations. This rule reports variable declarations  …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#fieldnamingconventions"
+    },
+    "ForLoopsMustUseBraces": {
+        "description": "Avoid using ‘for’ statements without using surrounding braces. If the code formatting or indentat…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#forloopsmustusebraces"
+    },
+    "FormalParameterNamingConventions": {
+        "description": "Configurable naming conventions for formal parameters of methods.             This rule reports f…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#formalparameternamingconventions"
+    },
+    "IfElseStmtsMustUseBraces": {
+        "description": "Avoid using if..else statements without using surrounding braces. If the code formatting         …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces"
+    },
+    "IfStmtsMustUseBraces": {
+        "description": "Avoid using if statements without using braces to surround the code block. If the code           …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces"
+    },
+    "LocalVariableNamingConventions": {
+        "description": "Configurable naming conventions for local variable declarations.             This rule reports va…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#localvariablenamingconventions"
+    },
+    "MethodNamingConventions": {
+        "description": "Configurable naming conventions for method declarations. This rule reports             method dec…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#methodnamingconventions"
+    },
+    "OneDeclarationPerLine": {
+        "description": "Apex allows the use of several variables declaration of the same type on one line. However, it ca…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#onedeclarationperline"
+    },
+    "PropertyNamingConventions": {
+        "description": "Configurable naming conventions for property declarations. This rule reports             property…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#propertynamingconventions"
+    },
+    "WhileLoopsMustUseBraces": {
+        "description": "Avoid using ‘while’ statements without using braces to surround the code block. If the code forma…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_codestyle.html#whileloopsmustusebraces"
+    },
+    "AvoidBooleanMethodParameters": {
+        "description": "Boolean parameters in a system’s API can make method calls difficult to understand and           …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#avoidbooleanmethodparameters"
+    },
+    "AvoidDeeplyNestedIfStmts": {
+        "description": "Avoid creating deeply nested if-then statements since they are harder to read and error-prone to …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#avoiddeeplynestedifstmts"
+    },
+    "CognitiveComplexity": {
+        "description": "Methods that are highly complex are difficult to read and more costly to maintain. If you include…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#cognitivecomplexity"
+    },
+    "CyclomaticComplexity": {
+        "description": "The complexity of methods directly affects maintenance costs and readability. Concentrating too m…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#cyclomaticcomplexity"
+    },
+    "ExcessiveClassLength": {
+        "description": "DeprecatedExcessive class file lengths are usually indications that the class may be burdened with excessiv…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#excessiveclasslength"
+    },
+    "ExcessiveParameterList": {
+        "description": "Methods with numerous parameters are a challenge to maintain, especially if most of them share th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#excessiveparameterlist"
+    },
+    "ExcessivePublicCount": {
+        "description": "Classes with large numbers of public methods, attributes, and properties require disproportionate…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#excessivepubliccount"
+    },
+    "NcssConstructorCount": {
+        "description": "DeprecatedThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of l…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#ncssconstructorcount"
+    },
+    "NcssCount": {
+        "description": "This rule uses the NCSS (Non-Commenting Source Statements) metric to determine the number of line…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#ncsscount"
+    },
+    "NcssMethodCount": {
+        "description": "DeprecatedThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of l…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#ncssmethodcount"
+    },
+    "NcssTypeCount": {
+        "description": "DeprecatedThis rule uses the NCSS (Non-Commenting Source Statements) algorithm to determine the number of l…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#ncsstypecount"
+    },
+    "StdCyclomaticComplexity": {
+        "description": "Complexity directly affects maintenance costs is determined by the number of decision points in a…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#stdcyclomaticcomplexity"
+    },
+    "TooManyFields": {
+        "description": "Classes that have too many fields can become unwieldy and could be redesigned to have fewer field…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#toomanyfields"
+    },
+    "UnusedMethod": {
+        "description": "Avoid having unused methods since they make understanding and maintaining code harder. This rule …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_design.html#unusedmethod"
+    },
+    "ApexDoc": {
+        "description": "This rule validates that:    ApexDoc comments are present for classes, methods, and properties th…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_documentation.html#apexdoc"
+    },
+    "ApexCSRF": {
+        "description": "Having DML operations in Apex class constructor or initializers can have unexpected side effects:…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#apexcsrf"
+    },
+    "AvoidDirectAccessTriggerMap": {
+        "description": "Avoid directly accessing Trigger.old and Trigger.new as it can lead to a bug. Triggers should be …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#avoiddirectaccesstriggermap"
+    },
+    "AvoidHardcodingId": {
+        "description": "When deploying Apex code between sandbox and production environments, or installing Force.com App…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#avoidhardcodingid"
+    },
+    "AvoidNonExistentAnnotations": {
+        "description": "Apex supported non existent annotations for legacy reasons.       In the future, use of such non-…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#avoidnonexistentannotations"
+    },
+    "AvoidStatefulDatabaseResult": {
+        "description": "Using instance variables of the following types (or collections of these types) within a stateful…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#avoidstatefuldatabaseresult"
+    },
+    "EmptyCatchBlock": {
+        "description": "Empty Catch Block finds instances where an exception is caught, but nothing is done.       In mos…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#emptycatchblock"
+    },
+    "EmptyIfStmt": {
+        "description": "Empty If Statement finds instances where a condition is checked but nothing is done about it.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#emptyifstmt"
+    },
+    "EmptyStatementBlock": {
+        "description": "Empty block statements serve no purpose and should be removed.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#emptystatementblock"
+    },
+    "EmptyTryOrFinallyBlock": {
+        "description": "Avoid empty try or finally blocks - what’s the point?",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#emptytryorfinallyblock"
+    },
+    "EmptyWhileStmt": {
+        "description": "Empty While Statement finds all instances where a while statement does nothing.       If it is a …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#emptywhilestmt"
+    },
+    "InaccessibleAuraEnabledGetter": {
+        "description": "In the Summer ‘21 release, a mandatory security update enforces access modifiers on Apex properti…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#inaccessibleauraenabledgetter"
+    },
+    "MethodWithSameNameAsEnclosingClass": {
+        "description": "Non-constructor methods should not have the same name as the enclosing class.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#methodwithsamenameasenclosingclass"
+    },
+    "OverrideBothEqualsAndHashcode": {
+        "description": "Override both ‘public Boolean equals(Object obj)’, and ‘public Integer hashCode()’, or override n…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#overridebothequalsandhashcode"
+    },
+    "TestMethodsMustBeInTestClasses": {
+        "description": "Test methods marked as a testMethod or annotated with @IsTest,       but not residing in a test c…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#testmethodsmustbeintestclasses"
+    },
+    "TypeShadowsBuiltInNamespace": {
+        "description": "This rule finds Apex classes, enums, and interfaces that have the same name as a class, enum, or …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_errorprone.html#typeshadowsbuiltinnamespace"
+    },
+    "AvoidDebugStatements": {
+        "description": "Debug statements contribute to longer transactions and consume Apex CPU time even when debug logs…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_performance.html#avoiddebugstatements"
+    },
+    "AvoidNonRestrictiveQueries": {
+        "description": "When working with very large amounts of data, unfiltered SOQL or SOSL queries can quickly cause  …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_performance.html#avoidnonrestrictivequeries"
+    },
+    "EagerlyLoadedDescribeSObjectResult": {
+        "description": "This rule finds ‘DescribeSObjectResult’s which could have been loaded eagerly via ‘SObjectType.ge…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_performance.html#eagerlyloadeddescribesobjectresult"
+    },
+    "OperationWithHighCostInLoop": {
+        "description": "This rule finds method calls inside loops that are known to be likely a performance issue. These …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_performance.html#operationwithhighcostinloop"
+    },
+    "OperationWithLimitsInLoop": {
+        "description": "Database class methods, DML operations, SOQL queries, SOSL queries, Approval class methods, Email…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_performance.html#operationwithlimitsinloop"
+    },
+    "ApexBadCrypto": {
+        "description": "The rule makes sure you are using randomly generated IVs and keys for ‘Crypto’ calls. Hard-wiring…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexbadcrypto"
+    },
+    "ApexCRUDViolation": {
+        "description": "The rule validates you are checking for access permissions before a SOQL/SOSL/DML operation. Sinc…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexcrudviolation"
+    },
+    "ApexDangerousMethods": {
+        "description": "Checks against calling dangerous methods. For the time being, it reports:  Against ‘FinancialForc…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexdangerousmethods"
+    },
+    "ApexInsecureEndpoint": {
+        "description": "Checks against accessing endpoints under plain http. You should always use https for security.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexinsecureendpoint"
+    },
+    "ApexOpenRedirect": {
+        "description": "Checks against redirects to user-controlled locations. This prevents attackers from redirecting u…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexopenredirect"
+    },
+    "ApexSharingViolations": {
+        "description": "Detect classes declared without explicit sharing mode if DML methods are used. This forces the de…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexsharingviolations"
+    },
+    "ApexSOQLInjection": {
+        "description": "Detects the usage of untrusted / unescaped variables in DML queries.",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexsoqlinjection"
+    },
+    "ApexSuggestUsingNamedCred": {
+        "description": "Detects hardcoded credentials used in requests to an endpoint. You should refrain from hardcoding…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexsuggestusingnamedcred"
+    },
+    "ApexXSSFromEscapeFalse": {
+        "description": "Reports on calls to ‘addError’ with disabled escaping. The message passed to ‘addError’ will be d…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexxssfromescapefalse"
+    },
+    "ApexXSSFromURLParam": {
+        "description": "Makes sure that all values obtained from URL parameters are properly escaped / sanitized to avoid…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_apex_security.html#apexxssfromurlparam"
+    }
+}

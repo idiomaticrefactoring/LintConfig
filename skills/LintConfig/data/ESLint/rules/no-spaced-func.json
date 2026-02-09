@@ -1,0 +1,6 @@
+{
+    "no-spaced-func": {
+        "description": "Description\n\nThis rule disallows spacing between function identifiers and their applications.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-spaced-func: \"error\"*/\n\nfn ()\n\nfn\n()\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-spaced-func: \"error\"*/\n\nfn()",
+        "option": "This rule has no specific options."
+    }
+}

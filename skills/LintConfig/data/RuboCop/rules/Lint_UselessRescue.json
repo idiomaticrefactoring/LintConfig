@@ -1,0 +1,6 @@
+{
+    "Lint/UselessRescue": {
+        "description": "Description\n\nChecks for useless `rescue`s.",
+        "option": "This rule has no specific options."
+    }
+}

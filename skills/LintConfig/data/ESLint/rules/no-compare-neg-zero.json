@@ -1,0 +1,6 @@
+{
+    "no-compare-neg-zero": {
+        "description": "Description\n\nThe rule should warn against code that tries to compare against-0, since that will not work as intended. That is, code likex === -0will pass for both+0and-0. The author probably intendedObject.is(x, -0).\n\nExamples ofincorrectcode for this rule:\n\n/* eslint no-compare-neg-zero: \"error\" */\n\nif (x === -0) {\n    // doSomething()...\n}\n\nExamples ofcorrectcode for this rule:\n\n/* eslint no-compare-neg-zero: \"error\" */\n\nif (x === 0) {\n    // doSomething()...\n}\n\n/* eslint no-compare-neg-zero: \"error\" */\n\nif (Object.is(x, -0)) {\n    // doSomething()...\n}",
+        "option": "This rule has no options."
+    }
+}

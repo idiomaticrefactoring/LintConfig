@@ -1,0 +1,6 @@
+{
+    "no-new-symbol": {
+        "description": "Description\n\nThis rule is aimed at preventing the accidental calling ofSymbolwith thenewoperator.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-new-symbol: \"error\"*/\n\nvar foo = new Symbol('foo');\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-new-symbol: \"error\"*/\n\nvar foo = Symbol('foo');\n\n// Ignores shadowed Symbol.\nfunction bar(Symbol) {\n    const baz = new Symbol(\"baz\");\n}",
+        "option": "This rule has no specific options."
+    }
+}

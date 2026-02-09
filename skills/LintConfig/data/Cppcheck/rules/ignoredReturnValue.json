@@ -1,0 +1,6 @@
+{
+    "ignoredReturnValue": {
+        "description": "Description\n\nThe product does not check the return value from a method or function, which can prevent it from detecting unexpected states and conditions.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 252\nInconclusive: false\nRelated Symbols: malloc"
+    }
+}

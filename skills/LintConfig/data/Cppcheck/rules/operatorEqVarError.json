@@ -1,0 +1,6 @@
+{
+    "operatorEqVarError": {
+        "description": "Description\n\nMember variable 'classname::' is not assigned a value in 'classname::operator='.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false\nRelated Symbols: classname::"
+    }
+}

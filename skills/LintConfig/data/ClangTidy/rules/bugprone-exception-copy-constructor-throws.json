@@ -1,0 +1,6 @@
+{
+    "bugprone-exception-copy-constructor-throws": {
+        "description": "Description\n\nChecks whether a thrown object’s copy constructor can throw.\n\nException objects are required to be copy constructible in C++. However, an\nexception’s copy constructor should not throw to avoid potential issues when\nunwinding the stack. If an exception is thrown during stack unwinding (such\nas from a copy constructor of an exception object), the program will\nterminate via\nstd::terminate\n.\n\nclass\nSomeException\n{\npublic\n:\nSomeException\n()\n=\ndefault\n;\nSomeException\n(\nconst\nSomeException\n&\n)\n{\n/* may throw */\n}\n};\nvoid\nf\n()\n{\nthrow\nSomeException\n();\n// warning: thrown exception type's copy constructor can throw\n}\n\nReferences\nThis check corresponds to the CERT C++ Coding Standard rule\nERR60-CPP. Exception objects must be nothrow copy constructible\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

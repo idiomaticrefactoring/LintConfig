@@ -1,0 +1,6 @@
+{
+    "Security/Eval": {
+        "description": "Description\n\nThe use of eval represents a serious security risk.",
+        "option": "This rule has no specific options."
+    }
+}

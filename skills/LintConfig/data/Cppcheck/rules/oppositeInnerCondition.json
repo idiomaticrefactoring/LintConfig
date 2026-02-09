@@ -1,0 +1,6 @@
+{
+    "oppositeInnerCondition": {
+        "description": "Description\n\nOpposite inner 'if' condition leads to a dead code block (outer condition is 'x' and inner condition is '!x').",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

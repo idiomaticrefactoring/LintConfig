@@ -1,0 +1,6 @@
+{
+    "Gemspec/DuplicatedAssignment": {
+        "description": "Description\n\nAn attribute assignment method calls should be listed only once in a gemspec.",
+        "option": "This rule supports the following parameters in your configuration:\n\nSeverity: warning (type: str)"
+    }
+}

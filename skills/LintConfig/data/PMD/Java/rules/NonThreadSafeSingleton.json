@@ -1,0 +1,6 @@
+{
+    "NonThreadSafeSingleton": {
+        "description": "Description\n\nNon-thread safe singletons can result in bad state changes. Eliminate\nstatic singletons if possible by instantiating the object directly. Static\nsingletons are usually not needed as only a single instance exists anyway.\nOther possible fixes are to synchronize the entire method or to use aninitialize-on-demand holder class.\n\nRefrain from using the double-checked locking pattern. The Java Memory Model doesn’t\nguarantee it to work unless the variable is declared asvolatile, adding an unneeded\nperformance penalty.Reference\n\nSee Effective Java, item 48.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\ncheckNonStaticMethods\ttrue\tCheck for non-static methods.  Do not set this to false and checkNonStaticFields to true.\ncheckNonStaticFields\tfalse\tCheck for non-static fields.  Do not set this to true and checkNonStaticMethods to false."
+    }
+}

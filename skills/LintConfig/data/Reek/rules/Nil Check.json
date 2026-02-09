@@ -1,0 +1,6 @@
+{
+    "Nil Check": {
+        "description": "Description\n\nIntroduction\n\nA Nil Check is a type check. Failures of Nil Check violate the\n\"tell, don't ask\" principle.\nAdditionally to that, type checks often mask bigger problems in your source\ncode like not using OOP and / or polymorphism when you should.\n\nThe Nil Check code smell is a case of Simulated Polymorphism.\n\nExample\n\nGiven\n\nruby\nclass Klass\n  def nil_checker(argument)\n    if argument.nil?\n      puts \"argument is nil!\"\n    end\n  end\nend\n\nReek would emit the following warning:\n\ntest.rb -- 1 warning:\n  [3]:Klass#nil_checker performs a nil-check. (NilCheck)\n\nCurrent Support in Reek\n\nNil Check reports use of\n\n.nil? method\n== and === operators when checking vs. nil\ncase statements that use syntax like when nil\n\nNil Check allows use of\n\nthe safe navigation operator like foo&.bar",
+        "option": "Nil Check offers the Basic Smell Options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Control Couple": {
+        "description": "Description\n\nIntroduction\n\nControl coupling occurs when a method or block checks the value of a parameter\nin order to decide which execution path to take. The offending parameter is\noften called a Control Couple.\n\nControl Coupling is a kind of duplication, because the calling method already knows which path should be taken.\n\nControl Coupling reduces the code's flexibility by creating a dependency\nbetween the caller and callee: any change to the possible values of the\ncontrolling parameter must be reflected on both sides of the call. A Control\nCouple also reveals a loss of simplicity: the called method probably has more\nthan one responsibility, because it includes at least two different code paths.\n\nYou can find a good write-up regarding this problem here.\n\nCurrent Support in Reek\n\nReek performs the following checks that fall in this category:\n\nControl-Parameter - a method parameter or block\n  parameter is the tested value in a conditional statement\nBoolean-Parameter - a method parameter is defaulted\n  to true or false.",
+        "option": "This rule has no specific options."
+    }
+}

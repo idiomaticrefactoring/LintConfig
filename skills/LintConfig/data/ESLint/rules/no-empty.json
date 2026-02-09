@@ -1,0 +1,6 @@
+{
+    "no-empty": {
+        "description": "Description\n\nThis rule disallows empty block statements. This rule ignores block statements which contain a comment (for example, in an emptycatchorfinallyblock of atrystatement to indicate that execution should continue regardless of errors).\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-empty: \"error\"*/\n\nif (foo) {\n}\n\nwhile (foo) {\n}\n\nswitch(foo) {\n}\n\ntry {\n    doSomething();\n} catch(ex) {\n\n} finally {\n\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-empty: \"error\"*/\n\nif (foo) {\n    // empty\n}\n\nwhile (foo) {\n    /* empty */\n}\n\nswitch(foo) {\n    /* empty */\n}\n\ntry {\n    doSomething();\n} catch (ex) {\n    // continue regardless of error\n}\n\ntry {\n    doSomething();\n} finally {\n    /* continue regardless of error */\n}",
+        "option": "This rule has an object option for exceptions:\n\n- \"allowEmptyCatch\": trueallows emptycatchclauses (that is, which do not contain a comment)\n\nallowEmptyCatch\n\nExamples of additionalcorrectcode for this rule with the{ \"allowEmptyCatch\": true }option:\n\n/* eslint no-empty: [\"error\", { \"allowEmptyCatch\": true }] */\ntry {\n    doSomething();\n} catch (ex) {}\n\ntry {\n    doSomething();\n}\ncatch (ex) {}\nfinally {\n    /* continue regardless of error */\n}"
+    }
+}

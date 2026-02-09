@@ -1,0 +1,6 @@
+{
+    "stlcstrthrow": {
+        "description": "Description\n\nDangerous usage of c_str(). The string is destroyed after the c_str() call so the thrown pointer is invalid.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: N/A\nInconclusive: false"
+    }
+}

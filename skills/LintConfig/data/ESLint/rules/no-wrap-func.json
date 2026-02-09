@@ -1,0 +1,6 @@
+{
+    "no-wrap-func": {
+        "description": "Description\n\nThis rule will raise a warning when it encounters a function expression wrapped in parentheses with no following invoking parentheses.\n\nExample ofincorrectcode for this rule:\n\nvar a = (function() {/*...*/});\n\nExamples ofcorrectcode for this rule:\n\nvar a = function() {/*...*/};\n\n(function() {/*...*/})();",
+        "option": "This rule has no specific options."
+    }
+}

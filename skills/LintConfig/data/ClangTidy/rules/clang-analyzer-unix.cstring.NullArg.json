@@ -1,0 +1,6 @@
+{
+    "clang-analyzer-unix.cstring.NullArg": {
+        "description": "Description\n\nclang-analyzer-unix.cstring.NullArg\nCheck for null pointers being passed as arguments to C string functions.\nThe\nclang-analyzer-unix.cstring.NullArg\ncheck is an alias, please see\nClang Static Analyzer Available Checkers\nfor more information.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Metrics/PerceivedComplexity": {
+        "description": "Description\n\nA complexity metric geared towards measuring complexity for a human reader.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)\nMax: 8 (type: int)"
+    }
+}

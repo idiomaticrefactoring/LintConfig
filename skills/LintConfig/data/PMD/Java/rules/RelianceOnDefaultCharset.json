@@ -1,0 +1,6 @@
+{
+    "RelianceOnDefaultCharset": {
+        "description": "Description\n\nBe sure to specify a character set for APIs that use the JVM’s default character set to ensure\nstable encoding behavior between different JVMs, programs, and servers. Using the platform’s\ndefault charset makes the code less portable and might lead to unexpected behavior when running\non different systems.\n\nAdditional, since Java 18, the default charset for these APIs is consistently UTF-8\n(seeJEP 400). While this reduces unexpected behavior\non different systems, it is still advised to explicitly specify a character set,\nespecially if UTF-8 is not the desired charset.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

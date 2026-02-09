@@ -1,0 +1,6 @@
+{
+    "Style/RedundantInitialize": {
+        "description": "Description\n\nChecks for redundant `initialize` methods.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)\nAllowComments: True (type: bool)"
+    }
+}

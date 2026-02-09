@@ -1,0 +1,6 @@
+{
+    "Layout/LineEndStringConcatenationIndentation": {
+        "description": "Description\n\nChecks the indentation of the next line after a line that ends with a string literal and a backslash.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: aligned (type: str)\nSupportedStyles: ['aligned', 'indented'] (type: list)\nIndentationWidth: None (type: NoneType)"
+    }
+}

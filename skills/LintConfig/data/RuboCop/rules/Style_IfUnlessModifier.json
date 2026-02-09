@@ -1,0 +1,6 @@
+{
+    "Style/IfUnlessModifier": {
+        "description": "Description\n\nFavor modifier if/unless usage when you have a single-line body.",
+        "option": "This rule has no specific options."
+    }
+}

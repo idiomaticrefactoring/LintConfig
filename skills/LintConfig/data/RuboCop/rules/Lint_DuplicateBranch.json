@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateBranch": {
+        "description": "Description\n\nChecks that there are no repeated bodies within `if/unless`, `case-when` and `rescue` constructs.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIgnoreLiteralBranches: False (type: bool)\nIgnoreConstantBranches: False (type: bool)\nIgnoreDuplicateElseBranch: False (type: bool)"
+    }
+}

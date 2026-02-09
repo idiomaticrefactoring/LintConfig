@@ -1,0 +1,6 @@
+{
+    "Style/DefWithParentheses": {
+        "description": "Description\n\nUse def with parentheses when there are arguments.",
+        "option": "This rule has no specific options."
+    }
+}

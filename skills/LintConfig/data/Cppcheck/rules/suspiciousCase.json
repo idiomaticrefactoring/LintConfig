@@ -1,0 +1,6 @@
+{
+    "suspiciousCase": {
+        "description": "Description\n\nUsing an operator like '||' in a case label is suspicious. Did you intend to use a bitwise operator, multiple case labels or if/else instead?",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: true"
+    }
+}

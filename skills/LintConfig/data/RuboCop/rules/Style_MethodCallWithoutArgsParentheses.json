@@ -1,0 +1,6 @@
+{
+    "Style/MethodCallWithoutArgsParentheses": {
+        "description": "Description\n\nDo not use parentheses for method calls with no arguments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

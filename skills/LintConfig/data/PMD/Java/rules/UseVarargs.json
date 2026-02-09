@@ -1,0 +1,6 @@
+{
+    "UseVarargs": {
+        "description": "Description\n\nMinimum Language Version:Java 1.5\n\nJava 5 introduced the varargs parameter declaration for methods and constructors. This syntactic\nsugar provides flexibility for users of these methods and constructors, allowing them to avoid\nhaving to deal with the creation of an array.\n\nByte arrays in any method and String arrays inpublic static void main(String[])methods are ignored.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

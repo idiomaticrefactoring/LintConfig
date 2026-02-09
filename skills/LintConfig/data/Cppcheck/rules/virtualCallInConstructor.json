@@ -1,0 +1,6 @@
+{
+    "virtualCallInConstructor": {
+        "description": "Description\n\nVirtual function 'f' is called from constructor '' at line 1. Dynamic binding is not used.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

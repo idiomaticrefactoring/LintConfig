@@ -1,0 +1,6 @@
+{
+    "Naming/VariableNumber": {
+        "description": "Description\n\nUse the configured style when numbering symbols, methods and variables.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: normalcase (type: str)\nSupportedStyles: ['snake_case', 'normalcase', 'non_integer'] (type: list)\nCheckMethodNames: True (type: bool)\nCheckSymbols: True (type: bool)\nAllowedIdentifiers: ['TLS1_1', 'TLS1_2', 'capture3', 'iso8601', 'rfc1123_date', 'rfc822', 'rfc2822', 'rfc3339', 'x86_64'] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Uncommunicative Name": {
+        "description": "Description\n\nIntroduction\n\nAn Uncommunicative Name is a name that doesn't communicate its intent well enough.\n\nPoor names make it hard for the reader to build a mental picture of what's\ngoing on in the code. They can also be mis-interpreted; and they hurt the flow\nof reading, because the reader must slow down to interpret the names.\n\nCurrent Support in Reek\n\nReek offers four checks in this category:\n\nUncommunicative Method Name\nUncommunicative Module Name\nUncommunicative Parameter Name\nUncommunicative Variable Name",
+        "option": "This rule has no specific options."
+    }
+}

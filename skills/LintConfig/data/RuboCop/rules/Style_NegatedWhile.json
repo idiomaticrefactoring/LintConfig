@@ -1,0 +1,6 @@
+{
+    "Style/NegatedWhile": {
+        "description": "Description\n\nFavor until over while for negative conditions.",
+        "option": "This rule has no specific options."
+    }
+}

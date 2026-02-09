@@ -1,0 +1,6 @@
+{
+    "altera-id-dependent-backward-branch": {
+        "description": "Description\n\nFinds ID-dependent variables and fields that are used within loops. This causes\nbranches to occur inside the loops, and thus leads to performance degradation.\n\n// The following code will produce a warning because this ID-dependent\n// variable is used in a loop condition statement.\nint\nThreadID\n=\nget_local_id\n(\n0\n);\n// The following loop will produce a warning because the loop condition\n// statement depends on an ID-dependent variable.\nfor\n(\nint\ni\n=\n0\n;\ni\n<\nThreadID\n;\n++\ni\n)\n{\nstd\n::\ncout\n<<\ni\n<<\nstd\n::\nendl\n;\n}\n// The following loop will not produce a warning, because the ID-dependent\n// variable is not used in the loop condition statement.\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n100\n;\n++\ni\n)\n{\nstd\n::\ncout\n<<\nThreadID\n<<\nstd\n::\nendl\n;\n}\n\nBased on the\nAltera SDK for OpenCL: Best Practices Guide\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

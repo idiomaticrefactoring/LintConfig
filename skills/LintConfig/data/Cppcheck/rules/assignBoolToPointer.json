@@ -1,0 +1,6 @@
+{
+    "assignBoolToPointer": {
+        "description": "Description\n\nThe product sets a pointer to a specific address other than NULL or 0.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 587\nInconclusive: false"
+    }
+}

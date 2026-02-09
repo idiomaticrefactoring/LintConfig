@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceBeforeSemicolon": {
+        "description": "Description\n\nNo spaces before semicolons.",
+        "option": "This rule has no specific options."
+    }
+}

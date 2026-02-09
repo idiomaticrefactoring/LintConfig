@@ -1,0 +1,6 @@
+{
+    "CommentContent": {
+        "description": "Description\n\nA rule for the politically correct… we don’t want to offend anyone.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nforbiddenRegex\tidiot|jerk\tIllegal terms or phrases"
+    }
+}

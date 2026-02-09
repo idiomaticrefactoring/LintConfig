@@ -1,0 +1,6 @@
+{
+    "output-format": {
+        "description": "Description\n\nThe style in which violation messages should be formatted: `\"full\"` (default)\n(shows source), `\"concise\"`, `\"grouped\"` (group messages by file), `\"json\"`\n(machine-readable), `\"junit\"` (machine-readable XML), `\"github\"` (GitHub\nActions annotations), `\"gitlab\"` (GitLab CI code quality report),\n`\"pylint\"` (Pylint text format) or `\"azure\"` (Azure Pipeline logging commands).",
+        "option": "Type: OutputFormat/null"
+    }
+}

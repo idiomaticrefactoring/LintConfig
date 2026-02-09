@@ -1,0 +1,6 @@
+{
+    "Naming/ClassAndModuleCamelCase": {
+        "description": "Description\n\nUse CamelCase for classes and modules.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedNames: ['module_parent'] (type: list)"
+    }
+}

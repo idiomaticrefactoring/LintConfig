@@ -1,0 +1,6 @@
+{
+    "no-debugger": {
+        "description": "Description\n\nThis rule disallowsdebuggerstatements.\n\nExample ofincorrectcode for this rule:\n\n/*eslint no-debugger: \"error\"*/\n\nfunction isTruthy(x) {\n    debugger;\n    return Boolean(x);\n}\n\nExample ofcorrectcode for this rule:\n\n/*eslint no-debugger: \"error\"*/\n\nfunction isTruthy(x) {\n    return Boolean(x); // set a breakpoint at this line\n}",
+        "option": "This rule has no options."
+    }
+}

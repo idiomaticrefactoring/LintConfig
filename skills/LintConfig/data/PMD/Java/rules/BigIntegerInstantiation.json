@@ -1,0 +1,6 @@
+{
+    "BigIntegerInstantiation": {
+        "description": "Description\n\nDon’t create instances of already existing BigInteger (BigInteger.ZERO,BigInteger.ONE),\nfor Java 1.5 onwards, BigInteger.TEN and BigDecimal (BigDecimal.ZERO,BigDecimal.ONE,BigDecimal.TEN) and\nfor Java 9 onwardsBigInteger.TWO.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

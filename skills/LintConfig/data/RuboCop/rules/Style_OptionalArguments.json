@@ -1,0 +1,6 @@
+{
+    "Style/OptionalArguments": {
+        "description": "Description\n\nChecks for optional arguments that do not appear at the end of the argument list.",
+        "option": "This rule has no specific options."
+    }
+}

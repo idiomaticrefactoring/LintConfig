@@ -1,0 +1,6 @@
+{
+    "jsx-quotes": {
+        "description": "Description\n\nThis rule enforces the consistent use of either double or single quotes in JSX attributes.",
+        "option": "This rule has a string option:\n\n- \"prefer-double\"(default) enforces the use of double quotes for all JSX attribute values that don’t contain a double quote.\n- \"prefer-single\"enforces the use of single quotes for all JSX attribute values that don’t contain a single quote.\n\nprefer-double\n\nExamples ofincorrectcode for this rule with the default\"prefer-double\"option:\n\n/*eslint jsx-quotes: [\"error\", \"prefer-double\"]*/\n\n<a b='c' />;\n\nExamples ofcorrectcode for this rule with the default\"prefer-double\"option:\n\n/*eslint jsx-quotes: [\"error\", \"prefer-double\"]*/\n\n<a b=\"c\" />;\n<a b='\"' />;\n\nprefer-single\n\nExamples ofincorrectcode for this rule with the\"prefer-single\"option:\n\n/*eslint jsx-quotes: [\"error\", \"prefer-single\"]*/\n\n<a b=\"c\" />;\n\nExamples ofcorrectcode for this rule with the\"prefer-single\"option:\n\n/*eslint jsx-quotes: [\"error\", \"prefer-single\"]*/\n\n<a b='c' />;\n<a b=\"'\" />;"
+    }
+}

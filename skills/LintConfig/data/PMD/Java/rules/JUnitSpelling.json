@@ -1,0 +1,6 @@
+{
+    "JUnitSpelling": {
+        "description": "Description\n\nIn JUnit 3, the setUp method is used to set up all data entities required in running tests.\nThe tearDown method is used to clean up all data entities required in running tests.\nYou should not misspell method name if you want your test to set up and clean up everything correctly.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

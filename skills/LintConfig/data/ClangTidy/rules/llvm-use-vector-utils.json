@@ -1,0 +1,6 @@
+{
+    "llvm-use-vector-utils": {
+        "description": "Description\n\nFinds calls to\nllvm::to_vector\nwith\nllvm::map_range\nor\nllvm::make_filter_range\nthat can be replaced with the more concise\nllvm::map_to_vector\nand\nllvm::filter_to_vector\nutilities from\nllvm/ADT/SmallVectorExtras.h\n.\n\nThe check will add the necessary\n#include\n\"llvm/ADT/SmallVectorExtras.h\"\ndirective when applying fixes.\n\nExample\nauto\nv1\n=\nllvm\n::\nto_vector\n(\nllvm\n::\nmap_range\n(\ncontainer\n,\nfunc\n));\nauto\nv2\n=\nllvm\n::\nto_vector\n(\nllvm\n::\nmake_filter_range\n(\ncontainer\n,\npred\n));\nauto\nv3\n=\nllvm\n::\nto_vector\n<\n4\n>\n(\nllvm\n::\nmap_range\n(\ncontainer\n,\nfunc\n));\nauto\nv4\n=\nllvm\n::\nto_vector\n<\n4\n>\n(\nllvm\n::\nmake_filter_range\n(\ncontainer\n,\npred\n));\nTransforms to:\nauto\nv1\n=\nllvm\n::\nmap_to_vector\n(\ncontainer\n,\nfunc\n);\nauto\nv2\n=\nllvm\n::\nfilter_to_vector\n(\ncontainer\n,\npred\n);\nauto\nv3\n=\nllvm\n::\nmap_to_vector\n<\n4\n>\n(\ncontainer\n,\nfunc\n);\nauto\nv4\n=\nllvm\n::\nfilter_to_vector\n<\n4\n>\n(\ncontainer\n,\npred\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "getter-return": {
+        "description": "Description\n\nThis rule enforces that a return statement is present in property getters.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint getter-return: \"error\"*/\n\nconst p = {\n    get name(){\n        // no returns.\n    }\n};\n\nObject.defineProperty(p, \"age\", {\n    get: function (){\n        // no returns.\n    }\n});\n\nclass P{\n    get name(){\n        // no returns.\n    }\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint getter-return: \"error\"*/\n\nconst p = {\n    get name(){\n        return \"nicholas\";\n    }\n};\n\nObject.defineProperty(p, \"age\", {\n    get: function (){\n        return 18;\n    }\n});\n\nclass P{\n    get name(){\n        return \"nicholas\";\n    }\n}",
+        "option": "This rule has an object option:\n\n- \"allowImplicit\": false(default) disallows implicitly returningundefinedwith areturnstatement.\n\nExamples ofcorrectcode for the{ \"allowImplicit\": true }option:\n\n/*eslint getter-return: [\"error\", { allowImplicit: true }]*/\nconst p = {\n    get name(){\n        return; // return undefined implicitly.\n    }\n};"
+    }
+}

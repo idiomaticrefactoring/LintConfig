@@ -1,0 +1,6 @@
+{
+    "Style/RaiseArgs": {
+        "description": "Description\n\nChecks the arguments passed to raise/fail.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: exploded (type: str)\nSupportedStyles: ['compact', 'exploded'] (type: list)\nAllowedCompactTypes: [] (type: list)"
+    }
+}

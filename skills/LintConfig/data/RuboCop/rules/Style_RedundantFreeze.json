@@ -1,0 +1,6 @@
+{
+    "Style/RedundantFreeze": {
+        "description": "Description\n\nChecks usages of Object#freeze on immutable objects.",
+        "option": "This rule has no specific options."
+    }
+}

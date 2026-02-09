@@ -1,0 +1,6 @@
+{
+    "require-yield": {
+        "description": "Description\n\nThis rule generates warnings for generator functions that do not have theyieldkeyword.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint require-yield: \"error\"*/\n\nfunction* foo() {\n  return 10;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint require-yield: \"error\"*/\n\nfunction* foo() {\n  yield 5;\n  return 10;\n}\n\nfunction bar() {\n  return 10;\n}\n\n// This rule does not warn on empty generator functions.\nfunction* baz() { }",
+        "option": "This rule has no options."
+    }
+}

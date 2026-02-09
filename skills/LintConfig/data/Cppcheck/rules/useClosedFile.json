@@ -1,0 +1,6 @@
+{
+    "useClosedFile": {
+        "description": "Description\n\nThe product uses or accesses a file descriptor after it has been closed.",
+        "option": "Static analysis does not have options.\n\nSeverity: error\nCWE: 910\nInconclusive: false"
+    }
+}

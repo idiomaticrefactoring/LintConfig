@@ -1,0 +1,6 @@
+{
+    "no-comma-dangle": {
+        "description": "Description\n\nThis rule is aimed at detecting trailing commas in object literals. As such, it will warn whenever it encounters a trailing comma in an object literal.\n\nExamples ofincorrectcode for this rule:\n\nvar foo = {\n    bar: \"baz\",\n    qux: \"quux\",\n};\n\nvar arr = [1,2,];\n\nfoo({\n  bar: \"baz\",\n  qux: \"quux\",\n});\n\nExamples ofcorrectcode for this rule:\n\nvar foo = {\n    bar: \"baz\",\n    qux: \"quux\"\n};\n\nvar arr = [1,2];\n\nfoo({\n  bar: \"baz\",\n  qux: \"quux\"\n});",
+        "option": "This rule has no specific options."
+    }
+}

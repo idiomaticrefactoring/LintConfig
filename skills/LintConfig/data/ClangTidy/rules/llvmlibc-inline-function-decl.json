@@ -1,0 +1,6 @@
+{
+    "llvmlibc-inline-function-decl": {
+        "description": "Description\n\nChecks that all implicitly and explicitly inline functions in header files are\ntagged with the\nLIBC_INLINE\nmacro, except for functions implicit to classes\nor deleted functions.\nSee the\nlibc style guide\nfor more\ninformation about this macro.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

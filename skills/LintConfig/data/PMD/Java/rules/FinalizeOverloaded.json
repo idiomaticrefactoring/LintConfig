@@ -1,0 +1,6 @@
+{
+    "FinalizeOverloaded": {
+        "description": "Description\n\nMethods named finalize() should not have parameters.  It is confusing and most likely an attempt to\noverload Object.finalize(). It will not be called by the VM.\n\nNote that Oracle has declared Object.finalize() as deprecated since JDK 9.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

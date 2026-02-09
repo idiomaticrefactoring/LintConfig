@@ -1,0 +1,6 @@
+{
+    "postfixOperator": {
+        "description": "Description\n\nPrefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code.",
+        "option": "Static analysis does not have options.\n\nSeverity: performance\nCWE: 398\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "objc-nsinvocation-argument-lifetime": {
+        "description": "Description\n\nFinds calls to\nNSInvocation\nmethods under ARC that don’t have proper\nargument object lifetimes. When passing Objective-C objects as parameters\nto the\nNSInvocation\nmethods\ngetArgument:atIndex:\nand\ngetReturnValue:\n, the values are copied by value into the argument pointer,\nwhich leads to incorrect releasing behavior if the object pointers are\nnot declared\n__unsafe_unretained\n.\n\nFor code:\n\nid\narg\n;\n[\ninvocation\ngetArgument\n:&\narg\natIndex\n:\n2\n];\n__strong\nid\nreturnValue\n;\n[\ninvocation\ngetReturnValue\n:&\nreturnValue\n];\n\nThe fix will be:\n\n__unsafe_unretained\nid\narg\n;\n[\ninvocation\ngetArgument\n:&\narg\natIndex\n:\n2\n];\n__unsafe_unretained\nid\nreturnValue\n;\n[\ninvocation\ngetReturnValue\n:&\nreturnValue\n];\n\nThe check will warn on being passed instance variable references that have\nlifetimes other than\n__unsafe_unretained\n, but does not propose a fix:\n\n// \"id _returnValue\" is declaration of instance variable of class.\n[\ninvocation\ngetReturnValue\n:&\nself\n->\n_returnValue\n];",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

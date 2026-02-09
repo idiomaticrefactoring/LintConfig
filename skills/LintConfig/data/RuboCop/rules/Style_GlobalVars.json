@@ -1,0 +1,6 @@
+{
+    "Style/GlobalVars": {
+        "description": "Description\n\nDo not introduce global variables.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://www.zenspider.com/ruby/quickref.html'] (type: list)\nAllowedVariables: [] (type: list)"
+    }
+}

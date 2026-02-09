@@ -1,0 +1,6 @@
+{
+    "bugprone-infinite-loop": {
+        "description": "Description\n\nFinds obvious infinite loops (loops where the condition variable is not changed\nat all).\n\nFinding infinite loops is well-known to be impossible (halting problem).\nHowever, it is possible to detect some obvious infinite loops, for example, if\nthe loop condition is not changed. This check detects such loops. A loop is\nconsidered infinite if it does not have any loop exit statement (\nbreak\n,\ncontinue\n,\ngoto\n,\nreturn\n,\nthrow\nor a call to a function called as\n[[noreturn]]\n) and all of the following conditions hold for every variable\nin the condition:\n\nIt is a local variable.\nIt has no reference or pointer aliases.\nIt is not a structure or class member.\n\nFurthermore, the condition must not contain a function call to consider the\nloop infinite since functions may return different values for different calls.\n\nFor example, the following loop is considered infinite\ni\nis not changed in\nthe body:\n\nint\ni\n=\n0\n,\nj\n=\n0\n;\nwhile\n(\ni\n<\n10\n)\n{\n++\nj\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

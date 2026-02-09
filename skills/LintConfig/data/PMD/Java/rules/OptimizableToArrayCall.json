@@ -1,0 +1,6 @@
+{
+    "OptimizableToArrayCall": {
+        "description": "Description\n\nMinimum Language Version:Java 1.6\n\nCalls to a collection’stoArray(E[])method should specify a target array of zero size. This allows the JVM\nto optimize the memory allocation and copying as much as possible.\n\nPrevious versions of this rule (pre PMD 6.0.0) suggested the opposite, but current JVM implementations\nperform always better, when they have full control over the target array. And allocation an array via\nreflection is nowadays as fast as the direct allocation.\n\nSee alsoArrays of Wisdom of the Ancients\n\nNote: If you don’t need an array of the correct type, then the simpletoArray()method without an array\nis faster, but returns only an array of typeObject[].\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

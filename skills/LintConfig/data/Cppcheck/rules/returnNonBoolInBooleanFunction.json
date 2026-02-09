@@ -1,0 +1,6 @@
+{
+    "returnNonBoolInBooleanFunction": {
+        "description": "Description\n\nNon-boolean value returned from function returning bool",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

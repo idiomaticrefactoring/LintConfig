@@ -1,0 +1,6 @@
+{
+    "Lint/UnderscorePrefixedVariableName": {
+        "description": "Description\n\nDo not use prefix `_` for a variable that is used.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowKeywordBlockArguments: False (type: bool)"
+    }
+}

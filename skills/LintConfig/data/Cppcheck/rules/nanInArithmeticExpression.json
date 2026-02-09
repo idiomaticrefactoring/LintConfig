@@ -1,0 +1,6 @@
+{
+    "nanInArithmeticExpression": {
+        "description": "Description\n\nThe product divides a value by zero.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 369\nInconclusive: false"
+    }
+}

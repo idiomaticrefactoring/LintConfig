@@ -1,0 +1,6 @@
+{
+    "Style/StructInheritance": {
+        "description": "Description\n\nChecks for inheritance from Struct.new.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "no-invalid-regexp": {
+        "description": "Description\n\nThis rule disallows invalid regular expression strings inRegExpconstructors.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-invalid-regexp: \"error\"*/\n\nRegExp('[')\n\nRegExp('.', 'z')\n\nnew RegExp('\\\\')\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-invalid-regexp: \"error\"*/\n\nRegExp('.')\n\nnew RegExp\n\nthis.RegExp('[')\n\nPlease note that this rule validates regular expressions per the latest ECMAScript specification, regardless of your parser settings.\n\nIf you want to allow additional constructor flags for any reason, you can specify them using theallowConstructorFlagsoption. These flags will then be ignored by the rule.",
+        "option": "This rule has an object option for exceptions:\n\n- \"allowConstructorFlags\"is a case-sensitive array of flags\n\nallowConstructorFlags\n\nExamples ofcorrectcode for this rule with the{ \"allowConstructorFlags\": [\"a\", \"z\"] }option:\n\n/*eslint no-invalid-regexp: [\"error\", { \"allowConstructorFlags\": [\"a\", \"z\"] }]*/\n\nnew RegExp('.', 'a')\n\nnew RegExp('.', 'az')"
+    }
+}

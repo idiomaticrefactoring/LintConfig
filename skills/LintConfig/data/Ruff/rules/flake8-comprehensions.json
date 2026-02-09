@@ -1,0 +1,6 @@
+{
+    "flake8-comprehensions": {
+        "description": "Description\n\nOptions for the `flake8-comprehensions` plugin.",
+        "option": "Type: Flake8ComprehensionsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - allow-dict-calls-with-keyword-arguments: Allow `dict` calls that make use of keyword arguments (e.g., `dict(a=1, b=2)`)."
+    }
+}

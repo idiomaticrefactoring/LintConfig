@@ -1,0 +1,6 @@
+{
+    "no-negated-in-lhs": {
+        "description": "Description\n\nThis rule disallows negating the left operand ininexpressions.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-negated-in-lhs: \"error\"*/\n\nif(!key in object) {\n    // operator precedence makes it equivalent to (!key) in object\n    // and type conversion makes it equivalent to (key ? \"false\" : \"true\") in object\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-negated-in-lhs: \"error\"*/\n\nif(!(key in object)) {\n    // key is not in object\n}\n\nif(('' + !key) in object) {\n    // make operator precedence and type conversion explicit\n    // in a rare situation when that is the intended meaning\n}",
+        "option": "This rule has no specific options."
+    }
+}

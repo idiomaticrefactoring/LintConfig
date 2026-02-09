@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantSafeNavigation": {
+        "description": "Description\n\nChecks for redundant safe navigation calls.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['instance_of?', 'kind_of?', 'is_a?', 'eql?', 'respond_to?', 'equal?'] (type: list)\nInferNonNilReceiver: False (type: bool)\nAdditionalNilMethods: ['present?', 'blank?', 'try', 'try!'] (type: list)"
+    }
+}

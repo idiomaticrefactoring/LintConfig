@@ -1,0 +1,6 @@
+{
+    "Style/SignalException": {
+        "description": "Description\n\nChecks for proper usage of fail and raise.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: only_raise (type: str)\nSupportedStyles: ['only_raise', 'only_fail', 'semantic'] (type: list)"
+    }
+}

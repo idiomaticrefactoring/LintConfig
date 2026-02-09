@@ -1,0 +1,6 @@
+{
+    "Layout/LeadingEmptyLines": {
+        "description": "Description\n\nChecks for unnecessary blank lines at the beginning of a file.",
+        "option": "This rule has no specific options."
+    }
+}

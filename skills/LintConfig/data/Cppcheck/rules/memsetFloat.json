@@ -1,0 +1,6 @@
+{
+    "memsetFloat": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine, but the caller specifies the wrong variable or reference as one of the arguments, which may lead to undefined behavior and resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: portability\nCWE: 688\nInconclusive: false"
+    }
+}

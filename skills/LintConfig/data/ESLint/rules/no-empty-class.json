@@ -1,0 +1,6 @@
+{
+    "no-empty-class": {
+        "description": "Description\n\nThis rule is aimed at highlighting possible typos and unexpected behavior in regular expressions which may arise from the use of empty character classes.\n\nExamples ofincorrectcode for this rule:\n\nvar foo = /^abc[]/;\n\n/^abc[]/.test(foo);\n\nbar.match(/^abc[]/);\n\nExamples ofcorrectcode for this rule:\n\nvar foo = /^abc/;\n\nvar foo = /^abc[a-z]/;\n\nvar bar = new RegExp(\"^abc[]\");",
+        "option": "This rule has no specific options."
+    }
+}

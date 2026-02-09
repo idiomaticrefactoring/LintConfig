@@ -1,0 +1,6 @@
+{
+    "Style/RedundantRegexpCharacterClass": {
+        "description": "Description\n\nChecks for unnecessary single-element Regexp character classes.",
+        "option": "This rule has no specific options."
+    }
+}

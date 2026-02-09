@@ -1,0 +1,6 @@
+{
+    "MethodWithSameNameAsEnclosingClass": {
+        "description": "Description\n\nNon-constructor methods should not have the same name as the enclosing class.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

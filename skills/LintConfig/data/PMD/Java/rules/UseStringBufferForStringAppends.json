@@ -1,0 +1,6 @@
+{
+    "UseStringBufferForStringAppends": {
+        "description": "Description\n\nThe use of the ‘+=’ operator for appending strings causes the JVM to create and use an internal StringBuffer.\nIf a non-trivial number of these concatenations are being used then the explicit use of a StringBuilder or\nthreadsafe StringBuffer is recommended to avoid this.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

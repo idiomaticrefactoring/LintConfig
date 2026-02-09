@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantCopDisableDirective": {
+        "description": "Description\n\nChecks for rubocop:disable comments that can be removed. Note: this cop is not disabled when disabling all cops. It must be explicitly disabled.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "flake8-boolean-trap": {
+        "description": "Description\n\nOptions for the `flake8-boolean-trap` plugin.",
+        "option": "Type: Flake8BooleanTrapOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - extend-allowed-calls: Additional callable functions with which to allow boolean traps."
+    }
+}

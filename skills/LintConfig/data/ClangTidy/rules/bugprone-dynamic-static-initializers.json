@@ -1,0 +1,6 @@
+{
+    "bugprone-dynamic-static-initializers": {
+        "description": "Description\n\nFinds instances of static variables that are dynamically initialized\nin header files.\n\nThis can pose problems in certain multithreaded contexts. For example,\nwhen disabling compiler generated synchronization instructions for\nstatic variables initialized at runtime (e.g. by\n-fno-threadsafe-statics\n),\neven if a particular project takes the necessary precautions to prevent race\nconditions during initialization by providing their own synchronization, header\nfiles included from other projects may not. Therefore, such a check is helpful\nfor ensuring that disabling compiler generated synchronization for static\nvariable initialization will not cause problems.\n\nConsider the following code:\n\nint\nfoo\n()\n{\nstatic\nint\nk\n=\nbar\n();\nreturn\nk\n;\n}\n\nWhen synchronization of static initialization is disabled, if two threads both\ncall\nfoo\nfor the first time, there is the possibility that\nk\nwill be double\ninitialized, creating a race condition.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

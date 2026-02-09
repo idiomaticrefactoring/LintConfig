@@ -1,0 +1,6 @@
+{
+    "no-ex-assign": {
+        "description": "Description\n\nThis rule disallows reassigning exceptions incatchclauses.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-ex-assign: \"error\"*/\n\ntry {\n    // code\n} catch (e) {\n    e = 10;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-ex-assign: \"error\"*/\n\ntry {\n    // code\n} catch (e) {\n    const foo = 10;\n}",
+        "option": "This rule has no options."
+    }
+}

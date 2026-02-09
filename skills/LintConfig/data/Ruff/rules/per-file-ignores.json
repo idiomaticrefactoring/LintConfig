@@ -1,0 +1,6 @@
+{
+    "per-file-ignores": {
+        "description": "Description\n\nA list of mappings from file pattern to rule codes or prefixes to\nexclude, when considering any matching files. An initial '!' negates\nthe file pattern.",
+        "option": "Type: object\nStatus: DEPRECATED"
+    }
+}

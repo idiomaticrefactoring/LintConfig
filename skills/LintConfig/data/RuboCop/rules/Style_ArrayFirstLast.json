@@ -1,0 +1,6 @@
+{
+    "Style/ArrayFirstLast": {
+        "description": "Description\n\nUse `arr.first` and `arr.last` instead of `arr[0]` and `arr[-1]`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['#first-and-last'] (type: list)"
+    }
+}

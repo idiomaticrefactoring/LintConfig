@@ -1,0 +1,6 @@
+{
+    "pydocstyle": {
+        "description": "Description\n\nOptions for the `pydocstyle` plugin.",
+        "option": "Type: PydocstyleOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - convention: Whether to use Google-style, NumPy-style conventions, or the [PEP 257](https://peps.python.org/pep-0257/)\n  - ignore-decorators: Ignore docstrings for functions or methods decorated with the\n  - ignore-var-parameters: If set to `true`, ignore missing documentation for `*args` and `**kwargs` parameters.\n  - property-decorators: A list of decorators that, when applied to a method, indicate that the"
+    }
+}

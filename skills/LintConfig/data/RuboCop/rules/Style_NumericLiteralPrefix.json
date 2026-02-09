@@ -1,0 +1,6 @@
+{
+    "Style/NumericLiteralPrefix": {
+        "description": "Description\n\nUse smallcase prefixes for numeric literals.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedOctalStyle: zero_with_o (type: str)\nSupportedOctalStyles: ['zero_with_o', 'zero_only'] (type: list)"
+    }
+}

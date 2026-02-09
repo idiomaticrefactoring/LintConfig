@@ -1,0 +1,6 @@
+{
+    "flake8-unused-arguments": {
+        "description": "Description\n\nOptions for the `flake8-unused-arguments` plugin.",
+        "option": "Type: Flake8UnusedArgumentsOptions/null\nStatus: DEPRECATED\n\nAvailable Sub-options:\n  - ignore-variadic-names: Whether to allow unused variadic arguments, like `*args` and `**kwargs`."
+    }
+}

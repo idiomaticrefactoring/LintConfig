@@ -1,0 +1,6 @@
+{
+    "readability-redundant-string-init": {
+        "description": "Description\n\nFinds unnecessary string initializations.\n\nExamples\n// Initializing string with empty string literal is unnecessary.\nstd\n::\nstring\na\n=\n\"\"\n;\nstd\n::\nstring\nb\n(\n\"\"\n);\n// becomes\nstd\n::\nstring\na\n;\nstd\n::\nstring\nb\n;\n// Initializing a string_view with an empty string literal produces an\n// instance that compares equal to string_view().\nstd\n::\nstring_view\na\n=\n\"\"\n;\nstd\n::\nstring_view\nb\n(\n\"\"\n);\n// becomes\nstd\n::\nstring_view\na\n;\nstd\n::\nstring_view\nb\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStringNames\nDefault is\n::std::basic_string;::std::basic_string_view\n.\nSemicolon-delimited list of class names to apply this check to.\nBy default\n::std::basic_string\napplies to\nstd::string\nand\nstd::wstring\n. Set to e.g.\n::std::basic_string;llvm::StringRef;QString\nto perform this check on custom classes."
+    }
+}

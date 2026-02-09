@@ -1,0 +1,6 @@
+{
+    "charLiteralWithCharPtrCompare": {
+        "description": "Description\n\nThe product compares object references instead of the contents of the objects themselves, preventing it from detecting equivalent objects.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 595\nInconclusive: false\nRelated Symbols: foo"
+    }
+}

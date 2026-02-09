@@ -1,0 +1,6 @@
+{
+    "Lint/SuppressedException": {
+        "description": "Description\n\nDon't suppress exceptions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowComments: True (type: bool)\nAllowNil: True (type: bool)"
+    }
+}

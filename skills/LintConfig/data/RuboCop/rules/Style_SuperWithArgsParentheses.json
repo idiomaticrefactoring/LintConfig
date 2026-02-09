@@ -1,0 +1,6 @@
+{
+    "Style/SuperWithArgsParentheses": {
+        "description": "Description\n\nUse parentheses for `super` with arguments.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "CloneMethodReturnTypeMustMatchClassName": {
+        "description": "Description\n\nMinimum Language Version:Java 1.5\n\nIf a class implementsCloneablethe return type of the methodclone()must be the class name. That way, the caller\nof the clone method doesn’t need to cast the returned clone to the correct type.\n\nNote: Such a covariant return type is only possible with Java 1.5 or higher.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

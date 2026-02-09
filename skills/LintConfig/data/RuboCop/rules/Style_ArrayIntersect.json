@@ -1,0 +1,6 @@
+{
+    "Style/ArrayIntersect": {
+        "description": "Description\n\nUse `array1.intersect?(array2)` instead of `(array1 & array2).any?`.",
+        "option": "This rule has no specific options."
+    }
+}

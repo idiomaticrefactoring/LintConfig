@@ -1,0 +1,6 @@
+{
+    "Style/OperatorMethodCall": {
+        "description": "Description\n\nChecks for redundant dot before operator method call.",
+        "option": "This rule has no specific options."
+    }
+}

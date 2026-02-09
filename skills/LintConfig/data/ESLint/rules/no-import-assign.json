@@ -1,0 +1,6 @@
+{
+    "no-import-assign": {
+        "description": "Description\n\nThis rule warns the assignments, increments, and decrements of imported bindings.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-import-assign: \"error\"*/\n\nimport mod, { named } from \"./mod.mjs\"\nimport * as mod_ns from \"./mod.mjs\"\n\nmod = 1          // ERROR: 'mod' is readonly.\nnamed = 2        // ERROR: 'named' is readonly.\nmod_ns.named = 3 // ERROR: The members of 'mod_ns' are readonly.\nmod_ns = {}      // ERROR: 'mod_ns' is readonly.\n// Can't extend 'mod_ns'\nObject.assign(mod_ns, { foo: \"foo\" }) // ERROR: The members of 'mod_ns' are readonly.\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-import-assign: \"error\"*/\n\nimport mod, { named } from \"./mod.mjs\"\nimport * as mod_ns from \"./mod.mjs\"\n\nmod.prop = 1\nnamed.prop = 2\nmod_ns.named.prop = 3\n\n// Known Limitation\nfunction test(obj) {\n    obj.named = 4 // Not errored because 'obj' is not namespace objects.\n}\ntest(mod_ns) // Not errored because it doesn't know that 'test' updates the member of the argument.",
+        "option": "This rule has no options."
+    }
+}

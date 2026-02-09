@@ -1,0 +1,6 @@
+{
+    "Style/ArrayCoercion": {
+        "description": "Description\n\nUse Array() instead of explicit Array check or [*var], when dealing with a variable you want to treat as an Array, but you're not certain it's an array.",
+        "option": "This rule has no specific options."
+    }
+}

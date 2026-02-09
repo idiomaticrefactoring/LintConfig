@@ -1,0 +1,6 @@
+{
+    "no-iterator": {
+        "description": "Description\n\nThis rule is aimed at preventing errors that may arise from using the__iterator__property, which is not implemented in several browsers. As such, it will warn whenever it encounters the__iterator__property.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-iterator: \"error\"*/\n\nFoo.prototype.__iterator__ = function() {\n    return new FooIterator(this);\n};\n\nfoo.__iterator__ = function () {};\n\nfoo[\"__iterator__\"] = function () {};\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-iterator: \"error\"*/\n\nconst __iterator__ = foo; // Not using the `__iterator__` property.",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "modernize-use-starts-ends-with": {
+        "description": "Description\n\nChecks for common roundabout ways to express\nstarts_with\nand\nends_with\nand suggests replacing with the simpler method when it is available. Notably,\nthis will work with\nstd::string\nand\nstd::string_view\n.\n\nCovered scenarios:\n\nExpression\nReplacement\nu.find(v)\n==\n0\nu.starts_with(v)\nu.find(v,\n0)\n==\n0\nu.starts_with(v)\nu.find(v,\n0,\nv.size())\n==\n0\nu.starts_with(v)\nu.rfind(v,\n0)\n!=\n0\n!u.starts_with(v)\nu.rfind(v,\n0,\nv.size())\n!=\n0\n!u.starts_with(v)\nu.compare(0,\nv.size(),\nv)\n==\n0\nu.starts_with(v)\nu.substr(0,\nv.size())\n==\nv\nu.starts_with(v)\nv\n!=\nu.substr(0,\nv.size())\n!u.starts_with(v)\nu.compare(u.size()\n-\nv.size(),\nv.size(),\nv)\n==\n0\nu.ends_with(v)\nu.rfind(v)\n==\nu.size()\n-\nv.size()\nu.ends_with(v)",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

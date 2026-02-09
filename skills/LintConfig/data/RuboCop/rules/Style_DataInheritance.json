@@ -1,0 +1,6 @@
+{
+    "Style/DataInheritance": {
+        "description": "Description\n\nChecks for inheritance from Data.define.",
+        "option": "This rule has no specific options."
+    }
+}

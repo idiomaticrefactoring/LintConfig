@@ -1,0 +1,6 @@
+{
+    "Lint/SelfAssignment": {
+        "description": "Description\n\nChecks for self-assignments.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowRBSInlineAnnotation: False (type: bool)"
+    }
+}

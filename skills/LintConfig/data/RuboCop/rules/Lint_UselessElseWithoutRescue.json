@@ -1,0 +1,6 @@
+{
+    "Lint/UselessElseWithoutRescue": {
+        "description": "Description\n\nChecks for useless `else` in `begin..end` without `rescue`.",
+        "option": "This rule has no specific options."
+    }
+}

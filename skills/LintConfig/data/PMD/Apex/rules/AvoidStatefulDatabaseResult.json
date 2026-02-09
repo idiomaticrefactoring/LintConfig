@@ -1,0 +1,6 @@
+{
+    "AvoidStatefulDatabaseResult": {
+        "description": "Description\n\nUsing instance variables of the following types (or collections of these types) within a stateful batch class can cause serialization errors between batch iterations:\n\nThis error occurs inconsistently and asynchronously with an obscure error message - making it particularly challenging to troubleshoot.\nSeethis issuefor more details.\n\nThese errors can be avoided by marking the variable as static, transient, or using a different\ndata type that is safe to serialize.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

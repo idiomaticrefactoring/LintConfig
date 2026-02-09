@@ -1,0 +1,6 @@
+{
+    "uselessAssignmentPtrArg": {
+        "description": "Description\n\nAssignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

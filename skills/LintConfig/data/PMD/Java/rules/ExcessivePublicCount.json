@@ -1,0 +1,6 @@
+{
+    "ExcessivePublicCount": {
+        "description": "Description\n\nClasses with large numbers of public methods and attributes require disproportionate testing efforts\nsince combinational side effects grow rapidly and increase risk. Refactoring these classes into\nsmaller ones not only increases testability and reliability but also allows new variations to be\ndeveloped easily.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nminimum\t45\tThreshold at or above which a node is reported"
+    }
+}

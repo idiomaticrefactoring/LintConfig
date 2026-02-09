@@ -1,0 +1,6 @@
+{
+    "Style/For": {
+        "description": "Description\n\nChecks use of for or each in multiline loops.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: each (type: str)\nSupportedStyles: ['each', 'for'] (type: list)"
+    }
+}

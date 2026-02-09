@@ -1,0 +1,6 @@
+{
+    "UseEqualsToCompareStrings": {
+        "description": "Description\n\nUsing ‘==’ or ‘!=’ to compare strings is only reliable if the interned string (String#intern())\nis used on both sides.\n\nUse theequals()method instead.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

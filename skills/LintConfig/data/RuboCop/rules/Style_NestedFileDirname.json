@@ -1,0 +1,6 @@
+{
+    "Style/NestedFileDirname": {
+        "description": "Description\n\nChecks for nested `File.dirname`.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/InlineComment": {
+        "description": "Description\n\nAvoid trailing inline comments.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Layout/RescueEnsureAlignment": {
+        "description": "Description\n\nAlign rescues and ensures correctly.",
+        "option": "This rule has no specific options."
+    }
+}

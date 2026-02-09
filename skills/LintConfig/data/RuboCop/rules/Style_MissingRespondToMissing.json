@@ -1,0 +1,6 @@
+{
+    "Style/MissingRespondToMissing": {
+        "description": "Description\n\nChecks if `method_missing` is implemented without implementing `respond_to_missing`.",
+        "option": "This rule has no specific options."
+    }
+}

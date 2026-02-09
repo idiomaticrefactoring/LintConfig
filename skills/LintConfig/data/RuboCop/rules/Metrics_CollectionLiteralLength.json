@@ -1,0 +1,6 @@
+{
+    "Metrics/CollectionLiteralLength": {
+        "description": "Description\n\nChecks for `Array` or `Hash` literals with many entries.",
+        "option": "This rule supports the following parameters in your configuration:\n\nLengthThreshold: 250 (type: int)"
+    }
+}

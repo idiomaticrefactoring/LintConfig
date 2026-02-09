@@ -1,0 +1,6 @@
+{
+    "Lint/SymbolConversion": {
+        "description": "Description\n\nChecks for unnecessary symbol conversions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: strict (type: str)\nSupportedStyles: ['strict', 'consistent'] (type: list)"
+    }
+}

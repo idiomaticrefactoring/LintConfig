@@ -1,0 +1,6 @@
+{
+    "Style/BitwisePredicate": {
+        "description": "Description\n\nPrefer bitwise predicate methods over direct comparison operations.",
+        "option": "This rule has no specific options."
+    }
+}

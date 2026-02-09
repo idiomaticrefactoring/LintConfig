@@ -1,0 +1,6 @@
+{
+    "Lint/MissingCopEnableDirective": {
+        "description": "Description\n\nChecks for a `# rubocop:enable` after `# rubocop:disable`.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMaximumRangeSize: inf (type: float)"
+    }
+}

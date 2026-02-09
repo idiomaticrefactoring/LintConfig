@@ -1,0 +1,6 @@
+{
+    "Style/DirEmpty": {
+        "description": "Description\n\nPrefer to use `Dir.empty?('path/to/dir')` when checking if a directory is empty.",
+        "option": "This rule has no specific options."
+    }
+}

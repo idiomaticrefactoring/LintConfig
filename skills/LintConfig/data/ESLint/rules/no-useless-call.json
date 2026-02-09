@@ -1,0 +1,6 @@
+{
+    "no-useless-call": {
+        "description": "Description\n\nThis rule is aimed to flag usage ofFunction.prototype.call()andFunction.prototype.apply()that can be replaced with the normal function invocation.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-useless-call: \"error\"*/\n\n// These are same as `foo(1, 2, 3);`\nfoo.call(undefined, 1, 2, 3);\nfoo.apply(undefined, [1, 2, 3]);\nfoo.call(null, 1, 2, 3);\nfoo.apply(null, [1, 2, 3]);\n\n// These are same as `obj.foo(1, 2, 3);`\nobj.foo.call(obj, 1, 2, 3);\nobj.foo.apply(obj, [1, 2, 3]);\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-useless-call: \"error\"*/\n\n// The `this` binding is different.\nfoo.call(obj, 1, 2, 3);\nfoo.apply(obj, [1, 2, 3]);\nobj.foo.call(null, 1, 2, 3);\nobj.foo.apply(null, [1, 2, 3]);\nobj.foo.call(otherObj, 1, 2, 3);\nobj.foo.apply(otherObj, [1, 2, 3]);\n\n// The argument list is variadic.\n// Those are warned by the `prefer-spread` rule.\nfoo.apply(undefined, args);\nfoo.apply(null, args);\nobj.foo.apply(obj, args);",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "InvalidJavaBean": {
+        "description": "Description\n\nIdentifies beans, that don’t follow theJavaBeans API specification.\n\nEach non-static field should have both a getter and a setter method. If the field is just used internally and is not\na bean property, then the field should be marked astransient.\n\nThe rule verifies that the type of the field is the same as the result type of the getter. And that this type matches\nthe type used in the setter.\n\nThe rule also checks, that there is a no-arg or default constructor available.\n\nOptionally the rule also verifies, that the bean implementsjava.io.Serializable. While this is a requirement for the\noriginal JavaBeans specification, frameworks nowadays don’t strictly require this anymore.\n\nIn order to avoid many false positives in classes that are not beans, the rule needs to be explicitly\nenabled by configuring the propertypackages.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nensureSerialization\tfalse\tRequire that beans implement java.io.Serializable.\npackages\torg.example.beans\tConsider classes in only these package to be beans. Set to an empty value to check all classes."
+    }
+}

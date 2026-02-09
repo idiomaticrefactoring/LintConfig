@@ -1,0 +1,6 @@
+{
+    "format": {
+        "description": "Description\n\nOptions to configure code formatting.",
+        "option": "Type: FormatOptions/null\n\nAvailable Sub-options:\n  - docstring-code-format: Whether to format code snippets in docstrings.\n  - docstring-code-line-length: Set the line length used when formatting code snippets in docstrings.\n  - exclude: A list of file patterns to exclude from formatting in addition to the files excluded globally (see [`exclude`](#exclude), and [`extend-exclude`](#extend-exclude)).\n  - indent-style: Whether to use spaces or tabs for indentation.\n  - line-ending: The character Ruff uses at the end of a line.\n  - preview: Whether to enable the unstable preview style formatting.\n  - quote-style: Configures the preferred quote character for strings. The recommended options are\n  - skip-magic-trailing-comma: Ruff uses existing trailing commas as an indication that short lines should be left separate."
+    }
+}

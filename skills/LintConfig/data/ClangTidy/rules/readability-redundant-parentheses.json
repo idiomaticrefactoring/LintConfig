@@ -1,0 +1,6 @@
+{
+    "readability-redundant-parentheses": {
+        "description": "Description\n\nDetect redundant parentheses.\n\nWhen modifying code, one often forgets to remove the corresponding parentheses.\nThis results in overly lengthy code. When the expression is complex, finding\nthe matching parentheses becomes particularly difficult.\n\nExample\n(\n1\n);\n((\na\n+\n2\n))\n*\n3\n;\n(\na\n);\n(\n\"aaa\"\n);\nCurrently this check does not take into account the precedence of operations.\nEven if the expression within the parentheses has a higher priority than that\noutside the parentheses. In other words, removing the parentheses will not\naffect the semantics.\nint\na\n=\n(\n1\n*\n2\n)\n+\n3\n;\n// no warning",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nAllowedDecls\nSemicolon-separated list of regular expressions matching names of declarations\nto ignore when the parentheses are around. Declarations can include variables\nor functions. The default is an\nstd::max;std::min\n.\nSome STL library functions may have the same name as widely used function-like\nmacro. For example,\nstd::max\nand\nmax\nmacro. A workaround to distinguish\nthem is adding parentheses around functions to prevent function-like macro."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/ReturnNil": {
+        "description": "Description\n\nUse return instead of return nil.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: return (type: str)\nSupportedStyles: ['return', 'return_nil'] (type: list)"
+    }
+}

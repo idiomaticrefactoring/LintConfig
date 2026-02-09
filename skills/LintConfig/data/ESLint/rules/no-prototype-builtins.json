@@ -1,0 +1,6 @@
+{
+    "no-prototype-builtins": {
+        "description": "Description\n\nThis rule disallows calling someObject.prototypemethods directly on object instances.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-prototype-builtins: \"error\"*/\n\nconst hasBarProperty = foo.hasOwnProperty(\"bar\");\n\nconst isPrototypeOfBar = foo.isPrototypeOf(bar);\n\nconst barIsEnumerable = foo.propertyIsEnumerable(\"bar\");\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-prototype-builtins: \"error\"*/\n\nconst hasBarProperty = Object.prototype.hasOwnProperty.call(foo, \"bar\");\n\nconst isPrototypeOfBar = Object.prototype.isPrototypeOf.call(foo, bar);\n\nconst barIsEnumerable = {}.propertyIsEnumerable.call(foo, \"bar\");",
+        "option": "This rule has no options."
+    }
+}

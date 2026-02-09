@@ -1,0 +1,6 @@
+{
+    "Layout/TrailingWhitespace": {
+        "description": "Description\n\nAvoid trailing whitespace.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowInHeredoc: False (type: bool)"
+    }
+}

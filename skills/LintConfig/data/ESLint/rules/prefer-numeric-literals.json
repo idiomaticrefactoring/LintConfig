@@ -1,0 +1,6 @@
+{
+    "prefer-numeric-literals": {
+        "description": "Description\n\nThis rule disallows calls toparseInt()orNumber.parseInt()if called with two arguments: a string; and a radix option of 2 (binary), 8 (octal), or 16 (hexadecimal).\n\nExamples ofincorrectcode for this rule:\n\n/*eslint prefer-numeric-literals: \"error\"*/\n\nparseInt(\"111110111\", 2) === 503;\nparseInt(`111110111`, 2) === 503;\nparseInt(\"767\", 8) === 503;\nparseInt(\"1F7\", 16) === 503;\nNumber.parseInt(\"111110111\", 2) === 503;\nNumber.parseInt(\"767\", 8) === 503;\nNumber.parseInt(\"1F7\", 16) === 503;\n\nExamples ofcorrectcode for this rule:\n\n/*eslint prefer-numeric-literals: \"error\"*/\n\nparseInt(1);\nparseInt(1, 3);\nNumber.parseInt(1);\nNumber.parseInt(1, 3);\n\n0b111110111 === 503;\n0o767 === 503;\n0x1F7 === 503;\n\na[parseInt](1,2);\n\nparseInt(foo);\nparseInt(foo, 2);\nNumber.parseInt(foo);\nNumber.parseInt(foo, 2);",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "new-parens": {
+        "description": "Description\n\nThis rule can enforce or disallow parentheses when invoking a constructor with no arguments using thenewkeyword.",
+        "option": "This rule takes one option.\n\n- \"always\"enforces parenthesis after a new constructor with no arguments (default)\n- \"never\"enforces no parenthesis after a new constructor with no arguments\n\nalways\n\nExamples ofincorrectcode for this rule with the\"always\"option:\n\n/*eslint new-parens: \"error\"*/\n\nvar person = new Person;\nvar person = new (Person);\n\nExamples ofcorrectcode for this rule with the\"always\"option:\n\n/*eslint new-parens: \"error\"*/\n\nvar person = new Person();\nvar person = new (Person)();\n\nnever\n\nExamples ofincorrectcode for this rule with the\"never\"option:\n\n/*eslint new-parens: [\"error\", \"never\"]*/\n\nvar person = new Person();\nvar person = new (Person)();\n\nExamples ofcorrectcode for this rule with the\"never\"option:\n\n/*eslint new-parens: [\"error\", \"never\"]*/\n\nvar person = new Person;\nvar person = (new Person);\nvar person = new Person(\"Name\");"
+    }
+}

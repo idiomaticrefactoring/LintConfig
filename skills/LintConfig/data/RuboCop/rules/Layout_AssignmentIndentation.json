@@ -1,0 +1,6 @@
+{
+    "Layout/AssignmentIndentation": {
+        "description": "Description\n\nChecks the indentation of the first line of the right-hand-side of a multi-line assignment.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIndentationWidth: None (type: NoneType)"
+    }
+}

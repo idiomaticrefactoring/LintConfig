@@ -1,0 +1,6 @@
+{
+    "ReplaceJavaUtilCalendar": {
+        "description": "Description\n\nMinimum Language Version:Java 1.8\n\nThe legacyjava.util.CalendarAPI is error-prone, mutable, and not thread-safe. It has confusing month indexing\n(January = 0), inconsistent field semantics, and verbose usage patterns. The modernjava.time API(introduced in Java 8) provides immutable, thread-safe alternatives with clear, intuitive methods.\n\nUseLocalDate(for date-only operations),LocalDateTime(for date and time), orZonedDateTime(when timezone is important) fromjava.timepackage instead.\n\nNote: Since JPA 3.2 (Jakarta Persistence) usage ofjava.util.Dateandjava.util.Calendarand others is\ndeprecated there as well in favour ofjava.timeAPI.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

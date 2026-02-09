@@ -1,0 +1,6 @@
+{
+    "Style/CommentedKeyword": {
+        "description": "Description\n\nDo not place comments on the same line as certain keywords.",
+        "option": "This rule has no specific options."
+    }
+}

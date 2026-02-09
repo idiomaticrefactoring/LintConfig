@@ -1,0 +1,6 @@
+{
+    "Gemspec/DependencyVersion": {
+        "description": "Description\n\nRequires or forbids specifying gem dependency versions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: required (type: str)\nSupportedStyles: ['required', 'forbidden'] (type: list)\nAllowedGems: [] (type: list)"
+    }
+}

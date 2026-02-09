@@ -1,0 +1,6 @@
+{
+    "StlMissingComparison": {
+        "description": "Description\n\nThe product performs an iteration or loop without sufficiently limiting the number of times that the loop is executed.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 834\nInconclusive: false"
+    }
+}

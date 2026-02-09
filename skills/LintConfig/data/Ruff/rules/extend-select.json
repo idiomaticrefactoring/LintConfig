@@ -1,0 +1,6 @@
+{
+    "extend-select": {
+        "description": "Description\n\nA list of rule codes or prefixes to enable, in addition to those\nspecified by [`select`](#lint_select).",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

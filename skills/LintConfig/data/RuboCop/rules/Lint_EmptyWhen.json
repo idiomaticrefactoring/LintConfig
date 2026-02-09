@@ -1,0 +1,6 @@
+{
+    "Lint/EmptyWhen": {
+        "description": "Description\n\nChecks for `when` branches with empty bodies.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowComments: True (type: bool)"
+    }
+}

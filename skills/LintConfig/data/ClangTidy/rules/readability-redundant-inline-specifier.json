@@ -1,0 +1,6 @@
+{
+    "readability-redundant-inline-specifier": {
+        "description": "Description\n\nDetects redundant\ninline\nspecifiers on function and variable declarations.\n\nExamples:\n\nconstexpr\ninline\nvoid\nf\n()\n{}\n\nIn the example above the keyword\ninline\nis redundant since constexpr\nfunctions are implicitly inlined\n\nclass\nMyClass\n{\ninline\nvoid\nmyMethod\n()\n{}\n};\n\nIn the example above the keyword\ninline\nis redundant since member functions\ndefined entirely inside a class/struct/union definition are implicitly inlined.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nStrictMode\nIf set to\ntrue\n, the check will also flag functions and variables that\nalready have internal linkage as redundant. Default is\nfalse\n."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/BlockComments": {
+        "description": "Description\n\nDo not use block comments.",
+        "option": "This rule has no specific options."
+    }
+}

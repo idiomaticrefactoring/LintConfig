@@ -1,0 +1,6 @@
+{
+    "Lint/LambdaWithoutLiteralBlock": {
+        "description": "Description\n\nChecks uses of lambda without a literal block.",
+        "option": "This rule has no specific options."
+    }
+}

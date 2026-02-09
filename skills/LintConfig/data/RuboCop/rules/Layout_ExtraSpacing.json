@@ -1,0 +1,6 @@
+{
+    "Layout/ExtraSpacing": {
+        "description": "Description\n\nDo not use unnecessary spacing.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowForAlignment: True (type: bool)\nAllowBeforeTrailingComments: False (type: bool)\nForceEqualSignAlignment: False (type: bool)"
+    }
+}

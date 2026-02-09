@@ -1,0 +1,6 @@
+{
+    "Style/SingleLineDoEndBlock": {
+        "description": "Description\n\nChecks for single-line `do`...`end` blocks.",
+        "option": "This rule has no specific options."
+    }
+}

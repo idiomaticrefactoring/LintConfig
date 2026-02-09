@@ -1,0 +1,6 @@
+{
+    "Style/SuperArguments": {
+        "description": "Description\n\nCall `super` without arguments and parentheses when the signature is identical.",
+        "option": "This rule has no specific options."
+    }
+}

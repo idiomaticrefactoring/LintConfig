@@ -1,0 +1,6 @@
+{
+    "llvm-prefer-register-over-unsigned": {
+        "description": "Description\n\nFinds historical use of\nunsigned\nto hold vregs and physregs and rewrites\nthem to use\nRegister\n.\n\nCurrently this works by finding all variables of unsigned integer type whose\ninitializer begins with an implicit cast from\nRegister\nto\nunsigned\n.\n\nvoid\nexample\n(\nMachineOperand\n&\nMO\n)\n{\nunsigned\nReg\n=\nMO\n.\ngetReg\n();\n...\n}\n\nbecomes:\n\nvoid\nexample\n(\nMachineOperand\n&\nMO\n)\n{\nRegister\nReg\n=\nMO\n.\ngetReg\n();\n...\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

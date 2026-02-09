@@ -1,0 +1,6 @@
+{
+    "InvalidLogMessageFormat": {
+        "description": "Description\n\nCheck for messages in slf4j and log4j2 (since 6.19.0) loggers with non matching number of arguments and placeholders.\n\nSince 6.32.0 in addition to parameterized message placeholders ({}) also format specifiers of string formatted\nmessages are supported (%s).\n\nThis rule has been renamed from \"InvalidSlf4jMessageFormat\" in PMD 6.19.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

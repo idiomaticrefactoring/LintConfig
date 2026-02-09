@@ -1,0 +1,6 @@
+{
+    "Style/ClassAndModuleChildren": {
+        "description": "Description\n\nChecks style of children classes and modules.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: nested (type: str)\nSupportedStyles: ['nested', 'compact'] (type: list)\nEnforcedStyleForClasses: None (type: NoneType)\nSupportedStylesForClasses: [None, 'nested', 'compact'] (type: list)\nEnforcedStyleForModules: None (type: NoneType)\nSupportedStylesForModules: [None, 'nested', 'compact'] (type: list)"
+    }
+}

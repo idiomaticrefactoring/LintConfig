@@ -1,0 +1,6 @@
+{
+    "Style/ColonMethodDefinition": {
+        "description": "Description\n\nDo not use :: for defining class methods.",
+        "option": "This rule has no specific options."
+    }
+}

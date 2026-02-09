@@ -1,0 +1,6 @@
+{
+    "clarifyStatement": {
+        "description": "Description\n\nThe product uses an expression in which operator precedence causes incorrect logic to be used.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 783\nInconclusive: false"
+    }
+}

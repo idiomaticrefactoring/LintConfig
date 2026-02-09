@@ -1,0 +1,6 @@
+{
+    "Style/NumericLiterals": {
+        "description": "Description\n\nAdd underscores to large numeric literals to improve their readability.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMinDigits: 5 (type: int)\nStrict: False (type: bool)\nAllowedNumbers: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

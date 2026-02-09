@@ -1,0 +1,6 @@
+{
+    "readability-uniqueptr-delete-release": {
+        "description": "Description\n\nReplace\ndelete\n<unique_ptr>.release()\nwith\n<unique_ptr>\n=\nnullptr\n.\nThe latter is shorter, simpler and does not require use of raw pointer APIs.\n\nstd\n::\nunique_ptr\n<\nint\n>\nP\n;\ndelete\nP\n.\nrelease\n();\n// becomes\nstd\n::\nunique_ptr\n<\nint\n>\nP\n;\nP\n=\nnullptr\n;",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nPreferResetCall\nIf\ntrue\n, refactor by calling the reset member function instead of\nassigning to\nnullptr\n. Default value is\nfalse\n.\nstd\n::\nunique_ptr\n<\nint\n>\nP\n;\ndelete\nP\n.\nrelease\n();\n// becomes\nstd\n::\nunique_ptr\n<\nint\n>\nP\n;\nP\n.\nreset\n();"
+    }
+}

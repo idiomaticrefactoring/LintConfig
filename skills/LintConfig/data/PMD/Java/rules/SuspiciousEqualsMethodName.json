@@ -1,0 +1,6 @@
+{
+    "SuspiciousEqualsMethodName": {
+        "description": "Description\n\nThe method name and parameter number are suspiciously close toObject.equals, which can denote an\nintention to override it. However, the method does not overrideObject.equals, but overloads it instead.\nOverloadingObject.equalsmethod is confusing for other programmers, error-prone and hard to maintain,\nespecially when using inheritance, because@Overrideannotations used in subclasses can provide a false\nsense of security. For more information onObject.equalsmethod, see Effective Java, 3rd Edition,\nItem 10: Obey the general contract when overriding equals.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

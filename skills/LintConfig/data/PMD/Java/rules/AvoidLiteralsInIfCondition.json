@@ -1,0 +1,6 @@
+{
+    "AvoidLiteralsInIfCondition": {
+        "description": "Description\n\nAvoid using hard-coded literals in conditional statements. By declaring them as static variables\nor private members with descriptive names maintainability is enhanced. By default, the literals \"-1\" and \"0\" are ignored.\nMore exceptions can be defined with the property \"ignoreMagicNumbers\".\n\nThe rule doesn’t consider deeper expressions by default, but this can be enabled via the propertyignoreExpressions.\nWith this property set to false, if-conditions likei == 1 + 5are reported as well. Note that in that case,\nthe property ignoreMagicNumbers is not taken into account, if there are multiple literals involved in such an expression.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nignoreMagicNumbers\t-1,0\tComma-separated list of magic numbers, that should be ignored\nignoreExpressions\ttrue\tIf true, only literals in simple if conditions are considered. Otherwise literals in expressions are checked, too."
+    }
+}

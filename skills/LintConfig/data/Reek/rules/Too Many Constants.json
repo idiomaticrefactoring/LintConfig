@@ -1,0 +1,6 @@
+{
+    "Too Many Constants": {
+        "description": "Description\n\nIntroduction\n\nToo Many Constants is a case of Large Class.\n\nExample\n\nGiven this configuration\n\nyaml\nTooManyConstants:\n  max_constants: 3\n\nand this code:\n\nruby\nclass Smelly\n  CONST_1 = :dummy\n  CONST_2 = :dummy\n  CONST_3 = :dummy\n  CONST_4 = :dummy\nend\n\nReek would emit the following warning:\n\ntest.rb -- 1 warning:\n  [1]:TooManyConstants: Smelly has 4 constants",
+        "option": "Reek's Too Many Constants detector offers the Basic Smell Options, plus:\n\n| Option                   | Value   | Effect  |\n| -------------------------|---------|---------|\n| max_constants | integer | The maximum number of constants that are permitted. Defaults to 5 |"
+    }
+}

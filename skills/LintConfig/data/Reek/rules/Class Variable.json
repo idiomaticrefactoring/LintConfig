@@ -1,0 +1,6 @@
+{
+    "Class Variable": {
+        "description": "Description\n\nIntroduction\n\nClass variables form part of the global runtime state, and as such make it easy for one part of the system to accidentally or inadvertently depend on another part of the system. So the system becomes more prone to problems where changing something over here breaks something over there. In particular, class variables can make it hard to set up tests (because the context of the test includes all global state).\n\nFor a detailed explanation, check out this article. and Stackoverflow\n\nExample\n\nGiven\n\nruby\nclass Dummy\n  @@class_variable = :whatever\nend\n\nReek would emit the following warning:\n\n```\nreek test.rb\n\ntest.rb -- 1 warning:\n  [2]:Dummy declares the class variable @@class_variable (ClassVariable)\n```\n\nGetting rid of the smell\n\nYou can use class-instance variable to mitigate the problem (as also suggested in the linked article above):\n\nruby\nclass Dummy\n  @class_variable = :whatever\nend",
+        "option": "Class Variable supports the Basic Smell Options."
+    }
+}

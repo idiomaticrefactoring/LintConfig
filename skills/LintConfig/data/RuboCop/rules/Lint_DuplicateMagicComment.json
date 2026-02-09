@@ -1,0 +1,6 @@
+{
+    "Lint/DuplicateMagicComment": {
+        "description": "Description\n\nChecks for duplicated magic comments.",
+        "option": "This rule has no specific options."
+    }
+}

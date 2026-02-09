@@ -1,0 +1,6 @@
+{
+    "Style/MultilineBlockChain": {
+        "description": "Description\n\nAvoid multi-line chains of blocks.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "comparisonOfBoolWithInvalidComparator": {
+        "description": "Description\n\nThe result of the expression 'expression' is of type 'bool'. Comparing 'bool' value using relational (<, >, <= or >=) operator could cause unexpected results.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: N/A\nInconclusive: false"
+    }
+}

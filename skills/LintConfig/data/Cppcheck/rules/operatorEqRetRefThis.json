@@ -1,0 +1,6 @@
+{
+    "operatorEqRetRefThis": {
+        "description": "Description\n\n'operator=' should return reference to 'this' instance.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: 398\nInconclusive: false"
+    }
+}

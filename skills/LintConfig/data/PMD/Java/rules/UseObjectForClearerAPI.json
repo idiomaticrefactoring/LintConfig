@@ -1,0 +1,6 @@
+{
+    "UseObjectForClearerAPI": {
+        "description": "Description\n\nWhen you write a public method, you should be thinking in terms of an API. If your method is public, it means other class\nwill use it, therefore, you want (or need) to offer a comprehensive and evolutive API. If you pass a lot of information\nas a simple series of Strings, you may think of using an Object to represent all those information. You’ll get a simpler\nAPI (such as doWork(Workload workload), rather than a tedious series of Strings) and more importantly, if you need at some\npoint to pass extra data, you’ll be able to do so by simply modifying or extending Workload without any modification to\nyour API.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

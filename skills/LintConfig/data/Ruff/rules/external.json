@@ -1,0 +1,6 @@
+{
+    "external": {
+        "description": "Description\n\nA list of rule codes or prefixes that are unsupported by Ruff, but should be\npreserved when (e.g.) validating `# noqa` directives. Useful for\nretaining `# noqa` directives that cover plugins not yet implemented\nby Ruff.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

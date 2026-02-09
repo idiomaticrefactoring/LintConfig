@@ -1,0 +1,6 @@
+{
+    "readability-use-anyofallof": {
+        "description": "Description\n\nFinds range-based for loops that can be replaced by a call to\nstd::any_of\nor\nstd::all_of\n. In C++20 mode, suggests\nstd::ranges::any_of\nor\nstd::ranges::all_of\n.\n\nExample:\n\nbool\nall_even\n(\nstd\n::\nvector\n<\nint\n>\nV\n)\n{\nfor\n(\nint\nI\n:\nV\n)\n{\nif\n(\nI\n%\n2\n)\nreturn\nfalse\n;\n}\nreturn\ntrue\n;\n// Replace loop by\n// return std::ranges::all_of(V, [](int I) { return I % 2 == 0; });\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

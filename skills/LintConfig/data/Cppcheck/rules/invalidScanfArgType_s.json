@@ -1,0 +1,6 @@
+{
+    "invalidScanfArgType_s": {
+        "description": "Description\n\nThe product calls a function, procedure, or routine, but the caller specifies an argument that is the wrong data type, which may lead to resultant weaknesses.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 686\nInconclusive: false"
+    }
+}

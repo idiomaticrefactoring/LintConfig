@@ -1,0 +1,6 @@
+{
+    "bugprone-random-generator-seed": {
+        "description": "Description\n\nFlags all pseudo-random number engines, engine adaptor\ninstantiations and\nsrand()\nwhen initialized or seeded with default\nargument, constant expression or any user-configurable type. Pseudo-random\nnumber engines seeded with a predictable value may cause vulnerabilities\ne.g. in security protocols.\n\nExamples:\n\nvoid\nfoo\n()\n{\nstd\n::\nmt19937\nengine1\n;\n// Diagnose, always generate the same sequence\nstd\n::\nmt19937\nengine2\n(\n1\n);\n// Diagnose\nengine1\n.\nseed\n();\n// Diagnose\nengine2\n.\nseed\n(\n1\n);\n// Diagnose\nstd\n::\ntime_t\nt\n;\nengine1\n.\nseed\n(\nstd\n::\ntime\n(\n&\nt\n));\n// Diagnose, system time might be controlled by user\nint\nx\n=\natoi\n(\nargv\n[\n1\n]);\nstd\n::\nmt19937\nengine3\n(\nx\n);\n// Will not warn\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nDisallowedSeedTypes\nA comma-separated list of the type names which are disallowed.\nDefault value is\ntime_t,std::time_t\n.\n\nReferences\nThis check corresponds to the CERT C++ Coding Standard rules\nMSC51-CPP. Ensure your random number generator is properly seeded\nand\nMSC32-C. Properly seed pseudorandom number generators\n."
+    }
+}

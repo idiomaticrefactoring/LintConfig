@@ -1,0 +1,6 @@
+{
+    "performance-move-const-arg": {
+        "description": "Description\n\nThe check warns\n\nif\nstd::move()\nis called with a constant argument,\nif\nstd::move()\nis called with an argument of a trivially-copyable type,\nif the result of\nstd::move()\nis passed as a const reference argument.\n\nIn all three cases, the check will suggest a fix that removes the\nstd::move()\n.\n\nHere are examples of each of the three cases:\n\nconst\nstring\ns\n;\nreturn\nstd\n::\nmove\n(\ns\n);\n// Warning: std::move of the const variable has no effect\nint\nx\n;\nreturn\nstd\n::\nmove\n(\nx\n);\n// Warning: std::move of the variable of a trivially-copyable type has no effect\nvoid\nf\n(\nconst\nstring\n&\ns\n);\nstring\ns\n;\nf\n(\nstd\n::\nmove\n(\ns\n));\n// Warning: passing result of std::move as a const reference argument; no move will actually happen",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nCheckTriviallyCopyableMove\nIf\ntrue\n, enables detection of trivially copyable types that do not\nhave a move constructor. Default is\ntrue\n.\nCheckMoveToConstRef\nIf\ntrue\n, enables detection of\nstd::move()\npassed as a const\nreference argument. Default is\ntrue\n."
+    }
+}

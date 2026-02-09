@@ -1,0 +1,6 @@
+{
+    "Style/OrAssignment": {
+        "description": "Description\n\nRecommend usage of double pipe equals (||=) where applicable.",
+        "option": "This rule has no specific options."
+    }
+}

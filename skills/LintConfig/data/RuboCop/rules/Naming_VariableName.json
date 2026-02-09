@@ -1,0 +1,6 @@
+{
+    "Naming/VariableName": {
+        "description": "Description\n\nUse the configured style when naming variables.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: snake_case (type: str)\nSupportedStyles: ['snake_case', 'camelCase'] (type: list)\nAllowedIdentifiers: [] (type: list)\nAllowedPatterns: [] (type: list)\nForbiddenIdentifiers: [] (type: list)\nForbiddenPatterns: [] (type: list)"
+    }
+}

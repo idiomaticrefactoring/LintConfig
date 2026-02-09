@@ -1,0 +1,6 @@
+{
+    "modernize-type-traits": {
+        "description": "Description\n\nConverts standard library type traits of the form\ntraits<...>::type\nand\ntraits<...>::value\ninto\ntraits_t<...>\nand\ntraits_v<...>\nrespectively.\n\nFor example:\n\nstd\n::\nis_integral\n<\nT\n>::\nvalue\nstd\n::\nis_same\n<\nint\n,\nfloat\n>::\nvalue\ntypename\nstd\n::\nadd_const\n<\nT\n>::\ntype\nstd\n::\nmake_signed\n<\nunsigned\n>::\ntype\n\nWould be converted into:\n\nstd\n::\nis_integral_v\n<\nT\n>\nstd\n::\nis_same_v\n<\nint\n,\nfloat\n>\nstd\n::\nadd_const_t\n<\nT\n>\nstd\n::\nmake_signed_t\n<\nunsigned\n>",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf\ntrue\ndon’t diagnose traits defined in macros.\nNote: Fixes will never be emitted for code inside of macros.\n#define IS_SIGNED(T) std::is_signed<T>::value\nDefaults to\nfalse\n.\n\nLimitations\nDoes not currently diagnose uses of type traits with nested name\nspecifiers (e.g.\nstd::chrono::is_clock\n,\nstd::chrono::treat_as_floating_point\n)."
+    }
+}

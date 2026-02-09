@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceAroundKeyword": {
+        "description": "Description\n\nUse a space around keywords if appropriate.",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/DigChain": {
+        "description": "Description\n\nUse `dig` with multiple parameters instead of chaining multiple calls.",
+        "option": "This rule has no specific options."
+    }
+}

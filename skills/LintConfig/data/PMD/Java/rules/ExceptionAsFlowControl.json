@@ -1,0 +1,6 @@
+{
+    "ExceptionAsFlowControl": {
+        "description": "Description\n\nThis rule reports exceptions thrown and caught in an enclosing try statement.\nThis use of exceptions as a form ofgotostatement is discouraged, as that may\nhide actual exceptions, and obscures control flow, especially when debugging.\nTo fix a violation, add the necessary validation or use an alternate control structure.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "bugprone-throw-keyword-missing": {
+        "description": "Description\n\nWarns about a potentially missing\nthrow\nkeyword. If a temporary object\nis created, but the object’s type derives from (or is the same as) a class\nthat has ‘EXCEPTION’, ‘Exception’ or ‘exception’ in its name, we can assume\nthat the programmer’s intention was to throw that object.\n\nExample:\n\nvoid\nf\n(\nint\ni\n)\n{\nif\n(\ni\n<\n0\n)\n{\n// Exception is created but is not thrown.\nstd\n::\nruntime_error\n(\n\"Unexpected argument\"\n);\n}\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

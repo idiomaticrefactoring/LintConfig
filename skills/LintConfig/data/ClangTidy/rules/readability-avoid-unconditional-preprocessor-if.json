@@ -1,0 +1,6 @@
+{
+    "readability-avoid-unconditional-preprocessor-if": {
+        "description": "Description\n\nFinds code blocks that are constantly enabled or disabled in preprocessor\ndirectives by analyzing\n#if\nconditions, such as\n#if\n0\nand\n#if\n1\n,\netc.\n\n#if 0\n// some disabled code\n#endif\n#if 1\n// some enabled code that can be disabled manually\n#endif\n\nUnconditional preprocessor directives, such as\n#if\n0\nfor disabled code\nand\n#if\n1\nfor enabled code, can lead to dead code and always enabled code,\nrespectively. Dead code can make understanding the codebase more difficult,\nhinder readability, and may be a sign of unfinished functionality or abandoned\nfeatures. This can cause maintenance issues, confusion for future developers,\nand potential compilation problems.\n\nAs a solution for both cases, consider using preprocessor macros or defines,\nlike\n#ifdef\nDEBUGGING_ENABLED\n, to control code enabling or disabling.\nThis approach provides better coordination and flexibility when working with\ndifferent parts of the codebase. Alternatively, you can comment out the entire\ncode using\n/*\n*/\nblock comments and add a hint, such as\n@todo\n,\nto indicate future actions.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

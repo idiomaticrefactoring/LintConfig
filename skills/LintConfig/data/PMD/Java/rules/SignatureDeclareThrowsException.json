@@ -1,0 +1,6 @@
+{
+    "SignatureDeclareThrowsException": {
+        "description": "Description\n\nA method/constructor shouldn’t explicitly throw the generic java.lang.Exception, since it\nis unclear which exceptions that can be thrown from the methods. It might be\ndifficult to document and understand such vague interfaces. Use either a class\nderived from RuntimeException or a checked exception.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nIgnoreJUnitCompletely\tfalse\tAllow all methods in a JUnit3 TestCase to throw Exceptions"
+    }
+}

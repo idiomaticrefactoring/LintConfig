@@ -1,0 +1,6 @@
+{
+    "Naming/PredicateMethod": {
+        "description": "Description\n\nChecks that predicate methods end with `?` and non-predicate methods do not.",
+        "option": "This rule supports the following parameters in your configuration:\n\nMode: conservative (type: str)\nAllowedMethods: ['call'] (type: list)\nAllowedPatterns: [] (type: list)\nAllowBangMethods: False (type: bool)\nWaywardPredicates: ['infinite?', 'nonzero?'] (type: list)"
+    }
+}

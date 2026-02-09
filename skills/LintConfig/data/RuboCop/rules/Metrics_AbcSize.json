@@ -1,0 +1,6 @@
+{
+    "Metrics/AbcSize": {
+        "description": "Description\n\nA calculated magnitude based on number of assignments, branches, and conditions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nReferences: ['https://wiki.c2.com/?AbcMetric', 'https://en.wikipedia.org/wiki/ABC_Software_Metric'] (type: list)\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)\nCountRepeatedAttributes: True (type: bool)\nMax: 17 (type: int)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Style/Alias": {
+        "description": "Description\n\nUse alias instead of alias_method.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: prefer_alias (type: str)\nSupportedStyles: ['prefer_alias', 'prefer_alias_method'] (type: list)"
+    }
+}

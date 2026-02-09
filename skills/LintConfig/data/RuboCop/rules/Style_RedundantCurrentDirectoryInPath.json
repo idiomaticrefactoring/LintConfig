@@ -1,0 +1,6 @@
+{
+    "Style/RedundantCurrentDirectoryInPath": {
+        "description": "Description\n\nChecks for a redundant current directory in a path given to `require_relative`.",
+        "option": "This rule has no specific options."
+    }
+}

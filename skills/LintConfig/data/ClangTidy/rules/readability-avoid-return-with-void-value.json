@@ -1,0 +1,6 @@
+{
+    "readability-avoid-return-with-void-value": {
+        "description": "Description\n\nFinds return statements with\nvoid\nvalues used within functions with\nvoid\nresult types.\n\nA function with a\nvoid\nreturn type is intended to perform a task without\nproducing a return value. Return statements with expressions could lead\nto confusion and may miscommunicate the function’s intended behavior.\n\nExample:\n\nvoid\ng\n();\nvoid\nf\n()\n{\n//\n...\nreturn\ng\n();\n}\n\nIn a long function body, the\nreturn\nstatement suggests that the function\nreturns a value. However,\nreturn\ng();\nis a combination of two statements\nthat should be written as\n\ng\n();\nreturn\n;\n\nto make clear that\ng()\nis called and immediately afterwards the function\nreturns (nothing).\n\nIn C, the same issue is detected by the compiler if the\n-Wpedantic\nmode\nis enabled.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nThe value\nfalse\nspecifies that return statements expanded\nfrom macros are not checked. The default value is\ntrue\n.\nStrictMode\nThe value\nfalse\nspecifies that a direct return statement shall\nbe excluded from the analysis if it is the only statement not\ncontained in a block, like\nif\n(cond)\nreturn\ng();\n. The default\nvalue is\ntrue\n."
+    }
+}

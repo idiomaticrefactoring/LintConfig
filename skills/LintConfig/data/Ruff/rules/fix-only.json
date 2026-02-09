@@ -1,0 +1,6 @@
+{
+    "fix-only": {
+        "description": "Description\n\nLike [`fix`](#fix), but disables reporting on leftover violation. Implies [`fix`](#fix).",
+        "option": "Type: boolean"
+    }
+}

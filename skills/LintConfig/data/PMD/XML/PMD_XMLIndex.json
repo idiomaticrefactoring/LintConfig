@@ -1,0 +1,10 @@
+{
+    "MissingEncoding": {
+        "description": "When the character encoding is missing from the XML declaration, the parser may produce garbled t…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_xml_bestpractices.html#missingencoding"
+    },
+    "MistypedCDATASection": {
+        "description": "An XML CDATA section begins with a <![CDATA[ marker, which has only one [, and ends with a ]]> ma…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_xml_errorprone.html#mistypedcdatasection"
+    }
+}

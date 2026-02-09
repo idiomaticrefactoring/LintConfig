@@ -1,0 +1,6 @@
+{
+    "Style/NestedTernaryOperator": {
+        "description": "Description\n\nUse one expression per branch in a ternary operator.",
+        "option": "This rule has no specific options."
+    }
+}

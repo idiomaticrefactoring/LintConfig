@@ -1,0 +1,6 @@
+{
+    "Layout/InitialIndentation": {
+        "description": "Description\n\nChecks the indentation of the first non-blank non-comment line in a file.",
+        "option": "This rule has no specific options."
+    }
+}

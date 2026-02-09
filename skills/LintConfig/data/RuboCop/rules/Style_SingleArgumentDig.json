@@ -1,0 +1,6 @@
+{
+    "Style/SingleArgumentDig": {
+        "description": "Description\n\nAvoid using single argument dig method.",
+        "option": "This rule has no specific options."
+    }
+}

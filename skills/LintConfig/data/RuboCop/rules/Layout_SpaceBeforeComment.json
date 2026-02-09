@@ -1,0 +1,6 @@
+{
+    "Layout/SpaceBeforeComment": {
+        "description": "Description\n\nChecks for missing space between code and a comment on the same line.",
+        "option": "This rule has no specific options."
+    }
+}

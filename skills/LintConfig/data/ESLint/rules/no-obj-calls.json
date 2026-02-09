@@ -1,0 +1,6 @@
+{
+    "no-obj-calls": {
+        "description": "Description\n\nThis rule disallows calling theMath,JSON,Reflect,AtomicsandIntlobjects as functions.\n\nThis rule also disallows using these objects as constructors with thenewoperator.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-obj-calls: \"error\"*/\n\nconst math = Math();\n\nconst newMath = new Math();\n\nconst json = JSON();\n\nconst newJSON = new JSON();\n\nconst reflect = Reflect();\n\nconst newReflect = new Reflect();\n\nconst atomics = Atomics();\n\nconst newAtomics = new Atomics();\n\nconst intl = Intl();\n\nconst newIntl = new Intl();\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-obj-calls: \"error\"*/\n\nfunction area(r) {\n    return Math.PI * r * r;\n}\n\nconst object = JSON.parse(\"{}\");\n\nconst value = Reflect.get({ x: 1, y: 2 }, \"x\");\n\nconst first = Atomics.load(foo, 0);\n\nconst segmenterFr = new Intl.Segmenter(\"fr\", { granularity: \"word\" });",
+        "option": "This rule has no options."
+    }
+}

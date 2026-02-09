@@ -1,0 +1,6 @@
+{
+    "Style/ConstantVisibility": {
+        "description": "Description\n\nCheck that class- and module constants have visibility declarations.",
+        "option": "This rule supports the following parameters in your configuration:\n\nIgnoreModules: False (type: bool)"
+    }
+}

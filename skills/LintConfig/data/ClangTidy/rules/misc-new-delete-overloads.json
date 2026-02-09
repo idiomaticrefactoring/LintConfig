@@ -1,0 +1,6 @@
+{
+    "misc-new-delete-overloads": {
+        "description": "Description\n\ncert-dcl54-cpp\nredirects here as an alias for this check.\n\nThe check flags overloaded operator\nnew()\nand operator\ndelete()\nfunctions that do not have a corresponding free store function defined within\nthe same scope.\nFor instance, the check will flag a class implementation of a non-placement\noperator\nnew()\nwhen the class does not also define a non-placement operator\ndelete()\nfunction as well.\n\nThe check does not flag implicitly-defined operators, deleted or private\noperators, or placement operators.\n\nThis check corresponds to CERT C++ Coding Standard rule\nDCL54-CPP. Overload allocation and deallocation functions as a pair in the same scope\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

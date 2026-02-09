@@ -1,0 +1,6 @@
+{
+    "Style/FileEmpty": {
+        "description": "Description\n\nPrefer to use `File.empty?('path/to/file')` when checking if a file is empty.",
+        "option": "This rule has no specific options."
+    }
+}

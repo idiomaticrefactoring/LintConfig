@@ -1,0 +1,6 @@
+{
+    "AvoidUsingOctalValues": {
+        "description": "Description\n\nInteger literals that start with zero are interpreted as octal (base-8) values in Java, which can lead to \nunexpected behavior and bugs. Most developers expect decimal (base-10) interpretation, making octal literals \na common source of confusion and errors. For example, 012 equals 10 in decimal, not 12 as might be expected.\nThis rule helps prevent such mistakes by flagging integer literals that could be misinterpreted as decimal values. \nUse decimal literals without leading zeros, or use explicit prefixes like 0x for hexadecimal or 0b for binary values to make the intended base clear.\n\nExample(s):\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nstrict\tfalse\tDetect violations between 00 and 07"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidTabCharacter": {
+        "description": "Description\n\nThis rule checks, that there are no tab characters (\\t) in the source file.\nIt reports only the first occurrence per file.\n\nUsing tab characters for indentation is not recommended, since this requires that every developer\nuses the same tab with in their editor.\n\nThis rule is the PMD equivalent of checkstyle’sFileTabCharactercheck.\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\neachLine\tfalse\tWhether to report each line with a tab character or only the first line"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/AmbiguousBlockAssociation": {
+        "description": "Description\n\nChecks for ambiguous block association with method when param passed without parentheses.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: [] (type: list)\nAllowedPatterns: [] (type: list)"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "LineLength": {
+        "description": "Description\n\nThis rule checks for long lines. Please note that comments are not ignored.\n\nThis rule is the PMD equivalent of checkstyle’sLineLengthcheck.\n\nUse this rule with the default properties by just referencing it:\n\nUse this rule and customize it:",
+        "option": "Name\tDefault Value\tDescription\nmaxLineLength\t80\tThe maximum allowed line length\neachLine\tfalse\tWhether to report each line that is longer only the first line"
+    }
+}

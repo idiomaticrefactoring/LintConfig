@@ -1,0 +1,6 @@
+{
+    "dummy-variable-rgx": {
+        "description": "Description\n\nA regular expression used to identify \"dummy\" variables, or those which\nshould be ignored when enforcing (e.g.) unused-variable rules. The\ndefault expression matches `_`, `__`, and `_var`, but not `_var_`.",
+        "option": "Type: string\nStatus: DEPRECATED"
+    }
+}

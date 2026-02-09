@@ -1,0 +1,6 @@
+{
+    "Lint/LiteralAsCondition": {
+        "description": "Description\n\nChecks of literals used in conditions.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAutoCorrect: contextual (type: str)"
+    }
+}

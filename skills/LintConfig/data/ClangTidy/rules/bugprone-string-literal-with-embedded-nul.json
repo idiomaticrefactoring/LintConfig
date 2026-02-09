@@ -1,0 +1,6 @@
+{
+    "bugprone-string-literal-with-embedded-nul": {
+        "description": "Description\n\nFinds occurrences of string literal with embedded NUL character and validates\ntheir usage.\n\nInvalid escaping\nSpecial characters can be escaped within a string literal by using their\nhexadecimal encoding like\n\\x42\n. A common mistake is to escape them\nlike this\n\\0x42\nwhere the\n\\0\nstands for the NUL character.\nconst\nchar\n*\nExample\n[]\n=\n\"Invalid character:\n\\0\nx12 should be\n\\x12\n\"\n;\nconst\nchar\n*\nBytes\n[]\n=\n\"\n\\x03\\0\nx02\n\\0\nx01\n\\0\nx00\n\\0\nxFF\n\\0\nxFF\n\\0\nxFF\"\n;\n\nTruncated literal\nString-like classes can manipulate strings with embedded NUL as they are\nkeeping track of the bytes and the length. This is not the case for a\nchar*\n(NUL-terminated) string.\nA common mistake is to pass a string-literal with embedded NUL to a string\nconstructor expecting a NUL-terminated string. The bytes after the first NUL\ncharacter are truncated.\nstd\n::\nstring\nstr\n(\n\"abc\n\\0\ndef\"\n);\n// \"def\" is truncated\nstr\n+=\n\"\n\\0\n\"\n;\n// This statement is doing nothing\nif\n(\nstr\n==\n\"\n\\0\nabc\"\n)\nreturn\n;\n// This expression is always true",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

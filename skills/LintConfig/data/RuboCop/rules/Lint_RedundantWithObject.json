@@ -1,0 +1,6 @@
+{
+    "Lint/RedundantWithObject": {
+        "description": "Description\n\nChecks for redundant `with_object`.",
+        "option": "This rule has no specific options."
+    }
+}

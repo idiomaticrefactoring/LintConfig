@@ -1,0 +1,6 @@
+{
+    "Style/StringChars": {
+        "description": "Description\n\nChecks for uses of `String#split` with empty string or regexp literal argument.",
+        "option": "This rule has no specific options."
+    }
+}

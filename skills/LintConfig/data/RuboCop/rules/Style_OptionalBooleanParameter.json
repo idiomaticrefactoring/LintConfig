@@ -1,0 +1,6 @@
+{
+    "Style/OptionalBooleanParameter": {
+        "description": "Description\n\nUse keyword arguments when defining method with boolean argument.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedMethods: ['respond_to_missing?'] (type: list)"
+    }
+}

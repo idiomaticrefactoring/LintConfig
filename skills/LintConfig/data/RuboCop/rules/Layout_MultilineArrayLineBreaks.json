@@ -1,0 +1,6 @@
+{
+    "Layout/MultilineArrayLineBreaks": {
+        "description": "Description\n\nChecks that each item in a multi-line array literal starts on a separate line.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowMultilineFinalElement: False (type: bool)"
+    }
+}

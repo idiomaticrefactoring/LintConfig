@@ -1,0 +1,6 @@
+{
+    "Style/EachForSimpleLoop": {
+        "description": "Description\n\nUse `Integer#times` for a simple loop which iterates a fixed number of times.",
+        "option": "This rule has no specific options."
+    }
+}

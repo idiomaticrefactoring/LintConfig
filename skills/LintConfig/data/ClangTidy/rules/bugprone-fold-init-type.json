@@ -1,0 +1,6 @@
+{
+    "bugprone-fold-init-type": {
+        "description": "Description\n\nThe check flags type mismatches in\nfolds\nlike\nstd::accumulate\nthat might result in loss of precision.\nstd::accumulate\nfolds an input range into an initial value using\nthe type of the latter, with\noperator+\nby default. This can cause\nloss of precision through:\n\nTruncation: The following code uses a floating point range and an int\ninitial value, so truncation will happen at every application of\noperator+\nand the result will be\n0\n, which might not be what the\nuser expected.\n\nauto\na\n=\n{\n0.5f\n,\n0.5f\n,\n0.5f\n,\n0.5f\n};\nreturn\nstd\n::\naccumulate\n(\nstd\n::\nbegin\n(\na\n),\nstd\n::\nend\n(\na\n),\n0\n);\n\nOverflow: The following code also returns\n0\n.\n\nauto\na\n=\n{\n65536L\nL\n*\n65536\n*\n65536\n};\nreturn\nstd\n::\naccumulate\n(\nstd\n::\nbegin\n(\na\n),\nstd\n::\nend\n(\na\n),\n0\n);",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

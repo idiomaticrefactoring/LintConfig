@@ -1,0 +1,6 @@
+{
+    "Style/EvenOdd": {
+        "description": "Description\n\nFavor the use of `Integer#even?` && `Integer#odd?`.",
+        "option": "This rule has no specific options."
+    }
+}

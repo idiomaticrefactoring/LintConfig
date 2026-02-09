@@ -1,0 +1,6 @@
+{
+    "Naming/BlockForwarding": {
+        "description": "Description\n\nUse anonymous block forwarding.",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: anonymous (type: str)\nSupportedStyles: ['anonymous', 'explicit'] (type: list)\nBlockForwardingName: block (type: str)"
+    }
+}

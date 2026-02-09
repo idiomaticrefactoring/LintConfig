@@ -1,0 +1,6 @@
+{
+    "suspiciousSemicolon": {
+        "description": "Description\n\nSuspicious use of ; at the end of '' statement.",
+        "option": "Static analysis does not have options.\n\nSeverity: warning\nCWE: 398\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "MutableStaticState": {
+        "description": "Description\n\nNon-private static fields should be made constants (or immutable references) by\ndeclaring them final.\n\nNon-private non-final static fields break encapsulation and can lead to hard to find\nbugs, since these fields can be modified from anywhere within the program.\nCallers can trivially access and modify non-private non-final static fields. Neither\naccesses nor modifications can be guarded against, and newly set values cannot\nbe validated.\n\nIf you are using this rule, then you don’t need this\nruleAssignmentToNonFinalStatic.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

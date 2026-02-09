@@ -1,0 +1,6 @@
+{
+    "Style/StderrPuts": {
+        "description": "Description\n\nUse `warn` instead of `$stderr.puts`.",
+        "option": "This rule has no specific options."
+    }
+}

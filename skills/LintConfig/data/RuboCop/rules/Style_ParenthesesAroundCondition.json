@@ -1,0 +1,6 @@
+{
+    "Style/ParenthesesAroundCondition": {
+        "description": "Description\n\nDon't use parentheses around the condition of an if/unless/while.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowSafeAssignment: True (type: bool)\nAllowInMultilineConditions: False (type: bool)"
+    }
+}

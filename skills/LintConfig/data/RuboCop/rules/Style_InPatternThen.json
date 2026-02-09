@@ -1,0 +1,6 @@
+{
+    "Style/InPatternThen": {
+        "description": "Description\n\nChecks for `in;` uses in `case` expressions.",
+        "option": "This rule has no specific options."
+    }
+}

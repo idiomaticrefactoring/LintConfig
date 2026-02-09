@@ -1,0 +1,6 @@
+{
+    "no-sparse-arrays": {
+        "description": "Description\n\nThis rule disallows sparse array literals which have “holes” where commas are not preceded by elements. It does not apply to a trailing comma following the last element.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-sparse-arrays: \"error\"*/\n\nconst items = [,];\nconst colors = [ \"red\",, \"blue\" ];\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-sparse-arrays: \"error\"*/\n\nconst items = [];\nconst arr = new Array(23);\n\n// trailing comma (after the last element) is not a problem\nconst colors = [ \"red\", \"blue\", ];",
+        "option": "This rule has no options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-use-enum-class": {
+        "description": "Description\n\nFinds unscoped (non-class)\nenum\ndeclarations and suggests using\nenum\nclass\ninstead.\n\nThis check implements\nEnum.3\nfrom the C++ Core Guidelines.”\n\nExample:\n\nenum\nE\n{};\n// use \"enum class E {};\" instead\nenum\nclass\nE\n{};\n// OK\nstruct\nS\n{\nenum\nE\n{};\n// use \"enum class E {};\" instead\n// OK with option IgnoreUnscopedEnumsInClasses\n};\nnamespace\nN\n{\nenum\nE\n{};\n// use \"enum class E {};\" instead\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreUnscopedEnumsInClasses\nWhen\ntrue\n, ignores unscoped\nenum\ndeclarations in classes.\nDefault is\nfalse\n."
+    }
+}

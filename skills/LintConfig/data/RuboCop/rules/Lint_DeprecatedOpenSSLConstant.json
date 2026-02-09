@@ -1,0 +1,6 @@
+{
+    "Lint/DeprecatedOpenSSLConstant": {
+        "description": "Description\n\nDon't use algorithm constants for `OpenSSL::Cipher` and `OpenSSL::Digest`.",
+        "option": "This rule has no specific options."
+    }
+}

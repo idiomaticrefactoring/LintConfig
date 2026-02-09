@@ -1,0 +1,6 @@
+{
+    "moduloofone": {
+        "description": "Description\n\nModulo of one is always equal to zero",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

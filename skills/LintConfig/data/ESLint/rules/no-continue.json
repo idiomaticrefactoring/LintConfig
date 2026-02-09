@@ -1,0 +1,6 @@
+{
+    "no-continue": {
+        "description": "Description\n\nThis rule disallowscontinuestatements.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-continue: \"error\"*/\n\nlet sum = 0,\n    i;\n\nfor(i = 0; i < 10; i++) {\n    if(i >= 5) {\n        continue;\n    }\n\n    sum += i;\n}\n\n/*eslint no-continue: \"error\"*/\n\nlet sum = 0,\n    i;\n\nlabeledLoop: for(i = 0; i < 10; i++) {\n    if(i >= 5) {\n        continue labeledLoop;\n    }\n\n    sum += i;\n}\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-continue: \"error\"*/\n\nlet sum = 0,\n    i;\n\nfor(i = 0; i < 10; i++) {\n    if(i < 5) {\n       sum += i;\n    }\n}",
+        "option": "This rule has no options."
+    }
+}

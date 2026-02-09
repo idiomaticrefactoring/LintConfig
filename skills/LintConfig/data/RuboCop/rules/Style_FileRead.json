@@ -1,0 +1,6 @@
+{
+    "Style/FileRead": {
+        "description": "Description\n\nFavor `File.(bin)read` convenience methods.",
+        "option": "This rule has no specific options."
+    }
+}

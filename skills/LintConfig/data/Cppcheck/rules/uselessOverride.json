@@ -1,0 +1,6 @@
+{
+    "uselessOverride": {
+        "description": "Description\n\nThe function '' overrides a function in a base class but just delegates back to the base class.",
+        "option": "Static analysis does not have options.\n\nSeverity: style\nCWE: N/A\nInconclusive: false"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "cppcoreguidelines-missing-std-forward": {
+        "description": "Description\n\nWarns when a forwarding reference parameter is not forwarded inside the\nfunction body.\n\nExample:\n\ntemplate\n<\nclass\nT\n>\nvoid\nwrapper\n(\nT\n&&\nt\n)\n{\nimpl\n(\nstd\n::\nforward\n<\nT\n>\n(\nt\n),\n1\n,\n2\n);\n// Correct\n}\ntemplate\n<\nclass\nT\n>\nvoid\nwrapper2\n(\nT\n&&\nt\n)\n{\nimpl\n(\nt\n,\n1\n,\n2\n);\n// Oops - should use std::forward<T>(t)\n}\ntemplate\n<\nclass\nT\n>\nvoid\nwrapper3\n(\nT\n&&\nt\n)\n{\nimpl\n(\nstd\n::\nmove\n(\nt\n),\n1\n,\n2\n);\n// Also buggy - should use std::forward<T>(t)\n}\ntemplate\n<\nclass\nF\n>\nvoid\nwrapper_function\n(\nF\n&&\nf\n)\n{\nstd\n::\nforward\n<\nF\n>\n(\nf\n)(\n1\n,\n2\n);\n// Correct\n}\ntemplate\n<\nclass\nF\n>\nvoid\nwrapper_function2\n(\nF\n&&\nf\n)\n{\nf\n(\n1\n,\n2\n);\n// Incorrect - may not invoke the desired qualified function operator\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nForwardFunction\nSpecify the function used for forwarding. Default is\n::std::forward\n.\nThis check implements\nF.19\nfrom the C++ Core Guidelines."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "AvoidAssertAsIdentifier": {
+        "description": "Description\n\nMaximum Language Version:Java 1.3\n\nUse of the termassertwill conflict with newer versions of Java since it is a reserved word.\n\nSince Java 1.4, the tokenassertbecame a reserved word and using it as an identifier will\nresult in a compilation failure for Java 1.4 and later. This rule is therefore only useful\nfor old Java code before Java 1.4. It can be used to identify problematic code prior to a Java update.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

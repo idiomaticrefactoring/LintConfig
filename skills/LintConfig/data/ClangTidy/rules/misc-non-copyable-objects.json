@@ -1,0 +1,6 @@
+{
+    "misc-non-copyable-objects": {
+        "description": "Description\n\ncert-fio38-c\nredirects here as an alias for this check.\n\nFlags dereferences and non-pointer declarations of objects that are\nnot meant to be passed by value, such as C FILE objects or POSIX\npthread_mutex_t\nobjects.\n\nReferences\nThis check corresponds to CERT C++ Coding Standard rule\nFIO38-C. Do not copy a FILE object\n.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

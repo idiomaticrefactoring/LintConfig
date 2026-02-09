@@ -1,0 +1,6 @@
+{
+    "readability-redundant-smartptr-get": {
+        "description": "Description\n\nFind and remove redundant calls to smart pointer’s\n.get()\nmethod.\n\nExamples:\n\nptr\n.\nget\n()\n->\nFoo\n()\n==>\nptr\n->\nFoo\n()\n*\nptr\n.\nget\n()\n==>\n*\nptr\n*\nptr\n->\nget\n()\n==>\n**\nptr\nif\n(\nptr\n.\nget\n()\n==\nnullptr\n)\n...\n=>\nif\n(\nptr\n==\nnullptr\n)\n...",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nOptions\nIgnoreMacros\nIf this option is set to\ntrue\n(default is\ntrue\n), the check will not warn\nabout calls inside macros."
+    }
+}

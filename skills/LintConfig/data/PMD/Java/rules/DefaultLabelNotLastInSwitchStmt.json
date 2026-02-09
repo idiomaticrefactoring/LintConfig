@@ -1,0 +1,6 @@
+{
+    "DefaultLabelNotLastInSwitchStmt": {
+        "description": "Description\n\nDeprecated\n\nThis rule has been renamed. Use instead:DefaultLabelNotLastInSwitch\n\nDeprecated\n\nBy convention, the default label should be the last label in a switch statement or switch expression.\n\nNote: This rule has been renamed from \"DefaultLabelNotLastInSwitchStmt\" with PMD 7.7.0.\n\nExample(s):\n\nUse this rule by referencing it:",
+        "option": "This rule has no specific options."
+    }
+}

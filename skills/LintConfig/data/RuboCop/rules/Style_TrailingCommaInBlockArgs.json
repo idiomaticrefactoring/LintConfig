@@ -1,0 +1,6 @@
+{
+    "Style/TrailingCommaInBlockArgs": {
+        "description": "Description\n\nChecks for useless trailing commas in block arguments.",
+        "option": "This rule has no specific options."
+    }
+}

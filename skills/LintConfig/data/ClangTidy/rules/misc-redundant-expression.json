@@ -1,0 +1,6 @@
+{
+    "misc-redundant-expression": {
+        "description": "Description\n\nDetect redundant expressions which are typically errors due to copy-paste.\n\nDepending on the operator expressions may be\n\nredundant,\nalways\ntrue\n,\nalways\nfalse\n,\nalways a constant (zero or one).\n\nExamples:\n\n((\nx\n+\n1\n)\n|\n(\nx\n+\n1\n))\n// (x+1) is redundant\n(\np\n->\nx\n==\np\n->\nx\n)\n// always true\n(\np\n->\nx\n<\np\n->\nx\n)\n// always false\n(\nspeed\n-\nspeed\n+\n1\n==\n12\n)\n// speed - speed is always zero\nint\nb\n=\na\n|\n4\n|\na\n// identical expr on both sides\n((\nx\n=\n1\n)\n|\n(\nx\n=\n1\n))\n// expression is identical\n(\nDEFINE_1\n|\nDEFINE_1\n)\n// same macro on the both sides\n((\nDEF_1\n+\nDEF_2\n)\n|\n(\nDEF_1\n+\nDEF_2\n))\n// expressions differ in spaces only\n\nFloats are handled except in the case that NaNs are checked like so:\n\nint\nTestFloat\n(\nfloat\nF\n)\n{\nif\n(\nF\n==\nF\n)\n// Identical float values used\nreturn\n1\n;\nreturn\n0\n;\n}\nint\nTestFloat\n(\nfloat\nF\n)\n{\n// Testing NaN.\nif\n(\nF\n!=\nF\n&&\nF\n==\nF\n)\n// does not warn\nreturn\n1\n;\nreturn\n0\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

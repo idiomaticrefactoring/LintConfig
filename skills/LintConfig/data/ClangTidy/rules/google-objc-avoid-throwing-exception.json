@@ -1,0 +1,6 @@
+{
+    "google-objc-avoid-throwing-exception": {
+        "description": "Description\n\nFinds uses of throwing exceptions usages in Objective-C files.\n\nFor the same reason as the Google C++ style guide, we prefer not throwing\nexceptions from Objective-C code.\n\nThe corresponding C++ style guide rule:\nhttps://google.github.io/styleguide/cppguide.html#Exceptions\n\nInstead, prefer passing in\nNSError\n**\nand return\nBOOL\nto indicate\nsuccess or failure.\n\nA counterexample:\n\n-\n(\nvoid\n)\nreadFile\n{\nif\n([\nself\nisError\n])\n{\n@throw\n[\nNSException\nexceptionWithName\n:\n...];\n}\n}\n\nInstead, returning an error via\nNSError\n**\nis preferred:\n\n-\n(\nBOOL\n)\nreadFileWithError:\n(\nNSError\n**\n)\nerror\n{\nif\n([\nself\nisError\n])\n{\n*\nerror\n=\n[\nNSError\nerrorWithDomain\n:\n...];\nreturn\nNO\n;\n}\nreturn\nYES\n;\n}\n\nThe corresponding style guide rule:\nhttps://google.github.io/styleguide/objcguide.html#avoid-throwing-exceptions",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

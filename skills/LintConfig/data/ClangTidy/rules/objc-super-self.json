@@ -1,0 +1,6 @@
+{
+    "objc-super-self": {
+        "description": "Description\n\nFinds invocations of\n-self\non super instances in initializers of subclasses\nof\nNSObject\nand recommends calling a superclass initializer instead.\n\nInvoking\n-self\non super instances in initializers is a common programmer\nerror when the programmer’s original intent is to call a superclass\ninitializer. Failing to call a superclass initializer breaks initializer\nchaining and can result in invalid object initialization.",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

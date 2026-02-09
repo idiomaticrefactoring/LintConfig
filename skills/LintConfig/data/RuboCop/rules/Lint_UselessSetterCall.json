@@ -1,0 +1,6 @@
+{
+    "Lint/UselessSetterCall": {
+        "description": "Description\n\nChecks for useless setter call to a local variable.",
+        "option": "This rule has no specific options."
+    }
+}

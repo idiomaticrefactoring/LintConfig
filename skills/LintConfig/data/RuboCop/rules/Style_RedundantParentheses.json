@@ -1,0 +1,6 @@
+{
+    "Style/RedundantParentheses": {
+        "description": "Description\n\nChecks for parentheses that seem not to serve any purpose.",
+        "option": "This rule has no specific options."
+    }
+}

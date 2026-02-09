@@ -1,0 +1,6 @@
+{
+    "Style/CollectionCompact": {
+        "description": "Description\n\nUse `{Array,Hash}#{compact,compact!}` instead of custom logic to reject nils.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowedReceivers: [] (type: list)"
+    }
+}

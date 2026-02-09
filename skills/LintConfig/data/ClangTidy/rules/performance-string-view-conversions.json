@@ -1,0 +1,6 @@
+{
+    "performance-string-view-conversions": {
+        "description": "Description\n\nFinds and removes redundant conversions from\nstd::[w|u8|u16|u32]string_view\nto\nstd::[...]string\nin call expressions expecting\nstd::[...]string_view\n.\n\nBefore:\n\nvoid\nfoo\n(\nint\np1\n,\nstd\n::\nstring_view\np2\n,\ndouble\np3\n);\nvoid\nbar\n(\nstd\n::\nstring_view\nsv\n)\n{\nfoo\n(\n42\n,\nstd\n::\nstring\n(\nsv\n),\n3.14\n);\n// conversion to std::string is\n// redundant as std::string_view\n// is expected\nfoo\n(\n42\n,\nstd\n::\nstring\n(\n\"foo\"\n),\n3.14\n);\n// conversion to std::string is\n// redundant as std::string_view\n// is expected\n}\n\nAfter:\n\nvoid\nfoo\n(\nint\np1\n,\nstd\n::\nstring_view\np2\n,\ndouble\np3\n);\nvoid\nbar\n(\nstd\n::\nstring_view\nsv\n)\n{\nfoo\n(\n42\n,\nsv\n,\n3.14\n);\nfoo\n(\n42\n,\n\"foo\"\n,\n3.14\n);\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "macroWithSemicolon": {
+        "description": "Description\n\nEnsure that '' is defined either using -I, --include or -D.",
+        "option": "Static analysis does not have options.\n\nSeverity: information\nCWE: N/A\nInconclusive: false"
+    }
+}

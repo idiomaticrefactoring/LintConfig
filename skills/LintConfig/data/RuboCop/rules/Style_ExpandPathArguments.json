@@ -1,0 +1,6 @@
+{
+    "Style/ExpandPathArguments": {
+        "description": "Description\n\nUse `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`.",
+        "option": "This rule has no specific options."
+    }
+}

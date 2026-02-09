@@ -1,0 +1,6 @@
+{
+    "bugprone-assignment-in-if-condition": {
+        "description": "Description\n\nFinds assignments within conditions of\nif\nstatements.\nSuch assignments are bug-prone because they may have been intended as\nequality tests.\n\nThis check finds all assignments within\nif\nconditions, including ones that\nare not flagged by\n-Wparentheses\ndue to an extra set of parentheses, and\nincluding assignments that call an overloaded\noperator=()\n. The identified\nassignments violate\nBARR group “Rule 8.2.c”\n.\n\nint\nf\n=\n3\n;\nif\n(\nf\n=\n4\n)\n{\n// This is identified by both `Wparentheses` and this check - should it have been: `if (f == 4)` ?\nf\n=\nf\n+\n1\n;\n}\nif\n((\nf\n==\n5\n)\n||\n(\nf\n=\n6\n))\n{\n// the assignment here `(f = 6)` is identified by this check, but not by `-Wparentheses`. Should it have been `(f == 6)` ?\nf\n=\nf\n+\n2\n;\n}",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

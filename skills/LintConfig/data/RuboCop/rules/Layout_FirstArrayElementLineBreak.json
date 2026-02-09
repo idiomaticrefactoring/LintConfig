@@ -1,0 +1,6 @@
+{
+    "Layout/FirstArrayElementLineBreak": {
+        "description": "Description\n\nChecks for a line break before the first element in a multi-line array.",
+        "option": "This rule supports the following parameters in your configuration:\n\nAllowImplicitArrayLiterals: False (type: bool)\nAllowMultilineFinalElement: False (type: bool)"
+    }
+}

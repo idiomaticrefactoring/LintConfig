@@ -1,0 +1,6 @@
+{
+    "Style/DoubleNegation": {
+        "description": "Description\n\nChecks for uses of double negation (!!).",
+        "option": "This rule supports the following parameters in your configuration:\n\nEnforcedStyle: allowed_in_returns (type: str)\nSupportedStyles: ['allowed_in_returns', 'forbidden'] (type: list)"
+    }
+}

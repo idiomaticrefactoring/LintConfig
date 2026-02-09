@@ -1,0 +1,6 @@
+{
+    "allowed-confusables": {
+        "description": "Description\n\nA list of allowed \"confusable\" Unicode characters to ignore when\nenforcing `RUF001`, `RUF002`, and `RUF003`.",
+        "option": "Type: array\nStatus: DEPRECATED"
+    }
+}

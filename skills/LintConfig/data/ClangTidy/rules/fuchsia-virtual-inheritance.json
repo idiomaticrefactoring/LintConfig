@@ -1,0 +1,6 @@
+{
+    "fuchsia-virtual-inheritance": {
+        "description": "Description\n\nWarns if classes are defined with virtual inheritance.\n\nFor example, classes should not be defined with virtual inheritance:\n\nclass\nB\n:\npublic\nvirtual\nA\n{};\n// warning\n\nSee the features disallowed in Fuchsia at\nhttps://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cxx?hl=en",
+        "option": "Static analysis (Clang-Tidy) options are configured via .clang-tidy file.\n\nThis rule has no specific options."
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "Lint/MixedCaseRange": {
+        "description": "Description\n\nChecks for mixed-case character ranges since they include likely unintended characters.",
+        "option": "This rule has no specific options."
+    }
+}

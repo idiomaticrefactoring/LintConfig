@@ -1,0 +1,6 @@
+{
+    "no-object-constructor": {
+        "description": "Description\n\nThis rule disallows calling theObjectconstructor without an argument.\n\nExamples ofincorrectcode for this rule:\n\n/*eslint no-object-constructor: \"error\"*/\n\nObject();\n\nnew Object();\n\nExamples ofcorrectcode for this rule:\n\n/*eslint no-object-constructor: \"error\"*/\n\nObject(\"foo\");\n\nconst obj = { a: 1, b: 2 };\n\nconst isObject = value => value === Object(value);\n\nconst createObject = Object => new Object();",
+        "option": "This rule has no options."
+    }
+}

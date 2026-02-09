@@ -1,0 +1,6 @@
+{
+    "space-infix-ops": {
+        "description": "Description\n\nThis rule is aimed at ensuring there are spaces around infix operators.",
+        "option": "This rule accepts a single options argument with the following defaults:\n\n\"space-infix-ops\": [\"error\", { \"int32Hint\": false }]\n\nint32Hint\n\nSet theint32Hintoption totrue(default isfalse) to allow writea|0without space.\n\nvar foo = bar|0; // `foo` is forced to be signed 32 bit integer\n\nExamples ofincorrectcode for this rule:\n\n/*eslint space-infix-ops: \"error\"*/\n\na+b\n\na+ b\n\na +b\n\na?b:c\n\nconst a={b:1};\n\nvar {b=0}=bar;\n\nfunction foo(a=0) { }\n\nExamples ofcorrectcode for this rule:\n\n/*eslint space-infix-ops: \"error\"*/\n\na + b\n\na       + b\n\na ? b : c\n\nconst a = {b:1};\n\nvar {b = 0} = bar;\n\nfunction foo(a = 0) { }"
+    }
+}

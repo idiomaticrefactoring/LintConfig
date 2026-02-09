@@ -1,0 +1,10 @@
+{
+    "UseConcatOnce": {
+        "description": "The XPath concat() functions accepts as many arguments as required so you can have \"concat($a,’b’…",
+        "url": "https://pmd.github.io/pmd/pmd_rules_xsl_codestyle.html#useconcatonce"
+    },
+    "AvoidAxisNavigation": {
+        "description": "Avoid using the ‘following’ or ‘preceding’ axes whenever possible, as these can cut through 100% …",
+        "url": "https://pmd.github.io/pmd/pmd_rules_xsl_performance.html#avoidaxisnavigation"
+    }
+}

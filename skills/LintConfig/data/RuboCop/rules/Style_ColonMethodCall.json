@@ -1,0 +1,6 @@
+{
+    "Style/ColonMethodCall": {
+        "description": "Description\n\nDo not use :: for method call.",
+        "option": "This rule has no specific options."
+    }
+}
